@@ -1,0 +1,144 @@
+\doxysection{Challenge\+Level Class Reference}
+\hypertarget{class_challenge_level}{}\label{class_challenge_level}\index{ChallengeLevel@{ChallengeLevel}}
+Inheritance diagram for Challenge\+Level\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_challenge_level}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_challenge_level_a2c52b8ac4054caedccbc77ae43ad523d}\label{class_challenge_level_a2c52b8ac4054caedccbc77ae43ad523d} 
+enum {\bfseries Score\+Bonus} \{ \newline
+{\bfseries None} = 0x0000
+, {\bfseries No\+Damage} = 0x0001
+, {\bfseries No\+Deaths} = 0x0002
+, {\bfseries All} = No\+Damage \texorpdfstring{$\vert$}{|} No\+Deaths
+, \newline
+{\bfseries Count}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_challenge_level_a9de83c15f85149fb70615f05e60d4288}\label{class_challenge_level_a9de83c15f85149fb70615f05e60d4288} 
+void {\bfseries Exit\+Hellbreaker} ()
+\item 
+\Hypertarget{class_challenge_level_a7ca67b1ec74c798460cee47504b296dd}\label{class_challenge_level_a7ca67b1ec74c798460cee47504b296dd} 
+override void {\bfseries \+\_\+\+Ready} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_level_data}{Level\+Data}}}
+\begin{DoxyCompactItemize}
+\item 
+delegate void {\bfseries Resources\+Loading\+Finished\+Event\+Handler} ()
+\item 
+delegate void {\bfseries Player\+Respawn\+Event\+Handler} ()
+\item 
+delegate void {\bfseries Hellbreaker\+Begin\+Event\+Handler} ()
+\item 
+delegate void {\bfseries Hellbreaker\+Finished\+Event\+Handler} ()
+\item 
+delegate void {\bfseries Exit\+Level\+Event\+Handler} ()
+\item 
+override void {\bfseries \+\_\+\+Enter\+Tree} ()
+\item 
+override void {\bfseries \+\_\+\+Exit\+Tree} ()
+\item 
+override void {\bfseries \+\_\+\+Ready} ()
+\begin{DoxyCompactList}\small\item\em godot initialization override \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_challenge_level_a2ff74dccf8059119a376b0bc380de097}\label{class_challenge_level_a2ff74dccf8059119a376b0bc380de097} 
+static Godot.\+Variant {\bfseries Get\+Objective\+State} (string key)
+\item 
+\Hypertarget{class_challenge_level_a1976a82cb4b1f51cdf4594434ccabaf9}\label{class_challenge_level_a1976a82cb4b1f51cdf4594434ccabaf9} 
+static void {\bfseries Set\+Objective\+State} (string key, Godot.\+Variant value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_challenge_level_a3ed3215f8a751cd1a9bd6e463460a161}\label{class_challenge_level_a3ed3215f8a751cd1a9bd6e463460a161} 
+static Godot.\+Collections.\+Array$<$ \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_thinker}{Thinker}} $>$ {\bfseries Enemies}
+\item 
+\Hypertarget{class_challenge_level_a128a3787d126a52ee897f1285a4cde69}\label{class_challenge_level_a128a3787d126a52ee897f1285a4cde69} 
+static int {\bfseries Death\+Counter} = 0
+\item 
+\Hypertarget{class_challenge_level_a395f38bf22d59e9aa3a494c3dcc97b58}\label{class_challenge_level_a395f38bf22d59e9aa3a494c3dcc97b58} 
+static int {\bfseries Total\+Enemies} = 0
+\item 
+\Hypertarget{class_challenge_level_a45d67c7f82c1f39e01c033ffe3d448b2}\label{class_challenge_level_a45d67c7f82c1f39e01c033ffe3d448b2} 
+static int {\bfseries Headshot\+Counter} = 0
+\item 
+\Hypertarget{class_challenge_level_a012a6ffab2f8f3aee0e9a3dd641fe294}\label{class_challenge_level_a012a6ffab2f8f3aee0e9a3dd641fe294} 
+static int {\bfseries Hellbreak\+Counter} = 0
+\item 
+\Hypertarget{class_challenge_level_a8dab788bb8a3ba010763144b30ae946e}\label{class_challenge_level_a8dab788bb8a3ba010763144b30ae946e} 
+static Score\+Bonus {\bfseries Bonus\+Flags} = Score\+Bonus.\+All
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{class_level_data}{Level\+Data}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_level_data}{Level\+Data}} {\bfseries Instance}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_challenge_level_aa24def589968a897468976a3bc1442bf}{On\+Resources\+Finished\+Loading}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_level_data}{Level\+Data}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries On\+Player\+Joined} (ulong steam\+Id)
+\item 
+virtual void {\bfseries On\+Player\+Left} (ulong steam\+Id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_level_data}{Level\+Data}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player}{Player}} {\bfseries This\+Player}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_level_data}{Level\+Data}}}
+\begin{DoxyCompactItemize}
+\item 
+Navigation\+Region2D {\bfseries Global\+Navigation\+Mesh}
+\item 
+\mbox{\hyperlink{class_pause_menu}{Pause\+Menu}} {\bfseries Pause\+Menu}
+\item 
+Thread {\bfseries Resource\+Load\+Thread}
+\item 
+Thread {\bfseries Scene\+Load\+Thread}
+\item 
+Dictionary$<$ CSteam\+ID, \mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}} $>$ {\bfseries Players} = null
+\item 
+Packed\+Scene {\bfseries Player\+Scene} = null
+\item 
+Node {\bfseries Player\+List} = null
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_level_data}{Level\+Data}}}
+\begin{DoxyCompactItemize}
+\item 
+static readonly string\mbox{[}$\,$\mbox{]} {\bfseries Death\+Quotes}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_challenge_level_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_challenge_level_aa24def589968a897468976a3bc1442bf}\index{ChallengeLevel@{ChallengeLevel}!OnResourcesFinishedLoading@{OnResourcesFinishedLoading}}
+\index{OnResourcesFinishedLoading@{OnResourcesFinishedLoading}!ChallengeLevel@{ChallengeLevel}}
+\doxysubsubsection{\texorpdfstring{OnResourcesFinishedLoading()}{OnResourcesFinishedLoading()}}
+{\footnotesize\ttfamily \label{class_challenge_level_aa24def589968a897468976a3bc1442bf} 
+override void Challenge\+Level.\+On\+Resources\+Finished\+Loading (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_level_data}{Level\+Data}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/Challenge\+Level.\+cs\end{DoxyCompactItemize}

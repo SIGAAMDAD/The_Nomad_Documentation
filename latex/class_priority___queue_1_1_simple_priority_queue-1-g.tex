@@ -1,0 +1,132 @@
+\doxysection{Priority\+\_\+\+Queue.\+Simple\+Priority\+Queue\texorpdfstring{$<$}{<} TItem \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_priority___queue_1_1_simple_priority_queue-1-g}{}\label{class_priority___queue_1_1_simple_priority_queue-1-g}\index{Priority\_Queue.SimplePriorityQueue$<$ TItem $>$@{Priority\_Queue.SimplePriorityQueue$<$ TItem $>$}}
+
+
+A simplified priority queue implementation. Is stable, auto-\/resizes, and thread-\/safe, at the cost of being slightly slower than Fast\+Priority\+Queue This class is kept here for backwards compatibility. It\textquotesingle{}s recommended you use Simple\+Priority\+Queue\texorpdfstring{$<$}{<}TItem, TPriority\texorpdfstring{$>$}{>}.  
+
+
+Inheritance diagram for Priority\+\_\+\+Queue.\+Simple\+Priority\+Queue\texorpdfstring{$<$}{<} TItem \texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_priority___queue_1_1_simple_priority_queue-1-g}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_priority___queue_1_1_simple_priority_queue-1-g_aca2c854b21e67d82e8b09bdb99fd33e8}\label{class_priority___queue_1_1_simple_priority_queue-1-g_aca2c854b21e67d82e8b09bdb99fd33e8} 
+{\bfseries Simple\+Priority\+Queue} ()
+\begin{DoxyCompactList}\small\item\em Instantiate a new Priority Queue. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_priority___queue_1_1_simple_priority_queue-1-g_a2ef094ee418c0e0b15e594a0e7c29847}{Simple\+Priority\+Queue}} (IComparer$<$ float $>$ comparer)
+\begin{DoxyCompactList}\small\item\em Instantiate a new Priority Queue. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_priority___queue_1_1_simple_priority_queue-1-g_ace2fa95485a3bfa9a2bf73c36a3c9ab0}{Simple\+Priority\+Queue}} (Comparison$<$ float $>$ comparer)
+\begin{DoxyCompactList}\small\item\em Instantiate a new Priority Queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_priority___queue_1_1_simple_priority_queue-2-g}{Priority\+\_\+\+Queue.\+Simple\+Priority\+Queue$<$ TItem, TPriority $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Simple\+Node} (TItem data)
+\item 
+{\bfseries Simple\+Priority\+Queue} ()
+\begin{DoxyCompactList}\small\item\em Instantiate a new Priority Queue. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_priority___queue_1_1_simple_priority_queue-2-g_a5ff702974ca8781dfe254c1fb4bfc55e}{Simple\+Priority\+Queue}} (IComparer$<$ TPriority $>$ priority\+Comparer)
+\begin{DoxyCompactList}\small\item\em Instantiate a new Priority Queue. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_priority___queue_1_1_simple_priority_queue-2-g_aad4463a502c85d3dc10da2541f28f73b}{Simple\+Priority\+Queue}} (Comparison$<$ TPriority $>$ priority\+Comparer)
+\begin{DoxyCompactList}\small\item\em Instantiate a new Priority Queue. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_priority___queue_1_1_simple_priority_queue-2-g_a7aa6437a1cb6852dea308d81986f165f}{Simple\+Priority\+Queue}} (IEquality\+Comparer$<$ TItem $>$ item\+Equality)
+\begin{DoxyCompactList}\small\item\em Instantiate a new Priority Queue. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_priority___queue_1_1_simple_priority_queue-2-g_a2ffc88c0d367cb777227729fc4a518ee}{Simple\+Priority\+Queue}} (IComparer$<$ TPriority $>$ priority\+Comparer, IEquality\+Comparer$<$ TItem $>$ item\+Equality)
+\begin{DoxyCompactList}\small\item\em Instantiate a new Priority Queue. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_priority___queue_1_1_simple_priority_queue-2-g_abd2b50960d5f628c05033c9c2382153b}{Simple\+Priority\+Queue}} (Comparison$<$ TPriority $>$ priority\+Comparer, IEquality\+Comparer$<$ TItem $>$ item\+Equality)
+\begin{DoxyCompactList}\small\item\em Instantiate a new Priority Queue. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_priority___queue_1_1_simple_priority_queue-2-g_a9d6fe4da400f6dee105752e8bc08d70f}{Clear}} ()
+\begin{DoxyCompactList}\small\item\em Removes every node from the queue. O(n) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_priority___queue_1_1_simple_priority_queue-2-g_a978bc62d81a3605ff325075307727918}{Contains}} (TItem item)
+\begin{DoxyCompactList}\small\item\em Returns whether the given item is in the queue. O(1) \end{DoxyCompactList}\item 
+TItem \mbox{\hyperlink{class_priority___queue_1_1_simple_priority_queue-2-g_a00f548feee5ed52a510b2027647f39ba}{Dequeue}} ()
+\begin{DoxyCompactList}\small\item\em Removes the head of the queue (node with minimum priority; ties are broken by order of insertion), and returns it. If queue is empty, throws an exception O(log n) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_priority___queue_1_1_simple_priority_queue-2-g_a25cbabe1cd646efc48a3d9bf2804f39d}{Enqueue}} (TItem item, TPriority priority)
+\begin{DoxyCompactList}\small\item\em Enqueue a node to the priority queue. Lower values are placed in front. Ties are broken by first-\/in-\/first-\/out. This queue automatically resizes itself, so there\textquotesingle{}s no concern of the queue becoming \textquotesingle{}full\textquotesingle{}. Duplicates and null-\/values are allowed. O(log n) \end{DoxyCompactList}\item 
+bool {\bfseries Enqueue\+Without\+Duplicates} (TItem item, TPriority priority)
+\begin{DoxyCompactList}\small\item\em Enqueue a node to the priority queue if it doesn\textquotesingle{}t already exist. Lower values are placed in front. Ties are broken by first-\/in-\/first-\/out. This queue automatically resizes itself, so there\textquotesingle{}s no concern of the queue becoming \textquotesingle{}full\textquotesingle{}. Null values are allowed. Returns true if the node was successfully enqueued; false if it already exists. O(log n) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_priority___queue_1_1_simple_priority_queue-2-g_a6795c0fa7a4b2547f39a29c88ab6e7dc}{Remove}} (TItem item)
+\begin{DoxyCompactList}\small\item\em Removes an item from the queue. The item does not need to be the head of the queue. ~\newline
+ If the item is not in the queue, an exception is thrown. If unsure, check \doxylink{class_priority___queue_1_1_simple_priority_queue-2-g_a978bc62d81a3605ff325075307727918}{Contains()} first. If multiple copies of the item are enqueued, only the first one is removed. O(log n) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_priority___queue_1_1_simple_priority_queue-2-g_abe9d19bb7db5df5855d1637aa3a88aad}{Update\+Priority}} (TItem item, TPriority priority)
+\begin{DoxyCompactList}\small\item\em Call this method to change the priority of an item. Calling this method on a item not in the queue will throw an exception. If the item is enqueued multiple times, only the first one will be updated. (If your requirements are complex enough that you need to enqueue the same item multiple times {\itshape and} be able to update all of them, please wrap your items in a wrapper class so they can be distinguished). O(log n) \end{DoxyCompactList}\item 
+TPriority {\bfseries Get\+Priority} (TItem item)
+\begin{DoxyCompactList}\small\item\em Returns the priority of the given item. Calling this method on a item not in the queue will throw an exception. If the item is enqueued multiple times, only the priority of the first will be returned. (If your requirements are complex enough that you need to enqueue the same item multiple times {\itshape and} be able to query all their priorities, please wrap your items in a wrapper class so they can be distinguished). O(1) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_priority___queue_1_1_simple_priority_queue-2-g_a8e8852010a2cee90e2f9b62b8b9a750e}{Try\+First}} (out TItem first)
+\item 
+bool {\bfseries Try\+Dequeue} (out TItem first)
+\begin{DoxyCompactList}\small\item\em Removes the head of the queue (node with minimum priority; ties are broken by order of insertion), and sets it to first. Useful for multi-\/threading, where the queue may become empty between calls to \doxylink{class_priority___queue_1_1_simple_priority_queue-2-g_a978bc62d81a3605ff325075307727918}{Contains()} and \doxylink{class_priority___queue_1_1_simple_priority_queue-2-g_a00f548feee5ed52a510b2027647f39ba}{Dequeue()} Returns true if successful; false if queue was empty O(log n) \end{DoxyCompactList}\item 
+bool {\bfseries Try\+Remove} (TItem item)
+\begin{DoxyCompactList}\small\item\em Attempts to remove an item from the queue. The item does not need to be the head of the queue. ~\newline
+ Useful for multi-\/threading, where the queue may become empty between calls to \doxylink{class_priority___queue_1_1_simple_priority_queue-2-g_a978bc62d81a3605ff325075307727918}{Contains()} and \doxylink{class_priority___queue_1_1_simple_priority_queue-2-g_a6795c0fa7a4b2547f39a29c88ab6e7dc}{Remove()} Returns true if the item was successfully removed, false if it wasn\textquotesingle{}t in the queue. If multiple copies of the item are enqueued, only the first one is removed. O(log n) \end{DoxyCompactList}\item 
+bool {\bfseries Try\+Update\+Priority} (TItem item, TPriority priority)
+\begin{DoxyCompactList}\small\item\em Call this method to change the priority of an item. Useful for multi-\/threading, where the queue may become empty between calls to \doxylink{class_priority___queue_1_1_simple_priority_queue-2-g_a978bc62d81a3605ff325075307727918}{Contains()} and \doxylink{class_priority___queue_1_1_simple_priority_queue-2-g_abe9d19bb7db5df5855d1637aa3a88aad}{Update\+Priority()} If the item is enqueued multiple times, only the first one will be updated. (If your requirements are complex enough that you need to enqueue the same item multiple times {\itshape and} be able to update all of them, please wrap your items in a wrapper class so they can be distinguished). Returns true if the item priority was updated, false otherwise. O(log n) \end{DoxyCompactList}\item 
+bool {\bfseries Try\+Get\+Priority} (TItem item, out TPriority priority)
+\begin{DoxyCompactList}\small\item\em Attempt to get the priority of the given item. Useful for multi-\/threading, where the queue may become empty between calls to \doxylink{class_priority___queue_1_1_simple_priority_queue-2-g_a978bc62d81a3605ff325075307727918}{Contains()} and \doxylink{class_priority___queue_1_1_simple_priority_queue-2-g_a9d007090c2bc8a845295585ae9dc46eb}{Get\+Priority()} If the item is enqueued multiple times, only the priority of the first will be returned. (If your requirements are complex enough that you need to enqueue the same item multiple times {\itshape and} be able to query all their priorities, please wrap your items in a wrapper class so they can be distinguished). Returns true if the item was found in the queue, false otherwise O(1) \end{DoxyCompactList}\item 
+IEnumerator$<$ TItem $>$ {\bfseries Get\+Enumerator} ()
+\item 
+bool {\bfseries Is\+Valid\+Queue} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_priority___queue_1_1_simple_priority_queue-2-g}{Priority\+\_\+\+Queue.\+Simple\+Priority\+Queue$<$ TItem, TPriority $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+TItem {\bfseries Data}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_priority___queue_1_1_simple_priority_queue-2-g_ad8121c1e10d10728b58a37f1a42b4bf2}{Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the number of nodes in the queue. O(1) \end{DoxyCompactList}\item 
+TItem \mbox{\hyperlink{class_priority___queue_1_1_simple_priority_queue-2-g_a5cc3e152ec4a50e9fef9aa69bcd9a6b5}{First}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the head of the queue, without removing it (use \doxylink{class_priority___queue_1_1_simple_priority_queue-2-g_a00f548feee5ed52a510b2027647f39ba}{Dequeue()} for that). Throws an exception when the queue is empty. O(1) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A simplified priority queue implementation. Is stable, auto-\/resizes, and thread-\/safe, at the cost of being slightly slower than Fast\+Priority\+Queue This class is kept here for backwards compatibility. It\textquotesingle{}s recommended you use Simple\+Priority\+Queue\texorpdfstring{$<$}{<}TItem, TPriority\texorpdfstring{$>$}{>}. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TItem} & The type to enqueue\\
+\hline
+\end{DoxyTemplParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_priority___queue_1_1_simple_priority_queue-1-g_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_priority___queue_1_1_simple_priority_queue-1-g_ace2fa95485a3bfa9a2bf73c36a3c9ab0}\index{Priority\_Queue.SimplePriorityQueue$<$ TItem $>$@{Priority\_Queue.SimplePriorityQueue$<$ TItem $>$}!SimplePriorityQueue@{SimplePriorityQueue}}
+\index{SimplePriorityQueue@{SimplePriorityQueue}!Priority\_Queue.SimplePriorityQueue$<$ TItem $>$@{Priority\_Queue.SimplePriorityQueue$<$ TItem $>$}}
+\doxysubsubsection{\texorpdfstring{SimplePriorityQueue()}{SimplePriorityQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_priority___queue_1_1_simple_priority_queue-1-g_ace2fa95485a3bfa9a2bf73c36a3c9ab0} 
+Priority\+\_\+\+Queue.\+Simple\+Priority\+Queue$<$ TItem $>$.Simple\+Priority\+Queue (\begin{DoxyParamCaption}\item[{Comparison$<$ float $>$}]{comparer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Instantiate a new Priority Queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em comparer} & The comparison function to use to compare priority values\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_priority___queue_1_1_simple_priority_queue-1-g_a2ef094ee418c0e0b15e594a0e7c29847}\index{Priority\_Queue.SimplePriorityQueue$<$ TItem $>$@{Priority\_Queue.SimplePriorityQueue$<$ TItem $>$}!SimplePriorityQueue@{SimplePriorityQueue}}
+\index{SimplePriorityQueue@{SimplePriorityQueue}!Priority\_Queue.SimplePriorityQueue$<$ TItem $>$@{Priority\_Queue.SimplePriorityQueue$<$ TItem $>$}}
+\doxysubsubsection{\texorpdfstring{SimplePriorityQueue()}{SimplePriorityQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_priority___queue_1_1_simple_priority_queue-1-g_a2ef094ee418c0e0b15e594a0e7c29847} 
+Priority\+\_\+\+Queue.\+Simple\+Priority\+Queue$<$ TItem $>$.Simple\+Priority\+Queue (\begin{DoxyParamCaption}\item[{IComparer$<$ float $>$}]{comparer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Instantiate a new Priority Queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em comparer} & The comparer used to compare priority values. Defaults to Comparer\texorpdfstring{$<$}{<}float\texorpdfstring{$>$}{>}.default\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+addons/mountain-\/goap/\+Mountain\+Goap/\+Priority\+Queue/Simple\+Priority\+Queue.\+cs\end{DoxyCompactItemize}

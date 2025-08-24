@@ -1,0 +1,66 @@
+\doxysection{Status\+Effect Class Reference}
+\hypertarget{class_status_effect}{}\label{class_status_effect}\index{StatusEffect@{StatusEffect}}
+
+
+The base class from which all status effects must inherit from.  
+
+
+Inheritance diagram for Status\+Effect\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_status_effect}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_status_effect_acd51ab518a1c74dffd2e3545853b68bc}\label{class_status_effect_acd51ab518a1c74dffd2e3545853b68bc} 
+delegate void {\bfseries Timeout\+Event\+Handler} ()
+\item 
+\Hypertarget{class_status_effect_ae1ff7c515e9224418697460d8b5bea45}\label{class_status_effect_ae1ff7c515e9224418697460d8b5bea45} 
+virtual void {\bfseries Set\+Victim} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} owner)
+\item 
+\Hypertarget{class_status_effect_ae8f17e56c19ed7bbe821498a29f8ce7b}\label{class_status_effect_ae8f17e56c19ed7bbe821498a29f8ce7b} 
+virtual void {\bfseries Reset\+Timer} ()
+\item 
+\Hypertarget{class_status_effect_a09ccb41a2aa179161199b06bbb5387c7}\label{class_status_effect_a09ccb41a2aa179161199b06bbb5387c7} 
+virtual void {\bfseries Stop} ()
+\item 
+\Hypertarget{class_status_effect_a361e593821c4922bb56702fef9494543}\label{class_status_effect_a361e593821c4922bb56702fef9494543} 
+override void {\bfseries \+\_\+\+Ready} ()
+\begin{DoxyCompactList}\small\item\em godot initialization override \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_status_effect_a24c8696aae1f5ddc0bf3899b9a95a5d2}\label{class_status_effect_a24c8696aae1f5ddc0bf3899b9a95a5d2} 
+virtual void {\bfseries On\+Effect\+Timer\+Timeout} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_status_effect_a997e996f7ed5c41d54a7f7e77e2f7d38}\label{class_status_effect_a997e996f7ed5c41d54a7f7e77e2f7d38} 
+float {\bfseries Duration} = 0.\+0f
+\item 
+\Hypertarget{class_status_effect_a3b998592d071c9ca417bba6037a05a01}\label{class_status_effect_a3b998592d071c9ca417bba6037a05a01} 
+Audio\+Stream\+Player2D {\bfseries Audio\+Channel}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_status_effect_a0ab1932dd5d2153aa10c33ac5758e8ea}\label{class_status_effect_a0ab1932dd5d2153aa10c33ac5758e8ea} 
+Timer {\bfseries Effect\+Timer}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+\Hypertarget{class_status_effect_a4d4713c430e1aaa1d99bcb39d719cdaf}\label{class_status_effect_a4d4713c430e1aaa1d99bcb39d719cdaf} 
+\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} {\bfseries Victim}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+\Hypertarget{class_status_effect_acd158c5b132ce85df72ac8bc81543181}\label{class_status_effect_acd158c5b132ce85df72ac8bc81543181} 
+Texture2D {\bfseries Icon}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The base class from which all status effects must inherit from. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/\+Status\+Effects/Status\+Effect.\+cs\end{DoxyCompactItemize}

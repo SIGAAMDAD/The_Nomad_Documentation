@@ -1,0 +1,219 @@
+\chapter{Action }
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action}{}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action}\index{Action@{Action}}
+\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md31}%
+\Hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md31}%
+
+
+Namespace\+: \doxylink{namespace_mountain_goap}{Mountain\+Goap}
+
+Represents an action in a GOAP system.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keyword}{class\ }Action}
+
+\end{DoxyCode}
+
+
+Inheritance \href{https://docs.microsoft.com/en-us/dotnet/api/system.object}{\texttt{Object}} → \doxysectlink{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action}{Action}{0}\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md32}{}\doxysection{\texorpdfstring{Fields}{Fields}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md32}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md33}{}\doxysubsection{\texorpdfstring{{\bfseries{Name}}}{{\bfseries{Name}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md33}
+Name of the action.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ Name;}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md34}{}\doxysection{\texorpdfstring{Properties}{Properties}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md34}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md35}{}\doxysubsection{\texorpdfstring{{\bfseries{State\+Cost\+Delta\+Multiplier}}}{{\bfseries{State\+Cost\+Delta\+Multiplier}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md35}
+Gets or sets multiplier for delta value to provide delta cost.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \mbox{\hyperlink{namespace_mountain_goap_a15cd1bfe17ebf50fa72ab3ce8f6d56a9}{StateCostDeltaMultiplierCallback}}\ StateCostDeltaMultiplier\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md36}{}\doxysubsubsection{\texorpdfstring{Property Value}{Property Value}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md36}
+State\+Cost\+Delta\+Multiplier\+Callback~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md37}{}\doxysection{\texorpdfstring{Constructors}{Constructors}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md37}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md38}{}\doxysubsection{\texorpdfstring{{\bfseries{Action(String, Dictionary\texorpdfstring{$<$}{<}String, Permutation\+Selector\+Callback\texorpdfstring{$>$}{>}, Executor\+Callback, Single, Cost\+Callback, Dictionary\texorpdfstring{$<$}{<}String, Object\texorpdfstring{$>$}{>}, Dictionary\texorpdfstring{$<$}{<}String, Comparison\+Value\+Pair\texorpdfstring{$>$}{>}, Dictionary\texorpdfstring{$<$}{<}String, Object\texorpdfstring{$>$}{>}, Dictionary\texorpdfstring{$<$}{<}String, Object\texorpdfstring{$>$}{>}, Dictionary\texorpdfstring{$<$}{<}String, String\texorpdfstring{$>$}{>}, State\+Mutator\+Callback, State\+Checker\+Callback, State\+Cost\+Delta\+Multiplier\+Callback)}}}{{\bfseries{Action(String, Dictionary\texorpdfstring{$<$}{<}String, Permutation\+Selector\+Callback\texorpdfstring{$>$}{>}, Executor\+Callback, Single, Cost\+Callback, Dictionary\texorpdfstring{$<$}{<}String, Object\texorpdfstring{$>$}{>}, Dictionary\texorpdfstring{$<$}{<}String, Comparison\+Value\+Pair\texorpdfstring{$>$}{>}, Dictionary\texorpdfstring{$<$}{<}String, Object\texorpdfstring{$>$}{>}, Dictionary\texorpdfstring{$<$}{<}String, Object\texorpdfstring{$>$}{>}, Dictionary\texorpdfstring{$<$}{<}String, String\texorpdfstring{$>$}{>}, State\+Mutator\+Callback, State\+Checker\+Callback, State\+Cost\+Delta\+Multiplier\+Callback)}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md38}
+Initializes a new instance of the \doxysectlink{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action}{Action}{0} class.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ Action(\textcolor{keywordtype}{string}\ name,\ Dictionary<string,\ PermutationSelectorCallback>\ permutationSelectors,\ ExecutorCallback\ executor,\ \textcolor{keywordtype}{float}\ cost,\ CostCallback\ costCallback,\ Dictionary<string,\ object>\ preconditions,\ Dictionary<string,\ ComparisonValuePair>\ comparativePreconditions,\ Dictionary<string,\ object>\ postconditions,\ Dictionary<string,\ object>\ arithmeticPostconditions,\ Dictionary<string,\ string>\ parameterPostconditions,\ StateMutatorCallback\ stateMutator,\ StateCheckerCallback\ stateChecker,\ StateCostDeltaMultiplierCallback\ stateCostDeltaMultiplier)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md39}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md39}
+{\ttfamily name} \href{https://docs.microsoft.com/en-us/dotnet/api/system.string}{\texttt{String}}~\newline
+ Name for the action, for eventing and logging purposes.
+
+{\ttfamily permutation\+Selectors} \href{https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2}{\texttt{Dictionary\texorpdfstring{$<$}{<}String, Permutation\+Selector\+Callback\texorpdfstring{$>$}{>}}}~\newline
+ The permutation selector callback for the action\textquotesingle{}s parameters.
+
+{\ttfamily executor} Executor\+Callback~\newline
+ The executor callback for the action.
+
+{\ttfamily cost} \href{https://docs.microsoft.com/en-us/dotnet/api/system.single}{\texttt{Single}}~\newline
+ Cost of the action.
+
+{\ttfamily cost\+Callback} Cost\+Callback~\newline
+ Callback for determining the cost of the action.
+
+{\ttfamily preconditions} \href{https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2}{\texttt{Dictionary\texorpdfstring{$<$}{<}String, Object\texorpdfstring{$>$}{>}}}~\newline
+ Preconditions required in the world state in order for the action to occur.
+
+{\ttfamily comparative\+Preconditions} \href{https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2}{\texttt{Dictionary\texorpdfstring{$<$}{<}String, Comparison\+Value\+Pair\texorpdfstring{$>$}{>}}}~\newline
+ Preconditions indicating relative value requirements needed for the action to occur.
+
+{\ttfamily postconditions} \href{https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2}{\texttt{Dictionary\texorpdfstring{$<$}{<}String, Object\texorpdfstring{$>$}{>}}}~\newline
+ Postconditions applied after the action is successfully executed.
+
+{\ttfamily arithmetic\+Postconditions} \href{https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2}{\texttt{Dictionary\texorpdfstring{$<$}{<}String, Object\texorpdfstring{$>$}{>}}}~\newline
+ Arithmetic postconditions added to state after the action is successfully executed.
+
+{\ttfamily parameter\+Postconditions} \href{https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2}{\texttt{Dictionary\texorpdfstring{$<$}{<}String, String\texorpdfstring{$>$}{>}}}~\newline
+ Parameter postconditions copied to state after the action is successfully executed.
+
+{\ttfamily state\+Mutator} State\+Mutator\+Callback~\newline
+ Callback for modifying state after action execution or evaluation.
+
+{\ttfamily state\+Checker} State\+Checker\+Callback~\newline
+ Callback for checking state before action execution or evaluation.
+
+{\ttfamily state\+Cost\+Delta\+Multiplier} State\+Cost\+Delta\+Multiplier\+Callback~\newline
+ Callback for multiplier for delta value to provide delta cost.\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md40}{}\doxysection{\texorpdfstring{Methods}{Methods}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md40}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md41}{}\doxysubsection{\texorpdfstring{{\bfseries{Default\+State\+Cost\+Delta\+Multiplier(\+Action, String)}}}{{\bfseries{Default\+State\+Cost\+Delta\+Multiplier(\+Action, String)}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md41}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{float}\ DefaultStateCostDeltaMultiplier(Action\ action,\ \textcolor{keywordtype}{string}\ stateKey)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md42}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md42}
+{\ttfamily action} \doxysectlink{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action}{Action}{0}~\newline
+
+
+{\ttfamily state\+Key} \href{https://docs.microsoft.com/en-us/dotnet/api/system.string}{\texttt{String}}~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md43}{}\doxysubsubsection{\texorpdfstring{Returns}{Returns}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md43}
+\href{https://docs.microsoft.com/en-us/dotnet/api/system.single}{\texttt{Single}}~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md44}{}\doxysubsection{\texorpdfstring{{\bfseries{Copy()}}}{{\bfseries{Copy()}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md44}
+Makes a copy of the action.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ Action\ Copy()}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md45}{}\doxysubsubsection{\texorpdfstring{Returns}{Returns}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md45}
+\doxysectlink{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action}{Action}{0}~\newline
+ A copy of the action.\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md46}{}\doxysubsection{\texorpdfstring{{\bfseries{Set\+Parameter(\+String, Object)}}}{{\bfseries{Set\+Parameter(\+String, Object)}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md46}
+Sets a parameter to the action.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ SetParameter(\textcolor{keywordtype}{string}\ key,\ \textcolor{keywordtype}{object}\ value)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md47}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md47}
+{\ttfamily key} \href{https://docs.microsoft.com/en-us/dotnet/api/system.string}{\texttt{String}}~\newline
+ Key to be set.
+
+{\ttfamily value} \href{https://docs.microsoft.com/en-us/dotnet/api/system.object}{\texttt{Object}}~\newline
+ Value to be set.\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md48}{}\doxysubsection{\texorpdfstring{{\bfseries{Get\+Parameter(\+String)}}}{{\bfseries{Get\+Parameter(\+String)}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md48}
+Gets a parameter to the action.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{object}\ GetParameter(\textcolor{keywordtype}{string}\ key)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md49}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md49}
+{\ttfamily key} \href{https://docs.microsoft.com/en-us/dotnet/api/system.string}{\texttt{String}}~\newline
+ Key for the value to be retrieved.\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md50}{}\doxysubsubsection{\texorpdfstring{Returns}{Returns}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md50}
+\href{https://docs.microsoft.com/en-us/dotnet/api/system.object}{\texttt{Object}}~\newline
+ The value stored at the key specified.\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md51}{}\doxysubsection{\texorpdfstring{{\bfseries{Get\+Cost(Concurrent\+Dictionary\texorpdfstring{$<$}{<}String, Object\texorpdfstring{$>$}{>})}}}{{\bfseries{Get\+Cost(Concurrent\+Dictionary\texorpdfstring{$<$}{<}String, Object\texorpdfstring{$>$}{>})}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md51}
+Gets the cost of the action.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{float}\ GetCost(ConcurrentDictionary<string,\ object>\ currentState)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md52}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md52}
+{\ttfamily current\+State} Concurrent\+Dictionary\texorpdfstring{$<$}{<}String, Object\texorpdfstring{$>$}{>}~\newline
+ State as it will be when cost is relevant.\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md53}{}\doxysubsubsection{\texorpdfstring{Returns}{Returns}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md53}
+\href{https://docs.microsoft.com/en-us/dotnet/api/system.single}{\texttt{Single}}~\newline
+ The cost of the action.\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md54}{}\doxysubsection{\texorpdfstring{{\bfseries{Execute(\+Agent)}}}{{\bfseries{Execute(\+Agent)}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md54}
+Executes a step of work for the agent.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{internal}\ \mbox{\hyperlink{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235}{ExecutionStatus}}\ Execute(Agent\ agent)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md55}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md55}
+{\ttfamily agent} \doxysectlink{md_addons_2mountain-goap_2api-docs_2mountaingoap_8agent}{Agent}{0}~\newline
+ Agent executing the action.\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md56}{}\doxysubsubsection{\texorpdfstring{Returns}{Returns}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md56}
+\doxysectlink{md_addons_2mountain-goap_2api-docs_2mountaingoap_8executionstatus}{Execution\+Status}{0}~\newline
+ The execution status of the action.\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md57}{}\doxysubsection{\texorpdfstring{{\bfseries{Is\+Possible(Concurrent\+Dictionary\texorpdfstring{$<$}{<}String, Object\texorpdfstring{$>$}{>})}}}{{\bfseries{Is\+Possible(Concurrent\+Dictionary\texorpdfstring{$<$}{<}String, Object\texorpdfstring{$>$}{>})}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md57}
+Determines whether or not an action is possible.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{internal}\ \textcolor{keywordtype}{bool}\ IsPossible(ConcurrentDictionary<string,\ object>\ state)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md58}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md58}
+{\ttfamily state} Concurrent\+Dictionary\texorpdfstring{$<$}{<}String, Object\texorpdfstring{$>$}{>}~\newline
+ The current world state.\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md59}{}\doxysubsubsection{\texorpdfstring{Returns}{Returns}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md59}
+\href{https://docs.microsoft.com/en-us/dotnet/api/system.boolean}{\texttt{Boolean}}~\newline
+ True if the action is possible, otherwise false.\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md60}{}\doxysubsection{\texorpdfstring{{\bfseries{Get\+Permutations(Concurrent\+Dictionary\texorpdfstring{$<$}{<}String, Object\texorpdfstring{$>$}{>})}}}{{\bfseries{Get\+Permutations(Concurrent\+Dictionary\texorpdfstring{$<$}{<}String, Object\texorpdfstring{$>$}{>})}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md60}
+Gets all permutations of parameters possible for an action.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{internal}\ List<Dictionary<string,\ object>>\ GetPermutations(ConcurrentDictionary<string,\ object>\ state)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md61}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md61}
+{\ttfamily state} Concurrent\+Dictionary\texorpdfstring{$<$}{<}String, Object\texorpdfstring{$>$}{>}~\newline
+ \doxylink{class_world}{World} state when the action would be performed.\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md62}{}\doxysubsubsection{\texorpdfstring{Returns}{Returns}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md62}
+\href{https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1}{\texttt{List\texorpdfstring{$<$}{<}Dictionary\texorpdfstring{$<$}{<}String, Object\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}}}~\newline
+ A list of possible parameter dictionaries that could be used.\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md63}{}\doxysubsection{\texorpdfstring{{\bfseries{Apply\+Effects(Concurrent\+Dictionary\texorpdfstring{$<$}{<}String, Object\texorpdfstring{$>$}{>})}}}{{\bfseries{Apply\+Effects(Concurrent\+Dictionary\texorpdfstring{$<$}{<}String, Object\texorpdfstring{$>$}{>})}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md63}
+Applies the effects of the action.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{internal}\ \textcolor{keywordtype}{void}\ ApplyEffects(ConcurrentDictionary<string,\ object>\ state)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md64}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md64}
+{\ttfamily state} Concurrent\+Dictionary\texorpdfstring{$<$}{<}String, Object\texorpdfstring{$>$}{>}~\newline
+ \doxylink{class_world}{World} state to which to apply effects.\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md65}{}\doxysubsection{\texorpdfstring{{\bfseries{Set\+Parameters(Dictionary\texorpdfstring{$<$}{<}String, Object\texorpdfstring{$>$}{>})}}}{{\bfseries{Set\+Parameters(Dictionary\texorpdfstring{$<$}{<}String, Object\texorpdfstring{$>$}{>})}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md65}
+Sets all parameters to the action.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{internal}\ \textcolor{keywordtype}{void}\ SetParameters(Dictionary<string,\ object>\ parameters)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md66}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md66}
+{\ttfamily parameters} \href{https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2}{\texttt{Dictionary\texorpdfstring{$<$}{<}String, Object\texorpdfstring{$>$}{>}}}~\newline
+ Dictionary of parameters to be passed to the action.\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md67}{}\doxysection{\texorpdfstring{Events}{Events}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md67}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md68}{}\doxysubsection{\texorpdfstring{{\bfseries{On\+Begin\+Execute\+Action}}}{{\bfseries{On\+Begin\+Execute\+Action}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md68}
+Event that triggers when an action begins executing.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{event}\ \mbox{\hyperlink{namespace_mountain_goap_a74caf20eac5c7c7390a90a54d5374457}{BeginExecuteActionEvent}}\ OnBeginExecuteAction;}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md69}{}\doxysubsection{\texorpdfstring{{\bfseries{On\+Finish\+Execute\+Action}}}{{\bfseries{On\+Finish\+Execute\+Action}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action_autotoc_md69}
+Event that triggers when an action finishes executing.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{event}\ \mbox{\hyperlink{namespace_mountain_goap_a090ee9fbf9d58c9b49df1702e34ef871}{FinishExecuteActionEvent}}\ OnFinishExecuteAction;}
+
+\end{DoxyCode}
+ 

@@ -1,0 +1,44 @@
+\chapter{Comparative\+Goal }
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8comparativegoal}{}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8comparativegoal}\index{ComparativeGoal@{ComparativeGoal}}
+\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8comparativegoal_autotoc_md144}%
+\Hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8comparativegoal_autotoc_md144}%
+
+
+Namespace\+: \doxylink{namespace_mountain_goap}{Mountain\+Goap}
+
+Represents a goal to be achieved for an agent.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keyword}{class\ }ComparativeGoal\ :\ BaseGoal}
+
+\end{DoxyCode}
+
+
+Inheritance \href{https://docs.microsoft.com/en-us/dotnet/api/system.object}{\texttt{Object}} → \doxysectlink{md_addons_2mountain-goap_2api-docs_2mountaingoap_8basegoal}{Base\+Goal}{0} → \doxysectlink{md_addons_2mountain-goap_2api-docs_2mountaingoap_8comparativegoal}{Comparative\+Goal}{0}\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8comparativegoal_autotoc_md145}{}\doxysection{\texorpdfstring{Fields}{Fields}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8comparativegoal_autotoc_md145}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8comparativegoal_autotoc_md146}{}\doxysubsection{\texorpdfstring{{\bfseries{Name}}}{{\bfseries{Name}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8comparativegoal_autotoc_md146}
+Name of the goal.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ Name;}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8comparativegoal_autotoc_md147}{}\doxysection{\texorpdfstring{Constructors}{Constructors}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8comparativegoal_autotoc_md147}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8comparativegoal_autotoc_md148}{}\doxysubsection{\texorpdfstring{{\bfseries{Comparative\+Goal(String, Single, Dictionary\texorpdfstring{$<$}{<}String, Comparison\+Value\+Pair\texorpdfstring{$>$}{>})}}}{{\bfseries{Comparative\+Goal(String, Single, Dictionary\texorpdfstring{$<$}{<}String, Comparison\+Value\+Pair\texorpdfstring{$>$}{>})}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8comparativegoal_autotoc_md148}
+Initializes a new instance of the \doxysectlink{md_addons_2mountain-goap_2api-docs_2mountaingoap_8comparativegoal}{Comparative\+Goal}{0} class.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ ComparativeGoal(\textcolor{keywordtype}{string}\ name,\ \textcolor{keywordtype}{float}\ weight,\ Dictionary<string,\ ComparisonValuePair>\ desiredState)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8comparativegoal_autotoc_md149}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8comparativegoal_autotoc_md149}
+{\ttfamily name} \href{https://docs.microsoft.com/en-us/dotnet/api/system.string}{\texttt{String}}~\newline
+ Name of the goal.
+
+{\ttfamily weight} \href{https://docs.microsoft.com/en-us/dotnet/api/system.single}{\texttt{Single}}~\newline
+ Weight to give the goal.
+
+{\ttfamily desired\+State} \href{https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2}{\texttt{Dictionary\texorpdfstring{$<$}{<}String, Comparison\+Value\+Pair\texorpdfstring{$>$}{>}}}~\newline
+ Desired state for the comparative goal. 

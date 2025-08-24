@@ -1,0 +1,76 @@
+\doxysection{Renown.\+World.\+Biome Class Reference}
+\hypertarget{class_renown_1_1_world_1_1_biome}{}\label{class_renown_1_1_world_1_1_biome}\index{Renown.World.Biome@{Renown.World.Biome}}
+Inheritance diagram for Renown.\+World.\+Biome\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_renown_1_1_world_1_1_biome}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_renown_1_1_world_1_1_biome_a6e9e73229ff7ddd0678a56dddf3b613c}\label{class_renown_1_1_world_1_1_biome_a6e9e73229ff7ddd0678a56dddf3b613c} 
+delegate void {\bfseries Agent\+Entered\+Area\+Event\+Handler} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} agent)
+\item 
+\Hypertarget{class_renown_1_1_world_1_1_biome_a1b726c09650c1704613a0ae7b87d40f3}\label{class_renown_1_1_world_1_1_biome_a1b726c09650c1704613a0ae7b87d40f3} 
+delegate void {\bfseries Agent\+Exited\+Area\+Event\+Handler} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} agent)
+\item 
+\Hypertarget{class_renown_1_1_world_1_1_biome_a77c7e9992c346d101e98975ced9d3041}\label{class_renown_1_1_world_1_1_biome_a77c7e9992c346d101e98975ced9d3041} 
+override void {\bfseries \+\_\+\+Ready} ()
+\item 
+\Hypertarget{class_renown_1_1_world_1_1_biome_a6eb2ad6e060e5f7b589ceb1637392cb8}\label{class_renown_1_1_world_1_1_biome_a6eb2ad6e060e5f7b589ceb1637392cb8} 
+override void {\bfseries \+\_\+\+Process} (double delta)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{Renown.\+World.\+World\+Area}}}
+\begin{DoxyCompactItemize}
+\item 
+delegate void {\bfseries Player\+Entered\+Event\+Handler} ()
+\item 
+delegate void {\bfseries Player\+Exited\+Event\+Handler} ()
+\item 
+String\+Name {\bfseries Get\+Area\+Name} ()
+\item 
+\mbox{\hyperlink{class_renown_1_1_thinkers_1_1_a_i_node_cache}{AINode\+Cache}} {\bfseries Get\+Node\+Cache} ()
+\item 
+bool {\bfseries Is\+Player\+Here} ()
+\item 
+\mbox{\hyperlink{class_renown_1_1_world_1_1_biome}{Biome}} {\bfseries Get\+Biome} ()
+\item 
+virtual void {\bfseries Save} ()
+\item 
+virtual void {\bfseries Load} ()
+\item 
+override void {\bfseries \+\_\+\+Ready} ()
+\item 
+override void {\bfseries \+\_\+\+Process} (double delta)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{Renown.\+World.\+World\+Area}}}
+\begin{DoxyCompactItemize}
+\item 
+static Data\+Cache$<$ \mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{World\+Area}} $>$ {\bfseries Cache}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{Renown.\+World.\+World\+Area}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_renown_1_1_world_1_1_biome}{Biome}} {\bfseries Biome}
+\item 
+String\+Name {\bfseries Area\+Name}
+\item 
+\mbox{\hyperlink{class_renown_1_1_thinkers_1_1_a_i_node_cache}{AINode\+Cache}} {\bfseries Node\+Cache}
+\item 
+Tile\+Map\+Layer\mbox{[}$\,$\mbox{]} {\bfseries Tile\+Maps}
+\item 
+bool {\bfseries Player\+Status} = false
+\item 
+int {\bfseries Thread\+Sleep} = Constants.\+THREADSLEEP\+\_\+\+FACTION\+\_\+\+PLAYER\+\_\+\+AWAY
+\item 
+System.\+Threading.\+Thread\+Priority {\bfseries Importance} = Constants.\+THREAD\+\_\+\+IMPORTANCE\+\_\+\+PLAYER\+\_\+\+AWAY
+\item 
+Node\mbox{[}$\,$\mbox{]} {\bfseries Children}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/\+Renown/Biome.\+cs\end{DoxyCompactItemize}

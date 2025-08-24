@@ -1,0 +1,101 @@
+\doxysection{Mountain\+Goap.\+Action\+Node Class Reference}
+\hypertarget{class_mountain_goap_1_1_action_node}{}\label{class_mountain_goap_1_1_action_node}\index{MountainGoap.ActionNode@{MountainGoap.ActionNode}}
+
+
+Represents an action node in an action graph.  
+
+
+Inheritance diagram for Mountain\+Goap.\+Action\+Node\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mountain_goap_1_1_action_node}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_mountain_goap_1_1_action_node_ac033515c235e00f679221d7b321de4cf}\label{class_mountain_goap_1_1_action_node_ac033515c235e00f679221d7b321de4cf} 
+override bool {\bfseries Equals} (object? obj)
+\item 
+\Hypertarget{class_mountain_goap_1_1_action_node_a22cd5a38d86f0ff059c535cf2c0f95b4}\label{class_mountain_goap_1_1_action_node_a22cd5a38d86f0ff059c535cf2c0f95b4} 
+override int {\bfseries Get\+Hash\+Code} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_mountain_goap_1_1_action_node_a5599187113716c12da289af1f4e9c9c6}{operator==}} (\mbox{\hyperlink{class_mountain_goap_1_1_action_node}{Action\+Node}}? node1, \mbox{\hyperlink{class_mountain_goap_1_1_action_node}{Action\+Node}}? node2)
+\begin{DoxyCompactList}\small\item\em Overrides the equality operator on Action\+Nodes. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_mountain_goap_1_1_action_node_ac45d5443362939be258e92e9266e5fd2}{operator!=}} (\mbox{\hyperlink{class_mountain_goap_1_1_action_node}{Action\+Node}}? node1, \mbox{\hyperlink{class_mountain_goap_1_1_action_node}{Action\+Node}}? node2)
+\begin{DoxyCompactList}\small\item\em Overrides the inequality operator on Action\+Nodes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_mountain_goap_1_1_action_node_a8ed3a77684766010bcf413727a9693df}\label{class_mountain_goap_1_1_action_node_a8ed3a77684766010bcf413727a9693df} 
+Concurrent\+Dictionary$<$ string, object?$>$ {\bfseries State}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the state of the world for this action node. \end{DoxyCompactList}\item 
+\Hypertarget{class_mountain_goap_1_1_action_node_a189acff4cbb835e81e45138e28a524d7}\label{class_mountain_goap_1_1_action_node_a189acff4cbb835e81e45138e28a524d7} 
+Dictionary$<$ string, object?$>$ {\bfseries Parameters}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets parameters to be passed to the action. \end{DoxyCompactList}\item 
+\Hypertarget{class_mountain_goap_1_1_action_node_a959ea852458646d985acfb23bc85e2db}\label{class_mountain_goap_1_1_action_node_a959ea852458646d985acfb23bc85e2db} 
+\mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}? {\bfseries Action}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the action to be executed when the world is in the defined \doxylink{class_mountain_goap_1_1_action_node_a8ed3a77684766010bcf413727a9693df}{State}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_priority___queue_1_1_fast_priority_queue_node}{Priority\+\_\+\+Queue.\+Fast\+Priority\+Queue\+Node}}}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries Priority}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The Priority to insert this node at. Cannot be manually edited -\/ see queue.\+Enqueue() and queue.\+Update\+Priority() instead. \end{DoxyCompactList}\item 
+int {\bfseries Queue\+Index}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Represents the current position in the queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an action node in an action graph. 
+
+\label{doc-func-members}
+\Hypertarget{class_mountain_goap_1_1_action_node_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mountain_goap_1_1_action_node_ac45d5443362939be258e92e9266e5fd2}\index{MountainGoap.ActionNode@{MountainGoap.ActionNode}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!MountainGoap.ActionNode@{MountainGoap.ActionNode}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily \label{class_mountain_goap_1_1_action_node_ac45d5443362939be258e92e9266e5fd2} 
+bool Mountain\+Goap.\+Action\+Node.\+operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mountain_goap_1_1_action_node}{Action\+Node}}?}]{node1}{, }\item[{\mbox{\hyperlink{class_mountain_goap_1_1_action_node}{Action\+Node}}?}]{node2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Overrides the inequality operator on Action\+Nodes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node1} & First node to be compared.\\
+\hline
+{\em node2} & Second node to be compared.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if unequal, otherwise false.
+\end{DoxyReturn}
+\Hypertarget{class_mountain_goap_1_1_action_node_a5599187113716c12da289af1f4e9c9c6}\index{MountainGoap.ActionNode@{MountainGoap.ActionNode}!operator==@{operator==}}
+\index{operator==@{operator==}!MountainGoap.ActionNode@{MountainGoap.ActionNode}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{class_mountain_goap_1_1_action_node_a5599187113716c12da289af1f4e9c9c6} 
+bool Mountain\+Goap.\+Action\+Node.\+operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mountain_goap_1_1_action_node}{Action\+Node}}?}]{node1}{, }\item[{\mbox{\hyperlink{class_mountain_goap_1_1_action_node}{Action\+Node}}?}]{node2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Overrides the equality operator on Action\+Nodes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node1} & First node to be compared.\\
+\hline
+{\em node2} & Second node to be compared.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if equal, otherwise false.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+addons/mountain-\/goap/\+Mountain\+Goap/\+Internals/Action\+Node.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,84 @@
+\doxysection{Grenade Class Reference}
+\hypertarget{class_grenade}{}\label{class_grenade}\index{Grenade@{Grenade}}
+Inheritance diagram for Grenade\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_grenade}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_grenade_accd689c88ab6330306b0cf625a72f3b4}\label{class_grenade_accd689c88ab6330306b0cf625a72f3b4} 
+void {\bfseries On\+Blowup} ()
+\item 
+\Hypertarget{class_grenade_a283ef9e9b2330b8294038ce2b0fced3c}\label{class_grenade_a283ef9e9b2330b8294038ce2b0fced3c} 
+void {\bfseries Use} (in \mbox{\hyperlink{class_renown_1_1_entity}{Entity}} user, float throw\+Angle, float velocity=72.\+0f)
+\item 
+\Hypertarget{class_grenade_adee9b9444d6272e01a7b6a8e1473861e}\label{class_grenade_adee9b9444d6272e01a7b6a8e1473861e} 
+override void {\bfseries \+\_\+\+Ready} ()
+\item 
+\Hypertarget{class_grenade_afb70b8790e9fe6e14991c5ff2e178b53}\label{class_grenade_afb70b8790e9fe6e14991c5ff2e178b53} 
+override void {\bfseries \+\_\+\+Physics\+Process} (double delta)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_grenade_aeb443c4b4522bc67c7d933cafd0eede1}\label{class_grenade_aeb443c4b4522bc67c7d933cafd0eede1} 
+Resource {\bfseries Data}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_grenade_ac3c5076e20686cc97cbbf26208137fdf}\label{class_grenade_ac3c5076e20686cc97cbbf26208137fdf} 
+enum {\bfseries Detonation\+Type} \{ {\bfseries Trigger}
+, {\bfseries Timer}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_grenade_aed115d68287afd05b6b59a0cb8de2920}\label{class_grenade_aed115d68287afd05b6b59a0cb8de2920} 
+virtual void {\bfseries Apply\+Entity\+Damage} (in \mbox{\hyperlink{class_renown_1_1_entity}{Entity}} entity)
+\item 
+\Hypertarget{class_grenade_a74d68144a537217dc37fb98f06281839}\label{class_grenade_a74d68144a537217dc37fb98f06281839} 
+virtual void {\bfseries Calculate\+Area\+Damage} ()
+\item 
+\Hypertarget{class_grenade_aff186eb42d73a6e3985407ce22635e03}\label{class_grenade_aff186eb42d73a6e3985407ce22635e03} 
+Area2D {\bfseries Create\+Area} (float radius)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_grenade_a020e9105471bcb2cc47b7dbe5e44170e}\label{class_grenade_a020e9105471bcb2cc47b7dbe5e44170e} 
+Sprite2D {\bfseries Icon}
+\item 
+\Hypertarget{class_grenade_a507d1c37dffd464533ffb1ec65d85cc5}\label{class_grenade_a507d1c37dffd464533ffb1ec65d85cc5} 
+Detonation\+Type {\bfseries Type}
+\item 
+\Hypertarget{class_grenade_a3f81456aa2dd8239fe2154b50d606325}\label{class_grenade_a3f81456aa2dd8239fe2154b50d606325} 
+float {\bfseries Damage} = 0.\+0f
+\item 
+\Hypertarget{class_grenade_a817faf3b4c44fcdcd41a7afe264afbfb}\label{class_grenade_a817faf3b4c44fcdcd41a7afe264afbfb} 
+float {\bfseries Radius} = 0.\+0f
+\item 
+\Hypertarget{class_grenade_aed0d6508c8d9d2a8e950d894d306a74d}\label{class_grenade_aed0d6508c8d9d2a8e950d894d306a74d} 
+Curve {\bfseries Damage\+Falloff}
+\item 
+\Hypertarget{class_grenade_ad4ca1d98d12da07639f418354249d51f}\label{class_grenade_ad4ca1d98d12da07639f418354249d51f} 
+\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} {\bfseries User}
+\item 
+\Hypertarget{class_grenade_a663616fbc21ca11c3130872a23065074}\label{class_grenade_a663616fbc21ca11c3130872a23065074} 
+float {\bfseries Move\+Velocity} = 0.\+0f
+\item 
+\Hypertarget{class_grenade_af0d05cc42636ac042913affb9d984d81}\label{class_grenade_af0d05cc42636ac042913affb9d984d81} 
+float {\bfseries Move\+Angle} = 0.\+0f
+\item 
+\Hypertarget{class_grenade_aa0192e470b352d5deae3987e641f5b51}\label{class_grenade_aa0192e470b352d5deae3987e641f5b51} 
+Area2D {\bfseries Explosion\+Area}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/\+Items/Grenade.\+cs\end{DoxyCompactItemize}

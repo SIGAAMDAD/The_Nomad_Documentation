@@ -1,0 +1,61 @@
+\chapter{Sensor }
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8sensor}{}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8sensor}\index{Sensor@{Sensor}}
+\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8sensor_autotoc_md244}%
+\Hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8sensor_autotoc_md244}%
+
+
+Namespace\+: \doxylink{namespace_mountain_goap}{Mountain\+Goap}
+
+Sensor for getting information about world state.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keyword}{class\ }Sensor}
+
+\end{DoxyCode}
+
+
+Inheritance \href{https://docs.microsoft.com/en-us/dotnet/api/system.object}{\texttt{Object}} → \doxysectlink{md_addons_2mountain-goap_2api-docs_2mountaingoap_8sensor}{Sensor}{0}\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8sensor_autotoc_md245}{}\doxysection{\texorpdfstring{Fields}{Fields}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8sensor_autotoc_md245}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8sensor_autotoc_md246}{}\doxysubsection{\texorpdfstring{{\bfseries{Name}}}{{\bfseries{Name}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8sensor_autotoc_md246}
+Name of the sensor.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ Name;}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8sensor_autotoc_md247}{}\doxysection{\texorpdfstring{Constructors}{Constructors}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8sensor_autotoc_md247}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8sensor_autotoc_md248}{}\doxysubsection{\texorpdfstring{{\bfseries{Sensor(\+Sensor\+Run\+Callback, String)}}}{{\bfseries{Sensor(\+Sensor\+Run\+Callback, String)}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8sensor_autotoc_md248}
+Initializes a new instance of the \doxysectlink{md_addons_2mountain-goap_2api-docs_2mountaingoap_8sensor}{Sensor}{0} class.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ Sensor(SensorRunCallback\ runCallback,\ \textcolor{keywordtype}{string}\ name)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8sensor_autotoc_md249}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8sensor_autotoc_md249}
+{\ttfamily run\+Callback} Sensor\+Run\+Callback~\newline
+ Callback to be executed when the sensor runs.
+
+{\ttfamily name} \href{https://docs.microsoft.com/en-us/dotnet/api/system.string}{\texttt{String}}~\newline
+ Name of the sensor.\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8sensor_autotoc_md250}{}\doxysection{\texorpdfstring{Methods}{Methods}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8sensor_autotoc_md250}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8sensor_autotoc_md251}{}\doxysubsection{\texorpdfstring{{\bfseries{Run(\+Agent)}}}{{\bfseries{Run(\+Agent)}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8sensor_autotoc_md251}
+Runs the sensor during a game loop.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ Run(Agent\ agent)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8sensor_autotoc_md252}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8sensor_autotoc_md252}
+{\ttfamily agent} \doxysectlink{md_addons_2mountain-goap_2api-docs_2mountaingoap_8agent}{Agent}{0}~\newline
+ Agent for which the sensor is being run.\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8sensor_autotoc_md253}{}\doxysection{\texorpdfstring{Events}{Events}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8sensor_autotoc_md253}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8sensor_autotoc_md254}{}\doxysubsection{\texorpdfstring{{\bfseries{On\+Sensor\+Run}}}{{\bfseries{On\+Sensor\+Run}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8sensor_autotoc_md254}
+Event that triggers when a sensor runs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{event}\ \mbox{\hyperlink{namespace_mountain_goap_a302c057c11c159d38b453215af9051c8}{SensorRunEvent}}\ OnSensorRun;}
+
+\end{DoxyCode}
+ 

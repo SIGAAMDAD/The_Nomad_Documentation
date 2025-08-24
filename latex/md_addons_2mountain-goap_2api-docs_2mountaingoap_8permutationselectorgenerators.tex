@@ -1,0 +1,62 @@
+\chapter{Permutation\+Selector\+Generators }
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8permutationselectorgenerators}{}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8permutationselectorgenerators}\index{PermutationSelectorGenerators@{PermutationSelectorGenerators}}
+\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8permutationselectorgenerators_autotoc_md185}%
+\Hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8permutationselectorgenerators_autotoc_md185}%
+
+
+Namespace\+: \doxylink{namespace_mountain_goap}{Mountain\+Goap}
+
+Generators for default permutation selectors for convenience.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{class\ }PermutationSelectorGenerators}
+
+\end{DoxyCode}
+
+
+Inheritance \href{https://docs.microsoft.com/en-us/dotnet/api/system.object}{\texttt{Object}} → \doxysectlink{md_addons_2mountain-goap_2api-docs_2mountaingoap_8permutationselectorgenerators}{Permutation\+Selector\+Generators}{0}\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8permutationselectorgenerators_autotoc_md191}{}\doxysection{\texorpdfstring{Methods}{Methods}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8permutationselectorgenerators_autotoc_md191}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8permutationselectorgenerators_autotoc_md192}{}\doxysubsection{\texorpdfstring{{\bfseries{Select\+From\+Collection\texorpdfstring{$<$}{<}T\texorpdfstring{$>$}{>}(IEnumerable\texorpdfstring{$<$}{<}T\texorpdfstring{$>$}{>})}}}{{\bfseries{Select\+From\+Collection\texorpdfstring{$<$}{<}T\texorpdfstring{$>$}{>}(IEnumerable\texorpdfstring{$<$}{<}T\texorpdfstring{$>$}{>})}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8permutationselectorgenerators_autotoc_md192}
+Generates a permutation selector that returns all elements of an enumerable.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{namespace_mountain_goap_a99f09523677f2a45cd6396c6ae3b6886}{PermutationSelectorCallback}}\ SelectFromCollection<T>(IEnumerable<T>\ values)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8permutationselectorgenerators_autotoc_md193}{}\doxysubsubsection{\texorpdfstring{Type Parameters}{Type Parameters}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8permutationselectorgenerators_autotoc_md193}
+{\ttfamily T}~\newline
+ Type of the .\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8permutationselectorgenerators_autotoc_md194}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8permutationselectorgenerators_autotoc_md194}
+{\ttfamily values} IEnumerable\texorpdfstring{$<$}{<}T\texorpdfstring{$>$}{>}~\newline
+ Set of values to be included in permutations.\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8permutationselectorgenerators_autotoc_md195}{}\doxysubsubsection{\texorpdfstring{Returns}{Returns}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8permutationselectorgenerators_autotoc_md195}
+Permutation\+Selector\+Callback~\newline
+ A lambda function that returns all elements from the collection passed in.\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8permutationselectorgenerators_autotoc_md196}{}\doxysubsection{\texorpdfstring{{\bfseries{Select\+From\+Collection\+In\+State\texorpdfstring{$<$}{<}T\texorpdfstring{$>$}{>}(String)}}}{{\bfseries{Select\+From\+Collection\+In\+State\texorpdfstring{$<$}{<}T\texorpdfstring{$>$}{>}(String)}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8permutationselectorgenerators_autotoc_md196}
+Generates a permutation selector that returns all elements of an enumerable within the agent state.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{namespace_mountain_goap_a99f09523677f2a45cd6396c6ae3b6886}{PermutationSelectorCallback}}\ SelectFromCollectionInState<T>(\textcolor{keywordtype}{string}\ key)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8permutationselectorgenerators_autotoc_md197}{}\doxysubsubsection{\texorpdfstring{Type Parameters}{Type Parameters}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8permutationselectorgenerators_autotoc_md197}
+{\ttfamily T}~\newline
+ Type of the .\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8permutationselectorgenerators_autotoc_md198}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8permutationselectorgenerators_autotoc_md198}
+{\ttfamily key} \href{https://docs.microsoft.com/en-us/dotnet/api/system.string}{\texttt{String}}~\newline
+ Key of the state to check for the collection.\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8permutationselectorgenerators_autotoc_md199}{}\doxysubsubsection{\texorpdfstring{Returns}{Returns}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8permutationselectorgenerators_autotoc_md199}
+Permutation\+Selector\+Callback~\newline
+ A lambda function that returns all elements from the collection in the state.\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8permutationselectorgenerators_autotoc_md200}{}\doxysubsection{\texorpdfstring{{\bfseries{Select\+From\+Integer\+Range(\+Int32, Int32)}}}{{\bfseries{Select\+From\+Integer\+Range(\+Int32, Int32)}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8permutationselectorgenerators_autotoc_md200}
+Generates a permutation selector that returns all integer elements in a range.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{namespace_mountain_goap_a99f09523677f2a45cd6396c6ae3b6886}{PermutationSelectorCallback}}\ SelectFromIntegerRange(\textcolor{keywordtype}{int}\ lowerBound,\ \textcolor{keywordtype}{int}\ upperBound)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8permutationselectorgenerators_autotoc_md201}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8permutationselectorgenerators_autotoc_md201}
+{\ttfamily lower\+Bound} \href{https://docs.microsoft.com/en-us/dotnet/api/system.int32}{\texttt{Int32}}~\newline
+ Lower bound from which to start.
+
+{\ttfamily upper\+Bound} \href{https://docs.microsoft.com/en-us/dotnet/api/system.int32}{\texttt{Int32}}~\newline
+ Upper bound, non-\/inclusive.\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8permutationselectorgenerators_autotoc_md202}{}\doxysubsubsection{\texorpdfstring{Returns}{Returns}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8permutationselectorgenerators_autotoc_md202}
+Permutation\+Selector\+Callback~\newline
+ A lambda function that returns all elements in the range given. 

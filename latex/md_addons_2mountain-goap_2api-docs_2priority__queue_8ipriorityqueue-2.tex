@@ -1,0 +1,111 @@
+\chapter{IPriority\+Queue\texorpdfstring{$<$}{<}TItem, TPriority\texorpdfstring{$>$}{>} }
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2}{}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2}\index{IPriorityQueue<TItem, TPriority>@{IPriorityQueue<TItem, TPriority>}}
+\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md274}%
+\Hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md274}%
+
+
+Namespace\+: \doxylink{namespace_priority___queue}{Priority\+\_\+\+Queue}
+
+The IPriority\+Queue interface. This is mainly here for purists, and in case I decide to add more implementations later. For speed purposes, it is actually recommended that you {\itshape don\textquotesingle{}t} access the priority queue through this interface, since the JIT can (theoretically?) optimize method calls from concrete-\/types slightly better.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keyword}{interface\ }IPriorityQueue<TItem,\ TPriority>\ :\ ,\ System.Collections.IEnumerable}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md275}{}\doxysubsubsection{\texorpdfstring{Type Parameters}{Type Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md275}
+{\ttfamily TItem}~\newline
+
+
+{\ttfamily TPriority}~\newline
+
+
+Implements IEnumerable\texorpdfstring{$<$}{<}TItem\texorpdfstring{$>$}{>}, \href{https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerable}{\texttt{IEnumerable}}\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md276}{}\doxysection{\texorpdfstring{Properties}{Properties}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md276}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md277}{}\doxysubsection{\texorpdfstring{{\bfseries{First}}}{{\bfseries{First}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md277}
+Returns the head of the queue, without removing it (use Dequeue() for that).
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keyword}{abstract}\ TItem\ First\ \{\ \textcolor{keyword}{get};\ \}}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md278}{}\doxysubsubsection{\texorpdfstring{Property Value}{Property Value}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md278}
+TItem~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md279}{}\doxysubsection{\texorpdfstring{{\bfseries{Count}}}{{\bfseries{Count}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md279}
+Returns the number of nodes in the queue.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keyword}{abstract}\ \textcolor{keywordtype}{int}\ Count\ \{\ \textcolor{keyword}{get};\ \}}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md280}{}\doxysubsubsection{\texorpdfstring{Property Value}{Property Value}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md280}
+\href{https://docs.microsoft.com/en-us/dotnet/api/system.int32}{\texttt{Int32}}~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md281}{}\doxysection{\texorpdfstring{Methods}{Methods}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md281}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md282}{}\doxysubsection{\texorpdfstring{{\bfseries{Enqueue(\+TItem, TPriority)}}}{{\bfseries{Enqueue(\+TItem, TPriority)}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md282}
+Enqueue a node to the priority queue. Lower values are placed in front. Ties are broken by first-\/in-\/first-\/out. See implementation for how duplicates are handled.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void}\ Enqueue(TItem\ node,\ TPriority\ priority)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md283}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md283}
+{\ttfamily node} TItem~\newline
+
+
+{\ttfamily priority} TPriority~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md284}{}\doxysubsection{\texorpdfstring{{\bfseries{Dequeue()}}}{{\bfseries{Dequeue()}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md284}
+Removes the head of the queue (node with minimum priority; ties are broken by order of insertion), and returns it.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{TItem\ Dequeue()}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md285}{}\doxysubsubsection{\texorpdfstring{Returns}{Returns}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md285}
+TItem~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md286}{}\doxysubsection{\texorpdfstring{{\bfseries{Clear()}}}{{\bfseries{Clear()}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md286}
+Removes every node from the queue.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void}\ Clear()}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md287}{}\doxysubsection{\texorpdfstring{{\bfseries{Contains(\+TItem)}}}{{\bfseries{Contains(\+TItem)}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md287}
+Returns whether the given node is in the queue.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{bool}\ Contains(TItem\ node)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md288}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md288}
+{\ttfamily node} TItem~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md289}{}\doxysubsubsection{\texorpdfstring{Returns}{Returns}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md289}
+\href{https://docs.microsoft.com/en-us/dotnet/api/system.boolean}{\texttt{Boolean}}~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md290}{}\doxysubsection{\texorpdfstring{{\bfseries{Remove(\+TItem)}}}{{\bfseries{Remove(\+TItem)}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md290}
+Removes a node from the queue. The node does not need to be the head of the queue.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void}\ Remove(TItem\ node)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md291}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md291}
+{\ttfamily node} TItem~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md292}{}\doxysubsection{\texorpdfstring{{\bfseries{Update\+Priority(\+TItem, TPriority)}}}{{\bfseries{Update\+Priority(\+TItem, TPriority)}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md292}
+Call this method to change the priority of a node.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void}\ UpdatePriority(TItem\ node,\ TPriority\ priority)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md293}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8ipriorityqueue-2_autotoc_md293}
+{\ttfamily node} TItem~\newline
+
+
+{\ttfamily priority} TPriority~\newline
+ 

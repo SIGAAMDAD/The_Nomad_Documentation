@@ -1,0 +1,171 @@
+\doxysection{Renown.\+Entity Class Reference}
+\hypertarget{class_renown_1_1_entity}{}\label{class_renown_1_1_entity}\index{Renown.Entity@{Renown.Entity}}
+Inheritance diagram for Renown.\+Entity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.218106cm]{class_renown_1_1_entity}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_renown_1_1_entity_aa113d8f4216a093a2a8147a5608a7e3b}\label{class_renown_1_1_entity_aa113d8f4216a093a2a8147a5608a7e3b} 
+delegate void {\bfseries Damaged\+Event\+Handler} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} source, \mbox{\hyperlink{class_renown_1_1_entity}{Entity}} target, float n\+Amount)
+\item 
+\Hypertarget{class_renown_1_1_entity_aced0f12825d86cade674286c70c0c0ec}\label{class_renown_1_1_entity_aced0f12825d86cade674286c70c0c0ec} 
+delegate void {\bfseries Die\+Event\+Handler} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} source, \mbox{\hyperlink{class_renown_1_1_entity}{Entity}} target)
+\item 
+\Hypertarget{class_renown_1_1_entity_ab45dd49e657c49d89176302df2a784ce}\label{class_renown_1_1_entity_ab45dd49e657c49d89176302df2a784ce} 
+virtual void {\bfseries Set\+Location} (in \mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{World\+Area}} location)
+\item 
+virtual void \mbox{\hyperlink{class_renown_1_1_entity_af2a23f06f18c067b308ffc46e3b0923d}{Save}} ()
+\item 
+virtual void \mbox{\hyperlink{class_renown_1_1_entity_a92d640b8af31105f1bc465a88d3e6024}{Load}} ()
+\item 
+\Hypertarget{class_renown_1_1_entity_a8496242a5e215841e7a4109ad96a185a}\label{class_renown_1_1_entity_a8496242a5e215841e7a4109ad96a185a} 
+virtual void {\bfseries On\+Challenged} ()
+\item 
+\Hypertarget{class_renown_1_1_entity_acf21b3468c9e61665935b1666c3b741c}\label{class_renown_1_1_entity_acf21b3468c9e61665935b1666c3b741c} 
+virtual void {\bfseries On\+Intimidated} ()
+\item 
+\Hypertarget{class_renown_1_1_entity_a54c523219fe05bfdbc4948443e1c1e45}\label{class_renown_1_1_entity_a54c523219fe05bfdbc4948443e1c1e45} 
+virtual void {\bfseries Clear\+Status\+Effects} ()
+\item 
+\Hypertarget{class_renown_1_1_entity_a1daa2bade64b58ff25e8c19dd8bdbb96}\label{class_renown_1_1_entity_a1daa2bade64b58ff25e8c19dd8bdbb96} 
+virtual void {\bfseries Add\+Status\+Effect} (string effect\+Name)
+\item 
+\Hypertarget{class_renown_1_1_entity_ada75e5b997442013a694823c3d8d3947}\label{class_renown_1_1_entity_ada75e5b997442013a694823c3d8d3947} 
+virtual void {\bfseries Pickup\+Weapon} (\mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}} weapon)
+\item 
+\Hypertarget{class_renown_1_1_entity_aa85464d8235a9feef5e5604eb921732e}\label{class_renown_1_1_entity_aa85464d8235a9feef5e5604eb921732e} 
+virtual void {\bfseries Play\+Sound} (Audio\+Stream\+Player2D channel, Audio\+Stream stream)
+\item 
+\Hypertarget{class_renown_1_1_entity_a7239fa5765e59ef246cb68793885f2e2}\label{class_renown_1_1_entity_a7239fa5765e59ef246cb68793885f2e2} 
+virtual void {\bfseries Damage} (in \mbox{\hyperlink{class_renown_1_1_entity}{Entity}} source, float n\+Amount)
+\item 
+\Hypertarget{class_renown_1_1_entity_a04631db2053421d8b012b1a9b39bce4f}\label{class_renown_1_1_entity_a04631db2053421d8b012b1a9b39bce4f} 
+virtual bool {\bfseries Has\+Relation} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other)
+\item 
+virtual float \mbox{\hyperlink{class_renown_1_1_entity_a8017e0770fbc5744a738dec23b1714c2}{Get\+Relation\+Score}} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other)
+\item 
+virtual Relation\+Status \mbox{\hyperlink{class_renown_1_1_entity_ad90010e3bde77e879d9c5a2007b86d17}{Get\+Relation\+Status}} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other)
+\item 
+virtual void \mbox{\hyperlink{class_renown_1_1_entity_a4c0e95fc845748ed38c2d47f4e361874}{Determine\+Relation\+Status}} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other)
+\item 
+Node\+Path \mbox{\hyperlink{class_renown_1_1_entity_a6b51f1fffcfb9b72b562e1bcd8c3336e}{Get\+Hash}} ()
+\item 
+virtual String\+Name \mbox{\hyperlink{class_renown_1_1_entity_a506656c6ec5f7060580f0f501c996ad4}{Get\+Object\+Name}} ()
+\item 
+\Hypertarget{class_renown_1_1_entity_a55c4754c4d43fa29780a5a9482cccda4}\label{class_renown_1_1_entity_a55c4754c4d43fa29780a5a9482cccda4} 
+override void {\bfseries \+\_\+\+Ready} ()
+\item 
+\Hypertarget{class_renown_1_1_entity_a742117801ef70f3149ab6b2c7c28c460}\label{class_renown_1_1_entity_a742117801ef70f3149ab6b2c7c28c460} 
+virtual void {\bfseries Update} (double delta)
+\item 
+\Hypertarget{class_renown_1_1_entity_addc1ae3379000bf43644a940891c23dc}\label{class_renown_1_1_entity_addc1ae3379000bf43644a940891c23dc} 
+virtual void {\bfseries Physics\+Update} (double delta)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_renown_1_1_entity_a9c4cb81e4c76e69c7925dd2b63e7b2e3}\label{class_renown_1_1_entity_a9c4cb81e4c76e69c7925dd2b63e7b2e3} 
+Dictionary$<$ string, \mbox{\hyperlink{class_status_effect}{Status\+Effect}} $>$ {\bfseries Status\+Effects} = new Dictionary$<$string, \mbox{\hyperlink{class_status_effect}{Status\+Effect}}$>$()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_renown_1_1_entity_aa375d29ddd41ff88dcdf38878758eeaa}\label{class_renown_1_1_entity_aa375d29ddd41ff88dcdf38878758eeaa} 
+float {\bfseries Health} = 0.\+0f\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_renown_1_1_entity_ab23745b2bb2f495d5386845cf3d703e4}\label{class_renown_1_1_entity_ab23745b2bb2f495d5386845cf3d703e4} 
+int {\bfseries Renown\+Score} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_renown_1_1_entity_a12ad7bb19537d24267903e4715cc3ac0}\label{class_renown_1_1_entity_a12ad7bb19537d24267903e4715cc3ac0} 
+\mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{World\+Area}}? {\bfseries Location} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_renown_1_1_entity_a63c984dd62a84973e7d2dca82d0cd0a2}\label{class_renown_1_1_entity_a63c984dd62a84973e7d2dca82d0cd0a2} 
+\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}}? {\bfseries Faction} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_renown_1_1_entity_a204eb4f1f64bfbddb6c0ed84e32dee58}\label{class_renown_1_1_entity_a204eb4f1f64bfbddb6c0ed84e32dee58} 
+int {\bfseries Faction\+Importance} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_renown_1_1_entity_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_renown_1_1_entity_a4c0e95fc845748ed38c2d47f4e361874}\index{Renown.Entity@{Renown.Entity}!DetermineRelationStatus@{DetermineRelationStatus}}
+\index{DetermineRelationStatus@{DetermineRelationStatus}!Renown.Entity@{Renown.Entity}}
+\doxysubsubsection{\texorpdfstring{DetermineRelationStatus()}{DetermineRelationStatus()}}
+{\footnotesize\ttfamily \label{class_renown_1_1_entity_a4c0e95fc845748ed38c2d47f4e361874} 
+virtual void Renown.\+Entity.\+Determine\+Relation\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_renown_1_1_object}{Object}}}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{interface_renown_1_1_object}{Renown.\+Object}}.
+
+\Hypertarget{class_renown_1_1_entity_a6b51f1fffcfb9b72b562e1bcd8c3336e}\index{Renown.Entity@{Renown.Entity}!GetHash@{GetHash}}
+\index{GetHash@{GetHash}!Renown.Entity@{Renown.Entity}}
+\doxysubsubsection{\texorpdfstring{GetHash()}{GetHash()}}
+{\footnotesize\ttfamily \label{class_renown_1_1_entity_a6b51f1fffcfb9b72b562e1bcd8c3336e} 
+Node\+Path Renown.\+Entity.\+Get\+Hash (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_renown_1_1_object}{Renown.\+Object}}.
+
+\Hypertarget{class_renown_1_1_entity_a506656c6ec5f7060580f0f501c996ad4}\index{Renown.Entity@{Renown.Entity}!GetObjectName@{GetObjectName}}
+\index{GetObjectName@{GetObjectName}!Renown.Entity@{Renown.Entity}}
+\doxysubsubsection{\texorpdfstring{GetObjectName()}{GetObjectName()}}
+{\footnotesize\ttfamily \label{class_renown_1_1_entity_a506656c6ec5f7060580f0f501c996ad4} 
+virtual String\+Name Renown.\+Entity.\+Get\+Object\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{interface_renown_1_1_object}{Renown.\+Object}}.
+
+\Hypertarget{class_renown_1_1_entity_a8017e0770fbc5744a738dec23b1714c2}\index{Renown.Entity@{Renown.Entity}!GetRelationScore@{GetRelationScore}}
+\index{GetRelationScore@{GetRelationScore}!Renown.Entity@{Renown.Entity}}
+\doxysubsubsection{\texorpdfstring{GetRelationScore()}{GetRelationScore()}}
+{\footnotesize\ttfamily \label{class_renown_1_1_entity_a8017e0770fbc5744a738dec23b1714c2} 
+virtual float Renown.\+Entity.\+Get\+Relation\+Score (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_renown_1_1_object}{Object}}}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{interface_renown_1_1_object}{Renown.\+Object}}.
+
+\Hypertarget{class_renown_1_1_entity_ad90010e3bde77e879d9c5a2007b86d17}\index{Renown.Entity@{Renown.Entity}!GetRelationStatus@{GetRelationStatus}}
+\index{GetRelationStatus@{GetRelationStatus}!Renown.Entity@{Renown.Entity}}
+\doxysubsubsection{\texorpdfstring{GetRelationStatus()}{GetRelationStatus()}}
+{\footnotesize\ttfamily \label{class_renown_1_1_entity_ad90010e3bde77e879d9c5a2007b86d17} 
+virtual Relation\+Status Renown.\+Entity.\+Get\+Relation\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_renown_1_1_object}{Object}}}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{interface_renown_1_1_object}{Renown.\+Object}}.
+
+\Hypertarget{class_renown_1_1_entity_a92d640b8af31105f1bc465a88d3e6024}\index{Renown.Entity@{Renown.Entity}!Load@{Load}}
+\index{Load@{Load}!Renown.Entity@{Renown.Entity}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily \label{class_renown_1_1_entity_a92d640b8af31105f1bc465a88d3e6024} 
+virtual void Renown.\+Entity.\+Load (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{interface_renown_1_1_object}{Renown.\+Object}}.
+
+\Hypertarget{class_renown_1_1_entity_af2a23f06f18c067b308ffc46e3b0923d}\index{Renown.Entity@{Renown.Entity}!Save@{Save}}
+\index{Save@{Save}!Renown.Entity@{Renown.Entity}}
+\doxysubsubsection{\texorpdfstring{Save()}{Save()}}
+{\footnotesize\ttfamily \label{class_renown_1_1_entity_af2a23f06f18c067b308ffc46e3b0923d} 
+virtual void Renown.\+Entity.\+Save (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{interface_renown_1_1_object}{Renown.\+Object}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/\+Renown/Entity.\+cs\end{DoxyCompactItemize}

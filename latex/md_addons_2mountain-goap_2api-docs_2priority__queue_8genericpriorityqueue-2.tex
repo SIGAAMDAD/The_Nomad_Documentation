@@ -1,0 +1,197 @@
+\chapter{Generic\+Priority\+Queue\texorpdfstring{$<$}{<}TItem, TPriority\texorpdfstring{$>$}{>} }
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2}{}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2}\index{GenericPriorityQueue<TItem, TPriority>@{GenericPriorityQueue<TItem, TPriority>}}
+\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md294}%
+\Hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md294}%
+
+
+Namespace\+: \doxylink{namespace_priority___queue}{Priority\+\_\+\+Queue}
+
+A copy of Stable\+Priority\+Queue which also has generic priority-\/type
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keyword}{sealed}\ \textcolor{keyword}{class\ }GenericPriorityQueue<TItem,\ TPriority>\ :\ IFixedSizePriorityQueue\`{}2,\ IPriorityQueue\`{}2,\ ,\ System.Collections.IEnumerable}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md295}{}\doxysubsubsection{\texorpdfstring{Type Parameters}{Type Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md295}
+{\ttfamily TItem}~\newline
+ The values in the queue. Must extend the Generic\+Priority\+Queue\+Node class
+
+{\ttfamily TPriority}~\newline
+ The priority-\/type. Must extend IComparable$<$\+TPriority$>$
+
+Inheritance \href{https://docs.microsoft.com/en-us/dotnet/api/system.object}{\texttt{Object}} → \doxysectlink{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2}{Generic\+Priority\+Queue\texorpdfstring{$<$}{<}TItem, TPriority\texorpdfstring{$>$}{>}}{0}~\newline
+ Implements IFixed\+Size\+Priority\+Queue\texorpdfstring{$<$}{<}TItem, TPriority\texorpdfstring{$>$}{>}, IPriority\+Queue\texorpdfstring{$<$}{<}TItem, TPriority\texorpdfstring{$>$}{>}, IEnumerable\texorpdfstring{$<$}{<}TItem\texorpdfstring{$>$}{>}, \href{https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerable}{\texttt{IEnumerable}}\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md296}{}\doxysection{\texorpdfstring{Properties}{Properties}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md296}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md297}{}\doxysubsection{\texorpdfstring{{\bfseries{Count}}}{{\bfseries{Count}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md297}
+Returns the number of nodes in the queue. O(1)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ Count\ \{\ \textcolor{keyword}{get};\ \}}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md298}{}\doxysubsubsection{\texorpdfstring{Property Value}{Property Value}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md298}
+\href{https://docs.microsoft.com/en-us/dotnet/api/system.int32}{\texttt{Int32}}~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md299}{}\doxysubsection{\texorpdfstring{{\bfseries{Max\+Size}}}{{\bfseries{Max\+Size}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md299}
+Returns the maximum number of items that can be enqueued at once in this queue. Once you hit this number (ie. once Count == Max\+Size), attempting to enqueue another item will cause undefined behavior. O(1)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ MaxSize\ \{\ \textcolor{keyword}{get};\ \}}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md300}{}\doxysubsubsection{\texorpdfstring{Property Value}{Property Value}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md300}
+\href{https://docs.microsoft.com/en-us/dotnet/api/system.int32}{\texttt{Int32}}~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md301}{}\doxysubsection{\texorpdfstring{{\bfseries{First}}}{{\bfseries{First}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md301}
+Returns the head of the queue, without removing it (use Dequeue() for that). If the queue is empty, behavior is undefined. O(1)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ TItem\ First\ \{\ \textcolor{keyword}{get};\ \}}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md302}{}\doxysubsubsection{\texorpdfstring{Property Value}{Property Value}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md302}
+TItem~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md303}{}\doxysection{\texorpdfstring{Constructors}{Constructors}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md303}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md304}{}\doxysubsection{\texorpdfstring{{\bfseries{Generic\+Priority\+Queue(\+Int32)}}}{{\bfseries{Generic\+Priority\+Queue(\+Int32)}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md304}
+Instantiate a new Priority Queue
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ GenericPriorityQueue(\textcolor{keywordtype}{int}\ maxNodes)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md305}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md305}
+{\ttfamily max\+Nodes} \href{https://docs.microsoft.com/en-us/dotnet/api/system.int32}{\texttt{Int32}}~\newline
+ The max nodes ever allowed to be enqueued (going over this will cause undefined behavior)\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md306}{}\doxysubsection{\texorpdfstring{{\bfseries{Generic\+Priority\+Queue(Int32, IComparer\texorpdfstring{$<$}{<}TPriority\texorpdfstring{$>$}{>})}}}{{\bfseries{Generic\+Priority\+Queue(Int32, IComparer\texorpdfstring{$<$}{<}TPriority\texorpdfstring{$>$}{>})}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md306}
+Instantiate a new Priority Queue
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ GenericPriorityQueue(\textcolor{keywordtype}{int}\ maxNodes,\ IComparer<TPriority>\ comparer)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md307}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md307}
+{\ttfamily max\+Nodes} \href{https://docs.microsoft.com/en-us/dotnet/api/system.int32}{\texttt{Int32}}~\newline
+ The max nodes ever allowed to be enqueued (going over this will cause undefined behavior)
+
+{\ttfamily comparer} IComparer\texorpdfstring{$<$}{<}TPriority\texorpdfstring{$>$}{>}~\newline
+ The comparer used to compare TPriority values.\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md308}{}\doxysubsection{\texorpdfstring{{\bfseries{Generic\+Priority\+Queue(Int32, Comparison\texorpdfstring{$<$}{<}TPriority\texorpdfstring{$>$}{>})}}}{{\bfseries{Generic\+Priority\+Queue(Int32, Comparison\texorpdfstring{$<$}{<}TPriority\texorpdfstring{$>$}{>})}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md308}
+Instantiate a new Priority Queue
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ GenericPriorityQueue(\textcolor{keywordtype}{int}\ maxNodes,\ Comparison<TPriority>\ comparer)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md309}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md309}
+{\ttfamily max\+Nodes} \href{https://docs.microsoft.com/en-us/dotnet/api/system.int32}{\texttt{Int32}}~\newline
+ The max nodes ever allowed to be enqueued (going over this will cause undefined behavior)
+
+{\ttfamily comparer} Comparison\texorpdfstring{$<$}{<}TPriority\texorpdfstring{$>$}{>}~\newline
+ The comparison function to use to compare TPriority values\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md310}{}\doxysection{\texorpdfstring{Methods}{Methods}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md310}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md311}{}\doxysubsection{\texorpdfstring{{\bfseries{Clear()}}}{{\bfseries{Clear()}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md311}
+Removes every node from the queue. O(n) (So, don\textquotesingle{}t do this often!)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ Clear()}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md312}{}\doxysubsection{\texorpdfstring{{\bfseries{Contains(\+TItem)}}}{{\bfseries{Contains(\+TItem)}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md312}
+Returns (in O(1)!) whether the given node is in the queue. If node is or has been previously added to another queue, the result is undefined unless old\+Queue.\+Reset\+Node(node) has been called O(1)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ Contains(TItem\ node)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md313}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md313}
+{\ttfamily node} TItem~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md314}{}\doxysubsubsection{\texorpdfstring{Returns}{Returns}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md314}
+\href{https://docs.microsoft.com/en-us/dotnet/api/system.boolean}{\texttt{Boolean}}~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md315}{}\doxysubsection{\texorpdfstring{{\bfseries{Enqueue(\+TItem, TPriority)}}}{{\bfseries{Enqueue(\+TItem, TPriority)}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md315}
+Enqueue a node to the priority queue. Lower values are placed in front. Ties are broken by first-\/in-\/first-\/out. If the queue is full, the result is undefined. If the node is already enqueued, the result is undefined. If node is or has been previously added to another queue, the result is undefined unless old\+Queue.\+Reset\+Node(node) has been called O(log n)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ Enqueue(TItem\ node,\ TPriority\ priority)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md316}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md316}
+{\ttfamily node} TItem~\newline
+
+
+{\ttfamily priority} TPriority~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md317}{}\doxysubsection{\texorpdfstring{{\bfseries{Dequeue()}}}{{\bfseries{Dequeue()}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md317}
+Removes the head of the queue (node with minimum priority; ties are broken by order of insertion), and returns it. If queue is empty, result is undefined O(log n)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ TItem\ Dequeue()}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md318}{}\doxysubsubsection{\texorpdfstring{Returns}{Returns}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md318}
+TItem~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md319}{}\doxysubsection{\texorpdfstring{{\bfseries{Resize(\+Int32)}}}{{\bfseries{Resize(\+Int32)}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md319}
+Resize the queue so it can accept more nodes. All currently enqueued nodes are remain. Attempting to decrease the queue size to a size too small to hold the existing nodes results in undefined behavior O(n)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ Resize(\textcolor{keywordtype}{int}\ maxNodes)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md320}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md320}
+{\ttfamily max\+Nodes} \href{https://docs.microsoft.com/en-us/dotnet/api/system.int32}{\texttt{Int32}}~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md321}{}\doxysubsection{\texorpdfstring{{\bfseries{Update\+Priority(\+TItem, TPriority)}}}{{\bfseries{Update\+Priority(\+TItem, TPriority)}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md321}
+This method must be called on a node every time its priority changes while it is in the queue. Forgetting to call this method will result in a corrupted queue! Calling this method on a node not in the queue results in undefined behavior O(log n)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ UpdatePriority(TItem\ node,\ TPriority\ priority)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md322}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md322}
+{\ttfamily node} TItem~\newline
+
+
+{\ttfamily priority} TPriority~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md323}{}\doxysubsection{\texorpdfstring{{\bfseries{Remove(\+TItem)}}}{{\bfseries{Remove(\+TItem)}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md323}
+Removes a node from the queue. The node does not need to be the head of the queue. If the node is not in the queue, the result is undefined. If unsure, check Contains() first O(log n)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ Remove(TItem\ node)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md324}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md324}
+{\ttfamily node} TItem~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md325}{}\doxysubsection{\texorpdfstring{{\bfseries{Reset\+Node(\+TItem)}}}{{\bfseries{Reset\+Node(\+TItem)}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md325}
+By default, nodes that have been previously added to one queue cannot be added to another queue. If you need to do this, please call original\+Queue.\+Reset\+Node(node) before attempting to add it in the new queue
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ ResetNode(TItem\ node)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md326}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md326}
+{\ttfamily node} TItem~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md327}{}\doxysubsection{\texorpdfstring{{\bfseries{Get\+Enumerator()}}}{{\bfseries{Get\+Enumerator()}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md327}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ IEnumerator<TItem>\ GetEnumerator()}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md328}{}\doxysubsubsection{\texorpdfstring{Returns}{Returns}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md328}
+IEnumerator\texorpdfstring{$<$}{<}TItem\texorpdfstring{$>$}{>}~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md329}{}\doxysubsection{\texorpdfstring{{\bfseries{Is\+Valid\+Queue()}}}{{\bfseries{Is\+Valid\+Queue()}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md329}
+Should not be called in production code. Checks to make sure the queue is still in a valid state. Used for testing/debugging the queue.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ IsValidQueue()}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md330}{}\doxysubsubsection{\texorpdfstring{Returns}{Returns}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8genericpriorityqueue-2_autotoc_md330}
+\href{https://docs.microsoft.com/en-us/dotnet/api/system.boolean}{\texttt{Boolean}}~\newline
+ 

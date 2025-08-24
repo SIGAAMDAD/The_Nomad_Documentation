@@ -1,0 +1,62 @@
+\doxysection{Renown.\+Contracts.\+Extraction Class Reference}
+\hypertarget{class_renown_1_1_contracts_1_1_extraction}{}\label{class_renown_1_1_contracts_1_1_extraction}\index{Renown.Contracts.Extraction@{Renown.Contracts.Extraction}}
+Inheritance diagram for Renown.\+Contracts.\+Extraction\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_renown_1_1_contracts_1_1_extraction}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_renown_1_1_contracts_1_1_extraction_a7bcff011f00c5294ad54e2c4cfb88169}\label{class_renown_1_1_contracts_1_1_extraction_a7bcff011f00c5294ad54e2c4cfb88169} 
+{\bfseries Extraction} (in \mbox{\hyperlink{struct_renown_1_1_contracts_1_1_extraction_data}{Extraction\+Data}} data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_renown_1_1_contract}{Renown.\+Contract}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Contract} (string name, \mbox{\hyperlink{struct_renown_1_1_world_1_1_world_timestamp}{World\+Timestamp}} duedate, Contract\+Flags flags, Contract\+Type type, float base\+Pay, float? total\+Pay, \mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{World\+Area}} area, \mbox{\hyperlink{interface_renown_1_1_object}{Object}} contractor, \mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} guild)
+\item 
+virtual void {\bfseries Load} (int n\+Hash\+Code)
+\item 
+void {\bfseries Start} ()
+\item 
+virtual Contract\+Type {\bfseries Get\+Contract\+Type} ()
+\item 
+\mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{World\+Area}} {\bfseries Get\+Area} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_renown_1_1_contract}{Renown.\+Contract}}}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{class_renown_1_1_contract_ad1bf9065de8dd77775548acc648f8d09}{Calculate\+Cost}} (Contract\+Flags flags, Contract\+Type type, \mbox{\hyperlink{struct_renown_1_1_world_1_1_world_timestamp}{World\+Timestamp}} duedate, \mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{World\+Area}} area, \mbox{\hyperlink{interface_renown_1_1_object}{Object}} target=null)
+\begin{DoxyCompactList}\small\item\em calculates the cost of a generic contract with the given values, doesn\textquotesingle{}t however take into account how the pay might change over time \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_renown_1_1_contract}{Renown.\+Contract}}}
+\begin{DoxyCompactItemize}
+\item 
+readonly string {\bfseries Title}
+\item 
+readonly Contract\+Flags {\bfseries Flags}
+\item 
+readonly Contract\+Type {\bfseries Type}
+\item 
+readonly \mbox{\hyperlink{interface_renown_1_1_object}{Object}} {\bfseries Contractor}
+\item 
+readonly \mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} {\bfseries Guild}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_renown_1_1_contract}{Renown.\+Contract}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_renown_1_1_world_1_1_world_timestamp}{World\+Timestamp}} {\bfseries Due\+Date}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float {\bfseries Total\+Pay} = 0.\+0f\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em the total amount of money the mercenary can get out of the deal. this value can change with the value of the target, like a bounty for instance. \end{DoxyCompactList}\item 
+float {\bfseries Base\+Pay} = 0.\+0f\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{World\+Area}} {\bfseries Collateral\+Area}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em the designated place where the merc can operate in. if they step outside here, its no longer in the protection of the guild. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/\+Renown/\+Contracts/Extraction.\+cs\end{DoxyCompactItemize}

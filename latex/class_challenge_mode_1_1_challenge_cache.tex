@@ -1,0 +1,59 @@
+\doxysection{Challenge\+Mode.\+Challenge\+Cache Class Reference}
+\hypertarget{class_challenge_mode_1_1_challenge_cache}{}\label{class_challenge_mode_1_1_challenge_cache}\index{ChallengeMode.ChallengeCache@{ChallengeMode.ChallengeCache}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_challenge_mode_1_1_challenge_cache_1_1_challenge_score}{Challenge\+Score}}
+\item 
+struct \mbox{\hyperlink{struct_challenge_mode_1_1_challenge_cache_1_1_leaderboard_entry}{Leaderboard\+Entry}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_challenge_mode_1_1_challenge_cache_ad06fa013ebeeb2fd4498731aa1aeea7f}\label{class_challenge_mode_1_1_challenge_cache_ad06fa013ebeeb2fd4498731aa1aeea7f} 
+static Dictionary$<$ int, \mbox{\hyperlink{struct_challenge_mode_1_1_challenge_cache_1_1_leaderboard_entry}{Leaderboard\+Entry}} $>$ {\bfseries Get\+Leaderboard\+Data} ()
+\item 
+\Hypertarget{class_challenge_mode_1_1_challenge_cache_ac3a2fea1336df417201ebdfe674a5f45}\label{class_challenge_mode_1_1_challenge_cache_ac3a2fea1336df417201ebdfe674a5f45} 
+static Steam\+Leaderboard\+\_\+t {\bfseries Get\+Current\+Leaderboard} ()
+\item 
+\Hypertarget{class_challenge_mode_1_1_challenge_cache_ae12ad0cca7ce5d6916115ead411fbbe8}\label{class_challenge_mode_1_1_challenge_cache_ae12ad0cca7ce5d6916115ead411fbbe8} 
+static Resource {\bfseries Get\+Quest\+Data} ()
+\item 
+\Hypertarget{class_challenge_mode_1_1_challenge_cache_abecd2d1947cc52fd1dda344d507c1e1f}\label{class_challenge_mode_1_1_challenge_cache_abecd2d1947cc52fd1dda344d507c1e1f} 
+static void {\bfseries Set\+Quest\+Data} (Resource quest)
+\item 
+\Hypertarget{class_challenge_mode_1_1_challenge_cache_a0a60cf4974780a13b5e1e8e36f7ec45c}\label{class_challenge_mode_1_1_challenge_cache_a0a60cf4974780a13b5e1e8e36f7ec45c} 
+static int {\bfseries Get\+Current\+Map} ()
+\item 
+\Hypertarget{class_challenge_mode_1_1_challenge_cache_a74e6783540e43c001a49bdb654d32389}\label{class_challenge_mode_1_1_challenge_cache_a74e6783540e43c001a49bdb654d32389} 
+static void {\bfseries Set\+Current\+Map} (int n\+Current\+Map)
+\item 
+\Hypertarget{class_challenge_mode_1_1_challenge_cache_ac4aeb2503b2e262be8c837019681fb39}\label{class_challenge_mode_1_1_challenge_cache_ac4aeb2503b2e262be8c837019681fb39} 
+static void {\bfseries Fetch\+Leaderboard\+Data} (int n\+Map\+Index)
+\item 
+\Hypertarget{class_challenge_mode_1_1_challenge_cache_a4531a831014f55c3b2edb0a26e1bf0e1}\label{class_challenge_mode_1_1_challenge_cache_a4531a831014f55c3b2edb0a26e1bf0e1} 
+static void {\bfseries Update\+Score} (Steam\+Leaderboard\+\_\+t h\+Leaderboard, int Map\+Index, int Score, int Time\+Minutes, int Time\+Seconds, int Time\+Milliseconds)
+\item 
+\Hypertarget{class_challenge_mode_1_1_challenge_cache_aaf855fa56127f2f349b4743edab58f3d}\label{class_challenge_mode_1_1_challenge_cache_aaf855fa56127f2f349b4743edab58f3d} 
+static void {\bfseries Get\+Score} (int Map\+Index, out int Score, out int Time\+Minutes, out int Time\+Seconds, out int Time\+Milliseconds, System.\+Action$<$ Dictionary$<$ int, \mbox{\hyperlink{struct_challenge_mode_1_1_challenge_cache_1_1_leaderboard_entry}{Leaderboard\+Entry}} $>$ $>$ callback)
+\item 
+\Hypertarget{class_challenge_mode_1_1_challenge_cache_a7d59b9af4a8849da068445d814e3c327}\label{class_challenge_mode_1_1_challenge_cache_a7d59b9af4a8849da068445d814e3c327} 
+static void {\bfseries Init} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_challenge_mode_1_1_challenge_cache_a64536f08f9adeab33d3bb6cf45df7f7a}\label{class_challenge_mode_1_1_challenge_cache_a64536f08f9adeab33d3bb6cf45df7f7a} 
+static Dictionary$<$ \mbox{\hyperlink{class_challenge_mode_1_1_challenge_map}{Challenge\+Map}}, \mbox{\hyperlink{struct_challenge_mode_1_1_challenge_cache_1_1_challenge_score}{Challenge\+Score}} $>$ {\bfseries Scores} = null
+\item 
+\Hypertarget{class_challenge_mode_1_1_challenge_cache_a9ed3bbad284388ca6e2601388844fee3}\label{class_challenge_mode_1_1_challenge_cache_a9ed3bbad284388ca6e2601388844fee3} 
+static List$<$ \mbox{\hyperlink{class_challenge_mode_1_1_challenge_map}{Challenge\+Map}} $>$ {\bfseries Map\+List} = null
+\item 
+\Hypertarget{class_challenge_mode_1_1_challenge_cache_ae39e8c304cfc9f24cab169086d052b69}\label{class_challenge_mode_1_1_challenge_cache_ae39e8c304cfc9f24cab169086d052b69} 
+static readonly int {\bfseries Score\+Multiplier\+\_\+\+Head\+Shot} = 3
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/\+Challenge\+Mode/Challenge\+Cache.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,125 @@
+\doxysection{John\+Wick\+Mode Class Reference}
+\hypertarget{class_john_wick_mode}{}\label{class_john_wick_mode}\index{JohnWickMode@{JohnWickMode}}
+Inheritance diagram for John\+Wick\+Mode\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_john_wick_mode}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_john_wick_mode_a468d800f3631aedf64c1a6ecc82e1511}\label{class_john_wick_mode_a468d800f3631aedf64c1a6ecc82e1511} 
+delegate void {\bfseries One\+Minute\+Marker\+Event\+Handler} ()
+\item 
+\Hypertarget{class_john_wick_mode_a741c7cff4ca5ff0c1131cf5533a2a008}\label{class_john_wick_mode_a741c7cff4ca5ff0c1131cf5533a2a008} 
+delegate void {\bfseries Three\+Minute\+Marker\+Event\+Handler} ()
+\item 
+\Hypertarget{class_john_wick_mode_af635ac9d7ead4ffdc766160d3af52992}\label{class_john_wick_mode_af635ac9d7ead4ffdc766160d3af52992} 
+delegate void {\bfseries Ten\+Minute\+Marker\+Event\+Handler} ()
+\item 
+\Hypertarget{class_john_wick_mode_a8cb739a8992a8b4d84f1976ee53ed945}\label{class_john_wick_mode_a8cb739a8992a8b4d84f1976ee53ed945} 
+override void {\bfseries \+\_\+\+Enter\+Tree} ()
+\item 
+\Hypertarget{class_john_wick_mode_aaec9d6857693424280481fb2e53eb975}\label{class_john_wick_mode_aaec9d6857693424280481fb2e53eb975} 
+override void {\bfseries \+\_\+\+Ready} ()
+\item 
+\Hypertarget{class_john_wick_mode_a19e82358b920e4e4bb0eae47f7c5d692}\label{class_john_wick_mode_a19e82358b920e4e4bb0eae47f7c5d692} 
+override void {\bfseries \+\_\+\+Process} (double delta)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_level_data}{Level\+Data}}}
+\begin{DoxyCompactItemize}
+\item 
+delegate void {\bfseries Resources\+Loading\+Finished\+Event\+Handler} ()
+\item 
+delegate void {\bfseries Player\+Respawn\+Event\+Handler} ()
+\item 
+delegate void {\bfseries Hellbreaker\+Begin\+Event\+Handler} ()
+\item 
+delegate void {\bfseries Hellbreaker\+Finished\+Event\+Handler} ()
+\item 
+delegate void {\bfseries Exit\+Level\+Event\+Handler} ()
+\item 
+override void {\bfseries \+\_\+\+Enter\+Tree} ()
+\item 
+override void {\bfseries \+\_\+\+Exit\+Tree} ()
+\item 
+override void {\bfseries \+\_\+\+Ready} ()
+\begin{DoxyCompactList}\small\item\em godot initialization override \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_john_wick_mode_a27ae516b5ee3325bd3c0c389f7043a24}\label{class_john_wick_mode_a27ae516b5ee3325bd3c0c389f7043a24} 
+static void {\bfseries Add\+Kill} ()
+\item 
+\Hypertarget{class_john_wick_mode_add62e797ab528512151418a07ee1ac8c}\label{class_john_wick_mode_add62e797ab528512151418a07ee1ac8c} 
+static void {\bfseries Increase\+Score} (int n\+Amount)
+\item 
+\Hypertarget{class_john_wick_mode_a6a1cdb342e03d4b1e4e43bbc479dd282}\label{class_john_wick_mode_a6a1cdb342e03d4b1e4e43bbc479dd282} 
+static int {\bfseries Get\+Time\+Minutes} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_john_wick_mode_afa223f08ca3b690d9044e423575ef840}{On\+Resources\+Finished\+Loading}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_level_data}{Level\+Data}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries On\+Player\+Joined} (ulong steam\+Id)
+\item 
+virtual void {\bfseries On\+Player\+Left} (ulong steam\+Id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_level_data}{Level\+Data}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player}{Player}} {\bfseries This\+Player}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{class_level_data}{Level\+Data}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_level_data}{Level\+Data}} {\bfseries Instance}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_level_data}{Level\+Data}}}
+\begin{DoxyCompactItemize}
+\item 
+Navigation\+Region2D {\bfseries Global\+Navigation\+Mesh}
+\item 
+\mbox{\hyperlink{class_pause_menu}{Pause\+Menu}} {\bfseries Pause\+Menu}
+\item 
+Thread {\bfseries Resource\+Load\+Thread}
+\item 
+Thread {\bfseries Scene\+Load\+Thread}
+\item 
+Dictionary$<$ CSteam\+ID, \mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}} $>$ {\bfseries Players} = null
+\item 
+Packed\+Scene {\bfseries Player\+Scene} = null
+\item 
+Node {\bfseries Player\+List} = null
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_level_data}{Level\+Data}}}
+\begin{DoxyCompactItemize}
+\item 
+static readonly string\mbox{[}$\,$\mbox{]} {\bfseries Death\+Quotes}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_john_wick_mode_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_john_wick_mode_afa223f08ca3b690d9044e423575ef840}\index{JohnWickMode@{JohnWickMode}!OnResourcesFinishedLoading@{OnResourcesFinishedLoading}}
+\index{OnResourcesFinishedLoading@{OnResourcesFinishedLoading}!JohnWickMode@{JohnWickMode}}
+\doxysubsubsection{\texorpdfstring{OnResourcesFinishedLoading()}{OnResourcesFinishedLoading()}}
+{\footnotesize\ttfamily \label{class_john_wick_mode_afa223f08ca3b690d9044e423575ef840} 
+override void John\+Wick\+Mode.\+On\+Resources\+Finished\+Loading (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_level_data}{Level\+Data}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/John\+Wick\+Mode.\+cs\end{DoxyCompactItemize}

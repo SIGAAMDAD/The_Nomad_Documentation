@@ -1,0 +1,484 @@
+\doxysection{addons/mountain-\/goap Directory Reference}
+\hypertarget{dir_9307fcce78bb34d237b5234c807e0729}{}\label{dir_9307fcce78bb34d237b5234c807e0729}\index{addons/mountain-\/goap Directory Reference@{addons/mountain-\/goap Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_62266f8d7de12dfb2d3ba8ae5eab52fd}{Mountain\+Goap}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\hypertarget{README.md_autotoc_md431}{}\doxysubsection{\texorpdfstring{Mountain GOAP}{Mountain GOAP}}\label{README.md_autotoc_md431}
+Generic C\# GOAP (Goal Oriented Action Planning) library for creating AI agents to be used in games. GOAP is a type of an AI system for games popularized by \href{https://alumni.media.mit.edu/~jorkin/gdc2006_orkin_jeff_fear.pdf}{\texttt{the F.\+E.\+A.\+R. AI paper}}. GOAP agents use A\texorpdfstring{$\ast$}{*} pathfinding to plan paths through a series of sequential actions, creating action sequences that allow the agent to achieve its goals.
+
+Mountain GOAP favors composition over inheritance, allowing you to create agents from a series of callbacks. In addition, Mountain GOAP\textquotesingle{}s agents support multiple weighted goals and will attempt to find the greatest utility among a series of goals.
+
+
+\begin{DoxyEnumerate}
+\item Quickstart
+\begin{DoxyEnumerate}
+\item Using distributable
+\item Using distributable in Unity
+\item Using Nu\+Get package
+\item Using as a Unity package
+\item Using the code directly
+\item Using the library after installation
+\end{DoxyEnumerate}
+\item Concepts \& API
+\begin{DoxyEnumerate}
+\item Agents
+\begin{DoxyEnumerate}
+\item Agent state
+\end{DoxyEnumerate}
+\item Goals
+\begin{DoxyEnumerate}
+\item Extreme Goals
+\item Comparative Goals
+\end{DoxyEnumerate}
+\item Actions
+\begin{DoxyEnumerate}
+\item Comparative Preconditions
+\item Arithmetic Postconditions
+\item Parameter Postconditions
+\end{DoxyEnumerate}
+\item Sensors
+\item Permutation selectors
+\item Cost callbacks
+\item State mutators
+\item State checkers
+\item Full API Docs
+\end{DoxyEnumerate}
+\item Events
+\begin{DoxyEnumerate}
+\item Agent events
+\item Action events
+\item Sensor events
+\end{DoxyEnumerate}
+\item Logger
+\item Examples
+\item Project structure
+\item Roadmap
+\item Other open source GOAP projects
+\item License Acknowledgements
+\end{DoxyEnumerate}\hypertarget{README.md_autotoc_md432}{}\doxysubsubsection{\texorpdfstring{Quickstart}{Quickstart}}\label{README.md_autotoc_md432}
+\hypertarget{README.md_autotoc_md433}{}\doxysubsubsubsection{\texorpdfstring{Using distributable}{Using distributable}}\label{README.md_autotoc_md433}
+Download the \href{https://github.com/caesuric/mountain-goap/releases}{\texttt{release}}, unzip, and include the DLL in your project. In Visual Studio, you can do this by right-\/clicking on "{}\+Dependencies"{} in the Solution Explorer, then clicking "{}\+Add COM Reference,"{} clicking "{}\+Browse,"{} and browsing to the DLL.\hypertarget{README.md_autotoc_md434}{}\doxysubsubsubsection{\texorpdfstring{Using distributable in Unity}{Using distributable in Unity}}\label{README.md_autotoc_md434}
+Download the \href{https://github.com/caesuric/mountain-goap/releases}{\texttt{release}}, unzip to a folder, and drag the folder into your Unity project.\hypertarget{README.md_autotoc_md435}{}\doxysubsubsubsection{\texorpdfstring{Using Nu\+Get package}{Using Nu\+Get package}}\label{README.md_autotoc_md435}
+If you are not using Unity, you can download and use \doxylink{namespace_mountain_goap}{Mountain\+Goap} as a Nu\+Get package.
+
+Right click your package and click "{}\+Manage Nu\+Get Packages,"{} then search for "{}\+Mountain\+Goap"{} and install the package.\hypertarget{README.md_autotoc_md436}{}\doxysubsubsubsection{\texorpdfstring{Using as a Unity package}{Using as a Unity package}}\label{README.md_autotoc_md436}
+In the works.\hypertarget{README.md_autotoc_md437}{}\doxysubsubsubsection{\texorpdfstring{Using the code directly}{Using the code directly}}\label{README.md_autotoc_md437}
+Clone the repo and copy the code in the \doxylink{namespace_mountain_goap}{Mountain\+Goap} folder to your repo.\hypertarget{README.md_autotoc_md438}{}\doxysubsubsubsection{\texorpdfstring{Using the library after installation}{Using the library after installation}}\label{README.md_autotoc_md438}
+No matter which method of installation you use, you can access \doxylink{namespace_mountain_goap}{Mountain\+Goap} by using the {\ttfamily \doxylink{namespace_mountain_goap}{Mountain\+Goap}} namespace as a prefix to the library classes, or by including the following line in your code\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_mountain_goap}{MountainGoap}};}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md439}{}\doxysubsubsection{\texorpdfstring{Concepts \& API}{Concepts \& API}}\label{README.md_autotoc_md439}
+\hypertarget{README.md_autotoc_md440}{}\doxysubsubsubsection{\texorpdfstring{Agents}{Agents}}\label{README.md_autotoc_md440}
+{\bfseries{Agents}} are indivdual entities that act within your game or simulated world. The simplest example of instantiating an agent is this\+: {\ttfamily Agent agent = new Agent();}
+
+In practice, you will want to pass the agent constructor various things it needs to make a functional agent. Read on to understand what kinds of objects you should pass your agents.
+
+When you want your agent to act, just call the following\+: {\ttfamily agent.\+Step();}
+
+What kind of timeframe is represented by a "{}step"{} will vary based on your engine. In a turn based game, a step might be one turn. In a realtime engine like Unity, you might call {\ttfamily agent.\+Step()} on every {\ttfamily Update()} cycle. In a turn-\/based game you will probably want to call {\ttfamily agent.\+Step()} on every turn. In the case of turn-\/based games, you can force at least one action to be taken per turn by calling {\ttfamily agent.\+Step(mode\+: Step\+Mode.\+One\+Action)}. If you want the entire action sequence to be completed in one turn, you can call {\ttfamily agent.\+Step(mode\+: Step\+Mode.\+All\+Actions)}.
+
+For additional granularity, you can also call the functions {\ttfamily agent.\+Plan()}, {\ttfamily agent.\+Clear\+Plan()}, {\ttfamily agent.\+Plan\+Async()}, and {\ttfamily agent.\+Execute\+Plan()}. See the full API docs for additional details.\hypertarget{README.md_autotoc_md441}{}\doxysubsubsubsubsection{\texorpdfstring{Agent state}{Agent state}}\label{README.md_autotoc_md441}
+The agent stores a dictionary of objects called its {\bfseries{state}}. This state can include anything, but simple values work best with goals and actions. If you need to reference complex game state, however, this is not a problem -- sensors, covered below, can be used to translate complex values like map states into simpler ones, like booleans. More on that below.
+
+State can be passed into the agent constructor, like so\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}\ agent\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}(}
+\DoxyCodeLine{\ \ \ \ state:\ \textcolor{keyword}{new}\ Dictionary<string,\ object>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\ \textcolor{stringliteral}{"{}nearOtherAgent"{}},\ \textcolor{keyword}{false}\ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\ \textcolor{stringliteral}{"{}otherAgents"{}},\ \textcolor{keyword}{new}\ List<Agent>()\ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{);}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md442}{}\doxysubsubsubsection{\texorpdfstring{Goals}{Goals}}\label{README.md_autotoc_md442}
+{\bfseries{Goals}} dictate the state values that the agent is trying to achieve. Goals have relatively simple constructors, taking just a dictionary of keys and values the agent wants to see in its state and a weight that indicates how important the goal is. The higher the weight, the more important the goal.
+
+Goals can be passed into the agent constructor, like so\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_mountain_goap_1_1_goal}{Goal}}\ goal\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_mountain_goap_1_1_goal}{Goal}}(}
+\DoxyCodeLine{\ \ \ \ desiredState:\ \textcolor{keyword}{new}\ Dictionary<string,\ object>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\ \textcolor{stringliteral}{"{}nearOtherAgent"{}},\ \textcolor{keyword}{true}\ \}}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ weight:\ 2f}
+\DoxyCodeLine{);}
+\DoxyCodeLine{\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}\ agent\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}(}
+\DoxyCodeLine{\ \ \ \ goals:\ \textcolor{keyword}{new}\ List<Goal>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ goal}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{);}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md443}{}\doxysubsubsubsubsection{\texorpdfstring{Extreme Goals}{Extreme Goals}}\label{README.md_autotoc_md443}
+{\bfseries{Extreme goals}} attempt to maximize or minimize a numeric state value. They take similar parameters to normal goals, but the values in the dictionary must be booleans. If the boolean is true, the goal will attempt to maximize the value. If the boolean is false, the goal will attempt to minimize the value. The state value must be a numeric type for this to work correctly.
+
+Example that will try to maximize the agent\textquotesingle{}s health\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_mountain_goap_1_1_extreme_goal}{ExtremeGoal}}\ goal\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_mountain_goap_1_1_extreme_goal}{ExtremeGoal}}(}
+\DoxyCodeLine{\ \ \ \ desiredState:\ \textcolor{keyword}{new}\ Dictionary<string,\ object>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\ \textcolor{stringliteral}{"{}health"{}},\ \textcolor{keyword}{true}\ \}}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ weight:\ 2f}
+\DoxyCodeLine{);}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md444}{}\doxysubsubsubsubsection{\texorpdfstring{Comparative Goals}{Comparative Goals}}\label{README.md_autotoc_md444}
+{\bfseries{Comparative goals}} attempt to make a numeric state value compare in a certain way to a base value. They take similar parameters to normal goals, but the values in the dictionary must be Comparison\+Value\+Pair objects. The Comparison\+Value\+Pair object specifies a value to use for comparison and a comparison operator to use. The state value must be a numeric type and the same type as the comparison value for this to work correctly.
+
+Example that will try to make the agent\textquotesingle{}s health greater than 50\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_mountain_goap_1_1_comparative_goal}{ComparativeGoal}}\ goal\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_mountain_goap_1_1_comparative_goal}{ComparativeGoal}}(}
+\DoxyCodeLine{\ \ \ \ desiredState:\ \textcolor{keyword}{new}\ Dictionary<string,\ object>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\ \textcolor{stringliteral}{"{}health"{}},\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_mountain_goap_1_1_comparison_value_pair}{ComparisonValuePair}}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ Value\ =\ 50,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ Operator\ =\ \mbox{\hyperlink{namespace_mountain_goap_a406cbb1d5467e8a02cffe908276c3ad9af6d044fe1f01fb0c956b80099e2a3072}{ComparisonOperator.GreaterThan}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \}\ \}}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ weight:\ 2f}
+\DoxyCodeLine{);}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md445}{}\doxysubsubsubsection{\texorpdfstring{Actions}{Actions}}\label{README.md_autotoc_md445}
+{\bfseries{Actions}} dictate arbitrary code the agent can execute to affect the world and achieve its goals. Each action, when it runs, will execute the code passed to it, which is called the action {\bfseries{executor}}. Actions can also have {\bfseries{preconditions}}, state values required before the agent is allowed to execute the action, and {\bfseries{postconditions}}, which are values the state is expected to hold if the action is successful. Finally, each action has a {\bfseries{cost}}, which is used in calculating the best plan for the agent.
+
+Actions return an {\ttfamily Execution\+Status} enum to say if they succeeded or not. If they succeed, the postconditions will automatically be set to the values passed to the action constructor. If the {\ttfamily Execution\+Status} returned is {\ttfamily Execution\+Status.\+Executing}, the action will be considered in progress, and the executor will be called again on the next Step command.
+
+Actions can be passed into the agent constructor, like so\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}\ giveHugAction\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}(}
+\DoxyCodeLine{\ \ \ \ executor:\ (\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}\ agent,\ \mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}\ action)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_console}{Console}}.WriteLine(\textcolor{stringliteral}{"{}hugged\ someone"{}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235}{ExecutionStatus}}.Succeeded;}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ preconditions:\ \textcolor{keyword}{new}\ Dictionary<string,\ object>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\ \textcolor{stringliteral}{"{}nearOtherAgent"{}},\ \textcolor{keyword}{true}\ \}}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ postconditions:\ \textcolor{keyword}{new}\ Dictionary<string,\ object>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\ \textcolor{stringliteral}{"{}wasHugged"{}},\ \textcolor{keyword}{true}\ \}}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ cost:\ 0.5f}
+\DoxyCodeLine{);}
+\DoxyCodeLine{\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}\ agent\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}(}
+\DoxyCodeLine{\ \ \ \ actions:\ \textcolor{keyword}{new}\ List<Action>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ giveHugAction}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{);}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md446}{}\doxysubsubsubsubsection{\texorpdfstring{Comparative Preconditions}{Comparative Preconditions}}\label{README.md_autotoc_md446}
+{\bfseries{Comparative preconditions}} are preconditions that are calculated by comparing a state value to a target value. They take similar parameters to normal preconditions, but the values in the dictionary must be Comparison\+Value\+Pair objects.
+
+Example where energy must be greater than zero to walk\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}\ walk\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}(}
+\DoxyCodeLine{\ \ \ \ executor:\ (\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}\ agent,\ \mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}\ action)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_console}{Console}}.WriteLine(\textcolor{stringliteral}{"{}I'm\ walkin'\ here!"{}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235}{ExecutionStatus}}.Succeeded;}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ comparativePreconditions:\ \textcolor{keyword}{new}()\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\ \textcolor{stringliteral}{"{}energy"{}},\ \textcolor{keyword}{new}()\ \{\ Operator\ =\ \mbox{\hyperlink{namespace_mountain_goap_a406cbb1d5467e8a02cffe908276c3ad9}{ComparisonOperator}}.GreaterThan,\ Value\ =\ 0\ \}\ \}}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{);}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md447}{}\doxysubsubsubsubsection{\texorpdfstring{Arithmetic Postconditions}{Arithmetic Postconditions}}\label{README.md_autotoc_md447}
+{\bfseries{Arithmetic postconditions}} are postconditions that are calculated by performing arithmetic on other state values. They take similar parameters to normal postconditions, but the values in the dictionary are added to the existing state value instead of replacing it. \doxylink{class_note}{Note} that the state value and the postcondition value must be of the same numeric type for this to work correctly.
+
+Example that will add 10 to the agent\textquotesingle{}s health as a postcondition\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}\ heal\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}(}
+\DoxyCodeLine{\ \ \ \ executor:\ (\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}\ agent,\ \mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}\ action)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_console}{Console}}.WriteLine(\textcolor{stringliteral}{"{}healed\ for\ 10\ hp"{}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235}{ExecutionStatus}}.Succeeded;}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ arithmeticPostconditions:\ \textcolor{keyword}{new}\ Dictionary<string,\ object>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\ \textcolor{stringliteral}{"{}health"{}},\ 10\ \}}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ cost:\ 0.5f}
+\DoxyCodeLine{);}
+
+\end{DoxyCode}
+
+
+\doxylink{class_note}{Note} that normal Goals use simple equality checks and cannot tell that a value is closer or further away from the goal value. If you want to use an arithmetic postcondition and have the library detect that you are moving closer to your goal, use Comparative Goals or Extreme Goals. Both of these types of numerically based goals will calculate distance from a numeric goal value properly.\hypertarget{README.md_autotoc_md448}{}\doxysubsubsubsubsection{\texorpdfstring{Parameter Postconditions}{Parameter Postconditions}}\label{README.md_autotoc_md448}
+{\bfseries{Parameter postconditions}} are postconditions that copy one of the parameters passed to the action into the agent state. The structure uses a dictionary of string keys and string values, where the keys are the keys to the parameter value being copied and the values are the state key into which you are copying the value.
+
+Example that will copy the "{}target"{} parameter into the "{}target"{} state value\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var\ targets\ =\ \textcolor{keyword}{new}\ List<string>\ \{\ \textcolor{stringliteral}{"{}target1"{}},\ \textcolor{stringliteral}{"{}target2"{}}\ \}}
+\DoxyCodeLine{\mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}\ setTarget\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}(}
+\DoxyCodeLine{\ \ \ \ executor:\ (\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}\ agent,\ \mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}\ action)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_console}{Console}}.WriteLine(\textcolor{stringliteral}{"{}set\ target"{}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235}{ExecutionStatus}}.Succeeded;}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ permutationSelectors:\ \textcolor{keyword}{new}()\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\ \textcolor{stringliteral}{"{}target"{}},\ PermutationSelectorGenerators.SelectFromCollection(targets)\ \}}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ parameterPostconditions:\ \textcolor{keyword}{new}\ Dictionary<string,\ string>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\ \textcolor{stringliteral}{"{}target"{}},\ \textcolor{stringliteral}{"{}target"{}}\ \}}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ cost:\ 0.5f}
+\DoxyCodeLine{);}
+
+\end{DoxyCode}
+
+
+This example will create permutations of the action that either target {\ttfamily "{}target1"{}} or {\ttfamily "{}target2"{}}, and will copy the selected target into the {\ttfamily "{}target"{}} state value. See permutation selectors for more information on permutation selectors.\hypertarget{README.md_autotoc_md449}{}\doxysubsubsubsection{\texorpdfstring{Sensors}{Sensors}}\label{README.md_autotoc_md449}
+{\bfseries{Sensors}} allow an agent to distill information into their state, often derived from other state values. Sensors execute on every {\ttfamily Step()} call, and use a {\bfseries{sensor handler}} to execute code. Sensors can be passed into the agent constructor, like so\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_mountain_goap_1_1_sensor}{Sensor}}\ agentProximitySensor\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_mountain_goap_1_1_sensor}{Sensor}}(}
+\DoxyCodeLine{\ \ \ \ (\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}\ agent)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (AgentNearOtherAgent(agent))\ agent.\mbox{\hyperlink{class_mountain_goap_1_1_agent_a905aea1424ac93e8fdeae156360ba291}{State}}[\textcolor{stringliteral}{"{}nearOtherAgent"{}}]\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ agent.\mbox{\hyperlink{class_mountain_goap_1_1_agent_a905aea1424ac93e8fdeae156360ba291}{State}}[\textcolor{stringliteral}{"{}nearOtherAgent"{}}]\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{);}
+\DoxyCodeLine{\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}\ agent\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}(}
+\DoxyCodeLine{\ \ \ \ sensors:\ \textcolor{keyword}{new}\ List<Sensor>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ agentProximitySensor}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{);}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md450}{}\doxysubsubsubsection{\texorpdfstring{Permutation Selectors}{Permutation Selectors}}\label{README.md_autotoc_md450}
+Finally, actions can be constructed with {\bfseries{permutation selectors}}, which will instantiate multiple copies of the action with different parameters for purposes such as target selection. The library comes with some default permutation selector generators, or you can write your own as callbacks. For instance, if you want an action to be evaluated separately with each member of a list as a potential parameter, you would construct the action as so\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}\ myAction\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}(}
+\DoxyCodeLine{\ \ \ \ permutationSelectors:\ \textcolor{keyword}{new}\ Dictionary<string,\ PermutationSelectorCallback>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\ \textcolor{stringliteral}{"{}target1"{}},\ PermutationSelectorGenerators.SelectFromCollectionInState<\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}>(\textcolor{stringliteral}{"{}otherAgents"{}})\ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\ \textcolor{stringliteral}{"{}target2"{}},\ PermutationSelectorGenerators.SelectFromCollectionInState<\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}>(\textcolor{stringliteral}{"{}otherAgents"{}})\ \}}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ executor:\ (\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}\ agent,\ \mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}\ action)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_console}{Console}}.WriteLine(action.\mbox{\hyperlink{class_mountain_goap_1_1_action_a4a849ff5b558eb46789a97f98a40e137}{GetParameter}}(\textcolor{stringliteral}{"{}target1"{}}).ToString());}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_console}{Console}}.WriteLine(action.\mbox{\hyperlink{class_mountain_goap_1_1_action_a4a849ff5b558eb46789a97f98a40e137}{GetParameter}}(\textcolor{stringliteral}{"{}target2"{}}).ToString());}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{);}
+
+\end{DoxyCode}
+
+
+The code above will create an action that when evaluated for execution in an agent plan will be considered once for every pair combination of elements in the "{}other\+Agents"{} collection of the agent state, one for {\ttfamily target1}, and one for {\ttfamily target2}. In order to take advantage of this feature, you can also calculate variable costs based on action parameters using the {\ttfamily cost\+Callback} argument in the {\ttfamily Action} constructor. See cost callbacks for more information.\hypertarget{README.md_autotoc_md451}{}\doxysubsubsubsection{\texorpdfstring{Cost Callbacks}{Cost Callbacks}}\label{README.md_autotoc_md451}
+{\bfseries{Cost callbacks}} allow you to calculate the cost of an action based on its parameters. This is useful for actions that have variable costs based on the parameters passed to them. For instance, if you have an action that moves the agent to a target, you might want to calculate the cost of the action based on the distance to the target. You can do this by passing a cost callback to the action constructor\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}\ moveToTarget\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}(}
+\DoxyCodeLine{\ \ \ \ executor:\ (\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}\ agent,\ \mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}\ action)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_console}{Console}}.WriteLine(\textcolor{stringliteral}{"{}moved\ to\ target"{}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235}{ExecutionStatus}}.Succeeded;}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ costCallback:\ (action,\ state)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (action.\mbox{\hyperlink{class_mountain_goap_1_1_action_a4a849ff5b558eb46789a97f98a40e137}{GetParameter}}(\textcolor{stringliteral}{"{}target"{}})\ is\ \mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}\ target)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ var\ distance\ =\ GetDistance(\textcolor{keyword}{this},\ target);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ distance;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{return}\ \textcolor{keywordtype}{float}.MaxValue;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{);}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md452}{}\doxysubsubsubsection{\texorpdfstring{State Mutators}{State Mutators}}\label{README.md_autotoc_md452}
+{\bfseries{State mutators}} allow you to mutate the agent state during execution or evaluation of an action. This is useful for actions that have more complex side effects on agent state. For instance, if you have an action that moves the agent to a target, you might want to mutate the agent state to reflect the new position of the agent. You can do this by passing a state mutator to the action constructor\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}\ moveToTarget\ =\ newAction(}
+\DoxyCodeLine{\ \ \ \ executor:\ (\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}\ agent,\ \mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}\ action)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_console}{Console}}.WriteLine(\textcolor{stringliteral}{"{}moved\ to\ target"{}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235}{ExecutionStatus}}.Succeeded;}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ stateMutator:\ (action,\ state)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (action.\mbox{\hyperlink{class_mountain_goap_1_1_action_a4a849ff5b558eb46789a97f98a40e137}{GetParameter}}(\textcolor{stringliteral}{"{}target"{}})\ is\ \mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}\ target)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ state[\textcolor{stringliteral}{"{}position"{}}]\ =\ target.State[\textcolor{stringliteral}{"{}position"{}}];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{)}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md453}{}\doxysubsubsubsection{\texorpdfstring{State Checkers}{State Checkers}}\label{README.md_autotoc_md453}
+{\bfseries{State checkers}} allow you to check agent state programmatically during execution or evaluation of an action. This is useful for actions that have more complex preconditions than simple equality checks or arithmetic comparisons. For instance, if you have an action that moves the agent to a target, you might want to check that the target is in range. You can do this by passing a state checker to the action constructor\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}\ moveToTarget\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}(}
+\DoxyCodeLine{\ \ \ \ executor:\ (\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}\ agent,\ \mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}\ action)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_console}{Console}}.WriteLine(\textcolor{stringliteral}{"{}moved\ to\ target"{}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235}{ExecutionStatus}}.Succeeded;}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ stateChecker:\ (action,\ state)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (action.\mbox{\hyperlink{class_mountain_goap_1_1_action_a4a849ff5b558eb46789a97f98a40e137}{GetParameter}}(\textcolor{stringliteral}{"{}target"{}})\ is\ \mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}\ target)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ var\ distance\ =\ GetDistance(\textcolor{keyword}{this},\ target);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (distance\ >\ 10)\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{);}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md454}{}\doxysubsubsubsection{\texorpdfstring{Full API Docs}{Full API Docs}}\label{README.md_autotoc_md454}
+Full API docs are available \doxysectlink{md_addons_2mountain-goap_2api-docs_2index}{here}{0}.\hypertarget{README.md_autotoc_md455}{}\doxysubsubsection{\texorpdfstring{Events}{Events}}\label{README.md_autotoc_md455}
+Mountain GOAP features a simple event system that allows you to subscribe to events that occur during the agent\textquotesingle{}s planning and execution process.\hypertarget{README.md_autotoc_md456}{}\doxysubsubsubsection{\texorpdfstring{Agent events}{Agent events}}\label{README.md_autotoc_md456}
+The following events are available on agents\+:
+
+
+\begin{DoxyItemize}
+\item On\+Agent\+Action\+Sequence\+Completed\+: Called when the agent has finished executing its plan.
+\begin{DoxyItemize}
+\item Example usage\+: {\ttfamily Agent.\+On\+Agent\+Action\+Sequence\+Completed += (Agent agent) =\texorpdfstring{$>$}{>} \{ Console.\+Write\+Line("{}\+Agent finished executing its plan."{}); \};}
+\end{DoxyItemize}
+\item On\+Agent\+Step\+: Called when the agent executes a step of work.
+\begin{DoxyItemize}
+\item Example usage\+: {\ttfamily Agent.\+On\+Agent\+Step += (Agent agent) =\texorpdfstring{$>$}{>} \{ Console.\+Write\+Line("{}\+Agent is working."{}); \};}
+\end{DoxyItemize}
+\item On\+Planning\+Started\+: Called when the agent begins planning.
+\begin{DoxyItemize}
+\item Example usage\+: {\ttfamily Agent.\+On\+Planning\+Started += (Agent agent) =\texorpdfstring{$>$}{>} \{ Console.\+Write\+Line("{}\+Agent started planning."{}); \};}
+\end{DoxyItemize}
+\item On\+Planning\+Finished\+: Called when the agent finishes planning.
+\begin{DoxyItemize}
+\item Example usage\+: {\ttfamily Agent.\+On\+Planning\+Finished += (Agent agent, Goal? goal, float utility) =\texorpdfstring{$>$}{>} \{ Console.\+Write\+Line("{}\+Agent finished planning."{}); \};}
+\end{DoxyItemize}
+\item On\+Planning\+Finished\+For\+Single\+Goal\+: Called when the agent finishes planning for a single goal.
+\begin{DoxyItemize}
+\item Example usage\+: {\ttfamily Agent.\+On\+Planning\+Finished\+For\+Single\+Goal += (Agent agent, Goal goal, float utility) =\texorpdfstring{$>$}{>} \{ Console.\+Write\+Line("{}\+Agent finished planning for a single goal."{}); \};}
+\end{DoxyItemize}
+\item On\+Plan\+Updated\+: Called when the agent generates a viable action sequence.
+\begin{DoxyItemize}
+\item Example usage\+: {\ttfamily Agent.\+On\+Plan\+Updated += (Agent agent, List\texorpdfstring{$<$}{<}Action\texorpdfstring{$>$}{>} action\+List) =\texorpdfstring{$>$}{>} \{ Console.\+Write\+Line("{}\+Agent generated a viable action sequence."{}); \};}
+\end{DoxyItemize}
+\item On\+Evaluated\+Action\+Node\+: Extremely low level debugging tool, called whenever the agent evaluates a potentially viable node in the action graph. The second parameter is a dictionary of all nodes that have been evaluated so far, with the keys as the most recent nodes and the values as the nodes that preceded them. You can use this to reconstruct the chain of actions that led to this point.
+\begin{DoxyItemize}
+\item Example usage\+: {\ttfamily Agent.\+On\+Evaluated\+Action\+Node(Action\+Node node, Dictionary\texorpdfstring{$<$}{<}Action\+Node, Action\+Node\texorpdfstring{$>$}{>} nodes) =\texorpdfstring{$>$}{>} \{ Console.\+Write\+Line("{}\+Agent evaluated a node."{})\}}
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md457}{}\doxysubsubsubsection{\texorpdfstring{Action events}{Action events}}\label{README.md_autotoc_md457}
+The following events are available on actions\+:
+
+
+\begin{DoxyItemize}
+\item On\+Begin\+Execute\+Action\+: Called when the agent begins executing an action.
+\begin{DoxyItemize}
+\item Example usage\+: {\ttfamily Action.\+On\+Begin\+Execute\+Action += (Agent agent, Action action, Dictionary\texorpdfstring{$<$}{<}string, object\texorpdfstring{$>$}{>} parameters) =\texorpdfstring{$>$}{>} \{ Console.\+Write\+Line("{}\+Agent started executing an action."{}); \};}
+\end{DoxyItemize}
+\item On\+Finish\+Execute\+Action\+: Called when the agent finishes executing an action.
+\begin{DoxyItemize}
+\item Example usage\+: {\ttfamily Action.\+On\+Finish\+Execute\+Action += (Agent agent, Action action, Execution\+Status status, Dictionary\texorpdfstring{$<$}{<}string, object\texorpdfstring{$>$}{>} parameters) =\texorpdfstring{$>$}{>} \{ Console.\+Write\+Line("{}\+Agent finished executing an action."{}); \};}
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md458}{}\doxysubsubsubsection{\texorpdfstring{Sensor events}{Sensor events}}\label{README.md_autotoc_md458}
+The following events are available on sensors\+:
+
+
+\begin{DoxyItemize}
+\item On\+Sensor\+Run\+: Called when the agent runs a sensor.
+\begin{DoxyItemize}
+\item Example usage\+: {\ttfamily Sensor.\+On\+Sensor\+Run += (Agent agent, Sensor sensor) =\texorpdfstring{$>$}{>} \{ Console.\+Write\+Line("{}\+Agent ran a sensor."{}); \};}
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md459}{}\doxysubsubsection{\texorpdfstring{Logger}{Logger}}\label{README.md_autotoc_md459}
+Mountain GOAP contains a default logger implementation that can be used to examine agent behavior. After including the Mountain\+Goap\+Logger code, you can enable the logger using the following code\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\_\ =\ \textcolor{keyword}{new}\ MountainGoapLogger.DefaultLogger(}
+\DoxyCodeLine{\ \ \ \ logToConsole:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \ \ loggingFile:\ \textcolor{stringliteral}{"{}agents.log"{}}}
+\DoxyCodeLine{);}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md460}{}\doxysubsubsection{\texorpdfstring{Examples}{Examples}}\label{README.md_autotoc_md460}
+Examples documentation.
+
+
+\begin{DoxyEnumerate}
+\item \href{./Examples/HappinessIncrementer.cs}{\texttt{Happiness Maximizer Example}}
+\item \href{./Examples//RpgExample/RpgExample.cs}{\texttt{RPG Example}}
+\end{DoxyEnumerate}\hypertarget{README.md_autotoc_md461}{}\doxysubsubsection{\texorpdfstring{Project Structure}{Project Structure}}\label{README.md_autotoc_md461}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ File or folder  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ File or folder  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endhead
+{\ttfamily /\+Examples/}  &Examples of how to use the library  \\\cline{1-2}
+{\ttfamily /\+Examples/\+Rpg\+Example/}  &RPG grid-\/based example.  \\\cline{1-2}
+{\ttfamily /\+Examples/\+Rpg\+Example/\+Rpg\+Character\+Factory.cs}  &Static methods for creating character agents.  \\\cline{1-2}
+{\ttfamily /\+Examples/\+Rpg\+Example/\+Rpg\+Example.cs}  &Main RPG example entrypoint.  \\\cline{1-2}
+{\ttfamily /\+Examples/\+Rpg\+Example/\+Rpg\+Monster\+Factory.cs}  &Static methods for creating enemy agents derived from the base character agent.  \\\cline{1-2}
+{\ttfamily /\+Examples/\+Rpg\+Example/\+Utils.cs}  &RPG example utility functions.  \\\cline{1-2}
+{\ttfamily /\+Examples/examples.md}  &Examples documentation.  \\\cline{1-2}
+{\ttfamily /\+Examples/\+Happiness\+Incrementer.cs}  &Happiness incrementer example.  \\\cline{1-2}
+{\ttfamily /\+Examples/\+Program.cs}  &Examples entrypoint.  \\\cline{1-2}
+{\ttfamily /\+Mountain\+Goap/}  &The main library folder  \\\cline{1-2}
+{\ttfamily /\+Mountain\+Goap/\+Callback\+Delegates/}  &Function signatures for callbacks.  \\\cline{1-2}
+{\ttfamily /\+Mountain\+Goap/\+Callback\+Delegates/\+Executor\+Callback.cs}  &Function signature for a callback that executes an action.  \\\cline{1-2}
+{\ttfamily /\+Mountain\+Goap/\+Callback\+Delegates/\+Permutation\+Selector\+Callbacks.cs}  &Function signature for a callback that selects a list of options for an action parameter.  \\\cline{1-2}
+{\ttfamily /\+Mountain\+Goap/\+Callback\+Delegates/\+Sensor\+Run\+Callback.cs}  &Function signature for a callback that runs a sensor.  \\\cline{1-2}
+{\ttfamily /\+Mountain\+Goap/\+Internals/}  &Internal classes that external applications using the library will not need directly.  \\\cline{1-2}
+{\ttfamily /\+Mountain\+Goap/\+Internals/\+Action\+AStar.cs}  &Class that calculates AStar for an action graph.  \\\cline{1-2}
+{\ttfamily /\+Mountain\+Goap/\+Internals/\+Action\+Graph.cs}  &Class that represents an action graph.  \\\cline{1-2}
+{\ttfamily /\+Mountain\+Goap/\+Internals/\+Action\+Node.cs}  &Class that represents a node in an action graph.  \\\cline{1-2}
+{\ttfamily /\+Mountain\+Goap/\+Internals/\+Copy\+Dictionary\+Extension\+Method.cs}  &Convenience extension method for copying a dictionary.  \\\cline{1-2}
+{\ttfamily /\+Mountain\+Goap/\+Internals/\+Planner.cs}  &Planning class used by agents.  \\\cline{1-2}
+{\ttfamily /\+Mountain\+Goap/\+Action.cs}  &An action that can be made available to agents.  \\\cline{1-2}
+{\ttfamily /\+Mountain\+Goap/\+Agent.cs}  &An agent that can figure out plans to execute.  \\\cline{1-2}
+{\ttfamily /\+Mountain\+Goap/\+Base\+Goal.cs}  &A base class for all goal types.  \\\cline{1-2}
+{\ttfamily /\+Mountain\+Goap/\+Comparative\+Goal.cs}  &A goal that compares a value to a pre-\/existing value  \\\cline{1-2}
+{\ttfamily /\+Mountain\+Goap/\+Comparison\+Operator.cs}  &An enum defining the comparison operators that can be used with Comparative\+Goal.  \\\cline{1-2}
+{\ttfamily /\+Mountain\+Goap/\+Comparison\+Value\+Pair.cs}  &A class that represents a comparison value pair.  \\\cline{1-2}
+{\ttfamily /\+Mountain\+Goap/\+Execution\+Status.cs}  &An enum defining the execution status of an action.  \\\cline{1-2}
+{\ttfamily /\+Mountain\+Goap/\+Extreme\+Goal.cs}  &A goal that attempts to minimize or maximize a state value.  \\\cline{1-2}
+{\ttfamily /\+Mountain\+Goap/\+Goal.cs}  &A goal that agents can attempt to accomplish.  \\\cline{1-2}
+{\ttfamily /\+Mountain\+Goap/\+Permutation\+Selector\+Generators.cs}  &Generators for lambda functions that return a list of options for an action parameter.  \\\cline{1-2}
+{\ttfamily /\+Mountain\+Goap/\+Sensor.cs}  &A sensor that generates data for use by an agent.  \\\cline{1-2}
+{\ttfamily /\+Mountain\+Goap\+Logging/\+Default\+Logger.cs}  &Example logger implementation that can be used to inspect agent behavior.  \\\cline{1-2}
+\end{longtabu}
+\hypertarget{README.md_autotoc_md462}{}\doxysubsubsection{\texorpdfstring{Roadmap}{Roadmap}}\label{README.md_autotoc_md462}
+
+\begin{DoxyItemize}
+\item Tests
+\item Examples -\/ general and Unity
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md463}{}\doxysubsubsection{\texorpdfstring{Other open source GOAP projects}{Other open source GOAP projects}}\label{README.md_autotoc_md463}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/luxkun/ReGoap}{\texttt{Re\+Goap}} -\/ C\# GOAP library with more direct Unity support, providing Unity Components that can be attached to Game\+Objects.
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md464}{}\doxysubsubsection{\texorpdfstring{License Acknowledgements}{License Acknowledgements}}\label{README.md_autotoc_md464}
+Project is MIT licensed, and the main license file can be found \href{./LICENSE.txt}{\texttt{here}}.\hypertarget{README.md_autotoc_md465}{}\doxysubsubsubsection{\texorpdfstring{Priority Queue Implementation}{Priority Queue Implementation}}\label{README.md_autotoc_md465}
+The MIT License (MIT)
+
+Copyright (c) 2013 Daniel "{}\+Blue\+Raja"{} Pflughoeft
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "{}\+Software"{}), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions\+:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "{}\+AS IS"{}, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 

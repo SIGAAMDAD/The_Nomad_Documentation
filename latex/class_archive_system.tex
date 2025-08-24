@@ -1,0 +1,118 @@
+\doxysection{Archive\+System Class Reference}
+\hypertarget{class_archive_system}{}\label{class_archive_system}\index{ArchiveSystem@{ArchiveSystem}}
+Inheritance diagram for Archive\+System\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_archive_system}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_archive_system_ac7c2699a731c342a219fea48b2eb9e7a}\label{class_archive_system_ac7c2699a731c342a219fea48b2eb9e7a} 
+delegate void {\bfseries Save\+Game\+Begin\+Event\+Handler} ()
+\item 
+\Hypertarget{class_archive_system_ab1747eb690263f6526b4d97d5dfda1d3}\label{class_archive_system_ab1747eb690263f6526b4d97d5dfda1d3} 
+delegate void {\bfseries Save\+Game\+End\+Event\+Handler} ()
+\item 
+\Hypertarget{class_archive_system_a89df03c0070c2cf5271f4b83760f039a}\label{class_archive_system_a89df03c0070c2cf5271f4b83760f039a} 
+delegate void {\bfseries Load\+Game\+Begin\+Event\+Handler} ()
+\item 
+\Hypertarget{class_archive_system_a3d34a83971f601ac9c18ed14406414ec}\label{class_archive_system_a3d34a83971f601ac9c18ed14406414ec} 
+delegate void {\bfseries Load\+Game\+End\+Event\+Handler} ()
+\item 
+\Hypertarget{class_archive_system_aae15561fd0b58f1e73a7592cc02b1b2f}\label{class_archive_system_aae15561fd0b58f1e73a7592cc02b1b2f} 
+override void {\bfseries \+\_\+\+Enter\+Tree} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_archive_system_a9b5b64fb7e1345cf025ca843d99934c7}\label{class_archive_system_a9b5b64fb7e1345cf025ca843d99934c7} 
+static bool {\bfseries Is\+Loaded} ()
+\item 
+\Hypertarget{class_archive_system_a7a02f7ecc9f6989e39a6263865e81904}\label{class_archive_system_a7a02f7ecc9f6989e39a6263865e81904} 
+static void {\bfseries Push\+Section} ()
+\item 
+\Hypertarget{class_archive_system_a664afae612771860a2ab29b4817118df}\label{class_archive_system_a664afae612771860a2ab29b4817118df} 
+static void {\bfseries Create\+Slot} ()
+\item 
+\Hypertarget{class_archive_system_a356b40183e10538cbdb14707e3b3a838}\label{class_archive_system_a356b40183e10538cbdb14707e3b3a838} 
+static bool {\bfseries Slot\+Exists} (int slot)
+\item 
+\Hypertarget{class_archive_system_a5607d42b713ff480761c22e2128a6b3a}\label{class_archive_system_a5607d42b713ff480761c22e2128a6b3a} 
+static void {\bfseries Delete\+Save} (int slot)
+\item 
+static void \mbox{\hyperlink{class_archive_system_a9962d0150f259a457de4fa070e988e68}{Save\+Game}} (int slot)
+\begin{DoxyCompactList}\small\item\em Archives current game state, called when exiting game, activating a firelink, or resting at a meliora. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_archive_system_ab2d9601ef67a47986b2adb32d21080f2}{Load\+Game}} (int slot)
+\begin{DoxyCompactList}\small\item\em Loads and initializes game state from the provided save slot file. \end{DoxyCompactList}\item 
+\Hypertarget{class_archive_system_af2372f8d293ffc912a5c3bf40b2af640}\label{class_archive_system_af2372f8d293ffc912a5c3bf40b2af640} 
+static void {\bfseries Clear} ()
+\item 
+\Hypertarget{class_archive_system_a5e6d1875510619d5b728b6cf6e18f643}\label{class_archive_system_a5e6d1875510619d5b728b6cf6e18f643} 
+static ? \mbox{\hyperlink{class_save_system_1_1_save_section_reader}{Save\+Section\+Reader}} {\bfseries Get\+Section} (string name)
+\item 
+\Hypertarget{class_archive_system_a87240a02e085d82563a4bf63749e9f14}\label{class_archive_system_a87240a02e085d82563a4bf63749e9f14} 
+static void {\bfseries Check\+Save\+Data} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_archive_system_af12d6476e520fbda988be1ea428a193a}\label{class_archive_system_af12d6476e520fbda988be1ea428a193a} 
+static readonly string {\bfseries Save\+Directory} = "{}user\+://Save\+Data/"{}
+\item 
+\Hypertarget{class_archive_system_a83522114f1477fb676e9991392b4657f}\label{class_archive_system_a83522114f1477fb676e9991392b4657f} 
+static ? \mbox{\hyperlink{class_archive_system}{Archive\+System}} {\bfseries Instance}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_archive_system_aee3a30c591b90ea191e064ee04821a2a}\label{class_archive_system_aee3a30c591b90ea191e064ee04821a2a} 
+static int {\bfseries Section\+Count} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_archive_system_ad21612abb2cd76070c7cfc32ba952463}\label{class_archive_system_ad21612abb2cd76070c7cfc32ba952463} 
+static System.\+IO.? Binary\+Reader {\bfseries Save\+Reader} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_archive_system_abad9fdb1df25a0e348fca27eddc403b4}\label{class_archive_system_abad9fdb1df25a0e348fca27eddc403b4} 
+static System.\+IO.? Binary\+Writer {\bfseries Save\+Writer} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_archive_system_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_archive_system_ab2d9601ef67a47986b2adb32d21080f2}\index{ArchiveSystem@{ArchiveSystem}!LoadGame@{LoadGame}}
+\index{LoadGame@{LoadGame}!ArchiveSystem@{ArchiveSystem}}
+\doxysubsubsection{\texorpdfstring{LoadGame()}{LoadGame()}}
+{\footnotesize\ttfamily \label{class_archive_system_ab2d9601ef67a47986b2adb32d21080f2} 
+void Archive\+System.\+Load\+Game (\begin{DoxyParamCaption}\item[{int}]{slot}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Loads and initializes game state from the provided save slot file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em slot} & The save slot to load\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_archive_system_a9962d0150f259a457de4fa070e988e68}\index{ArchiveSystem@{ArchiveSystem}!SaveGame@{SaveGame}}
+\index{SaveGame@{SaveGame}!ArchiveSystem@{ArchiveSystem}}
+\doxysubsubsection{\texorpdfstring{SaveGame()}{SaveGame()}}
+{\footnotesize\ttfamily \label{class_archive_system_a9962d0150f259a457de4fa070e988e68} 
+void Archive\+System.\+Save\+Game (\begin{DoxyParamCaption}\item[{int}]{slot}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Archives current game state, called when exiting game, activating a firelink, or resting at a meliora. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em slot} & The slot to save into\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/\+Save\+System/Archive\+System.\+cs\end{DoxyCompactItemize}

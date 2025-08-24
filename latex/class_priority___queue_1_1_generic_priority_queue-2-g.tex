@@ -1,0 +1,246 @@
+\doxysection{Priority\+\_\+\+Queue.\+Generic\+Priority\+Queue\texorpdfstring{$<$}{<} TItem, TPriority \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_priority___queue_1_1_generic_priority_queue-2-g}{}\label{class_priority___queue_1_1_generic_priority_queue-2-g}\index{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$@{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$}}
+
+
+A copy of Stable\+Priority\+Queue which also has generic priority-\/type.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_priority___queue_1_1_generic_priority_queue-2-g_a6d4b8e12e9633046e629b7e75529a757}{Generic\+Priority\+Queue}} (int max\+Nodes)
+\begin{DoxyCompactList}\small\item\em Instantiate a new Priority Queue. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_priority___queue_1_1_generic_priority_queue-2-g_a8cc6944970d1dbb4726bb764ab2c8cab}{Generic\+Priority\+Queue}} (int max\+Nodes, IComparer$<$ TPriority $>$ comparer)
+\begin{DoxyCompactList}\small\item\em Instantiate a new Priority Queue. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_priority___queue_1_1_generic_priority_queue-2-g_a944ce61992ebe8aeef43e57c6f6d8f91}{Generic\+Priority\+Queue}} (int max\+Nodes, Comparison$<$ TPriority $>$ comparer)
+\begin{DoxyCompactList}\small\item\em Instantiate a new Priority Queue. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_priority___queue_1_1_generic_priority_queue-2-g_a19bad409864460294221d7f5996f0cb9}{Clear}} ()
+\begin{DoxyCompactList}\small\item\em Removes every node from the queue. O(n) (So, don\textquotesingle{}t do this often!) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_priority___queue_1_1_generic_priority_queue-2-g_ae291df07831389fc1b6684866e826305}{Contains}} (TItem node)
+\begin{DoxyCompactList}\small\item\em Returns (in O(1)!) whether the given node is in the queue. If node is or has been previously added to another queue, the result is undefined unless old\+Queue.\+Reset\+Node(node) has been called O(1) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_priority___queue_1_1_generic_priority_queue-2-g_aa8941f90a627f5dbdec7316b21548860}{Enqueue}} (TItem node, TPriority priority)
+\begin{DoxyCompactList}\small\item\em Enqueue a node to the priority queue. Lower values are placed in front. Ties are broken by first-\/in-\/first-\/out. If the queue is full, the result is undefined. If the node is already enqueued, the result is undefined. If node is or has been previously added to another queue, the result is undefined unless old\+Queue.\+Reset\+Node(node) has been called O(log n) \end{DoxyCompactList}\item 
+TItem \mbox{\hyperlink{class_priority___queue_1_1_generic_priority_queue-2-g_ae324611c90b666f5a5c31a90fd472aee}{Dequeue}} ()
+\begin{DoxyCompactList}\small\item\em Removes the head of the queue (node with minimum priority; ties are broken by order of insertion), and returns it. If queue is empty, result is undefined O(log n) \end{DoxyCompactList}\item 
+\Hypertarget{class_priority___queue_1_1_generic_priority_queue-2-g_a0190a552504429df945b76db93275b98}\label{class_priority___queue_1_1_generic_priority_queue-2-g_a0190a552504429df945b76db93275b98} 
+void {\bfseries Resize} (int max\+Nodes)
+\begin{DoxyCompactList}\small\item\em Resize the queue so it can accept more nodes. All currently enqueued nodes are remain. Attempting to decrease the queue size to a size too small to hold the existing nodes results in undefined behavior O(n) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_priority___queue_1_1_generic_priority_queue-2-g_af584bb9cdbdc7e2b1ab02769147a3117}{Update\+Priority}} (TItem node, TPriority priority)
+\begin{DoxyCompactList}\small\item\em This method must be called on a node every time its priority changes while it is in the queue. ~\newline
+ {\bfseries{Forgetting to call this method will result in a corrupted queue!}} Calling this method on a node not in the queue results in undefined behavior O(log n) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_priority___queue_1_1_generic_priority_queue-2-g_a5ab03a019c63c94774203392b6b906f7}{Remove}} (TItem node)
+\begin{DoxyCompactList}\small\item\em Removes a node from the queue. The node does not need to be the head of the queue. ~\newline
+ If the node is not in the queue, the result is undefined. If unsure, check \doxylink{class_priority___queue_1_1_generic_priority_queue-2-g_ae291df07831389fc1b6684866e826305}{Contains()} first O(log n) \end{DoxyCompactList}\item 
+\Hypertarget{class_priority___queue_1_1_generic_priority_queue-2-g_aa7a847ac2012938210c1d6d6b0ca9c35}\label{class_priority___queue_1_1_generic_priority_queue-2-g_aa7a847ac2012938210c1d6d6b0ca9c35} 
+void {\bfseries Reset\+Node} (TItem node)
+\begin{DoxyCompactList}\small\item\em By default, nodes that have been previously added to one queue cannot be added to another queue. If you need to do this, please call original\+Queue.\+Reset\+Node(node) before attempting to add it in the new queue. \end{DoxyCompactList}\item 
+\Hypertarget{class_priority___queue_1_1_generic_priority_queue-2-g_a9f1988f59ab253020fdc65ee3964ad6c}\label{class_priority___queue_1_1_generic_priority_queue-2-g_a9f1988f59ab253020fdc65ee3964ad6c} 
+IEnumerator$<$ TItem $>$ {\bfseries Get\+Enumerator} ()
+\item 
+\Hypertarget{class_priority___queue_1_1_generic_priority_queue-2-g_a70205164759ed6fbc6ea75d33f66b46e}\label{class_priority___queue_1_1_generic_priority_queue-2-g_a70205164759ed6fbc6ea75d33f66b46e} 
+bool {\bfseries Is\+Valid\+Queue} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{Should not be called in production code.}} Checks to make sure the queue is still in a valid state. Used for testing/debugging the queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_priority___queue_1_1_generic_priority_queue-2-g_a9b5289cf3eb0c59bbf969284ea1ff7ac}{Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the number of nodes in the queue. O(1) \end{DoxyCompactList}\item 
+\Hypertarget{class_priority___queue_1_1_generic_priority_queue-2-g_ab42a386cc820a62951714efa438e6f15}\label{class_priority___queue_1_1_generic_priority_queue-2-g_ab42a386cc820a62951714efa438e6f15} 
+int {\bfseries Max\+Size}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the maximum number of items that can be enqueued at once in this queue. Once you hit this number (ie. once Count == Max\+Size), attempting to enqueue another item will cause undefined behavior. O(1) \end{DoxyCompactList}\item 
+TItem \mbox{\hyperlink{class_priority___queue_1_1_generic_priority_queue-2-g_af06e7bfc1d23ba5b77d90e03570ebe8d}{First}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the head of the queue, without removing it (use \doxylink{class_priority___queue_1_1_generic_priority_queue-2-g_ae324611c90b666f5a5c31a90fd472aee}{Dequeue()} for that). If the queue is empty, behavior is undefined. O(1) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A copy of Stable\+Priority\+Queue which also has generic priority-\/type. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TItem} & The values in the queue. Must extend the Generic\+Priority\+Queue\+Node class\\
+\hline
+{\em TPriority} & The priority-\/type. Must extend IComparable\texorpdfstring{$<$}{<}TPriority\texorpdfstring{$>$}{>}\\
+\hline
+\end{DoxyTemplParams}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em TItem} : {\em Generic\+Priority\+Queue\+Node$<$TPriority$>$}]\end{description}
+\end{Desc}
+
+
+\label{doc-func-members}
+\Hypertarget{class_priority___queue_1_1_generic_priority_queue-2-g_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_priority___queue_1_1_generic_priority_queue-2-g_a19bad409864460294221d7f5996f0cb9}\index{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$@{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$}!Clear@{Clear}}
+\index{Clear@{Clear}!Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$@{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily \label{class_priority___queue_1_1_generic_priority_queue-2-g_a19bad409864460294221d7f5996f0cb9} 
+void Priority\+\_\+\+Queue.\+Generic\+Priority\+Queue$<$ TItem, TPriority $>$.Clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes every node from the queue. O(n) (So, don\textquotesingle{}t do this often!) 
+
+
+
+Implements \mbox{\hyperlink{interface_priority___queue_1_1_i_priority_queue-2-g_aa1cc9289e15e6e462ce77aad89401d7d}{Priority\+\_\+\+Queue.\+IPriority\+Queue$<$ TItem, in TPriority $>$}}.
+
+\Hypertarget{class_priority___queue_1_1_generic_priority_queue-2-g_ae291df07831389fc1b6684866e826305}\index{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$@{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$}!Contains@{Contains}}
+\index{Contains@{Contains}!Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$@{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$}}
+\doxysubsubsection{\texorpdfstring{Contains()}{Contains()}}
+{\footnotesize\ttfamily \label{class_priority___queue_1_1_generic_priority_queue-2-g_ae291df07831389fc1b6684866e826305} 
+bool Priority\+\_\+\+Queue.\+Generic\+Priority\+Queue$<$ TItem, TPriority $>$.Contains (\begin{DoxyParamCaption}\item[{TItem}]{node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns (in O(1)!) whether the given node is in the queue. If node is or has been previously added to another queue, the result is undefined unless old\+Queue.\+Reset\+Node(node) has been called O(1) 
+
+
+
+Implements \mbox{\hyperlink{interface_priority___queue_1_1_i_priority_queue-2-g_a14a78c4f8dc17e1be032acf75dbe1bda}{Priority\+\_\+\+Queue.\+IPriority\+Queue$<$ TItem, in TPriority $>$}}.
+
+\Hypertarget{class_priority___queue_1_1_generic_priority_queue-2-g_ae324611c90b666f5a5c31a90fd472aee}\index{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$@{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$}!Dequeue@{Dequeue}}
+\index{Dequeue@{Dequeue}!Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$@{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$}}
+\doxysubsubsection{\texorpdfstring{Dequeue()}{Dequeue()}}
+{\footnotesize\ttfamily \label{class_priority___queue_1_1_generic_priority_queue-2-g_ae324611c90b666f5a5c31a90fd472aee} 
+TItem Priority\+\_\+\+Queue.\+Generic\+Priority\+Queue$<$ TItem, TPriority $>$.Dequeue (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes the head of the queue (node with minimum priority; ties are broken by order of insertion), and returns it. If queue is empty, result is undefined O(log n) 
+
+
+
+Implements \mbox{\hyperlink{interface_priority___queue_1_1_i_priority_queue-2-g_a0b8d38bd590ff4bbe8dd2d01b391e472}{Priority\+\_\+\+Queue.\+IPriority\+Queue$<$ TItem, in TPriority $>$}}.
+
+\Hypertarget{class_priority___queue_1_1_generic_priority_queue-2-g_aa8941f90a627f5dbdec7316b21548860}\index{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$@{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$}!Enqueue@{Enqueue}}
+\index{Enqueue@{Enqueue}!Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$@{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$}}
+\doxysubsubsection{\texorpdfstring{Enqueue()}{Enqueue()}}
+{\footnotesize\ttfamily \label{class_priority___queue_1_1_generic_priority_queue-2-g_aa8941f90a627f5dbdec7316b21548860} 
+void Priority\+\_\+\+Queue.\+Generic\+Priority\+Queue$<$ TItem, TPriority $>$.Enqueue (\begin{DoxyParamCaption}\item[{TItem}]{node}{, }\item[{TPriority}]{priority}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Enqueue a node to the priority queue. Lower values are placed in front. Ties are broken by first-\/in-\/first-\/out. If the queue is full, the result is undefined. If the node is already enqueued, the result is undefined. If node is or has been previously added to another queue, the result is undefined unless old\+Queue.\+Reset\+Node(node) has been called O(log n) 
+
+
+
+Implements \mbox{\hyperlink{interface_priority___queue_1_1_i_priority_queue-2-g_ab5c3483d74c8586ddc9201625d961a4d}{Priority\+\_\+\+Queue.\+IPriority\+Queue$<$ TItem, in TPriority $>$}}.
+
+\Hypertarget{class_priority___queue_1_1_generic_priority_queue-2-g_a6d4b8e12e9633046e629b7e75529a757}\index{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$@{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$}!GenericPriorityQueue@{GenericPriorityQueue}}
+\index{GenericPriorityQueue@{GenericPriorityQueue}!Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$@{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$}}
+\doxysubsubsection{\texorpdfstring{GenericPriorityQueue()}{GenericPriorityQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_priority___queue_1_1_generic_priority_queue-2-g_a6d4b8e12e9633046e629b7e75529a757} 
+Priority\+\_\+\+Queue.\+Generic\+Priority\+Queue$<$ TItem, TPriority $>$.Generic\+Priority\+Queue (\begin{DoxyParamCaption}\item[{int}]{max\+Nodes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Instantiate a new Priority Queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Nodes} & The max nodes ever allowed to be enqueued (going over this will cause undefined behavior)\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_priority___queue_1_1_generic_priority_queue-2-g_a944ce61992ebe8aeef43e57c6f6d8f91}\index{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$@{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$}!GenericPriorityQueue@{GenericPriorityQueue}}
+\index{GenericPriorityQueue@{GenericPriorityQueue}!Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$@{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$}}
+\doxysubsubsection{\texorpdfstring{GenericPriorityQueue()}{GenericPriorityQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_priority___queue_1_1_generic_priority_queue-2-g_a944ce61992ebe8aeef43e57c6f6d8f91} 
+Priority\+\_\+\+Queue.\+Generic\+Priority\+Queue$<$ TItem, TPriority $>$.Generic\+Priority\+Queue (\begin{DoxyParamCaption}\item[{int}]{max\+Nodes}{, }\item[{Comparison$<$ TPriority $>$}]{comparer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Instantiate a new Priority Queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Nodes} & The max nodes ever allowed to be enqueued (going over this will cause undefined behavior)\\
+\hline
+{\em comparer} & The comparison function to use to compare TPriority values\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_priority___queue_1_1_generic_priority_queue-2-g_a8cc6944970d1dbb4726bb764ab2c8cab}\index{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$@{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$}!GenericPriorityQueue@{GenericPriorityQueue}}
+\index{GenericPriorityQueue@{GenericPriorityQueue}!Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$@{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$}}
+\doxysubsubsection{\texorpdfstring{GenericPriorityQueue()}{GenericPriorityQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_priority___queue_1_1_generic_priority_queue-2-g_a8cc6944970d1dbb4726bb764ab2c8cab} 
+Priority\+\_\+\+Queue.\+Generic\+Priority\+Queue$<$ TItem, TPriority $>$.Generic\+Priority\+Queue (\begin{DoxyParamCaption}\item[{int}]{max\+Nodes}{, }\item[{IComparer$<$ TPriority $>$}]{comparer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Instantiate a new Priority Queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Nodes} & The max nodes ever allowed to be enqueued (going over this will cause undefined behavior)\\
+\hline
+{\em comparer} & The comparer used to compare TPriority values.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_priority___queue_1_1_generic_priority_queue-2-g_a5ab03a019c63c94774203392b6b906f7}\index{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$@{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$}!Remove@{Remove}}
+\index{Remove@{Remove}!Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$@{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily \label{class_priority___queue_1_1_generic_priority_queue-2-g_a5ab03a019c63c94774203392b6b906f7} 
+void Priority\+\_\+\+Queue.\+Generic\+Priority\+Queue$<$ TItem, TPriority $>$.Remove (\begin{DoxyParamCaption}\item[{TItem}]{node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes a node from the queue. The node does not need to be the head of the queue. ~\newline
+ If the node is not in the queue, the result is undefined. If unsure, check \doxylink{class_priority___queue_1_1_generic_priority_queue-2-g_ae291df07831389fc1b6684866e826305}{Contains()} first O(log n) 
+
+
+
+Implements \mbox{\hyperlink{interface_priority___queue_1_1_i_priority_queue-2-g_ad5c376e30cebfa2e364e5e64e4b4e36a}{Priority\+\_\+\+Queue.\+IPriority\+Queue$<$ TItem, in TPriority $>$}}.
+
+\Hypertarget{class_priority___queue_1_1_generic_priority_queue-2-g_af584bb9cdbdc7e2b1ab02769147a3117}\index{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$@{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$}!UpdatePriority@{UpdatePriority}}
+\index{UpdatePriority@{UpdatePriority}!Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$@{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$}}
+\doxysubsubsection{\texorpdfstring{UpdatePriority()}{UpdatePriority()}}
+{\footnotesize\ttfamily \label{class_priority___queue_1_1_generic_priority_queue-2-g_af584bb9cdbdc7e2b1ab02769147a3117} 
+void Priority\+\_\+\+Queue.\+Generic\+Priority\+Queue$<$ TItem, TPriority $>$.Update\+Priority (\begin{DoxyParamCaption}\item[{TItem}]{node}{, }\item[{TPriority}]{priority}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method must be called on a node every time its priority changes while it is in the queue. ~\newline
+ {\bfseries{Forgetting to call this method will result in a corrupted queue!}} Calling this method on a node not in the queue results in undefined behavior O(log n) 
+
+
+
+Implements \mbox{\hyperlink{interface_priority___queue_1_1_i_priority_queue-2-g_a780b22a80a8e105ebce79592828d4a1c}{Priority\+\_\+\+Queue.\+IPriority\+Queue$<$ TItem, in TPriority $>$}}.
+
+
+
+\label{doc-property-members}
+\Hypertarget{class_priority___queue_1_1_generic_priority_queue-2-g_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_priority___queue_1_1_generic_priority_queue-2-g_a9b5289cf3eb0c59bbf969284ea1ff7ac}\index{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$@{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$}!Count@{Count}}
+\index{Count@{Count}!Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$@{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$}}
+\doxysubsubsection{\texorpdfstring{Count}{Count}}
+{\footnotesize\ttfamily \label{class_priority___queue_1_1_generic_priority_queue-2-g_a9b5289cf3eb0c59bbf969284ea1ff7ac} 
+int Priority\+\_\+\+Queue.\+Generic\+Priority\+Queue$<$ TItem, TPriority $>$.Count\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns the number of nodes in the queue. O(1) 
+
+
+
+Implements \mbox{\hyperlink{interface_priority___queue_1_1_i_priority_queue-2-g_ab99cbd455e14c7f43bea74c3f3eef7c3}{Priority\+\_\+\+Queue.\+IPriority\+Queue$<$ TItem, in TPriority $>$}}.
+
+\Hypertarget{class_priority___queue_1_1_generic_priority_queue-2-g_af06e7bfc1d23ba5b77d90e03570ebe8d}\index{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$@{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$}!First@{First}}
+\index{First@{First}!Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$@{Priority\_Queue.GenericPriorityQueue$<$ TItem, TPriority $>$}}
+\doxysubsubsection{\texorpdfstring{First}{First}}
+{\footnotesize\ttfamily \label{class_priority___queue_1_1_generic_priority_queue-2-g_af06e7bfc1d23ba5b77d90e03570ebe8d} 
+TItem Priority\+\_\+\+Queue.\+Generic\+Priority\+Queue$<$ TItem, TPriority $>$.First\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns the head of the queue, without removing it (use \doxylink{class_priority___queue_1_1_generic_priority_queue-2-g_ae324611c90b666f5a5c31a90fd472aee}{Dequeue()} for that). If the queue is empty, behavior is undefined. O(1) 
+
+
+
+Implements \mbox{\hyperlink{interface_priority___queue_1_1_i_priority_queue-2-g_a2856a1aa9a9fdcc45260ee0804aca83a}{Priority\+\_\+\+Queue.\+IPriority\+Queue$<$ TItem, in TPriority $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+addons/mountain-\/goap/\+Mountain\+Goap/\+Priority\+Queue/Generic\+Priority\+Queue.\+cs\end{DoxyCompactItemize}

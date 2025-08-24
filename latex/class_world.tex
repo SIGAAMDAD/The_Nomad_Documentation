@@ -1,0 +1,133 @@
+\doxysection{World Class Reference}
+\hypertarget{class_world}{}\label{class_world}\index{World@{World}}
+Inheritance diagram for World\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_world}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_world_a1295b2165c8b21a2ac2ffee247d5c39d}\label{class_world_a1295b2165c8b21a2ac2ffee247d5c39d} 
+void {\bfseries Save} ()
+\item 
+\Hypertarget{class_world_ae0441527937def98a753b7d3e62ac7f5}\label{class_world_ae0441527937def98a753b7d3e62ac7f5} 
+override void {\bfseries \+\_\+\+Ready} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_level_data}{Level\+Data}}}
+\begin{DoxyCompactItemize}
+\item 
+delegate void {\bfseries Resources\+Loading\+Finished\+Event\+Handler} ()
+\item 
+delegate void {\bfseries Player\+Respawn\+Event\+Handler} ()
+\item 
+delegate void {\bfseries Hellbreaker\+Begin\+Event\+Handler} ()
+\item 
+delegate void {\bfseries Hellbreaker\+Finished\+Event\+Handler} ()
+\item 
+delegate void {\bfseries Exit\+Level\+Event\+Handler} ()
+\item 
+override void {\bfseries \+\_\+\+Enter\+Tree} ()
+\item 
+override void {\bfseries \+\_\+\+Exit\+Tree} ()
+\item 
+override void {\bfseries \+\_\+\+Ready} ()
+\begin{DoxyCompactList}\small\item\em godot initialization override \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_world_a6459c00506ff02e5aee4adddf1e4a2ad}\label{class_world_a6459c00506ff02e5aee4adddf1e4a2ad} 
+static Godot.\+Variant {\bfseries Get\+Objective\+State} (string key)
+\item 
+\Hypertarget{class_world_a14c015dc586198ebc92f352d9730f052}\label{class_world_a14c015dc586198ebc92f352d9730f052} 
+static void {\bfseries Set\+Objective\+State} (string key, Godot.\+Variant value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_world_ae572460f74f945e32c65795599563778}\label{class_world_ae572460f74f945e32c65795599563778} 
+static Stopwatch {\bfseries Load\+Time}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{class_level_data}{Level\+Data}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_level_data}{Level\+Data}} {\bfseries Instance}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_world_a17377c304c1e664f5b7cdf15fecee7dc}{On\+Resources\+Finished\+Loading}} ()
+\item 
+override void \mbox{\hyperlink{class_world_a604510ddb09c5cdac4cc73138f9ae1c5}{On\+Player\+Joined}} (ulong steam\+Id)
+\item 
+override void \mbox{\hyperlink{class_world_a0901a69fe084661f18f07c4cde1df4b2}{On\+Player\+Left}} (ulong steam\+Id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_level_data}{Level\+Data}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player}{Player}} {\bfseries This\+Player}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_level_data}{Level\+Data}}}
+\begin{DoxyCompactItemize}
+\item 
+Navigation\+Region2D {\bfseries Global\+Navigation\+Mesh}
+\item 
+\mbox{\hyperlink{class_pause_menu}{Pause\+Menu}} {\bfseries Pause\+Menu}
+\item 
+Thread {\bfseries Resource\+Load\+Thread}
+\item 
+Thread {\bfseries Scene\+Load\+Thread}
+\item 
+Dictionary$<$ CSteam\+ID, \mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}} $>$ {\bfseries Players} = null
+\item 
+Packed\+Scene {\bfseries Player\+Scene} = null
+\item 
+Node {\bfseries Player\+List} = null
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_level_data}{Level\+Data}}}
+\begin{DoxyCompactItemize}
+\item 
+static readonly string\mbox{[}$\,$\mbox{]} {\bfseries Death\+Quotes}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_world_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_world_a604510ddb09c5cdac4cc73138f9ae1c5}\index{World@{World}!OnPlayerJoined@{OnPlayerJoined}}
+\index{OnPlayerJoined@{OnPlayerJoined}!World@{World}}
+\doxysubsubsection{\texorpdfstring{OnPlayerJoined()}{OnPlayerJoined()}}
+{\footnotesize\ttfamily \label{class_world_a604510ddb09c5cdac4cc73138f9ae1c5} 
+override void World.\+On\+Player\+Joined (\begin{DoxyParamCaption}\item[{ulong}]{steam\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_level_data}{Level\+Data}}.
+
+\Hypertarget{class_world_a0901a69fe084661f18f07c4cde1df4b2}\index{World@{World}!OnPlayerLeft@{OnPlayerLeft}}
+\index{OnPlayerLeft@{OnPlayerLeft}!World@{World}}
+\doxysubsubsection{\texorpdfstring{OnPlayerLeft()}{OnPlayerLeft()}}
+{\footnotesize\ttfamily \label{class_world_a0901a69fe084661f18f07c4cde1df4b2} 
+override void World.\+On\+Player\+Left (\begin{DoxyParamCaption}\item[{ulong}]{steam\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_level_data}{Level\+Data}}.
+
+\Hypertarget{class_world_a17377c304c1e664f5b7cdf15fecee7dc}\index{World@{World}!OnResourcesFinishedLoading@{OnResourcesFinishedLoading}}
+\index{OnResourcesFinishedLoading@{OnResourcesFinishedLoading}!World@{World}}
+\doxysubsubsection{\texorpdfstring{OnResourcesFinishedLoading()}{OnResourcesFinishedLoading()}}
+{\footnotesize\ttfamily \label{class_world_a17377c304c1e664f5b7cdf15fecee7dc} 
+override void World.\+On\+Resources\+Finished\+Loading (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_level_data}{Level\+Data}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/World.\+cs\end{DoxyCompactItemize}

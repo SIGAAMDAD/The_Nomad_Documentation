@@ -1,0 +1,162 @@
+\doxysection{Renown.\+World.\+Government Class Reference}
+\hypertarget{class_renown_1_1_world_1_1_government}{}\label{class_renown_1_1_world_1_1_government}\index{Renown.World.Government@{Renown.World.Government}}
+Inheritance diagram for Renown.\+World.\+Government\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_renown_1_1_world_1_1_government}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_renown_1_1_world_1_1_government_ac9ea8c93089ead336868d98f8bd3daff}\label{class_renown_1_1_world_1_1_government_ac9ea8c93089ead336868d98f8bd3daff} 
+override void {\bfseries \+\_\+\+Ready} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Renown.\+World.\+Faction}}}
+\begin{DoxyCompactItemize}
+\item 
+delegate void {\bfseries Earn\+Trait\+Event\+Handler} (Node self, \mbox{\hyperlink{class_renown_1_1_trait}{Trait}} trait)
+\item 
+delegate void {\bfseries Lose\+Trait\+Event\+Handler} (Node self, \mbox{\hyperlink{class_renown_1_1_trait}{Trait}} trait)
+\item 
+delegate void {\bfseries Meet\+Entity\+Event\+Handler} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} other, Node self)
+\item 
+delegate void {\bfseries Meet\+Faction\+Event\+Handler} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction, Node self)
+\item 
+delegate void {\bfseries Increase\+Relation\+Event\+Handler} (Node other, Node self, float n\+Amount)
+\item 
+delegate void {\bfseries Decrease\+Relation\+Event\+Handler} (Node other, Node self, float n\+Amount)
+\item 
+delegate void {\bfseries Increase\+Renown\+Event\+Handler} (Node self, int n\+Amount)
+\item 
+delegate void {\bfseries Gain\+Money\+Event\+Handler} (Node entity, float n\+Amount)
+\item 
+delegate void {\bfseries Lose\+Money\+Event\+Handler} (Node entity, float n\+Amount)
+\item 
+String\+Name {\bfseries Get\+Faction\+Name} ()
+\item 
+AIAlignment {\bfseries Get\+Alignment} ()
+\item 
+\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} {\bfseries Get\+Leader} ()
+\item 
+Node\+Path \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_af383b515dfd6c2fe7a1911371222e9e5}{Get\+Hash}} ()
+\item 
+String\+Name \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_a09de81f6954818b19c47e82e14170462}{Get\+Object\+Name}} ()
+\item 
+float {\bfseries Get\+Money} ()
+\item 
+virtual void {\bfseries Decrease\+Money} (float n\+Amount)
+\item 
+virtual void {\bfseries Increase\+Money} (float n\+Amount)
+\item 
+Hash\+Set$<$ \mbox{\hyperlink{class_renown_1_1_trait}{Trait}} $>$ {\bfseries Get\+Traits} ()
+\item 
+bool {\bfseries Has\+Trait} (\mbox{\hyperlink{class_renown_1_1_trait}{Trait}} trait)
+\begin{DoxyCompactList}\small\item\em returns true if the entity has the given trait \end{DoxyCompactList}\item 
+bool {\bfseries Has\+Conflicting\+Trait} (\mbox{\hyperlink{class_renown_1_1_trait}{Trait}} other)
+\begin{DoxyCompactList}\small\item\em checks if the given trait conflicts with this entity\textquotesingle{}s values \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_renown_1_1_trait}{Trait}} $>$ {\bfseries Get\+Conflicting\+Traits} (\mbox{\hyperlink{class_renown_1_1_trait}{Trait}} other)
+\item 
+List$<$ \mbox{\hyperlink{class_renown_1_1_trait}{Trait}} $>$ {\bfseries Get\+Agreeable\+Traits} (\mbox{\hyperlink{class_renown_1_1_trait}{Trait}} other)
+\item 
+virtual void {\bfseries Add\+Trait} (\mbox{\hyperlink{class_renown_1_1_trait}{Trait}} trait)
+\item 
+virtual void {\bfseries Remove\+Trait} (\mbox{\hyperlink{class_renown_1_1_trait}{Trait}} trait)
+\item 
+virtual void {\bfseries Meet} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other)
+\item 
+float \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_a91af45ed2f8266bca0893deba762c02b}{Get\+Relation\+Score}} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other)
+\item 
+void {\bfseries Relation\+Increase} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other, float n\+Amount)
+\item 
+void {\bfseries Relation\+Decrease} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other, float n\+Amount)
+\item 
+virtual void \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_a3e1fb7939affbd7598e262e54ad6769c}{Determine\+Relation\+Status}} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other)
+\item 
+Relation\+Status \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_a2037b1600dc53ee22c5f3e763c5843a9}{Get\+Relation\+Status}} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other)
+\item 
+int {\bfseries Get\+Renown\+Score} ()
+\item 
+void {\bfseries Add\+Renown} (int n\+Amount)
+\item 
+virtual void \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_aafa9093cdbea620d405c18a24daf24f4}{Save}} ()
+\item 
+virtual void \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_aabd05fc546483c25e94c9a12839ad05d}{Load}} ()
+\item 
+bool {\bfseries Can\+Join} (\mbox{\hyperlink{class_player}{Player}} member)
+\item 
+void {\bfseries Member\+Join} (\mbox{\hyperlink{class_player}{Player}} member)
+\item 
+void {\bfseries Member\+Leave} (\mbox{\hyperlink{class_player}{Player}} member)
+\item 
+override void {\bfseries \+\_\+\+Enter\+Tree} ()
+\item 
+bool {\bfseries Can\+Loan\+Money} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} destination, float n\+Amount)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Renown.\+World.\+Faction}}}
+\begin{DoxyCompactItemize}
+\item 
+static Data\+Cache$<$ \mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} $>$ {\bfseries Cache} = null
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Renown.\+World.\+Faction}}}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries Create\+Debt} (float n\+Amount)
+\item 
+void {\bfseries Add\+Debt} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} to, float n\+Amount)
+\item 
+void {\bfseries Pay\+Debt} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} to, float n\+Amount)
+\item 
+void {\bfseries Update\+War\+Status} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction)
+\item 
+void {\bfseries Update\+Relations} ()
+\item 
+void {\bfseries Update\+Debts} ()
+\item 
+virtual void {\bfseries Renown\+Process} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Renown.\+World.\+Faction}}}
+\begin{DoxyCompactItemize}
+\item 
+String\+Name {\bfseries Faction\+Name}
+\item 
+string {\bfseries Description}
+\item 
+AIAlignment {\bfseries Primary\+Alignment}
+\item 
+\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} {\bfseries Leader}
+\item 
+Godot.\+Collections.\+Array$<$ \mbox{\hyperlink{class_renown_1_1_entity}{Entity}} $>$ {\bfseries Member\+List}
+\item 
+float {\bfseries Money} = 0.\+0f
+\item 
+int {\bfseries Renown\+Score} = 0
+\item 
+Godot.\+Collections.\+Dictionary$<$ Node, float $>$ {\bfseries Debts} = null
+\item 
+Godot.\+Collections.\+Dictionary$<$ Node, float $>$ {\bfseries Relations} = null
+\item 
+\mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{World\+Area}} {\bfseries Location} = null
+\item 
+Hash\+Set$<$ \mbox{\hyperlink{class_renown_1_1_trait}{Trait}} $>$ {\bfseries Trait\+Cache} = null
+\item 
+Dictionary$<$ \mbox{\hyperlink{interface_renown_1_1_object}{Object}}, float $>$ {\bfseries Debt\+Cache} = null
+\item 
+Dictionary$<$ \mbox{\hyperlink{interface_renown_1_1_object}{Object}}, float $>$ {\bfseries Relation\+Cache} = null
+\item 
+Hash\+Set$<$ \mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} $>$ {\bfseries War\+List} = null
+\item 
+System.\+Threading.\+Thread {\bfseries Think\+Thread} = null
+\item 
+bool {\bfseries Quit} = false
+\item 
+int {\bfseries Thread\+Sleep} = Constants.\+THREADSLEEP\+\_\+\+FACTION\+\_\+\+PLAYER\+\_\+\+AWAY
+\item 
+System.\+Threading.\+Thread\+Priority {\bfseries Importance} = Constants.\+THREAD\+\_\+\+IMPORTANCE\+\_\+\+PLAYER\+\_\+\+AWAY
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/\+Renown/\+World/Government.\+cs\end{DoxyCompactItemize}

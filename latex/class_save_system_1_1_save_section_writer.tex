@@ -1,0 +1,838 @@
+\doxysection{Save\+System.\+Save\+Section\+Writer Class Reference}
+\hypertarget{class_save_system_1_1_save_section_writer}{}\label{class_save_system_1_1_save_section_writer}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+
+
+Handles writing of savefile "{}sections"{} into a binary format.  
+
+
+Inheritance diagram for Save\+System.\+Save\+Section\+Writer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_save_system_1_1_save_section_writer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_save_system_1_1_save_section_writer_a4e7abd8ed09e5381af21e73fa73a4d5c}{Save\+Section\+Writer}} (string name, System.\+IO.\+Binary\+Writer? writer)
+\begin{DoxyCompactList}\small\item\em constructs a \doxylink{class_save_system_1_1_save_section_writer}{Save\+Section\+Writer} object \end{DoxyCompactList}\item 
+\Hypertarget{class_save_system_1_1_save_section_writer_a36f9e595afab78e7e54f083dcc1d0a1c}\label{class_save_system_1_1_save_section_writer_a36f9e595afab78e7e54f083dcc1d0a1c} 
+void {\bfseries Dispose} ()
+\item 
+void \mbox{\hyperlink{class_save_system_1_1_save_section_writer_a3e4e2e7a0602dcabe8d837931647728c}{Flush}} ()
+\begin{DoxyCompactList}\small\item\em finalizes a save section. Called automatically when the \doxylink{class_save_system_1_1_save_section_writer}{Save\+Section\+Writer} is disposed \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_save_system_1_1_save_section_writer_a1be1ce71ba685725a04a6510fea44a58}{Save\+SByte}} (string name, sbyte value)
+\begin{DoxyCompactList}\small\item\em Writes an sbyte (int8) value to the current savefile section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_save_system_1_1_save_section_writer_a6ef4280c6b5c2b4a982a29fc7c4333f4}{Save\+Short}} (string name, short value)
+\begin{DoxyCompactList}\small\item\em Writes a short (int16) value to the current savefile section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_save_system_1_1_save_section_writer_a8757cb98442cda22572f5308b6707b24}{Save\+Int}} (string name, int value)
+\begin{DoxyCompactList}\small\item\em Writes an int (int32) value to the current savefile section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_save_system_1_1_save_section_writer_ad63e42f3166df732aa7c5ab072b62fa6}{Save\+Long}} (string name, long value)
+\begin{DoxyCompactList}\small\item\em Writes a long (int64) value to the current savefile section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_save_system_1_1_save_section_writer_a079d9b81c02a20081f6aa26bdc65f3aa}{Save\+Byte}} (string name, byte value)
+\begin{DoxyCompactList}\small\item\em Writes a byte (uint8) value to the current savefile section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_save_system_1_1_save_section_writer_a78bd8c6147431ac1de1491a1b7d83c4d}{Save\+UShort}} (string name, ushort value)
+\begin{DoxyCompactList}\small\item\em Writes a ushort (uint16) value to the current savefile section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_save_system_1_1_save_section_writer_a74165a8635951b3502abaac572063639}{Save\+UInt}} (string name, uint value)
+\begin{DoxyCompactList}\small\item\em Writes a uint (uint32) value to the current savefile section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_save_system_1_1_save_section_writer_ae269a22f56b74a8f46edfacb01bec578}{Save\+ULong}} (string name, ulong value)
+\begin{DoxyCompactList}\small\item\em Writes a ulong (uint64) value to the current savefile section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_save_system_1_1_save_section_writer_a32e77d0f016c5da32a01e398aaa44c0a}{Save\+Float}} (string name, float value)
+\begin{DoxyCompactList}\small\item\em Writes a float value to the current savefile section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_save_system_1_1_save_section_writer_a5e8015560b3c0569d1ec3386d3566bc5}{Save\+Double}} (string name, double value)
+\begin{DoxyCompactList}\small\item\em Writes a double value to the current savefile section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_save_system_1_1_save_section_writer_a37bb32b42f3d5e91182a72b82c400673}{Save\+String}} (string name, string value)
+\begin{DoxyCompactList}\small\item\em Writes a string value to the current savefile section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_save_system_1_1_save_section_writer_ad9a27e56be7a6c21837c7ab956fdafb7}{Save\+Bool}} (string name, bool value)
+\begin{DoxyCompactList}\small\item\em Writes a boolean value to the current savefile section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_save_system_1_1_save_section_writer_aac6fd097bf6b86b7ac415a9332ef3a90}{Save\+Vector2}} (string name, Godot.\+Vector2 value)
+\begin{DoxyCompactList}\small\item\em Writes a Godot.\+Vector2 value to the current savefile section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_save_system_1_1_save_section_writer_aabdde774d7372b7939104c94bdf04a13}{Save\+Vector2I}} (string name, Godot.\+Vector2I value)
+\begin{DoxyCompactList}\small\item\em Writes a Godot.\+Vector2I value to the current savefile section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_save_system_1_1_save_section_writer_ad539899a65a01a62535f732199fdffde}{Save\+Array}} (string name, List$<$ int $>$ value)
+\begin{DoxyCompactList}\small\item\em Writes an int System.\+Collections.\+Generic.\+List value to the current savefile section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_save_system_1_1_save_section_writer_a59801833d6506c8a0cb71a9e786dac7a}{Save\+Array}} (string name, int\mbox{[}$\,$\mbox{]} value)
+\begin{DoxyCompactList}\small\item\em Writes a int\mbox{[}\mbox{]} value to the current savefile section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_save_system_1_1_save_section_writer_a519fa4ef63d8aedce06033d61e31653e}{Save\+Array}} (string name, Godot.\+Collections.\+Array$<$ int $>$ value)
+\begin{DoxyCompactList}\small\item\em Writes an int Godot.\+Collections.\+Array value to the current savefile section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_save_system_1_1_save_section_writer_a24814f366cafbeac54aae1dcbbb4f93b}{Save\+Array}} (string name, List$<$ uint $>$ value)
+\begin{DoxyCompactList}\small\item\em Writes a uint System.\+Collections.\+Generic.\+List value to the current savefile section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_save_system_1_1_save_section_writer_a798d93a3c40a49693f52ff004d3406e7}{Save\+Array}} (string name, uint\mbox{[}$\,$\mbox{]} value)
+\begin{DoxyCompactList}\small\item\em Writes a uint\mbox{[}\mbox{]} value to the current savefile section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_save_system_1_1_save_section_writer_a9fe70d3d7a735d9873fc3eb6de15da62}{Save\+Array}} (string name, Godot.\+Collections.\+Array$<$ uint $>$ value)
+\begin{DoxyCompactList}\small\item\em Writes a uint Godot.\+Collections.\+Array value to the current savefile section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_save_system_1_1_save_section_writer_abffac94e1042ab12cf0bc0a0a773e4fc}{Save\+Array}} (string name, List$<$ float $>$ value)
+\begin{DoxyCompactList}\small\item\em Writes a float System.\+Collections.\+Generic.\+List value to the current savefile section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_save_system_1_1_save_section_writer_afe4a49701dfd5b4a06d465f3565f7ae2}{Save\+Array}} (string name, float\mbox{[}$\,$\mbox{]} value)
+\begin{DoxyCompactList}\small\item\em Writes a float\mbox{[}\mbox{]} value to the current savefile section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_save_system_1_1_save_section_writer_aaecd14bb56d0adc3ddb99e1ed699607b}{Save\+Array}} (string name, Godot.\+Collections.\+Array$<$ float $>$ value)
+\begin{DoxyCompactList}\small\item\em Writes a float Godot.\+Collections.\+Array value to the current savefile section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_save_system_1_1_save_section_writer_a0fb9619de6200bc3e8dbd4d250a3af70}{Save\+Array}} (string name, List$<$ string $>$ value)
+\begin{DoxyCompactList}\small\item\em Writes a string System.\+Collections.\+Generic value to the current savefile section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_save_system_1_1_save_section_writer_a21aa66a348ad5ae0212ac18ec57383ae}{Save\+Array}} (string name, string\mbox{[}$\,$\mbox{]} value)
+\begin{DoxyCompactList}\small\item\em Writes a string\mbox{[}\mbox{]} value to the current savefile section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_save_system_1_1_save_section_writer_aae3d937a9946bdc50a40f813558f9eb5}{Save\+Array}} (string name, Godot.\+Collections.\+Array$<$ string $>$ value)
+\begin{DoxyCompactList}\small\item\em Writes a string Godot.\+Collections.\+Array value to the current savefile section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_save_system_1_1_save_section_writer_a86b41fb74b52b8662056dfdfdd4e01b0}{Save\+Dictionary}} (string name, Godot.\+Collections.\+Dictionary value)
+\begin{DoxyCompactList}\small\item\em Writes a Godot.\+Collections.\+Dictionary value to the current savefile section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_save_system_1_1_save_section_writer_ab8905f412715efeb89f4c3c8bb794845}{Save\+Array}} (string name, Godot.\+Collections.\+Array value)
+\begin{DoxyCompactList}\small\item\em Writes a Godot.\+Collections.\+Array value to the current savefile section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_save_system_1_1_save_section_writer_a22529447d72c6dcd95643faee2fdeb03}{Save\+Byte\+Array}} (string name, byte\mbox{[}$\,$\mbox{]} value)
+\begin{DoxyCompactList}\small\item\em Writes a fixed-\/length byte\mbox{[}\mbox{]} variable to the current savefile section. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles writing of savefile "{}sections"{} into a binary format. 
+
+Not thread-\/safe. Should ONLY be used in a dedicated Save() function. Exceptions are caught in \doxylink{class_archive_system_a9962d0150f259a457de4fa070e988e68}{Archive\+System.\+Save\+Game} 
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{class_archive_system}{Archive\+System}, \doxylink{class_save_system_1_1_save_section_reader}{Save\+Section\+Reader}
+
+
+\end{DoxySeeAlso}
+
+
+\label{doc-constructors}
+\Hypertarget{class_save_system_1_1_save_section_writer_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_save_system_1_1_save_section_writer_a4e7abd8ed09e5381af21e73fa73a4d5c}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!SaveSectionWriter@{SaveSectionWriter}}
+\index{SaveSectionWriter@{SaveSectionWriter}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{SaveSectionWriter()}{SaveSectionWriter()}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_a4e7abd8ed09e5381af21e73fa73a4d5c} 
+Save\+System.\+Save\+Section\+Writer.\+Save\+Section\+Writer (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{System.\+IO.\+Binary\+Writer?}]{writer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+constructs a \doxylink{class_save_system_1_1_save_section_writer}{Save\+Section\+Writer} object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & name of the section\\
+\hline
+{\em writer} & the stream to write to, if null, Archive\+System.\+Save\+Writer is used by default\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Operation\+Exception} & \\
+\hline
+{\em Argument\+Null\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-func-members}
+\Hypertarget{class_save_system_1_1_save_section_writer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_save_system_1_1_save_section_writer_a3e4e2e7a0602dcabe8d837931647728c}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!Flush@{Flush}}
+\index{Flush@{Flush}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{Flush()}{Flush()}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_a3e4e2e7a0602dcabe8d837931647728c} 
+void Save\+System.\+Save\+Section\+Writer.\+Flush (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+finalizes a save section. Called automatically when the \doxylink{class_save_system_1_1_save_section_writer}{Save\+Section\+Writer} is disposed 
+
+There is very little reason to call this explicitly. \Hypertarget{class_save_system_1_1_save_section_writer_afe4a49701dfd5b4a06d465f3565f7ae2}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!SaveArray@{SaveArray}}
+\index{SaveArray@{SaveArray}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{SaveArray()}{SaveArray()}\hspace{0.1cm}{\footnotesize\ttfamily [1/13]}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_afe4a49701dfd5b4a06d465f3565f7ae2} 
+void Save\+System.\+Save\+Section\+Writer.\+Save\+Array (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{float\mbox{[}$\,$\mbox{]}}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a float\mbox{[}\mbox{]} value to the current savefile section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique identifier for this field\\
+\hline
+{\em value} & The value to be saved\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if name is null or empty\\
+\hline
+{\em Invalid\+Operation\+Exception} & Thrown if called outside of a save operation\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_save_system_1_1_save_section_writer_ab8905f412715efeb89f4c3c8bb794845}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!SaveArray@{SaveArray}}
+\index{SaveArray@{SaveArray}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{SaveArray()}{SaveArray()}\hspace{0.1cm}{\footnotesize\ttfamily [2/13]}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_ab8905f412715efeb89f4c3c8bb794845} 
+void Save\+System.\+Save\+Section\+Writer.\+Save\+Array (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{Godot.\+Collections.\+Array}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a Godot.\+Collections.\+Array value to the current savefile section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique identifier for this field\\
+\hline
+{\em value} & The value to be saved\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if name is null or empty\\
+\hline
+{\em Invalid\+Operation\+Exception} & Thrown if called outside of a save operation\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_save_system_1_1_save_section_writer_aaecd14bb56d0adc3ddb99e1ed699607b}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!SaveArray@{SaveArray}}
+\index{SaveArray@{SaveArray}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{SaveArray()}{SaveArray()}\hspace{0.1cm}{\footnotesize\ttfamily [3/13]}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_aaecd14bb56d0adc3ddb99e1ed699607b} 
+void Save\+System.\+Save\+Section\+Writer.\+Save\+Array (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{Godot.\+Collections.\+Array$<$ float $>$}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a float Godot.\+Collections.\+Array value to the current savefile section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique identifier for this field\\
+\hline
+{\em value} & The value to be saved\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if name is null or empty\\
+\hline
+{\em Invalid\+Operation\+Exception} & Thrown if called outside of a save operation\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_save_system_1_1_save_section_writer_a519fa4ef63d8aedce06033d61e31653e}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!SaveArray@{SaveArray}}
+\index{SaveArray@{SaveArray}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{SaveArray()}{SaveArray()}\hspace{0.1cm}{\footnotesize\ttfamily [4/13]}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_a519fa4ef63d8aedce06033d61e31653e} 
+void Save\+System.\+Save\+Section\+Writer.\+Save\+Array (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{Godot.\+Collections.\+Array$<$ int $>$}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes an int Godot.\+Collections.\+Array value to the current savefile section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique identifier for this field\\
+\hline
+{\em value} & The value to be saved\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if name is null or empty\\
+\hline
+{\em Invalid\+Operation\+Exception} & Thrown if called outside of a save operation\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_save_system_1_1_save_section_writer_aae3d937a9946bdc50a40f813558f9eb5}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!SaveArray@{SaveArray}}
+\index{SaveArray@{SaveArray}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{SaveArray()}{SaveArray()}\hspace{0.1cm}{\footnotesize\ttfamily [5/13]}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_aae3d937a9946bdc50a40f813558f9eb5} 
+void Save\+System.\+Save\+Section\+Writer.\+Save\+Array (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{Godot.\+Collections.\+Array$<$ string $>$}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a string Godot.\+Collections.\+Array value to the current savefile section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique identifier for this field\\
+\hline
+{\em value} & The value to be saved\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if name is null or empty\\
+\hline
+{\em Invalid\+Operation\+Exception} & Thrown if called outside of a save operation\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_save_system_1_1_save_section_writer_a9fe70d3d7a735d9873fc3eb6de15da62}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!SaveArray@{SaveArray}}
+\index{SaveArray@{SaveArray}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{SaveArray()}{SaveArray()}\hspace{0.1cm}{\footnotesize\ttfamily [6/13]}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_a9fe70d3d7a735d9873fc3eb6de15da62} 
+void Save\+System.\+Save\+Section\+Writer.\+Save\+Array (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{Godot.\+Collections.\+Array$<$ uint $>$}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a uint Godot.\+Collections.\+Array value to the current savefile section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique identifier for this field\\
+\hline
+{\em value} & The value to be saved\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if name is null or empty\\
+\hline
+{\em Invalid\+Operation\+Exception} & Thrown if called outside of a save operation\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_save_system_1_1_save_section_writer_a59801833d6506c8a0cb71a9e786dac7a}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!SaveArray@{SaveArray}}
+\index{SaveArray@{SaveArray}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{SaveArray()}{SaveArray()}\hspace{0.1cm}{\footnotesize\ttfamily [7/13]}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_a59801833d6506c8a0cb71a9e786dac7a} 
+void Save\+System.\+Save\+Section\+Writer.\+Save\+Array (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{int\mbox{[}$\,$\mbox{]}}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a int\mbox{[}\mbox{]} value to the current savefile section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique identifier for this field\\
+\hline
+{\em value} & The value to be saved\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if name is null or empty\\
+\hline
+{\em Invalid\+Operation\+Exception} & Thrown if called outside of a save operation\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_save_system_1_1_save_section_writer_abffac94e1042ab12cf0bc0a0a773e4fc}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!SaveArray@{SaveArray}}
+\index{SaveArray@{SaveArray}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{SaveArray()}{SaveArray()}\hspace{0.1cm}{\footnotesize\ttfamily [8/13]}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_abffac94e1042ab12cf0bc0a0a773e4fc} 
+void Save\+System.\+Save\+Section\+Writer.\+Save\+Array (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{List$<$ float $>$}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a float System.\+Collections.\+Generic.\+List value to the current savefile section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique identifier for this field\\
+\hline
+{\em value} & The value to be saved\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if name is null or empty\\
+\hline
+{\em Invalid\+Operation\+Exception} & Thrown if called outside of a save operation\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_save_system_1_1_save_section_writer_ad539899a65a01a62535f732199fdffde}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!SaveArray@{SaveArray}}
+\index{SaveArray@{SaveArray}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{SaveArray()}{SaveArray()}\hspace{0.1cm}{\footnotesize\ttfamily [9/13]}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_ad539899a65a01a62535f732199fdffde} 
+void Save\+System.\+Save\+Section\+Writer.\+Save\+Array (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{List$<$ int $>$}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes an int System.\+Collections.\+Generic.\+List value to the current savefile section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique identifier for this field\\
+\hline
+{\em value} & The value to be saved\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if name is null or empty\\
+\hline
+{\em Invalid\+Operation\+Exception} & Thrown if called outside of a save operation\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_save_system_1_1_save_section_writer_a0fb9619de6200bc3e8dbd4d250a3af70}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!SaveArray@{SaveArray}}
+\index{SaveArray@{SaveArray}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{SaveArray()}{SaveArray()}\hspace{0.1cm}{\footnotesize\ttfamily [10/13]}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_a0fb9619de6200bc3e8dbd4d250a3af70} 
+void Save\+System.\+Save\+Section\+Writer.\+Save\+Array (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{List$<$ string $>$}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a string System.\+Collections.\+Generic value to the current savefile section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique identifier for this field\\
+\hline
+{\em value} & The value to be saved\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if name is null or empty\\
+\hline
+{\em Invalid\+Operation\+Exception} & Thrown if called outside of a save operation\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_save_system_1_1_save_section_writer_a24814f366cafbeac54aae1dcbbb4f93b}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!SaveArray@{SaveArray}}
+\index{SaveArray@{SaveArray}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{SaveArray()}{SaveArray()}\hspace{0.1cm}{\footnotesize\ttfamily [11/13]}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_a24814f366cafbeac54aae1dcbbb4f93b} 
+void Save\+System.\+Save\+Section\+Writer.\+Save\+Array (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{List$<$ uint $>$}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a uint System.\+Collections.\+Generic.\+List value to the current savefile section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique identifier for this field\\
+\hline
+{\em value} & The value to be saved\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if name is null or empty\\
+\hline
+{\em Invalid\+Operation\+Exception} & Thrown if called outside of a save operation\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_save_system_1_1_save_section_writer_a21aa66a348ad5ae0212ac18ec57383ae}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!SaveArray@{SaveArray}}
+\index{SaveArray@{SaveArray}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{SaveArray()}{SaveArray()}\hspace{0.1cm}{\footnotesize\ttfamily [12/13]}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_a21aa66a348ad5ae0212ac18ec57383ae} 
+void Save\+System.\+Save\+Section\+Writer.\+Save\+Array (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{string\mbox{[}$\,$\mbox{]}}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a string\mbox{[}\mbox{]} value to the current savefile section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique identifier for this field\\
+\hline
+{\em value} & The value to be saved\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if name is null or empty\\
+\hline
+{\em Invalid\+Operation\+Exception} & Thrown if called outside of a save operation\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_save_system_1_1_save_section_writer_a798d93a3c40a49693f52ff004d3406e7}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!SaveArray@{SaveArray}}
+\index{SaveArray@{SaveArray}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{SaveArray()}{SaveArray()}\hspace{0.1cm}{\footnotesize\ttfamily [13/13]}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_a798d93a3c40a49693f52ff004d3406e7} 
+void Save\+System.\+Save\+Section\+Writer.\+Save\+Array (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{uint\mbox{[}$\,$\mbox{]}}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a uint\mbox{[}\mbox{]} value to the current savefile section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique identifier for this field\\
+\hline
+{\em value} & The value to be saved\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if name is null or empty\\
+\hline
+{\em Invalid\+Operation\+Exception} & Thrown if called outside of a save operation\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_save_system_1_1_save_section_writer_ad9a27e56be7a6c21837c7ab956fdafb7}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!SaveBool@{SaveBool}}
+\index{SaveBool@{SaveBool}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{SaveBool()}{SaveBool()}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_ad9a27e56be7a6c21837c7ab956fdafb7} 
+void Save\+System.\+Save\+Section\+Writer.\+Save\+Bool (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{bool}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a boolean value to the current savefile section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique identifier for this field\\
+\hline
+{\em value} & The value to be saved\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if name is null or empty\\
+\hline
+{\em Invalid\+Operation\+Exception} & Thrown if called outside of a save operation\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_save_system_1_1_save_section_writer_a079d9b81c02a20081f6aa26bdc65f3aa}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!SaveByte@{SaveByte}}
+\index{SaveByte@{SaveByte}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{SaveByte()}{SaveByte()}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_a079d9b81c02a20081f6aa26bdc65f3aa} 
+void Save\+System.\+Save\+Section\+Writer.\+Save\+Byte (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{byte}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a byte (uint8) value to the current savefile section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique identifier for this field\\
+\hline
+{\em value} & The value to be saved\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if name is null or empty\\
+\hline
+{\em Invalid\+Operation\+Exception} & Thrown if called outside of a save operation\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_save_system_1_1_save_section_writer_a22529447d72c6dcd95643faee2fdeb03}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!SaveByteArray@{SaveByteArray}}
+\index{SaveByteArray@{SaveByteArray}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{SaveByteArray()}{SaveByteArray()}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_a22529447d72c6dcd95643faee2fdeb03} 
+void Save\+System.\+Save\+Section\+Writer.\+Save\+Byte\+Array (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{byte\mbox{[}$\,$\mbox{]}}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a fixed-\/length byte\mbox{[}\mbox{]} variable to the current savefile section. 
+
+the given array shouldn\textquotesingle{}t exceed 4 MiB, so be mindful of that 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique identifier of the field\\
+\hline
+{\em value} & The value to be saved\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if value.\+Length exceeds MAX\+\_\+\+ARRAY\+\_\+\+SIZE\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_save_system_1_1_save_section_writer_a86b41fb74b52b8662056dfdfdd4e01b0}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!SaveDictionary@{SaveDictionary}}
+\index{SaveDictionary@{SaveDictionary}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{SaveDictionary()}{SaveDictionary()}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_a86b41fb74b52b8662056dfdfdd4e01b0} 
+void Save\+System.\+Save\+Section\+Writer.\+Save\+Dictionary (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{Godot.\+Collections.\+Dictionary}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a Godot.\+Collections.\+Dictionary value to the current savefile section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique identifier for this field\\
+\hline
+{\em value} & The value to be saved\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if name is null or empty\\
+\hline
+{\em Invalid\+Operation\+Exception} & Thrown if called outside of a save operation\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_save_system_1_1_save_section_writer_a5e8015560b3c0569d1ec3386d3566bc5}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!SaveDouble@{SaveDouble}}
+\index{SaveDouble@{SaveDouble}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{SaveDouble()}{SaveDouble()}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_a5e8015560b3c0569d1ec3386d3566bc5} 
+void Save\+System.\+Save\+Section\+Writer.\+Save\+Double (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{double}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a double value to the current savefile section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique identifier for this field\\
+\hline
+{\em value} & The value to be saved\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if name is null or empty\\
+\hline
+{\em Invalid\+Operation\+Exception} & Thrown if called outside of a save operation\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_save_system_1_1_save_section_writer_a32e77d0f016c5da32a01e398aaa44c0a}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!SaveFloat@{SaveFloat}}
+\index{SaveFloat@{SaveFloat}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{SaveFloat()}{SaveFloat()}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_a32e77d0f016c5da32a01e398aaa44c0a} 
+void Save\+System.\+Save\+Section\+Writer.\+Save\+Float (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{float}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a float value to the current savefile section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique identifier for this field\\
+\hline
+{\em value} & The value to be saved\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if name is null or empty\\
+\hline
+{\em Invalid\+Operation\+Exception} & Thrown if called outside of a save operation\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_save_system_1_1_save_section_writer_a8757cb98442cda22572f5308b6707b24}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!SaveInt@{SaveInt}}
+\index{SaveInt@{SaveInt}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{SaveInt()}{SaveInt()}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_a8757cb98442cda22572f5308b6707b24} 
+void Save\+System.\+Save\+Section\+Writer.\+Save\+Int (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{int}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes an int (int32) value to the current savefile section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique identifier for this field\\
+\hline
+{\em value} & The value to be saved\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if name is null or empty\\
+\hline
+{\em Invalid\+Operation\+Exception} & Thrown if called outside of a save operation\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_save_system_1_1_save_section_writer_ad63e42f3166df732aa7c5ab072b62fa6}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!SaveLong@{SaveLong}}
+\index{SaveLong@{SaveLong}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{SaveLong()}{SaveLong()}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_ad63e42f3166df732aa7c5ab072b62fa6} 
+void Save\+System.\+Save\+Section\+Writer.\+Save\+Long (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{long}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a long (int64) value to the current savefile section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique identifier for this field\\
+\hline
+{\em value} & The value to be saved\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if name is null or empty\\
+\hline
+{\em Invalid\+Operation\+Exception} & Thrown if called outside of a save operation\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_save_system_1_1_save_section_writer_a1be1ce71ba685725a04a6510fea44a58}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!SaveSByte@{SaveSByte}}
+\index{SaveSByte@{SaveSByte}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{SaveSByte()}{SaveSByte()}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_a1be1ce71ba685725a04a6510fea44a58} 
+void Save\+System.\+Save\+Section\+Writer.\+Save\+SByte (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{sbyte}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes an sbyte (int8) value to the current savefile section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique identifier for this field\\
+\hline
+{\em value} & The value to be saved\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if name is null or empty\\
+\hline
+{\em Invalid\+Operation\+Exception} & Thrown if called outside of a save operation\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_save_system_1_1_save_section_writer_a6ef4280c6b5c2b4a982a29fc7c4333f4}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!SaveShort@{SaveShort}}
+\index{SaveShort@{SaveShort}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{SaveShort()}{SaveShort()}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_a6ef4280c6b5c2b4a982a29fc7c4333f4} 
+void Save\+System.\+Save\+Section\+Writer.\+Save\+Short (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{short}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a short (int16) value to the current savefile section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique identifier for this field\\
+\hline
+{\em value} & The value to be saved\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if name is null or empty\\
+\hline
+{\em Invalid\+Operation\+Exception} & Thrown if called outside of a save operation\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_save_system_1_1_save_section_writer_a37bb32b42f3d5e91182a72b82c400673}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!SaveString@{SaveString}}
+\index{SaveString@{SaveString}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{SaveString()}{SaveString()}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_a37bb32b42f3d5e91182a72b82c400673} 
+void Save\+System.\+Save\+Section\+Writer.\+Save\+String (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{string}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a string value to the current savefile section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique identifier for this field\\
+\hline
+{\em value} & The value to be saved\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if name is null or empty\\
+\hline
+{\em Invalid\+Operation\+Exception} & Thrown if called outside of a save operation\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_save_system_1_1_save_section_writer_a74165a8635951b3502abaac572063639}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!SaveUInt@{SaveUInt}}
+\index{SaveUInt@{SaveUInt}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{SaveUInt()}{SaveUInt()}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_a74165a8635951b3502abaac572063639} 
+void Save\+System.\+Save\+Section\+Writer.\+Save\+UInt (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{uint}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a uint (uint32) value to the current savefile section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique identifier for this field\\
+\hline
+{\em value} & The value to be saved\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if name is null or empty\\
+\hline
+{\em Invalid\+Operation\+Exception} & Thrown if called outside of a save operation\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_save_system_1_1_save_section_writer_ae269a22f56b74a8f46edfacb01bec578}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!SaveULong@{SaveULong}}
+\index{SaveULong@{SaveULong}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{SaveULong()}{SaveULong()}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_ae269a22f56b74a8f46edfacb01bec578} 
+void Save\+System.\+Save\+Section\+Writer.\+Save\+ULong (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{ulong}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a ulong (uint64) value to the current savefile section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique identifier for this field\\
+\hline
+{\em value} & The value to be saved\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if name is null or empty\\
+\hline
+{\em Invalid\+Operation\+Exception} & Thrown if called outside of a save operation\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_save_system_1_1_save_section_writer_a78bd8c6147431ac1de1491a1b7d83c4d}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!SaveUShort@{SaveUShort}}
+\index{SaveUShort@{SaveUShort}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{SaveUShort()}{SaveUShort()}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_a78bd8c6147431ac1de1491a1b7d83c4d} 
+void Save\+System.\+Save\+Section\+Writer.\+Save\+UShort (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{ushort}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a ushort (uint16) value to the current savefile section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique identifier for this field\\
+\hline
+{\em value} & The value to be saved\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if name is null or empty\\
+\hline
+{\em Invalid\+Operation\+Exception} & Thrown if called outside of a save operation\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_save_system_1_1_save_section_writer_aac6fd097bf6b86b7ac415a9332ef3a90}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!SaveVector2@{SaveVector2}}
+\index{SaveVector2@{SaveVector2}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{SaveVector2()}{SaveVector2()}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_aac6fd097bf6b86b7ac415a9332ef3a90} 
+void Save\+System.\+Save\+Section\+Writer.\+Save\+Vector2 (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{Godot.\+Vector2}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a Godot.\+Vector2 value to the current savefile section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique identifier for this field\\
+\hline
+{\em value} & The value to be saved\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if name is null or empty\\
+\hline
+{\em Invalid\+Operation\+Exception} & Thrown if called outside of a save operation\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_save_system_1_1_save_section_writer_aabdde774d7372b7939104c94bdf04a13}\index{SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}!SaveVector2I@{SaveVector2I}}
+\index{SaveVector2I@{SaveVector2I}!SaveSystem.SaveSectionWriter@{SaveSystem.SaveSectionWriter}}
+\doxysubsubsection{\texorpdfstring{SaveVector2I()}{SaveVector2I()}}
+{\footnotesize\ttfamily \label{class_save_system_1_1_save_section_writer_aabdde774d7372b7939104c94bdf04a13} 
+void Save\+System.\+Save\+Section\+Writer.\+Save\+Vector2I (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{Godot.\+Vector2I}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a Godot.\+Vector2I value to the current savefile section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The unique identifier for this field\\
+\hline
+{\em value} & The value to be saved\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if name is null or empty\\
+\hline
+{\em Invalid\+Operation\+Exception} & Thrown if called outside of a save operation\\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/\+Save\+System/Save\+Section\+Writer.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,284 @@
+\chapter{Simple\+Priority\+Queue\texorpdfstring{$<$}{<}TItem, TPriority\texorpdfstring{$>$}{>} }
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2}{}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2}\index{SimplePriorityQueue<TItem, TPriority>@{SimplePriorityQueue<TItem, TPriority>}}
+\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md374}%
+\Hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md374}%
+
+
+Namespace\+: \doxylink{namespace_priority___queue}{Priority\+\_\+\+Queue}
+
+A simplified priority queue implementation. Is stable, auto-\/resizes, and thread-\/safe, at the cost of being slightly slower than Fast\+Priority\+Queue Methods tagged as O(1) or O(log n) are assuming there are no duplicates. Duplicates may increase the algorithmic complexity.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keyword}{class\ }SimplePriorityQueue<TItem,\ TPriority>\ :\ IPriorityQueue\`{}2,\ ,\ System.Collections.IEnumerable}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md375}{}\doxysubsubsection{\texorpdfstring{Type Parameters}{Type Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md375}
+{\ttfamily TItem}~\newline
+ The type to enqueue
+
+{\ttfamily TPriority}~\newline
+ The priority-\/type to use for nodes. Must extend IComparable$<$\+TPriority$>$
+
+Inheritance \href{https://docs.microsoft.com/en-us/dotnet/api/system.object}{\texttt{Object}} → \doxysectlink{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2}{Simple\+Priority\+Queue\texorpdfstring{$<$}{<}TItem, TPriority\texorpdfstring{$>$}{>}}{0}~\newline
+ Implements IPriority\+Queue\texorpdfstring{$<$}{<}TItem, TPriority\texorpdfstring{$>$}{>}, IEnumerable\texorpdfstring{$<$}{<}TItem\texorpdfstring{$>$}{>}, \href{https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerable}{\texttt{IEnumerable}}\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md376}{}\doxysection{\texorpdfstring{Properties}{Properties}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md376}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md377}{}\doxysubsection{\texorpdfstring{{\bfseries{Count}}}{{\bfseries{Count}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md377}
+Returns the number of nodes in the queue. O(1)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ Count\ \{\ \textcolor{keyword}{get};\ \}}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md378}{}\doxysubsubsection{\texorpdfstring{Property Value}{Property Value}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md378}
+\href{https://docs.microsoft.com/en-us/dotnet/api/system.int32}{\texttt{Int32}}~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md379}{}\doxysubsection{\texorpdfstring{{\bfseries{First}}}{{\bfseries{First}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md379}
+Returns the head of the queue, without removing it (use Dequeue() for that). Throws an exception when the queue is empty. O(1)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ TItem\ First\ \{\ \textcolor{keyword}{get};\ \}}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md380}{}\doxysubsubsection{\texorpdfstring{Property Value}{Property Value}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md380}
+TItem~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md381}{}\doxysection{\texorpdfstring{Constructors}{Constructors}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md381}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md382}{}\doxysubsection{\texorpdfstring{{\bfseries{Simple\+Priority\+Queue()}}}{{\bfseries{Simple\+Priority\+Queue()}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md382}
+Instantiate a new Priority Queue
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ SimplePriorityQueue()}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md383}{}\doxysubsection{\texorpdfstring{{\bfseries{Simple\+Priority\+Queue(IComparer\texorpdfstring{$<$}{<}TPriority\texorpdfstring{$>$}{>})}}}{{\bfseries{Simple\+Priority\+Queue(IComparer\texorpdfstring{$<$}{<}TPriority\texorpdfstring{$>$}{>})}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md383}
+Instantiate a new Priority Queue
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ SimplePriorityQueue(IComparer<TPriority>\ priorityComparer)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md384}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md384}
+{\ttfamily priority\+Comparer} IComparer\texorpdfstring{$<$}{<}TPriority\texorpdfstring{$>$}{>}~\newline
+ The comparer used to compare TPriority values. Defaults to Comparer$<$\+TPriority$>$.\+default\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md385}{}\doxysubsection{\texorpdfstring{{\bfseries{Simple\+Priority\+Queue(Comparison\texorpdfstring{$<$}{<}TPriority\texorpdfstring{$>$}{>})}}}{{\bfseries{Simple\+Priority\+Queue(Comparison\texorpdfstring{$<$}{<}TPriority\texorpdfstring{$>$}{>})}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md385}
+Instantiate a new Priority Queue
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ SimplePriorityQueue(Comparison<TPriority>\ priorityComparer)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md386}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md386}
+{\ttfamily priority\+Comparer} Comparison\texorpdfstring{$<$}{<}TPriority\texorpdfstring{$>$}{>}~\newline
+ The comparison function to use to compare TPriority values\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md387}{}\doxysubsection{\texorpdfstring{{\bfseries{Simple\+Priority\+Queue(IEquality\+Comparer\texorpdfstring{$<$}{<}TItem\texorpdfstring{$>$}{>})}}}{{\bfseries{Simple\+Priority\+Queue(IEquality\+Comparer\texorpdfstring{$<$}{<}TItem\texorpdfstring{$>$}{>})}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md387}
+Instantiate a new Priority Queue
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ SimplePriorityQueue(IEqualityComparer<TItem>\ itemEquality)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md388}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md388}
+{\ttfamily item\+Equality} IEquality\+Comparer\texorpdfstring{$<$}{<}TItem\texorpdfstring{$>$}{>}~\newline
+ The equality comparison function to use to compare TItem values\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md389}{}\doxysubsection{\texorpdfstring{{\bfseries{Simple\+Priority\+Queue(IComparer\texorpdfstring{$<$}{<}TPriority\texorpdfstring{$>$}{>}, IEquality\+Comparer\texorpdfstring{$<$}{<}TItem\texorpdfstring{$>$}{>})}}}{{\bfseries{Simple\+Priority\+Queue(IComparer\texorpdfstring{$<$}{<}TPriority\texorpdfstring{$>$}{>}, IEquality\+Comparer\texorpdfstring{$<$}{<}TItem\texorpdfstring{$>$}{>})}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md389}
+Instantiate a new Priority Queue
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ SimplePriorityQueue(IComparer<TPriority>\ priorityComparer,\ IEqualityComparer<TItem>\ itemEquality)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md390}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md390}
+{\ttfamily priority\+Comparer} IComparer\texorpdfstring{$<$}{<}TPriority\texorpdfstring{$>$}{>}~\newline
+ The comparer used to compare TPriority values. Defaults to Comparer$<$\+TPriority$>$.\+default
+
+{\ttfamily item\+Equality} IEquality\+Comparer\texorpdfstring{$<$}{<}TItem\texorpdfstring{$>$}{>}~\newline
+ The equality comparison function to use to compare TItem values\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md391}{}\doxysubsection{\texorpdfstring{{\bfseries{Simple\+Priority\+Queue(Comparison\texorpdfstring{$<$}{<}TPriority\texorpdfstring{$>$}{>}, IEquality\+Comparer\texorpdfstring{$<$}{<}TItem\texorpdfstring{$>$}{>})}}}{{\bfseries{Simple\+Priority\+Queue(Comparison\texorpdfstring{$<$}{<}TPriority\texorpdfstring{$>$}{>}, IEquality\+Comparer\texorpdfstring{$<$}{<}TItem\texorpdfstring{$>$}{>})}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md391}
+Instantiate a new Priority Queue
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ SimplePriorityQueue(Comparison<TPriority>\ priorityComparer,\ IEqualityComparer<TItem>\ itemEquality)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md392}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md392}
+{\ttfamily priority\+Comparer} Comparison\texorpdfstring{$<$}{<}TPriority\texorpdfstring{$>$}{>}~\newline
+ The comparison function to use to compare TPriority values
+
+{\ttfamily item\+Equality} IEquality\+Comparer\texorpdfstring{$<$}{<}TItem\texorpdfstring{$>$}{>}~\newline
+ The equality comparison function to use to compare TItem values\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md393}{}\doxysection{\texorpdfstring{Methods}{Methods}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md393}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md394}{}\doxysubsection{\texorpdfstring{{\bfseries{Clear()}}}{{\bfseries{Clear()}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md394}
+Removes every node from the queue. O(n)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ Clear()}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md395}{}\doxysubsection{\texorpdfstring{{\bfseries{Contains(\+TItem)}}}{{\bfseries{Contains(\+TItem)}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md395}
+Returns whether the given item is in the queue. O(1)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ Contains(TItem\ item)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md396}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md396}
+{\ttfamily item} TItem~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md397}{}\doxysubsubsection{\texorpdfstring{Returns}{Returns}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md397}
+\href{https://docs.microsoft.com/en-us/dotnet/api/system.boolean}{\texttt{Boolean}}~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md398}{}\doxysubsection{\texorpdfstring{{\bfseries{Dequeue()}}}{{\bfseries{Dequeue()}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md398}
+Removes the head of the queue (node with minimum priority; ties are broken by order of insertion), and returns it. If queue is empty, throws an exception O(log n)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ TItem\ Dequeue()}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md399}{}\doxysubsubsection{\texorpdfstring{Returns}{Returns}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md399}
+TItem~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md400}{}\doxysubsection{\texorpdfstring{{\bfseries{Enqueue(\+TItem, TPriority)}}}{{\bfseries{Enqueue(\+TItem, TPriority)}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md400}
+Enqueue a node to the priority queue. Lower values are placed in front. Ties are broken by first-\/in-\/first-\/out. This queue automatically resizes itself, so there\textquotesingle{}s no concern of the queue becoming \textquotesingle{}full\textquotesingle{}. Duplicates and null-\/values are allowed. O(log n)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ Enqueue(TItem\ item,\ TPriority\ priority)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md401}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md401}
+{\ttfamily item} TItem~\newline
+
+
+{\ttfamily priority} TPriority~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md402}{}\doxysubsection{\texorpdfstring{{\bfseries{Enqueue\+Without\+Duplicates(\+TItem, TPriority)}}}{{\bfseries{Enqueue\+Without\+Duplicates(\+TItem, TPriority)}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md402}
+Enqueue a node to the priority queue if it doesn\textquotesingle{}t already exist. Lower values are placed in front. Ties are broken by first-\/in-\/first-\/out. This queue automatically resizes itself, so there\textquotesingle{}s no concern of the queue becoming \textquotesingle{}full\textquotesingle{}. Null values are allowed. Returns true if the node was successfully enqueued; false if it already exists. O(log n)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ EnqueueWithoutDuplicates(TItem\ item,\ TPriority\ priority)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md403}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md403}
+{\ttfamily item} TItem~\newline
+
+
+{\ttfamily priority} TPriority~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md404}{}\doxysubsubsection{\texorpdfstring{Returns}{Returns}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md404}
+\href{https://docs.microsoft.com/en-us/dotnet/api/system.boolean}{\texttt{Boolean}}~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md405}{}\doxysubsection{\texorpdfstring{{\bfseries{Remove(\+TItem)}}}{{\bfseries{Remove(\+TItem)}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md405}
+Removes an item from the queue. The item does not need to be the head of the queue. If the item is not in the queue, an exception is thrown. If unsure, check Contains() first. If multiple copies of the item are enqueued, only the first one is removed. O(log n)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ Remove(TItem\ item)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md406}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md406}
+{\ttfamily item} TItem~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md407}{}\doxysubsection{\texorpdfstring{{\bfseries{Update\+Priority(\+TItem, TPriority)}}}{{\bfseries{Update\+Priority(\+TItem, TPriority)}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md407}
+Call this method to change the priority of an item. Calling this method on a item not in the queue will throw an exception. If the item is enqueued multiple times, only the first one will be updated. (If your requirements are complex enough that you need to enqueue the same item multiple times and be able to update all of them, please wrap your items in a wrapper class so they can be distinguished). O(log n)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ UpdatePriority(TItem\ item,\ TPriority\ priority)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md408}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md408}
+{\ttfamily item} TItem~\newline
+
+
+{\ttfamily priority} TPriority~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md409}{}\doxysubsection{\texorpdfstring{{\bfseries{Get\+Priority(\+TItem)}}}{{\bfseries{Get\+Priority(\+TItem)}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md409}
+Returns the priority of the given item. Calling this method on a item not in the queue will throw an exception. If the item is enqueued multiple times, only the priority of the first will be returned. (If your requirements are complex enough that you need to enqueue the same item multiple times and be able to query all their priorities, please wrap your items in a wrapper class so they can be distinguished). O(1)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ TPriority\ GetPriority(TItem\ item)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md410}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md410}
+{\ttfamily item} TItem~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md411}{}\doxysubsubsection{\texorpdfstring{Returns}{Returns}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md411}
+TPriority~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md412}{}\doxysubsection{\texorpdfstring{{\bfseries{Try\+First(\+TItem\&)}}}{{\bfseries{Try\+First(\+TItem\&)}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md412}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ TryFirst(TItem\&\ first)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md413}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md413}
+{\ttfamily first} TItem\&~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md414}{}\doxysubsubsection{\texorpdfstring{Returns}{Returns}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md414}
+\href{https://docs.microsoft.com/en-us/dotnet/api/system.boolean}{\texttt{Boolean}}~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md415}{}\doxysubsection{\texorpdfstring{{\bfseries{Try\+Dequeue(\+TItem\&)}}}{{\bfseries{Try\+Dequeue(\+TItem\&)}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md415}
+Removes the head of the queue (node with minimum priority; ties are broken by order of insertion), and sets it to first. Useful for multi-\/threading, where the queue may become empty between calls to Contains() and Dequeue() Returns true if successful; false if queue was empty O(log n)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ TryDequeue(TItem\&\ first)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md416}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md416}
+{\ttfamily first} TItem\&~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md417}{}\doxysubsubsection{\texorpdfstring{Returns}{Returns}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md417}
+\href{https://docs.microsoft.com/en-us/dotnet/api/system.boolean}{\texttt{Boolean}}~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md418}{}\doxysubsection{\texorpdfstring{{\bfseries{Try\+Remove(\+TItem)}}}{{\bfseries{Try\+Remove(\+TItem)}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md418}
+Attempts to remove an item from the queue. The item does not need to be the head of the queue. Useful for multi-\/threading, where the queue may become empty between calls to Contains() and Remove() Returns true if the item was successfully removed, false if it wasn\textquotesingle{}t in the queue. If multiple copies of the item are enqueued, only the first one is removed. O(log n)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ TryRemove(TItem\ item)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md419}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md419}
+{\ttfamily item} TItem~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md420}{}\doxysubsubsection{\texorpdfstring{Returns}{Returns}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md420}
+\href{https://docs.microsoft.com/en-us/dotnet/api/system.boolean}{\texttt{Boolean}}~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md421}{}\doxysubsection{\texorpdfstring{{\bfseries{Try\+Update\+Priority(\+TItem, TPriority)}}}{{\bfseries{Try\+Update\+Priority(\+TItem, TPriority)}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md421}
+Call this method to change the priority of an item. Useful for multi-\/threading, where the queue may become empty between calls to Contains() and Update\+Priority() If the item is enqueued multiple times, only the first one will be updated. (If your requirements are complex enough that you need to enqueue the same item multiple times and be able to update all of them, please wrap your items in a wrapper class so they can be distinguished). Returns true if the item priority was updated, false otherwise. O(log n)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ TryUpdatePriority(TItem\ item,\ TPriority\ priority)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md422}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md422}
+{\ttfamily item} TItem~\newline
+
+
+{\ttfamily priority} TPriority~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md423}{}\doxysubsubsection{\texorpdfstring{Returns}{Returns}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md423}
+\href{https://docs.microsoft.com/en-us/dotnet/api/system.boolean}{\texttt{Boolean}}~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md424}{}\doxysubsection{\texorpdfstring{{\bfseries{Try\+Get\+Priority(\+TItem, TPriority\&)}}}{{\bfseries{Try\+Get\+Priority(\+TItem, TPriority\&)}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md424}
+Attempt to get the priority of the given item. Useful for multi-\/threading, where the queue may become empty between calls to Contains() and Get\+Priority() If the item is enqueued multiple times, only the priority of the first will be returned. (If your requirements are complex enough that you need to enqueue the same item multiple times and be able to query all their priorities, please wrap your items in a wrapper class so they can be distinguished). Returns true if the item was found in the queue, false otherwise O(1)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ TryGetPriority(TItem\ item,\ TPriority\&\ priority)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md425}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md425}
+{\ttfamily item} TItem~\newline
+
+
+{\ttfamily priority} TPriority\&~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md426}{}\doxysubsubsection{\texorpdfstring{Returns}{Returns}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md426}
+\href{https://docs.microsoft.com/en-us/dotnet/api/system.boolean}{\texttt{Boolean}}~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md427}{}\doxysubsection{\texorpdfstring{{\bfseries{Get\+Enumerator()}}}{{\bfseries{Get\+Enumerator()}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md427}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ IEnumerator<TItem>\ GetEnumerator()}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md428}{}\doxysubsubsection{\texorpdfstring{Returns}{Returns}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md428}
+IEnumerator\texorpdfstring{$<$}{<}TItem\texorpdfstring{$>$}{>}~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md429}{}\doxysubsection{\texorpdfstring{{\bfseries{Is\+Valid\+Queue()}}}{{\bfseries{Is\+Valid\+Queue()}}}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md429}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ IsValidQueue()}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md430}{}\doxysubsubsection{\texorpdfstring{Returns}{Returns}}\label{md_addons_2mountain-goap_2api-docs_2priority__queue_8simplepriorityqueue-2_autotoc_md430}
+\href{https://docs.microsoft.com/en-us/dotnet/api/system.boolean}{\texttt{Boolean}}~\newline
+ 

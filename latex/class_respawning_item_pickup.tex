@@ -1,0 +1,78 @@
+\doxysection{Respawning\+Item\+Pickup Class Reference}
+\hypertarget{class_respawning_item_pickup}{}\label{class_respawning_item_pickup}\index{RespawningItemPickup@{RespawningItemPickup}}
+Inheritance diagram for Respawning\+Item\+Pickup\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_respawning_item_pickup}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_respawning_item_pickup_af24811c829a4027610b2ef6fa41184a5}\label{class_respawning_item_pickup_af24811c829a4027610b2ef6fa41184a5} 
+override void {\bfseries \+\_\+\+Ready} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_item_pickup}{Item\+Pickup}}}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Save} ()
+\item 
+override void {\bfseries \+\_\+\+Ready} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_interaction_item}{Interaction\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual Interaction\+Type {\bfseries Get\+Interaction\+Type} ()
+\item 
+override void {\bfseries \+\_\+\+Ready} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_respawning_item_pickup_a9a8e89b94b4a5428eccaa2a9ebeaeca8}{On\+Interaction\+Area\+Body2\+DEntered}} (Rid body\+RID, Node2D body, int body\+Shape\+Index, int local\+Shape\+Index)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_item_pickup}{Item\+Pickup}}}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_item_pickup_a913e4f39a839cada3f248dfb883b4d4d}{On\+Interaction\+Area\+Body2\+DExited}} (Rid body\+RID, Node2D body, int body\+Shape\+Index, int local\+Shape\+Index)
+\item 
+void {\bfseries Create\+Sprite} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_item_pickup}{Item\+Pickup}}}
+\begin{DoxyCompactItemize}
+\item 
+Sprite2D {\bfseries Icon}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_interaction_item}{Interaction\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+Collision\+Shape2D {\bfseries Interact\+Area}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_item_pickup}{Item\+Pickup}}}
+\begin{DoxyCompactItemize}
+\item 
+Resource {\bfseries Data}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int {\bfseries Amount} = -\/1\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_respawning_item_pickup_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_respawning_item_pickup_a9a8e89b94b4a5428eccaa2a9ebeaeca8}\index{RespawningItemPickup@{RespawningItemPickup}!OnInteractionAreaBody2DEntered@{OnInteractionAreaBody2DEntered}}
+\index{OnInteractionAreaBody2DEntered@{OnInteractionAreaBody2DEntered}!RespawningItemPickup@{RespawningItemPickup}}
+\doxysubsubsection{\texorpdfstring{OnInteractionAreaBody2DEntered()}{OnInteractionAreaBody2DEntered()}}
+{\footnotesize\ttfamily \label{class_respawning_item_pickup_a9a8e89b94b4a5428eccaa2a9ebeaeca8} 
+override void Respawning\+Item\+Pickup.\+On\+Interaction\+Area\+Body2\+DEntered (\begin{DoxyParamCaption}\item[{Rid}]{body\+RID}{, }\item[{Node2D}]{body}{, }\item[{int}]{body\+Shape\+Index}{, }\item[{int}]{local\+Shape\+Index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_item_pickup}{Item\+Pickup}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/\+Interactables/Respawning\+Item\+Pickup.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,320 @@
+\doxysection{Weapon\+Entity Class Reference}
+\hypertarget{class_weapon_entity}{}\label{class_weapon_entity}\index{WeaponEntity@{WeaponEntity}}
+Inheritance diagram for Weapon\+Entity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_weapon_entity}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_weapon_entity_a8a5af31ac4d558da91669f154ae8696e}\label{class_weapon_entity_a8a5af31ac4d558da91669f154ae8696e} 
+enum {\bfseries Fire\+Mode} \+: int \{ {\bfseries Single}
+, {\bfseries Burst}
+, {\bfseries Automatic}
+, {\bfseries Invalid} = -\/1
+ \}
+\item 
+\Hypertarget{class_weapon_entity_a023007d307886652120ee28ae4d842f1}\label{class_weapon_entity_a023007d307886652120ee28ae4d842f1} 
+enum {\bfseries Magazine\+Type} \+: int \{ {\bfseries Breech}
+, {\bfseries Cycle}
+, {\bfseries Invalid} = -\/1
+ \}
+\item 
+\Hypertarget{class_weapon_entity_a5d5b198ef4ee84b49ab168e88b4c0eef}\label{class_weapon_entity_a5d5b198ef4ee84b49ab168e88b4c0eef} 
+enum {\bfseries Properties} \+: uint \{ \newline
+{\bfseries Is\+One\+Handed} = 0b01000000
+, {\bfseries Is\+Two\+Handed} = 0b00100000
+, {\bfseries Is\+Bladed} = 0b00000001
+, {\bfseries Is\+Blunt} = 0b00000010
+, \newline
+{\bfseries Is\+Firearm} = 0b00001000
+, {\bfseries One\+Handed\+Blade} = Is\+One\+Handed \texorpdfstring{$\vert$}{|} Is\+Bladed
+, {\bfseries One\+Handed\+Blunt} = Is\+One\+Handed \texorpdfstring{$\vert$}{|} Is\+Blunt
+, {\bfseries One\+Handed\+Firearm} = Is\+One\+Handed \texorpdfstring{$\vert$}{|} Is\+Firearm
+, \newline
+{\bfseries Two\+Handed\+Blade} = Is\+Two\+Handed \texorpdfstring{$\vert$}{|} Is\+Bladed
+, {\bfseries Two\+Handed\+Blunt} = Is\+Two\+Handed \texorpdfstring{$\vert$}{|} Is\+Blunt
+, {\bfseries Two\+Handed\+Firearm} = Is\+Two\+Handed \texorpdfstring{$\vert$}{|} Is\+Firearm
+, {\bfseries Spawns\+Object} = 0b10000000
+, \newline
+{\bfseries None} = 0b00000000
+ \}
+\item 
+\Hypertarget{class_weapon_entity_a4c6ad50ca318ee0ac4ab9a6c78254b0e}\label{class_weapon_entity_a4c6ad50ca318ee0ac4ab9a6c78254b0e} 
+enum {\bfseries Weapon\+State} \+: int \{ \newline
+{\bfseries Idle}
+, {\bfseries Use}
+, {\bfseries Reload}
+, {\bfseries Empty}
+, \newline
+{\bfseries Invalid} = -\/1
+ \}
+\item 
+\Hypertarget{class_weapon_entity_aeafb6feb5d8d500b264ab3d9b3010008}\label{class_weapon_entity_aeafb6feb5d8d500b264ab3d9b3010008} 
+enum {\bfseries Shotgun\+Bullshit} \+: uint \{ \newline
+{\bfseries Flechette}
+, {\bfseries Buckshot}
+, {\bfseries Birdshot}
+, {\bfseries Shrapnel}
+, \newline
+{\bfseries Slug}
+, {\bfseries None}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_weapon_entity_a81ae2f8b547b97284f9ef213503725f5}\label{class_weapon_entity_a81ae2f8b547b97284f9ef213503725f5} 
+delegate void {\bfseries Mode\+Changed\+Event\+Handler} (\mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}} source, Properties use\+Mode)
+\item 
+\Hypertarget{class_weapon_entity_ac93f13461c700768acb51e602359e4ef}\label{class_weapon_entity_ac93f13461c700768acb51e602359e4ef} 
+delegate void {\bfseries Reloaded\+Event\+Handler} (\mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}} source)
+\item 
+\Hypertarget{class_weapon_entity_a083f4150ae3297cc413ee274b623f98d}\label{class_weapon_entity_a083f4150ae3297cc413ee274b623f98d} 
+delegate void {\bfseries Used\+Event\+Handler} (\mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}} source)
+\item 
+\Hypertarget{class_weapon_entity_af545539deade79ebc26238b2431b0873}\label{class_weapon_entity_af545539deade79ebc26238b2431b0873} 
+bool {\bfseries Is\+Bladed} ()
+\item 
+\Hypertarget{class_weapon_entity_a42b475319cdfe718c7cba5dccf298305}\label{class_weapon_entity_a42b475319cdfe718c7cba5dccf298305} 
+bool {\bfseries Is\+Blunt} ()
+\item 
+\Hypertarget{class_weapon_entity_aad1dd23e2fc9f5490208cb2fd2c20070}\label{class_weapon_entity_aad1dd23e2fc9f5490208cb2fd2c20070} 
+bool {\bfseries Is\+Firearm} ()
+\item 
+\Hypertarget{class_weapon_entity_a7b1d474b5c1697482f684a063e8ecc2d}\label{class_weapon_entity_a7b1d474b5c1697482f684a063e8ecc2d} 
+bool {\bfseries Is\+One\+Handed} ()
+\item 
+\Hypertarget{class_weapon_entity_a876a6c66c87c374b08da1c39935ef5ac}\label{class_weapon_entity_a876a6c66c87c374b08da1c39935ef5ac} 
+bool {\bfseries Is\+Two\+Handed} ()
+\item 
+\Hypertarget{class_weapon_entity_a3ba01da2bbb5f6362349c51900f09662}\label{class_weapon_entity_a3ba01da2bbb5f6362349c51900f09662} 
+void {\bfseries Set\+Attack\+Angle} (float n\+Attack\+Angle)
+\item 
+\Hypertarget{class_weapon_entity_a71a438d7003c9872c9882a168ff47d3d}\label{class_weapon_entity_a71a438d7003c9872c9882a168ff47d3d} 
+void {\bfseries Drop} ()
+\item 
+\Hypertarget{class_weapon_entity_a332e38f241cb4020e2412b87d949fbca}\label{class_weapon_entity_a332e38f241cb4020e2412b87d949fbca} 
+void {\bfseries Trigger\+Pickup} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} owner)
+\item 
+\Hypertarget{class_weapon_entity_abe97b8c330e1fd8e653fe8590b22fa7e}\label{class_weapon_entity_abe97b8c330e1fd8e653fe8590b22fa7e} 
+void {\bfseries Set\+Equipped\+State} (bool b\+Equipped)
+\item 
+\Hypertarget{class_weapon_entity_a00324a421461e5894450d13fd59bfe09}\label{class_weapon_entity_a00324a421461e5894450d13fd59bfe09} 
+void {\bfseries Set\+Use\+Mode} (Properties weapon\+Mode)
+\item 
+IRead\+Only\+Dictionary$<$ string, int $>$ \mbox{\hyperlink{class_weapon_entity_a8a405943ecf9e95ef5856e7fc0dcbd61}{Get\+Upgrade\+Cost}} ()
+\item 
+void \mbox{\hyperlink{class_weapon_entity_a4a5b583fe76dceafe166ca1859e92a79}{Apply\+Upgrade}} ()
+\item 
+\Hypertarget{class_weapon_entity_ab6c05d983b57d31836c759d1493dfc6c}\label{class_weapon_entity_ab6c05d983b57d31836c759d1493dfc6c} 
+void {\bfseries Save} ()
+\item 
+\Hypertarget{class_weapon_entity_ac28f82bc36645623eefe1e4d2433bb1b}\label{class_weapon_entity_ac28f82bc36645623eefe1e4d2433bb1b} 
+void {\bfseries Load} (Node\+Path path)
+\item 
+\Hypertarget{class_weapon_entity_af9d5dbf038079f30a25c575a8c35a264}\label{class_weapon_entity_af9d5dbf038079f30a25c575a8c35a264} 
+void {\bfseries Bladed\+Thrust\+Wind\+Up} ()
+\item 
+\Hypertarget{class_weapon_entity_aa7ff95263ac9a822be4f9e219f927e6e}\label{class_weapon_entity_aa7ff95263ac9a822be4f9e219f927e6e} 
+void {\bfseries Set\+Ammo} (\mbox{\hyperlink{class_ammo_entity}{Ammo\+Entity}} ammo)
+\item 
+\Hypertarget{class_weapon_entity_ab54bbc4bbc397a3c87d7af88f009565d}\label{class_weapon_entity_ab54bbc4bbc397a3c87d7af88f009565d} 
+void {\bfseries Set\+Reserve} (\mbox{\hyperlink{class_ammo_stack}{Ammo\+Stack}} stack)
+\item 
+\Hypertarget{class_weapon_entity_a9ababb28b6432affe543f35dd8fb25ac}\label{class_weapon_entity_a9ababb28b6432affe543f35dd8fb25ac} 
+void {\bfseries Use\+Firearm\+Deferred} (Properties weapon\+Mode)
+\item 
+\Hypertarget{class_weapon_entity_a1ffdf771ca212747331291bdf34e9f90}\label{class_weapon_entity_a1ffdf771ca212747331291bdf34e9f90} 
+void {\bfseries Use\+Bladed\+Deferred} (Properties weapon\+Mode, Blade\+Attack\+Type attack\+Type)
+\item 
+\Hypertarget{class_weapon_entity_a6c5b104425e32b23da51ba04a078cb6b}\label{class_weapon_entity_a6c5b104425e32b23da51ba04a078cb6b} 
+float {\bfseries Use} (Properties weapon\+Mode, out float sound\+Level, bool held=false)
+\item 
+\Hypertarget{class_weapon_entity_a7285da6b17a1f355d779e73a77025db7}\label{class_weapon_entity_a7285da6b17a1f355d779e73a77025db7} 
+float {\bfseries Use} (Properties weapon\+Mode, out float sound\+Level, Blade\+Attack\+Type attack\+Type)
+\item 
+\Hypertarget{class_weapon_entity_a7bc47e2b62857fad79d5fb938bb309ee}\label{class_weapon_entity_a7bc47e2b62857fad79d5fb938bb309ee} 
+override void {\bfseries \+\_\+\+Ready} ()
+\item 
+\Hypertarget{class_weapon_entity_aeede6d8c04a0a1d24804252d90da65d2}\label{class_weapon_entity_aeede6d8c04a0a1d24804252d90da65d2} 
+override void {\bfseries \+\_\+\+Process} (double delta)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_weapon_entity_af9ced1752694a88e2b4e915a2788b6c3}\label{class_weapon_entity_af9ced1752694a88e2b4e915a2788b6c3} 
+Resource {\bfseries Data}
+\item 
+\Hypertarget{class_weapon_entity_a31542210934c93e72bb930f34fc6dbb2}\label{class_weapon_entity_a31542210934c93e72bb930f34fc6dbb2} 
+\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} {\bfseries \+\_\+\+Owner}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_weapon_entity_aec1a35485a28236ca9173324d987892a}\label{class_weapon_entity_aec1a35485a28236ca9173324d987892a} 
+Texture2D {\bfseries Icon}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_a86f3a9a5fe40ed3c5b46b5809fa832d1}\label{class_weapon_entity_a86f3a9a5fe40ed3c5b46b5809fa832d1} 
+int {\bfseries Magazine\+Size} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_ab316a3fc6bef304093ac36c60f8815a5}\label{class_weapon_entity_ab316a3fc6bef304093ac36c60f8815a5} 
+Ammo\+Type {\bfseries Ammunition} = Ammo\+Type.\+Light\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_a2e7fb179bf51081bf531d109e2c3bf22}\label{class_weapon_entity_a2e7fb179bf51081bf531d109e2c3bf22} 
+Magazine\+Type {\bfseries Mag\+Type} = Magazine\+Type.\+Invalid\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_a37d1b4f3d5f46058a1f775cf6f65fdd8}\label{class_weapon_entity_a37d1b4f3d5f46058a1f775cf6f65fdd8} 
+Fire\+Mode {\bfseries Firemode} = Fire\+Mode.\+Single\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_aab8b4af405cf8f4e42bc823573bf23ff}\label{class_weapon_entity_aab8b4af405cf8f4e42bc823573bf23ff} 
+Sprite\+Frames {\bfseries Firearm\+Frames\+Left}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_abc84ea2f9029b7d9c2013af00751c129}\label{class_weapon_entity_abc84ea2f9029b7d9c2013af00751c129} 
+Sprite\+Frames {\bfseries Firearm\+Frames\+Right}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_ace7261399ae06d4f59f712a92e3b56aa}\label{class_weapon_entity_ace7261399ae06d4f59f712a92e3b56aa} 
+Sprite\+Frames {\bfseries Blunt\+Frames\+Left}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_ab02914f40c4609cbc4732f9527159610}\label{class_weapon_entity_ab02914f40c4609cbc4732f9527159610} 
+Sprite\+Frames {\bfseries Blunt\+Frames\+Right}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_a66a89a1d49b7ec61fccbd69cdcf35fb6}\label{class_weapon_entity_a66a89a1d49b7ec61fccbd69cdcf35fb6} 
+Sprite\+Frames {\bfseries Bladed\+Frames\+Left}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_add65f734ea83aec35b69d8d603bae235}\label{class_weapon_entity_add65f734ea83aec35b69d8d603bae235} 
+Sprite\+Frames {\bfseries Bladed\+Frames\+Right}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_ab9b9b8db43682df937b71897813d2bdd}\label{class_weapon_entity_ab9b9b8db43682df937b71897813d2bdd} 
+float {\bfseries Bladed\+Range} = 0.\+0f\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_a93fa7481b1aedb528977864144b867d4}\label{class_weapon_entity_a93fa7481b1aedb528977864144b867d4} 
+float {\bfseries Blunt\+Range} = 0.\+0f\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_aaf8a450687954b4cd7c8d8f1af6ab23d}\label{class_weapon_entity_aaf8a450687954b4cd7c8d8f1af6ab23d} 
+float {\bfseries Bladed\+Damage} = 0.\+0f\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_ac8088ecf38aa7b0521dd0eb95664231d}\label{class_weapon_entity_ac8088ecf38aa7b0521dd0eb95664231d} 
+float {\bfseries Blunt\+Damage} = 0.\+0f\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_a88a66ebb1328f71dc1cf50d3308300ee}\label{class_weapon_entity_a88a66ebb1328f71dc1cf50d3308300ee} 
+Audio\+Stream {\bfseries Use\+Firearm\+Sfx}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_a66dba3a957248a6ac6ce3206e721e62f}\label{class_weapon_entity_a66dba3a957248a6ac6ce3206e721e62f} 
+Audio\+Stream {\bfseries Use\+Bladed\+Sfx}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_a6c0970a9a79eb2236c1d8b65398be09f}\label{class_weapon_entity_a6c0970a9a79eb2236c1d8b65398be09f} 
+Audio\+Stream {\bfseries Use\+Blunt\+Sfx}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_a2aebdec1d200bb2d9a32abf715298671}\label{class_weapon_entity_a2aebdec1d200bb2d9a32abf715298671} 
+Audio\+Stream {\bfseries Reload\+Sfx}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_ade08a1fcbc2f834691543fe4cd144299}\label{class_weapon_entity_ade08a1fcbc2f834691543fe4cd144299} 
+float {\bfseries Use\+Time} = 0.\+0f\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_adc7e82180292b9e14006c64494af4848}\label{class_weapon_entity_adc7e82180292b9e14006c64494af4848} 
+float {\bfseries Reload\+Time} = 0.\+0f\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_ad419385d1667f3d97f407bfdba27ea8e}\label{class_weapon_entity_ad419385d1667f3d97f407bfdba27ea8e} 
+float {\bfseries Weight} = 0.\+0f\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_weapon_entity_a8dd3f65b860affd4cf05719fbf5b29a2}{Level}} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_weapon_entity_aaab66a3bc4429fcac1d647ac05e5a043}{Max\+Level}} = 8\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_a26f24a23488d1be77a75a72dd3961b7a}\label{class_weapon_entity_a26f24a23488d1be77a75a72dd3961b7a} 
+float {\bfseries Dirtiness} = 0.\+0f\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The more you use a weapon, the nastier it gets. If you don\textquotesingle{}t clean it, it has the potential to jam or the degrade in quality. \end{DoxyCompactList}\item 
+\Hypertarget{class_weapon_entity_a9a5c6abaf1e4826a088e5324a3456dc7}\label{class_weapon_entity_a9a5c6abaf1e4826a088e5324a3456dc7} 
+Vector2 {\bfseries Current\+Recoil\+Offset}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_aaea27d88963df96c700dda9fbc7b554b}\label{class_weapon_entity_aaea27d88963df96c700dda9fbc7b554b} 
+float {\bfseries Current\+Recoil\+Rotation}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_a0be566ca7779048795df1ad1de2bdd19}\label{class_weapon_entity_a0be566ca7779048795df1ad1de2bdd19} 
+Timer {\bfseries Weapon\+Timer}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_aa3463c39500ed2cf636754bc4d7d9377}\label{class_weapon_entity_aa3463c39500ed2cf636754bc4d7d9377} 
+\mbox{\hyperlink{class_ammo_stack}{Ammo\+Stack}} {\bfseries Reserve}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_a40b40aabe167ca24e7097d9ef981dc16}\label{class_weapon_entity_a40b40aabe167ca24e7097d9ef981dc16} 
+\mbox{\hyperlink{class_ammo_entity}{Ammo\+Entity}} {\bfseries Ammo}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_aa713771131a0ee6e351c1948dce36d60}\label{class_weapon_entity_aa713771131a0ee6e351c1948dce36d60} 
+int {\bfseries Bullets\+Left} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_a6c100328fc243276b0418539c4f77d23}\label{class_weapon_entity_a6c100328fc243276b0418539c4f77d23} 
+Weapon\+State {\bfseries Current\+State} = Weapon\+State.\+Idle\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_a06c0239a43fd8d614473759e27bf81c9}\label{class_weapon_entity_a06c0239a43fd8d614473759e27bf81c9} 
+Sprite\+Frames {\bfseries Animations\+Left}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_ae7416ea35ce10f12c398c0f7aa70847e}\label{class_weapon_entity_ae7416ea35ce10f12c398c0f7aa70847e} 
+Sprite\+Frames {\bfseries Animations\+Right}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_ada2fda26ccd09b7ef65e4511b1ebd172}\label{class_weapon_entity_ada2fda26ccd09b7ef65e4511b1ebd172} 
+Properties {\bfseries Property\+Bits} = Properties.\+None\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_a9b10830917ed4c7ac5a8b87f811d77c1}\label{class_weapon_entity_a9b10830917ed4c7ac5a8b87f811d77c1} 
+Properties {\bfseries Default\+Mode} = Properties.\+None\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_weapon_entity_ad8c28caa93903b5a851e5693873f1e12}\label{class_weapon_entity_ad8c28caa93903b5a851e5693873f1e12} 
+Properties {\bfseries Last\+Used\+Mode} = Properties.\+None\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_weapon_entity_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_weapon_entity_a4a5b583fe76dceafe166ca1859e92a79}\index{WeaponEntity@{WeaponEntity}!ApplyUpgrade@{ApplyUpgrade}}
+\index{ApplyUpgrade@{ApplyUpgrade}!WeaponEntity@{WeaponEntity}}
+\doxysubsubsection{\texorpdfstring{ApplyUpgrade()}{ApplyUpgrade()}}
+{\footnotesize\ttfamily \label{class_weapon_entity_a4a5b583fe76dceafe166ca1859e92a79} 
+void Weapon\+Entity.\+Apply\+Upgrade (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_player_system_1_1_upgrades_1_1_i_upgradable}{Player\+System.\+Upgrades.\+IUpgradable}}.
+
+\Hypertarget{class_weapon_entity_a8a405943ecf9e95ef5856e7fc0dcbd61}\index{WeaponEntity@{WeaponEntity}!GetUpgradeCost@{GetUpgradeCost}}
+\index{GetUpgradeCost@{GetUpgradeCost}!WeaponEntity@{WeaponEntity}}
+\doxysubsubsection{\texorpdfstring{GetUpgradeCost()}{GetUpgradeCost()}}
+{\footnotesize\ttfamily \label{class_weapon_entity_a8a405943ecf9e95ef5856e7fc0dcbd61} 
+IRead\+Only\+Dictionary$<$ string, int $>$ Weapon\+Entity.\+Get\+Upgrade\+Cost (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_player_system_1_1_upgrades_1_1_i_upgradable}{Player\+System.\+Upgrades.\+IUpgradable}}.
+
+
+
+\label{doc-property-members}
+\Hypertarget{class_weapon_entity_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_weapon_entity_a8dd3f65b860affd4cf05719fbf5b29a2}\index{WeaponEntity@{WeaponEntity}!Level@{Level}}
+\index{Level@{Level}!WeaponEntity@{WeaponEntity}}
+\doxysubsubsection{\texorpdfstring{Level}{Level}}
+{\footnotesize\ttfamily \label{class_weapon_entity_a8dd3f65b860affd4cf05719fbf5b29a2} 
+int Weapon\+Entity.\+Level = 0\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Implements \mbox{\hyperlink{interface_player_system_1_1_upgrades_1_1_i_upgradable}{Player\+System.\+Upgrades.\+IUpgradable}}.
+
+\Hypertarget{class_weapon_entity_aaab66a3bc4429fcac1d647ac05e5a043}\index{WeaponEntity@{WeaponEntity}!MaxLevel@{MaxLevel}}
+\index{MaxLevel@{MaxLevel}!WeaponEntity@{WeaponEntity}}
+\doxysubsubsection{\texorpdfstring{MaxLevel}{MaxLevel}}
+{\footnotesize\ttfamily \label{class_weapon_entity_aaab66a3bc4429fcac1d647ac05e5a043} 
+int Weapon\+Entity.\+Max\+Level = 8\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Implements \mbox{\hyperlink{interface_player_system_1_1_upgrades_1_1_i_upgradable}{Player\+System.\+Upgrades.\+IUpgradable}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/\+Items/Weapon\+Entity.\+cs\end{DoxyCompactItemize}

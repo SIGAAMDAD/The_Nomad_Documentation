@@ -1,0 +1,154 @@
+\doxysection{Mountain\+Goap.\+Agent Class Reference}
+\hypertarget{class_mountain_goap_1_1_agent}{}\label{class_mountain_goap_1_1_agent}\index{MountainGoap.Agent@{MountainGoap.Agent}}
+
+
+GOAP agent.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mountain_goap_1_1_agent_ac81cbfd4ff105a45c28c6025b81ff1ba}{Agent}} (string? name=null, Concurrent\+Dictionary$<$ string, object?$>$? state=null, Dictionary$<$ string, object?$>$? memory=null, List$<$ \mbox{\hyperlink{class_mountain_goap_1_1_base_goal}{Base\+Goal}} $>$? goals=null, List$<$ \mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}} $>$? actions=null, List$<$ \mbox{\hyperlink{class_mountain_goap_1_1_sensor}{Sensor}} $>$? sensors=null, float cost\+Maximum=float.\+Max\+Value, int step\+Maximum=int.\+Max\+Value)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_mountain_goap_1_1_agent}{Agent} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mountain_goap_1_1_agent_a085890e508411f06c2e000a21f4bbe39}{Step}} (\mbox{\hyperlink{namespace_mountain_goap_a5ab942d6598760cdf8b0c350cd8d0fd4}{Step\+Mode}} mode=\mbox{\hyperlink{namespace_mountain_goap_a5ab942d6598760cdf8b0c350cd8d0fd4a7a1920d61156abc05a60135aefe8bc67}{Step\+Mode.\+Default}})
+\begin{DoxyCompactList}\small\item\em You should call this every time your game state updates. \end{DoxyCompactList}\item 
+\Hypertarget{class_mountain_goap_1_1_agent_ad33259a7817141da40558a53746a61ff}\label{class_mountain_goap_1_1_agent_ad33259a7817141da40558a53746a61ff} 
+void {\bfseries Clear\+Plan} ()
+\begin{DoxyCompactList}\small\item\em Clears the current action sequences (also known as plans). \end{DoxyCompactList}\item 
+\Hypertarget{class_mountain_goap_1_1_agent_aabc1d7294551f9df0d4da480f094ba8b}\label{class_mountain_goap_1_1_agent_aabc1d7294551f9df0d4da480f094ba8b} 
+void {\bfseries Plan} ()
+\begin{DoxyCompactList}\small\item\em Makes a plan. \end{DoxyCompactList}\item 
+\Hypertarget{class_mountain_goap_1_1_agent_a59eac88341ccedbf6d1e1bc6dd5f0205}\label{class_mountain_goap_1_1_agent_a59eac88341ccedbf6d1e1bc6dd5f0205} 
+void {\bfseries Plan\+Async} ()
+\begin{DoxyCompactList}\small\item\em Makes a plan asynchronously. \end{DoxyCompactList}\item 
+\Hypertarget{class_mountain_goap_1_1_agent_a88b4ab97d489e75541210598123584c0}\label{class_mountain_goap_1_1_agent_a88b4ab97d489e75541210598123584c0} 
+void {\bfseries Execute\+Plan} ()
+\begin{DoxyCompactList}\small\item\em Executes the current plan. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_mountain_goap_1_1_agent_a25c4e49001553c45b956b7093231ac29}\label{class_mountain_goap_1_1_agent_a25c4e49001553c45b956b7093231ac29} 
+readonly string {\bfseries Name}
+\begin{DoxyCompactList}\small\item\em Name of the agent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_mountain_goap_1_1_agent_a9949a2bd80cb91ad3b87b1bf8e92db2e}\label{class_mountain_goap_1_1_agent_a9949a2bd80cb91ad3b87b1bf8e92db2e} 
+List$<$ List$<$ \mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}} $>$ $>$ {\bfseries Current\+Action\+Sequences} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the chains of actions currently being performed by the agent. \end{DoxyCompactList}\item 
+\Hypertarget{class_mountain_goap_1_1_agent_a905aea1424ac93e8fdeae156360ba291}\label{class_mountain_goap_1_1_agent_a905aea1424ac93e8fdeae156360ba291} 
+Concurrent\+Dictionary$<$ string, object?$>$ {\bfseries State} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the current world state from the agent perspective. \end{DoxyCompactList}\item 
+\Hypertarget{class_mountain_goap_1_1_agent_a73982ea06871051544c1b05ae76ff4c5}\label{class_mountain_goap_1_1_agent_a73982ea06871051544c1b05ae76ff4c5} 
+Dictionary$<$ string, object?$>$ {\bfseries Memory} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the memory storage object for the agent. \end{DoxyCompactList}\item 
+\Hypertarget{class_mountain_goap_1_1_agent_a0e29c0849528a0dbfe0c0ca8049f87f7}\label{class_mountain_goap_1_1_agent_a0e29c0849528a0dbfe0c0ca8049f87f7} 
+List$<$ \mbox{\hyperlink{class_mountain_goap_1_1_base_goal}{Base\+Goal}} $>$ {\bfseries Goals} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the list of active goals for the agent. \end{DoxyCompactList}\item 
+\Hypertarget{class_mountain_goap_1_1_agent_a576f95ab0588b627ddd06b5901941267}\label{class_mountain_goap_1_1_agent_a576f95ab0588b627ddd06b5901941267} 
+List$<$ \mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}} $>$ {\bfseries Actions} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the actions available to the agent. \end{DoxyCompactList}\item 
+\Hypertarget{class_mountain_goap_1_1_agent_a71e98a4b7babe3eac8220f756f9621d6}\label{class_mountain_goap_1_1_agent_a71e98a4b7babe3eac8220f756f9621d6} 
+List$<$ \mbox{\hyperlink{class_mountain_goap_1_1_sensor}{Sensor}} $>$ {\bfseries Sensors} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the sensors available to the agent. \end{DoxyCompactList}\item 
+\Hypertarget{class_mountain_goap_1_1_agent_a28778476cd043e03e0a416ec06dd0478}\label{class_mountain_goap_1_1_agent_a28778476cd043e03e0a416ec06dd0478} 
+float {\bfseries Cost\+Maximum}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the plan cost maximum for the agent. \end{DoxyCompactList}\item 
+\Hypertarget{class_mountain_goap_1_1_agent_a8b05e8adf2d7de6704cdd47e71d21214}\label{class_mountain_goap_1_1_agent_a8b05e8adf2d7de6704cdd47e71d21214} 
+int {\bfseries Step\+Maximum}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the step maximum for the agent. \end{DoxyCompactList}\item 
+\Hypertarget{class_mountain_goap_1_1_agent_ac6ae0ead6350557e981c837fc6a95254}\label{class_mountain_goap_1_1_agent_ac6ae0ead6350557e981c837fc6a95254} 
+bool {\bfseries Is\+Busy} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a value indicating whether the agent is currently executing one or more actions. \end{DoxyCompactList}\item 
+\Hypertarget{class_mountain_goap_1_1_agent_a70c6a72cbf76e1317aa70b9b460a8dfe}\label{class_mountain_goap_1_1_agent_a70c6a72cbf76e1317aa70b9b460a8dfe} 
+bool {\bfseries Is\+Planning} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a value indicating whether the agent is currently planning. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_mountain_goap_1_1_agent_a3ad1fb256bacf7e13c0428756b73ccfe}\label{class_mountain_goap_1_1_agent_a3ad1fb256bacf7e13c0428756b73ccfe} 
+static \mbox{\hyperlink{namespace_mountain_goap_a8bb2e78ed32f497356945c681866e638}{Agent\+Step\+Event}} {\bfseries On\+Agent\+Step} = ( agent ) =$>$ \{ \}
+\begin{DoxyCompactList}\small\item\em Event that fires when the agent executes a step of work. \end{DoxyCompactList}\item 
+\Hypertarget{class_mountain_goap_1_1_agent_ab5bcd4f5845b941ee29106fcd97d4eb7}\label{class_mountain_goap_1_1_agent_ab5bcd4f5845b941ee29106fcd97d4eb7} 
+static \mbox{\hyperlink{namespace_mountain_goap_abd639de3470fecab61efa1e4d326491a}{Agent\+Action\+Sequence\+Completed\+Event}} {\bfseries On\+Agent\+Action\+Sequence\+Completed} = ( agent ) =$>$ \{ \}
+\begin{DoxyCompactList}\small\item\em Event that fires when an action sequence completes. \end{DoxyCompactList}\item 
+\Hypertarget{class_mountain_goap_1_1_agent_a3038e520df89c608855f65e433e87f01}\label{class_mountain_goap_1_1_agent_a3038e520df89c608855f65e433e87f01} 
+static \mbox{\hyperlink{namespace_mountain_goap_a124f0355181b4ca135c3e585fd5cf427}{Planning\+Started\+Event}} {\bfseries On\+Planning\+Started} = ( agent ) =$>$ \{ \}
+\begin{DoxyCompactList}\small\item\em Event that fires when planning begins. \end{DoxyCompactList}\item 
+\Hypertarget{class_mountain_goap_1_1_agent_a0aef68eab83e732b70c384c10ddf9346}\label{class_mountain_goap_1_1_agent_a0aef68eab83e732b70c384c10ddf9346} 
+static \mbox{\hyperlink{namespace_mountain_goap_a3b6a8648a63865800cae6d9d03a12ae9}{Planning\+Started\+For\+Single\+Goal\+Event}} {\bfseries On\+Planning\+Started\+For\+Single\+Goal} = ( agent, goal ) =$>$ \{ \}
+\begin{DoxyCompactList}\small\item\em Event that fires when planning for a single goal starts. \end{DoxyCompactList}\item 
+\Hypertarget{class_mountain_goap_1_1_agent_a3c5e9957d4e18a3d0f0fca0dcc2ce02a}\label{class_mountain_goap_1_1_agent_a3c5e9957d4e18a3d0f0fca0dcc2ce02a} 
+static \mbox{\hyperlink{namespace_mountain_goap_adb38a81f6b0989f5af5d7c901ad83827}{Planning\+Finished\+For\+Single\+Goal\+Event}} {\bfseries On\+Planning\+Finished\+For\+Single\+Goal} = ( agent, goal, utility ) =$>$ \{ \}
+\begin{DoxyCompactList}\small\item\em Event that fires when planning for a single goal finishes. \end{DoxyCompactList}\item 
+\Hypertarget{class_mountain_goap_1_1_agent_a6400bb934bee593ec820d20df85ce4b1}\label{class_mountain_goap_1_1_agent_a6400bb934bee593ec820d20df85ce4b1} 
+static \mbox{\hyperlink{namespace_mountain_goap_a135eab9ad56855a10ab4761295ed54aa}{Planning\+Finished\+Event}} {\bfseries On\+Planning\+Finished} = ( agent, goal, utility ) =$>$ \{ \}
+\begin{DoxyCompactList}\small\item\em Event that fires when planning finishes. \end{DoxyCompactList}\item 
+\Hypertarget{class_mountain_goap_1_1_agent_a29af97cb32c3f7662c2c1e906fd2f738}\label{class_mountain_goap_1_1_agent_a29af97cb32c3f7662c2c1e906fd2f738} 
+static \mbox{\hyperlink{namespace_mountain_goap_a2b8f58cc59696902498142597fc72572}{Plan\+Updated\+Event}} {\bfseries On\+Plan\+Updated} = ( agent, action\+List ) =$>$ \{ \}
+\begin{DoxyCompactList}\small\item\em Event that fires when a new plan is finalized for the agent. \end{DoxyCompactList}\item 
+\Hypertarget{class_mountain_goap_1_1_agent_a77c0046b6a22e87a98276f1c512779f0}\label{class_mountain_goap_1_1_agent_a77c0046b6a22e87a98276f1c512779f0} 
+static \mbox{\hyperlink{namespace_mountain_goap_aa9f50b47134464f23ed3e58c9057bec9}{Evaluated\+Action\+Node\+Event}} {\bfseries On\+Evaluated\+Action\+Node} = ( node, nodes ) =$>$ \{ \}
+\begin{DoxyCompactList}\small\item\em Event that fires when the pathfinder evaluates a single node in the action graph. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+GOAP agent. 
+
+\label{doc-constructors}
+\Hypertarget{class_mountain_goap_1_1_agent_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_mountain_goap_1_1_agent_ac81cbfd4ff105a45c28c6025b81ff1ba}\index{MountainGoap.Agent@{MountainGoap.Agent}!Agent@{Agent}}
+\index{Agent@{Agent}!MountainGoap.Agent@{MountainGoap.Agent}}
+\doxysubsubsection{\texorpdfstring{Agent()}{Agent()}}
+{\footnotesize\ttfamily \label{class_mountain_goap_1_1_agent_ac81cbfd4ff105a45c28c6025b81ff1ba} 
+Mountain\+Goap.\+Agent.\+Agent (\begin{DoxyParamCaption}\item[{string?}]{name}{ = {\ttfamily null}, }\item[{Concurrent\+Dictionary$<$ string, object?$>$?}]{state}{ = {\ttfamily null}, }\item[{Dictionary$<$ string, object?$>$?}]{memory}{ = {\ttfamily null}, }\item[{List$<$ \mbox{\hyperlink{class_mountain_goap_1_1_base_goal}{Base\+Goal}} $>$?}]{goals}{ = {\ttfamily null}, }\item[{List$<$ \mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}} $>$?}]{actions}{ = {\ttfamily null}, }\item[{List$<$ \mbox{\hyperlink{class_mountain_goap_1_1_sensor}{Sensor}} $>$?}]{sensors}{ = {\ttfamily null}, }\item[{float}]{cost\+Maximum}{ = {\ttfamily float\+:\+:MaxValue}, }\item[{int}]{step\+Maximum}{ = {\ttfamily int\+:\+:MaxValue}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes a new instance of the \doxylink{class_mountain_goap_1_1_agent}{Agent} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the agent.\\
+\hline
+{\em state} & Initial agent state.\\
+\hline
+{\em memory} & Initial agent memory.\\
+\hline
+{\em goals} & Initial agent goals.\\
+\hline
+{\em actions} & Actions available to the agent.\\
+\hline
+{\em sensors} & Sensors available to the agent.\\
+\hline
+{\em cost\+Maximum} & Maximum cost of an allowable plan.\\
+\hline
+{\em step\+Maximum} & Maximum steps in an allowable plan.\\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_mountain_goap_1_1_agent_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mountain_goap_1_1_agent_a085890e508411f06c2e000a21f4bbe39}\index{MountainGoap.Agent@{MountainGoap.Agent}!Step@{Step}}
+\index{Step@{Step}!MountainGoap.Agent@{MountainGoap.Agent}}
+\doxysubsubsection{\texorpdfstring{Step()}{Step()}}
+{\footnotesize\ttfamily \label{class_mountain_goap_1_1_agent_a085890e508411f06c2e000a21f4bbe39} 
+void Mountain\+Goap.\+Agent.\+Step (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_mountain_goap_a5ab942d6598760cdf8b0c350cd8d0fd4}{Step\+Mode}}}]{mode}{ = {\ttfamily \mbox{\hyperlink{namespace_mountain_goap_a5ab942d6598760cdf8b0c350cd8d0fd4a7a1920d61156abc05a60135aefe8bc67}{Step\+Mode\+::\+Default}}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+You should call this every time your game state updates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & Mode to be used for executing the step of work.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+addons/mountain-\/goap/\+Mountain\+Goap/Agent.\+cs\end{DoxyCompactItemize}

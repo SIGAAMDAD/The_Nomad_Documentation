@@ -1,0 +1,113 @@
+\doxysection{Multiplayer.\+Modes.\+Duel Class Reference}
+\hypertarget{class_multiplayer_1_1_modes_1_1_duel}{}\label{class_multiplayer_1_1_modes_1_1_duel}\index{Multiplayer.Modes.Duel@{Multiplayer.Modes.Duel}}
+Inheritance diagram for Multiplayer.\+Modes.\+Duel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_multiplayer_1_1_modes_1_1_duel}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_multiplayer_1_1_modes_1_1_duel_a33d3e0918b8bfbfa00f1fbaeaec9731d}\label{class_multiplayer_1_1_modes_1_1_duel_a33d3e0918b8bfbfa00f1fbaeaec9731d} 
+void {\bfseries On\+Round\+End} ()
+\item 
+\Hypertarget{class_multiplayer_1_1_modes_1_1_duel_a70f0fe7c945cb2849a131f42b999f591}\label{class_multiplayer_1_1_modes_1_1_duel_a70f0fe7c945cb2849a131f42b999f591} 
+override void {\bfseries Spawn\+Player} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} player)
+\item 
+\Hypertarget{class_multiplayer_1_1_modes_1_1_duel_a9071d30c4e73e0f7dd2c3687b3c37c88}\label{class_multiplayer_1_1_modes_1_1_duel_a9071d30c4e73e0f7dd2c3687b3c37c88} 
+override void {\bfseries On\+Player\+Joined} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} player)
+\item 
+\Hypertarget{class_multiplayer_1_1_modes_1_1_duel_a13fe0d86e0220192bf52f0aeb384240e}\label{class_multiplayer_1_1_modes_1_1_duel_a13fe0d86e0220192bf52f0aeb384240e} 
+override void {\bfseries On\+Player\+Left} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} player)
+\item 
+\Hypertarget{class_multiplayer_1_1_modes_1_1_duel_a9e40bfbbc2dbf760c8e1750207a93e1c}\label{class_multiplayer_1_1_modes_1_1_duel_a9e40bfbbc2dbf760c8e1750207a93e1c} 
+override bool {\bfseries Has\+Teams} ()
+\item 
+\Hypertarget{class_multiplayer_1_1_modes_1_1_duel_ad5904138bc29e7d282771434cc00cfea}\label{class_multiplayer_1_1_modes_1_1_duel_ad5904138bc29e7d282771434cc00cfea} 
+override Game\+Mode {\bfseries Get\+Mode} ()
+\item 
+\Hypertarget{class_multiplayer_1_1_modes_1_1_duel_a7e11cb6f037dc48f56cc5344e58474ab}\label{class_multiplayer_1_1_modes_1_1_duel_a7e11cb6f037dc48f56cc5344e58474ab} 
+override void {\bfseries \+\_\+\+Ready} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_multiplayer_1_1_mode}{Multiplayer.\+Mode}}}
+\begin{DoxyCompactItemize}
+\item 
+delegate void {\bfseries Show\+Scoreboard\+Event\+Handler} ()
+\item 
+delegate void {\bfseries End\+Game\+Event\+Handler} ()
+\item 
+void {\bfseries On\+Player\+Joined} (\mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}} player)
+\item 
+void {\bfseries On\+Player\+Left} (\mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}} player)
+\item 
+void {\bfseries Spawn\+Player} (\mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}} player)
+\item 
+bool {\bfseries Has\+Teams} ()
+\item 
+Game\+Mode {\bfseries Get\+Mode} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_multiplayer_1_1_modes_1_1_duel_aafd112a99cbdf41590affcd1a69ce29e}\label{class_multiplayer_1_1_modes_1_1_duel_aafd112a99cbdf41590affcd1a69ce29e} 
+static readonly int {\bfseries Min\+Players} = 1
+\item 
+\Hypertarget{class_multiplayer_1_1_modes_1_1_duel_a07184fff1795eb6dd1df9160bd5beea5}\label{class_multiplayer_1_1_modes_1_1_duel_a07184fff1795eb6dd1df9160bd5beea5} 
+static readonly int {\bfseries Max\+Players} = 2
+\item 
+static readonly Dictionary$<$ string, object $>$ \mbox{\hyperlink{class_multiplayer_1_1_modes_1_1_duel_aba3d5f81034cfbd7a29c612f0759566b}{Default\+Options}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{class_multiplayer_1_1_mode}{Multiplayer.\+Mode}}}
+\begin{DoxyCompactItemize}
+\item 
+static readonly Dictionary$<$ Game\+Mode, string $>$ \mbox{\hyperlink{class_multiplayer_1_1_mode_a5b666c5e15840b0f1f287cd4ba89fade}{Mode\+Names}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Types inherited from \mbox{\hyperlink{class_multiplayer_1_1_mode}{Multiplayer.\+Mode}}}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_multiplayer_1_1_mode_aaa587cc6c84ae32b19173887397b9615}\label{class_multiplayer_1_1_mode_aaa587cc6c84ae32b19173887397b9615} 
+enum {\bfseries Game\+Mode} \{ \newline
+{\bfseries Bloodbath}
+, {\bfseries Capture\+The\+Flag}
+, {\bfseries King\+Of\+The\+Hill}
+, {\bfseries Duel}
+, \newline
+{\bfseries Bounty\+Hunt}
+, {\bfseries Extraction}
+, {\bfseries Hold\+The\+Line}
+, {\bfseries Count}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_multiplayer_1_1_mode}{Multiplayer.\+Mode}}}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Mode {\bfseries Type}
+\item 
+Dictionary$<$ string, object $>$ {\bfseries Options}
+\end{DoxyCompactItemize}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_multiplayer_1_1_modes_1_1_duel_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_multiplayer_1_1_modes_1_1_duel_aba3d5f81034cfbd7a29c612f0759566b}\index{Multiplayer.Modes.Duel@{Multiplayer.Modes.Duel}!DefaultOptions@{DefaultOptions}}
+\index{DefaultOptions@{DefaultOptions}!Multiplayer.Modes.Duel@{Multiplayer.Modes.Duel}}
+\doxysubsubsection{\texorpdfstring{DefaultOptions}{DefaultOptions}}
+{\footnotesize\ttfamily \label{class_multiplayer_1_1_modes_1_1_duel_aba3d5f81034cfbd7a29c612f0759566b} 
+readonly Dictionary$<$string, object$>$ Multiplayer.\+Modes.\+Duel.\+Default\+Options\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{new}\ Dictionary<string,\ object>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \{\ \textcolor{stringliteral}{"{}MaxRounds"{}},\ 3\ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \{\ \textcolor{stringliteral}{"{}RoundTime"{}},\ 60.0f\ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/multiplayer/\+Modes/Duel.\+cs\end{DoxyCompactItemize}

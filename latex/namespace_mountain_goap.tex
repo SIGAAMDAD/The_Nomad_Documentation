@@ -1,0 +1,527 @@
+\doxysection{Mountain\+Goap Namespace Reference}
+\hypertarget{namespace_mountain_goap}{}\label{namespace_mountain_goap}\index{MountainGoap@{MountainGoap}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}
+\begin{DoxyCompactList}\small\item\em Represents an action in a GOAP system. \end{DoxyCompactList}\item 
+class {\bfseries Action\+AStar}
+\begin{DoxyCompactList}\small\item\em AStar calculator for an action graph. \end{DoxyCompactList}\item 
+class {\bfseries Action\+Graph}
+\begin{DoxyCompactList}\small\item\em Represents a traversable action graph. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_mountain_goap_1_1_action_node}{Action\+Node}}
+\begin{DoxyCompactList}\small\item\em Represents an action node in an action graph. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}
+\begin{DoxyCompactList}\small\item\em GOAP agent. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_mountain_goap_1_1_base_goal}{Base\+Goal}}
+\begin{DoxyCompactList}\small\item\em Represents an abstract class for a goal to be achieved for an agent. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_mountain_goap_1_1_comparative_goal}{Comparative\+Goal}}
+\begin{DoxyCompactList}\small\item\em Represents a goal to be achieved for an agent. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_mountain_goap_1_1_comparison_value_pair}{Comparison\+Value\+Pair}}
+\begin{DoxyCompactList}\small\item\em List of operators that can be used for comparison. \end{DoxyCompactList}\item 
+class {\bfseries Dictionary\+Extension\+Methods}
+\begin{DoxyCompactList}\small\item\em Extension method to copy a dictionary of strings and objects. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_mountain_goap_1_1_extreme_goal}{Extreme\+Goal}}
+\begin{DoxyCompactList}\small\item\em Represents a goal requiring an extreme value to be achieved for an agent. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_mountain_goap_1_1_goal}{Goal}}
+\begin{DoxyCompactList}\small\item\em Represents a goal to be achieved for an agent. \end{DoxyCompactList}\item 
+class {\bfseries Permutation\+Selector\+Generators}
+\begin{DoxyCompactList}\small\item\em Generators for default permutation selectors for convenience. \end{DoxyCompactList}\item 
+class {\bfseries Planner}
+\begin{DoxyCompactList}\small\item\em Planner for an agent. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_mountain_goap_1_1_sensor}{Sensor}}
+\begin{DoxyCompactList}\small\item\em \doxylink{class_mountain_goap_1_1_sensor}{Sensor} for getting information about world state. \end{DoxyCompactList}\item 
+class {\bfseries Utils}
+\begin{DoxyCompactList}\small\item\em Utilities for the \doxylink{namespace_mountain_goap}{Mountain\+Goap} library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_mountain_goap_a406cbb1d5467e8a02cffe908276c3ad9}{Comparison\+Operator}} \{ \newline
+\mbox{\hyperlink{namespace_mountain_goap_a406cbb1d5467e8a02cffe908276c3ad9aec0fc0100c4fc1ce4eea230c3dc10360}{Undefined}} = 0
+, \mbox{\hyperlink{namespace_mountain_goap_a406cbb1d5467e8a02cffe908276c3ad9a0ccb67e7eaae09d9e4078d161eeca100}{Equals}} = 1
+, \mbox{\hyperlink{namespace_mountain_goap_a406cbb1d5467e8a02cffe908276c3ad9ac6d9d7bb9939f62f01c80f8b1251501c}{Less\+Than}} = 2
+, \mbox{\hyperlink{namespace_mountain_goap_a406cbb1d5467e8a02cffe908276c3ad9a32643384e2970a6ca75e35112415251f}{Less\+Than\+Or\+Equals}} = 3
+, \newline
+\mbox{\hyperlink{namespace_mountain_goap_a406cbb1d5467e8a02cffe908276c3ad9af6d044fe1f01fb0c956b80099e2a3072}{Greater\+Than}} = 4
+, \mbox{\hyperlink{namespace_mountain_goap_a406cbb1d5467e8a02cffe908276c3ad9af64389ec17f3793363f97bb6d97c9adb}{Greater\+Than\+Or\+Equals}} = 5
+ \}
+\begin{DoxyCompactList}\small\item\em List of operators that can be used for comparison. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235}{Execution\+Status}} \{ \newline
+\mbox{\hyperlink{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235a04776772275a1995e62fe1af709e354a}{Not\+Yet\+Executed}} = 1
+, \mbox{\hyperlink{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235a63c4cc5944eb60b1969f2333ead70fc9}{Executing}} = 2
+, \mbox{\hyperlink{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235a66d02c2f8a582446f8dd8752366002b5}{Succeeded}} = 3
+, \mbox{\hyperlink{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235ad7c8c85bf79bbe1b7188497c32c3b0ca}{Failed}} = 4
+, \newline
+\mbox{\hyperlink{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235ada3b8c94688664ec726008f688312857}{Not\+Possible}} = 5
+ \}
+\begin{DoxyCompactList}\small\item\em Possible execution status for an action. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_mountain_goap_a5ab942d6598760cdf8b0c350cd8d0fd4}{Step\+Mode}} \{ \mbox{\hyperlink{namespace_mountain_goap_a5ab942d6598760cdf8b0c350cd8d0fd4a7a1920d61156abc05a60135aefe8bc67}{Default}} = 1
+, \mbox{\hyperlink{namespace_mountain_goap_a5ab942d6598760cdf8b0c350cd8d0fd4a803724574638788f063105d4d06c9ebf}{One\+Action}} = 2
+, \mbox{\hyperlink{namespace_mountain_goap_a5ab942d6598760cdf8b0c350cd8d0fd4ad7143d6e8e82cd12466de7815f07d1ac}{All\+Actions}} = 3
+ \}
+\begin{DoxyCompactList}\small\item\em Different modes with which \doxylink{namespace_mountain_goap}{Mountain\+Goap} can execute an agent step. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+delegate float \mbox{\hyperlink{namespace_mountain_goap_afbb7b84e8f875f8ad6242528480e5e9a}{Cost\+Callback}} (\mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}} action, Concurrent\+Dictionary$<$ string, object?$>$ current\+State)
+\begin{DoxyCompactList}\small\item\em Delegate type for a callback that defines the cost of an action. \end{DoxyCompactList}\item 
+delegate \mbox{\hyperlink{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235}{Execution\+Status}} \mbox{\hyperlink{namespace_mountain_goap_aede8cfa205771e9a8b01d9b287b3aba7}{Executor\+Callback}} (\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}} agent, \mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}} action)
+\begin{DoxyCompactList}\small\item\em Delegate type for a callback that defines a list of all possible parameter states for the given state. \end{DoxyCompactList}\item 
+delegate List$<$ object $>$ \mbox{\hyperlink{namespace_mountain_goap_a99f09523677f2a45cd6396c6ae3b6886}{Permutation\+Selector\+Callback}} (Concurrent\+Dictionary$<$ string, object?$>$ state)
+\begin{DoxyCompactList}\small\item\em Delegate type for a callback that defines a list of all possible parameter states for the given state. \end{DoxyCompactList}\item 
+delegate void \mbox{\hyperlink{namespace_mountain_goap_aac8716b59a1e52b11db18175c883978e}{Sensor\+Run\+Callback}} (\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}} agent)
+\begin{DoxyCompactList}\small\item\em Delegate type for a callback that runs a sensor during a game loop. \end{DoxyCompactList}\item 
+delegate bool \mbox{\hyperlink{namespace_mountain_goap_a00173f409b778c33c482c7c1abf8d601}{State\+Checker\+Callback}} (\mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}} action, Concurrent\+Dictionary$<$ string, object?$>$ current\+State)
+\begin{DoxyCompactList}\small\item\em Delegate type for a callback that checks state before action execution or evaluation (the latter during planning). \end{DoxyCompactList}\item 
+delegate float \mbox{\hyperlink{namespace_mountain_goap_a15cd1bfe17ebf50fa72ab3ce8f6d56a9}{State\+Cost\+Delta\+Multiplier\+Callback}} (\mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}? action, string state\+Key)
+\begin{DoxyCompactList}\small\item\em Delegate type for a callback that provides multiplier for delta value of the respective key to obtain delta cost to use with \doxylink{class_mountain_goap_1_1_extreme_goal}{Extreme\+Goal} and \doxylink{class_mountain_goap_1_1_comparative_goal}{Comparative\+Goal}. \end{DoxyCompactList}\item 
+delegate void \mbox{\hyperlink{namespace_mountain_goap_ac2ae5e930457611946a7650d14068292}{State\+Mutator\+Callback}} (\mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}} action, Concurrent\+Dictionary$<$ string, object?$>$ current\+State)
+\begin{DoxyCompactList}\small\item\em Delegate type for a callback that mutates state following action execution or evaluation (the latter during planning). \end{DoxyCompactList}\item 
+delegate void \mbox{\hyperlink{namespace_mountain_goap_abd639de3470fecab61efa1e4d326491a}{Agent\+Action\+Sequence\+Completed\+Event}} (\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}} agent)
+\begin{DoxyCompactList}\small\item\em Delegate type for a listener to the event that fires when an agent completes an action sequence. \end{DoxyCompactList}\item 
+delegate void \mbox{\hyperlink{namespace_mountain_goap_a8bb2e78ed32f497356945c681866e638}{Agent\+Step\+Event}} (\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}} agent)
+\begin{DoxyCompactList}\small\item\em Delegate type for a listener to the event that fires when an agent executes a step of work. \end{DoxyCompactList}\item 
+delegate void \mbox{\hyperlink{namespace_mountain_goap_a74caf20eac5c7c7390a90a54d5374457}{Begin\+Execute\+Action\+Event}} (\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}} agent, \mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}} action, Dictionary$<$ string, object?$>$ parameters)
+\begin{DoxyCompactList}\small\item\em Delegate type for a listener to the event that fires when an action begins executing. \end{DoxyCompactList}\item 
+delegate void \mbox{\hyperlink{namespace_mountain_goap_aa9f50b47134464f23ed3e58c9057bec9}{Evaluated\+Action\+Node\+Event}} (\mbox{\hyperlink{class_mountain_goap_1_1_action_node}{Action\+Node}} node, Concurrent\+Dictionary$<$ \mbox{\hyperlink{class_mountain_goap_1_1_action_node}{Action\+Node}}, \mbox{\hyperlink{class_mountain_goap_1_1_action_node}{Action\+Node}} $>$ nodes)
+\begin{DoxyCompactList}\small\item\em Delegate type for a listener to the event that fires when an agent is evaluating a path for a potential action plan. \end{DoxyCompactList}\item 
+delegate void \mbox{\hyperlink{namespace_mountain_goap_a090ee9fbf9d58c9b49df1702e34ef871}{Finish\+Execute\+Action\+Event}} (\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}} agent, \mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}} action, \mbox{\hyperlink{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235}{Execution\+Status}} status, Dictionary$<$ string, object?$>$ parameters)
+\begin{DoxyCompactList}\small\item\em Delegate type for a listener to the event that fires when an action finishes executing. \end{DoxyCompactList}\item 
+delegate void \mbox{\hyperlink{namespace_mountain_goap_a135eab9ad56855a10ab4761295ed54aa}{Planning\+Finished\+Event}} (\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}} agent, \mbox{\hyperlink{class_mountain_goap_1_1_base_goal}{Base\+Goal}}? goal, float utility)
+\begin{DoxyCompactList}\small\item\em Delegate type for a listener to the event that fires when an agent finishes planning. \end{DoxyCompactList}\item 
+delegate void \mbox{\hyperlink{namespace_mountain_goap_adb38a81f6b0989f5af5d7c901ad83827}{Planning\+Finished\+For\+Single\+Goal\+Event}} (\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}} agent, \mbox{\hyperlink{class_mountain_goap_1_1_base_goal}{Base\+Goal}} goal, float utility)
+\begin{DoxyCompactList}\small\item\em Delegate type for a listener to the event that fires when an agent finishes planning for a single goal. \end{DoxyCompactList}\item 
+delegate void \mbox{\hyperlink{namespace_mountain_goap_a124f0355181b4ca135c3e585fd5cf427}{Planning\+Started\+Event}} (\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}} agent)
+\begin{DoxyCompactList}\small\item\em Delegate type for a listener to the event that fires when an agent begins planning. \end{DoxyCompactList}\item 
+delegate void \mbox{\hyperlink{namespace_mountain_goap_a3b6a8648a63865800cae6d9d03a12ae9}{Planning\+Started\+For\+Single\+Goal\+Event}} (\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}} agent, \mbox{\hyperlink{class_mountain_goap_1_1_base_goal}{Base\+Goal}} goal)
+\begin{DoxyCompactList}\small\item\em Delegate type for a listener to the event that fires when an agent starts planning for a single goal. \end{DoxyCompactList}\item 
+delegate void \mbox{\hyperlink{namespace_mountain_goap_a2b8f58cc59696902498142597fc72572}{Plan\+Updated\+Event}} (\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}} agent, List$<$ \mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}} $>$ plan)
+\begin{DoxyCompactList}\small\item\em Delegate type for a listener to the event that fires when an agent has a new plan. \end{DoxyCompactList}\item 
+delegate void \mbox{\hyperlink{namespace_mountain_goap_a302c057c11c159d38b453215af9051c8}{Sensor\+Run\+Event}} (\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}} agent, \mbox{\hyperlink{class_mountain_goap_1_1_sensor}{Sensor}} sensor)
+\begin{DoxyCompactList}\small\item\em Delegate type for a listener to the event that fires when an agent sensor is about to run. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-enum-members}
+\Hypertarget{namespace_mountain_goap_doc-enum-members}
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{namespace_mountain_goap_a406cbb1d5467e8a02cffe908276c3ad9}\index{MountainGoap@{MountainGoap}!ComparisonOperator@{ComparisonOperator}}
+\index{ComparisonOperator@{ComparisonOperator}!MountainGoap@{MountainGoap}}
+\doxysubsubsection{\texorpdfstring{ComparisonOperator}{ComparisonOperator}}
+{\footnotesize\ttfamily \label{namespace_mountain_goap_a406cbb1d5467e8a02cffe908276c3ad9} 
+enum \mbox{\hyperlink{namespace_mountain_goap_a406cbb1d5467e8a02cffe908276c3ad9}{Mountain\+Goap.\+Comparison\+Operator}}}
+
+
+
+List of operators that can be used for comparison. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Undefined@{Undefined}!MountainGoap@{MountainGoap}}\index{MountainGoap@{MountainGoap}!Undefined@{Undefined}}}\Hypertarget{namespace_mountain_goap_a406cbb1d5467e8a02cffe908276c3ad9aec0fc0100c4fc1ce4eea230c3dc10360}\label{namespace_mountain_goap_a406cbb1d5467e8a02cffe908276c3ad9aec0fc0100c4fc1ce4eea230c3dc10360} 
+Undefined&Undefined comparison operator (will not do anything). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Equals@{Equals}!MountainGoap@{MountainGoap}}\index{MountainGoap@{MountainGoap}!Equals@{Equals}}}\Hypertarget{namespace_mountain_goap_a406cbb1d5467e8a02cffe908276c3ad9a0ccb67e7eaae09d9e4078d161eeca100}\label{namespace_mountain_goap_a406cbb1d5467e8a02cffe908276c3ad9a0ccb67e7eaae09d9e4078d161eeca100} 
+Equals&Equality (==) operator. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LessThan@{LessThan}!MountainGoap@{MountainGoap}}\index{MountainGoap@{MountainGoap}!LessThan@{LessThan}}}\Hypertarget{namespace_mountain_goap_a406cbb1d5467e8a02cffe908276c3ad9ac6d9d7bb9939f62f01c80f8b1251501c}\label{namespace_mountain_goap_a406cbb1d5467e8a02cffe908276c3ad9ac6d9d7bb9939f62f01c80f8b1251501c} 
+Less\+Than&Less than (\texorpdfstring{$<$}{<}) operator. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LessThanOrEquals@{LessThanOrEquals}!MountainGoap@{MountainGoap}}\index{MountainGoap@{MountainGoap}!LessThanOrEquals@{LessThanOrEquals}}}\Hypertarget{namespace_mountain_goap_a406cbb1d5467e8a02cffe908276c3ad9a32643384e2970a6ca75e35112415251f}\label{namespace_mountain_goap_a406cbb1d5467e8a02cffe908276c3ad9a32643384e2970a6ca75e35112415251f} 
+Less\+Than\+Or\+Equals&Less than or equals (\texorpdfstring{$<$}{<}=) operator. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GreaterThan@{GreaterThan}!MountainGoap@{MountainGoap}}\index{MountainGoap@{MountainGoap}!GreaterThan@{GreaterThan}}}\Hypertarget{namespace_mountain_goap_a406cbb1d5467e8a02cffe908276c3ad9af6d044fe1f01fb0c956b80099e2a3072}\label{namespace_mountain_goap_a406cbb1d5467e8a02cffe908276c3ad9af6d044fe1f01fb0c956b80099e2a3072} 
+Greater\+Than&Greater than (\texorpdfstring{$>$}{>}) operator). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GreaterThanOrEquals@{GreaterThanOrEquals}!MountainGoap@{MountainGoap}}\index{MountainGoap@{MountainGoap}!GreaterThanOrEquals@{GreaterThanOrEquals}}}\Hypertarget{namespace_mountain_goap_a406cbb1d5467e8a02cffe908276c3ad9af64389ec17f3793363f97bb6d97c9adb}\label{namespace_mountain_goap_a406cbb1d5467e8a02cffe908276c3ad9af64389ec17f3793363f97bb6d97c9adb} 
+Greater\+Than\+Or\+Equals&Greater than or equals (\texorpdfstring{$>$}{>}=) operator. \\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235}\index{MountainGoap@{MountainGoap}!ExecutionStatus@{ExecutionStatus}}
+\index{ExecutionStatus@{ExecutionStatus}!MountainGoap@{MountainGoap}}
+\doxysubsubsection{\texorpdfstring{ExecutionStatus}{ExecutionStatus}}
+{\footnotesize\ttfamily \label{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235} 
+enum \mbox{\hyperlink{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235}{Mountain\+Goap.\+Execution\+Status}}}
+
+
+
+Possible execution status for an action. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NotYetExecuted@{NotYetExecuted}!MountainGoap@{MountainGoap}}\index{MountainGoap@{MountainGoap}!NotYetExecuted@{NotYetExecuted}}}\Hypertarget{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235a04776772275a1995e62fe1af709e354a}\label{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235a04776772275a1995e62fe1af709e354a} 
+Not\+Yet\+Executed&Indicates that the action is not currently executing. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Executing@{Executing}!MountainGoap@{MountainGoap}}\index{MountainGoap@{MountainGoap}!Executing@{Executing}}}\Hypertarget{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235a63c4cc5944eb60b1969f2333ead70fc9}\label{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235a63c4cc5944eb60b1969f2333ead70fc9} 
+Executing&Indicates that the action is currently executing. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Succeeded@{Succeeded}!MountainGoap@{MountainGoap}}\index{MountainGoap@{MountainGoap}!Succeeded@{Succeeded}}}\Hypertarget{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235a66d02c2f8a582446f8dd8752366002b5}\label{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235a66d02c2f8a582446f8dd8752366002b5} 
+Succeeded&Indicates that the action has succeeded. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Failed@{Failed}!MountainGoap@{MountainGoap}}\index{MountainGoap@{MountainGoap}!Failed@{Failed}}}\Hypertarget{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235ad7c8c85bf79bbe1b7188497c32c3b0ca}\label{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235ad7c8c85bf79bbe1b7188497c32c3b0ca} 
+Failed&Indicates that the action has failed. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NotPossible@{NotPossible}!MountainGoap@{MountainGoap}}\index{MountainGoap@{MountainGoap}!NotPossible@{NotPossible}}}\Hypertarget{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235ada3b8c94688664ec726008f688312857}\label{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235ada3b8c94688664ec726008f688312857} 
+Not\+Possible&Indicates that the action is not possible due to preconditions. \\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{namespace_mountain_goap_a5ab942d6598760cdf8b0c350cd8d0fd4}\index{MountainGoap@{MountainGoap}!StepMode@{StepMode}}
+\index{StepMode@{StepMode}!MountainGoap@{MountainGoap}}
+\doxysubsubsection{\texorpdfstring{StepMode}{StepMode}}
+{\footnotesize\ttfamily \label{namespace_mountain_goap_a5ab942d6598760cdf8b0c350cd8d0fd4} 
+enum \mbox{\hyperlink{namespace_mountain_goap_a5ab942d6598760cdf8b0c350cd8d0fd4}{Mountain\+Goap.\+Step\+Mode}}}
+
+
+
+Different modes with which \doxylink{namespace_mountain_goap}{Mountain\+Goap} can execute an agent step. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Default@{Default}!MountainGoap@{MountainGoap}}\index{MountainGoap@{MountainGoap}!Default@{Default}}}\Hypertarget{namespace_mountain_goap_a5ab942d6598760cdf8b0c350cd8d0fd4a7a1920d61156abc05a60135aefe8bc67}\label{namespace_mountain_goap_a5ab942d6598760cdf8b0c350cd8d0fd4a7a1920d61156abc05a60135aefe8bc67} 
+Default&Default step mode. Runs async, doesn\textquotesingle{}t necessitate taking action. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OneAction@{OneAction}!MountainGoap@{MountainGoap}}\index{MountainGoap@{MountainGoap}!OneAction@{OneAction}}}\Hypertarget{namespace_mountain_goap_a5ab942d6598760cdf8b0c350cd8d0fd4a803724574638788f063105d4d06c9ebf}\label{namespace_mountain_goap_a5ab942d6598760cdf8b0c350cd8d0fd4a803724574638788f063105d4d06c9ebf} 
+One\+Action&Turn-\/based step mode, plans synchronously, executes at least one action if possible. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AllActions@{AllActions}!MountainGoap@{MountainGoap}}\index{MountainGoap@{MountainGoap}!AllActions@{AllActions}}}\Hypertarget{namespace_mountain_goap_a5ab942d6598760cdf8b0c350cd8d0fd4ad7143d6e8e82cd12466de7815f07d1ac}\label{namespace_mountain_goap_a5ab942d6598760cdf8b0c350cd8d0fd4ad7143d6e8e82cd12466de7815f07d1ac} 
+All\+Actions&Turn-\/based step mode, plans synchronously, executes all actions in planned action sequence. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\label{doc-func-members}
+\Hypertarget{namespace_mountain_goap_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_mountain_goap_abd639de3470fecab61efa1e4d326491a}\index{MountainGoap@{MountainGoap}!AgentActionSequenceCompletedEvent@{AgentActionSequenceCompletedEvent}}
+\index{AgentActionSequenceCompletedEvent@{AgentActionSequenceCompletedEvent}!MountainGoap@{MountainGoap}}
+\doxysubsubsection{\texorpdfstring{AgentActionSequenceCompletedEvent()}{AgentActionSequenceCompletedEvent()}}
+{\footnotesize\ttfamily \label{namespace_mountain_goap_abd639de3470fecab61efa1e4d326491a} 
+delegate void Mountain\+Goap.\+Agent\+Action\+Sequence\+Completed\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}}]{agent}{}\end{DoxyParamCaption})}
+
+
+
+Delegate type for a listener to the event that fires when an agent completes an action sequence. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agent} & \doxylink{class_mountain_goap_1_1_agent}{Agent} executing the action sequence.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_mountain_goap_a8bb2e78ed32f497356945c681866e638}\index{MountainGoap@{MountainGoap}!AgentStepEvent@{AgentStepEvent}}
+\index{AgentStepEvent@{AgentStepEvent}!MountainGoap@{MountainGoap}}
+\doxysubsubsection{\texorpdfstring{AgentStepEvent()}{AgentStepEvent()}}
+{\footnotesize\ttfamily \label{namespace_mountain_goap_a8bb2e78ed32f497356945c681866e638} 
+delegate void Mountain\+Goap.\+Agent\+Step\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}}]{agent}{}\end{DoxyParamCaption})}
+
+
+
+Delegate type for a listener to the event that fires when an agent executes a step of work. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agent} & \doxylink{class_mountain_goap_1_1_agent}{Agent} executing the step of work.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_mountain_goap_a74caf20eac5c7c7390a90a54d5374457}\index{MountainGoap@{MountainGoap}!BeginExecuteActionEvent@{BeginExecuteActionEvent}}
+\index{BeginExecuteActionEvent@{BeginExecuteActionEvent}!MountainGoap@{MountainGoap}}
+\doxysubsubsection{\texorpdfstring{BeginExecuteActionEvent()}{BeginExecuteActionEvent()}}
+{\footnotesize\ttfamily \label{namespace_mountain_goap_a74caf20eac5c7c7390a90a54d5374457} 
+delegate void Mountain\+Goap.\+Begin\+Execute\+Action\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}}]{agent}{, }\item[{\mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}}]{action}{, }\item[{Dictionary$<$ string, object?$>$}]{parameters}{}\end{DoxyParamCaption})}
+
+
+
+Delegate type for a listener to the event that fires when an action begins executing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agent} & \doxylink{class_mountain_goap_1_1_agent}{Agent} executing the action.\\
+\hline
+{\em action} & \doxylink{class_mountain_goap_1_1_action}{Action} being executed.\\
+\hline
+{\em parameters} & Parameters to the action being executed.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_mountain_goap_afbb7b84e8f875f8ad6242528480e5e9a}\index{MountainGoap@{MountainGoap}!CostCallback@{CostCallback}}
+\index{CostCallback@{CostCallback}!MountainGoap@{MountainGoap}}
+\doxysubsubsection{\texorpdfstring{CostCallback()}{CostCallback()}}
+{\footnotesize\ttfamily \label{namespace_mountain_goap_afbb7b84e8f875f8ad6242528480e5e9a} 
+delegate float Mountain\+Goap.\+Cost\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}}]{action}{, }\item[{Concurrent\+Dictionary$<$ string, object?$>$}]{current\+State}{}\end{DoxyParamCaption})}
+
+
+
+Delegate type for a callback that defines the cost of an action. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & \doxylink{class_mountain_goap_1_1_action}{Action} being executed.\\
+\hline
+{\em current\+State} & State as it will be when cost is relevant.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Cost of the action.
+\end{DoxyReturn}
+\Hypertarget{namespace_mountain_goap_aa9f50b47134464f23ed3e58c9057bec9}\index{MountainGoap@{MountainGoap}!EvaluatedActionNodeEvent@{EvaluatedActionNodeEvent}}
+\index{EvaluatedActionNodeEvent@{EvaluatedActionNodeEvent}!MountainGoap@{MountainGoap}}
+\doxysubsubsection{\texorpdfstring{EvaluatedActionNodeEvent()}{EvaluatedActionNodeEvent()}}
+{\footnotesize\ttfamily \label{namespace_mountain_goap_aa9f50b47134464f23ed3e58c9057bec9} 
+delegate void Mountain\+Goap.\+Evaluated\+Action\+Node\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mountain_goap_1_1_action_node}{Action\+Node}}}]{node}{, }\item[{Concurrent\+Dictionary$<$ \mbox{\hyperlink{class_mountain_goap_1_1_action_node}{Action\+Node}}, \mbox{\hyperlink{class_mountain_goap_1_1_action_node}{Action\+Node}} $>$}]{nodes}{}\end{DoxyParamCaption})}
+
+
+
+Delegate type for a listener to the event that fires when an agent is evaluating a path for a potential action plan. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Node being evaluated.\\
+\hline
+{\em nodes} & All nodes in the plan being evaluated.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_mountain_goap_aede8cfa205771e9a8b01d9b287b3aba7}\index{MountainGoap@{MountainGoap}!ExecutorCallback@{ExecutorCallback}}
+\index{ExecutorCallback@{ExecutorCallback}!MountainGoap@{MountainGoap}}
+\doxysubsubsection{\texorpdfstring{ExecutorCallback()}{ExecutorCallback()}}
+{\footnotesize\ttfamily \label{namespace_mountain_goap_aede8cfa205771e9a8b01d9b287b3aba7} 
+delegate \mbox{\hyperlink{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235}{Execution\+Status}} Mountain\+Goap.\+Executor\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}}]{agent}{, }\item[{\mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}}]{action}{}\end{DoxyParamCaption})}
+
+
+
+Delegate type for a callback that defines a list of all possible parameter states for the given state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agent} & \doxylink{class_mountain_goap_1_1_agent}{Agent} executing the action.\\
+\hline
+{\em action} & \doxylink{class_mountain_goap_1_1_action}{Action} being executed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+New execution status of the action.
+\end{DoxyReturn}
+\Hypertarget{namespace_mountain_goap_a090ee9fbf9d58c9b49df1702e34ef871}\index{MountainGoap@{MountainGoap}!FinishExecuteActionEvent@{FinishExecuteActionEvent}}
+\index{FinishExecuteActionEvent@{FinishExecuteActionEvent}!MountainGoap@{MountainGoap}}
+\doxysubsubsection{\texorpdfstring{FinishExecuteActionEvent()}{FinishExecuteActionEvent()}}
+{\footnotesize\ttfamily \label{namespace_mountain_goap_a090ee9fbf9d58c9b49df1702e34ef871} 
+delegate void Mountain\+Goap.\+Finish\+Execute\+Action\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}}]{agent}{, }\item[{\mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}}]{action}{, }\item[{\mbox{\hyperlink{namespace_mountain_goap_a4ffd759d77ac36f8583aa197ed849235}{Execution\+Status}}}]{status}{, }\item[{Dictionary$<$ string, object?$>$}]{parameters}{}\end{DoxyParamCaption})}
+
+
+
+Delegate type for a listener to the event that fires when an action finishes executing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agent} & \doxylink{class_mountain_goap_1_1_agent}{Agent} executing the action.\\
+\hline
+{\em action} & \doxylink{class_mountain_goap_1_1_action}{Action} being executed.\\
+\hline
+{\em status} & Execution status of the action.\\
+\hline
+{\em parameters} & Parameters to the action being executed.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_mountain_goap_a99f09523677f2a45cd6396c6ae3b6886}\index{MountainGoap@{MountainGoap}!PermutationSelectorCallback@{PermutationSelectorCallback}}
+\index{PermutationSelectorCallback@{PermutationSelectorCallback}!MountainGoap@{MountainGoap}}
+\doxysubsubsection{\texorpdfstring{PermutationSelectorCallback()}{PermutationSelectorCallback()}}
+{\footnotesize\ttfamily \label{namespace_mountain_goap_a99f09523677f2a45cd6396c6ae3b6886} 
+delegate List$<$ object $>$ Mountain\+Goap.\+Permutation\+Selector\+Callback (\begin{DoxyParamCaption}\item[{Concurrent\+Dictionary$<$ string, object?$>$}]{state}{}\end{DoxyParamCaption})}
+
+
+
+Delegate type for a callback that defines a list of all possible parameter states for the given state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & Current world state.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list with each parameter set to be tried for the action.
+\end{DoxyReturn}
+\Hypertarget{namespace_mountain_goap_a135eab9ad56855a10ab4761295ed54aa}\index{MountainGoap@{MountainGoap}!PlanningFinishedEvent@{PlanningFinishedEvent}}
+\index{PlanningFinishedEvent@{PlanningFinishedEvent}!MountainGoap@{MountainGoap}}
+\doxysubsubsection{\texorpdfstring{PlanningFinishedEvent()}{PlanningFinishedEvent()}}
+{\footnotesize\ttfamily \label{namespace_mountain_goap_a135eab9ad56855a10ab4761295ed54aa} 
+delegate void Mountain\+Goap.\+Planning\+Finished\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}}]{agent}{, }\item[{\mbox{\hyperlink{class_mountain_goap_1_1_base_goal}{Base\+Goal}}?}]{goal}{, }\item[{float}]{utility}{}\end{DoxyParamCaption})}
+
+
+
+Delegate type for a listener to the event that fires when an agent finishes planning. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agent} & \doxylink{class_mountain_goap_1_1_agent}{Agent} doing the planning.\\
+\hline
+\end{DoxyParams}
+/// 
+\begin{DoxyParams}{Parameters}
+{\em goal} & \doxylink{class_mountain_goap_1_1_goal}{Goal} selected, or null if no valid plan was selected.\\
+\hline
+{\em utility} & Calculated utility of the plan.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_mountain_goap_adb38a81f6b0989f5af5d7c901ad83827}\index{MountainGoap@{MountainGoap}!PlanningFinishedForSingleGoalEvent@{PlanningFinishedForSingleGoalEvent}}
+\index{PlanningFinishedForSingleGoalEvent@{PlanningFinishedForSingleGoalEvent}!MountainGoap@{MountainGoap}}
+\doxysubsubsection{\texorpdfstring{PlanningFinishedForSingleGoalEvent()}{PlanningFinishedForSingleGoalEvent()}}
+{\footnotesize\ttfamily \label{namespace_mountain_goap_adb38a81f6b0989f5af5d7c901ad83827} 
+delegate void Mountain\+Goap.\+Planning\+Finished\+For\+Single\+Goal\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}}]{agent}{, }\item[{\mbox{\hyperlink{class_mountain_goap_1_1_base_goal}{Base\+Goal}}}]{goal}{, }\item[{float}]{utility}{}\end{DoxyParamCaption})}
+
+
+
+Delegate type for a listener to the event that fires when an agent finishes planning for a single goal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agent} & \doxylink{class_mountain_goap_1_1_agent}{Agent} doing the planning.\\
+\hline
+{\em goal} & \doxylink{class_mountain_goap_1_1_goal}{Goal} for which planning was finished.\\
+\hline
+{\em utility} & Calculated utility of the plan.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_mountain_goap_a124f0355181b4ca135c3e585fd5cf427}\index{MountainGoap@{MountainGoap}!PlanningStartedEvent@{PlanningStartedEvent}}
+\index{PlanningStartedEvent@{PlanningStartedEvent}!MountainGoap@{MountainGoap}}
+\doxysubsubsection{\texorpdfstring{PlanningStartedEvent()}{PlanningStartedEvent()}}
+{\footnotesize\ttfamily \label{namespace_mountain_goap_a124f0355181b4ca135c3e585fd5cf427} 
+delegate void Mountain\+Goap.\+Planning\+Started\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}}]{agent}{}\end{DoxyParamCaption})}
+
+
+
+Delegate type for a listener to the event that fires when an agent begins planning. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agent} & \doxylink{class_mountain_goap_1_1_agent}{Agent} doing the planning.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_mountain_goap_a3b6a8648a63865800cae6d9d03a12ae9}\index{MountainGoap@{MountainGoap}!PlanningStartedForSingleGoalEvent@{PlanningStartedForSingleGoalEvent}}
+\index{PlanningStartedForSingleGoalEvent@{PlanningStartedForSingleGoalEvent}!MountainGoap@{MountainGoap}}
+\doxysubsubsection{\texorpdfstring{PlanningStartedForSingleGoalEvent()}{PlanningStartedForSingleGoalEvent()}}
+{\footnotesize\ttfamily \label{namespace_mountain_goap_a3b6a8648a63865800cae6d9d03a12ae9} 
+delegate void Mountain\+Goap.\+Planning\+Started\+For\+Single\+Goal\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}}]{agent}{, }\item[{\mbox{\hyperlink{class_mountain_goap_1_1_base_goal}{Base\+Goal}}}]{goal}{}\end{DoxyParamCaption})}
+
+
+
+Delegate type for a listener to the event that fires when an agent starts planning for a single goal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agent} & \doxylink{class_mountain_goap_1_1_agent}{Agent} doing the planning.\\
+\hline
+{\em goal} & \doxylink{class_mountain_goap_1_1_goal}{Goal} for which planning was started.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_mountain_goap_a2b8f58cc59696902498142597fc72572}\index{MountainGoap@{MountainGoap}!PlanUpdatedEvent@{PlanUpdatedEvent}}
+\index{PlanUpdatedEvent@{PlanUpdatedEvent}!MountainGoap@{MountainGoap}}
+\doxysubsubsection{\texorpdfstring{PlanUpdatedEvent()}{PlanUpdatedEvent()}}
+{\footnotesize\ttfamily \label{namespace_mountain_goap_a2b8f58cc59696902498142597fc72572} 
+delegate void Mountain\+Goap.\+Plan\+Updated\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}}]{agent}{, }\item[{List$<$ \mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}} $>$}]{plan}{}\end{DoxyParamCaption})}
+
+
+
+Delegate type for a listener to the event that fires when an agent has a new plan. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agent} & \doxylink{class_mountain_goap_1_1_agent}{Agent} executing the step of work.\\
+\hline
+{\em plan} & Plan determined to be optimal for the agent.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_mountain_goap_aac8716b59a1e52b11db18175c883978e}\index{MountainGoap@{MountainGoap}!SensorRunCallback@{SensorRunCallback}}
+\index{SensorRunCallback@{SensorRunCallback}!MountainGoap@{MountainGoap}}
+\doxysubsubsection{\texorpdfstring{SensorRunCallback()}{SensorRunCallback()}}
+{\footnotesize\ttfamily \label{namespace_mountain_goap_aac8716b59a1e52b11db18175c883978e} 
+delegate void Mountain\+Goap.\+Sensor\+Run\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}}]{agent}{}\end{DoxyParamCaption})}
+
+
+
+Delegate type for a callback that runs a sensor during a game loop. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agent} & \doxylink{class_mountain_goap_1_1_agent}{Agent} using the sensor.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_mountain_goap_a302c057c11c159d38b453215af9051c8}\index{MountainGoap@{MountainGoap}!SensorRunEvent@{SensorRunEvent}}
+\index{SensorRunEvent@{SensorRunEvent}!MountainGoap@{MountainGoap}}
+\doxysubsubsection{\texorpdfstring{SensorRunEvent()}{SensorRunEvent()}}
+{\footnotesize\ttfamily \label{namespace_mountain_goap_a302c057c11c159d38b453215af9051c8} 
+delegate void Mountain\+Goap.\+Sensor\+Run\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Agent}}}]{agent}{, }\item[{\mbox{\hyperlink{class_mountain_goap_1_1_sensor}{Sensor}}}]{sensor}{}\end{DoxyParamCaption})}
+
+
+
+Delegate type for a listener to the event that fires when an agent sensor is about to run. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agent} & \doxylink{class_mountain_goap_1_1_agent}{Agent} running the sensor.\\
+\hline
+{\em sensor} & \doxylink{class_mountain_goap_1_1_sensor}{Sensor} that is about to run.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_mountain_goap_a00173f409b778c33c482c7c1abf8d601}\index{MountainGoap@{MountainGoap}!StateCheckerCallback@{StateCheckerCallback}}
+\index{StateCheckerCallback@{StateCheckerCallback}!MountainGoap@{MountainGoap}}
+\doxysubsubsection{\texorpdfstring{StateCheckerCallback()}{StateCheckerCallback()}}
+{\footnotesize\ttfamily \label{namespace_mountain_goap_a00173f409b778c33c482c7c1abf8d601} 
+delegate bool Mountain\+Goap.\+State\+Checker\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}}]{action}{, }\item[{Concurrent\+Dictionary$<$ string, object?$>$}]{current\+State}{}\end{DoxyParamCaption})}
+
+
+
+Delegate type for a callback that checks state before action execution or evaluation (the latter during planning). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & \doxylink{class_mountain_goap_1_1_action}{Action} being executed or evaluated.\\
+\hline
+{\em current\+State} & State as it will be when the action is executed or evaluated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the state is okay for executing the action, otherwise false.
+\end{DoxyReturn}
+\Hypertarget{namespace_mountain_goap_a15cd1bfe17ebf50fa72ab3ce8f6d56a9}\index{MountainGoap@{MountainGoap}!StateCostDeltaMultiplierCallback@{StateCostDeltaMultiplierCallback}}
+\index{StateCostDeltaMultiplierCallback@{StateCostDeltaMultiplierCallback}!MountainGoap@{MountainGoap}}
+\doxysubsubsection{\texorpdfstring{StateCostDeltaMultiplierCallback()}{StateCostDeltaMultiplierCallback()}}
+{\footnotesize\ttfamily \label{namespace_mountain_goap_a15cd1bfe17ebf50fa72ab3ce8f6d56a9} 
+delegate float Mountain\+Goap.\+State\+Cost\+Delta\+Multiplier\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}?}]{action}{, }\item[{string}]{state\+Key}{}\end{DoxyParamCaption})}
+
+
+
+Delegate type for a callback that provides multiplier for delta value of the respective key to obtain delta cost to use with \doxylink{class_mountain_goap_1_1_extreme_goal}{Extreme\+Goal} and \doxylink{class_mountain_goap_1_1_comparative_goal}{Comparative\+Goal}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & \doxylink{class_mountain_goap_1_1_action}{Action} being executed or evaluated.\\
+\hline
+{\em state\+Key} & Key to provide multiplier for\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Multiplier for the delta value to get delta cost
+\end{DoxyReturn}
+\Hypertarget{namespace_mountain_goap_ac2ae5e930457611946a7650d14068292}\index{MountainGoap@{MountainGoap}!StateMutatorCallback@{StateMutatorCallback}}
+\index{StateMutatorCallback@{StateMutatorCallback}!MountainGoap@{MountainGoap}}
+\doxysubsubsection{\texorpdfstring{StateMutatorCallback()}{StateMutatorCallback()}}
+{\footnotesize\ttfamily \label{namespace_mountain_goap_ac2ae5e930457611946a7650d14068292} 
+delegate void Mountain\+Goap.\+State\+Mutator\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}}}]{action}{, }\item[{Concurrent\+Dictionary$<$ string, object?$>$}]{current\+State}{}\end{DoxyParamCaption})}
+
+
+
+Delegate type for a callback that mutates state following action execution or evaluation (the latter during planning). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & \doxylink{class_mountain_goap_1_1_action}{Action} being executed or evaluated.\\
+\hline
+{\em current\+State} & State as it will be when the action is executed or evaluated.\\
+\hline
+\end{DoxyParams}

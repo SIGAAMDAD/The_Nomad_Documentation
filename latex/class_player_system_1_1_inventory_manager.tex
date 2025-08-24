@@ -1,0 +1,40 @@
+\doxysection{Player\+System.\+Inventory\+Manager Class Reference}
+\hypertarget{class_player_system_1_1_inventory_manager}{}\label{class_player_system_1_1_inventory_manager}\index{PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}}
+Inheritance diagram for Player\+System.\+Inventory\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_player_system_1_1_inventory_manager}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_player_system_1_1_inventory_manager_a08c417c5f5b967e832f2b044dfa5a756}\label{class_player_system_1_1_inventory_manager_a08c417c5f5b967e832f2b044dfa5a756} 
+delegate void {\bfseries Weapon\+Status\+Updated\+Event\+Handler} (\mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}} entity, Weapon\+Entity.\+Properties properties)
+\item 
+\Hypertarget{class_player_system_1_1_inventory_manager_afd1742c51073dbadecf0d1e577699a35}\label{class_player_system_1_1_inventory_manager_afd1742c51073dbadecf0d1e577699a35} 
+void {\bfseries Drop\+Weapon} (int hash\+Code)
+\item 
+\Hypertarget{class_player_system_1_1_inventory_manager_a5cecad4f3198a93cab3f0c0c93351566}\label{class_player_system_1_1_inventory_manager_a5cecad4f3198a93cab3f0c0c93351566} 
+void {\bfseries Drop\+Ammo} (int hash\+Code)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_player_system_1_1_inventory_manager_acf45e8416036c41fe4053dbb0702c807}\label{class_player_system_1_1_inventory_manager_acf45e8416036c41fe4053dbb0702c807} 
+static readonly int {\bfseries MAX\+\_\+\+WEAPON\+\_\+\+SLOTS} = 4
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_player_system_1_1_inventory_manager_ac19f2ddc1c072732f20cda28fb58b30a}\label{class_player_system_1_1_inventory_manager_ac19f2ddc1c072732f20cda28fb58b30a} 
+\mbox{\hyperlink{class_player_system_1_1_weapon_slot}{Weapon\+Slot}}\mbox{[}$\,$\mbox{]} {\bfseries Weapon\+Slots} = new \mbox{\hyperlink{class_player_system_1_1_weapon_slot}{Weapon\+Slot}}\mbox{[} MAX\+\_\+\+WEAPON\+\_\+\+SLOTS \mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_player_system_1_1_inventory_manager_ac3979b5422ca6f55a133879ee217cb1d}\label{class_player_system_1_1_inventory_manager_ac3979b5422ca6f55a133879ee217cb1d} 
+int {\bfseries Current\+Weapon} = \mbox{\hyperlink{class_player_system_1_1_weapon_slot_af73055771aef2c168152b69449764e9f}{Weapon\+Slot.\+INVALID}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/\+Player\+System/Player\+Inventory\+Manager.\+cs\end{DoxyCompactItemize}

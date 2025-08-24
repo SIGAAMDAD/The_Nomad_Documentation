@@ -1,0 +1,127 @@
+\doxysection{Dialogue\+Manager\+Runtime.\+Dialogue\+Manager Class Reference}
+\hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager}{}\label{class_dialogue_manager_runtime_1_1_dialogue_manager}\index{DialogueManagerRuntime.DialogueManager@{DialogueManagerRuntime.DialogueManager}}
+Inheritance diagram for Dialogue\+Manager\+Runtime.\+Dialogue\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_dialogue_manager_runtime_1_1_dialogue_manager}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_a08b817c4ce6c01fd43a0c846b2ff1005}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_a08b817c4ce6c01fd43a0c846b2ff1005} 
+delegate void {\bfseries Dialogue\+Started\+Event\+Handler} (Resource dialogue\+Resource)
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_a6bce72e110b87e9e9934b7f2b4020485}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_a6bce72e110b87e9e9934b7f2b4020485} 
+delegate void {\bfseries Passed\+Title\+Event\+Handler} (string title)
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_acc3fe85de22e3bbc9de7a68a5a0f0032}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_acc3fe85de22e3bbc9de7a68a5a0f0032} 
+delegate void {\bfseries Got\+Dialogue\+Event\+Handler} (\mbox{\hyperlink{class_dialogue_manager_runtime_1_1_dialogue_line}{Dialogue\+Line}} dialogue\+Line)
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_a5200b0285bcd73b4a35d73c3f0d0fda7}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_a5200b0285bcd73b4a35d73c3f0d0fda7} 
+delegate void {\bfseries Mutated\+Event\+Handler} (Dictionary mutation)
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_affea0e568c6b6699a56eb7b143cff9ee}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_affea0e568c6b6699a56eb7b143cff9ee} 
+delegate void {\bfseries Dialogue\+Ended\+Event\+Handler} (Resource dialogue\+Resource)
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_a4dbc4c82638d841ba02928ef4b259b20}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_a4dbc4c82638d841ba02928ef4b259b20} 
+delegate void {\bfseries Resolved\+Event\+Handler} (Variant value)
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_aa63b1f4b3b82d05b456ccb856a9e92ab}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_aa63b1f4b3b82d05b456ccb856a9e92ab} 
+bool {\bfseries Thing\+Has\+Constant} (Godot\+Object thing, string property)
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_af3dca6af33cb7f611d0c400811e44f26}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_af3dca6af33cb7f611d0c400811e44f26} 
+Variant {\bfseries Resolve\+Thing\+Constant} (Godot\+Object thing, string property)
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_a8b9fe3311d24bd45922aeef113af0b90}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_a8b9fe3311d24bd45922aeef113af0b90} 
+bool {\bfseries Thing\+Has\+Method} (Godot\+Object thing, string method, Array$<$ Variant $>$ args)
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_a6dfd5809ebef1ccc03ceadaa8062c0ba}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_a6dfd5809ebef1ccc03ceadaa8062c0ba} 
+async void {\bfseries Resolve\+Thing\+Method} (Godot\+Object thing, string method, Array$<$ Variant $>$ args)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_a4fb607c92701b6c245a276afe2e119d0}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_a4fb607c92701b6c245a276afe2e119d0} 
+static void {\bfseries Prepare} (Godot\+Object instance)
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_a3c2f881565a41da2d9fcc0e2154b4976}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_a3c2f881565a41da2d9fcc0e2154b4976} 
+static async Task$<$ Godot\+Object $>$ {\bfseries Get\+Singleton} ()
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_af517c82586502ac9fd958eceedfee4bd}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_af517c82586502ac9fd958eceedfee4bd} 
+static Resource {\bfseries Create\+Resource\+From\+Text} (string text)
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_a9d8a1ea6dfe89ed177230fa77fa995fd}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_a9d8a1ea6dfe89ed177230fa77fa995fd} 
+static async Task$<$ \mbox{\hyperlink{class_dialogue_manager_runtime_1_1_dialogue_line}{Dialogue\+Line}}?$>$ {\bfseries Get\+Next\+Dialogue\+Line} (Resource dialogue\+Resource, string key="{}"{}, Array$<$ Variant $>$? extra\+Game\+States=null)
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_aeca5390858d45e791c3ca29c88899182}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_aeca5390858d45e791c3ca29c88899182} 
+static Canvas\+Layer {\bfseries Show\+Example\+Dialogue\+Balloon} (Resource dialogue\+Resource, string key="{}"{}, Array$<$ Variant $>$? extra\+Game\+States=null)
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_aa923bf47cccf76186d9301055b57b5a0}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_aa923bf47cccf76186d9301055b57b5a0} 
+static Node {\bfseries Show\+Dialogue\+Balloon\+Scene} (string balloon\+Scene, Resource dialogue\+Resource, string key="{}"{}, Array$<$ Variant $>$? extra\+Game\+States=null)
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_ada293e5584f1864762e8de396efa719f}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_ada293e5584f1864762e8de396efa719f} 
+static Node {\bfseries Show\+Dialogue\+Balloon\+Scene} (Packed\+Scene balloon\+Scene, Resource dialogue\+Resource, string key="{}"{}, Array$<$ Variant $>$? extra\+Game\+States=null)
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_aaa5ce4fc13bc943dc7490d473b1bdde3}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_aaa5ce4fc13bc943dc7490d473b1bdde3} 
+static Node {\bfseries Show\+Dialogue\+Balloon\+Scene} (Node balloon\+Scene, Resource dialogue\+Resource, string key="{}"{}, Array$<$ Variant $>$? extra\+Game\+States=null)
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_adeb5b3f605c9a7a2bf7a2c75a91a10dc}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_adeb5b3f605c9a7a2bf7a2c75a91a10dc} 
+static Node {\bfseries Show\+Dialogue\+Balloon} (Resource dialogue\+Resource, string key="{}"{}, Array$<$ Variant $>$? extra\+Game\+States=null)
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_add911ffbd2c1c4951ecbfb01859abae1}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_add911ffbd2c1c4951ecbfb01859abae1} 
+static Array$<$ string $>$ {\bfseries Static\+Id\+To\+Line\+Ids} (Resource dialogue\+Resource, string static\+Id)
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_adfc3ed9e74591b670001f14149c237df}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_adfc3ed9e74591b670001f14149c237df} 
+static string {\bfseries Static\+Id\+To\+Line\+Id} (Resource dialogue\+Resource, string static\+Id)
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_af029250010cc93414fc852e60d6bbe3f}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_af029250010cc93414fc852e60d6bbe3f} 
+static async void {\bfseries Mutate} (Dictionary mutation, Array$<$ Variant $>$? extra\+Game\+States=null, bool is\+Inline\+Mutation=false)
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_a55753ab5d1c381bc29b836f3803c2d8f}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_a55753ab5d1c381bc29b836f3803c2d8f} 
+static Array$<$ Dictionary $>$ {\bfseries Get\+Members\+For\+Autoload} (Script script)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_a64aba721f10adc8647962eabf8a25130}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_a64aba721f10adc8647962eabf8a25130} 
+static ? Dialogue\+Started\+Event\+Handler {\bfseries Dialogue\+Started}
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_a206501e0d07cb2fa078a2a2d54a585f7}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_a206501e0d07cb2fa078a2a2d54a585f7} 
+static ? Passed\+Title\+Event\+Handler {\bfseries Passed\+Title}
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_a3a3498a57c0ce692aa7f469ce07221c4}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_a3a3498a57c0ce692aa7f469ce07221c4} 
+static ? Got\+Dialogue\+Event\+Handler {\bfseries Got\+Dialogue}
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_a7c65070ef59b9d2813788be630d7b2b7}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_a7c65070ef59b9d2813788be630d7b2b7} 
+static ? Mutated\+Event\+Handler {\bfseries Mutated}
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_a8c46586bea3ac54137b80f19e43273a9}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_a8c46586bea3ac54137b80f19e43273a9} 
+static ? Dialogue\+Ended\+Event\+Handler {\bfseries Dialogue\+Ended}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_a54e2ee3c3df7c80480d84e1911c69b3f}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_a54e2ee3c3df7c80480d84e1911c69b3f} 
+static Godot\+Object {\bfseries Instance}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_a8debecb786d38fc8d2a95ca93b49d566}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_a8debecb786d38fc8d2a95ca93b49d566} 
+static Godot.\+Collections.\+Array {\bfseries Game\+States}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_a93626e8eceed285888c571d1ba933eaf}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_a93626e8eceed285888c571d1ba933eaf} 
+static bool {\bfseries Include\+Singletons}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_a676a7f56ca8766f1dd157ae5cb4ace8f}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_a676a7f56ca8766f1dd157ae5cb4ace8f} 
+static bool {\bfseries Include\+Classes}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_a840805ca3013f816c6512200944e043c}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_a840805ca3013f816c6512200944e043c} 
+static Translation\+Source {\bfseries Translation\+Source}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_dialogue_manager_runtime_1_1_dialogue_manager_a9c721c4a1dda6af85884e97360063eb9}\label{class_dialogue_manager_runtime_1_1_dialogue_manager_a9c721c4a1dda6af85884e97360063eb9} 
+static Func$<$ Node $>$ {\bfseries Get\+Current\+Scene}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+addons/dialogue\+\_\+manager/Dialogue\+Manager.\+cs\end{DoxyCompactItemize}

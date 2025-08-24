@@ -1,0 +1,92 @@
+\doxysection{Checkpoint Class Reference}
+\hypertarget{class_checkpoint}{}\label{class_checkpoint}\index{Checkpoint@{Checkpoint}}
+Inheritance diagram for Checkpoint\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_checkpoint}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_checkpoint_a4c5b8f06cdeecb42b97af703a2f7e90a}\label{class_checkpoint_a4c5b8f06cdeecb42b97af703a2f7e90a} 
+\mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{World\+Area}} {\bfseries Get\+Location} ()
+\item 
+\Hypertarget{class_checkpoint_a6e7e62f31957ed9e1a009c137dabfdcd}\label{class_checkpoint_a6e7e62f31957ed9e1a009c137dabfdcd} 
+bool {\bfseries Get\+Activated} ()
+\item 
+\Hypertarget{class_checkpoint_ab9e003e46f17abc1161d49745558eaf7}\label{class_checkpoint_ab9e003e46f17abc1161d49745558eaf7} 
+string {\bfseries Get\+Title} ()
+\item 
+override Interaction\+Type \mbox{\hyperlink{class_checkpoint_ad709dba6091a3fcf3e90773e778710f8}{Get\+Interaction\+Type}} ()
+\item 
+\Hypertarget{class_checkpoint_aeb59e8ca1298ed4498d81a1d572380b0}\label{class_checkpoint_aeb59e8ca1298ed4498d81a1d572380b0} 
+void {\bfseries Activate} (\mbox{\hyperlink{class_player}{Player}} player)
+\item 
+\Hypertarget{class_checkpoint_ad784e2b69f5a9a46a7c27ecbf08e0913}\label{class_checkpoint_ad784e2b69f5a9a46a7c27ecbf08e0913} 
+void {\bfseries Save} ()
+\item 
+\Hypertarget{class_checkpoint_ac597fc79e6be9aa637005874507f32d6}\label{class_checkpoint_ac597fc79e6be9aa637005874507f32d6} 
+void {\bfseries Load} ()
+\item 
+\Hypertarget{class_checkpoint_a11140b9e346dc3b47423d3900467bc85}\label{class_checkpoint_a11140b9e346dc3b47423d3900467bc85} 
+override void {\bfseries \+\_\+\+Ready} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_interaction_item}{Interaction\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+override void {\bfseries \+\_\+\+Ready} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_checkpoint_a58da944b69112754f40a4a60ed168814}{On\+Interaction\+Area\+Body2\+DEntered}} (Rid body\+RID, Node2D body, int body\+Shape\+Index, int local\+Shape\+Index)
+\item 
+override void \mbox{\hyperlink{class_checkpoint_acb04ac63e858ec38a61511cf29152b8c}{On\+Interaction\+Area\+Body2\+DExited}} (Rid body\+RID, Node2D body, int body\+Shape\+Index, int local\+Shape\+Index)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_interaction_item}{Interaction\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+Collision\+Shape2D {\bfseries Interact\+Area}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_checkpoint_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_checkpoint_ad709dba6091a3fcf3e90773e778710f8}\index{Checkpoint@{Checkpoint}!GetInteractionType@{GetInteractionType}}
+\index{GetInteractionType@{GetInteractionType}!Checkpoint@{Checkpoint}}
+\doxysubsubsection{\texorpdfstring{GetInteractionType()}{GetInteractionType()}}
+{\footnotesize\ttfamily \label{class_checkpoint_ad709dba6091a3fcf3e90773e778710f8} 
+override Interaction\+Type Checkpoint.\+Get\+Interaction\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interaction_item}{Interaction\+Item}}.
+
+\Hypertarget{class_checkpoint_a58da944b69112754f40a4a60ed168814}\index{Checkpoint@{Checkpoint}!OnInteractionAreaBody2DEntered@{OnInteractionAreaBody2DEntered}}
+\index{OnInteractionAreaBody2DEntered@{OnInteractionAreaBody2DEntered}!Checkpoint@{Checkpoint}}
+\doxysubsubsection{\texorpdfstring{OnInteractionAreaBody2DEntered()}{OnInteractionAreaBody2DEntered()}}
+{\footnotesize\ttfamily \label{class_checkpoint_a58da944b69112754f40a4a60ed168814} 
+override void Checkpoint.\+On\+Interaction\+Area\+Body2\+DEntered (\begin{DoxyParamCaption}\item[{Rid}]{body\+RID}{, }\item[{Node2D}]{body}{, }\item[{int}]{body\+Shape\+Index}{, }\item[{int}]{local\+Shape\+Index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interaction_item}{Interaction\+Item}}.
+
+\Hypertarget{class_checkpoint_acb04ac63e858ec38a61511cf29152b8c}\index{Checkpoint@{Checkpoint}!OnInteractionAreaBody2DExited@{OnInteractionAreaBody2DExited}}
+\index{OnInteractionAreaBody2DExited@{OnInteractionAreaBody2DExited}!Checkpoint@{Checkpoint}}
+\doxysubsubsection{\texorpdfstring{OnInteractionAreaBody2DExited()}{OnInteractionAreaBody2DExited()}}
+{\footnotesize\ttfamily \label{class_checkpoint_acb04ac63e858ec38a61511cf29152b8c} 
+override void Checkpoint.\+On\+Interaction\+Area\+Body2\+DExited (\begin{DoxyParamCaption}\item[{Rid}]{body\+RID}{, }\item[{Node2D}]{body}{, }\item[{int}]{body\+Shape\+Index}{, }\item[{int}]{local\+Shape\+Index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interaction_item}{Interaction\+Item}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/\+Interactables/Checkpoint.\+cs\end{DoxyCompactItemize}

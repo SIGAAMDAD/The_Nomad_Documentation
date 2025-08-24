@@ -1,0 +1,113 @@
+\doxysection{Renown.\+World.\+Settlement Class Reference}
+\hypertarget{class_renown_1_1_world_1_1_settlement}{}\label{class_renown_1_1_world_1_1_settlement}\index{Renown.World.Settlement@{Renown.World.Settlement}}
+Inheritance diagram for Renown.\+World.\+Settlement\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_renown_1_1_world_1_1_settlement}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_renown_1_1_world_1_1_settlement_a286a383af36f045263ceaf9eb54c3938}\label{class_renown_1_1_world_1_1_settlement_a286a383af36f045263ceaf9eb54c3938} 
+delegate void {\bfseries Population\+Changed\+Event\+Handler} (int n\+Current)
+\item 
+\Hypertarget{class_renown_1_1_world_1_1_settlement_ad5910219a4d7fd3eded1bb0feed1ec00}\label{class_renown_1_1_world_1_1_settlement_ad5910219a4d7fd3eded1bb0feed1ec00} 
+delegate void {\bfseries Requested\+Money\+Event\+Handler} (\mbox{\hyperlink{class_renown_1_1_world_1_1_settlement}{Settlement}} settlement, float n\+Amount)
+\item 
+\Hypertarget{class_renown_1_1_world_1_1_settlement_a477c9ba4169134a92ca083f596d961d6}\label{class_renown_1_1_world_1_1_settlement_a477c9ba4169134a92ca083f596d961d6} 
+Settlement\+Type {\bfseries Get\+Settlement\+Type} ()
+\item 
+\Hypertarget{class_renown_1_1_world_1_1_settlement_a6a06cc77d7b07eaded2890d2d0e2aebe}\label{class_renown_1_1_world_1_1_settlement_a6a06cc77d7b07eaded2890d2d0e2aebe} 
+int {\bfseries Get\+Population} ()
+\item 
+\Hypertarget{class_renown_1_1_world_1_1_settlement_aa85aadbb0332b71f2e4955d8843c94db}\label{class_renown_1_1_world_1_1_settlement_aa85aadbb0332b71f2e4955d8843c94db} 
+\mbox{\hyperlink{class_renown_1_1_thinkers_1_1_thinker}{Thinker}} {\bfseries Get\+Mercenary\+Master} ()
+\item 
+override void \mbox{\hyperlink{class_renown_1_1_world_1_1_settlement_a33bbdf09d65b68c42b2fc27f9bf4bb7b}{Save}} ()
+\item 
+override void \mbox{\hyperlink{class_renown_1_1_world_1_1_settlement_a93f4038338aa69dd181dde28c321bbc5}{Load}} ()
+\item 
+\Hypertarget{class_renown_1_1_world_1_1_settlement_a14834ba8b7a3a446c46f608859576e97}\label{class_renown_1_1_world_1_1_settlement_a14834ba8b7a3a446c46f608859576e97} 
+override void {\bfseries \+\_\+\+Ready} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{Renown.\+World.\+World\+Area}}}
+\begin{DoxyCompactItemize}
+\item 
+delegate void {\bfseries Player\+Entered\+Event\+Handler} ()
+\item 
+delegate void {\bfseries Player\+Exited\+Event\+Handler} ()
+\item 
+String\+Name {\bfseries Get\+Area\+Name} ()
+\item 
+\mbox{\hyperlink{class_renown_1_1_thinkers_1_1_a_i_node_cache}{AINode\+Cache}} {\bfseries Get\+Node\+Cache} ()
+\item 
+bool {\bfseries Is\+Player\+Here} ()
+\item 
+\mbox{\hyperlink{class_renown_1_1_world_1_1_biome}{Biome}} {\bfseries Get\+Biome} ()
+\item 
+override void {\bfseries \+\_\+\+Ready} ()
+\item 
+override void {\bfseries \+\_\+\+Process} (double delta)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_renown_1_1_world_1_1_settlement_abc685e910ccc755121aa55836ecdb3b6}\label{class_renown_1_1_world_1_1_settlement_abc685e910ccc755121aa55836ecdb3b6} 
+static Data\+Cache$<$ \mbox{\hyperlink{class_renown_1_1_world_1_1_settlement}{Settlement}} $>$ {\bfseries Cache} = null
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{Renown.\+World.\+World\+Area}}}
+\begin{DoxyCompactItemize}
+\item 
+static Data\+Cache$<$ \mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{World\+Area}} $>$ {\bfseries Cache}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{Renown.\+World.\+World\+Area}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_renown_1_1_world_1_1_biome}{Biome}} {\bfseries Biome}
+\item 
+String\+Name {\bfseries Area\+Name}
+\item 
+\mbox{\hyperlink{class_renown_1_1_thinkers_1_1_a_i_node_cache}{AINode\+Cache}} {\bfseries Node\+Cache}
+\item 
+Tile\+Map\+Layer\mbox{[}$\,$\mbox{]} {\bfseries Tile\+Maps}
+\item 
+bool {\bfseries Player\+Status} = false
+\item 
+int {\bfseries Thread\+Sleep} = Constants.\+THREADSLEEP\+\_\+\+FACTION\+\_\+\+PLAYER\+\_\+\+AWAY
+\item 
+System.\+Threading.\+Thread\+Priority {\bfseries Importance} = Constants.\+THREAD\+\_\+\+IMPORTANCE\+\_\+\+PLAYER\+\_\+\+AWAY
+\item 
+Node\mbox{[}$\,$\mbox{]} {\bfseries Children}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_renown_1_1_world_1_1_settlement_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_renown_1_1_world_1_1_settlement_a93f4038338aa69dd181dde28c321bbc5}\index{Renown.World.Settlement@{Renown.World.Settlement}!Load@{Load}}
+\index{Load@{Load}!Renown.World.Settlement@{Renown.World.Settlement}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily \label{class_renown_1_1_world_1_1_settlement_a93f4038338aa69dd181dde28c321bbc5} 
+override void Renown.\+World.\+Settlement.\+Load (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{Renown.\+World.\+World\+Area}}.
+
+\Hypertarget{class_renown_1_1_world_1_1_settlement_a33bbdf09d65b68c42b2fc27f9bf4bb7b}\index{Renown.World.Settlement@{Renown.World.Settlement}!Save@{Save}}
+\index{Save@{Save}!Renown.World.Settlement@{Renown.World.Settlement}}
+\doxysubsubsection{\texorpdfstring{Save()}{Save()}}
+{\footnotesize\ttfamily \label{class_renown_1_1_world_1_1_settlement_a33bbdf09d65b68c42b2fc27f9bf4bb7b} 
+override void Renown.\+World.\+Settlement.\+Save (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{Renown.\+World.\+World\+Area}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/\+Renown/\+World/Settlement.\+cs\end{DoxyCompactItemize}

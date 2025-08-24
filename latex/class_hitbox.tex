@@ -1,0 +1,54 @@
+\doxysection{Hitbox Class Reference}
+\hypertarget{class_hitbox}{}\label{class_hitbox}\index{Hitbox@{Hitbox}}
+
+
+An Area2D meant for stuff like weakpoints, headshots, etc.  
+
+
+Inheritance diagram for Hitbox\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hitbox}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_hitbox_a25162d75e8b47bf9cc4d62fb11e0c301}\label{class_hitbox_a25162d75e8b47bf9cc4d62fb11e0c301} 
+delegate void {\bfseries Hit\+Event\+Handler} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} source, float damage\+Amount)
+\item 
+void \mbox{\hyperlink{class_hitbox_a4c6d7d9cf941d5d18a85dabde531d83a}{On\+Hit}} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} source, float damage\+Amount)
+\begin{DoxyCompactList}\small\item\em Called when a \doxylink{class_weapon_entity}{Weapon\+Entity} collides with a \doxylink{class_hitbox}{Hitbox}. \end{DoxyCompactList}\item 
+\Hypertarget{class_hitbox_a01a4b7abda4af753ea08cf33fc18771a}\label{class_hitbox_a01a4b7abda4af753ea08cf33fc18771a} 
+override void {\bfseries \+\_\+\+Ready} ()
+\begin{DoxyCompactList}\small\item\em godot initialization override \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An Area2D meant for stuff like weakpoints, headshots, etc. 
+
+\label{doc-func-members}
+\Hypertarget{class_hitbox_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_hitbox_a4c6d7d9cf941d5d18a85dabde531d83a}\index{Hitbox@{Hitbox}!OnHit@{OnHit}}
+\index{OnHit@{OnHit}!Hitbox@{Hitbox}}
+\doxysubsubsection{\texorpdfstring{OnHit()}{OnHit()}}
+{\footnotesize\ttfamily \label{class_hitbox_a4c6d7d9cf941d5d18a85dabde531d83a} 
+void Hitbox.\+On\+Hit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_renown_1_1_entity}{Entity}}}]{source}{, }\item[{float}]{damage\+Amount}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Called when a \doxylink{class_weapon_entity}{Weapon\+Entity} collides with a \doxylink{class_hitbox}{Hitbox}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & The damage\textquotesingle{}s source\\
+\hline
+{\em damage\+Amount} & The amount of damage\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/Hitbox.\+cs\end{DoxyCompactItemize}

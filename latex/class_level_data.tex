@@ -1,0 +1,94 @@
+\doxysection{Level\+Data Class Reference}
+\hypertarget{class_level_data}{}\label{class_level_data}\index{LevelData@{LevelData}}
+Inheritance diagram for Level\+Data\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_level_data}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_level_data_accc73fd5f79f50b13142c188f12debe5}\label{class_level_data_accc73fd5f79f50b13142c188f12debe5} 
+delegate void {\bfseries Resources\+Loading\+Finished\+Event\+Handler} ()
+\item 
+\Hypertarget{class_level_data_a25de2b02b42b79268f2ef824cbd12181}\label{class_level_data_a25de2b02b42b79268f2ef824cbd12181} 
+delegate void {\bfseries Player\+Respawn\+Event\+Handler} ()
+\item 
+\Hypertarget{class_level_data_aa586765dc1260e97388c7b45947207f5}\label{class_level_data_aa586765dc1260e97388c7b45947207f5} 
+delegate void {\bfseries Hellbreaker\+Begin\+Event\+Handler} ()
+\item 
+\Hypertarget{class_level_data_aa5842e750ae581ca353cac1056d421a7}\label{class_level_data_aa5842e750ae581ca353cac1056d421a7} 
+delegate void {\bfseries Hellbreaker\+Finished\+Event\+Handler} ()
+\item 
+\Hypertarget{class_level_data_a8637f1aed50de27281aa445fad11c36b}\label{class_level_data_a8637f1aed50de27281aa445fad11c36b} 
+delegate void {\bfseries Exit\+Level\+Event\+Handler} ()
+\item 
+\Hypertarget{class_level_data_a1a4bee650ab6b57a74f09ffef7406c43}\label{class_level_data_a1a4bee650ab6b57a74f09ffef7406c43} 
+override void {\bfseries \+\_\+\+Enter\+Tree} ()
+\item 
+\Hypertarget{class_level_data_a68207ecdda192d8be11455d6eba0442c}\label{class_level_data_a68207ecdda192d8be11455d6eba0442c} 
+override void {\bfseries \+\_\+\+Exit\+Tree} ()
+\item 
+\Hypertarget{class_level_data_a922891c9a4497b560d1c88b4b187f10c}\label{class_level_data_a922891c9a4497b560d1c88b4b187f10c} 
+override void {\bfseries \+\_\+\+Ready} ()
+\begin{DoxyCompactList}\small\item\em godot initialization override \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_level_data_abdcbc30dd3e273ed0b706b8f0f8db135}\label{class_level_data_abdcbc30dd3e273ed0b706b8f0f8db135} 
+\mbox{\hyperlink{class_player}{Player}} {\bfseries This\+Player}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_level_data_af2cb72f9a0d6d296bce88fb039559daf}\label{class_level_data_af2cb72f9a0d6d296bce88fb039559daf} 
+static \mbox{\hyperlink{class_level_data}{Level\+Data}} {\bfseries Instance}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_level_data_af8813543b913081f1252b265c33078e2}\label{class_level_data_af8813543b913081f1252b265c33078e2} 
+virtual void {\bfseries On\+Resources\+Finished\+Loading} ()
+\item 
+\Hypertarget{class_level_data_a8dc57df128cdb5477a70734e82769e35}\label{class_level_data_a8dc57df128cdb5477a70734e82769e35} 
+virtual void {\bfseries On\+Player\+Joined} (ulong steam\+Id)
+\item 
+\Hypertarget{class_level_data_abd7d4dd0e1625780e9880c62a141b543}\label{class_level_data_abd7d4dd0e1625780e9880c62a141b543} 
+virtual void {\bfseries On\+Player\+Left} (ulong steam\+Id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_level_data_ad3facf986efc8d21c3282f749fa830ca}\label{class_level_data_ad3facf986efc8d21c3282f749fa830ca} 
+Navigation\+Region2D {\bfseries Global\+Navigation\+Mesh}
+\item 
+\Hypertarget{class_level_data_a62970d17ea54370a19c8a01c3a13b7f9}\label{class_level_data_a62970d17ea54370a19c8a01c3a13b7f9} 
+\mbox{\hyperlink{class_pause_menu}{Pause\+Menu}} {\bfseries Pause\+Menu}
+\item 
+\Hypertarget{class_level_data_a18c4dbbe8c372ca481364de739e48e7f}\label{class_level_data_a18c4dbbe8c372ca481364de739e48e7f} 
+Thread {\bfseries Resource\+Load\+Thread}
+\item 
+\Hypertarget{class_level_data_a67cb7585a0fa585b6960916a8aee1f0a}\label{class_level_data_a67cb7585a0fa585b6960916a8aee1f0a} 
+Thread {\bfseries Scene\+Load\+Thread}
+\item 
+\Hypertarget{class_level_data_a5d27698ca71e617a8384c6489df563e8}\label{class_level_data_a5d27698ca71e617a8384c6489df563e8} 
+Dictionary$<$ CSteam\+ID, \mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}} $>$ {\bfseries Players} = null
+\item 
+\Hypertarget{class_level_data_a53fa44a4a252cd627b1086cba42a5029}\label{class_level_data_a53fa44a4a252cd627b1086cba42a5029} 
+Packed\+Scene {\bfseries Player\+Scene} = null
+\item 
+\Hypertarget{class_level_data_a3d8d3a6e2c1cc2057b493fb911432b7a}\label{class_level_data_a3d8d3a6e2c1cc2057b493fb911432b7a} 
+Node {\bfseries Player\+List} = null
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_level_data_a5d41f2b03b604315a65e584f9544c4c8}\label{class_level_data_a5d41f2b03b604315a65e584f9544c4c8} 
+static readonly string\mbox{[}$\,$\mbox{]} {\bfseries Death\+Quotes}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/Level\+Data.\+cs\end{DoxyCompactItemize}

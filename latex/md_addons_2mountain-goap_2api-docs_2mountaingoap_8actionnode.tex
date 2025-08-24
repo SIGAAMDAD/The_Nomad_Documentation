@@ -1,0 +1,100 @@
+\chapter{Action\+Node }
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode}{}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode}\index{ActionNode@{ActionNode}}
+\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md123}%
+\Hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md123}%
+
+
+Namespace\+: \doxylink{namespace_mountain_goap}{Mountain\+Goap}
+
+Represents an action node in an action graph.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keyword}{class\ }ActionNode\ :\ \mbox{\hyperlink{namespace_priority___queue}{Priority\_Queue}}.FastPriorityQueueNode}
+
+\end{DoxyCode}
+
+
+Inheritance \href{https://docs.microsoft.com/en-us/dotnet/api/system.object}{\texttt{Object}} → \doxysectlink{md_addons_2mountain-goap_2api-docs_2priority__queue_8fastpriorityqueuenode}{Fast\+Priority\+Queue\+Node}{0} → \doxysectlink{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode}{Action\+Node}{0}\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md124}{}\doxysection{\texorpdfstring{Properties}{Properties}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md124}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md125}{}\doxysubsection{\texorpdfstring{{\bfseries{State}}}{{\bfseries{State}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md125}
+Gets or sets the state of the world for this action node.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ ConcurrentDictionary<string,\ object>\ State\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md126}{}\doxysubsubsection{\texorpdfstring{Property Value}{Property Value}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md126}
+Concurrent\+Dictionary\texorpdfstring{$<$}{<}String, Object\texorpdfstring{$>$}{>}~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md127}{}\doxysubsection{\texorpdfstring{{\bfseries{Parameters}}}{{\bfseries{Parameters}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md127}
+Gets or sets parameters to be passed to the action.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ Dictionary<string,\ object>\ Parameters\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md128}{}\doxysubsubsection{\texorpdfstring{Property Value}{Property Value}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md128}
+\href{https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2}{\texttt{Dictionary\texorpdfstring{$<$}{<}String, Object\texorpdfstring{$>$}{>}}}~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md129}{}\doxysubsection{\texorpdfstring{{\bfseries{Action}}}{{\bfseries{Action}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md129}
+Gets or sets the action to be executed when the world is in the defined \href{./mountaingoap.actionnode.md\#state}{\texttt{Action\+Node.\+State}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ Action\ Action\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md130}{}\doxysubsubsection{\texorpdfstring{Property Value}{Property Value}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md130}
+\doxysectlink{md_addons_2mountain-goap_2api-docs_2mountaingoap_8action}{Action}{0}~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md131}{}\doxysubsection{\texorpdfstring{{\bfseries{Priority}}}{{\bfseries{Priority}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md131}
+The Priority to insert this node at. Cannot be manually edited -\/ see queue.\+Enqueue() and queue.\+Update\+Priority() instead
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{float}\ Priority\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{protected}\ \textcolor{keyword}{internal}\ \textcolor{keyword}{set};\ \}}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md132}{}\doxysubsubsection{\texorpdfstring{Property Value}{Property Value}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md132}
+\href{https://docs.microsoft.com/en-us/dotnet/api/system.single}{\texttt{Single}}~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md133}{}\doxysubsection{\texorpdfstring{{\bfseries{Queue\+Index}}}{{\bfseries{Queue\+Index}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md133}
+Represents the current position in the queue
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ QueueIndex\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{internal}\ \textcolor{keyword}{set};\ \}}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md134}{}\doxysubsubsection{\texorpdfstring{Property Value}{Property Value}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md134}
+\href{https://docs.microsoft.com/en-us/dotnet/api/system.int32}{\texttt{Int32}}~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md135}{}\doxysection{\texorpdfstring{Methods}{Methods}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md135}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md136}{}\doxysubsection{\texorpdfstring{{\bfseries{Equals(\+Object)}}}{{\bfseries{Equals(\+Object)}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md136}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespace_mountain_goap_a406cbb1d5467e8a02cffe908276c3ad9a0ccb67e7eaae09d9e4078d161eeca100}{Equals}}(\textcolor{keywordtype}{object}\ obj)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md137}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md137}
+{\ttfamily obj} \href{https://docs.microsoft.com/en-us/dotnet/api/system.object}{\texttt{Object}}~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md138}{}\doxysubsubsection{\texorpdfstring{Returns}{Returns}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md138}
+\href{https://docs.microsoft.com/en-us/dotnet/api/system.boolean}{\texttt{Boolean}}~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md139}{}\doxysubsection{\texorpdfstring{{\bfseries{Get\+Hash\+Code()}}}{{\bfseries{Get\+Hash\+Code()}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md139}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ GetHashCode()}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md140}{}\doxysubsubsection{\texorpdfstring{Returns}{Returns}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md140}
+\href{https://docs.microsoft.com/en-us/dotnet/api/system.int32}{\texttt{Int32}}~\newline
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md141}{}\doxysubsection{\texorpdfstring{{\bfseries{Cost(Concurrent\+Dictionary\texorpdfstring{$<$}{<}String, Object\texorpdfstring{$>$}{>})}}}{{\bfseries{Cost(Concurrent\+Dictionary\texorpdfstring{$<$}{<}String, Object\texorpdfstring{$>$}{>})}}}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md141}
+Cost to traverse this node.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{internal}\ \textcolor{keywordtype}{float}\ Cost(ConcurrentDictionary<string,\ object>\ currentState)}
+
+\end{DoxyCode}
+\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md142}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md142}
+{\ttfamily current\+State} Concurrent\+Dictionary\texorpdfstring{$<$}{<}String, Object\texorpdfstring{$>$}{>}~\newline
+ Current state after previous node is executed.\hypertarget{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md143}{}\doxysubsubsection{\texorpdfstring{Returns}{Returns}}\label{md_addons_2mountain-goap_2api-docs_2mountaingoap_8actionnode_autotoc_md143}
+\href{https://docs.microsoft.com/en-us/dotnet/api/system.single}{\texttt{Single}}~\newline
+ The cost of the action to be executed. 

@@ -1,0 +1,92 @@
+\doxysection{Multiplayer.\+Mode Class Reference}
+\hypertarget{class_multiplayer_1_1_mode}{}\label{class_multiplayer_1_1_mode}\index{Multiplayer.Mode@{Multiplayer.Mode}}
+Inheritance diagram for Multiplayer.\+Mode\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.527273cm]{class_multiplayer_1_1_mode}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_multiplayer_1_1_mode_aaa587cc6c84ae32b19173887397b9615}\label{class_multiplayer_1_1_mode_aaa587cc6c84ae32b19173887397b9615} 
+enum {\bfseries Game\+Mode} \{ \newline
+{\bfseries Bloodbath}
+, {\bfseries Capture\+The\+Flag}
+, {\bfseries King\+Of\+The\+Hill}
+, {\bfseries Duel}
+, \newline
+{\bfseries Bounty\+Hunt}
+, {\bfseries Extraction}
+, {\bfseries Hold\+The\+Line}
+, {\bfseries Count}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_multiplayer_1_1_mode_a4e802e9810ec7f01bc28f13ece5b0828}\label{class_multiplayer_1_1_mode_a4e802e9810ec7f01bc28f13ece5b0828} 
+delegate void {\bfseries Show\+Scoreboard\+Event\+Handler} ()
+\item 
+\Hypertarget{class_multiplayer_1_1_mode_a3f04fb33b489094acd47fdb6f0728790}\label{class_multiplayer_1_1_mode_a3f04fb33b489094acd47fdb6f0728790} 
+delegate void {\bfseries End\+Game\+Event\+Handler} ()
+\item 
+\Hypertarget{class_multiplayer_1_1_mode_a9ccae401922b61ae693f51c47e92e285}\label{class_multiplayer_1_1_mode_a9ccae401922b61ae693f51c47e92e285} 
+void {\bfseries On\+Player\+Joined} (\mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}} player)
+\item 
+\Hypertarget{class_multiplayer_1_1_mode_a8ecf465b47511885d7a6d2916df46564}\label{class_multiplayer_1_1_mode_a8ecf465b47511885d7a6d2916df46564} 
+void {\bfseries On\+Player\+Left} (\mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}} player)
+\item 
+\Hypertarget{class_multiplayer_1_1_mode_ac6d534195096889802504fd577d3671a}\label{class_multiplayer_1_1_mode_ac6d534195096889802504fd577d3671a} 
+void {\bfseries Spawn\+Player} (\mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}} player)
+\item 
+\Hypertarget{class_multiplayer_1_1_mode_ab0293246ca2dd9aa11ae089ea5623251}\label{class_multiplayer_1_1_mode_ab0293246ca2dd9aa11ae089ea5623251} 
+bool {\bfseries Has\+Teams} ()
+\item 
+\Hypertarget{class_multiplayer_1_1_mode_a2bda5c789e3e62304e13e6385f74d89c}\label{class_multiplayer_1_1_mode_a2bda5c789e3e62304e13e6385f74d89c} 
+Game\+Mode {\bfseries Get\+Mode} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly Dictionary$<$ Game\+Mode, string $>$ \mbox{\hyperlink{class_multiplayer_1_1_mode_a5b666c5e15840b0f1f287cd4ba89fade}{Mode\+Names}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_multiplayer_1_1_mode_a9e2f17cf735fc127abdc80772a490480}\label{class_multiplayer_1_1_mode_a9e2f17cf735fc127abdc80772a490480} 
+Game\+Mode {\bfseries Type}
+\item 
+\Hypertarget{class_multiplayer_1_1_mode_af46411a2e8b0700b9d1a3e1a11ab90eb}\label{class_multiplayer_1_1_mode_af46411a2e8b0700b9d1a3e1a11ab90eb} 
+Dictionary$<$ string, object $>$ {\bfseries Options}
+\end{DoxyCompactItemize}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_multiplayer_1_1_mode_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_multiplayer_1_1_mode_a5b666c5e15840b0f1f287cd4ba89fade}\index{Multiplayer.Mode@{Multiplayer.Mode}!ModeNames@{ModeNames}}
+\index{ModeNames@{ModeNames}!Multiplayer.Mode@{Multiplayer.Mode}}
+\doxysubsubsection{\texorpdfstring{ModeNames}{ModeNames}}
+{\footnotesize\ttfamily \label{class_multiplayer_1_1_mode_a5b666c5e15840b0f1f287cd4ba89fade} 
+readonly Dictionary$<$Game\+Mode, string$>$ Multiplayer.\+Mode.\+Mode\+Names\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{new}\ Dictionary<GameMode,\ string>\{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \{\ GameMode.Bloodbath,\ \textcolor{stringliteral}{"{}Bloodbath"{}}\ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \{\ GameMode.CaptureTheFlag,\ \textcolor{stringliteral}{"{}Capture\ The\ Flag"{}}\ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \{\ GameMode.KingOfTheHill,\ \textcolor{stringliteral}{"{}King\ of\ the\ Hill"{}}\ \},}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \{\ GameMode.Duel,\ \textcolor{stringliteral}{"{}Duel"{}}\ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \{\ GameMode.BountyHunt,\ \textcolor{stringliteral}{"{}Bounty\ Hunt"{}}\ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \{\ GameMode.Extraction,\ \textcolor{stringliteral}{"{}Extraction"{}}\ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \{\ GameMode.HoldTheLine,\ \textcolor{stringliteral}{"{}Hold\ The\ Line"{}}\ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/multiplayer/Mode.\+cs\end{DoxyCompactItemize}

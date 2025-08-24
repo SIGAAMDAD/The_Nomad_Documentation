@@ -1,0 +1,167 @@
+\doxysection{Mountain\+Goap.\+Action Class Reference}
+\hypertarget{class_mountain_goap_1_1_action}{}\label{class_mountain_goap_1_1_action}\index{MountainGoap.Action@{MountainGoap.Action}}
+
+
+Represents an action in a GOAP system.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mountain_goap_1_1_action_a8c2972e0212a0ce3d602b23a1d8e529d}{Action}} (string? name=null, Dictionary$<$ string, \mbox{\hyperlink{namespace_mountain_goap_a99f09523677f2a45cd6396c6ae3b6886}{Permutation\+Selector\+Callback}} $>$? permutation\+Selectors=null, \mbox{\hyperlink{namespace_mountain_goap_aede8cfa205771e9a8b01d9b287b3aba7}{Executor\+Callback}}? executor=null, float cost=1f, \mbox{\hyperlink{namespace_mountain_goap_afbb7b84e8f875f8ad6242528480e5e9a}{Cost\+Callback}}? cost\+Callback=null, Dictionary$<$ string, object?$>$? preconditions=null, Dictionary$<$ string, \mbox{\hyperlink{class_mountain_goap_1_1_comparison_value_pair}{Comparison\+Value\+Pair}} $>$? comparative\+Preconditions=null, Dictionary$<$ string, object?$>$? postconditions=null, Dictionary$<$ string, object $>$? arithmetic\+Postconditions=null, Dictionary$<$ string, string $>$? parameter\+Postconditions=null, \mbox{\hyperlink{namespace_mountain_goap_ac2ae5e930457611946a7650d14068292}{State\+Mutator\+Callback}}? state\+Mutator=null, \mbox{\hyperlink{namespace_mountain_goap_a00173f409b778c33c482c7c1abf8d601}{State\+Checker\+Callback}}? state\+Checker=null, \mbox{\hyperlink{namespace_mountain_goap_a15cd1bfe17ebf50fa72ab3ce8f6d56a9}{State\+Cost\+Delta\+Multiplier\+Callback}}? state\+Cost\+Delta\+Multiplier=null)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_mountain_goap_1_1_action}{Action} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}} \mbox{\hyperlink{class_mountain_goap_1_1_action_a9ddfe1ec57a33590608786656a705908}{Copy}} ()
+\begin{DoxyCompactList}\small\item\em Makes a copy of the action. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mountain_goap_1_1_action_a8bf507dc3fa2ffd7ae1284f36e81243e}{Set\+Parameter}} (string key, object value)
+\begin{DoxyCompactList}\small\item\em Sets a parameter to the action. \end{DoxyCompactList}\item 
+object? \mbox{\hyperlink{class_mountain_goap_1_1_action_a4a849ff5b558eb46789a97f98a40e137}{Get\+Parameter}} (string key)
+\begin{DoxyCompactList}\small\item\em Gets a parameter to the action. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_mountain_goap_1_1_action_ab148d3307bd03e2f07884273074c1d3e}{Get\+Cost}} (Concurrent\+Dictionary$<$ string, object $>$ current\+State)
+\begin{DoxyCompactList}\small\item\em Gets the cost of the action. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_mountain_goap_1_1_action_a57b16eb5efad1ffa9f89da4f1d581571}\label{class_mountain_goap_1_1_action_a57b16eb5efad1ffa9f89da4f1d581571} 
+static float {\bfseries Default\+State\+Cost\+Delta\+Multiplier} (\mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}} action, string state\+Key)
+\begin{DoxyCompactList}\small\item\em Default state cost delta multiplier callback. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_mountain_goap_1_1_action_a1c9ecd1a4fbaf0d461aa7a5ab1e3ac47}\label{class_mountain_goap_1_1_action_a1c9ecd1a4fbaf0d461aa7a5ab1e3ac47} 
+string {\bfseries Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Name of the action. \end{DoxyCompactList}\item 
+\Hypertarget{class_mountain_goap_1_1_action_a7422397e63b1f0584b63fb9acf3f0040}\label{class_mountain_goap_1_1_action_a7422397e63b1f0584b63fb9acf3f0040} 
+\mbox{\hyperlink{namespace_mountain_goap_a15cd1bfe17ebf50fa72ab3ce8f6d56a9}{State\+Cost\+Delta\+Multiplier\+Callback}} {\bfseries State\+Cost\+Delta\+Multiplier}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets multiplier for delta value to provide delta cost. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_mountain_goap_1_1_action_a2b3ee1ab6436d5ad2109c8615f12d16c}\label{class_mountain_goap_1_1_action_a2b3ee1ab6436d5ad2109c8615f12d16c} 
+static \mbox{\hyperlink{namespace_mountain_goap_a74caf20eac5c7c7390a90a54d5374457}{Begin\+Execute\+Action\+Event}} {\bfseries On\+Begin\+Execute\+Action} = ( agent, action, parameters ) =$>$ \{ \}
+\begin{DoxyCompactList}\small\item\em Event that triggers when an action begins executing. \end{DoxyCompactList}\item 
+\Hypertarget{class_mountain_goap_1_1_action_a74e349bbc13212b6d97c3b01962686ac}\label{class_mountain_goap_1_1_action_a74e349bbc13212b6d97c3b01962686ac} 
+static \mbox{\hyperlink{namespace_mountain_goap_a090ee9fbf9d58c9b49df1702e34ef871}{Finish\+Execute\+Action\+Event}} {\bfseries On\+Finish\+Execute\+Action} = ( agent, action, status, parameters ) =$>$ \{ \}
+\begin{DoxyCompactList}\small\item\em Event that triggers when an action finishes executing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an action in a GOAP system. 
+
+\label{doc-constructors}
+\Hypertarget{class_mountain_goap_1_1_action_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_mountain_goap_1_1_action_a8c2972e0212a0ce3d602b23a1d8e529d}\index{MountainGoap.Action@{MountainGoap.Action}!Action@{Action}}
+\index{Action@{Action}!MountainGoap.Action@{MountainGoap.Action}}
+\doxysubsubsection{\texorpdfstring{Action()}{Action()}}
+{\footnotesize\ttfamily \label{class_mountain_goap_1_1_action_a8c2972e0212a0ce3d602b23a1d8e529d} 
+Mountain\+Goap.\+Action.\+Action (\begin{DoxyParamCaption}\item[{string?}]{name}{ = {\ttfamily null}, }\item[{Dictionary$<$ string, \mbox{\hyperlink{namespace_mountain_goap_a99f09523677f2a45cd6396c6ae3b6886}{Permutation\+Selector\+Callback}} $>$?}]{permutation\+Selectors}{ = {\ttfamily null}, }\item[{\mbox{\hyperlink{namespace_mountain_goap_aede8cfa205771e9a8b01d9b287b3aba7}{Executor\+Callback}}?}]{executor}{ = {\ttfamily null}, }\item[{float}]{cost}{ = {\ttfamily 1f}, }\item[{\mbox{\hyperlink{namespace_mountain_goap_afbb7b84e8f875f8ad6242528480e5e9a}{Cost\+Callback}}?}]{cost\+Callback}{ = {\ttfamily null}, }\item[{Dictionary$<$ string, object?$>$?}]{preconditions}{ = {\ttfamily null}, }\item[{Dictionary$<$ string, \mbox{\hyperlink{class_mountain_goap_1_1_comparison_value_pair}{Comparison\+Value\+Pair}} $>$?}]{comparative\+Preconditions}{ = {\ttfamily null}, }\item[{Dictionary$<$ string, object?$>$?}]{postconditions}{ = {\ttfamily null}, }\item[{Dictionary$<$ string, object $>$?}]{arithmetic\+Postconditions}{ = {\ttfamily null}, }\item[{Dictionary$<$ string, string $>$?}]{parameter\+Postconditions}{ = {\ttfamily null}, }\item[{\mbox{\hyperlink{namespace_mountain_goap_ac2ae5e930457611946a7650d14068292}{State\+Mutator\+Callback}}?}]{state\+Mutator}{ = {\ttfamily null}, }\item[{\mbox{\hyperlink{namespace_mountain_goap_a00173f409b778c33c482c7c1abf8d601}{State\+Checker\+Callback}}?}]{state\+Checker}{ = {\ttfamily null}, }\item[{\mbox{\hyperlink{namespace_mountain_goap_a15cd1bfe17ebf50fa72ab3ce8f6d56a9}{State\+Cost\+Delta\+Multiplier\+Callback}}?}]{state\+Cost\+Delta\+Multiplier}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes a new instance of the \doxylink{class_mountain_goap_1_1_action}{Action} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name for the action, for eventing and logging purposes.\\
+\hline
+{\em permutation\+Selectors} & The permutation selector callback for the action\textquotesingle{}s parameters.\\
+\hline
+{\em executor} & The executor callback for the action.\\
+\hline
+{\em cost} & Cost of the action.\\
+\hline
+{\em cost\+Callback} & Callback for determining the cost of the action.\\
+\hline
+{\em preconditions} & Preconditions required in the world state in order for the action to occur.\\
+\hline
+{\em comparative\+Preconditions} & Preconditions indicating relative value requirements needed for the action to occur.\\
+\hline
+{\em postconditions} & Postconditions applied after the action is successfully executed.\\
+\hline
+{\em arithmetic\+Postconditions} & Arithmetic postconditions added to state after the action is successfully executed.\\
+\hline
+{\em parameter\+Postconditions} & Parameter postconditions copied to state after the action is successfully executed.\\
+\hline
+{\em state\+Mutator} & Callback for modifying state after action execution or evaluation.\\
+\hline
+{\em state\+Checker} & Callback for checking state before action execution or evaluation.\\
+\hline
+{\em state\+Cost\+Delta\+Multiplier} & Callback for multiplier for delta value to provide delta cost.\\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_mountain_goap_1_1_action_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mountain_goap_1_1_action_a9ddfe1ec57a33590608786656a705908}\index{MountainGoap.Action@{MountainGoap.Action}!Copy@{Copy}}
+\index{Copy@{Copy}!MountainGoap.Action@{MountainGoap.Action}}
+\doxysubsubsection{\texorpdfstring{Copy()}{Copy()}}
+{\footnotesize\ttfamily \label{class_mountain_goap_1_1_action_a9ddfe1ec57a33590608786656a705908} 
+\mbox{\hyperlink{class_mountain_goap_1_1_action}{Action}} Mountain\+Goap.\+Action.\+Copy (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Makes a copy of the action. 
+
+\begin{DoxyReturn}{Returns}
+A copy of the action.
+\end{DoxyReturn}
+\Hypertarget{class_mountain_goap_1_1_action_ab148d3307bd03e2f07884273074c1d3e}\index{MountainGoap.Action@{MountainGoap.Action}!GetCost@{GetCost}}
+\index{GetCost@{GetCost}!MountainGoap.Action@{MountainGoap.Action}}
+\doxysubsubsection{\texorpdfstring{GetCost()}{GetCost()}}
+{\footnotesize\ttfamily \label{class_mountain_goap_1_1_action_ab148d3307bd03e2f07884273074c1d3e} 
+float Mountain\+Goap.\+Action.\+Get\+Cost (\begin{DoxyParamCaption}\item[{Concurrent\+Dictionary$<$ string, object $>$}]{current\+State}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the cost of the action. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+State} & State as it will be when cost is relevant.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cost of the action.
+\end{DoxyReturn}
+\Hypertarget{class_mountain_goap_1_1_action_a4a849ff5b558eb46789a97f98a40e137}\index{MountainGoap.Action@{MountainGoap.Action}!GetParameter@{GetParameter}}
+\index{GetParameter@{GetParameter}!MountainGoap.Action@{MountainGoap.Action}}
+\doxysubsubsection{\texorpdfstring{GetParameter()}{GetParameter()}}
+{\footnotesize\ttfamily \label{class_mountain_goap_1_1_action_a4a849ff5b558eb46789a97f98a40e137} 
+object? Mountain\+Goap.\+Action.\+Get\+Parameter (\begin{DoxyParamCaption}\item[{string}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets a parameter to the action. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Key for the value to be retrieved.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value stored at the key specified.
+\end{DoxyReturn}
+\Hypertarget{class_mountain_goap_1_1_action_a8bf507dc3fa2ffd7ae1284f36e81243e}\index{MountainGoap.Action@{MountainGoap.Action}!SetParameter@{SetParameter}}
+\index{SetParameter@{SetParameter}!MountainGoap.Action@{MountainGoap.Action}}
+\doxysubsubsection{\texorpdfstring{SetParameter()}{SetParameter()}}
+{\footnotesize\ttfamily \label{class_mountain_goap_1_1_action_a8bf507dc3fa2ffd7ae1284f36e81243e} 
+void Mountain\+Goap.\+Action.\+Set\+Parameter (\begin{DoxyParamCaption}\item[{string}]{key}{, }\item[{object}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets a parameter to the action. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Key to be set.\\
+\hline
+{\em value} & Value to be set.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+addons/mountain-\/goap/\+Mountain\+Goap/Action.\+cs\end{DoxyCompactItemize}

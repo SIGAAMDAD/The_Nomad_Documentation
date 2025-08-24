@@ -1,0 +1,98 @@
+\doxysection{Renown.\+Contract Class Reference}
+\hypertarget{class_renown_1_1_contract}{}\label{class_renown_1_1_contract}\index{Renown.Contract@{Renown.Contract}}
+Inheritance diagram for Renown.\+Contract\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_renown_1_1_contract}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_renown_1_1_contract_a7721639067e4ffb90f2f5c65c416bdaf}\label{class_renown_1_1_contract_a7721639067e4ffb90f2f5c65c416bdaf} 
+{\bfseries Contract} (string name, \mbox{\hyperlink{struct_renown_1_1_world_1_1_world_timestamp}{World\+Timestamp}} duedate, Contract\+Flags flags, Contract\+Type type, float base\+Pay, float? total\+Pay, \mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{World\+Area}} area, \mbox{\hyperlink{interface_renown_1_1_object}{Object}} contractor, \mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} guild)
+\item 
+\Hypertarget{class_renown_1_1_contract_a6bc8858d648fbc8fe2b0828a92cf2709}\label{class_renown_1_1_contract_a6bc8858d648fbc8fe2b0828a92cf2709} 
+virtual void {\bfseries Load} (int n\+Hash\+Code)
+\item 
+\Hypertarget{class_renown_1_1_contract_a80b50af116762679a2a91e601fba0bd0}\label{class_renown_1_1_contract_a80b50af116762679a2a91e601fba0bd0} 
+void {\bfseries Start} ()
+\item 
+\Hypertarget{class_renown_1_1_contract_af03aa8159825c6d9922eeb68995b4bcd}\label{class_renown_1_1_contract_af03aa8159825c6d9922eeb68995b4bcd} 
+virtual Contract\+Type {\bfseries Get\+Contract\+Type} ()
+\item 
+\Hypertarget{class_renown_1_1_contract_a9bdb7035515444dd6de580bc5cc5117f}\label{class_renown_1_1_contract_a9bdb7035515444dd6de580bc5cc5117f} 
+\mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{World\+Area}} {\bfseries Get\+Area} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{class_renown_1_1_contract_ad1bf9065de8dd77775548acc648f8d09}{Calculate\+Cost}} (Contract\+Flags flags, Contract\+Type type, \mbox{\hyperlink{struct_renown_1_1_world_1_1_world_timestamp}{World\+Timestamp}} duedate, \mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{World\+Area}} area, \mbox{\hyperlink{interface_renown_1_1_object}{Object}} target=null)
+\begin{DoxyCompactList}\small\item\em calculates the cost of a generic contract with the given values, doesn\textquotesingle{}t however take into account how the pay might change over time \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_renown_1_1_contract_a199feae72f8c1f05ca4a23f4fecb6cd4}\label{class_renown_1_1_contract_a199feae72f8c1f05ca4a23f4fecb6cd4} 
+readonly string {\bfseries Title}
+\item 
+\Hypertarget{class_renown_1_1_contract_a8900eda3110da655c6cf20e50d8fe719}\label{class_renown_1_1_contract_a8900eda3110da655c6cf20e50d8fe719} 
+readonly Contract\+Flags {\bfseries Flags}
+\item 
+\Hypertarget{class_renown_1_1_contract_ad975cbf429b95eb0376ae164c5ec952b}\label{class_renown_1_1_contract_ad975cbf429b95eb0376ae164c5ec952b} 
+readonly Contract\+Type {\bfseries Type}
+\item 
+\Hypertarget{class_renown_1_1_contract_a68d4da83793ef9acc36bb7dea390a864}\label{class_renown_1_1_contract_a68d4da83793ef9acc36bb7dea390a864} 
+readonly \mbox{\hyperlink{interface_renown_1_1_object}{Object}} {\bfseries Contractor}
+\item 
+\Hypertarget{class_renown_1_1_contract_ae7f13530c81c9592f8e590c47c6c098c}\label{class_renown_1_1_contract_ae7f13530c81c9592f8e590c47c6c098c} 
+readonly \mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} {\bfseries Guild}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_renown_1_1_contract_a71fe3fd399ea50270db30634dbf238be}\label{class_renown_1_1_contract_a71fe3fd399ea50270db30634dbf238be} 
+\mbox{\hyperlink{struct_renown_1_1_world_1_1_world_timestamp}{World\+Timestamp}} {\bfseries Due\+Date}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_renown_1_1_contract_a5882df75a99c463a56bff52b1a98414e}\label{class_renown_1_1_contract_a5882df75a99c463a56bff52b1a98414e} 
+float {\bfseries Total\+Pay} = 0.\+0f\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em the total amount of money the mercenary can get out of the deal. this value can change with the value of the target, like a bounty for instance. \end{DoxyCompactList}\item 
+\Hypertarget{class_renown_1_1_contract_aaf5e89093028f36aa8ebe7fd3f5bc814}\label{class_renown_1_1_contract_aaf5e89093028f36aa8ebe7fd3f5bc814} 
+float {\bfseries Base\+Pay} = 0.\+0f\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_renown_1_1_contract_a6d57e9bd249fac6aebd3ac0e1477932f}\label{class_renown_1_1_contract_a6d57e9bd249fac6aebd3ac0e1477932f} 
+\mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{World\+Area}} {\bfseries Collateral\+Area}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em the designated place where the merc can operate in. if they step outside here, its no longer in the protection of the guild. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_renown_1_1_contract_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_renown_1_1_contract_ad1bf9065de8dd77775548acc648f8d09}\index{Renown.Contract@{Renown.Contract}!CalculateCost@{CalculateCost}}
+\index{CalculateCost@{CalculateCost}!Renown.Contract@{Renown.Contract}}
+\doxysubsubsection{\texorpdfstring{CalculateCost()}{CalculateCost()}}
+{\footnotesize\ttfamily \label{class_renown_1_1_contract_ad1bf9065de8dd77775548acc648f8d09} 
+float Renown.\+Contract.\+Calculate\+Cost (\begin{DoxyParamCaption}\item[{Contract\+Flags}]{flags}{, }\item[{Contract\+Type}]{type}{, }\item[{\mbox{\hyperlink{struct_renown_1_1_world_1_1_world_timestamp}{World\+Timestamp}}}]{duedate}{, }\item[{\mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{World\+Area}}}]{area}{, }\item[{\mbox{\hyperlink{interface_renown_1_1_object}{Object}}}]{target}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+calculates the cost of a generic contract with the given values, doesn\textquotesingle{}t however take into account how the pay might change over time 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flags} & \\
+\hline
+{\em type} & \\
+\hline
+{\em duedate} & \\
+\hline
+{\em area} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/\+Renown/Contract.\+cs\end{DoxyCompactItemize}

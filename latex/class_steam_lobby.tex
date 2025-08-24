@@ -1,0 +1,226 @@
+\doxysection{Steam\+Lobby Class Reference}
+\hypertarget{class_steam_lobby}{}\label{class_steam_lobby}\index{SteamLobby@{SteamLobby}}
+Inheritance diagram for Steam\+Lobby\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_steam_lobby}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_steam_lobby_1_1_network_node}{Network\+Node}}
+\item 
+struct \mbox{\hyperlink{struct_steam_lobby_1_1_player_network_node}{Player\+Network\+Node}}
+\item 
+class \mbox{\hyperlink{class_steam_lobby_1_1_steam_lobby_security}{Steam\+Lobby\+Security}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_steam_lobby_a526d242377e1f4c4f46a0231c498de8a}\label{class_steam_lobby_a526d242377e1f4c4f46a0231c498de8a} 
+enum {\bfseries Visibility} \{ {\bfseries Private}
+, {\bfseries Public}
+, {\bfseries Friends\+Only}
+ \}
+\item 
+\Hypertarget{class_steam_lobby_a78bf647db1433985f0941726c4bf4872}\label{class_steam_lobby_a78bf647db1433985f0941726c4bf4872} 
+enum {\bfseries Message\+Type} \+: byte \{ \newline
+{\bfseries Handshake}
+, {\bfseries Server\+Command}
+, {\bfseries Client\+Data}
+, {\bfseries Server\+Sync}
+, \newline
+{\bfseries Game\+Data}
+, {\bfseries Chat\+Message\+\_\+\+Team\+Only}
+, {\bfseries Chat\+Message\+\_\+\+Player\+Only}
+, {\bfseries Chat\+Message\+\_\+\+Friends\+Only}
+, \newline
+{\bfseries Voice\+Chat}
+, {\bfseries Encryption\+Key}
+, {\bfseries Count}
+ \}
+\item 
+\Hypertarget{class_steam_lobby_a2f2507d98f71f65799a475131c14dc9a}\label{class_steam_lobby_a2f2507d98f71f65799a475131c14dc9a} 
+enum {\bfseries Chat\+Message\+Type} \+: int \{ {\bfseries Friends\+Only}
+, {\bfseries Team\+Only}
+, {\bfseries Player\+Only}
+, {\bfseries None}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_steam_lobby_aa9ff3bb7ed137328b2ed69b65f5721f1}\label{class_steam_lobby_aa9ff3bb7ed137328b2ed69b65f5721f1} 
+delegate void {\bfseries Chat\+Message\+Received\+Event\+Handler} (ulong sender\+Steam\+Id, string message, int flags=0)
+\item 
+\Hypertarget{class_steam_lobby_aec13b863000429514b7fb2115fbcf1cf}\label{class_steam_lobby_aec13b863000429514b7fb2115fbcf1cf} 
+delegate void {\bfseries Client\+Joined\+Lobby\+Event\+Handler} (ulong steam\+Id)
+\item 
+\Hypertarget{class_steam_lobby_abcc4d96b6dbcf2295808101ffa600fa6}\label{class_steam_lobby_abcc4d96b6dbcf2295808101ffa600fa6} 
+delegate void {\bfseries Client\+Left\+Lobby\+Event\+Handler} (ulong steam\+Id)
+\item 
+\Hypertarget{class_steam_lobby_a6032c5a18d572b60866d598ef883fbb4}\label{class_steam_lobby_a6032c5a18d572b60866d598ef883fbb4} 
+delegate void {\bfseries Lobby\+Joined\+Event\+Handler} (ulong lobby\+Id)
+\item 
+\Hypertarget{class_steam_lobby_a744c595bee1c09c9967f9eb487f456d4}\label{class_steam_lobby_a744c595bee1c09c9967f9eb487f456d4} 
+delegate void {\bfseries Lobby\+Created\+Event\+Handler} (ulong lobby\+Id)
+\item 
+\Hypertarget{class_steam_lobby_a7d213f21546e92a588b61cc06c8f128b}\label{class_steam_lobby_a7d213f21546e92a588b61cc06c8f128b} 
+delegate void {\bfseries Lobby\+List\+Updated\+Event\+Handler} ()
+\item 
+\Hypertarget{class_steam_lobby_ad149ec79723df0d24e09227c6ba4672b}\label{class_steam_lobby_ad149ec79723df0d24e09227c6ba4672b} 
+delegate void {\bfseries Start\+Game\+Event\+Handler} ()
+\item 
+\Hypertarget{class_steam_lobby_a5065fbd2860b84b38f9e250b1f7adc14}\label{class_steam_lobby_a5065fbd2860b84b38f9e250b1f7adc14} 
+delegate void {\bfseries Lobby\+Owner\+Changed\+Event\+Handler} (ulong new\+Owner\+Id)
+\item 
+\Hypertarget{class_steam_lobby_ae41fedd86dad471a4e33da153e073f15}\label{class_steam_lobby_ae41fedd86dad471a4e33da153e073f15} 
+delegate void {\bfseries Host\+Responsibilities\+Transferred\+Event\+Handler} ()
+\item 
+\Hypertarget{class_steam_lobby_aafb24543d04efcaff23cedc49d5c7bd1}\label{class_steam_lobby_aafb24543d04efcaff23cedc49d5c7bd1} 
+delegate void {\bfseries Vote\+Kick\+Started\+Event\+Handler} (ulong initiator, ulong target, string reason)
+\item 
+\Hypertarget{class_steam_lobby_a557f4cfcac3115cb44b67300722e9e60}\label{class_steam_lobby_a557f4cfcac3115cb44b67300722e9e60} 
+delegate void {\bfseries Vote\+Kick\+Status\+Event\+Handler} (ulong target, int yes\+Votes, int no\+Votes, float time\+Remaining)
+\item 
+\Hypertarget{class_steam_lobby_aa4187f6ba1ebed76c6c003c301185970}\label{class_steam_lobby_aa4187f6ba1ebed76c6c003c301185970} 
+delegate void {\bfseries Vote\+Kick\+Result\+Event\+Handler} (ulong target, bool result)
+\item 
+\Hypertarget{class_steam_lobby_ace04a8b8ec2a6cc46712af03aeb79703}\label{class_steam_lobby_ace04a8b8ec2a6cc46712af03aeb79703} 
+delegate void {\bfseries Lobby\+Connection\+Status\+Changed\+Event\+Handler} (int state)
+\item 
+\Hypertarget{class_steam_lobby_acd14440915906a37e655550a20a891fd}\label{class_steam_lobby_acd14440915906a37e655550a20a891fd} 
+void {\bfseries Create\+Lobby} ()
+\item 
+\Hypertarget{class_steam_lobby_ab034c3f51a91b76255ba645426f6d06e}\label{class_steam_lobby_ab034c3f51a91b76255ba645426f6d06e} 
+void {\bfseries Join\+Lobby} (CSteam\+ID lobby\+Id)
+\item 
+\Hypertarget{class_steam_lobby_a6e67540dd7c68bb59ffb40f9fdce76cf}\label{class_steam_lobby_a6e67540dd7c68bb59ffb40f9fdce76cf} 
+int {\bfseries Get\+Member\+Index} (CSteam\+ID member\+Id)
+\item 
+\Hypertarget{class_steam_lobby_ac3da58d5a468f7afd9d5be73bf8d5591}\label{class_steam_lobby_ac3da58d5a468f7afd9d5be73bf8d5591} 
+void {\bfseries Leave\+Lobby} ()
+\item 
+\Hypertarget{class_steam_lobby_adeeb8ebc6744f05ee01ffd1a289754dd}\label{class_steam_lobby_adeeb8ebc6744f05ee01ffd1a289754dd} 
+void {\bfseries Open\+Lobby\+List} ()
+\item 
+\Hypertarget{class_steam_lobby_a97366d467646565e491c182e4dfc0167}\label{class_steam_lobby_a97366d467646565e491c182e4dfc0167} 
+void {\bfseries Send\+Message} (CSteam\+ID target, byte\mbox{[}$\,$\mbox{]} data)
+\item 
+\Hypertarget{class_steam_lobby_a384549ee512ec83ea036fbeb9f644532}\label{class_steam_lobby_a384549ee512ec83ea036fbeb9f644532} 
+void {\bfseries Send\+Target\+Packet} (CSteam\+ID target, byte\mbox{[}$\,$\mbox{]} data, int send\+Type=Constants.\+k\+\_\+n\+Steam\+Networking\+Send\+\_\+\+Reliable, bool safe=false, int channel=0)
+\item 
+\Hypertarget{class_steam_lobby_ad5b69746d8a3e19dc24877fa904b2f6b}\label{class_steam_lobby_ad5b69746d8a3e19dc24877fa904b2f6b} 
+void {\bfseries Send\+P2\+PPacket} (byte\mbox{[}$\,$\mbox{]} data, int send\+Type=Constants.\+k\+\_\+n\+Steam\+Networking\+Send\+\_\+\+Reliable, int channel=0)
+\item 
+\Hypertarget{class_steam_lobby_a0f5ce2f9b9b794dcdcde38001a22b453}\label{class_steam_lobby_a0f5ce2f9b9b794dcdcde38001a22b453} 
+int {\bfseries Get\+Member\+Ping} (CSteam\+ID user\+ID)
+\item 
+\Hypertarget{class_steam_lobby_ad63c383231c6243c433eed093f68a7ed}\label{class_steam_lobby_ad63c383231c6243c433eed093f68a7ed} 
+void {\bfseries Get\+Lobby\+Members} ()
+\item 
+\Hypertarget{class_steam_lobby_a1ee3ba26127566135514f1c74ba317cf}\label{class_steam_lobby_a1ee3ba26127566135514f1c74ba317cf} 
+\mbox{\hyperlink{class_network_player}{Network\+Player}} {\bfseries Get\+Player} (CSteam\+ID user\+Id)
+\item 
+\Hypertarget{class_steam_lobby_a5edc236182c687ec89adbe6ad2b416c7}\label{class_steam_lobby_a5edc236182c687ec89adbe6ad2b416c7} 
+void {\bfseries Add\+Player} (CSteam\+ID user\+Id, \mbox{\hyperlink{struct_steam_lobby_1_1_player_network_node}{Player\+Network\+Node}} callbacks)
+\item 
+\Hypertarget{class_steam_lobby_a387bcbf7f06fc921a74894aa2403508f}\label{class_steam_lobby_a387bcbf7f06fc921a74894aa2403508f} 
+void {\bfseries Remove\+Player} (CSteam\+ID user\+Id)
+\item 
+\Hypertarget{class_steam_lobby_ac5cf43f9cb6966196d019502bb1320f4}\label{class_steam_lobby_ac5cf43f9cb6966196d019502bb1320f4} 
+void {\bfseries Add\+Network\+Node} (Node\+Path node, \mbox{\hyperlink{struct_steam_lobby_1_1_network_node}{Network\+Node}} callbacks)
+\item 
+\Hypertarget{class_steam_lobby_a76bd72297cdbdffdbaea6b539eb85c93}\label{class_steam_lobby_a76bd72297cdbdffdbaea6b539eb85c93} 
+void {\bfseries Remove\+Network\+Node} (Node\+Path node)
+\item 
+\Hypertarget{class_steam_lobby_a80e15236051b858335dba7d10ba87a42}\label{class_steam_lobby_a80e15236051b858335dba7d10ba87a42} 
+Node {\bfseries Get\+Network\+Node} (Node\+Path node)
+\item 
+\Hypertarget{class_steam_lobby_ae32391014f680a73debc3a7f198001cb}\label{class_steam_lobby_ae32391014f680a73debc3a7f198001cb} 
+void {\bfseries Cast\+Vote} (CSteam\+ID target, bool vote)
+\item 
+\Hypertarget{class_steam_lobby_a986a99dee659325aac751784f0cee496}\label{class_steam_lobby_a986a99dee659325aac751784f0cee496} 
+void {\bfseries Start\+Vote\+Kick} (CSteam\+ID target, string reason)
+\item 
+\Hypertarget{class_steam_lobby_a9508cd93958b6f9b3feab954c711e438}\label{class_steam_lobby_a9508cd93958b6f9b3feab954c711e438} 
+override void {\bfseries \+\_\+\+Enter\+Tree} ()
+\item 
+\Hypertarget{class_steam_lobby_a922586961ad59001723b06657ab2537e}\label{class_steam_lobby_a922586961ad59001723b06657ab2537e} 
+override void {\bfseries \+\_\+\+Ready} ()
+\item 
+\Hypertarget{class_steam_lobby_a979a5bff93a482871c9b886b56fa8340}\label{class_steam_lobby_a979a5bff93a482871c9b886b56fa8340} 
+override void {\bfseries \+\_\+\+Process} (double delta)
+\item 
+\Hypertarget{class_steam_lobby_a5ca5735134a61f528de1e1af1fbb1087}\label{class_steam_lobby_a5ca5735134a61f528de1e1af1fbb1087} 
+override void {\bfseries \+\_\+\+Notification} (int what)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_steam_lobby_a849e6108399ebdb85524e6704b71f9c5}\label{class_steam_lobby_a849e6108399ebdb85524e6704b71f9c5} 
+static bool {\bfseries All\+Players\+Ready} ()
+\item 
+\Hypertarget{class_steam_lobby_a80e3cc048a6f30f16eca932349166990}\label{class_steam_lobby_a80e3cc048a6f30f16eca932349166990} 
+static HSteam\+Net\+Connection {\bfseries Find\+Connection} (CSteam\+ID steam\+ID)
+\item 
+\Hypertarget{class_steam_lobby_a9fb48f5c09d226e98bc85902aabb34aa}\label{class_steam_lobby_a9fb48f5c09d226e98bc85902aabb34aa} 
+static byte\mbox{[}$\,$\mbox{]} {\bfseries Decompress\+Text} (byte\mbox{[}$\,$\mbox{]} text)
+\item 
+\Hypertarget{class_steam_lobby_a10915d52996fbf85f176a4f9cf917c99}\label{class_steam_lobby_a10915d52996fbf85f176a4f9cf917c99} 
+static byte\mbox{[}$\,$\mbox{]} {\bfseries Compress\+Text} (string text)
+\item 
+\Hypertarget{class_steam_lobby_abd21cb4d2eac344edc0c9bf7449d650a}\label{class_steam_lobby_abd21cb4d2eac344edc0c9bf7449d650a} 
+static void {\bfseries Send\+Voice\+Packet} (byte\mbox{[}$\,$\mbox{]} data, uint bytes\+Written)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_steam_lobby_ae2c48ff7097a6dcacf2b1cb4f0cfbb41}\label{class_steam_lobby_ae2c48ff7097a6dcacf2b1cb4f0cfbb41} 
+static readonly int {\bfseries MAX\+\_\+\+LOBBY\+\_\+\+MEMBERS} = 16
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_steam_lobby_a255f64bbc45c6c00ba4f6e8fc113d400}\label{class_steam_lobby_a255f64bbc45c6c00ba4f6e8fc113d400} 
+static \mbox{\hyperlink{class_steam_lobby}{Steam\+Lobby}} {\bfseries Instance}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_steam_lobby_a377f5901ce46763f2bd69af31ffdc081}\label{class_steam_lobby_a377f5901ce46763f2bd69af31ffdc081} 
+CSteam\+ID\mbox{[}$\,$\mbox{]} {\bfseries Lobby\+Members} = new CSteam\+ID\mbox{[} MAX\+\_\+\+LOBBY\+\_\+\+MEMBERS \mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_steam_lobby_ad7b1c584cb2e52df184816a80e80806d}\label{class_steam_lobby_ad7b1c584cb2e52df184816a80e80806d} 
+int {\bfseries Lobby\+Member\+Count} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_steam_lobby_a593b5d1fdf4b4c06e237634118947a59}\label{class_steam_lobby_a593b5d1fdf4b4c06e237634118947a59} 
+CSteam\+ID {\bfseries Lobby\+Id} = CSteam\+ID.\+Nil\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_steam_lobby_a141fc09a778389c97de0757dcb56e226}\label{class_steam_lobby_a141fc09a778389c97de0757dcb56e226} 
+CSteam\+ID {\bfseries Lobby\+Owner\+Id} = CSteam\+ID.\+Nil\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_steam_lobby_a186a048347668db9e94c80481ca0ec9b}\label{class_steam_lobby_a186a048347668db9e94c80481ca0ec9b} 
+bool {\bfseries Is\+Host} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_steam_lobby_acfd92adf1753933e65433c78adc46e7e}\label{class_steam_lobby_acfd92adf1753933e65433c78adc46e7e} 
+List$<$ CSteam\+ID $>$ {\bfseries Lobby\+List} = new List$<$CSteam\+ID$>$()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_steam_lobby_a8d1638b1a5290fe76cdede22c3849044}\label{class_steam_lobby_a8d1638b1a5290fe76cdede22c3849044} 
+int {\bfseries Lobby\+Max\+Members} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_steam_lobby_a054d91b440a3ac22b000d1dbcdfd0132}\label{class_steam_lobby_a054d91b440a3ac22b000d1dbcdfd0132} 
+uint {\bfseries Lobby\+Game\+Mode} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_steam_lobby_a43f46c2d1cd2b78f1864e6aa1d2fc9a8}\label{class_steam_lobby_a43f46c2d1cd2b78f1864e6aa1d2fc9a8} 
+string {\bfseries Lobby\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_steam_lobby_a2d33af4dd2dfe7963582b218bf485b52}\label{class_steam_lobby_a2d33af4dd2dfe7963582b218bf485b52} 
+string {\bfseries Lobby\+Map}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_steam_lobby_af5d0207e8a36ad760a7a075bfbcf982b}\label{class_steam_lobby_af5d0207e8a36ad760a7a075bfbcf982b} 
+Visibility {\bfseries Lobby\+Visibility} = Visibility.\+Public\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+autoloads/\+Steam/Steam\+Lobby.\+cs\end{DoxyCompactItemize}

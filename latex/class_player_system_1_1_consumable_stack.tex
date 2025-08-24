@@ -1,0 +1,95 @@
+\doxysection{Player\+System.\+Consumable\+Stack Class Reference}
+\hypertarget{class_player_system_1_1_consumable_stack}{}\label{class_player_system_1_1_consumable_stack}\index{PlayerSystem.ConsumableStack@{PlayerSystem.ConsumableStack}}
+
+
+Item stack class but for consumables like stims, healthpacks, etc.  
+
+
+Inheritance diagram for Player\+System.\+Consumable\+Stack\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_player_system_1_1_consumable_stack}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_player_system_1_1_consumable_stack_a2e3ebccbe187f00a2e0c3d1fd521e667}{Set\+Type}} (\mbox{\hyperlink{class_consumable_entity}{Consumable\+Entity}} consumable)
+\begin{DoxyCompactList}\small\item\em Sets the type of consumable resource to be used in the stack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_system_1_1_consumable_stack_a3a7e3d1946f83e6f16cdb42492c0f3e7}{Add\+Items}} (int items)
+\begin{DoxyCompactList}\small\item\em Adds a set count of items to the stack. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_player_system_1_1_consumable_stack_a1ce7073a1c3689328f7aa5e0a335faaa}{Remove\+Items}} (int items)
+\begin{DoxyCompactList}\small\item\em Removes a set count of items from the stack. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_player_system_1_1_consumable_stack_a67ef25c476ef66e6c7c8b5ad17c5248a}\label{class_player_system_1_1_consumable_stack_a67ef25c476ef66e6c7c8b5ad17c5248a} 
+Resource? {\bfseries Item\+Type} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_player_system_1_1_consumable_stack_a3b9e667b0f23853eb411592ebdad9485}\label{class_player_system_1_1_consumable_stack_a3b9e667b0f23853eb411592ebdad9485} 
+int {\bfseries Amount} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_player_system_1_1_consumable_stack_a6b95f09bf95aec16dfe63d936eb2c168}\label{class_player_system_1_1_consumable_stack_a6b95f09bf95aec16dfe63d936eb2c168} 
+string {\bfseries Item\+Id}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Item stack class but for consumables like stims, healthpacks, etc. 
+
+\label{doc-func-members}
+\Hypertarget{class_player_system_1_1_consumable_stack_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_player_system_1_1_consumable_stack_a3a7e3d1946f83e6f16cdb42492c0f3e7}\index{PlayerSystem.ConsumableStack@{PlayerSystem.ConsumableStack}!AddItems@{AddItems}}
+\index{AddItems@{AddItems}!PlayerSystem.ConsumableStack@{PlayerSystem.ConsumableStack}}
+\doxysubsubsection{\texorpdfstring{AddItems()}{AddItems()}}
+{\footnotesize\ttfamily \label{class_player_system_1_1_consumable_stack_a3a7e3d1946f83e6f16cdb42492c0f3e7} 
+void Player\+System.\+Consumable\+Stack.\+Add\+Items (\begin{DoxyParamCaption}\item[{int}]{items}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a set count of items to the stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em items} & The amount of items to add to the stack\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_system_1_1_consumable_stack_a1ce7073a1c3689328f7aa5e0a335faaa}\index{PlayerSystem.ConsumableStack@{PlayerSystem.ConsumableStack}!RemoveItems@{RemoveItems}}
+\index{RemoveItems@{RemoveItems}!PlayerSystem.ConsumableStack@{PlayerSystem.ConsumableStack}}
+\doxysubsubsection{\texorpdfstring{RemoveItems()}{RemoveItems()}}
+{\footnotesize\ttfamily \label{class_player_system_1_1_consumable_stack_a1ce7073a1c3689328f7aa5e0a335faaa} 
+int Player\+System.\+Consumable\+Stack.\+Remove\+Items (\begin{DoxyParamCaption}\item[{int}]{items}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes a set count of items from the stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em items} & The amount of items to retrieve from the stack\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The amount of remaining items in the stack if Amount -\/ items is less than 0, or the requested amount
+\end{DoxyReturn}
+\Hypertarget{class_player_system_1_1_consumable_stack_a2e3ebccbe187f00a2e0c3d1fd521e667}\index{PlayerSystem.ConsumableStack@{PlayerSystem.ConsumableStack}!SetType@{SetType}}
+\index{SetType@{SetType}!PlayerSystem.ConsumableStack@{PlayerSystem.ConsumableStack}}
+\doxysubsubsection{\texorpdfstring{SetType()}{SetType()}}
+{\footnotesize\ttfamily \label{class_player_system_1_1_consumable_stack_a2e3ebccbe187f00a2e0c3d1fd521e667} 
+void Player\+System.\+Consumable\+Stack.\+Set\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_consumable_entity}{Consumable\+Entity}}}]{consumable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the type of consumable resource to be used in the stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em consumable} & The \doxylink{class_consumable_entity}{Consumable\+Entity} to use\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/\+Player\+System/Consumable\+Stack.\+cs\end{DoxyCompactItemize}
