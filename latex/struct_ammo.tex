@@ -1,0 +1,82 @@
+\doxysection{Ammo Struct Reference}
+\hypertarget{struct_ammo}{}\label{struct_ammo}\index{Ammo@{Ammo}}
+
+
+Stores relevant information about an ammunition type.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_ammo_a5a672c6c03e8174623e8577b9b493de2}{Ammo}} (Resource? resource)
+\begin{DoxyCompactList}\small\item\em Constructs an ammo object based on a provided Item\+Definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{struct_ammo_aee78ea7d3047ac1be71f52fc7d6881fb}\label{struct_ammo_aee78ea7d3047ac1be71f52fc7d6881fb} 
+readonly float {\bfseries Range} = 0.\+0f
+\begin{DoxyCompactList}\small\item\em The ammo\textquotesingle{}s range. \end{DoxyCompactList}\item 
+\Hypertarget{struct_ammo_aa2a1807afee0508ccfac786ee7bd58dd}\label{struct_ammo_aa2a1807afee0508ccfac786ee7bd58dd} 
+readonly float {\bfseries Damage} = 0.\+0f
+\begin{DoxyCompactList}\small\item\em The ammo\textquotesingle{}s (base) damage. \end{DoxyCompactList}\item 
+\Hypertarget{struct_ammo_a64546a0526d265a4c86105da2515045f}\label{struct_ammo_a64546a0526d265a4c86105da2515045f} 
+readonly float {\bfseries Velocity} = 0.\+0f
+\begin{DoxyCompactList}\small\item\em How fast the ammo travels per second. \end{DoxyCompactList}\item 
+\Hypertarget{struct_ammo_a93324717118b3c989460e722984f1bf7}\label{struct_ammo_a93324717118b3c989460e722984f1bf7} 
+readonly? string {\bfseries Item\+Id} = null
+\begin{DoxyCompactList}\small\item\em The item\+\_\+id of the Item\+Definition. \end{DoxyCompactList}\item 
+\Hypertarget{struct_ammo_a5c2a87ee8092a9cc37d1bed7766d75bb}\label{struct_ammo_a5c2a87ee8092a9cc37d1bed7766d75bb} 
+readonly Ammo\+Type {\bfseries Type}
+\begin{DoxyCompactList}\small\item\em The base type of the ammo, see Ammo\+Type for more information. \end{DoxyCompactList}\item 
+\Hypertarget{struct_ammo_a309397f38938f711c4f85a8ebf0275d7}\label{struct_ammo_a309397f38938f711c4f85a8ebf0275d7} 
+readonly Extra\+Ammo\+Effects {\bfseries Effects}
+\begin{DoxyCompactList}\small\item\em The extra effects that are applied to the ammo, see Extra\+Ammo\+Flags for more information. \end{DoxyCompactList}\item 
+\Hypertarget{struct_ammo_a686c3f1c7b4a9ee4e54e65a8bb8d25a0}\label{struct_ammo_a686c3f1c7b4a9ee4e54e65a8bb8d25a0} 
+readonly Curve {\bfseries Damage\+Falloff}
+\begin{DoxyCompactList}\small\item\em The damage falloff over range. \end{DoxyCompactList}\item 
+\Hypertarget{struct_ammo_a73cb8d28ef582b1cc75bb56d7c061eb1}\label{struct_ammo_a73cb8d28ef582b1cc75bb56d7c061eb1} 
+readonly Audio\+Stream {\bfseries Pickup\+Sfx}
+\begin{DoxyCompactList}\small\item\em The sound effect played when the ammo is picked up, should be unique for distinction purposes. \end{DoxyCompactList}\item 
+\Hypertarget{struct_ammo_a12eaec04ddf951a44d4c603d7d7a5b18}\label{struct_ammo_a12eaec04ddf951a44d4c603d7d7a5b18} 
+readonly Shotgun\+Bullshit {\bfseries Shotgun\+Bullshit}
+\begin{DoxyCompactList}\small\item\em See \doxylink{struct_ammo_a12eaec04ddf951a44d4c603d7d7a5b18}{Shotgun\+Bullshit} for more. \end{DoxyCompactList}\item 
+\Hypertarget{struct_ammo_ac2cc95edf5aa0a91133eaf00cbee6a23}\label{struct_ammo_ac2cc95edf5aa0a91133eaf00cbee6a23} 
+readonly int {\bfseries Pellet\+Count} = 0
+\begin{DoxyCompactList}\small\item\em The amount of pellets per shot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stores relevant information about an ammunition type. 
+
+\label{doc-constructors}
+\Hypertarget{struct_ammo_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_ammo_a5a672c6c03e8174623e8577b9b493de2}\index{Ammo@{Ammo}!Ammo@{Ammo}}
+\index{Ammo@{Ammo}!Ammo@{Ammo}}
+\doxysubsubsection{\texorpdfstring{Ammo()}{Ammo()}}
+{\footnotesize\ttfamily \label{struct_ammo_a5a672c6c03e8174623e8577b9b493de2} 
+Ammo.\+Ammo (\begin{DoxyParamCaption}\item[{Resource?}]{resource}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs an ammo object based on a provided Item\+Definition. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource} & The Item\+Definition of the ammo\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Null\+Exception} & Thrown if {\itshape resource}  is null\\
+\hline
+{\em Invalid\+Operation\+Exception} & Thrown if {\itshape resource}  doesn\textquotesingle{}t contain a properties dictionary, or if an ammo effect isn\textquotesingle{}t valid\\
+\hline
+{\em Argument\+Out\+Of\+Range\+Exception} & Thrown if an ammo\textquotesingle{}s effects array isn\textquotesingle{}t a Packed\+String\+Array type\\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/\+Items/Ammo.\+cs\end{DoxyCompactItemize}

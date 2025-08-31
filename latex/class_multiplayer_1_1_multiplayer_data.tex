@@ -1,0 +1,118 @@
+\doxysection{Multiplayer.\+Multiplayer\+Data Class Reference}
+\hypertarget{class_multiplayer_1_1_multiplayer_data}{}\label{class_multiplayer_1_1_multiplayer_data}\index{Multiplayer.MultiplayerData@{Multiplayer.MultiplayerData}}
+Inheritance diagram for Multiplayer.\+Multiplayer\+Data\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_multiplayer_1_1_multiplayer_data}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_multiplayer_1_1_multiplayer_data_a49595010814cdf5c7dc337bba591f719}\label{class_multiplayer_1_1_multiplayer_data_a49595010814cdf5c7dc337bba591f719} 
+Mode.\+Game\+Mode {\bfseries Get\+Mode} ()
+\item 
+\Hypertarget{class_multiplayer_1_1_multiplayer_data_a1016ddb2f824d847ef2f91ea0e3c1212}\label{class_multiplayer_1_1_multiplayer_data_a1016ddb2f824d847ef2f91ea0e3c1212} 
+override void {\bfseries \+\_\+\+Ready} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_level_data}{Level\+Data}}}
+\begin{DoxyCompactItemize}
+\item 
+delegate void {\bfseries Resources\+Loading\+Finished\+Event\+Handler} ()
+\item 
+delegate void {\bfseries Player\+Respawn\+Event\+Handler} ()
+\item 
+delegate void {\bfseries Hellbreaker\+Begin\+Event\+Handler} ()
+\item 
+delegate void {\bfseries Hellbreaker\+Finished\+Event\+Handler} ()
+\item 
+delegate void {\bfseries Exit\+Level\+Event\+Handler} ()
+\item 
+override void {\bfseries \+\_\+\+Enter\+Tree} ()
+\item 
+override void {\bfseries \+\_\+\+Exit\+Tree} ()
+\item 
+override void {\bfseries \+\_\+\+Ready} ()
+\begin{DoxyCompactList}\small\item\em godot initialization override \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_multiplayer_1_1_multiplayer_data_a37d87525753816303d4cf8f28a68fa6f}{On\+Resources\+Finished\+Loading}} ()
+\item 
+override void \mbox{\hyperlink{class_multiplayer_1_1_multiplayer_data_a0f4d02696e754dca51d62d6591c4d63f}{On\+Player\+Joined}} (ulong steam\+Id)
+\item 
+override void \mbox{\hyperlink{class_multiplayer_1_1_multiplayer_data_aa96e0e651e5d5075a0f8c5be42f6ade9}{On\+Player\+Left}} (ulong steam\+Id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_level_data}{Level\+Data}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player}{Player}} {\bfseries This\+Player}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{class_level_data}{Level\+Data}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_level_data}{Level\+Data}} {\bfseries Instance}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_level_data}{Level\+Data}}}
+\begin{DoxyCompactItemize}
+\item 
+Navigation\+Region2D {\bfseries Global\+Navigation\+Mesh}
+\item 
+\mbox{\hyperlink{class_menus_1_1_pause_menu}{Pause\+Menu}} {\bfseries Pause\+Menu}
+\item 
+Thread {\bfseries Resource\+Load\+Thread}
+\item 
+Thread {\bfseries Scene\+Load\+Thread}
+\item 
+Dictionary$<$ CSteam\+ID, \mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}} $>$ {\bfseries Players} = null
+\item 
+Packed\+Scene {\bfseries Player\+Scene} = null
+\item 
+Node {\bfseries Player\+List} = null
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_level_data}{Level\+Data}}}
+\begin{DoxyCompactItemize}
+\item 
+static readonly string\mbox{[}$\,$\mbox{]} {\bfseries Death\+Quotes}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_multiplayer_1_1_multiplayer_data_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_multiplayer_1_1_multiplayer_data_a0f4d02696e754dca51d62d6591c4d63f}\index{Multiplayer.MultiplayerData@{Multiplayer.MultiplayerData}!OnPlayerJoined@{OnPlayerJoined}}
+\index{OnPlayerJoined@{OnPlayerJoined}!Multiplayer.MultiplayerData@{Multiplayer.MultiplayerData}}
+\doxysubsubsection{\texorpdfstring{OnPlayerJoined()}{OnPlayerJoined()}}
+{\footnotesize\ttfamily \label{class_multiplayer_1_1_multiplayer_data_a0f4d02696e754dca51d62d6591c4d63f} 
+override void Multiplayer.\+Multiplayer\+Data.\+On\+Player\+Joined (\begin{DoxyParamCaption}\item[{ulong}]{steam\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_level_data}{Level\+Data}}.
+
+\Hypertarget{class_multiplayer_1_1_multiplayer_data_aa96e0e651e5d5075a0f8c5be42f6ade9}\index{Multiplayer.MultiplayerData@{Multiplayer.MultiplayerData}!OnPlayerLeft@{OnPlayerLeft}}
+\index{OnPlayerLeft@{OnPlayerLeft}!Multiplayer.MultiplayerData@{Multiplayer.MultiplayerData}}
+\doxysubsubsection{\texorpdfstring{OnPlayerLeft()}{OnPlayerLeft()}}
+{\footnotesize\ttfamily \label{class_multiplayer_1_1_multiplayer_data_aa96e0e651e5d5075a0f8c5be42f6ade9} 
+override void Multiplayer.\+Multiplayer\+Data.\+On\+Player\+Left (\begin{DoxyParamCaption}\item[{ulong}]{steam\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_level_data}{Level\+Data}}.
+
+\Hypertarget{class_multiplayer_1_1_multiplayer_data_a37d87525753816303d4cf8f28a68fa6f}\index{Multiplayer.MultiplayerData@{Multiplayer.MultiplayerData}!OnResourcesFinishedLoading@{OnResourcesFinishedLoading}}
+\index{OnResourcesFinishedLoading@{OnResourcesFinishedLoading}!Multiplayer.MultiplayerData@{Multiplayer.MultiplayerData}}
+\doxysubsubsection{\texorpdfstring{OnResourcesFinishedLoading()}{OnResourcesFinishedLoading()}}
+{\footnotesize\ttfamily \label{class_multiplayer_1_1_multiplayer_data_a37d87525753816303d4cf8f28a68fa6f} 
+override void Multiplayer.\+Multiplayer\+Data.\+On\+Resources\+Finished\+Loading (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_level_data}{Level\+Data}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/multiplayer/Multiplayer\+Data.\+cs\end{DoxyCompactItemize}

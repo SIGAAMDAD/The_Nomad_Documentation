@@ -1,0 +1,91 @@
+\doxysection{Util.\+CVar\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Struct Template Reference}
+\hypertarget{struct_util_1_1_c_var-1-g}{}\label{struct_util_1_1_c_var-1-g}\index{Util.CVar$<$ T $>$@{Util.CVar$<$ T $>$}}
+
+
+Literally just a Quake 3/\+UE5 style CVar but without the copyright issues. A configurable variable that can be set from the console and settings.\+ini.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_util_1_1_c_var-1-g_a24093bac2d31023dacbf9e43d64d2ff6}{CVar}} (string name, T value, string description="{}"{}, float min=0.\+0f, float max=0.\+0f)
+\begin{DoxyCompactList}\small\item\em Constructs a cvar. \end{DoxyCompactList}\item 
+\Hypertarget{struct_util_1_1_c_var-1-g_af0618d4074b9845bf0b9444303fb5cca}\label{struct_util_1_1_c_var-1-g_af0618d4074b9845bf0b9444303fb5cca} 
+void {\bfseries Reset} ()
+\item 
+void \mbox{\hyperlink{struct_util_1_1_c_var-1-g_ae730949b9792d8101cf62d433677bf05}{Set}} (T new\+Value)
+\begin{DoxyCompactList}\small\item\em Sets the cvar\textquotesingle{}s value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{struct_util_1_1_c_var-1-g_aaa7868e96f4e72dcfc37d751e88ec2fe}\label{struct_util_1_1_c_var-1-g_aaa7868e96f4e72dcfc37d751e88ec2fe} 
+readonly string {\bfseries Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{struct_util_1_1_c_var-1-g_abc0e69cc530542f784bb342118ff3ebe}\label{struct_util_1_1_c_var-1-g_abc0e69cc530542f784bb342118ff3ebe} 
+readonly string {\bfseries Description}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{struct_util_1_1_c_var-1-g_a91e9ac7758021332b52eab529f966586}\label{struct_util_1_1_c_var-1-g_a91e9ac7758021332b52eab529f966586} 
+readonly float {\bfseries Min}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{struct_util_1_1_c_var-1-g_a1c5ee8c2b0895880c6c619800dc8b4cd}\label{struct_util_1_1_c_var-1-g_a1c5ee8c2b0895880c6c619800dc8b4cd} 
+readonly float {\bfseries Max}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{struct_util_1_1_c_var-1-g_a8f09a5fd16cce497e38c8ebc9aba46cd}\label{struct_util_1_1_c_var-1-g_a8f09a5fd16cce497e38c8ebc9aba46cd} 
+T {\bfseries Value}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Literally just a Quake 3/\+UE5 style CVar but without the copyright issues. A configurable variable that can be set from the console and settings.\+ini. 
+
+\label{doc-func-members}
+\Hypertarget{struct_util_1_1_c_var-1-g_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_util_1_1_c_var-1-g_a24093bac2d31023dacbf9e43d64d2ff6}\index{Util.CVar$<$ T $>$@{Util.CVar$<$ T $>$}!CVar@{CVar}}
+\index{CVar@{CVar}!Util.CVar$<$ T $>$@{Util.CVar$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CVar()}{CVar()}}
+{\footnotesize\ttfamily \label{struct_util_1_1_c_var-1-g_a24093bac2d31023dacbf9e43d64d2ff6} 
+Util.\+CVar$<$ T $>$.CVar (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{T}]{value}{, }\item[{string}]{description}{ = {\ttfamily "{}"{}}, }\item[{float}]{min}{ = {\ttfamily 0\+:\+:0f}, }\item[{float}]{max}{ = {\ttfamily 0\+:\+:0f}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a cvar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+{\em value} & \\
+\hline
+{\em description} & \\
+\hline
+{\em min} & \\
+\hline
+{\em max} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if {\itshape name}  is invalid as a CVar name\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{struct_util_1_1_c_var-1-g_ae730949b9792d8101cf62d433677bf05}\index{Util.CVar$<$ T $>$@{Util.CVar$<$ T $>$}!Set@{Set}}
+\index{Set@{Set}!Util.CVar$<$ T $>$@{Util.CVar$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Set()}{Set()}}
+{\footnotesize\ttfamily \label{struct_util_1_1_c_var-1-g_ae730949b9792d8101cf62d433677bf05} 
+void Util.\+CVar$<$ T $>$.Set (\begin{DoxyParamCaption}\item[{T}]{new\+Value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the cvar\textquotesingle{}s value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Value} & The value to set the cvar to\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/\+Util/CVar.\+cs\end{DoxyCompactItemize}

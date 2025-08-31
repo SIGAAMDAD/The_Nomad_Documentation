@@ -1,0 +1,93 @@
+\doxysection{Interactables.\+Item\+Pickup Class Reference}
+\hypertarget{class_interactables_1_1_item_pickup}{}\label{class_interactables_1_1_item_pickup}\index{Interactables.ItemPickup@{Interactables.ItemPickup}}
+
+
+wrapper class for item pickup interactables, static, and will automatically free from the tree when used  
+
+
+Inheritance diagram for Interactables.\+Item\+Pickup\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_interactables_1_1_item_pickup}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_interactables_1_1_item_pickup_ad86dd91523e40dc2fe3aab3bfcb5efe4}\label{class_interactables_1_1_item_pickup_ad86dd91523e40dc2fe3aab3bfcb5efe4} 
+void {\bfseries Save} ()
+\item 
+\Hypertarget{class_interactables_1_1_item_pickup_ab82df76c9eb7f1c13e2ea99d145fabc9}\label{class_interactables_1_1_item_pickup_ab82df76c9eb7f1c13e2ea99d145fabc9} 
+override void {\bfseries \+\_\+\+Ready} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_interaction_item}{Interaction\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+override void {\bfseries \+\_\+\+Ready} ()
+\begin{DoxyCompactList}\small\item\em godot initialization override \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_interactables_1_1_item_pickup_aac2b670f373da58b71342ea36f7d5ff2}{On\+Interaction\+Area\+Body2\+DEntered}} (Rid body\+RID, Node2D body, int body\+Shape\+Index, int local\+Shape\+Index)
+\item 
+override void \mbox{\hyperlink{class_interactables_1_1_item_pickup_a23d1a699534eab75d12c4ebcc697883d}{On\+Interaction\+Area\+Body2\+DExited}} (Rid body\+RID, Node2D body, int body\+Shape\+Index, int local\+Shape\+Index)
+\item 
+\Hypertarget{class_interactables_1_1_item_pickup_a368959058153ebd7e7ac54e835c3fe07}\label{class_interactables_1_1_item_pickup_a368959058153ebd7e7ac54e835c3fe07} 
+void {\bfseries Create\+Sprite} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_interactables_1_1_item_pickup_a1b5ca5fdec020f1b7b382b8c32cb42fe}\label{class_interactables_1_1_item_pickup_a1b5ca5fdec020f1b7b382b8c32cb42fe} 
+Sprite2D? {\bfseries Icon}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_interactables_1_1_item_pickup_a8750261f87d331d7415fa96b01298730}\label{class_interactables_1_1_item_pickup_a8750261f87d331d7415fa96b01298730} 
+Resource {\bfseries Data}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_interactables_1_1_item_pickup_a5a71ce9bb47bb8fb8744995fd170c7a4}\label{class_interactables_1_1_item_pickup_a5a71ce9bb47bb8fb8744995fd170c7a4} 
+int {\bfseries Amount} = -\/1\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_interactables_1_1_item_pickup_a09a4b9c66a570d6cf9f4f97aee7b92c6}\label{class_interactables_1_1_item_pickup_a09a4b9c66a570d6cf9f4f97aee7b92c6} 
+override Interaction\+Type {\bfseries Interaction\+Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_interaction_item}{Interaction\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+Interaction\+Type {\bfseries Interaction\+Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+wrapper class for item pickup interactables, static, and will automatically free from the tree when used 
+
+\label{doc-func-members}
+\Hypertarget{class_interactables_1_1_item_pickup_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_interactables_1_1_item_pickup_aac2b670f373da58b71342ea36f7d5ff2}\index{Interactables.ItemPickup@{Interactables.ItemPickup}!OnInteractionAreaBody2DEntered@{OnInteractionAreaBody2DEntered}}
+\index{OnInteractionAreaBody2DEntered@{OnInteractionAreaBody2DEntered}!Interactables.ItemPickup@{Interactables.ItemPickup}}
+\doxysubsubsection{\texorpdfstring{OnInteractionAreaBody2DEntered()}{OnInteractionAreaBody2DEntered()}}
+{\footnotesize\ttfamily \label{class_interactables_1_1_item_pickup_aac2b670f373da58b71342ea36f7d5ff2} 
+override void Interactables.\+Item\+Pickup.\+On\+Interaction\+Area\+Body2\+DEntered (\begin{DoxyParamCaption}\item[{Rid}]{body\+RID}{, }\item[{Node2D}]{body}{, }\item[{int}]{body\+Shape\+Index}{, }\item[{int}]{local\+Shape\+Index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interaction_item}{Interaction\+Item}}.
+
+\Hypertarget{class_interactables_1_1_item_pickup_a23d1a699534eab75d12c4ebcc697883d}\index{Interactables.ItemPickup@{Interactables.ItemPickup}!OnInteractionAreaBody2DExited@{OnInteractionAreaBody2DExited}}
+\index{OnInteractionAreaBody2DExited@{OnInteractionAreaBody2DExited}!Interactables.ItemPickup@{Interactables.ItemPickup}}
+\doxysubsubsection{\texorpdfstring{OnInteractionAreaBody2DExited()}{OnInteractionAreaBody2DExited()}}
+{\footnotesize\ttfamily \label{class_interactables_1_1_item_pickup_a23d1a699534eab75d12c4ebcc697883d} 
+override void Interactables.\+Item\+Pickup.\+On\+Interaction\+Area\+Body2\+DExited (\begin{DoxyParamCaption}\item[{Rid}]{body\+RID}{, }\item[{Node2D}]{body}{, }\item[{int}]{body\+Shape\+Index}{, }\item[{int}]{local\+Shape\+Index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interaction_item}{Interaction\+Item}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/\+Interactables/Item\+Pickup.\+cs\end{DoxyCompactItemize}

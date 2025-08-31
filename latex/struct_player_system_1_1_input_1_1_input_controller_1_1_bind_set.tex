@@ -1,0 +1,55 @@
+\doxysection{Player\+System.\+Input.\+Input\+Controller.\+Bind\+Set Struct Reference}
+\hypertarget{struct_player_system_1_1_input_1_1_input_controller_1_1_bind_set}{}\label{struct_player_system_1_1_input_1_1_input_controller_1_1_bind_set}\index{PlayerSystem.Input.InputController.BindSet@{PlayerSystem.Input.InputController.BindSet}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_player_system_1_1_input_1_1_input_controller_1_1_bind_set_afdfe93f99e6c79587b83d8c2df677587}{Bind\+Set}} (string mapping\+Context\+Path, bool is\+Controller=false, int input\+Device\+Index=-\/1)
+\begin{DoxyCompactList}\small\item\em Initializes a new {\ttfamily \doxylink{struct_player_system_1_1_input_1_1_input_controller_1_1_bind_set}{Bind\+Set}} by loading the specified input mapping context and associated control binds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{struct_player_system_1_1_input_1_1_input_controller_1_1_bind_set_af586273e8c24cbcd642dc684e3807bdc}\label{struct_player_system_1_1_input_1_1_input_controller_1_1_bind_set_af586273e8c24cbcd642dc684e3807bdc} 
+readonly? Resource {\bfseries Mapping\+Context} = null
+\item 
+\Hypertarget{struct_player_system_1_1_input_1_1_input_controller_1_1_bind_set_a77910c42e766abc0cf819f003836b084}\label{struct_player_system_1_1_input_1_1_input_controller_1_1_bind_set_a77910c42e766abc0cf819f003836b084} 
+readonly? string {\bfseries Name} = null
+\item 
+\Hypertarget{struct_player_system_1_1_input_1_1_input_controller_1_1_bind_set_af74adfb4d2b0e7e946702d487e54f38b}\label{struct_player_system_1_1_input_1_1_input_controller_1_1_bind_set_af74adfb4d2b0e7e946702d487e54f38b} 
+readonly? IRead\+Only\+Dictionary$<$ Control\+Bind, Resource $>$ {\bfseries Binds} = null
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{struct_player_system_1_1_input_1_1_input_controller_1_1_bind_set_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_player_system_1_1_input_1_1_input_controller_1_1_bind_set_afdfe93f99e6c79587b83d8c2df677587}\index{PlayerSystem.Input.InputController.BindSet@{PlayerSystem.Input.InputController.BindSet}!BindSet@{BindSet}}
+\index{BindSet@{BindSet}!PlayerSystem.Input.InputController.BindSet@{PlayerSystem.Input.InputController.BindSet}}
+\doxysubsubsection{\texorpdfstring{BindSet()}{BindSet()}}
+{\footnotesize\ttfamily \label{struct_player_system_1_1_input_1_1_input_controller_1_1_bind_set_afdfe93f99e6c79587b83d8c2df677587} 
+Player\+System.\+Input.\+Input\+Controller.\+Bind\+Set.\+Bind\+Set (\begin{DoxyParamCaption}\item[{string}]{mapping\+Context\+Path}{, }\item[{bool}]{is\+Controller}{ = {\ttfamily false}, }\item[{int}]{input\+Device\+Index}{ = {\ttfamily -\/1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes a new {\ttfamily \doxylink{struct_player_system_1_1_input_1_1_input_controller_1_1_bind_set}{Bind\+Set}} by loading the specified input mapping context and associated control binds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mapping\+Context\+Path} & The resource path to the input mapping context (e.\+g., "{}res\+://resources/binds/binds\+\_\+keyboard.\+tres"{}).\\
+\hline
+{\em is\+Controller} & Indicates whether the binds should be loaded for a gamepad/controller ({\ttfamily true}) or keyboard ({\ttfamily false}).\\
+\hline
+{\em input\+Device\+Index} & The index of the input device (used for gamepads; ignored for keyboard).\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if {\itshape mapping\+Context\+Path}  is null or empty.\\
+\hline
+{\em Exception} & Thrown if the mapping context or any action resource fails to load.\\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/\+Player\+System/\+Input/Input\+Controller.\+cs\end{DoxyCompactItemize}

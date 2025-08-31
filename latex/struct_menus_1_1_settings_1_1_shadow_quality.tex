@@ -1,0 +1,49 @@
+\doxysection{Menus.\+Settings.\+Shadow\+Quality Struct Reference}
+\hypertarget{struct_menus_1_1_settings_1_1_shadow_quality}{}\label{struct_menus_1_1_settings_1_1_shadow_quality}\index{Menus.Settings.ShadowQuality@{Menus.Settings.ShadowQuality}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{struct_menus_1_1_settings_1_1_shadow_quality_af056bdd3852331f6f107a38ef506239a}\label{struct_menus_1_1_settings_1_1_shadow_quality_af056bdd3852331f6f107a38ef506239a} 
+{\bfseries Shadow\+Quality} (int shadow\+Texture\+Size, bool tighter\+Shadow\+Caster\+Culling)
+\begin{DoxyCompactList}\small\item\em Initializes a \doxylink{struct_menus_1_1_settings_1_1_shadow_quality}{Settings.\+Shadow\+Quality} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{struct_menus_1_1_settings_1_1_shadow_quality_ac445d00e14dea8ed4c917d6ea9a5904c}\label{struct_menus_1_1_settings_1_1_shadow_quality_ac445d00e14dea8ed4c917d6ea9a5904c} 
+readonly int {\bfseries Shadow\+Texture\+Size}
+\item 
+\Hypertarget{struct_menus_1_1_settings_1_1_shadow_quality_a1b996103c8c02ffc4053c2033d3a6d07}\label{struct_menus_1_1_settings_1_1_shadow_quality_a1b996103c8c02ffc4053c2033d3a6d07} 
+readonly bool {\bfseries Tighter\+Shadow\+Caster\+Culling}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly? IRead\+Only\+Dictionary$<$ global\+::\+Shadow\+Quality, \mbox{\hyperlink{struct_menus_1_1_settings_1_1_shadow_quality}{Shadow\+Quality}} $>$ \mbox{\hyperlink{struct_menus_1_1_settings_1_1_shadow_quality_ad5835cf2d43df7eb1de85dee03b90f34}{Data\+Table}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-variable-members}
+\Hypertarget{struct_menus_1_1_settings_1_1_shadow_quality_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_menus_1_1_settings_1_1_shadow_quality_ad5835cf2d43df7eb1de85dee03b90f34}\index{Menus.Settings.ShadowQuality@{Menus.Settings.ShadowQuality}!DataTable@{DataTable}}
+\index{DataTable@{DataTable}!Menus.Settings.ShadowQuality@{Menus.Settings.ShadowQuality}}
+\doxysubsubsection{\texorpdfstring{DataTable}{DataTable}}
+{\footnotesize\ttfamily \label{struct_menus_1_1_settings_1_1_shadow_quality_ad5835cf2d43df7eb1de85dee03b90f34} 
+readonly? IRead\+Only\+Dictionary$<$global.\+Shadow\+Quality, \mbox{\hyperlink{struct_menus_1_1_settings_1_1_shadow_quality}{Shadow\+Quality}}$>$ Menus.\+Settings.\+Shadow\+Quality.\+Data\+Table\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{new}\ Dictionary<global::ShadowQuality,\ ShadowQuality>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \{\ global::ShadowQuality.Off,\ \textcolor{keyword}{new}\ \mbox{\hyperlink{struct_menus_1_1_settings_1_1_shadow_quality_af056bdd3852331f6f107a38ef506239a}{ShadowQuality}}(\ 0,\ \textcolor{keyword}{true}\ )\ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \{\ global::ShadowQuality.Low,\ \textcolor{keyword}{new}\ \mbox{\hyperlink{struct_menus_1_1_settings_1_1_shadow_quality_af056bdd3852331f6f107a38ef506239a}{ShadowQuality}}(\ 2048,\ \textcolor{keyword}{true}\ )\ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \{\ global::ShadowQuality.Medium,\ \textcolor{keyword}{new}\ \mbox{\hyperlink{struct_menus_1_1_settings_1_1_shadow_quality}{ShadowQuality}}(\ 4096,\ \textcolor{keyword}{false}\ )\ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \{\ global::ShadowQuality.High,\ \textcolor{keyword}{new}\ ShadowQuality(\ 8192,\ \textcolor{keyword}{false}\ )\ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \{\ global::ShadowQuality.Ultra,\ \textcolor{keyword}{new}\ ShadowQuality(\ 12288,\ \textcolor{keyword}{false}\ )\ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/menus/\+Settings/Shadow\+Quality.\+cs\end{DoxyCompactItemize}

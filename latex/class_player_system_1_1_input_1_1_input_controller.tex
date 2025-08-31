@@ -1,0 +1,146 @@
+\doxysection{Player\+System.\+Input.\+Input\+Controller Class Reference}
+\hypertarget{class_player_system_1_1_input_1_1_input_controller}{}\label{class_player_system_1_1_input_1_1_input_controller}\index{PlayerSystem.Input.InputController@{PlayerSystem.Input.InputController}}
+
+
+Manages player input through GUIDE (Godot Unified \doxylink{namespace_player_system_1_1_input}{Input} Detection Engine)  
+
+
+Inheritance diagram for Player\+System.\+Input.\+Input\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_player_system_1_1_input_1_1_input_controller}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_player_system_1_1_input_1_1_input_controller_1_1_bind_action_event}{Bind\+Action\+Event}}
+\item 
+struct \mbox{\hyperlink{struct_player_system_1_1_input_1_1_input_controller_1_1_bind_set}{Bind\+Set}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_player_system_1_1_input_1_1_input_controller_aa09b5cda21a91ec4d2b21f328a8fe9d3}\label{class_player_system_1_1_input_1_1_input_controller_aa09b5cda21a91ec4d2b21f328a8fe9d3} 
+enum {\bfseries Control\+Bind} \+: uint \{ \newline
+{\bfseries Move}
+, {\bfseries Dash}
+, {\bfseries Slide}
+, {\bfseries Melee}
+, \newline
+{\bfseries Reload}
+, {\bfseries Use\+Weapon}
+, {\bfseries Use\+Gadget}
+, {\bfseries Interact}
+, \newline
+{\bfseries Bullet\+Time}
+, {\bfseries Switch\+Weapon\+Mode}
+, {\bfseries Prev\+Weapon}
+, {\bfseries Next\+Weapon}
+, \newline
+{\bfseries Count}
+ \}
+\item 
+\Hypertarget{class_player_system_1_1_input_1_1_input_controller_a92aa3fc521ab6eb673b431a4b79f227c}\label{class_player_system_1_1_input_1_1_input_controller_a92aa3fc521ab6eb673b431a4b79f227c} 
+enum {\bfseries Bind\+Mapping} \+: uint \{ \newline
+{\bfseries Keyboard}
+, {\bfseries Gamepad0}
+, {\bfseries Gamepad1}
+, {\bfseries Gamepad2}
+, \newline
+{\bfseries Gamepad3}
+, {\bfseries Count}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_system_1_1_input_1_1_input_controller_ac58936fbe79e76b0d1269d1391b7513e}{Input\+Controller}} (\mbox{\hyperlink{class_player}{Player}} owner)
+\begin{DoxyCompactList}\small\item\em Initializes input binds and control scheme. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_system_1_1_input_1_1_input_controller_a6852f7989427fe2ed2ed1a5468d6b630}\label{class_player_system_1_1_input_1_1_input_controller_a6852f7989427fe2ed2ed1a5468d6b630} 
+void {\bfseries Dispose} ()
+\item 
+Resource? \mbox{\hyperlink{class_player_system_1_1_input_1_1_input_controller_aea85393e8c26eb7c4403afe09fff1ec1}{Get\+Bind\+Action\+Resource}} (Control\+Bind bind)
+\item 
+void \mbox{\hyperlink{class_player_system_1_1_input_1_1_input_controller_aa0602cfe031e530bde14ddbe6aaf6bb2}{Set\+Bind\+Action}} (Control\+Bind bind, GUIDEAction\+Signal signal, Input\+Action action)
+\begin{DoxyCompactList}\small\item\em Binds a Input\+Action callback to a specific GUIDE signal. This is meant to abstract the process of input device differentiation away and provide a simple interface to bind actions instead of raw input values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_player_system_1_1_input_1_1_input_controller_af79d6f7595bdb8cb14588a6ee0a1f49e}\label{class_player_system_1_1_input_1_1_input_controller_af79d6f7595bdb8cb14588a6ee0a1f49e} 
+IRead\+Only\+Dictionary$<$ Bind\+Mapping, \mbox{\hyperlink{struct_player_system_1_1_input_1_1_input_controller_1_1_bind_set}{Bind\+Set}} $>$? {\bfseries Bindings} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The input bindings for various input device types. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_system_1_1_input_1_1_input_controller_ac856b01ddd0f8c882562650228ba8b59}\label{class_player_system_1_1_input_1_1_input_controller_ac856b01ddd0f8c882562650228ba8b59} 
+\mbox{\hyperlink{struct_player_system_1_1_input_1_1_input_controller_1_1_bind_set}{Bind\+Set}}? {\bfseries Current\+Bind\+Set} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages player input through GUIDE (Godot Unified \doxylink{namespace_player_system_1_1_input}{Input} Detection Engine) 
+
+\label{doc-constructors}
+\Hypertarget{class_player_system_1_1_input_1_1_input_controller_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_player_system_1_1_input_1_1_input_controller_ac58936fbe79e76b0d1269d1391b7513e}\index{PlayerSystem.Input.InputController@{PlayerSystem.Input.InputController}!InputController@{InputController}}
+\index{InputController@{InputController}!PlayerSystem.Input.InputController@{PlayerSystem.Input.InputController}}
+\doxysubsubsection{\texorpdfstring{InputController()}{InputController()}}
+{\footnotesize\ttfamily \label{class_player_system_1_1_input_1_1_input_controller_ac58936fbe79e76b0d1269d1391b7513e} 
+Player\+System.\+Input.\+Input\+Controller.\+Input\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}}]{owner}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes input binds and control scheme. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em owner} & The owning \doxylink{class_player}{Player} object\\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_player_system_1_1_input_1_1_input_controller_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_player_system_1_1_input_1_1_input_controller_aea85393e8c26eb7c4403afe09fff1ec1}\index{PlayerSystem.Input.InputController@{PlayerSystem.Input.InputController}!GetBindActionResource@{GetBindActionResource}}
+\index{GetBindActionResource@{GetBindActionResource}!PlayerSystem.Input.InputController@{PlayerSystem.Input.InputController}}
+\doxysubsubsection{\texorpdfstring{GetBindActionResource()}{GetBindActionResource()}}
+{\footnotesize\ttfamily \label{class_player_system_1_1_input_1_1_input_controller_aea85393e8c26eb7c4403afe09fff1ec1} 
+Resource? Player\+System.\+Input.\+Input\+Controller.\+Get\+Bind\+Action\+Resource (\begin{DoxyParamCaption}\item[{Control\+Bind}]{bind}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em bind} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Out\+Of\+Range\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_player_system_1_1_input_1_1_input_controller_aa0602cfe031e530bde14ddbe6aaf6bb2}\index{PlayerSystem.Input.InputController@{PlayerSystem.Input.InputController}!SetBindAction@{SetBindAction}}
+\index{SetBindAction@{SetBindAction}!PlayerSystem.Input.InputController@{PlayerSystem.Input.InputController}}
+\doxysubsubsection{\texorpdfstring{SetBindAction()}{SetBindAction()}}
+{\footnotesize\ttfamily \label{class_player_system_1_1_input_1_1_input_controller_aa0602cfe031e530bde14ddbe6aaf6bb2} 
+void Player\+System.\+Input.\+Input\+Controller.\+Set\+Bind\+Action (\begin{DoxyParamCaption}\item[{Control\+Bind}]{bind}{, }\item[{GUIDEAction\+Signal}]{signal}{, }\item[{Input\+Action}]{action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Binds a Input\+Action callback to a specific GUIDE signal. This is meant to abstract the process of input device differentiation away and provide a simple interface to bind actions instead of raw input values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bind} & The control to bind to\\
+\hline
+{\em signal} & The GUIDEAction signal to connect to\\
+\hline
+{\em action} & The control\textquotesingle{}s signal callback\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/\+Player\+System/\+Input/Input\+Controller.\+cs\end{DoxyCompactItemize}

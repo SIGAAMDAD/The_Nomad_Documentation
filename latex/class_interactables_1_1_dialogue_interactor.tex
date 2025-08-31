@@ -1,0 +1,85 @@
+\doxysection{Interactables.\+Dialogue\+Interactor Class Reference}
+\hypertarget{class_interactables_1_1_dialogue_interactor}{}\label{class_interactables_1_1_dialogue_interactor}\index{Interactables.DialogueInteractor@{Interactables.DialogueInteractor}}
+Inheritance diagram for Interactables.\+Dialogue\+Interactor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_interactables_1_1_dialogue_interactor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_interactables_1_1_dialogue_interactor_a4e50741de23a94c7d8e1c319036b0381}\label{class_interactables_1_1_dialogue_interactor_a4e50741de23a94c7d8e1c319036b0381} 
+delegate void {\bfseries Dialogue\+Option\+Selected\+Event\+Handler} (int n\+Option\+Selected)
+\item 
+\Hypertarget{class_interactables_1_1_dialogue_interactor_acecb87ae6cf55c562238818b91070da7}\label{class_interactables_1_1_dialogue_interactor_acecb87ae6cf55c562238818b91070da7} 
+delegate void {\bfseries Begin\+Dialogue\+Event\+Handler} ()
+\item 
+\Hypertarget{class_interactables_1_1_dialogue_interactor_a6a78a3947f20e9d56d81f7a5ddffb3d9}\label{class_interactables_1_1_dialogue_interactor_a6a78a3947f20e9d56d81f7a5ddffb3d9} 
+delegate void {\bfseries End\+Dialogue\+Event\+Handler} ()
+\item 
+\Hypertarget{class_interactables_1_1_dialogue_interactor_ab5a42851a8b31330c5e3eb8ed9164041}\label{class_interactables_1_1_dialogue_interactor_ab5a42851a8b31330c5e3eb8ed9164041} 
+void {\bfseries Remove\+Dialogue\+Option} (String\+Name option\+Name)
+\item 
+\Hypertarget{class_interactables_1_1_dialogue_interactor_a1cc7ffd9101bc4c6c7a6f26e900deabf}\label{class_interactables_1_1_dialogue_interactor_a1cc7ffd9101bc4c6c7a6f26e900deabf} 
+void {\bfseries Add\+Dialogue\+Option} (String\+Name option\+Name)
+\item 
+\Hypertarget{class_interactables_1_1_dialogue_interactor_a2e1b20ed05686bd48502d99bd637373a}\label{class_interactables_1_1_dialogue_interactor_a2e1b20ed05686bd48502d99bd637373a} 
+override void {\bfseries \+\_\+\+Ready} ()
+\begin{DoxyCompactList}\small\item\em godot initialization override \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_interaction_item}{Interaction\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+override void {\bfseries \+\_\+\+Ready} ()
+\begin{DoxyCompactList}\small\item\em godot initialization override \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_interactables_1_1_dialogue_interactor_a8ec7f1815ed6e5f18799f79ae7b56138}{On\+Interaction\+Area\+Body2\+DEntered}} (Rid body\+RID, Node2D body, int body\+Shape\+Index, int local\+Shape\+Index)
+\item 
+override void \mbox{\hyperlink{class_interactables_1_1_dialogue_interactor_a8ec8028ab7b0e1330316b43be2b73114}{On\+Interaction\+Area\+Body2\+DExited}} (Rid body\+RID, Node2D body, int body\+Shape\+Index, int local\+Shape\+Index)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_interactables_1_1_dialogue_interactor_a4bfe629d2a721a28684cf3eea5e03a58}\label{class_interactables_1_1_dialogue_interactor_a4bfe629d2a721a28684cf3eea5e03a58} 
+Resource {\bfseries Dialogue\+Resource}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_interactables_1_1_dialogue_interactor_a9a98acffe384c24f19f115b66881c48f}\label{class_interactables_1_1_dialogue_interactor_a9a98acffe384c24f19f115b66881c48f} 
+override Interaction\+Type {\bfseries Interaction\+Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_interaction_item}{Interaction\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+Interaction\+Type {\bfseries Interaction\+Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_interactables_1_1_dialogue_interactor_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_interactables_1_1_dialogue_interactor_a8ec7f1815ed6e5f18799f79ae7b56138}\index{Interactables.DialogueInteractor@{Interactables.DialogueInteractor}!OnInteractionAreaBody2DEntered@{OnInteractionAreaBody2DEntered}}
+\index{OnInteractionAreaBody2DEntered@{OnInteractionAreaBody2DEntered}!Interactables.DialogueInteractor@{Interactables.DialogueInteractor}}
+\doxysubsubsection{\texorpdfstring{OnInteractionAreaBody2DEntered()}{OnInteractionAreaBody2DEntered()}}
+{\footnotesize\ttfamily \label{class_interactables_1_1_dialogue_interactor_a8ec7f1815ed6e5f18799f79ae7b56138} 
+override void Interactables.\+Dialogue\+Interactor.\+On\+Interaction\+Area\+Body2\+DEntered (\begin{DoxyParamCaption}\item[{Rid}]{body\+RID}{, }\item[{Node2D}]{body}{, }\item[{int}]{body\+Shape\+Index}{, }\item[{int}]{local\+Shape\+Index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interaction_item}{Interaction\+Item}}.
+
+\Hypertarget{class_interactables_1_1_dialogue_interactor_a8ec8028ab7b0e1330316b43be2b73114}\index{Interactables.DialogueInteractor@{Interactables.DialogueInteractor}!OnInteractionAreaBody2DExited@{OnInteractionAreaBody2DExited}}
+\index{OnInteractionAreaBody2DExited@{OnInteractionAreaBody2DExited}!Interactables.DialogueInteractor@{Interactables.DialogueInteractor}}
+\doxysubsubsection{\texorpdfstring{OnInteractionAreaBody2DExited()}{OnInteractionAreaBody2DExited()}}
+{\footnotesize\ttfamily \label{class_interactables_1_1_dialogue_interactor_a8ec8028ab7b0e1330316b43be2b73114} 
+override void Interactables.\+Dialogue\+Interactor.\+On\+Interaction\+Area\+Body2\+DExited (\begin{DoxyParamCaption}\item[{Rid}]{body\+RID}{, }\item[{Node2D}]{body}{, }\item[{int}]{body\+Shape\+Index}{, }\item[{int}]{local\+Shape\+Index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interaction_item}{Interaction\+Item}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/\+Interactables/Dialogue\+Interactor.\+cs\end{DoxyCompactItemize}

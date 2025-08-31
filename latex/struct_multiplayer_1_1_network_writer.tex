@@ -1,0 +1,316 @@
+\doxysection{Multiplayer.\+Network\+Writer Struct Reference}
+\hypertarget{struct_multiplayer_1_1_network_writer}{}\label{struct_multiplayer_1_1_network_writer}\index{Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}}
+
+
+A struct meant for writing to a network stream.  
+
+
+Inheritance diagram for Multiplayer.\+Network\+Writer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_multiplayer_1_1_network_writer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_multiplayer_1_1_network_writer_a2d0c39f2c978f1f7db73e5b02cb1cd57}{Network\+Writer}} (int packet\+Size, int send\+Type)
+\begin{DoxyCompactList}\small\item\em The base constructor for a \doxylink{struct_multiplayer_1_1_network_writer}{Network\+Writer}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_multiplayer_1_1_network_writer_a3ab7f2157cd4b1d8e541d7c6b26b5d7d}{Dispose}} ()
+\begin{DoxyCompactList}\small\item\em Returns the Memory\+Stream\textquotesingle{}s buffer to the shared Array\+Pool and sends the packet. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_multiplayer_1_1_network_writer_aead36c35f45df479234384d775041e9c}{Write\+Vector2}} (Godot.\+Vector2 value)
+\begin{DoxyCompactList}\small\item\em Write a Godot.\+Vector2 to the network stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_multiplayer_1_1_network_writer_acdf5814e9dbc1b148774f68b31461cf1}{Write\+UInt8}} (byte value)
+\begin{DoxyCompactList}\small\item\em Writes an 8-\/bit integer to the network stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_multiplayer_1_1_network_writer_a546907cdbbe031c2d5c0bda5fdea243a}{Write\+UInt16}} (ushort value)
+\begin{DoxyCompactList}\small\item\em Writes a 16-\/bit integer to the network stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_multiplayer_1_1_network_writer_a8bdc727307ee89d3e72299ac1c82f53b}{Write\+UInt32}} (uint value)
+\begin{DoxyCompactList}\small\item\em Writes a 32-\/bit integer to the network stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_multiplayer_1_1_network_writer_a87f51843caa8a2f6784de451e700d8ae}{Write\+ULong}} (ulong value)
+\begin{DoxyCompactList}\small\item\em Writes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_multiplayer_1_1_network_writer_a002d1f09f3de0f1f4878da8ad6342f38}{Write}} (sbyte value)
+\begin{DoxyCompactList}\small\item\em Writes an 8-\/bit integer to the network stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_multiplayer_1_1_network_writer_a3ca2df5010a5802021539dca2829faa2}{Write\+Int16}} (short value)
+\begin{DoxyCompactList}\small\item\em Writes a 16-\/bit integer to the network stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_multiplayer_1_1_network_writer_ad361613e22f6840dd4bee71537c7976e}{Write\+Int32}} (int value)
+\begin{DoxyCompactList}\small\item\em Writes a 32-\/bit integer to the network stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_multiplayer_1_1_network_writer_a0bd8764a04a07a5c906dfc5a87785786}{Write\+Int64}} (long value)
+\begin{DoxyCompactList}\small\item\em Writes a 64-\/bit integer to the network stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_multiplayer_1_1_network_writer_a96a085b9eb6914dfe6624c4c48898269}{Write\+String}} (string value)
+\begin{DoxyCompactList}\small\item\em Writes a string to the network stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_multiplayer_1_1_network_writer_a72978f157825e717677c4e6e3ee4ecac}{Write\+Boolean}} (bool value)
+\begin{DoxyCompactList}\small\item\em Writes a boolean to the network stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_multiplayer_1_1_network_writer_a78c637574b871fe005a7485095355684}{Write\+Float}} (float value)
+\begin{DoxyCompactList}\small\item\em Writes a 32-\/bit floating point value to the network stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_multiplayer_1_1_network_writer_ac8bba6976c27cc080bc192dbc900065f}{Write\+Byte\+Array}} (byte\mbox{[}$\,$\mbox{]} value)
+\begin{DoxyCompactList}\small\item\em Writes a byte array to the network stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_multiplayer_1_1_network_writer_ae5181504e605e965d76b16ed0df7ed09}{Write\+Packed\+Int}} (int value)
+\begin{DoxyCompactList}\small\item\em Writes a 32-\/bit value as a 7-\/bit encoded/packed value to the network stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{struct_multiplayer_1_1_network_writer_ab54080e2a2cc7142bb3987ec060b1797}\label{struct_multiplayer_1_1_network_writer_ab54080e2a2cc7142bb3987ec060b1797} 
+static readonly int {\bfseries MAX\+\_\+\+PACKET\+\_\+\+SIZE} = 4096
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A struct meant for writing to a network stream. 
+
+\label{doc-constructors}
+\Hypertarget{struct_multiplayer_1_1_network_writer_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_multiplayer_1_1_network_writer_a2d0c39f2c978f1f7db73e5b02cb1cd57}\index{Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}!NetworkWriter@{NetworkWriter}}
+\index{NetworkWriter@{NetworkWriter}!Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}}
+\doxysubsubsection{\texorpdfstring{NetworkWriter()}{NetworkWriter()}}
+{\footnotesize\ttfamily \label{struct_multiplayer_1_1_network_writer_a2d0c39f2c978f1f7db73e5b02cb1cd57} 
+Multiplayer.\+Network\+Writer.\+Network\+Writer (\begin{DoxyParamCaption}\item[{int}]{packet\+Size}{, }\item[{int}]{send\+Type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The base constructor for a \doxylink{struct_multiplayer_1_1_network_writer}{Network\+Writer}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet\+Size} & The length in bytes of the packet to be sent over a connection\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Out\+Of\+Range\+Exception} & Thrown if {\itshape send\+Type}  is invalid, or if {\itshape packet\+Size}  is greater than 4 KiB\\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-func-members}
+\Hypertarget{struct_multiplayer_1_1_network_writer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_multiplayer_1_1_network_writer_a3ab7f2157cd4b1d8e541d7c6b26b5d7d}\index{Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily \label{struct_multiplayer_1_1_network_writer_a3ab7f2157cd4b1d8e541d7c6b26b5d7d} 
+void Multiplayer.\+Network\+Writer.\+Dispose (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the Memory\+Stream\textquotesingle{}s buffer to the shared Array\+Pool and sends the packet. 
+
+The packet is only sent if it\textquotesingle{}s been written to \Hypertarget{struct_multiplayer_1_1_network_writer_a002d1f09f3de0f1f4878da8ad6342f38}\index{Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}!Write@{Write}}
+\index{Write@{Write}!Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily \label{struct_multiplayer_1_1_network_writer_a002d1f09f3de0f1f4878da8ad6342f38} 
+void Multiplayer.\+Network\+Writer.\+Write (\begin{DoxyParamCaption}\item[{sbyte}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes an 8-\/bit integer to the network stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to write\\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_multiplayer_1_1_network_writer_a72978f157825e717677c4e6e3ee4ecac}\index{Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}!WriteBoolean@{WriteBoolean}}
+\index{WriteBoolean@{WriteBoolean}!Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}}
+\doxysubsubsection{\texorpdfstring{WriteBoolean()}{WriteBoolean()}}
+{\footnotesize\ttfamily \label{struct_multiplayer_1_1_network_writer_a72978f157825e717677c4e6e3ee4ecac} 
+void Multiplayer.\+Network\+Writer.\+Write\+Boolean (\begin{DoxyParamCaption}\item[{bool}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a boolean to the network stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to write\\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_multiplayer_1_1_network_writer_ac8bba6976c27cc080bc192dbc900065f}\index{Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}!WriteByteArray@{WriteByteArray}}
+\index{WriteByteArray@{WriteByteArray}!Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}}
+\doxysubsubsection{\texorpdfstring{WriteByteArray()}{WriteByteArray()}}
+{\footnotesize\ttfamily \label{struct_multiplayer_1_1_network_writer_ac8bba6976c27cc080bc192dbc900065f} 
+void Multiplayer.\+Network\+Writer.\+Write\+Byte\+Array (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a byte array to the network stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to write\\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_multiplayer_1_1_network_writer_a78c637574b871fe005a7485095355684}\index{Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}!WriteFloat@{WriteFloat}}
+\index{WriteFloat@{WriteFloat}!Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}}
+\doxysubsubsection{\texorpdfstring{WriteFloat()}{WriteFloat()}}
+{\footnotesize\ttfamily \label{struct_multiplayer_1_1_network_writer_a78c637574b871fe005a7485095355684} 
+void Multiplayer.\+Network\+Writer.\+Write\+Float (\begin{DoxyParamCaption}\item[{float}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a 32-\/bit floating point value to the network stream. 
+
+The 32-\/bit float will always be converted to a half (16-\/bit floating point) to reduce bandwidth usage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to write\\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_multiplayer_1_1_network_writer_a3ca2df5010a5802021539dca2829faa2}\index{Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}!WriteInt16@{WriteInt16}}
+\index{WriteInt16@{WriteInt16}!Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}}
+\doxysubsubsection{\texorpdfstring{WriteInt16()}{WriteInt16()}}
+{\footnotesize\ttfamily \label{struct_multiplayer_1_1_network_writer_a3ca2df5010a5802021539dca2829faa2} 
+void Multiplayer.\+Network\+Writer.\+Write\+Int16 (\begin{DoxyParamCaption}\item[{short}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a 16-\/bit integer to the network stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to write\\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_multiplayer_1_1_network_writer_ad361613e22f6840dd4bee71537c7976e}\index{Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}!WriteInt32@{WriteInt32}}
+\index{WriteInt32@{WriteInt32}!Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}}
+\doxysubsubsection{\texorpdfstring{WriteInt32()}{WriteInt32()}}
+{\footnotesize\ttfamily \label{struct_multiplayer_1_1_network_writer_ad361613e22f6840dd4bee71537c7976e} 
+void Multiplayer.\+Network\+Writer.\+Write\+Int32 (\begin{DoxyParamCaption}\item[{int}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a 32-\/bit integer to the network stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to write\\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_multiplayer_1_1_network_writer_a0bd8764a04a07a5c906dfc5a87785786}\index{Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}!WriteInt64@{WriteInt64}}
+\index{WriteInt64@{WriteInt64}!Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}}
+\doxysubsubsection{\texorpdfstring{WriteInt64()}{WriteInt64()}}
+{\footnotesize\ttfamily \label{struct_multiplayer_1_1_network_writer_a0bd8764a04a07a5c906dfc5a87785786} 
+void Multiplayer.\+Network\+Writer.\+Write\+Int64 (\begin{DoxyParamCaption}\item[{long}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a 64-\/bit integer to the network stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to write\\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_multiplayer_1_1_network_writer_ae5181504e605e965d76b16ed0df7ed09}\index{Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}!WritePackedInt@{WritePackedInt}}
+\index{WritePackedInt@{WritePackedInt}!Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}}
+\doxysubsubsection{\texorpdfstring{WritePackedInt()}{WritePackedInt()}}
+{\footnotesize\ttfamily \label{struct_multiplayer_1_1_network_writer_ae5181504e605e965d76b16ed0df7ed09} 
+void Multiplayer.\+Network\+Writer.\+Write\+Packed\+Int (\begin{DoxyParamCaption}\item[{int}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a 32-\/bit value as a 7-\/bit encoded/packed value to the network stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to write\\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_multiplayer_1_1_network_writer_a96a085b9eb6914dfe6624c4c48898269}\index{Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}!WriteString@{WriteString}}
+\index{WriteString@{WriteString}!Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}}
+\doxysubsubsection{\texorpdfstring{WriteString()}{WriteString()}}
+{\footnotesize\ttfamily \label{struct_multiplayer_1_1_network_writer_a96a085b9eb6914dfe6624c4c48898269} 
+void Multiplayer.\+Network\+Writer.\+Write\+String (\begin{DoxyParamCaption}\item[{string}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a string to the network stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to write\\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_multiplayer_1_1_network_writer_a546907cdbbe031c2d5c0bda5fdea243a}\index{Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}!WriteUInt16@{WriteUInt16}}
+\index{WriteUInt16@{WriteUInt16}!Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}}
+\doxysubsubsection{\texorpdfstring{WriteUInt16()}{WriteUInt16()}}
+{\footnotesize\ttfamily \label{struct_multiplayer_1_1_network_writer_a546907cdbbe031c2d5c0bda5fdea243a} 
+void Multiplayer.\+Network\+Writer.\+Write\+UInt16 (\begin{DoxyParamCaption}\item[{ushort}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a 16-\/bit integer to the network stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to write\\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_multiplayer_1_1_network_writer_a8bdc727307ee89d3e72299ac1c82f53b}\index{Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}!WriteUInt32@{WriteUInt32}}
+\index{WriteUInt32@{WriteUInt32}!Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}}
+\doxysubsubsection{\texorpdfstring{WriteUInt32()}{WriteUInt32()}}
+{\footnotesize\ttfamily \label{struct_multiplayer_1_1_network_writer_a8bdc727307ee89d3e72299ac1c82f53b} 
+void Multiplayer.\+Network\+Writer.\+Write\+UInt32 (\begin{DoxyParamCaption}\item[{uint}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes a 32-\/bit integer to the network stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to write\\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_multiplayer_1_1_network_writer_acdf5814e9dbc1b148774f68b31461cf1}\index{Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}!WriteUInt8@{WriteUInt8}}
+\index{WriteUInt8@{WriteUInt8}!Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}}
+\doxysubsubsection{\texorpdfstring{WriteUInt8()}{WriteUInt8()}}
+{\footnotesize\ttfamily \label{struct_multiplayer_1_1_network_writer_acdf5814e9dbc1b148774f68b31461cf1} 
+void Multiplayer.\+Network\+Writer.\+Write\+UInt8 (\begin{DoxyParamCaption}\item[{byte}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes an 8-\/bit integer to the network stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to write\\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_multiplayer_1_1_network_writer_a87f51843caa8a2f6784de451e700d8ae}\index{Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}!WriteULong@{WriteULong}}
+\index{WriteULong@{WriteULong}!Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}}
+\doxysubsubsection{\texorpdfstring{WriteULong()}{WriteULong()}}
+{\footnotesize\ttfamily \label{struct_multiplayer_1_1_network_writer_a87f51843caa8a2f6784de451e700d8ae} 
+void Multiplayer.\+Network\+Writer.\+Write\+ULong (\begin{DoxyParamCaption}\item[{ulong}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_multiplayer_1_1_network_writer_aead36c35f45df479234384d775041e9c}\index{Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}!WriteVector2@{WriteVector2}}
+\index{WriteVector2@{WriteVector2}!Multiplayer.NetworkWriter@{Multiplayer.NetworkWriter}}
+\doxysubsubsection{\texorpdfstring{WriteVector2()}{WriteVector2()}}
+{\footnotesize\ttfamily \label{struct_multiplayer_1_1_network_writer_aead36c35f45df479234384d775041e9c} 
+void Multiplayer.\+Network\+Writer.\+Write\+Vector2 (\begin{DoxyParamCaption}\item[{Godot.\+Vector2}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Write a Godot.\+Vector2 to the network stream. 
+
+Quantization occurs to reduce bandwitdth usage, the Vector2 is converted to a packed short (1 byte for each coordinate) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to write\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/multiplayer/Network\+Writer.\+cs\end{DoxyCompactItemize}
