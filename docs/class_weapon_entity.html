@@ -140,16 +140,6 @@ Public Types</h2></td></tr>
 &#160;&#160;<b>Invalid</b> = -1
 <br />
  }</td></tr>
-<tr class="memitem:aeafb6feb5d8d500b264ab3d9b3010008" id="r_aeafb6feb5d8d500b264ab3d9b3010008"><td class="memItemLeft" align="right" valign="top"><a id="aeafb6feb5d8d500b264ab3d9b3010008" name="aeafb6feb5d8d500b264ab3d9b3010008"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ShotgunBullshit</b> : uint { <br />
-&#160;&#160;<b>Flechette</b>
-, <b>Buckshot</b>
-, <b>Birdshot</b>
-, <b>Shrapnel</b>
-, <br />
-&#160;&#160;<b>Slug</b>
-, <b>None</b>
-<br />
- }</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -159,18 +149,20 @@ delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>ModeChangedE
 delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>ReloadedEventHandler</b> (<a class="el" href="class_weapon_entity.html">WeaponEntity</a> source)</td></tr>
 <tr class="memitem:a083f4150ae3297cc413ee274b623f98d" id="r_a083f4150ae3297cc413ee274b623f98d"><td class="memItemLeft" align="right" valign="top"><a id="a083f4150ae3297cc413ee274b623f98d" name="a083f4150ae3297cc413ee274b623f98d"></a>
 delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>UsedEventHandler</b> (<a class="el" href="class_weapon_entity.html">WeaponEntity</a> source)</td></tr>
-<tr class="memitem:af545539deade79ebc26238b2431b0873" id="r_af545539deade79ebc26238b2431b0873"><td class="memItemLeft" align="right" valign="top"><a id="af545539deade79ebc26238b2431b0873" name="af545539deade79ebc26238b2431b0873"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsBladed</b> ()</td></tr>
-<tr class="memitem:a42b475319cdfe718c7cba5dccf298305" id="r_a42b475319cdfe718c7cba5dccf298305"><td class="memItemLeft" align="right" valign="top"><a id="a42b475319cdfe718c7cba5dccf298305" name="a42b475319cdfe718c7cba5dccf298305"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsBlunt</b> ()</td></tr>
-<tr class="memitem:aad1dd23e2fc9f5490208cb2fd2c20070" id="r_aad1dd23e2fc9f5490208cb2fd2c20070"><td class="memItemLeft" align="right" valign="top"><a id="aad1dd23e2fc9f5490208cb2fd2c20070" name="aad1dd23e2fc9f5490208cb2fd2c20070"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsFirearm</b> ()</td></tr>
-<tr class="memitem:a7b1d474b5c1697482f684a063e8ecc2d" id="r_a7b1d474b5c1697482f684a063e8ecc2d"><td class="memItemLeft" align="right" valign="top"><a id="a7b1d474b5c1697482f684a063e8ecc2d" name="a7b1d474b5c1697482f684a063e8ecc2d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsOneHanded</b> ()</td></tr>
-<tr class="memitem:a876a6c66c87c374b08da1c39935ef5ac" id="r_a876a6c66c87c374b08da1c39935ef5ac"><td class="memItemLeft" align="right" valign="top"><a id="a876a6c66c87c374b08da1c39935ef5ac" name="a876a6c66c87c374b08da1c39935ef5ac"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsTwoHanded</b> ()</td></tr>
-<tr class="memitem:a3ba01da2bbb5f6362349c51900f09662" id="r_a3ba01da2bbb5f6362349c51900f09662"><td class="memItemLeft" align="right" valign="top"><a id="a3ba01da2bbb5f6362349c51900f09662" name="a3ba01da2bbb5f6362349c51900f09662"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAttackAngle</b> (float nAttackAngle)</td></tr>
+<tr class="memitem:af545539deade79ebc26238b2431b0873" id="r_af545539deade79ebc26238b2431b0873"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af545539deade79ebc26238b2431b0873">IsBladed</a> ()</td></tr>
+<tr class="memdesc:af545539deade79ebc26238b2431b0873"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a boolean value if the LastUsedMode was Properties.IsBladed  <br /></td></tr>
+<tr class="memitem:a42b475319cdfe718c7cba5dccf298305" id="r_a42b475319cdfe718c7cba5dccf298305"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42b475319cdfe718c7cba5dccf298305">IsBlunt</a> ()</td></tr>
+<tr class="memdesc:a42b475319cdfe718c7cba5dccf298305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a boolean value if the LastUsedMode was Properties.IsBlunt  <br /></td></tr>
+<tr class="memitem:aad1dd23e2fc9f5490208cb2fd2c20070" id="r_aad1dd23e2fc9f5490208cb2fd2c20070"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad1dd23e2fc9f5490208cb2fd2c20070">IsFirearm</a> ()</td></tr>
+<tr class="memdesc:aad1dd23e2fc9f5490208cb2fd2c20070"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a boolean value if the LastUsedMode was Properties.IsFirearm  <br /></td></tr>
+<tr class="memitem:a7b1d474b5c1697482f684a063e8ecc2d" id="r_a7b1d474b5c1697482f684a063e8ecc2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b1d474b5c1697482f684a063e8ecc2d">IsOneHanded</a> ()</td></tr>
+<tr class="memdesc:a7b1d474b5c1697482f684a063e8ecc2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a boolean value if the LastUsedMode was Properties.IsOneHanded  <br /></td></tr>
+<tr class="memitem:a876a6c66c87c374b08da1c39935ef5ac" id="r_a876a6c66c87c374b08da1c39935ef5ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a876a6c66c87c374b08da1c39935ef5ac">IsTwoHanded</a> ()</td></tr>
+<tr class="memdesc:a876a6c66c87c374b08da1c39935ef5ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a boolean value if the LastUsedMode was Properties.IsTwoHanded  <br /></td></tr>
+<tr class="memitem:a8e07f1a466fe9cf38b0a38ef846a8124" id="r_a8e07f1a466fe9cf38b0a38ef846a8124"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e07f1a466fe9cf38b0a38ef846a8124">SetAttackAngle</a> (float attackAngle)</td></tr>
+<tr class="memdesc:a8e07f1a466fe9cf38b0a38ef846a8124"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the weapon's in-game rotation.  <br /></td></tr>
+<tr class="memitem:a179cfed3de42958e67ce05c32f2fc2de" id="r_a179cfed3de42958e67ce05c32f2fc2de"><td class="memItemLeft" align="right" valign="top"><a id="a179cfed3de42958e67ce05c32f2fc2de" name="a179cfed3de42958e67ce05c32f2fc2de"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetHolder</b> (<a class="el" href="class_renown_1_1_entity.html">Entity</a> holder)</td></tr>
 <tr class="memitem:a71a438d7003c9872c9882a168ff47d3d" id="r_a71a438d7003c9872c9882a168ff47d3d"><td class="memItemLeft" align="right" valign="top"><a id="a71a438d7003c9872c9882a168ff47d3d" name="a71a438d7003c9872c9882a168ff47d3d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Drop</b> ()</td></tr>
 <tr class="memitem:a332e38f241cb4020e2412b87d949fbca" id="r_a332e38f241cb4020e2412b87d949fbca"><td class="memItemLeft" align="right" valign="top"><a id="a332e38f241cb4020e2412b87d949fbca" name="a332e38f241cb4020e2412b87d949fbca"></a>
@@ -183,14 +175,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetUseMode</b> (Prope
 <tr class="memitem:a4a5b583fe76dceafe166ca1859e92a79" id="r_a4a5b583fe76dceafe166ca1859e92a79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a5b583fe76dceafe166ca1859e92a79">ApplyUpgrade</a> ()</td></tr>
 <tr class="memitem:ab6c05d983b57d31836c759d1493dfc6c" id="r_ab6c05d983b57d31836c759d1493dfc6c"><td class="memItemLeft" align="right" valign="top"><a id="ab6c05d983b57d31836c759d1493dfc6c" name="ab6c05d983b57d31836c759d1493dfc6c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Save</b> ()</td></tr>
-<tr class="memitem:ac28f82bc36645623eefe1e4d2433bb1b" id="r_ac28f82bc36645623eefe1e4d2433bb1b"><td class="memItemLeft" align="right" valign="top"><a id="ac28f82bc36645623eefe1e4d2433bb1b" name="ac28f82bc36645623eefe1e4d2433bb1b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Load</b> (NodePath path)</td></tr>
+<tr class="memitem:a505ba37bb9fee105a4042bebbf4a182a" id="r_a505ba37bb9fee105a4042bebbf4a182a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a505ba37bb9fee105a4042bebbf4a182a">Load</a> (<a class="el" href="class_renown_1_1_entity.html">Entity</a> holder, NodePath path)</td></tr>
+<tr class="memdesc:a505ba37bb9fee105a4042bebbf4a182a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a <a class="el" href="class_weapon_entity.html">WeaponEntity</a>'s state from disk.  <br /></td></tr>
 <tr class="memitem:af9d5dbf038079f30a25c575a8c35a264" id="r_af9d5dbf038079f30a25c575a8c35a264"><td class="memItemLeft" align="right" valign="top"><a id="af9d5dbf038079f30a25c575a8c35a264" name="af9d5dbf038079f30a25c575a8c35a264"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>BladedThrustWindUp</b> ()</td></tr>
-<tr class="memitem:aa7ff95263ac9a822be4f9e219f927e6e" id="r_aa7ff95263ac9a822be4f9e219f927e6e"><td class="memItemLeft" align="right" valign="top"><a id="aa7ff95263ac9a822be4f9e219f927e6e" name="aa7ff95263ac9a822be4f9e219f927e6e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAmmo</b> (<a class="el" href="class_ammo_entity.html">AmmoEntity</a> ammo)</td></tr>
-<tr class="memitem:ab54bbc4bbc397a3c87d7af88f009565d" id="r_ab54bbc4bbc397a3c87d7af88f009565d"><td class="memItemLeft" align="right" valign="top"><a id="ab54bbc4bbc397a3c87d7af88f009565d" name="ab54bbc4bbc397a3c87d7af88f009565d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetReserve</b> (<a class="el" href="class_ammo_stack.html">AmmoStack</a> stack)</td></tr>
+<tr class="memitem:af65c93349366a8c11b029d6f473a8886" id="r_af65c93349366a8c11b029d6f473a8886"><td class="memItemLeft" align="right" valign="top"><a id="af65c93349366a8c11b029d6f473a8886" name="af65c93349366a8c11b029d6f473a8886"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAmmoStack</b> (<a class="el" href="class_ammo_stack.html">AmmoStack</a> ammo)</td></tr>
 <tr class="memitem:a9ababb28b6432affe543f35dd8fb25ac" id="r_a9ababb28b6432affe543f35dd8fb25ac"><td class="memItemLeft" align="right" valign="top"><a id="a9ababb28b6432affe543f35dd8fb25ac" name="a9ababb28b6432affe543f35dd8fb25ac"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>UseFirearmDeferred</b> (Properties weaponMode)</td></tr>
 <tr class="memitem:a1ffdf771ca212747331291bdf34e9f90" id="r_a1ffdf771ca212747331291bdf34e9f90"><td class="memItemLeft" align="right" valign="top"><a id="a1ffdf771ca212747331291bdf34e9f90" name="a1ffdf771ca212747331291bdf34e9f90"></a>
@@ -201,6 +191,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>Use</b> (Properties 
 float&#160;</td><td class="memItemRight" valign="bottom"><b>Use</b> (Properties weaponMode, out float soundLevel, BladeAttackType attackType)</td></tr>
 <tr class="memitem:a7bc47e2b62857fad79d5fb938bb309ee" id="r_a7bc47e2b62857fad79d5fb938bb309ee"><td class="memItemLeft" align="right" valign="top"><a id="a7bc47e2b62857fad79d5fb938bb309ee" name="a7bc47e2b62857fad79d5fb938bb309ee"></a>
 override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memdesc:a7bc47e2b62857fad79d5fb938bb309ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">godot initialization override <br /></td></tr>
 <tr class="memitem:aeede6d8c04a0a1d24804252d90da65d2" id="r_aeede6d8c04a0a1d24804252d90da65d2"><td class="memItemLeft" align="right" valign="top"><a id="aeede6d8c04a0a1d24804252d90da65d2" name="aeede6d8c04a0a1d24804252d90da65d2"></a>
 override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b> (double delta)</td></tr>
 </table><table class="memberdecls">
@@ -208,13 +199,11 @@ override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b>
 Public Attributes</h2></td></tr>
 <tr class="memitem:af9ced1752694a88e2b4e915a2788b6c3" id="r_af9ced1752694a88e2b4e915a2788b6c3"><td class="memItemLeft" align="right" valign="top"><a id="af9ced1752694a88e2b4e915a2788b6c3" name="af9ced1752694a88e2b4e915a2788b6c3"></a>
 Resource&#160;</td><td class="memItemRight" valign="bottom"><b>Data</b></td></tr>
-<tr class="memitem:a31542210934c93e72bb930f34fc6dbb2" id="r_a31542210934c93e72bb930f34fc6dbb2"><td class="memItemLeft" align="right" valign="top"><a id="a31542210934c93e72bb930f34fc6dbb2" name="a31542210934c93e72bb930f34fc6dbb2"></a>
-<a class="el" href="class_renown_1_1_entity.html">Entity</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_Owner</b></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:aec1a35485a28236ca9173324d987892a" id="r_aec1a35485a28236ca9173324d987892a"><td class="memItemLeft" align="right" valign="top"><a id="aec1a35485a28236ca9173324d987892a" name="aec1a35485a28236ca9173324d987892a"></a>
-Texture2D&#160;</td><td class="memItemRight" valign="bottom"><b>Icon</b><code> [get]</code></td></tr>
+<tr class="memitem:a100c550bea32134a07044d9a7ae0a724" id="r_a100c550bea32134a07044d9a7ae0a724"><td class="memItemLeft" align="right" valign="top"><a id="a100c550bea32134a07044d9a7ae0a724" name="a100c550bea32134a07044d9a7ae0a724"></a>
+Texture2D?&#160;</td><td class="memItemRight" valign="bottom"><b>Icon</b> = null<code> [get]</code></td></tr>
 <tr class="memitem:a86f3a9a5fe40ed3c5b46b5809fa832d1" id="r_a86f3a9a5fe40ed3c5b46b5809fa832d1"><td class="memItemLeft" align="right" valign="top"><a id="a86f3a9a5fe40ed3c5b46b5809fa832d1" name="a86f3a9a5fe40ed3c5b46b5809fa832d1"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>MagazineSize</b> = 0<code> [get]</code></td></tr>
 <tr class="memitem:ab316a3fc6bef304093ac36c60f8815a5" id="r_ab316a3fc6bef304093ac36c60f8815a5"><td class="memItemLeft" align="right" valign="top"><a id="ab316a3fc6bef304093ac36c60f8815a5" name="ab316a3fc6bef304093ac36c60f8815a5"></a>
@@ -268,10 +257,10 @@ Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentRecoilOffse
 float&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentRecoilRotation</b><code> [get]</code></td></tr>
 <tr class="memitem:a0be566ca7779048795df1ad1de2bdd19" id="r_a0be566ca7779048795df1ad1de2bdd19"><td class="memItemLeft" align="right" valign="top"><a id="a0be566ca7779048795df1ad1de2bdd19" name="a0be566ca7779048795df1ad1de2bdd19"></a>
 Timer&#160;</td><td class="memItemRight" valign="bottom"><b>WeaponTimer</b><code> [get]</code></td></tr>
-<tr class="memitem:aa3463c39500ed2cf636754bc4d7d9377" id="r_aa3463c39500ed2cf636754bc4d7d9377"><td class="memItemLeft" align="right" valign="top"><a id="aa3463c39500ed2cf636754bc4d7d9377" name="aa3463c39500ed2cf636754bc4d7d9377"></a>
-<a class="el" href="class_ammo_stack.html">AmmoStack</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Reserve</b><code> [get]</code></td></tr>
-<tr class="memitem:a40b40aabe167ca24e7097d9ef981dc16" id="r_a40b40aabe167ca24e7097d9ef981dc16"><td class="memItemLeft" align="right" valign="top"><a id="a40b40aabe167ca24e7097d9ef981dc16" name="a40b40aabe167ca24e7097d9ef981dc16"></a>
-<a class="el" href="class_ammo_entity.html">AmmoEntity</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Ammo</b><code> [get]</code></td></tr>
+<tr class="memitem:a0e494205c9680208d6eddff639cb35f9" id="r_a0e494205c9680208d6eddff639cb35f9"><td class="memItemLeft" align="right" valign="top"><a id="a0e494205c9680208d6eddff639cb35f9" name="a0e494205c9680208d6eddff639cb35f9"></a>
+<a class="el" href="class_renown_1_1_entity.html">Entity</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Holder</b><code> [get]</code></td></tr>
+<tr class="memitem:a4cb7714c88f3ea0910aeff6ff1e6b274" id="r_a4cb7714c88f3ea0910aeff6ff1e6b274"><td class="memItemLeft" align="right" valign="top"><a id="a4cb7714c88f3ea0910aeff6ff1e6b274" name="a4cb7714c88f3ea0910aeff6ff1e6b274"></a>
+<a class="el" href="class_ammo_stack.html">AmmoStack</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Ammo</b><code> [get]</code></td></tr>
 <tr class="memitem:aa713771131a0ee6e351c1948dce36d60" id="r_aa713771131a0ee6e351c1948dce36d60"><td class="memItemLeft" align="right" valign="top"><a id="aa713771131a0ee6e351c1948dce36d60" name="aa713771131a0ee6e351c1948dce36d60"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>BulletsLeft</b> = 0<code> [get]</code></td></tr>
 <tr class="memitem:a6c100328fc243276b0418539c4f77d23" id="r_a6c100328fc243276b0418539c4f77d23"><td class="memItemLeft" align="right" valign="top"><a id="a6c100328fc243276b0418539c4f77d23" name="a6c100328fc243276b0418539c4f77d23"></a>
@@ -320,6 +309,9 @@ Properties&#160;</td><td class="memItemRight" valign="bottom"><b>LastUsedMode</b
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">IReadOnlyDictionary&lt; string, int &gt; WeaponEntity.GetUpgradeCost </td>
@@ -328,9 +320,225 @@ Properties&#160;</td><td class="memItemRight" valign="bottom"><b>LastUsedMode</b
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="interface_player_system_1_1_upgrades_1_1_i_upgradable.html">PlayerSystem.Upgrades.IUpgradable</a>.</p>
+
+</div>
+</div>
+<a id="af545539deade79ebc26238b2431b0873" name="af545539deade79ebc26238b2431b0873"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af545539deade79ebc26238b2431b0873">&#9670;&#160;</a></span>IsBladed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WeaponEntity.IsBladed </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a boolean value if the LastUsedMode was Properties.IsBladed </p>
+<dl class="section return"><dt>Returns</dt><dd>True if LastUsedMode is Properties.IsBladed</dd></dl>
+
+</div>
+</div>
+<a id="a42b475319cdfe718c7cba5dccf298305" name="a42b475319cdfe718c7cba5dccf298305"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42b475319cdfe718c7cba5dccf298305">&#9670;&#160;</a></span>IsBlunt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WeaponEntity.IsBlunt </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a boolean value if the LastUsedMode was Properties.IsBlunt </p>
+<dl class="section return"><dt>Returns</dt><dd>True if LastUsedMode is Properties.IsBlunt</dd></dl>
+
+</div>
+</div>
+<a id="aad1dd23e2fc9f5490208cb2fd2c20070" name="aad1dd23e2fc9f5490208cb2fd2c20070"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad1dd23e2fc9f5490208cb2fd2c20070">&#9670;&#160;</a></span>IsFirearm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WeaponEntity.IsFirearm </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a boolean value if the LastUsedMode was Properties.IsFirearm </p>
+<dl class="section return"><dt>Returns</dt><dd>True if LastUsedMode is Properties.IsFirearm</dd></dl>
+
+</div>
+</div>
+<a id="a7b1d474b5c1697482f684a063e8ecc2d" name="a7b1d474b5c1697482f684a063e8ecc2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b1d474b5c1697482f684a063e8ecc2d">&#9670;&#160;</a></span>IsOneHanded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WeaponEntity.IsOneHanded </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a boolean value if the LastUsedMode was Properties.IsOneHanded </p>
+<dl class="section return"><dt>Returns</dt><dd>True if LastUsedMode is Properties.IsOneHanded</dd></dl>
+
+</div>
+</div>
+<a id="a876a6c66c87c374b08da1c39935ef5ac" name="a876a6c66c87c374b08da1c39935ef5ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a876a6c66c87c374b08da1c39935ef5ac">&#9670;&#160;</a></span>IsTwoHanded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WeaponEntity.IsTwoHanded </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a boolean value if the LastUsedMode was Properties.IsTwoHanded </p>
+<dl class="section return"><dt>Returns</dt><dd>True if LastUsedMode is Properties.IsTwoHanded</dd></dl>
+
+</div>
+</div>
+<a id="a505ba37bb9fee105a4042bebbf4a182a" name="a505ba37bb9fee105a4042bebbf4a182a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a505ba37bb9fee105a4042bebbf4a182a">&#9670;&#160;</a></span>Load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WeaponEntity.Load </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_renown_1_1_entity.html">Entity</a></td>          <td class="paramname"><span class="paramname"><em>holder</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NodePath</td>          <td class="paramname"><span class="paramname"><em>path</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads a <a class="el" href="class_weapon_entity.html">WeaponEntity</a>'s state from disk. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">holder</td><td>The holder of the <a class="el" href="class_weapon_entity.html">WeaponEntity</a></td></tr>
+    <tr><td class="paramname">path</td><td>The original node path that is used as a section name</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8e07f1a466fe9cf38b0a38ef846a8124" name="a8e07f1a466fe9cf38b0a38ef846a8124"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e07f1a466fe9cf38b0a38ef846a8124">&#9670;&#160;</a></span>SetAttackAngle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WeaponEntity.SetAttackAngle </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>attackAngle</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the weapon's in-game rotation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attackAngle</td><td>The weapon's rotation angle</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

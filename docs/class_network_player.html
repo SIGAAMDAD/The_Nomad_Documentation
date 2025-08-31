@@ -97,7 +97,7 @@ Inheritance diagram for NetworkPlayer:</div>
  <div class="center">
   <img src="class_network_player.png" usemap="#NetworkPlayer_map" alt=""/>
   <map id="NetworkPlayer_map" name="NetworkPlayer_map">
-<area href="class_renown_1_1_entity.html" alt="Renown.Entity" shape="rect" coords="62,56,176,80"/>
+<area href="class_renown_1_1_entity.html" title="The base class from which all entities inherit from." alt="Renown.Entity" shape="rect" coords="62,56,176,80"/>
 <area href="interface_renown_1_1_object.html" alt="Renown.Object" shape="rect" coords="124,0,238,24"/>
   </map>
 </div></div>
@@ -109,6 +109,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGroundMaterial</b>
 <tr class="memitem:ac92e7c76b0357f7350d7b3d203bf2940" id="r_ac92e7c76b0357f7350d7b3d203bf2940"><td class="memItemLeft" align="right" valign="top"><a id="ac92e7c76b0357f7350d7b3d203bf2940" name="ac92e7c76b0357f7350d7b3d203bf2940"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>MultiplayerReset</b> ()</td></tr>
 <tr class="memitem:a02077c9a35d00b9b51102a7c5b854449" id="r_a02077c9a35d00b9b51102a7c5b854449"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02077c9a35d00b9b51102a7c5b854449">PlaySound</a> (AudioStreamPlayer2D channel, AudioStream stream)</td></tr>
+<tr class="memdesc:a02077c9a35d00b9b51102a7c5b854449"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays a sound effect from the provided channel and stream local to the entity's position.  <br /></td></tr>
 <tr class="memitem:ae3252acfaab11eb85542bcaee14f05ea" id="r_ae3252acfaab11eb85542bcaee14f05ea"><td class="memItemLeft" align="right" valign="top"><a id="ae3252acfaab11eb85542bcaee14f05ea" name="ae3252acfaab11eb85542bcaee14f05ea"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> (ulong senderId, System.IO.BinaryReader packet)</td></tr>
 <tr class="memitem:a3ec90c359e397f58b70ad8395b30c813" id="r_a3ec90c359e397f58b70ad8395b30c813"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ec90c359e397f58b70ad8395b30c813">Damage</a> (in <a class="el" href="class_renown_1_1_entity.html">Entity</a> source, float nAmount)</td></tr>
@@ -126,15 +127,18 @@ delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>DieEventHand
 <tr class="memitem:ab45dd49e657c49d89176302df2a784ce inherit pub_methods_class_renown_1_1_entity" id="r_ab45dd49e657c49d89176302df2a784ce"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLocation</b> (in <a class="el" href="class_renown_1_1_world_1_1_world_area.html">WorldArea</a> location)</td></tr>
 <tr class="memitem:af2a23f06f18c067b308ffc46e3b0923d inherit pub_methods_class_renown_1_1_entity" id="r_af2a23f06f18c067b308ffc46e3b0923d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renown_1_1_entity.html#af2a23f06f18c067b308ffc46e3b0923d">Save</a> ()</td></tr>
+<tr class="memdesc:af2a23f06f18c067b308ffc46e3b0923d inherit pub_methods_class_renown_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this function to archive and entity's state to disk.  <br /></td></tr>
 <tr class="memitem:a92d640b8af31105f1bc465a88d3e6024 inherit pub_methods_class_renown_1_1_entity" id="r_a92d640b8af31105f1bc465a88d3e6024"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renown_1_1_entity.html#a92d640b8af31105f1bc465a88d3e6024">Load</a> ()</td></tr>
+<tr class="memdesc:a92d640b8af31105f1bc465a88d3e6024 inherit pub_methods_class_renown_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this function to load an entity's state from disk.  <br /></td></tr>
 <tr class="memitem:a8496242a5e215841e7a4109ad96a185a inherit pub_methods_class_renown_1_1_entity" id="r_a8496242a5e215841e7a4109ad96a185a"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnChallenged</b> ()</td></tr>
 <tr class="memitem:acf21b3468c9e61665935b1666c3b741c inherit pub_methods_class_renown_1_1_entity" id="r_acf21b3468c9e61665935b1666c3b741c"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnIntimidated</b> ()</td></tr>
 <tr class="memitem:a54c523219fe05bfdbc4948443e1c1e45 inherit pub_methods_class_renown_1_1_entity" id="r_a54c523219fe05bfdbc4948443e1c1e45"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearStatusEffects</b> ()</td></tr>
-<tr class="memitem:a1daa2bade64b58ff25e8c19dd8bdbb96 inherit pub_methods_class_renown_1_1_entity" id="r_a1daa2bade64b58ff25e8c19dd8bdbb96"><td class="memItemLeft" align="right" valign="top">
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AddStatusEffect</b> (string effectName)</td></tr>
+<tr class="memdesc:a54c523219fe05bfdbc4948443e1c1e45 inherit pub_methods_class_renown_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all <a class="el" href="class_status_effect.html" title="The base class from which all status effects must inherit from.">StatusEffect</a> objects currently being applied to the entity and clears the Dictionary. <br /></td></tr>
+<tr class="memitem:a1daa2bade64b58ff25e8c19dd8bdbb96 inherit pub_methods_class_renown_1_1_entity" id="r_a1daa2bade64b58ff25e8c19dd8bdbb96"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renown_1_1_entity.html#a1daa2bade64b58ff25e8c19dd8bdbb96">AddStatusEffect</a> (string effectName)</td></tr>
+<tr class="memdesc:a1daa2bade64b58ff25e8c19dd8bdbb96 inherit pub_methods_class_renown_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a <a class="el" href="class_status_effect.html" title="The base class from which all status effects must inherit from.">StatusEffect</a> object to the entity.  <br /></td></tr>
 <tr class="memitem:ada75e5b997442013a694823c3d8d3947 inherit pub_methods_class_renown_1_1_entity" id="r_ada75e5b997442013a694823c3d8d3947"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>PickupWeapon</b> (<a class="el" href="class_weapon_entity.html">WeaponEntity</a> weapon)</td></tr>
 <tr class="memitem:a04631db2053421d8b012b1a9b39bce4f inherit pub_methods_class_renown_1_1_entity" id="r_a04631db2053421d8b012b1a9b39bce4f"><td class="memItemLeft" align="right" valign="top">
@@ -146,6 +150,7 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasRelation</
 <tr class="memitem:a506656c6ec5f7060580f0f501c996ad4 inherit pub_methods_class_renown_1_1_entity" id="r_a506656c6ec5f7060580f0f501c996ad4"><td class="memItemLeft" align="right" valign="top">virtual StringName&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renown_1_1_entity.html#a506656c6ec5f7060580f0f501c996ad4">GetObjectName</a> ()</td></tr>
 <tr class="memitem:a55c4754c4d43fa29780a5a9482cccda4 inherit pub_methods_class_renown_1_1_entity" id="r_a55c4754c4d43fa29780a5a9482cccda4"><td class="memItemLeft" align="right" valign="top">
 override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memdesc:a55c4754c4d43fa29780a5a9482cccda4 inherit pub_methods_class_renown_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">godot initialization override <br /></td></tr>
 <tr class="memitem:a742117801ef70f3149ab6b2c7c28c460 inherit pub_methods_class_renown_1_1_entity" id="r_a742117801ef70f3149ab6b2c7c28c460"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> (double delta)</td></tr>
 <tr class="memitem:addc1ae3379000bf43644a940891c23dc inherit pub_methods_class_renown_1_1_entity" id="r_addc1ae3379000bf43644a940891c23dc"><td class="memItemLeft" align="right" valign="top">
@@ -159,19 +164,24 @@ Public Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_renown_1_1_entity"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_renown_1_1_entity')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Protected Attributes inherited from <a class="el" href="class_renown_1_1_entity.html">Renown.Entity</a></td></tr>
-<tr class="memitem:a9c4cb81e4c76e69c7925dd2b63e7b2e3 inherit pro_attribs_class_renown_1_1_entity" id="r_a9c4cb81e4c76e69c7925dd2b63e7b2e3"><td class="memItemLeft" align="right" valign="top">
-Dictionary&lt; string, <a class="el" href="class_status_effect.html">StatusEffect</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>StatusEffects</b> = new Dictionary&lt;string, <a class="el" href="class_status_effect.html">StatusEffect</a>&gt;()</td></tr>
+<tr class="memitem:a9b957ed803b7a204e5b1cc3faab5ece5 inherit pro_attribs_class_renown_1_1_entity" id="r_a9b957ed803b7a204e5b1cc3faab5ece5"><td class="memItemLeft" align="right" valign="top">ConcurrentDictionary&lt; string, <a class="el" href="class_status_effect.html">StatusEffect</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renown_1_1_entity.html#a9b957ed803b7a204e5b1cc3faab5ece5">StatusEffects</a> = new ConcurrentDictionary&lt;string, <a class="el" href="class_status_effect.html">StatusEffect</a>&gt;()</td></tr>
+<tr class="memdesc:a9b957ed803b7a204e5b1cc3faab5ece5 inherit pro_attribs_class_renown_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current status effects being applied to the entity.  <br /></td></tr>
 <tr class="inherit_header properties_class_renown_1_1_entity"><td colspan="2" onclick="javascript:dynsection.toggleInherit('properties_class_renown_1_1_entity')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Properties inherited from <a class="el" href="class_renown_1_1_entity.html">Renown.Entity</a></td></tr>
 <tr class="memitem:aa375d29ddd41ff88dcdf38878758eeaa inherit properties_class_renown_1_1_entity" id="r_aa375d29ddd41ff88dcdf38878758eeaa"><td class="memItemLeft" align="right" valign="top">
-float&#160;</td><td class="memItemRight" valign="bottom"><b>Health</b> = 0.0f<code> [get]</code></td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>Health</b> = 0.0f<code> [get, protected set]</code></td></tr>
+<tr class="memdesc:aa375d29ddd41ff88dcdf38878758eeaa inherit properties_class_renown_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">The health of the entity. <br /></td></tr>
 <tr class="memitem:ab23745b2bb2f495d5386845cf3d703e4 inherit properties_class_renown_1_1_entity" id="r_ab23745b2bb2f495d5386845cf3d703e4"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>RenownScore</b> = 0<code> [get]</code></td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>RenownScore</b> = 0<code> [get, protected set]</code></td></tr>
+<tr class="memdesc:ab23745b2bb2f495d5386845cf3d703e4 inherit properties_class_renown_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">The renown of an entity, think of it sort as "street cred". <br /></td></tr>
 <tr class="memitem:a12ad7bb19537d24267903e4715cc3ac0 inherit properties_class_renown_1_1_entity" id="r_a12ad7bb19537d24267903e4715cc3ac0"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="class_renown_1_1_world_1_1_world_area.html">WorldArea</a>?&#160;</td><td class="memItemRight" valign="bottom"><b>Location</b> = null<code> [get]</code></td></tr>
+<a class="el" href="class_renown_1_1_world_1_1_world_area.html">WorldArea</a>?&#160;</td><td class="memItemRight" valign="bottom"><b>Location</b> = null<code> [get, protected set]</code></td></tr>
+<tr class="memdesc:a12ad7bb19537d24267903e4715cc3ac0 inherit properties_class_renown_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_renown_1_1_world_1_1_world_area.html">WorldArea</a> the entity is currently colliding with. <br /></td></tr>
 <tr class="memitem:a63c984dd62a84973e7d2dca82d0cd0a2 inherit properties_class_renown_1_1_entity" id="r_a63c984dd62a84973e7d2dca82d0cd0a2"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="class_renown_1_1_world_1_1_faction.html">Faction</a>?&#160;</td><td class="memItemRight" valign="bottom"><b>Faction</b> = null<code> [get]</code></td></tr>
+<a class="el" href="class_renown_1_1_world_1_1_faction.html">Faction</a>?&#160;</td><td class="memItemRight" valign="bottom"><b>Faction</b> = null<code> [get, protected set]</code></td></tr>
+<tr class="memdesc:a63c984dd62a84973e7d2dca82d0cd0a2 inherit properties_class_renown_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">The faction that the entity belongs to. Used for faction-specific behaviors with the AI. <br /></td></tr>
 <tr class="memitem:a204eb4f1f64bfbddb6c0ed84e32dee58 inherit properties_class_renown_1_1_entity" id="r_a204eb4f1f64bfbddb6c0ed84e32dee58"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>FactionImportance</b> = 0<code> [get]</code></td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>FactionImportance</b> = 0<code> [get, protected set]</code></td></tr>
+<tr class="memdesc:a204eb4f1f64bfbddb6c0ed84e32dee58 inherit properties_class_renown_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">How much the entity's faction cares about them. <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a3ec90c359e397f58b70ad8395b30c813" name="a3ec90c359e397f58b70ad8395b30c813"></a>
@@ -232,7 +242,16 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>FactionImportance</b> 
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="class_renown_1_1_entity.html">Renown.Entity</a>.</p>
+<p>Plays a sound effect from the provided channel and stream local to the entity's position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>The audio channel to play the audio from</td></tr>
+    <tr><td class="paramname">stream</td><td>The audio file to play</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="class_renown_1_1_entity.html#aa85464d8235a9feef5e5604eb921732e">Renown.Entity</a>.</p>
 
 </div>
 </div>

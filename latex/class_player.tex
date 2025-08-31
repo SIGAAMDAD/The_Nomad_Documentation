@@ -1,5 +1,10 @@
 \doxysection{Player Class Reference}
 \hypertarget{class_player}{}\label{class_player}\index{Player@{Player}}
+
+
+The code that handles player-\/to-\/game interactions.  
+
+
 Inheritance diagram for Player\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -66,11 +71,11 @@ delegate void {\bfseries Faction\+Promotion\+Event\+Handler} (\mbox{\hyperlink{c
 \Hypertarget{class_player_ab6bf7968fff83fa7f2289bb3212dabbd}\label{class_player_ab6bf7968fff83fa7f2289bb3212dabbd} 
 delegate void {\bfseries Faction\+Demotion\+Event\+Handler} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction, \mbox{\hyperlink{class_renown_1_1_entity}{Entity}} entity)
 \item 
-\Hypertarget{class_player_a1fab215a7f8eb2b13bf8021d24906915}\label{class_player_a1fab215a7f8eb2b13bf8021d24906915} 
-delegate void {\bfseries Gain\+Money\+Event\+Handler} (Node entity, float n\+Amount)
+\Hypertarget{class_player_a902ae955b48c1ea098135ce172ee8c64}\label{class_player_a902ae955b48c1ea098135ce172ee8c64} 
+delegate void {\bfseries Gain\+Money\+Event\+Handler} (Node entity, float amount)
 \item 
-\Hypertarget{class_player_a4510bb14f3d7acd42416ba8453353582}\label{class_player_a4510bb14f3d7acd42416ba8453353582} 
-delegate void {\bfseries Lose\+Money\+Event\+Handler} (Node entity, float n\+Amount)
+\Hypertarget{class_player_a0fa5541b2527f2a752a12acfa760268e}\label{class_player_a0fa5541b2527f2a752a12acfa760268e} 
+delegate void {\bfseries Lose\+Money\+Event\+Handler} (Node entity, float amount)
 \item 
 \Hypertarget{class_player_a42bb0b9c0cc3e428398c641ead45b8dd}\label{class_player_a42bb0b9c0cc3e428398c641ead45b8dd} 
 delegate void {\bfseries Start\+Contract\+Event\+Handler} (\mbox{\hyperlink{class_renown_1_1_contract}{Contract}} contract, \mbox{\hyperlink{class_renown_1_1_entity}{Entity}} entity)
@@ -84,11 +89,11 @@ delegate void {\bfseries Failed\+Contract\+Event\+Handler} (\mbox{\hyperlink{cla
 \Hypertarget{class_player_ada3d516634844f6ea1de8b1e7c2f64b1}\label{class_player_ada3d516634844f6ea1de8b1e7c2f64b1} 
 delegate void {\bfseries Canceled\+Contract\+Event\+Handler} (\mbox{\hyperlink{class_renown_1_1_contract}{Contract}} contract, \mbox{\hyperlink{class_renown_1_1_entity}{Entity}} entity)
 \item 
-\Hypertarget{class_player_a71f4349629fa4164a7428f20799dd0fd}\label{class_player_a71f4349629fa4164a7428f20799dd0fd} 
-delegate void {\bfseries Decrease\+Trait\+Score\+Event\+Handler} (Node self, Trait\+Type n\+Trait, float n\+Score)
+\Hypertarget{class_player_adeceecc28f032f6673e4735df015f273}\label{class_player_adeceecc28f032f6673e4735df015f273} 
+delegate void {\bfseries Decrease\+Trait\+Score\+Event\+Handler} (Node self, \mbox{\hyperlink{class_renown_1_1_trait}{Trait}} trait, float score)
 \item 
-\Hypertarget{class_player_ad7eb3dc997f4fcd980a4d2453f3136db}\label{class_player_ad7eb3dc997f4fcd980a4d2453f3136db} 
-delegate void {\bfseries Increase\+Trait\+Score\+Event\+Handler} (Node self, Trait\+Type n\+Trait, float n\+Score)
+\Hypertarget{class_player_ae5ee471d3df99a30b7132705cef21012}\label{class_player_ae5ee471d3df99a30b7132705cef21012} 
+delegate void {\bfseries Increase\+Trait\+Score\+Event\+Handler} (Node self, \mbox{\hyperlink{class_renown_1_1_trait}{Trait}} trait, float score)
 \item 
 \Hypertarget{class_player_a4ef6699dea265d1d0b40cd90df8efc2c}\label{class_player_a4ef6699dea265d1d0b40cd90df8efc2c} 
 delegate void {\bfseries Meet\+Entity\+Event\+Handler} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} other, Node self)
@@ -96,14 +101,14 @@ delegate void {\bfseries Meet\+Entity\+Event\+Handler} (\mbox{\hyperlink{class_r
 \Hypertarget{class_player_aa018197f30e6d7c9d344571d72e11538}\label{class_player_aa018197f30e6d7c9d344571d72e11538} 
 delegate void {\bfseries Meet\+Faction\+Event\+Handler} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction, Node self)
 \item 
-\Hypertarget{class_player_ad66c05f6417fc872fb3bb77059bf2d19}\label{class_player_ad66c05f6417fc872fb3bb77059bf2d19} 
-delegate void {\bfseries Increase\+Relation\+Event\+Handler} (Node other, Node self, float n\+Amount)
+\Hypertarget{class_player_a71fd96f6f14b4d67ee1b167d07b9507f}\label{class_player_a71fd96f6f14b4d67ee1b167d07b9507f} 
+delegate void {\bfseries Increase\+Relation\+Event\+Handler} (Node other, Node self, float amount)
 \item 
-\Hypertarget{class_player_ae3b159f2ced7e7484cdd64afb1338d6e}\label{class_player_ae3b159f2ced7e7484cdd64afb1338d6e} 
-delegate void {\bfseries Decrease\+Relation\+Event\+Handler} (Node other, Node self, float n\+Amount)
+\Hypertarget{class_player_a258dfc636623c51996f007e98a0c5f34}\label{class_player_a258dfc636623c51996f007e98a0c5f34} 
+delegate void {\bfseries Decrease\+Relation\+Event\+Handler} (Node other, Node self, float amount)
 \item 
-\Hypertarget{class_player_a65409b741a26a68dce3009822b60a643}\label{class_player_a65409b741a26a68dce3009822b60a643} 
-delegate void {\bfseries Increase\+Renown\+Event\+Handler} (Node self, int n\+Amount)
+\Hypertarget{class_player_a738a2e13339c8bf7226ce1a9b0c61073}\label{class_player_a738a2e13339c8bf7226ce1a9b0c61073} 
+delegate void {\bfseries Increase\+Renown\+Event\+Handler} (Node self, int amount)
 \item 
 \Hypertarget{class_player_ad3aefeceeff1bdd098405c9b7264498f}\label{class_player_ad3aefeceeff1bdd098405c9b7264498f} 
 delegate void {\bfseries Switched\+Weapon\+Event\+Handler} (\mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}} weapon)
@@ -117,8 +122,8 @@ delegate void {\bfseries Used\+Weapon\+Event\+Handler} (\mbox{\hyperlink{class_w
 \Hypertarget{class_player_aa2987e34c62f38839fb27ab88cd5c9c1}\label{class_player_aa2987e34c62f38839fb27ab88cd5c9c1} 
 delegate void {\bfseries Weapon\+Picked\+Up\+Event\+Handler} (\mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}} source)
 \item 
-\Hypertarget{class_player_a2b757a2c917e722b9444f236dc556559}\label{class_player_a2b757a2c917e722b9444f236dc556559} 
-delegate void {\bfseries Ammo\+Picked\+Up\+Event\+Handler} (\mbox{\hyperlink{class_ammo_entity}{Ammo\+Entity}} source)
+\Hypertarget{class_player_aa7b28494ef3be244b2585f91c8307850}\label{class_player_aa7b28494ef3be244b2585f91c8307850} 
+delegate void {\bfseries Ammo\+Picked\+Up\+Event\+Handler} (string ammo\+Type\+ID)
 \item 
 \Hypertarget{class_player_af56b7fdfbcc3da09568931351fcc8276}\label{class_player_af56b7fdfbcc3da09568931351fcc8276} 
 delegate void {\bfseries Location\+Changed\+Event\+Handler} (\mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{World\+Area}} location)
@@ -135,14 +140,14 @@ delegate void {\bfseries Input\+Mapping\+Context\+Changed\+Event\+Handler} ()
 \Hypertarget{class_player_ac9ab698956f468e6a5f0bb087522e465}\label{class_player_ac9ab698956f468e6a5f0bb087522e465} 
 delegate void {\bfseries Interaction\+Event\+Handler} ()
 \item 
-\Hypertarget{class_player_a1e6798f99e0511c7c31fe58642e1ee23}\label{class_player_a1e6798f99e0511c7c31fe58642e1ee23} 
-delegate void {\bfseries Dash\+Burnout\+Changed\+Event\+Handler} (float n\+Dash\+Burnout)
+\Hypertarget{class_player_a5b9b8cdeb53c9cd23adb0dacb1fb4996}\label{class_player_a5b9b8cdeb53c9cd23adb0dacb1fb4996} 
+delegate void {\bfseries Dash\+Burnout\+Changed\+Event\+Handler} (float dash\+Burnout)
 \item 
-\Hypertarget{class_player_a75f075122a1cee63e5082a1ae2fe4326}\label{class_player_a75f075122a1cee63e5082a1ae2fe4326} 
-delegate void {\bfseries Rage\+Changed\+Event\+Handler} (float n\+Rage)
+\Hypertarget{class_player_a6e048dd2f57447b668aad3ad68f2a8b4}\label{class_player_a6e048dd2f57447b668aad3ad68f2a8b4} 
+delegate void {\bfseries Rage\+Changed\+Event\+Handler} (float rage)
 \item 
-\Hypertarget{class_player_a27c7788976c6469ecc930b9241adac32}\label{class_player_a27c7788976c6469ecc930b9241adac32} 
-delegate void {\bfseries Health\+Changed\+Event\+Handler} (float n\+Health)
+\Hypertarget{class_player_a494f3dcaba395fbfd32846ae831c55fa}\label{class_player_a494f3dcaba395fbfd32846ae831c55fa} 
+delegate void {\bfseries Health\+Changed\+Event\+Handler} (float health)
 \item 
 \Hypertarget{class_player_a6205351d74460be8939633335cab479d}\label{class_player_a6205351d74460be8939633335cab479d} 
 delegate void {\bfseries Status\+Effect\+Triggered\+Event\+Handler} (string effect\+Name, \mbox{\hyperlink{class_status_effect}{Status\+Effect}} effect)
@@ -168,218 +173,91 @@ delegate void {\bfseries Bullet\+Time\+Start\+Event\+Handler} ()
 \Hypertarget{class_player_a35ab6eb3844d4fe69d3badce735afbdc}\label{class_player_a35ab6eb3844d4fe69d3badce735afbdc} 
 delegate void {\bfseries Bullet\+Time\+End\+Event\+Handler} ()
 \item 
-\Hypertarget{class_player_afec863543247e3c319d793cc92208450}\label{class_player_afec863543247e3c319d793cc92208450} 
-virtual float {\bfseries Get\+Money} ()
-\item 
-\Hypertarget{class_player_ac3d6241dfbb559abca9996b19ed327d2}\label{class_player_ac3d6241dfbb559abca9996b19ed327d2} 
-virtual void {\bfseries Decrease\+Money} (float n\+Amount)
-\item 
-\Hypertarget{class_player_af835837df76036a7ceb04e13f0a9c0ec}\label{class_player_af835837df76036a7ceb04e13f0a9c0ec} 
-virtual void {\bfseries Increase\+Money} (float n\+Amount)
-\item 
-\Hypertarget{class_player_a4d9da7302835c11bfe177bb338ae38c1}\label{class_player_a4d9da7302835c11bfe177bb338ae38c1} 
-Dictionary$<$ Trait\+Type, float $>$ {\bfseries Get\+Traits} ()
-\item 
 \Hypertarget{class_player_a60a252e31418294048e4d4580098a297}\label{class_player_a60a252e31418294048e4d4580098a297} 
 void {\bfseries Set\+Faction} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction)
 \item 
-\Hypertarget{class_player_a5823b18a86bd4cb19e92f3c6064110fb}\label{class_player_a5823b18a86bd4cb19e92f3c6064110fb} 
-void {\bfseries Decrease\+Faction\+Importance} (int n\+Amount)
+void \mbox{\hyperlink{class_player_abf3e5b708239ea058425bfee9bfa21c9}{Decrease\+Faction\+Importance}} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction, int amount)
+\begin{DoxyCompactList}\small\item\em Decreases the numerical value that the player has to a faction. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_ae7cfee84de77c0f8c137df7b7481329f}\label{class_player_ae7cfee84de77c0f8c137df7b7481329f} 
+void {\bfseries Increase\+Faction\+Importance} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction, int amount)
 \item 
-\Hypertarget{class_player_a3a63db140fc681a5bbc0968e300e5531}\label{class_player_a3a63db140fc681a5bbc0968e300e5531} 
-void {\bfseries Increase\+Faction\+Importance} (int n\+Amount)
+\Hypertarget{class_player_a3b5c95ac59f2489ad4e75866c8b70fcc}\label{class_player_a3b5c95ac59f2489ad4e75866c8b70fcc} 
+void {\bfseries Add\+Renown} (int amount)
 \item 
-\Hypertarget{class_player_a624b3c6aa113751c378d9ea4c1191638}\label{class_player_a624b3c6aa113751c378d9ea4c1191638} 
-override int {\bfseries Get\+Renown\+Score} ()
+\Hypertarget{class_player_a117d3eb074f1840983d9d81f11006b7d}\label{class_player_a117d3eb074f1840983d9d81f11006b7d} 
+float {\bfseries Get\+Trait\+Score} (\mbox{\hyperlink{class_renown_1_1_trait}{Trait}} type)
 \item 
-\Hypertarget{class_player_af75e5614e894be5a838db4b3fa4ec74e}\label{class_player_af75e5614e894be5a838db4b3fa4ec74e} 
-void {\bfseries Add\+Renown} (int n\+Amount)
-\item 
-\Hypertarget{class_player_a64003136adf5617a4de15e1ce9a57639}\label{class_player_a64003136adf5617a4de15e1ce9a57639} 
-bool {\bfseries Has\+Trait} (Trait\+Type trait)
-\begin{DoxyCompactList}\small\item\em returns true if the entity has the given trait \end{DoxyCompactList}\item 
-\Hypertarget{class_player_aff1d57c89b6b4c332a56a3caaf353c8e}\label{class_player_aff1d57c89b6b4c332a56a3caaf353c8e} 
-float {\bfseries Get\+Trait\+Score} (Trait\+Type type)
-\item 
-\Hypertarget{class_player_a96f8bc14642a61d95dfe1edd24d9eb97}\label{class_player_a96f8bc14642a61d95dfe1edd24d9eb97} 
-void {\bfseries Change\+Trait\+Score} (Trait\+Type type, float n\+Delta)
+\Hypertarget{class_player_a7715e8e782de15fff40c09f2be596725}\label{class_player_a7715e8e782de15fff40c09f2be596725} 
+void {\bfseries Change\+Trait\+Score} (\mbox{\hyperlink{class_renown_1_1_trait}{Trait}} type, float delta)
 \item 
 \Hypertarget{class_player_ac6686570e2b5f1d4a1646199a4b43feb}\label{class_player_ac6686570e2b5f1d4a1646199a4b43feb} 
 virtual void {\bfseries Meet} (\mbox{\hyperlink{interface_renown_1_1_object}{Renown.\+Object}} other)
 \item 
-\Hypertarget{class_player_a01b7f961c2c1fcbcbfcc05a1c7eb3134}\label{class_player_a01b7f961c2c1fcbcbfcc05a1c7eb3134} 
-virtual void {\bfseries Relation\+Increase} (\mbox{\hyperlink{interface_renown_1_1_object}{Renown.\+Object}} other, float n\+Amount)
+\Hypertarget{class_player_a626d6d6242ddd0b17857a5a56c2dabfd}\label{class_player_a626d6d6242ddd0b17857a5a56c2dabfd} 
+virtual void {\bfseries Relation\+Increase} (\mbox{\hyperlink{interface_renown_1_1_object}{Renown.\+Object}} other, float amount)
 \item 
-\Hypertarget{class_player_a5487c6a66071435a82c7b9c6e89e0cdf}\label{class_player_a5487c6a66071435a82c7b9c6e89e0cdf} 
-virtual void {\bfseries Relation\+Decrease} (\mbox{\hyperlink{interface_renown_1_1_object}{Renown.\+Object}} other, float n\+Amount)
+\Hypertarget{class_player_a07ec829b713a53f6ad50f0d83ea686ff}\label{class_player_a07ec829b713a53f6ad50f0d83ea686ff} 
+virtual void {\bfseries Relation\+Decrease} (\mbox{\hyperlink{interface_renown_1_1_object}{Renown.\+Object}} other, float amount)
 \item 
 override void \mbox{\hyperlink{class_player_a273f8704e2c623865a371669a38b33a1}{Add\+Status\+Effect}} (string effect\+Name)
-\item 
+\begin{DoxyCompactList}\small\item\em Adds a \doxylink{class_status_effect}{Status\+Effect} object to the entity. \end{DoxyCompactList}\item 
 \Hypertarget{class_player_ab97ed67b8becd4302b005dc4759cfd41}\label{class_player_ab97ed67b8becd4302b005dc4759cfd41} 
 void {\bfseries Thought\+Bubble} (string text)
 \item 
-\Hypertarget{class_player_ad878a74ece0f3f9d193cc302813e30ac}\label{class_player_ad878a74ece0f3f9d193cc302813e30ac} 
-void {\bfseries Set\+Tile\+Map\+Floor\+Level} (int n\+Level)
-\item 
-\Hypertarget{class_player_a094c4005a79cee2f0b4d0c5cd3b6cfc8}\label{class_player_a094c4005a79cee2f0b4d0c5cd3b6cfc8} 
-int {\bfseries Get\+Tile\+Map\+Floor\+Level} ()
+\Hypertarget{class_player_abe881a472f0cff8cbe9d9b9cfdbe79e5}\label{class_player_abe881a472f0cff8cbe9d9b9cfdbe79e5} 
+void {\bfseries Set\+Tile\+Map\+Floor\+Level} (int level)
 \item 
 \Hypertarget{class_player_ad66a5bd0a2662bf320f6e6ca4977f017}\label{class_player_ad66a5bd0a2662bf320f6e6ca4977f017} 
-void {\bfseries Add\+To\+Journal} (\mbox{\hyperlink{class_note}{Note}} note)
+void {\bfseries Add\+To\+Journal} (\mbox{\hyperlink{class_interactables_1_1_note}{Note}} note)
 \item 
-\Hypertarget{class_player_a657ce2d7d811eb0af3249effaca7a6c0}\label{class_player_a657ce2d7d811eb0af3249effaca7a6c0} 
-void {\bfseries Set\+Sound\+Level} (float n\+Sound\+Level)
+\Hypertarget{class_player_af56e7ac69c0b3157f83efe6658eb4fff}\label{class_player_af56e7ac69c0b3157f83efe6658eb4fff} 
+void {\bfseries Set\+Sound\+Level} (float sound\+Level)
 \item 
 override void \mbox{\hyperlink{class_player_a1c8f02f4432b8f894d5ed0fe076f21ee}{Save}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Writes the player\textquotesingle{}s gamestate to disk. \end{DoxyCompactList}\item 
 override void \mbox{\hyperlink{class_player_a80764079e1fc0a5b07cceb7a2386d5de}{Load}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Loads the player\textquotesingle{}s gamestate from disk. \end{DoxyCompactList}\item 
 \Hypertarget{class_player_a2665e541c166215b1b595de780512f7c}\label{class_player_a2665e541c166215b1b595de780512f7c} 
 void {\bfseries Set\+Tile\+Map\+Floor} (\mbox{\hyperlink{class_tile_map_floor}{Tile\+Map\+Floor}} floor)
 \item 
-\Hypertarget{class_player_a067122d60351c32ac26b66ceb2cc418a}\label{class_player_a067122d60351c32ac26b66ceb2cc418a} 
-\mbox{\hyperlink{class_tile_map_floor}{Tile\+Map\+Floor}} {\bfseries Get\+Tile\+Map\+Floor} ()
-\item 
-\Hypertarget{class_player_a5704022e886f5a9fec6f51cf29002137}\label{class_player_a5704022e886f5a9fec6f51cf29002137} 
-\mbox{\hyperlink{class_checkpoint}{Checkpoint}} {\bfseries Get\+Current\+Checkpoint} ()
-\item 
-\Hypertarget{class_player_aa3bc2ef5222650fc574f383d74efedfc}\label{class_player_aa3bc2ef5222650fc574f383d74efedfc} 
-void {\bfseries Load\+Weapon} (\mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}} weapon, string ammo, int slot)
-\item 
-\Hypertarget{class_player_a54848470190580c182546ccac443d0f9}\label{class_player_a54848470190580c182546ccac443d0f9} 
-bool {\bfseries Has\+Perk} (string name)
-\item 
-\Hypertarget{class_player_a37d4251ba3dec074139d6f5ebb54a33b}\label{class_player_a37d4251ba3dec074139d6f5ebb54a33b} 
-bool {\bfseries Has\+Rune} (string name)
-\item 
 override void \mbox{\hyperlink{class_player_ab2d71e41272761c6e8bdbd9b2ade696c}{Set\+Location}} (in \mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{World\+Area}} location)
-\item 
-\Hypertarget{class_player_a830922f4fbfdf203260902f90d28dde2}\label{class_player_a830922f4fbfdf203260902f90d28dde2} 
-Animated\+Sprite2D {\bfseries Get\+Torso\+Animation} ()
-\item 
-\Hypertarget{class_player_ac995a7a47009bc8c438b6e7f3489f209}\label{class_player_ac995a7a47009bc8c438b6e7f3489f209} 
-Animated\+Sprite2D {\bfseries Get\+Legs\+Animation} ()
-\item 
-\Hypertarget{class_player_a05aca90d041244e82056778f3a323cf5}\label{class_player_a05aca90d041244e82056778f3a323cf5} 
-Animated\+Sprite2D {\bfseries Get\+Left\+Arm\+Animation} ()
-\item 
-\Hypertarget{class_player_a29172f22aabad5f4828d486c92b33cb8}\label{class_player_a29172f22aabad5f4828d486c92b33cb8} 
-Animated\+Sprite2D {\bfseries Get\+Right\+Arm\+Animation} ()
-\item 
-\Hypertarget{class_player_ae7776d319fca728eec5fe463299fdba6}\label{class_player_ae7776d319fca728eec5fe463299fdba6} 
-void {\bfseries Set\+Primary\+Weapon} (\mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}} weapon)
-\item 
-\Hypertarget{class_player_a948fa60b6a4e18ed6e91f7e758d826e9}\label{class_player_a948fa60b6a4e18ed6e91f7e758d826e9} 
-void {\bfseries Set\+Heavy\+Primary\+Weapon} (\mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}} weapon)
-\item 
-\Hypertarget{class_player_acbaf10bec4a4ab114870f30648869aa6}\label{class_player_acbaf10bec4a4ab114870f30648869aa6} 
-void {\bfseries Set\+Sidearm\+Weapon} (\mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}} weapon)
-\item 
-\Hypertarget{class_player_aa74dbe2862a6e015f99bc0971f852c05}\label{class_player_aa74dbe2862a6e015f99bc0971f852c05} 
-void {\bfseries Set\+Heavy\+Sidearm\+Weapon} (\mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}} weapon)
-\item 
-\Hypertarget{class_player_a035a680a854f890c1f3820c07c49019e}\label{class_player_a035a680a854f890c1f3820c07c49019e} 
-\mbox{\hyperlink{class_player_system_1_1_weapon_slot}{Weapon\+Slot}} {\bfseries Get\+Primary\+Weapon} ()
-\item 
-\Hypertarget{class_player_aaca80af42030540ee2b146defa6b0ad8}\label{class_player_aaca80af42030540ee2b146defa6b0ad8} 
-\mbox{\hyperlink{class_player_system_1_1_weapon_slot}{Weapon\+Slot}} {\bfseries Get\+Heavy\+Primary\+Weapon} ()
-\item 
-\Hypertarget{class_player_ab7c892de5214e82435ce56b52d7e5f0d}\label{class_player_ab7c892de5214e82435ce56b52d7e5f0d} 
-\mbox{\hyperlink{class_player_system_1_1_weapon_slot}{Weapon\+Slot}} {\bfseries Get\+Sidearm\+Weapon} ()
-\item 
-\Hypertarget{class_player_af549a84be53e89dc6553985c63fa6c54}\label{class_player_af549a84be53e89dc6553985c63fa6c54} 
-\mbox{\hyperlink{class_player_system_1_1_weapon_slot}{Weapon\+Slot}} {\bfseries Get\+Heavy\+Sidearm\+Weapon} ()
-\item 
-\Hypertarget{class_player_a732e3ed5276377f80a130e34c01c8f77}\label{class_player_a732e3ed5276377f80a130e34c01c8f77} 
-Resource {\bfseries Get\+Current\+Mapping\+Context} ()
-\item 
-\Hypertarget{class_player_ac6cb1097e2aeed3390c5ecdbd43bc54c}\label{class_player_ac6cb1097e2aeed3390c5ecdbd43bc54c} 
-\mbox{\hyperlink{class_player_system_1_1_weapon_slot}{Weapon\+Slot}}\mbox{[}$\,$\mbox{]} {\bfseries Get\+Weapon\+Slots} ()
-\item 
-\Hypertarget{class_player_a0441da59a8e0f5db17e03d7efc565adc}\label{class_player_a0441da59a8e0f5db17e03d7efc565adc} 
-Godot.\+Collections.\+Dictionary$<$ int, \mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}} $>$ {\bfseries Get\+Weapons\+Stack} ()
-\item 
-\Hypertarget{class_player_a858083fc6de2958967ea56bbd6062b42}\label{class_player_a858083fc6de2958967ea56bbd6062b42} 
-Godot.\+Collections.\+Dictionary$<$ int, \mbox{\hyperlink{class_ammo_stack}{Ammo\+Stack}} $>$ {\bfseries Get\+Ammo\+Stacks} ()
-\item 
-\Hypertarget{class_player_ad5441c610d734e8f7b20cbd8e70e2cc9}\label{class_player_ad5441c610d734e8f7b20cbd8e70e2cc9} 
-Node {\bfseries Get\+Inventory} ()
 \item 
 \Hypertarget{class_player_aeacc0645c0ee587604cdc5be3c8a6720}\label{class_player_aeacc0645c0ee587604cdc5be3c8a6720} 
 \mbox{\hyperlink{class_player_system_1_1_arm}{Arm}} {\bfseries Get\+Weapon\+Hand} (\mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}} weapon)
 \item 
-\Hypertarget{class_player_a81b433de2a4fabeab041b222cd2d3d1b}\label{class_player_a81b433de2a4fabeab041b222cd2d3d1b} 
-Godot.\+Vector2 {\bfseries Get\+Input\+Velocity} ()
-\item 
-\Hypertarget{class_player_af592d26e6f08352775b42a5618beb87b}\label{class_player_af592d26e6f08352775b42a5618beb87b} 
-\mbox{\hyperlink{class_player_system_1_1_weapon_slot}{Weapon\+Slot}} {\bfseries Get\+Slot} (int n\+Slot)
-\item 
 \Hypertarget{class_player_afbebe152fae6bdc88f0fe88a3159a761}\label{class_player_afbebe152fae6bdc88f0fe88a3159a761} 
 float {\bfseries Get\+Arm\+Angle} ()
 \item 
-\Hypertarget{class_player_a5bf8dc459987b63f897144a5ed66dafa}\label{class_player_a5bf8dc459987b63f897144a5ed66dafa} 
-Canvas\+Layer {\bfseries Get\+HUD} ()
-\item 
-\Hypertarget{class_player_a9c29b913fe0345f6af2b1f1e4b6867d2}\label{class_player_a9c29b913fe0345f6af2b1f1e4b6867d2} 
-void {\bfseries Set\+Arm\+Angle} (float n\+Angle)
-\item 
-\Hypertarget{class_player_a0f7c2f347b0f0f50d4186991d9031920}\label{class_player_a0f7c2f347b0f0f50d4186991d9031920} 
-\mbox{\hyperlink{class_player_system_1_1_arm}{Arm}} {\bfseries Get\+Last\+Used\+Arm} ()
+\Hypertarget{class_player_a8adca6fd6a9ebd48b2984080d14d3545}\label{class_player_a8adca6fd6a9ebd48b2984080d14d3545} 
+void {\bfseries Set\+Arm\+Angle} (float angle)
 \item 
 \Hypertarget{class_player_abdb63f081c4cef05018a2c529dcdedf9}\label{class_player_abdb63f081c4cef05018a2c529dcdedf9} 
 void {\bfseries Set\+Last\+Used\+Arm} (in \mbox{\hyperlink{class_player_system_1_1_arm}{Arm}} arm)
 \item 
-\Hypertarget{class_player_aaf321b0720521ded9d2419ba58722a50}\label{class_player_aaf321b0720521ded9d2419ba58722a50} 
-float {\bfseries Get\+Sound\+Level} ()
+\Hypertarget{class_player_aebbdd668d77749b4ff42f94340a284d7}\label{class_player_aebbdd668d77749b4ff42f94340a284d7} 
+void {\bfseries Set\+Health} (float health)
 \item 
-\Hypertarget{class_player_ae83eb6db2e7eed3252393dc7425a2dd4}\label{class_player_ae83eb6db2e7eed3252393dc7425a2dd4} 
-void {\bfseries Set\+Health} (float n\+Health)
-\item 
-\Hypertarget{class_player_a2a7ae3c42ff9488476d1b9d39e413f9d}\label{class_player_a2a7ae3c42ff9488476d1b9d39e413f9d} 
-float {\bfseries Get\+Rage} ()
-\item 
-\Hypertarget{class_player_af3c1919934e9953b269ffc6a3eafbcf8}\label{class_player_af3c1919934e9953b269ffc6a3eafbcf8} 
-void {\bfseries Set\+Rage} (float n\+Rage)
-\item 
-\Hypertarget{class_player_a637b6dfe426ec67df08bd39ec158ceb2}\label{class_player_a637b6dfe426ec67df08bd39ec158ceb2} 
-Player\+Flags {\bfseries Get\+Flags} ()
+\Hypertarget{class_player_a32373b0682c7803de62f98a08f4be4e0}\label{class_player_a32373b0682c7803de62f98a08f4be4e0} 
+void {\bfseries Set\+Rage} (float rage)
 \item 
 \Hypertarget{class_player_aecc3a2e0b570e0619cecc140976800d4}\label{class_player_aecc3a2e0b570e0619cecc140976800d4} 
 void {\bfseries Set\+Flags} (Player\+Flags flags)
 \item 
-\Hypertarget{class_player_a54411411dc895d1e3ea2cfb0fdff1515}\label{class_player_a54411411dc895d1e3ea2cfb0fdff1515} 
-Hands {\bfseries Get\+Hands\+Used} ()
-\item 
 \Hypertarget{class_player_a1f3b8761a6ebad310a3742609486cd94}\label{class_player_a1f3b8761a6ebad310a3742609486cd94} 
 void {\bfseries Set\+Hands\+Used} (Hands hands)
 \item 
-\Hypertarget{class_player_aa71359a607deb2bd5b8a53081bdb1e50}\label{class_player_aa71359a607deb2bd5b8a53081bdb1e50} 
-\mbox{\hyperlink{class_player_system_1_1_weapon_slot}{Weapon\+Slot}}\mbox{[}$\,$\mbox{]} {\bfseries Get\+Slots} ()
-\item 
-\Hypertarget{class_player_ad71d5d73d37f8195303b39efc7e3d190}\label{class_player_ad71d5d73d37f8195303b39efc7e3d190} 
-void {\bfseries Set\+Slots} (\mbox{\hyperlink{class_player_system_1_1_weapon_slot}{Weapon\+Slot}}\mbox{[}$\,$\mbox{]} slots)
-\item 
-\Hypertarget{class_player_a912d50c9738400b783acc4dae1061420}\label{class_player_a912d50c9738400b783acc4dae1061420} 
-void {\bfseries Set\+Ground\+Material} (Ground\+Material\+Type n\+Type)
-\item 
-\Hypertarget{class_player_a5a09451bda003e2a0e9c508aae1ff2c4}\label{class_player_a5a09451bda003e2a0e9c508aae1ff2c4} 
-\mbox{\hyperlink{class_player_system_1_1_arm}{Arm}} {\bfseries Get\+Left\+Arm} ()
-\item 
-\Hypertarget{class_player_aa1e232118a5b111d772d9b15f03cb6ec}\label{class_player_aa1e232118a5b111d772d9b15f03cb6ec} 
-\mbox{\hyperlink{class_player_system_1_1_arm}{Arm}} {\bfseries Get\+Right\+Arm} ()
-\item 
-\Hypertarget{class_player_a34b0abc3d256d52f3c5222a368493937}\label{class_player_a34b0abc3d256d52f3c5222a368493937} 
-int {\bfseries Get\+Current\+Weapon} ()
+\Hypertarget{class_player_af67cb20a344af1bd6761092ed2f866e2}\label{class_player_af67cb20a344af1bd6761092ed2f866e2} 
+void {\bfseries Set\+Ground\+Material} (Ground\+Material\+Type type)
 \item 
 override void \mbox{\hyperlink{class_player_a7b5e46e24b96a499620c025ea0727450}{Play\+Sound}} (Audio\+Stream\+Player2D channel, Audio\+Stream stream)
-\item 
-\Hypertarget{class_player_a510992872162e363acbf97ab912a9e05}\label{class_player_a510992872162e363acbf97ab912a9e05} 
-void {\bfseries Setup\+Split\+Screen} (int n\+Input\+Index)
+\begin{DoxyCompactList}\small\item\em Plays a sound effect from the provided channel and stream local to the entity\textquotesingle{}s position. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_a9ddb5eb101261dc07c028c565156dfa9}\label{class_player_a9ddb5eb101261dc07c028c565156dfa9} 
+void {\bfseries Setup\+Split\+Screen} (int input\+Index)
 \item 
 \Hypertarget{class_player_ac8c8d20c6413af236a9dfdccaf8dc102}\label{class_player_ac8c8d20c6413af236a9dfdccaf8dc102} 
 void {\bfseries Multiplayer\+Reset} ()
 \item 
-override void \mbox{\hyperlink{class_player_af8e7667503b405d51c12f9a1223a15ac}{Damage}} (in \mbox{\hyperlink{class_renown_1_1_entity}{Entity}} attacker, float n\+Amount)
+override void \mbox{\hyperlink{class_player_adc85ee45e62dcb76981898cf7422f035}{Damage}} (in \mbox{\hyperlink{class_renown_1_1_entity}{Entity}} attacker, float amount)
 \item 
 \Hypertarget{class_player_a3d54a14f952486077308e291b35fd0df}\label{class_player_a3d54a14f952486077308e291b35fd0df} 
 void {\bfseries On\+Parry} (\mbox{\hyperlink{class_bullet}{Bullet}} from, float damage)
@@ -405,20 +283,14 @@ void {\bfseries End\+Interaction} ()
 \Hypertarget{class_player_a7a25bc5068ef56a3776bdb216bef1141}\label{class_player_a7a25bc5068ef56a3776bdb216bef1141} 
 void {\bfseries Begin\+Interaction} (\mbox{\hyperlink{class_interaction_item}{Interaction\+Item}} item)
 \item 
-\Hypertarget{class_player_a7bd4108201d8bcf9eca278bfad0f3dfe}\label{class_player_a7bd4108201d8bcf9eca278bfad0f3dfe} 
-void {\bfseries Equip\+Slot} (int n\+Slot)
-\item 
-\Hypertarget{class_player_a45d5eca1dcfc033abc9957cbb8ad5c5c}\label{class_player_a45d5eca1dcfc033abc9957cbb8ad5c5c} 
-void {\bfseries Switch\+Input\+Mode} (Resource Input\+Context)
-\item 
-\Hypertarget{class_player_a3645ff8a4268176aa02d484a443c98ea}\label{class_player_a3645ff8a4268176aa02d484a443c98ea} 
-override void {\bfseries \+\_\+\+Exit\+Tree} ()
+\Hypertarget{class_player_a4cb4b42f4d747b279c7a8410ee0e0e93}\label{class_player_a4cb4b42f4d747b279c7a8410ee0e0e93} 
+void {\bfseries Equip\+Slot} (int slot)
 \item 
 \Hypertarget{class_player_af1f380bc0ff1a7f3a3679e62c3ecda3d}\label{class_player_af1f380bc0ff1a7f3a3679e62c3ecda3d} 
 override void {\bfseries \+\_\+\+Unhandled\+Input} (Input\+Event @event)
 \item 
-\Hypertarget{class_player_a1e40b879b220333d288c0863e6b5c35d}\label{class_player_a1e40b879b220333d288c0863e6b5c35d} 
-void {\bfseries Connect\+Gamepad\+Binds} ()
+\Hypertarget{class_player_a00021690404b8e6f5209c5cc1eb767d9}\label{class_player_a00021690404b8e6f5209c5cc1eb767d9} 
+void {\bfseries Connect\+Bindings} ()
 \item 
 \Hypertarget{class_player_ae192a478a80f0e93e01339d62cdd6f6d}\label{class_player_ae192a478a80f0e93e01339d62cdd6f6d} 
 override void {\bfseries \+\_\+\+Ready} ()
@@ -426,17 +298,6 @@ override void {\bfseries \+\_\+\+Ready} ()
 override void \mbox{\hyperlink{class_player_ac0eb7e06009143be17759a3793cf2b42}{Physics\+Update}} (double delta)
 \item 
 override void \mbox{\hyperlink{class_player_af9a81ccfc37ebaf09f03919b565ab7bf}{Update}} (double delta)
-\item 
-\Hypertarget{class_player_a87884c0f10db6f0882f398e283546861}\label{class_player_a87884c0f10db6f0882f398e283546861} 
-void {\bfseries Pickup\+Ammo} (\mbox{\hyperlink{class_ammo_entity}{Ammo\+Entity}} ammo, int n\+Amount=-\/1)
-\item 
-override void \mbox{\hyperlink{class_player_a990c07b90e5eb4b3ad2a0f589892f5c5}{Pickup\+Weapon}} (\mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}} weapon)
-\item 
-\Hypertarget{class_player_aa710ebe40fa575c93cb2cfebe9b6406a}\label{class_player_aa710ebe40fa575c93cb2cfebe9b6406a} 
-void {\bfseries Drop\+Weapon} (int hash\+Code)
-\item 
-\Hypertarget{class_player_a136b04e67bb2548f65fdf60ce45e5547}\label{class_player_a136b04e67bb2548f65fdf60ce45e5547} 
-void {\bfseries Drop\+Ammo} (int hash\+Code)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}}}
 \begin{DoxyCompactItemize}
@@ -450,21 +311,31 @@ virtual void {\bfseries On\+Challenged} ()
 virtual void {\bfseries On\+Intimidated} ()
 \item 
 virtual void {\bfseries Clear\+Status\+Effects} ()
+\begin{DoxyCompactList}\small\item\em Clears all \doxylink{class_status_effect}{Status\+Effect} objects currently being applied to the entity and clears the Dictionary. \end{DoxyCompactList}\item 
+virtual void {\bfseries Pickup\+Weapon} (\mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}} weapon)
 \item 
-virtual bool {\bfseries Has\+Relation} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other)
+virtual bool {\bfseries Has\+Relation} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} entity)
 \item 
-virtual float \mbox{\hyperlink{class_renown_1_1_entity_a8017e0770fbc5744a738dec23b1714c2}{Get\+Relation\+Score}} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other)
+virtual bool {\bfseries Has\+Relation} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction)
 \item 
-virtual Relation\+Status \mbox{\hyperlink{class_renown_1_1_entity_ad90010e3bde77e879d9c5a2007b86d17}{Get\+Relation\+Status}} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other)
+virtual float \mbox{\hyperlink{class_renown_1_1_entity_a5fb57a98d019d10b4541f4bbb7fcb9d8}{Get\+Relation\+Score}} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} entity)
 \item 
-virtual void \mbox{\hyperlink{class_renown_1_1_entity_a4c0e95fc845748ed38c2d47f4e361874}{Determine\+Relation\+Status}} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other)
+virtual float \mbox{\hyperlink{class_renown_1_1_entity_acbf77cc2d87dca56682f3bc4484138f6}{Get\+Relation\+Score}} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction)
+\item 
+virtual Relation\+Status \mbox{\hyperlink{class_renown_1_1_entity_a2f80b814c3751b3d3cb343b2cbc94f19}{Get\+Relation\+Status}} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} entity)
+\item 
+virtual Relation\+Status \mbox{\hyperlink{class_renown_1_1_entity_af70beaa7dc4a1bb193da6fc389690bb1}{Get\+Relation\+Status}} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction)
+\item 
+virtual void \mbox{\hyperlink{class_renown_1_1_entity_a05afc6ce53c862e9ecfd21fc1e4c4f9e}{Determine\+Relation\+Status}} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} entity)
+\item 
+virtual void \mbox{\hyperlink{class_renown_1_1_entity_a64b7aada5704407950f76c7e93761106}{Determine\+Relation\+Status}} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction)
 \item 
 Node\+Path \mbox{\hyperlink{class_renown_1_1_entity_a6b51f1fffcfb9b72b562e1bcd8c3336e}{Get\+Hash}} ()
 \item 
 virtual String\+Name \mbox{\hyperlink{class_renown_1_1_entity_a506656c6ec5f7060580f0f501c996ad4}{Get\+Object\+Name}} ()
 \item 
 override void {\bfseries \+\_\+\+Ready} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em godot initialization override \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -474,71 +345,52 @@ static void {\bfseries Start\+Thought\+Bubble} (string text)
 \Hypertarget{class_player_a3cfca452156d62cb611308fcefe51971}\label{class_player_a3cfca452156d62cb611308fcefe51971} 
 static void {\bfseries Start\+Dialogue} (Resource dialogue\+Resource, string key, System.\+Action$<$ int $>$ callback)
 \item 
-\Hypertarget{class_player_a938ea74fb646d88bd71dcb821b08b4fd}\label{class_player_a938ea74fb646d88bd71dcb821b08b4fd} 
-static bool {\bfseries Is\+Tutorial\+Active} ()
+\Hypertarget{class_player_a79700cd95ca4e9c17045c06362e75462}\label{class_player_a79700cd95ca4e9c17045c06362e75462} 
+static void {\bfseries Shake\+Camera} (float amount)
 \item 
-\Hypertarget{class_player_a3f7252c6659e4355c2f52ffa49688be8}\label{class_player_a3f7252c6659e4355c2f52ffa49688be8} 
-static void {\bfseries Shake\+Camera} (float n\+Amount)
-\item 
-\Hypertarget{class_player_a4c2096ad3dc855c27effbd8eff088fa7}\label{class_player_a4c2096ad3dc855c27effbd8eff088fa7} 
-static void {\bfseries Shake\+Camera\+Directional} (float n\+Amount, Godot.\+Vector2 direction)
+\Hypertarget{class_player_a6eae515553bb4b6d1e723f418ba75eb0}\label{class_player_a6eae515553bb4b6d1e723f418ba75eb0} 
+static void {\bfseries Shake\+Camera\+Directional} (float amount, Godot.\+Vector2 direction)
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_player_ad4cac5dcc3638cc4031432d267078110}\label{class_player_ad4cac5dcc3638cc4031432d267078110} 
-Resource {\bfseries Move\+Action}
-\item 
-\Hypertarget{class_player_ac5e91d3deac258b19eab198c7c10669a}\label{class_player_ac5e91d3deac258b19eab198c7c10669a} 
-Player\+Stat$<$ float $>$ {\bfseries Max\+Health}
-\item 
-\Hypertarget{class_player_a10d068cf12e8f8a2e73452c2d932623c}\label{class_player_a10d068cf12e8f8a2e73452c2d932623c} 
-Player\+Stat$<$ float $>$ {\bfseries Max\+Sanity}
-\item 
-\Hypertarget{class_player_a312a606963c85f478ffc2124e2807b01}\label{class_player_a312a606963c85f478ffc2124e2807b01} 
-Player\+Stat$<$ float $>$ {\bfseries Max\+Rage}
-\item 
-\Hypertarget{class_player_af5e2950c82744c357d1f2a41004876f5}\label{class_player_af5e2950c82744c357d1f2a41004876f5} 
-Player\+Stat$<$ float $>$ {\bfseries Speed}
-\item 
+Player\+Stat$<$ float $>$ \mbox{\hyperlink{class_player_ac5e91d3deac258b19eab198c7c10669a}{Max\+Health}}
+\begin{DoxyCompactList}\small\item\em The hard cap on player health. \end{DoxyCompactList}\item 
+Player\+Stat$<$ float $>$ \mbox{\hyperlink{class_player_a10d068cf12e8f8a2e73452c2d932623c}{Max\+Sanity}}
+\begin{DoxyCompactList}\small\item\em The hard cap on player sanity. \end{DoxyCompactList}\item 
+Player\+Stat$<$ float $>$ \mbox{\hyperlink{class_player_a312a606963c85f478ffc2124e2807b01}{Max\+Rage}}
+\begin{DoxyCompactList}\small\item\em The hard cap on player rage. \end{DoxyCompactList}\item 
+Player\+Stat$<$ float $>$ \mbox{\hyperlink{class_player_af5e2950c82744c357d1f2a41004876f5}{Speed}}
+\begin{DoxyCompactList}\small\item\em The hard cap on a player\textquotesingle{}s maximum speed. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_a4c47a18b3edad9b487902255bebec052}\label{class_player_a4c47a18b3edad9b487902255bebec052} 
+\mbox{\hyperlink{class_player_system_1_1_inventory_manager}{Inventory\+Manager}} {\bfseries Inventory}
+\begin{DoxyCompactList}\small\item\em Handles inventory data and management. \end{DoxyCompactList}\item 
 \Hypertarget{class_player_a9c4f2f79745ecbd4d415fd8ed5da1910}\label{class_player_a9c4f2f79745ecbd4d415fd8ed5da1910} 
 \mbox{\hyperlink{struct_multiplayer_1_1_player_data_1_1_multiplayer_metadata}{Multiplayer.\+Player\+Data.\+Multiplayer\+Metadata}} {\bfseries Multiplayer\+Data}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_player_a95d5c9031576b5da581142e1ae4e40db}\label{class_player_a95d5c9031576b5da581142e1ae4e40db} 
-static readonly float {\bfseries Punch\+Range} = 40.\+0f
+\Hypertarget{class_player_aeb2d6a63685e1fd8bfb739b7acdf8032}\label{class_player_aeb2d6a63685e1fd8bfb739b7acdf8032} 
+static readonly float {\bfseries PUNCH\+\_\+\+RANGE} = 40.\+0f
 \item 
 \Hypertarget{class_player_a86f381966e692259f7af70b313fdc013}\label{class_player_a86f381966e692259f7af70b313fdc013} 
 static readonly int {\bfseries MAX\+\_\+\+WEAPON\+\_\+\+SLOTS} = 4
 \item 
-\Hypertarget{class_player_a8d01f9ce1272d42bd9a17cc4e09e56b5}\label{class_player_a8d01f9ce1272d42bd9a17cc4e09e56b5} 
-static readonly Color {\bfseries Aiming\+At\+Target} = new Color( 1.\+0f, 0.\+0f, 0.\+0f, 1.\+0f )
+\Hypertarget{class_player_abf0ef83c578e09be476eea9acb09e4e2}\label{class_player_abf0ef83c578e09be476eea9acb09e4e2} 
+static readonly Color {\bfseries AIMING\+\_\+\+AT\+\_\+\+TARGET} = new Color( 1.\+0f, 0.\+0f, 0.\+0f, 1.\+0f )
 \item 
-\Hypertarget{class_player_a30e885a50d921c93ea4be388ae95bfd4}\label{class_player_a30e885a50d921c93ea4be388ae95bfd4} 
-static readonly Color {\bfseries Aiming\+At\+Null} = new Color( 0.\+5f, 0.\+5f, 0.\+0f, 1.\+0f )
+\Hypertarget{class_player_a0b83fcaff76a2d6d56528bdea4fb9679}\label{class_player_a0b83fcaff76a2d6d56528bdea4fb9679} 
+static readonly Color {\bfseries AIMING\+\_\+\+AT\+\_\+\+NULL} = new Color( 0.\+5f, 0.\+5f, 0.\+0f, 1.\+0f )
 \item 
-\Hypertarget{class_player_a4bff1af5b7bf0fda4f6ac745929cabcf}\label{class_player_a4bff1af5b7bf0fda4f6ac745929cabcf} 
-static readonly float {\bfseries Base\+Fast\+Travel\+Rage\+Cost} = 20.\+0f
+\Hypertarget{class_player_a3ae0a39f5da8b2abb7bcfef7e4a15395}\label{class_player_a3ae0a39f5da8b2abb7bcfef7e4a15395} 
+static readonly float {\bfseries BASE\+\_\+\+FAST\+\_\+\+TRAVEL\+\_\+\+RAGE\+\_\+\+COST} = 20.\+0f
 \item 
-\Hypertarget{class_player_ab56c817414137e5b264cee3bc6f1d9f6}\label{class_player_ab56c817414137e5b264cee3bc6f1d9f6} 
-static readonly float {\bfseries Base\+Fast\+Travel\+Sanity\+Cost} = 0.\+0f
+\Hypertarget{class_player_a7659f1dca80a6240d17dc13044bbc9ad}\label{class_player_a7659f1dca80a6240d17dc13044bbc9ad} 
+static readonly float {\bfseries BASE\+\_\+\+FAST\+\_\+\+TRAVEL\+\_\+\+SANITY\+\_\+\+COST} = 0.\+0f
 \item 
-\Hypertarget{class_player_a91840278f1f95028f8ecdf81d55964a3}\label{class_player_a91840278f1f95028f8ecdf81d55964a3} 
-static readonly float {\bfseries Base\+Enemy\+Detection\+Speed} = 1.\+0f
-\item 
-\Hypertarget{class_player_a92bf528dc76ae3798ffd1fc3c073ee8f}\label{class_player_a92bf528dc76ae3798ffd1fc3c073ee8f} 
-static readonly int {\bfseries Maximum\+Rune\+Slots} = 5
-\begin{DoxyCompactList}\small\item\em The maximum amount of weight the player is currently allowed to carry. \end{DoxyCompactList}\item 
-\Hypertarget{class_player_a17cb1a6199f0aaa32a84f9b68e19fa68}\label{class_player_a17cb1a6199f0aaa32a84f9b68e19fa68} 
-static readonly int {\bfseries Maximum\+Quick\+Access\+Slots} = 4
-\item 
-\Hypertarget{class_player_adc45282a94416ca72d1535787d8cb692}\label{class_player_adc45282a94416ca72d1535787d8cb692} 
-static readonly int {\bfseries MAX\+\_\+\+RUNES} = 5
-\item 
-\Hypertarget{class_player_a259398ac6dcfc994f4e94818f4ee7d1c}\label{class_player_a259398ac6dcfc994f4e94818f4ee7d1c} 
-static readonly int {\bfseries MAX\+\_\+\+PERKS} = 1
+\Hypertarget{class_player_a4338eae25c8663ccac0a79f3d5be69ac}\label{class_player_a4338eae25c8663ccac0a79f3d5be69ac} 
+static readonly float {\bfseries BASE\+\_\+\+ENEMY\+\_\+\+DETECTION\+\_\+\+SPEED} = 1.\+0f
 \item 
 \Hypertarget{class_player_ab3e74e821c4dceb7aac8e7566415f16f}\label{class_player_ab3e74e821c4dceb7aac8e7566415f16f} 
 static readonly float {\bfseries ACCEL} = 500.\+0f
@@ -554,96 +406,95 @@ static readonly float {\bfseries JUMP\+\_\+\+VELOCITY} = -\/400.\+0f
 \item 
 \Hypertarget{class_player_ae0a432b7257249bc5397f569e09f03a3}\label{class_player_ae0a432b7257249bc5397f569e09f03a3} 
 static Godot.\+Vector2I {\bfseries Screen\+Size} = Godot.\+Vector2\+I.\+Zero
-\item 
-\Hypertarget{class_player_a796c1076b4574db920d2417dc717631b}\label{class_player_a796c1076b4574db920d2417dc717631b} 
-static readonly float {\bfseries Maximum\+Inventory\+Weight} = 500.\+0f
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_player_ac32ec31753f43ec745b7fcbc2ba28f70}\label{class_player_ac32ec31753f43ec745b7fcbc2ba28f70} 
-float {\bfseries Total\+Inventory\+Weight} = 0.\+0f\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\begin{DoxyCompactList}\small\item\em The current total weight of inventory items. \end{DoxyCompactList}\item 
-\Hypertarget{class_player_a5141203c15ec9ae7ddf8125af783b6ff}\label{class_player_a5141203c15ec9ae7ddf8125af783b6ff} 
-Resource {\bfseries Dash\+Action}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\Hypertarget{class_player_ad1df6a6cd307d4722816f80719506bff}\label{class_player_ad1df6a6cd307d4722816f80719506bff} 
+Node {\bfseries Inventory\+Database}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-\Hypertarget{class_player_ae0e7ec05c7ac0e762db29063cb0dc72e}\label{class_player_ae0e7ec05c7ac0e762db29063cb0dc72e} 
-Resource {\bfseries Slide\+Action}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\Hypertarget{class_player_aa40c33c35b4f1799ae14a15a7ec938ae}\label{class_player_aa40c33c35b4f1799ae14a15a7ec938ae} 
+\mbox{\hyperlink{class_player_system_1_1_arm}{Arm}} {\bfseries Arm\+Left}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-\Hypertarget{class_player_a9a5a62b70b0c41625dd74ba006554838}\label{class_player_a9a5a62b70b0c41625dd74ba006554838} 
-Resource {\bfseries Melee\+Action}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\Hypertarget{class_player_a9991d86fd517756e54d45e2065df7607}\label{class_player_a9991d86fd517756e54d45e2065df7607} 
+\mbox{\hyperlink{class_player_system_1_1_arm}{Arm}} {\bfseries Arm\+Right}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-\Hypertarget{class_player_ad95f0b78da49f4abfd6cdb5b8ff40a73}\label{class_player_ad95f0b78da49f4abfd6cdb5b8ff40a73} 
-Resource {\bfseries Use\+Weapon\+Action}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\Hypertarget{class_player_a339ff8dd03ba97275cf1ac9494b72c87}\label{class_player_a339ff8dd03ba97275cf1ac9494b72c87} 
+\mbox{\hyperlink{class_player_system_1_1_arm_attachments_1_1_arm_attachment}{Arm\+Attachment}} {\bfseries Arm\+Attachment}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-\Hypertarget{class_player_a06e4a9a637742946bfe23358051ebf54}\label{class_player_a06e4a9a637742946bfe23358051ebf54} 
-Resource {\bfseries Switch\+Weapon\+Mode\+Action}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\Hypertarget{class_player_a37462d9baba20ced80919c9601cb4911}\label{class_player_a37462d9baba20ced80919c9601cb4911} 
+Player\+Flags {\bfseries Flags} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-\Hypertarget{class_player_a3ae9c15161fdfe86ad5689b4b08e955e}\label{class_player_a3ae9c15161fdfe86ad5689b4b08e955e} 
-Resource {\bfseries Next\+Weapon\+Action}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\Hypertarget{class_player_a67296f827ba0ed1da37cf060aa842284}\label{class_player_a67296f827ba0ed1da37cf060aa842284} 
+\mbox{\hyperlink{class_interactables_1_1_checkpoint}{Checkpoint}} {\bfseries Starting\+Checkpoint}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-\Hypertarget{class_player_a44f41e1372d72b0d548bdef2b813d128}\label{class_player_a44f41e1372d72b0d548bdef2b813d128} 
-Resource {\bfseries Prev\+Weapon\+Action}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
-\Hypertarget{class_player_aa14110d6b7656fabc375b45e109ac75f}\label{class_player_aa14110d6b7656fabc375b45e109ac75f} 
-Resource {\bfseries Open\+Inventory\+Action}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
-\Hypertarget{class_player_a949746fb3a6e2c7cb1d92cd44f489eba}\label{class_player_a949746fb3a6e2c7cb1d92cd44f489eba} 
-Resource {\bfseries Bullet\+Time\+Action}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
-\Hypertarget{class_player_a1d80a6aee058b025d57147291ee0ed98}\label{class_player_a1d80a6aee058b025d57147291ee0ed98} 
-Resource {\bfseries Arm\+Angle\+Action}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
-\Hypertarget{class_player_a73a62badcfa820b713a51fc55cb42dca}\label{class_player_a73a62badcfa820b713a51fc55cb42dca} 
-Resource {\bfseries Use\+Both\+Hands\+Action}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
-\Hypertarget{class_player_a9622618d27ba6963b1e769c0bd1159e7}\label{class_player_a9622618d27ba6963b1e769c0bd1159e7} 
-Resource {\bfseries Aim\+Angle\+Action}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
-\Hypertarget{class_player_a8ffd58e3ca65bb862d42b69fea33569f}\label{class_player_a8ffd58e3ca65bb862d42b69fea33569f} 
-Resource {\bfseries Interact\+Action}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
-\Hypertarget{class_player_a3d5ec4da56337127cad600139021f3d0}\label{class_player_a3d5ec4da56337127cad600139021f3d0} 
-Animated\+Sprite2D {\bfseries Torso\+Animation}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
-\Hypertarget{class_player_a1f63856d71f91bd3a7fcc2fed44edbf2}\label{class_player_a1f63856d71f91bd3a7fcc2fed44edbf2} 
-Animated\+Sprite2D {\bfseries Leg\+Animation}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
-\Hypertarget{class_player_a5a04fa8bd2763a38ca9dfa0349190fba}\label{class_player_a5a04fa8bd2763a38ca9dfa0349190fba} 
-Animated\+Sprite2D {\bfseries Idle\+Animation}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
+\Hypertarget{class_player_ad42074bd3fc946c53161f714c2065aae}\label{class_player_ad42074bd3fc946c53161f714c2065aae} 
+\mbox{\hyperlink{class_tile_map_floor}{Tile\+Map\+Floor}} {\bfseries Floor}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The current \doxylink{class_tile_map_floor}{Tile\+Map\+Floor} that the player occupies. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_a0eb78b06853c7e5dc574322539ef86db}\label{class_player_a0eb78b06853c7e5dc574322539ef86db} 
+Animated\+Sprite2D? {\bfseries Torso\+Animation}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Handles torso animation. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_afd90d85c61f3a7d5274fd72e672b865e}\label{class_player_afd90d85c61f3a7d5274fd72e672b865e} 
+Animated\+Sprite2D? {\bfseries Leg\+Animation}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Handles leg animation. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_aa5078d4c7a7d792247be8d7a46939f73}\label{class_player_aa5078d4c7a7d792247be8d7a46939f73} 
+Animated\+Sprite2D? {\bfseries Idle\+Animation}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Handles all full body animations. \end{DoxyCompactList}\item 
 \Hypertarget{class_player_afbc9879f93608ea53ae9a4c81083c345}\label{class_player_afbc9879f93608ea53ae9a4c81083c345} 
 Ground\+Material\+Type {\bfseries Ground\+Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-\Hypertarget{class_player_a899b817e5dc6a009bc4e37951f6a3add}\label{class_player_a899b817e5dc6a009bc4e37951f6a3add} 
-\mbox{\hyperlink{class_player_system_1_1_weapon_slot}{Weapon\+Slot}}\mbox{[}$\,$\mbox{]} {\bfseries Weapon\+Slots} = new \mbox{\hyperlink{class_player_system_1_1_weapon_slot}{Weapon\+Slot}}\mbox{[} MAX\+\_\+\+WEAPON\+\_\+\+SLOTS \mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+float \mbox{\hyperlink{class_player_a138af8700f4e2e4992c3847673ecde5e}{Blood\+Amount}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em How much blood the player is covered in. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_a000b6faa72a7351d6dba392c04b2335a}\label{class_player_a000b6faa72a7351d6dba392c04b2335a} 
+float {\bfseries Rage} = 60.\+0f\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-\Hypertarget{class_player_a647f486b0e046413d64209859cc0d1e2}\label{class_player_a647f486b0e046413d64209859cc0d1e2} 
-int {\bfseries Current\+Weapon} = Weapon\+Slot.\+INVALID\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\Hypertarget{class_player_a4787c537d21dfe8750e9afc35803ef1a}\label{class_player_a4787c537d21dfe8750e9afc35803ef1a} 
+float {\bfseries Sanity} = 60.\+0f\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-\Hypertarget{class_player_a0409d220510884a1a2e1f7d2b16af50c}\label{class_player_a0409d220510884a1a2e1f7d2b16af50c} 
-\mbox{\hyperlink{class_player_system_1_1_totems_1_1_totem}{Totem}} {\bfseries Totem} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\Hypertarget{class_player_aed64a1d5bd0428d3fccca1355822d3cf}\label{class_player_aed64a1d5bd0428d3fccca1355822d3cf} 
+Hands {\bfseries Hands\+Used} = Hands.\+Right\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_player_a2e00c7800c3cec6693cd1e0386619856}\label{class_player_a2e00c7800c3cec6693cd1e0386619856} 
+\mbox{\hyperlink{class_player_system_1_1_arm}{Arm}} {\bfseries Last\+Used\+Arm}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_player_a6115a039da40a51e19ab05e85a1a5374}\label{class_player_a6115a039da40a51e19ab05e85a1a5374} 
+Audio\+Stream\+Player2D {\bfseries Misc\+Channel}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em For sounds that are played by other classes related to player. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_ad2df1c8e2b6ef1ce8939ef156a3b608d}\label{class_player_ad2df1c8e2b6ef1ce8939ef156a3b608d} 
+int {\bfseries Tile\+Map\+Level}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_player_abeadfddd9e1aef2c765eb5e914e1a958}\label{class_player_abeadfddd9e1aef2c765eb5e914e1a958} 
+Hash\+Set$<$ \mbox{\hyperlink{struct_renown_1_1_renown_value}{Renown\+Value}} $>$ {\bfseries Relations}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_player_a6c38386d602d76d610ab5b5839eb408b}\label{class_player_a6c38386d602d76d610ab5b5839eb408b} 
+Hash\+Set$<$ \mbox{\hyperlink{struct_renown_1_1_renown_value}{Renown\+Value}} $>$ {\bfseries Debts}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_player_accb348e6beb8802e0b6de05c05b2232e}\label{class_player_accb348e6beb8802e0b6de05c05b2232e} 
+\mbox{\hyperlink{class_player_system_1_1_input_1_1_input_controller}{Input\+Controller}}? {\bfseries Input\+Manager}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Properties inherited from \mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}}}
 \begin{DoxyCompactItemize}
 \item 
-float {\bfseries Health} = 0.\+0f\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
-int {\bfseries Renown\+Score} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
-\mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{World\+Area}}? {\bfseries Location} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
-\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}}? {\bfseries Faction} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
-int {\bfseries Faction\+Importance} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\end{DoxyCompactItemize}
+float {\bfseries Health} = 0.\+0f\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The health of the entity. \end{DoxyCompactList}\item 
+int {\bfseries Renown\+Score} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The renown of an entity, think of it sort as "{}street cred"{}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{World\+Area}}? {\bfseries Location} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The \doxylink{class_renown_1_1_world_1_1_world_area}{World\+Area} the entity is currently colliding with. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}}? {\bfseries Faction} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The faction that the entity belongs to. Used for faction-\/specific behaviors with the AI. \end{DoxyCompactList}\item 
+int {\bfseries Faction\+Importance} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em How much the entity\textquotesingle{}s faction cares about them. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}}}
 \begin{DoxyCompactItemize}
 \item 
-Dictionary$<$ string, \mbox{\hyperlink{class_status_effect}{Status\+Effect}} $>$ {\bfseries Status\+Effects} = new Dictionary$<$string, \mbox{\hyperlink{class_status_effect}{Status\+Effect}}$>$()
-\end{DoxyCompactItemize}
+Concurrent\+Dictionary$<$ string, \mbox{\hyperlink{class_status_effect}{Status\+Effect}} $>$ \mbox{\hyperlink{class_renown_1_1_entity_a9b957ed803b7a204e5b1cc3faab5ece5}{Status\+Effects}} = new Concurrent\+Dictionary$<$string, \mbox{\hyperlink{class_status_effect}{Status\+Effect}}$>$()
+\begin{DoxyCompactList}\small\item\em The current status effects being applied to the entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+The code that handles player-\/to-\/game interactions. 
 
 \label{doc-func-members}
 \Hypertarget{class_player_doc-func-members}
@@ -656,18 +507,42 @@ override void Player.\+Add\+Status\+Effect (\begin{DoxyParamCaption}\item[{strin
 
 
 
-Reimplemented from \mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}}.
+Adds a \doxylink{class_status_effect}{Status\+Effect} object to the entity. 
 
-\Hypertarget{class_player_af8e7667503b405d51c12f9a1223a15ac}\index{Player@{Player}!Damage@{Damage}}
+
+\begin{DoxyParams}{Parameters}
+{\em effect\+Name} & The scene file name of the status effect\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_renown_1_1_entity_a1daa2bade64b58ff25e8c19dd8bdbb96}{Renown.\+Entity}}.
+
+\Hypertarget{class_player_adc85ee45e62dcb76981898cf7422f035}\index{Player@{Player}!Damage@{Damage}}
 \index{Damage@{Damage}!Player@{Player}}
 \doxysubsubsection{\texorpdfstring{Damage()}{Damage()}}
-{\footnotesize\ttfamily \label{class_player_af8e7667503b405d51c12f9a1223a15ac} 
-override void Player.\+Damage (\begin{DoxyParamCaption}\item[{in \mbox{\hyperlink{class_renown_1_1_entity}{Entity}}}]{attacker}{, }\item[{float}]{n\+Amount}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{class_player_adc85ee45e62dcb76981898cf7422f035} 
+override void Player.\+Damage (\begin{DoxyParamCaption}\item[{in \mbox{\hyperlink{class_renown_1_1_entity}{Entity}}}]{attacker}{, }\item[{float}]{amount}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
 Reimplemented from \mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}}.
 
+\Hypertarget{class_player_abf3e5b708239ea058425bfee9bfa21c9}\index{Player@{Player}!DecreaseFactionImportance@{DecreaseFactionImportance}}
+\index{DecreaseFactionImportance@{DecreaseFactionImportance}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{DecreaseFactionImportance()}{DecreaseFactionImportance()}}
+{\footnotesize\ttfamily \label{class_player_abf3e5b708239ea058425bfee9bfa21c9} 
+void Player.\+Decrease\+Faction\+Importance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}}}]{faction}{, }\item[{int}]{amount}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Decreases the numerical value that the player has to a faction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & \\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_player_a80764079e1fc0a5b07cceb7a2386d5de}\index{Player@{Player}!Load@{Load}}
 \index{Load@{Load}!Player@{Player}}
 \doxysubsubsection{\texorpdfstring{Load()}{Load()}}
@@ -676,23 +551,17 @@ override void Player.\+Load (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})
 
 
 
-Reimplemented from \mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}}.
+Loads the player\textquotesingle{}s gamestate from disk. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_renown_1_1_entity_a92d640b8af31105f1bc465a88d3e6024}{Renown.\+Entity}}.
 
 \Hypertarget{class_player_ac0eb7e06009143be17759a3793cf2b42}\index{Player@{Player}!PhysicsUpdate@{PhysicsUpdate}}
 \index{PhysicsUpdate@{PhysicsUpdate}!Player@{Player}}
 \doxysubsubsection{\texorpdfstring{PhysicsUpdate()}{PhysicsUpdate()}}
 {\footnotesize\ttfamily \label{class_player_ac0eb7e06009143be17759a3793cf2b42} 
 override void Player.\+Physics\+Update (\begin{DoxyParamCaption}\item[{double}]{delta}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
-
-
-
-Reimplemented from \mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}}.
-
-\Hypertarget{class_player_a990c07b90e5eb4b3ad2a0f589892f5c5}\index{Player@{Player}!PickupWeapon@{PickupWeapon}}
-\index{PickupWeapon@{PickupWeapon}!Player@{Player}}
-\doxysubsubsection{\texorpdfstring{PickupWeapon()}{PickupWeapon()}}
-{\footnotesize\ttfamily \label{class_player_a990c07b90e5eb4b3ad2a0f589892f5c5} 
-override void Player.\+Pickup\+Weapon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}}}]{weapon}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
@@ -706,7 +575,18 @@ override void Player.\+Play\+Sound (\begin{DoxyParamCaption}\item[{Audio\+Stream
 
 
 
-Reimplemented from \mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}}.
+Plays a sound effect from the provided channel and stream local to the entity\textquotesingle{}s position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The audio channel to play the audio from\\
+\hline
+{\em stream} & The audio file to play\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_renown_1_1_entity_aa85464d8235a9feef5e5604eb921732e}{Renown.\+Entity}}.
 
 \Hypertarget{class_player_a1c8f02f4432b8f894d5ed0fe076f21ee}\index{Player@{Player}!Save@{Save}}
 \index{Save@{Save}!Player@{Player}}
@@ -716,7 +596,11 @@ override void Player.\+Save (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})
 
 
 
-Reimplemented from \mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}}.
+Writes the player\textquotesingle{}s gamestate to disk. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_renown_1_1_entity_af2a23f06f18c067b308ffc46e3b0923d}{Renown.\+Entity}}.
 
 \Hypertarget{class_player_ab2d71e41272761c6e8bdbd9b2ade696c}\index{Player@{Player}!SetLocation@{SetLocation}}
 \index{SetLocation@{SetLocation}!Player@{Player}}
@@ -738,6 +622,91 @@ override void Player.\+Update (\begin{DoxyParamCaption}\item[{double}]{delta}{}\
 
 Reimplemented from \mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}}.
 
+
+
+\label{doc-variable-members}
+\Hypertarget{class_player_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_player_ac5e91d3deac258b19eab198c7c10669a}\index{Player@{Player}!MaxHealth@{MaxHealth}}
+\index{MaxHealth@{MaxHealth}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{MaxHealth}{MaxHealth}}
+{\footnotesize\ttfamily \label{class_player_ac5e91d3deac258b19eab198c7c10669a} 
+Player\+Stat$<$float$>$ Player.\+Max\+Health}
+
+
+
+The hard cap on player health. 
+
+\begin{DoxySeeAlso}{See also}
+Player\+System.\+Player\+Stat
+
+
+\end{DoxySeeAlso}
+\Hypertarget{class_player_a312a606963c85f478ffc2124e2807b01}\index{Player@{Player}!MaxRage@{MaxRage}}
+\index{MaxRage@{MaxRage}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{MaxRage}{MaxRage}}
+{\footnotesize\ttfamily \label{class_player_a312a606963c85f478ffc2124e2807b01} 
+Player\+Stat$<$float$>$ Player.\+Max\+Rage}
+
+
+
+The hard cap on player rage. 
+
+\begin{DoxySeeAlso}{See also}
+Player\+System.\+Player\+Stat
+
+
+\end{DoxySeeAlso}
+\Hypertarget{class_player_a10d068cf12e8f8a2e73452c2d932623c}\index{Player@{Player}!MaxSanity@{MaxSanity}}
+\index{MaxSanity@{MaxSanity}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{MaxSanity}{MaxSanity}}
+{\footnotesize\ttfamily \label{class_player_a10d068cf12e8f8a2e73452c2d932623c} 
+Player\+Stat$<$float$>$ Player.\+Max\+Sanity}
+
+
+
+The hard cap on player sanity. 
+
+\begin{DoxySeeAlso}{See also}
+Player\+System.\+Player\+Stat
+
+
+\end{DoxySeeAlso}
+\Hypertarget{class_player_af5e2950c82744c357d1f2a41004876f5}\index{Player@{Player}!Speed@{Speed}}
+\index{Speed@{Speed}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Speed}{Speed}}
+{\footnotesize\ttfamily \label{class_player_af5e2950c82744c357d1f2a41004876f5} 
+Player\+Stat$<$float$>$ Player.\+Speed}
+
+
+
+The hard cap on a player\textquotesingle{}s maximum speed. 
+
+\begin{DoxySeeAlso}{See also}
+Player\+System.\+Player\+Stat
+
+
+\end{DoxySeeAlso}
+
+
+\label{doc-property-members}
+\Hypertarget{class_player_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_player_a138af8700f4e2e4992c3847673ecde5e}\index{Player@{Player}!BloodAmount@{BloodAmount}}
+\index{BloodAmount@{BloodAmount}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{BloodAmount}{BloodAmount}}
+{\footnotesize\ttfamily \label{class_player_a138af8700f4e2e4992c3847673ecde5e} 
+float Player.\+Blood\+Amount\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+How much blood the player is covered in. 
+
+\begin{DoxySeeAlso}{See also}
+Blood\+Material
+
+
+\end{DoxySeeAlso}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

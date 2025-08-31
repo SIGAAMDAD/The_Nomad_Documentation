@@ -1,26 +1,68 @@
 \doxysection{Player\+System.\+Player\+Stat\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Struct Template Reference}
 \hypertarget{struct_player_system_1_1_player_stat-1-g}{}\label{struct_player_system_1_1_player_stat-1-g}\index{PlayerSystem.PlayerStat$<$ T $>$@{PlayerSystem.PlayerStat$<$ T $>$}}
+
+
+For storing player stats such as max health, max rage, etc. made this way to allow for rune and boon buffs/debuffs.  
+
+
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{struct_player_system_1_1_player_stat-1-g_aa74b136812048d2493493f131c9b33c5}\label{struct_player_system_1_1_player_stat-1-g_aa74b136812048d2493493f131c9b33c5} 
-{\bfseries Player\+Stat} (T base\+Value, T min, T max)
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{struct_player_system_1_1_player_stat-1-g_aa74b136812048d2493493f131c9b33c5}{Player\+Stat}} (T base\+Value, T min, T max)
+\begin{DoxyCompactList}\small\item\em Constructs a Player\+Stat with the provided values. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{struct_player_system_1_1_player_stat-1-g_a80ef2c69ce77ceefe2385a93563a572e}\label{struct_player_system_1_1_player_stat-1-g_a80ef2c69ce77ceefe2385a93563a572e} 
 readonly T {\bfseries Base\+Value}
-\item 
+\begin{DoxyCompactList}\small\item\em The value assigned to the struct at compile time. \end{DoxyCompactList}\item 
 \Hypertarget{struct_player_system_1_1_player_stat-1-g_a44909ca327cc18a629e36151a5de3d76}\label{struct_player_system_1_1_player_stat-1-g_a44909ca327cc18a629e36151a5de3d76} 
 readonly T {\bfseries Max\+Value}
-\item 
+\begin{DoxyCompactList}\small\item\em The maximum value allowed for the stat assigned at compile time. \end{DoxyCompactList}\item 
 \Hypertarget{struct_player_system_1_1_player_stat-1-g_ac95a950fd2fb69d59fd1faff5ef1c93b}\label{struct_player_system_1_1_player_stat-1-g_ac95a950fd2fb69d59fd1faff5ef1c93b} 
 readonly T {\bfseries Min\+Value}
-\item 
+\begin{DoxyCompactList}\small\item\em The maximum value allowed for the stat assigned at compile time. \end{DoxyCompactList}\item 
 \Hypertarget{struct_player_system_1_1_player_stat-1-g_aff3ca36763f30cb298cd33c218caaab5}\label{struct_player_system_1_1_player_stat-1-g_aff3ca36763f30cb298cd33c218caaab5} 
 T {\bfseries Value}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The value that can be changed and the value that is read at runtime. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+For storing player stats such as max health, max rage, etc. made this way to allow for rune and boon buffs/debuffs. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of stat, must be a primitive\\
+\hline
+\end{DoxyTemplParams}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em struct}]\end{description}
+\end{Desc}
+
+
+\label{doc-func-members}
+\Hypertarget{struct_player_system_1_1_player_stat-1-g_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_player_system_1_1_player_stat-1-g_aa74b136812048d2493493f131c9b33c5}\index{PlayerSystem.PlayerStat$<$ T $>$@{PlayerSystem.PlayerStat$<$ T $>$}!PlayerStat@{PlayerStat}}
+\index{PlayerStat@{PlayerStat}!PlayerSystem.PlayerStat$<$ T $>$@{PlayerSystem.PlayerStat$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{PlayerStat()}{PlayerStat()}}
+{\footnotesize\ttfamily \label{struct_player_system_1_1_player_stat-1-g_aa74b136812048d2493493f131c9b33c5} 
+Player\+System.\+Player\+Stat$<$ T $>$.Player\+Stat (\begin{DoxyParamCaption}\item[{T}]{base\+Value}{, }\item[{T}]{min}{, }\item[{T}]{max}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a Player\+Stat with the provided values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Value} & \\
+\hline
+{\em min} & \\
+\hline
+{\em max} & \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}

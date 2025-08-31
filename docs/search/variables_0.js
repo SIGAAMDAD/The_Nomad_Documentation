@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['botname_0',['BotName',['../class_dialogue_globals.html#a19a5da8373892c378e5b38cc21e5cc12',1,'DialogueGlobals']]]
+  ['basevalue_0',['BaseValue',['../struct_player_system_1_1_player_stat-1-g.html#a80ef2c69ce77ceefe2385a93563a572e',1,'PlayerSystem::PlayerStat-1-g']]]
 ];

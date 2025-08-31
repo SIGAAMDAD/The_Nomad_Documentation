@@ -10,16 +10,24 @@ Inheritance diagram for Renown.\+Thinkers.\+Faction\+Leader\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 override void \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_faction_leader_a5f7b4425c3adc76f7976498d89ca8384}{Save}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Override this function to archive and entity\textquotesingle{}s state to disk. \end{DoxyCompactList}\item 
 override void \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_faction_leader_a66702c5291515079f49f57eab36a407d}{Load}} ()
+\begin{DoxyCompactList}\small\item\em Override this function to load an entity\textquotesingle{}s state from disk. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_faction_leader_a39b1d22f74b39f4d6003e9aa46481e5d}{Determine\+Relation\+Status}} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} entity)
 \item 
-override void \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_faction_leader_a5f42050a5b89a4710c6f777d293135ce}{Determine\+Relation\+Status}} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other)
+override void \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_faction_leader_a4538b6bb3f504eb5a42a6f758663b032}{Determine\+Relation\+Status}} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction)
 \item 
-override bool \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_faction_leader_acaa19864b046c8f2720495b440780dc8}{Has\+Relation}} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other)
+override bool \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_faction_leader_a7a08d3b694fdb35cbeb2a43a7337af4c}{Has\+Relation}} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} entity)
 \item 
-override float \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_faction_leader_a6ae8102e7a09d00949ea5bf1e8e8f02a}{Get\+Relation\+Score}} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other)
+override bool \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_faction_leader_a31dd99162adaab054a9312ea33a4273e}{Has\+Relation}} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction)
 \item 
-override Relation\+Status \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_faction_leader_af0bff7268aba9a24b84ef60421c851d5}{Get\+Relation\+Status}} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other)
+override float \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_faction_leader_a963cdc8e6f81b53200600c9353b78ac4}{Get\+Relation\+Score}} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} entity)
+\item 
+override float \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_faction_leader_a9eaf34d44a7b5eda5ed2a4f12beb4af6}{Get\+Relation\+Score}} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction)
+\item 
+override Relation\+Status \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_faction_leader_af69b3d2fdadcea792a98e4331d9adc64}{Get\+Relation\+Status}} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} entity)
+\item 
+override Relation\+Status \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_faction_leader_aacb723037f05aba80560c088aae5c6e9}{Get\+Relation\+Status}} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction)
 \item 
 \Hypertarget{class_renown_1_1_thinkers_1_1_faction_leader_a6e5f9e72f266e22c25a1e304b99bc832}\label{class_renown_1_1_thinkers_1_1_faction_leader_a6e5f9e72f266e22c25a1e304b99bc832} 
 override void {\bfseries \+\_\+\+Ready} ()
@@ -40,7 +48,7 @@ override void \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_thinker_a54e8c74d19
 override void \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_thinker_a6bb467f68423ed896eba487b102793a0}{Set\+Location}} (in \mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{World\+Area}} location)
 \item 
 override void \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_thinker_ac1a448bfd4cd005e5e19d0cfc74be29c}{Play\+Sound}} (Audio\+Stream\+Player2D channel, Audio\+Stream stream)
-\item 
+\begin{DoxyCompactList}\small\item\em Plays a sound effect from the provided channel and stream local to the entity\textquotesingle{}s position. \end{DoxyCompactList}\item 
 override String\+Name \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_thinker_a21f1a1e1996501e23e47d359348760fd}{Get\+Object\+Name}} ()
 \item 
 virtual void {\bfseries Save} (\mbox{\hyperlink{class_save_system_1_1_save_section_writer}{Save\+System.\+Save\+Section\+Writer}} writer, int n\+Index)
@@ -69,15 +77,15 @@ virtual void {\bfseries On\+Challenged} ()
 virtual void {\bfseries On\+Intimidated} ()
 \item 
 virtual void {\bfseries Clear\+Status\+Effects} ()
-\item 
-virtual void {\bfseries Add\+Status\+Effect} (string effect\+Name)
-\item 
+\begin{DoxyCompactList}\small\item\em Clears all \doxylink{class_status_effect}{Status\+Effect} objects currently being applied to the entity and clears the Dictionary. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_renown_1_1_entity_a1daa2bade64b58ff25e8c19dd8bdbb96}{Add\+Status\+Effect}} (string effect\+Name)
+\begin{DoxyCompactList}\small\item\em Adds a \doxylink{class_status_effect}{Status\+Effect} object to the entity. \end{DoxyCompactList}\item 
 virtual void {\bfseries Pickup\+Weapon} (\mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}} weapon)
 \item 
 Node\+Path \mbox{\hyperlink{class_renown_1_1_entity_a6b51f1fffcfb9b72b562e1bcd8c3336e}{Get\+Hash}} ()
 \item 
 override void {\bfseries \+\_\+\+Ready} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em godot initialization override \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -87,17 +95,11 @@ float {\bfseries Money} = 0.\+0f
 \Hypertarget{class_renown_1_1_thinkers_1_1_faction_leader_a72a794db1e8470155edcfd327a734a71}\label{class_renown_1_1_thinkers_1_1_faction_leader_a72a794db1e8470155edcfd327a734a71} 
 int {\bfseries War\+Crime\+Count} = 0
 \item 
-\Hypertarget{class_renown_1_1_thinkers_1_1_faction_leader_ad49c32cdb36a94cfc84dc8d81383962a}\label{class_renown_1_1_thinkers_1_1_faction_leader_ad49c32cdb36a94cfc84dc8d81383962a} 
-Godot.\+Collections.\+Array$<$ Trait\+Type $>$ {\bfseries Traits} = new Godot.\+Collections.\+Array$<$Trait\+Type$>$()
-\item 
 \Hypertarget{class_renown_1_1_thinkers_1_1_faction_leader_a9ce0433671c3a0bcf88aac09cccbe42b}\label{class_renown_1_1_thinkers_1_1_faction_leader_a9ce0433671c3a0bcf88aac09cccbe42b} 
 Godot.\+Collections.\+Dictionary$<$ Node, float $>$ {\bfseries Relations} = null
 \item 
 \Hypertarget{class_renown_1_1_thinkers_1_1_faction_leader_a88de1c9e392a1f978626b3f019475c64}\label{class_renown_1_1_thinkers_1_1_faction_leader_a88de1c9e392a1f978626b3f019475c64} 
 Godot.\+Collections.\+Dictionary$<$ Node, float $>$ {\bfseries Debts} = null
-\item 
-\Hypertarget{class_renown_1_1_thinkers_1_1_faction_leader_a918ac1a5f92bd078beacb6ad7ec00bcf}\label{class_renown_1_1_thinkers_1_1_faction_leader_a918ac1a5f92bd078beacb6ad7ec00bcf} 
-Hash\+Set$<$ \mbox{\hyperlink{class_renown_1_1_trait}{Trait}} $>$ {\bfseries Trait\+Cache} = null
 \item 
 \Hypertarget{class_renown_1_1_thinkers_1_1_faction_leader_abce8ec4d3a0652165af6bb6d6b946bfd}\label{class_renown_1_1_thinkers_1_1_faction_leader_abce8ec4d3a0652165af6bb6d6b946bfd} 
 Hash\+Set$<$ \mbox{\hyperlink{struct_renown_1_1_renown_value}{Renown\+Value}} $>$ {\bfseries Relation\+Cache} = null
@@ -126,7 +128,7 @@ Node\+Path {\bfseries Initial\+Path}
 \item 
 Thinker\+Flags {\bfseries Flags}
 \item 
-\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Mountain\+Goap.\+Agent}} {\bfseries Agent}
+Mountain\+Goap.\+Agent {\bfseries Agent}
 \item 
 bool {\bfseries Initialized} = false
 \item 
@@ -134,7 +136,7 @@ Godot.\+Vector2 {\bfseries Goto\+Position} = Godot.\+Vector2.\+Zero
 \item 
 Color {\bfseries Demon\+Eye\+Color}
 \item 
-\mbox{\hyperlink{class_network_sync_object}{Network\+Sync\+Object}} {\bfseries Sync\+Object} = null
+\mbox{\hyperlink{class_multiplayer_1_1_network_sync_object}{Network\+Sync\+Object}} {\bfseries Sync\+Object} = null
 \item 
 Audio\+Stream\+Player2D {\bfseries Audio\+Channel}
 \item 
@@ -143,8 +145,47 @@ int {\bfseries Thread\+Sleep} = Constants.\+THREADSLEEP\+\_\+\+THINKER\+\_\+\+PL
 \doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}}}
 \begin{DoxyCompactItemize}
 \item 
-Dictionary$<$ string, \mbox{\hyperlink{class_status_effect}{Status\+Effect}} $>$ {\bfseries Status\+Effects} = new Dictionary$<$string, \mbox{\hyperlink{class_status_effect}{Status\+Effect}}$>$()
+Concurrent\+Dictionary$<$ string, \mbox{\hyperlink{class_status_effect}{Status\+Effect}} $>$ \mbox{\hyperlink{class_renown_1_1_entity_a9b957ed803b7a204e5b1cc3faab5ece5}{Status\+Effects}} = new Concurrent\+Dictionary$<$string, \mbox{\hyperlink{class_status_effect}{Status\+Effect}}$>$()
+\begin{DoxyCompactList}\small\item\em The current status effects being applied to the entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_renown_1_1_thinkers_1_1_faction_leader_a03ef3b693148c0cf94d96491791ef679}\label{class_renown_1_1_thinkers_1_1_faction_leader_a03ef3b693148c0cf94d96491791ef679} 
+Godot.\+Collections.\+Dictionary$<$ \mbox{\hyperlink{class_renown_1_1_trait}{Trait}}, float $>$ {\bfseries Trait\+Scores} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_renown_1_1_thinkers_1_1_faction_leader_aa8e241ffbcb565aae95da86c1791eb74}\label{class_renown_1_1_thinkers_1_1_faction_leader_aa8e241ffbcb565aae95da86c1791eb74} 
+int {\bfseries Renown\+Score} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_thinker}{Renown.\+Thinkers.\+Thinker}}}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries Movement\+Speed} = 200.\+0f\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+Navigation\+Agent2D {\bfseries Nav\+Agent}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Rid {\bfseries Nav\+Agent\+RID}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool {\bfseries Target\+Reached} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+Animated\+Sprite2D {\bfseries Body\+Animations}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+Animated\+Sprite2D {\bfseries Arm\+Animations}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+Animated\+Sprite2D {\bfseries Head\+Animations}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}}}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries Health} = 0.\+0f\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The health of the entity. \end{DoxyCompactList}\item 
+int {\bfseries Renown\+Score} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The renown of an entity, think of it sort as "{}street cred"{}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{World\+Area}}? {\bfseries Location} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The \doxylink{class_renown_1_1_world_1_1_world_area}{World\+Area} the entity is currently colliding with. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}}? {\bfseries Faction} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The faction that the entity belongs to. Used for faction-\/specific behaviors with the AI. \end{DoxyCompactList}\item 
+int {\bfseries Faction\+Importance} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em How much the entity\textquotesingle{}s faction cares about them. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_thinker}{Renown.\+Thinkers.\+Thinker}}}
 \begin{DoxyCompactItemize}
@@ -183,76 +224,86 @@ virtual void {\bfseries On\+Target\+Reached} ()
 \item 
 static readonly Color {\bfseries Default\+Color} = new Color( 1.\+0f, 1.\+0f, 1.\+0f, 1.\+0f )
 \end{DoxyCompactItemize}
-\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_thinker}{Renown.\+Thinkers.\+Thinker}}}
-\begin{DoxyCompactItemize}
-\item 
-float {\bfseries Movement\+Speed} = 200.\+0f\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
-\item 
-Navigation\+Agent2D {\bfseries Nav\+Agent}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
-Rid {\bfseries Nav\+Agent\+RID}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
-bool {\bfseries Target\+Reached} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
-\item 
-Animated\+Sprite2D {\bfseries Body\+Animations}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
-\item 
-Animated\+Sprite2D {\bfseries Arm\+Animations}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
-\item 
-Animated\+Sprite2D {\bfseries Head\+Animations}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
-\end{DoxyCompactItemize}
-\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}}}
-\begin{DoxyCompactItemize}
-\item 
-float {\bfseries Health} = 0.\+0f\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
-int {\bfseries Renown\+Score} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
-\mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{World\+Area}}? {\bfseries Location} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
-\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}}? {\bfseries Faction} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
-int {\bfseries Faction\+Importance} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\end{DoxyCompactItemize}
 
 
 \label{doc-func-members}
 \Hypertarget{class_renown_1_1_thinkers_1_1_faction_leader_doc-func-members}
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_renown_1_1_thinkers_1_1_faction_leader_a5f42050a5b89a4710c6f777d293135ce}\index{Renown.Thinkers.FactionLeader@{Renown.Thinkers.FactionLeader}!DetermineRelationStatus@{DetermineRelationStatus}}
+\Hypertarget{class_renown_1_1_thinkers_1_1_faction_leader_a39b1d22f74b39f4d6003e9aa46481e5d}\index{Renown.Thinkers.FactionLeader@{Renown.Thinkers.FactionLeader}!DetermineRelationStatus@{DetermineRelationStatus}}
 \index{DetermineRelationStatus@{DetermineRelationStatus}!Renown.Thinkers.FactionLeader@{Renown.Thinkers.FactionLeader}}
-\doxysubsubsection{\texorpdfstring{DetermineRelationStatus()}{DetermineRelationStatus()}}
-{\footnotesize\ttfamily \label{class_renown_1_1_thinkers_1_1_faction_leader_a5f42050a5b89a4710c6f777d293135ce} 
-override void Renown.\+Thinkers.\+Faction\+Leader.\+Determine\+Relation\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_renown_1_1_object}{Object}}}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+\doxysubsubsection{\texorpdfstring{DetermineRelationStatus()}{DetermineRelationStatus()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_renown_1_1_thinkers_1_1_faction_leader_a39b1d22f74b39f4d6003e9aa46481e5d} 
+override void Renown.\+Thinkers.\+Faction\+Leader.\+Determine\+Relation\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_renown_1_1_entity}{Entity}}}]{entity}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
 Reimplemented from \mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}}.
 
-\Hypertarget{class_renown_1_1_thinkers_1_1_faction_leader_a6ae8102e7a09d00949ea5bf1e8e8f02a}\index{Renown.Thinkers.FactionLeader@{Renown.Thinkers.FactionLeader}!GetRelationScore@{GetRelationScore}}
+\Hypertarget{class_renown_1_1_thinkers_1_1_faction_leader_a4538b6bb3f504eb5a42a6f758663b032}\index{Renown.Thinkers.FactionLeader@{Renown.Thinkers.FactionLeader}!DetermineRelationStatus@{DetermineRelationStatus}}
+\index{DetermineRelationStatus@{DetermineRelationStatus}!Renown.Thinkers.FactionLeader@{Renown.Thinkers.FactionLeader}}
+\doxysubsubsection{\texorpdfstring{DetermineRelationStatus()}{DetermineRelationStatus()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_renown_1_1_thinkers_1_1_faction_leader_a4538b6bb3f504eb5a42a6f758663b032} 
+override void Renown.\+Thinkers.\+Faction\+Leader.\+Determine\+Relation\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}}}]{faction}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}}.
+
+\Hypertarget{class_renown_1_1_thinkers_1_1_faction_leader_a963cdc8e6f81b53200600c9353b78ac4}\index{Renown.Thinkers.FactionLeader@{Renown.Thinkers.FactionLeader}!GetRelationScore@{GetRelationScore}}
 \index{GetRelationScore@{GetRelationScore}!Renown.Thinkers.FactionLeader@{Renown.Thinkers.FactionLeader}}
-\doxysubsubsection{\texorpdfstring{GetRelationScore()}{GetRelationScore()}}
-{\footnotesize\ttfamily \label{class_renown_1_1_thinkers_1_1_faction_leader_a6ae8102e7a09d00949ea5bf1e8e8f02a} 
-override float Renown.\+Thinkers.\+Faction\+Leader.\+Get\+Relation\+Score (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_renown_1_1_object}{Object}}}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+\doxysubsubsection{\texorpdfstring{GetRelationScore()}{GetRelationScore()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_renown_1_1_thinkers_1_1_faction_leader_a963cdc8e6f81b53200600c9353b78ac4} 
+override float Renown.\+Thinkers.\+Faction\+Leader.\+Get\+Relation\+Score (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_renown_1_1_entity}{Entity}}}]{entity}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
 Reimplemented from \mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}}.
 
-\Hypertarget{class_renown_1_1_thinkers_1_1_faction_leader_af0bff7268aba9a24b84ef60421c851d5}\index{Renown.Thinkers.FactionLeader@{Renown.Thinkers.FactionLeader}!GetRelationStatus@{GetRelationStatus}}
+\Hypertarget{class_renown_1_1_thinkers_1_1_faction_leader_a9eaf34d44a7b5eda5ed2a4f12beb4af6}\index{Renown.Thinkers.FactionLeader@{Renown.Thinkers.FactionLeader}!GetRelationScore@{GetRelationScore}}
+\index{GetRelationScore@{GetRelationScore}!Renown.Thinkers.FactionLeader@{Renown.Thinkers.FactionLeader}}
+\doxysubsubsection{\texorpdfstring{GetRelationScore()}{GetRelationScore()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_renown_1_1_thinkers_1_1_faction_leader_a9eaf34d44a7b5eda5ed2a4f12beb4af6} 
+override float Renown.\+Thinkers.\+Faction\+Leader.\+Get\+Relation\+Score (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}}}]{faction}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}}.
+
+\Hypertarget{class_renown_1_1_thinkers_1_1_faction_leader_af69b3d2fdadcea792a98e4331d9adc64}\index{Renown.Thinkers.FactionLeader@{Renown.Thinkers.FactionLeader}!GetRelationStatus@{GetRelationStatus}}
 \index{GetRelationStatus@{GetRelationStatus}!Renown.Thinkers.FactionLeader@{Renown.Thinkers.FactionLeader}}
-\doxysubsubsection{\texorpdfstring{GetRelationStatus()}{GetRelationStatus()}}
-{\footnotesize\ttfamily \label{class_renown_1_1_thinkers_1_1_faction_leader_af0bff7268aba9a24b84ef60421c851d5} 
-override Relation\+Status Renown.\+Thinkers.\+Faction\+Leader.\+Get\+Relation\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_renown_1_1_object}{Object}}}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+\doxysubsubsection{\texorpdfstring{GetRelationStatus()}{GetRelationStatus()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_renown_1_1_thinkers_1_1_faction_leader_af69b3d2fdadcea792a98e4331d9adc64} 
+override Relation\+Status Renown.\+Thinkers.\+Faction\+Leader.\+Get\+Relation\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_renown_1_1_entity}{Entity}}}]{entity}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
 Reimplemented from \mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}}.
 
-\Hypertarget{class_renown_1_1_thinkers_1_1_faction_leader_acaa19864b046c8f2720495b440780dc8}\index{Renown.Thinkers.FactionLeader@{Renown.Thinkers.FactionLeader}!HasRelation@{HasRelation}}
+\Hypertarget{class_renown_1_1_thinkers_1_1_faction_leader_aacb723037f05aba80560c088aae5c6e9}\index{Renown.Thinkers.FactionLeader@{Renown.Thinkers.FactionLeader}!GetRelationStatus@{GetRelationStatus}}
+\index{GetRelationStatus@{GetRelationStatus}!Renown.Thinkers.FactionLeader@{Renown.Thinkers.FactionLeader}}
+\doxysubsubsection{\texorpdfstring{GetRelationStatus()}{GetRelationStatus()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_renown_1_1_thinkers_1_1_faction_leader_aacb723037f05aba80560c088aae5c6e9} 
+override Relation\+Status Renown.\+Thinkers.\+Faction\+Leader.\+Get\+Relation\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}}}]{faction}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}}.
+
+\Hypertarget{class_renown_1_1_thinkers_1_1_faction_leader_a7a08d3b694fdb35cbeb2a43a7337af4c}\index{Renown.Thinkers.FactionLeader@{Renown.Thinkers.FactionLeader}!HasRelation@{HasRelation}}
 \index{HasRelation@{HasRelation}!Renown.Thinkers.FactionLeader@{Renown.Thinkers.FactionLeader}}
-\doxysubsubsection{\texorpdfstring{HasRelation()}{HasRelation()}}
-{\footnotesize\ttfamily \label{class_renown_1_1_thinkers_1_1_faction_leader_acaa19864b046c8f2720495b440780dc8} 
-override bool Renown.\+Thinkers.\+Faction\+Leader.\+Has\+Relation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_renown_1_1_object}{Object}}}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+\doxysubsubsection{\texorpdfstring{HasRelation()}{HasRelation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_renown_1_1_thinkers_1_1_faction_leader_a7a08d3b694fdb35cbeb2a43a7337af4c} 
+override bool Renown.\+Thinkers.\+Faction\+Leader.\+Has\+Relation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_renown_1_1_entity}{Entity}}}]{entity}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}}.
+
+\Hypertarget{class_renown_1_1_thinkers_1_1_faction_leader_a31dd99162adaab054a9312ea33a4273e}\index{Renown.Thinkers.FactionLeader@{Renown.Thinkers.FactionLeader}!HasRelation@{HasRelation}}
+\index{HasRelation@{HasRelation}!Renown.Thinkers.FactionLeader@{Renown.Thinkers.FactionLeader}}
+\doxysubsubsection{\texorpdfstring{HasRelation()}{HasRelation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_renown_1_1_thinkers_1_1_faction_leader_a31dd99162adaab054a9312ea33a4273e} 
+override bool Renown.\+Thinkers.\+Faction\+Leader.\+Has\+Relation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}}}]{faction}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
@@ -266,7 +317,11 @@ override void Renown.\+Thinkers.\+Faction\+Leader.\+Load (\begin{DoxyParamCaptio
 
 
 
-Reimplemented from \mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}}.
+Override this function to load an entity\textquotesingle{}s state from disk. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_renown_1_1_entity_a92d640b8af31105f1bc465a88d3e6024}{Renown.\+Entity}}.
 
 \Hypertarget{class_renown_1_1_thinkers_1_1_faction_leader_a5f7b4425c3adc76f7976498d89ca8384}\index{Renown.Thinkers.FactionLeader@{Renown.Thinkers.FactionLeader}!Save@{Save}}
 \index{Save@{Save}!Renown.Thinkers.FactionLeader@{Renown.Thinkers.FactionLeader}}
@@ -276,7 +331,11 @@ override void Renown.\+Thinkers.\+Faction\+Leader.\+Save (\begin{DoxyParamCaptio
 
 
 
-Reimplemented from \mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}}.
+Override this function to archive and entity\textquotesingle{}s state to disk. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_renown_1_1_entity_af2a23f06f18c067b308ffc46e3b0923d}{Renown.\+Entity}}.
 
 
 

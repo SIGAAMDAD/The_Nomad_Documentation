@@ -91,9 +91,6 @@ $(function(){initNavTree('class_save_system_1_1_save_section_reader.html','','cl
   <div class="headertitle"><div class="title">SaveSystem.SaveSectionReader Class Reference<span class="mlabels"><span class="mlabel sealed">sealed</span></span></div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>the dedicated class for reading dictionary style "sections" froms the current savefile  
- <a href="#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for SaveSystem.SaveSectionReader:</div>
 <div class="dyncontent">
@@ -129,6 +126,8 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>LoadFloat</b> (strin
 double&#160;</td><td class="memItemRight" valign="bottom"><b>LoadDouble</b> (string name)</td></tr>
 <tr class="memitem:a801e4a64d4bd78b5f6ccc5fbe935379c" id="r_a801e4a64d4bd78b5f6ccc5fbe935379c"><td class="memItemLeft" align="right" valign="top"><a id="a801e4a64d4bd78b5f6ccc5fbe935379c" name="a801e4a64d4bd78b5f6ccc5fbe935379c"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>LoadString</b> (string name)</td></tr>
+<tr class="memitem:a5d47218a9b37a3a128cb5b6accea43c7" id="r_a5d47218a9b37a3a128cb5b6accea43c7"><td class="memItemLeft" align="right" valign="top"><a id="a5d47218a9b37a3a128cb5b6accea43c7" name="a5d47218a9b37a3a128cb5b6accea43c7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>LoadBoolean</b> (string name)</td></tr>
 <tr class="memitem:a8802c4a8cf2619f950f93ddc7f5fa126" id="r_a8802c4a8cf2619f950f93ddc7f5fa126"><td class="memItemLeft" align="right" valign="top"><a id="a8802c4a8cf2619f950f93ddc7f5fa126" name="a8802c4a8cf2619f950f93ddc7f5fa126"></a>
 Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>LoadVector2</b> (string name)</td></tr>
 <tr class="memitem:ac9866fc7d769fd2dcb05f26c4cc1aebc" id="r_ac9866fc7d769fd2dcb05f26c4cc1aebc"><td class="memItemLeft" align="right" valign="top"><a id="ac9866fc7d769fd2dcb05f26c4cc1aebc" name="ac9866fc7d769fd2dcb05f26c4cc1aebc"></a>
@@ -149,10 +148,10 @@ Godot.Collections.Array&#160;</td><td class="memItemRight" valign="bottom"><b>Lo
 Godot.Collections.Dictionary&#160;</td><td class="memItemRight" valign="bottom"><b>LoadDictionary</b> (string name)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>the dedicated class for reading dictionary style "sections" froms the current savefile </p>
+<div class="textblock"><p>The dedicated class for reading dictionary style "sections" froms the current savefile</p>
 <p>NOTE: reading from loaded save section can be multithreaded since we are loading all values into RAM from disk before applying gamestate.</p>
 <p>exceptions are caught in <a class="el" href="class_archive_system.html#ab2d9601ef67a47986b2adb32d21080f2" title="Loads and initializes game state from the provided save slot file.">ArchiveSystem.LoadGame</a></p>
-<p>the default stream is ArchiveSystem.SaveReader, but for the sake of testing, it uses dependency injection in the contructor </p>
+<p>the default stream is ArchiveSystem.SaveReader, but for the sake of testing, it uses dependency injection in the constructor</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>scripts/SaveSystem/<b>SaveSectionReader.cs</b></li>
 </ul>

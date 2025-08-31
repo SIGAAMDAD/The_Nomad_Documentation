@@ -91,13 +91,16 @@ $(function(){initNavTree('class_player.html','','class_player-members'); });
   <div class="headertitle"><div class="title">Player Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The code that handles player-to-game interactions.  
+ <a href="#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Player:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_player.png" usemap="#Player_map" alt=""/>
   <map id="Player_map" name="Player_map">
-<area href="class_renown_1_1_entity.html" alt="Renown.Entity" shape="rect" coords="62,56,176,80"/>
+<area href="class_renown_1_1_entity.html" title="The base class from which all entities inherit from." alt="Renown.Entity" shape="rect" coords="62,56,176,80"/>
 <area href="interface_renown_1_1_object.html" alt="Renown.Object" shape="rect" coords="124,0,238,24"/>
   </map>
 </div></div>
@@ -152,10 +155,10 @@ delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>LeaveFaction
 delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>FactionPromotionEventHandler</b> (<a class="el" href="class_renown_1_1_world_1_1_faction.html">Faction</a> faction, <a class="el" href="class_renown_1_1_entity.html">Entity</a> entity)</td></tr>
 <tr class="memitem:ab6bf7968fff83fa7f2289bb3212dabbd" id="r_ab6bf7968fff83fa7f2289bb3212dabbd"><td class="memItemLeft" align="right" valign="top"><a id="ab6bf7968fff83fa7f2289bb3212dabbd" name="ab6bf7968fff83fa7f2289bb3212dabbd"></a>
 delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>FactionDemotionEventHandler</b> (<a class="el" href="class_renown_1_1_world_1_1_faction.html">Faction</a> faction, <a class="el" href="class_renown_1_1_entity.html">Entity</a> entity)</td></tr>
-<tr class="memitem:a1fab215a7f8eb2b13bf8021d24906915" id="r_a1fab215a7f8eb2b13bf8021d24906915"><td class="memItemLeft" align="right" valign="top"><a id="a1fab215a7f8eb2b13bf8021d24906915" name="a1fab215a7f8eb2b13bf8021d24906915"></a>
-delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>GainMoneyEventHandler</b> (Node entity, float nAmount)</td></tr>
-<tr class="memitem:a4510bb14f3d7acd42416ba8453353582" id="r_a4510bb14f3d7acd42416ba8453353582"><td class="memItemLeft" align="right" valign="top"><a id="a4510bb14f3d7acd42416ba8453353582" name="a4510bb14f3d7acd42416ba8453353582"></a>
-delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>LoseMoneyEventHandler</b> (Node entity, float nAmount)</td></tr>
+<tr class="memitem:a902ae955b48c1ea098135ce172ee8c64" id="r_a902ae955b48c1ea098135ce172ee8c64"><td class="memItemLeft" align="right" valign="top"><a id="a902ae955b48c1ea098135ce172ee8c64" name="a902ae955b48c1ea098135ce172ee8c64"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>GainMoneyEventHandler</b> (Node entity, float amount)</td></tr>
+<tr class="memitem:a0fa5541b2527f2a752a12acfa760268e" id="r_a0fa5541b2527f2a752a12acfa760268e"><td class="memItemLeft" align="right" valign="top"><a id="a0fa5541b2527f2a752a12acfa760268e" name="a0fa5541b2527f2a752a12acfa760268e"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>LoseMoneyEventHandler</b> (Node entity, float amount)</td></tr>
 <tr class="memitem:a42bb0b9c0cc3e428398c641ead45b8dd" id="r_a42bb0b9c0cc3e428398c641ead45b8dd"><td class="memItemLeft" align="right" valign="top"><a id="a42bb0b9c0cc3e428398c641ead45b8dd" name="a42bb0b9c0cc3e428398c641ead45b8dd"></a>
 delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>StartContractEventHandler</b> (<a class="el" href="class_renown_1_1_contract.html">Contract</a> contract, <a class="el" href="class_renown_1_1_entity.html">Entity</a> entity)</td></tr>
 <tr class="memitem:a88c2012f60c6e1b65bf9f2c709d52151" id="r_a88c2012f60c6e1b65bf9f2c709d52151"><td class="memItemLeft" align="right" valign="top"><a id="a88c2012f60c6e1b65bf9f2c709d52151" name="a88c2012f60c6e1b65bf9f2c709d52151"></a>
@@ -164,20 +167,20 @@ delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>CompleteCont
 delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>FailedContractEventHandler</b> (<a class="el" href="class_renown_1_1_contract.html">Contract</a> contract, <a class="el" href="class_renown_1_1_entity.html">Entity</a> entity)</td></tr>
 <tr class="memitem:ada3d516634844f6ea1de8b1e7c2f64b1" id="r_ada3d516634844f6ea1de8b1e7c2f64b1"><td class="memItemLeft" align="right" valign="top"><a id="ada3d516634844f6ea1de8b1e7c2f64b1" name="ada3d516634844f6ea1de8b1e7c2f64b1"></a>
 delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>CanceledContractEventHandler</b> (<a class="el" href="class_renown_1_1_contract.html">Contract</a> contract, <a class="el" href="class_renown_1_1_entity.html">Entity</a> entity)</td></tr>
-<tr class="memitem:a71f4349629fa4164a7428f20799dd0fd" id="r_a71f4349629fa4164a7428f20799dd0fd"><td class="memItemLeft" align="right" valign="top"><a id="a71f4349629fa4164a7428f20799dd0fd" name="a71f4349629fa4164a7428f20799dd0fd"></a>
-delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>DecreaseTraitScoreEventHandler</b> (Node self, TraitType nTrait, float nScore)</td></tr>
-<tr class="memitem:ad7eb3dc997f4fcd980a4d2453f3136db" id="r_ad7eb3dc997f4fcd980a4d2453f3136db"><td class="memItemLeft" align="right" valign="top"><a id="ad7eb3dc997f4fcd980a4d2453f3136db" name="ad7eb3dc997f4fcd980a4d2453f3136db"></a>
-delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>IncreaseTraitScoreEventHandler</b> (Node self, TraitType nTrait, float nScore)</td></tr>
+<tr class="memitem:adeceecc28f032f6673e4735df015f273" id="r_adeceecc28f032f6673e4735df015f273"><td class="memItemLeft" align="right" valign="top"><a id="adeceecc28f032f6673e4735df015f273" name="adeceecc28f032f6673e4735df015f273"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>DecreaseTraitScoreEventHandler</b> (Node self, <a class="el" href="class_renown_1_1_trait.html">Trait</a> trait, float score)</td></tr>
+<tr class="memitem:ae5ee471d3df99a30b7132705cef21012" id="r_ae5ee471d3df99a30b7132705cef21012"><td class="memItemLeft" align="right" valign="top"><a id="ae5ee471d3df99a30b7132705cef21012" name="ae5ee471d3df99a30b7132705cef21012"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>IncreaseTraitScoreEventHandler</b> (Node self, <a class="el" href="class_renown_1_1_trait.html">Trait</a> trait, float score)</td></tr>
 <tr class="memitem:a4ef6699dea265d1d0b40cd90df8efc2c" id="r_a4ef6699dea265d1d0b40cd90df8efc2c"><td class="memItemLeft" align="right" valign="top"><a id="a4ef6699dea265d1d0b40cd90df8efc2c" name="a4ef6699dea265d1d0b40cd90df8efc2c"></a>
 delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>MeetEntityEventHandler</b> (<a class="el" href="class_renown_1_1_entity.html">Entity</a> other, Node self)</td></tr>
 <tr class="memitem:aa018197f30e6d7c9d344571d72e11538" id="r_aa018197f30e6d7c9d344571d72e11538"><td class="memItemLeft" align="right" valign="top"><a id="aa018197f30e6d7c9d344571d72e11538" name="aa018197f30e6d7c9d344571d72e11538"></a>
 delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>MeetFactionEventHandler</b> (<a class="el" href="class_renown_1_1_world_1_1_faction.html">Faction</a> faction, Node self)</td></tr>
-<tr class="memitem:ad66c05f6417fc872fb3bb77059bf2d19" id="r_ad66c05f6417fc872fb3bb77059bf2d19"><td class="memItemLeft" align="right" valign="top"><a id="ad66c05f6417fc872fb3bb77059bf2d19" name="ad66c05f6417fc872fb3bb77059bf2d19"></a>
-delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>IncreaseRelationEventHandler</b> (Node other, Node self, float nAmount)</td></tr>
-<tr class="memitem:ae3b159f2ced7e7484cdd64afb1338d6e" id="r_ae3b159f2ced7e7484cdd64afb1338d6e"><td class="memItemLeft" align="right" valign="top"><a id="ae3b159f2ced7e7484cdd64afb1338d6e" name="ae3b159f2ced7e7484cdd64afb1338d6e"></a>
-delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>DecreaseRelationEventHandler</b> (Node other, Node self, float nAmount)</td></tr>
-<tr class="memitem:a65409b741a26a68dce3009822b60a643" id="r_a65409b741a26a68dce3009822b60a643"><td class="memItemLeft" align="right" valign="top"><a id="a65409b741a26a68dce3009822b60a643" name="a65409b741a26a68dce3009822b60a643"></a>
-delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>IncreaseRenownEventHandler</b> (Node self, int nAmount)</td></tr>
+<tr class="memitem:a71fd96f6f14b4d67ee1b167d07b9507f" id="r_a71fd96f6f14b4d67ee1b167d07b9507f"><td class="memItemLeft" align="right" valign="top"><a id="a71fd96f6f14b4d67ee1b167d07b9507f" name="a71fd96f6f14b4d67ee1b167d07b9507f"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>IncreaseRelationEventHandler</b> (Node other, Node self, float amount)</td></tr>
+<tr class="memitem:a258dfc636623c51996f007e98a0c5f34" id="r_a258dfc636623c51996f007e98a0c5f34"><td class="memItemLeft" align="right" valign="top"><a id="a258dfc636623c51996f007e98a0c5f34" name="a258dfc636623c51996f007e98a0c5f34"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>DecreaseRelationEventHandler</b> (Node other, Node self, float amount)</td></tr>
+<tr class="memitem:a738a2e13339c8bf7226ce1a9b0c61073" id="r_a738a2e13339c8bf7226ce1a9b0c61073"><td class="memItemLeft" align="right" valign="top"><a id="a738a2e13339c8bf7226ce1a9b0c61073" name="a738a2e13339c8bf7226ce1a9b0c61073"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>IncreaseRenownEventHandler</b> (Node self, int amount)</td></tr>
 <tr class="memitem:ad3aefeceeff1bdd098405c9b7264498f" id="r_ad3aefeceeff1bdd098405c9b7264498f"><td class="memItemLeft" align="right" valign="top"><a id="ad3aefeceeff1bdd098405c9b7264498f" name="ad3aefeceeff1bdd098405c9b7264498f"></a>
 delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SwitchedWeaponEventHandler</b> (<a class="el" href="class_weapon_entity.html">WeaponEntity</a> weapon)</td></tr>
 <tr class="memitem:afb6db774c60e74c442250866171d6199" id="r_afb6db774c60e74c442250866171d6199"><td class="memItemLeft" align="right" valign="top"><a id="afb6db774c60e74c442250866171d6199" name="afb6db774c60e74c442250866171d6199"></a>
@@ -186,8 +189,8 @@ delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>SwitchHandUs
 delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>UsedWeaponEventHandler</b> (<a class="el" href="class_weapon_entity.html">WeaponEntity</a> source)</td></tr>
 <tr class="memitem:aa2987e34c62f38839fb27ab88cd5c9c1" id="r_aa2987e34c62f38839fb27ab88cd5c9c1"><td class="memItemLeft" align="right" valign="top"><a id="aa2987e34c62f38839fb27ab88cd5c9c1" name="aa2987e34c62f38839fb27ab88cd5c9c1"></a>
 delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>WeaponPickedUpEventHandler</b> (<a class="el" href="class_weapon_entity.html">WeaponEntity</a> source)</td></tr>
-<tr class="memitem:a2b757a2c917e722b9444f236dc556559" id="r_a2b757a2c917e722b9444f236dc556559"><td class="memItemLeft" align="right" valign="top"><a id="a2b757a2c917e722b9444f236dc556559" name="a2b757a2c917e722b9444f236dc556559"></a>
-delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>AmmoPickedUpEventHandler</b> (<a class="el" href="class_ammo_entity.html">AmmoEntity</a> source)</td></tr>
+<tr class="memitem:aa7b28494ef3be244b2585f91c8307850" id="r_aa7b28494ef3be244b2585f91c8307850"><td class="memItemLeft" align="right" valign="top"><a id="aa7b28494ef3be244b2585f91c8307850" name="aa7b28494ef3be244b2585f91c8307850"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>AmmoPickedUpEventHandler</b> (string ammoTypeID)</td></tr>
 <tr class="memitem:af56b7fdfbcc3da09568931351fcc8276" id="r_af56b7fdfbcc3da09568931351fcc8276"><td class="memItemLeft" align="right" valign="top"><a id="af56b7fdfbcc3da09568931351fcc8276" name="af56b7fdfbcc3da09568931351fcc8276"></a>
 delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>LocationChangedEventHandler</b> (<a class="el" href="class_renown_1_1_world_1_1_world_area.html">WorldArea</a> location)</td></tr>
 <tr class="memitem:abde1944a8e9d7535cb9a1660ad9c3175" id="r_abde1944a8e9d7535cb9a1660ad9c3175"><td class="memItemLeft" align="right" valign="top"><a id="abde1944a8e9d7535cb9a1660ad9c3175" name="abde1944a8e9d7535cb9a1660ad9c3175"></a>
@@ -198,12 +201,12 @@ delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>WeaponStatus
 delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>InputMappingContextChangedEventHandler</b> ()</td></tr>
 <tr class="memitem:ac9ab698956f468e6a5f0bb087522e465" id="r_ac9ab698956f468e6a5f0bb087522e465"><td class="memItemLeft" align="right" valign="top"><a id="ac9ab698956f468e6a5f0bb087522e465" name="ac9ab698956f468e6a5f0bb087522e465"></a>
 delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>InteractionEventHandler</b> ()</td></tr>
-<tr class="memitem:a1e6798f99e0511c7c31fe58642e1ee23" id="r_a1e6798f99e0511c7c31fe58642e1ee23"><td class="memItemLeft" align="right" valign="top"><a id="a1e6798f99e0511c7c31fe58642e1ee23" name="a1e6798f99e0511c7c31fe58642e1ee23"></a>
-delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>DashBurnoutChangedEventHandler</b> (float nDashBurnout)</td></tr>
-<tr class="memitem:a75f075122a1cee63e5082a1ae2fe4326" id="r_a75f075122a1cee63e5082a1ae2fe4326"><td class="memItemLeft" align="right" valign="top"><a id="a75f075122a1cee63e5082a1ae2fe4326" name="a75f075122a1cee63e5082a1ae2fe4326"></a>
-delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>RageChangedEventHandler</b> (float nRage)</td></tr>
-<tr class="memitem:a27c7788976c6469ecc930b9241adac32" id="r_a27c7788976c6469ecc930b9241adac32"><td class="memItemLeft" align="right" valign="top"><a id="a27c7788976c6469ecc930b9241adac32" name="a27c7788976c6469ecc930b9241adac32"></a>
-delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>HealthChangedEventHandler</b> (float nHealth)</td></tr>
+<tr class="memitem:a5b9b8cdeb53c9cd23adb0dacb1fb4996" id="r_a5b9b8cdeb53c9cd23adb0dacb1fb4996"><td class="memItemLeft" align="right" valign="top"><a id="a5b9b8cdeb53c9cd23adb0dacb1fb4996" name="a5b9b8cdeb53c9cd23adb0dacb1fb4996"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>DashBurnoutChangedEventHandler</b> (float dashBurnout)</td></tr>
+<tr class="memitem:a6e048dd2f57447b668aad3ad68f2a8b4" id="r_a6e048dd2f57447b668aad3ad68f2a8b4"><td class="memItemLeft" align="right" valign="top"><a id="a6e048dd2f57447b668aad3ad68f2a8b4" name="a6e048dd2f57447b668aad3ad68f2a8b4"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>RageChangedEventHandler</b> (float rage)</td></tr>
+<tr class="memitem:a494f3dcaba395fbfd32846ae831c55fa" id="r_a494f3dcaba395fbfd32846ae831c55fa"><td class="memItemLeft" align="right" valign="top"><a id="a494f3dcaba395fbfd32846ae831c55fa" name="a494f3dcaba395fbfd32846ae831c55fa"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>HealthChangedEventHandler</b> (float health)</td></tr>
 <tr class="memitem:a6205351d74460be8939633335cab479d" id="r_a6205351d74460be8939633335cab479d"><td class="memItemLeft" align="right" valign="top"><a id="a6205351d74460be8939633335cab479d" name="a6205351d74460be8939633335cab479d"></a>
 delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>StatusEffectTriggeredEventHandler</b> (string effectName, <a class="el" href="class_status_effect.html">StatusEffect</a> effect)</td></tr>
 <tr class="memitem:a38d2d51dae0a5b3174f9769f81db58c7" id="r_a38d2d51dae0a5b3174f9769f81db58c7"><td class="memItemLeft" align="right" valign="top"><a id="a38d2d51dae0a5b3174f9769f81db58c7" name="a38d2d51dae0a5b3174f9769f81db58c7"></a>
@@ -220,147 +223,66 @@ delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>DashEndEvent
 delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>BulletTimeStartEventHandler</b> ()</td></tr>
 <tr class="memitem:a35ab6eb3844d4fe69d3badce735afbdc" id="r_a35ab6eb3844d4fe69d3badce735afbdc"><td class="memItemLeft" align="right" valign="top"><a id="a35ab6eb3844d4fe69d3badce735afbdc" name="a35ab6eb3844d4fe69d3badce735afbdc"></a>
 delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>BulletTimeEndEventHandler</b> ()</td></tr>
-<tr class="memitem:afec863543247e3c319d793cc92208450" id="r_afec863543247e3c319d793cc92208450"><td class="memItemLeft" align="right" valign="top"><a id="afec863543247e3c319d793cc92208450" name="afec863543247e3c319d793cc92208450"></a>
-virtual float&#160;</td><td class="memItemRight" valign="bottom"><b>GetMoney</b> ()</td></tr>
-<tr class="memitem:ac3d6241dfbb559abca9996b19ed327d2" id="r_ac3d6241dfbb559abca9996b19ed327d2"><td class="memItemLeft" align="right" valign="top"><a id="ac3d6241dfbb559abca9996b19ed327d2" name="ac3d6241dfbb559abca9996b19ed327d2"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DecreaseMoney</b> (float nAmount)</td></tr>
-<tr class="memitem:af835837df76036a7ceb04e13f0a9c0ec" id="r_af835837df76036a7ceb04e13f0a9c0ec"><td class="memItemLeft" align="right" valign="top"><a id="af835837df76036a7ceb04e13f0a9c0ec" name="af835837df76036a7ceb04e13f0a9c0ec"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>IncreaseMoney</b> (float nAmount)</td></tr>
-<tr class="memitem:a4d9da7302835c11bfe177bb338ae38c1" id="r_a4d9da7302835c11bfe177bb338ae38c1"><td class="memItemLeft" align="right" valign="top"><a id="a4d9da7302835c11bfe177bb338ae38c1" name="a4d9da7302835c11bfe177bb338ae38c1"></a>
-Dictionary&lt; TraitType, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetTraits</b> ()</td></tr>
 <tr class="memitem:a60a252e31418294048e4d4580098a297" id="r_a60a252e31418294048e4d4580098a297"><td class="memItemLeft" align="right" valign="top"><a id="a60a252e31418294048e4d4580098a297" name="a60a252e31418294048e4d4580098a297"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFaction</b> (<a class="el" href="class_renown_1_1_world_1_1_faction.html">Faction</a> faction)</td></tr>
-<tr class="memitem:a5823b18a86bd4cb19e92f3c6064110fb" id="r_a5823b18a86bd4cb19e92f3c6064110fb"><td class="memItemLeft" align="right" valign="top"><a id="a5823b18a86bd4cb19e92f3c6064110fb" name="a5823b18a86bd4cb19e92f3c6064110fb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DecreaseFactionImportance</b> (int nAmount)</td></tr>
-<tr class="memitem:a3a63db140fc681a5bbc0968e300e5531" id="r_a3a63db140fc681a5bbc0968e300e5531"><td class="memItemLeft" align="right" valign="top"><a id="a3a63db140fc681a5bbc0968e300e5531" name="a3a63db140fc681a5bbc0968e300e5531"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>IncreaseFactionImportance</b> (int nAmount)</td></tr>
-<tr class="memitem:a624b3c6aa113751c378d9ea4c1191638" id="r_a624b3c6aa113751c378d9ea4c1191638"><td class="memItemLeft" align="right" valign="top"><a id="a624b3c6aa113751c378d9ea4c1191638" name="a624b3c6aa113751c378d9ea4c1191638"></a>
-override int&#160;</td><td class="memItemRight" valign="bottom"><b>GetRenownScore</b> ()</td></tr>
-<tr class="memitem:af75e5614e894be5a838db4b3fa4ec74e" id="r_af75e5614e894be5a838db4b3fa4ec74e"><td class="memItemLeft" align="right" valign="top"><a id="af75e5614e894be5a838db4b3fa4ec74e" name="af75e5614e894be5a838db4b3fa4ec74e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRenown</b> (int nAmount)</td></tr>
-<tr class="memitem:a64003136adf5617a4de15e1ce9a57639" id="r_a64003136adf5617a4de15e1ce9a57639"><td class="memItemLeft" align="right" valign="top"><a id="a64003136adf5617a4de15e1ce9a57639" name="a64003136adf5617a4de15e1ce9a57639"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasTrait</b> (TraitType trait)</td></tr>
-<tr class="memdesc:a64003136adf5617a4de15e1ce9a57639"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the entity has the given trait <br /></td></tr>
-<tr class="memitem:aff1d57c89b6b4c332a56a3caaf353c8e" id="r_aff1d57c89b6b4c332a56a3caaf353c8e"><td class="memItemLeft" align="right" valign="top"><a id="aff1d57c89b6b4c332a56a3caaf353c8e" name="aff1d57c89b6b4c332a56a3caaf353c8e"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>GetTraitScore</b> (TraitType type)</td></tr>
-<tr class="memitem:a96f8bc14642a61d95dfe1edd24d9eb97" id="r_a96f8bc14642a61d95dfe1edd24d9eb97"><td class="memItemLeft" align="right" valign="top"><a id="a96f8bc14642a61d95dfe1edd24d9eb97" name="a96f8bc14642a61d95dfe1edd24d9eb97"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ChangeTraitScore</b> (TraitType type, float nDelta)</td></tr>
+<tr class="memitem:abf3e5b708239ea058425bfee9bfa21c9" id="r_abf3e5b708239ea058425bfee9bfa21c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf3e5b708239ea058425bfee9bfa21c9">DecreaseFactionImportance</a> (<a class="el" href="class_renown_1_1_world_1_1_faction.html">Faction</a> faction, int amount)</td></tr>
+<tr class="memdesc:abf3e5b708239ea058425bfee9bfa21c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decreases the numerical value that the player has to a faction.  <br /></td></tr>
+<tr class="memitem:ae7cfee84de77c0f8c137df7b7481329f" id="r_ae7cfee84de77c0f8c137df7b7481329f"><td class="memItemLeft" align="right" valign="top"><a id="ae7cfee84de77c0f8c137df7b7481329f" name="ae7cfee84de77c0f8c137df7b7481329f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>IncreaseFactionImportance</b> (<a class="el" href="class_renown_1_1_world_1_1_faction.html">Faction</a> faction, int amount)</td></tr>
+<tr class="memitem:a3b5c95ac59f2489ad4e75866c8b70fcc" id="r_a3b5c95ac59f2489ad4e75866c8b70fcc"><td class="memItemLeft" align="right" valign="top"><a id="a3b5c95ac59f2489ad4e75866c8b70fcc" name="a3b5c95ac59f2489ad4e75866c8b70fcc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRenown</b> (int amount)</td></tr>
+<tr class="memitem:a117d3eb074f1840983d9d81f11006b7d" id="r_a117d3eb074f1840983d9d81f11006b7d"><td class="memItemLeft" align="right" valign="top"><a id="a117d3eb074f1840983d9d81f11006b7d" name="a117d3eb074f1840983d9d81f11006b7d"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetTraitScore</b> (<a class="el" href="class_renown_1_1_trait.html">Trait</a> type)</td></tr>
+<tr class="memitem:a7715e8e782de15fff40c09f2be596725" id="r_a7715e8e782de15fff40c09f2be596725"><td class="memItemLeft" align="right" valign="top"><a id="a7715e8e782de15fff40c09f2be596725" name="a7715e8e782de15fff40c09f2be596725"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ChangeTraitScore</b> (<a class="el" href="class_renown_1_1_trait.html">Trait</a> type, float delta)</td></tr>
 <tr class="memitem:ac6686570e2b5f1d4a1646199a4b43feb" id="r_ac6686570e2b5f1d4a1646199a4b43feb"><td class="memItemLeft" align="right" valign="top"><a id="ac6686570e2b5f1d4a1646199a4b43feb" name="ac6686570e2b5f1d4a1646199a4b43feb"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Meet</b> (<a class="el" href="interface_renown_1_1_object.html">Renown.Object</a> other)</td></tr>
-<tr class="memitem:a01b7f961c2c1fcbcbfcc05a1c7eb3134" id="r_a01b7f961c2c1fcbcbfcc05a1c7eb3134"><td class="memItemLeft" align="right" valign="top"><a id="a01b7f961c2c1fcbcbfcc05a1c7eb3134" name="a01b7f961c2c1fcbcbfcc05a1c7eb3134"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RelationIncrease</b> (<a class="el" href="interface_renown_1_1_object.html">Renown.Object</a> other, float nAmount)</td></tr>
-<tr class="memitem:a5487c6a66071435a82c7b9c6e89e0cdf" id="r_a5487c6a66071435a82c7b9c6e89e0cdf"><td class="memItemLeft" align="right" valign="top"><a id="a5487c6a66071435a82c7b9c6e89e0cdf" name="a5487c6a66071435a82c7b9c6e89e0cdf"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RelationDecrease</b> (<a class="el" href="interface_renown_1_1_object.html">Renown.Object</a> other, float nAmount)</td></tr>
+<tr class="memitem:a626d6d6242ddd0b17857a5a56c2dabfd" id="r_a626d6d6242ddd0b17857a5a56c2dabfd"><td class="memItemLeft" align="right" valign="top"><a id="a626d6d6242ddd0b17857a5a56c2dabfd" name="a626d6d6242ddd0b17857a5a56c2dabfd"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RelationIncrease</b> (<a class="el" href="interface_renown_1_1_object.html">Renown.Object</a> other, float amount)</td></tr>
+<tr class="memitem:a07ec829b713a53f6ad50f0d83ea686ff" id="r_a07ec829b713a53f6ad50f0d83ea686ff"><td class="memItemLeft" align="right" valign="top"><a id="a07ec829b713a53f6ad50f0d83ea686ff" name="a07ec829b713a53f6ad50f0d83ea686ff"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RelationDecrease</b> (<a class="el" href="interface_renown_1_1_object.html">Renown.Object</a> other, float amount)</td></tr>
 <tr class="memitem:a273f8704e2c623865a371669a38b33a1" id="r_a273f8704e2c623865a371669a38b33a1"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a273f8704e2c623865a371669a38b33a1">AddStatusEffect</a> (string effectName)</td></tr>
+<tr class="memdesc:a273f8704e2c623865a371669a38b33a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a <a class="el" href="class_status_effect.html" title="The base class from which all status effects must inherit from.">StatusEffect</a> object to the entity.  <br /></td></tr>
 <tr class="memitem:ab97ed67b8becd4302b005dc4759cfd41" id="r_ab97ed67b8becd4302b005dc4759cfd41"><td class="memItemLeft" align="right" valign="top"><a id="ab97ed67b8becd4302b005dc4759cfd41" name="ab97ed67b8becd4302b005dc4759cfd41"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ThoughtBubble</b> (string text)</td></tr>
-<tr class="memitem:ad878a74ece0f3f9d193cc302813e30ac" id="r_ad878a74ece0f3f9d193cc302813e30ac"><td class="memItemLeft" align="right" valign="top"><a id="ad878a74ece0f3f9d193cc302813e30ac" name="ad878a74ece0f3f9d193cc302813e30ac"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTileMapFloorLevel</b> (int nLevel)</td></tr>
-<tr class="memitem:a094c4005a79cee2f0b4d0c5cd3b6cfc8" id="r_a094c4005a79cee2f0b4d0c5cd3b6cfc8"><td class="memItemLeft" align="right" valign="top"><a id="a094c4005a79cee2f0b4d0c5cd3b6cfc8" name="a094c4005a79cee2f0b4d0c5cd3b6cfc8"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>GetTileMapFloorLevel</b> ()</td></tr>
+<tr class="memitem:abe881a472f0cff8cbe9d9b9cfdbe79e5" id="r_abe881a472f0cff8cbe9d9b9cfdbe79e5"><td class="memItemLeft" align="right" valign="top"><a id="abe881a472f0cff8cbe9d9b9cfdbe79e5" name="abe881a472f0cff8cbe9d9b9cfdbe79e5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTileMapFloorLevel</b> (int level)</td></tr>
 <tr class="memitem:ad66a5bd0a2662bf320f6e6ca4977f017" id="r_ad66a5bd0a2662bf320f6e6ca4977f017"><td class="memItemLeft" align="right" valign="top"><a id="ad66a5bd0a2662bf320f6e6ca4977f017" name="ad66a5bd0a2662bf320f6e6ca4977f017"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddToJournal</b> (<a class="el" href="class_note.html">Note</a> note)</td></tr>
-<tr class="memitem:a657ce2d7d811eb0af3249effaca7a6c0" id="r_a657ce2d7d811eb0af3249effaca7a6c0"><td class="memItemLeft" align="right" valign="top"><a id="a657ce2d7d811eb0af3249effaca7a6c0" name="a657ce2d7d811eb0af3249effaca7a6c0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSoundLevel</b> (float nSoundLevel)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddToJournal</b> (<a class="el" href="class_interactables_1_1_note.html">Note</a> note)</td></tr>
+<tr class="memitem:af56e7ac69c0b3157f83efe6658eb4fff" id="r_af56e7ac69c0b3157f83efe6658eb4fff"><td class="memItemLeft" align="right" valign="top"><a id="af56e7ac69c0b3157f83efe6658eb4fff" name="af56e7ac69c0b3157f83efe6658eb4fff"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSoundLevel</b> (float soundLevel)</td></tr>
 <tr class="memitem:a1c8f02f4432b8f894d5ed0fe076f21ee" id="r_a1c8f02f4432b8f894d5ed0fe076f21ee"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c8f02f4432b8f894d5ed0fe076f21ee">Save</a> ()</td></tr>
+<tr class="memdesc:a1c8f02f4432b8f894d5ed0fe076f21ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the player's gamestate to disk.  <br /></td></tr>
 <tr class="memitem:a80764079e1fc0a5b07cceb7a2386d5de" id="r_a80764079e1fc0a5b07cceb7a2386d5de"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80764079e1fc0a5b07cceb7a2386d5de">Load</a> ()</td></tr>
+<tr class="memdesc:a80764079e1fc0a5b07cceb7a2386d5de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the player's gamestate from disk.  <br /></td></tr>
 <tr class="memitem:a2665e541c166215b1b595de780512f7c" id="r_a2665e541c166215b1b595de780512f7c"><td class="memItemLeft" align="right" valign="top"><a id="a2665e541c166215b1b595de780512f7c" name="a2665e541c166215b1b595de780512f7c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTileMapFloor</b> (<a class="el" href="class_tile_map_floor.html">TileMapFloor</a> floor)</td></tr>
-<tr class="memitem:a067122d60351c32ac26b66ceb2cc418a" id="r_a067122d60351c32ac26b66ceb2cc418a"><td class="memItemLeft" align="right" valign="top"><a id="a067122d60351c32ac26b66ceb2cc418a" name="a067122d60351c32ac26b66ceb2cc418a"></a>
-<a class="el" href="class_tile_map_floor.html">TileMapFloor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetTileMapFloor</b> ()</td></tr>
-<tr class="memitem:a5704022e886f5a9fec6f51cf29002137" id="r_a5704022e886f5a9fec6f51cf29002137"><td class="memItemLeft" align="right" valign="top"><a id="a5704022e886f5a9fec6f51cf29002137" name="a5704022e886f5a9fec6f51cf29002137"></a>
-<a class="el" href="class_checkpoint.html">Checkpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetCurrentCheckpoint</b> ()</td></tr>
-<tr class="memitem:aa3bc2ef5222650fc574f383d74efedfc" id="r_aa3bc2ef5222650fc574f383d74efedfc"><td class="memItemLeft" align="right" valign="top"><a id="aa3bc2ef5222650fc574f383d74efedfc" name="aa3bc2ef5222650fc574f383d74efedfc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadWeapon</b> (<a class="el" href="class_weapon_entity.html">WeaponEntity</a> weapon, string ammo, int slot)</td></tr>
-<tr class="memitem:a54848470190580c182546ccac443d0f9" id="r_a54848470190580c182546ccac443d0f9"><td class="memItemLeft" align="right" valign="top"><a id="a54848470190580c182546ccac443d0f9" name="a54848470190580c182546ccac443d0f9"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasPerk</b> (string name)</td></tr>
-<tr class="memitem:a37d4251ba3dec074139d6f5ebb54a33b" id="r_a37d4251ba3dec074139d6f5ebb54a33b"><td class="memItemLeft" align="right" valign="top"><a id="a37d4251ba3dec074139d6f5ebb54a33b" name="a37d4251ba3dec074139d6f5ebb54a33b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasRune</b> (string name)</td></tr>
 <tr class="memitem:ab2d71e41272761c6e8bdbd9b2ade696c" id="r_ab2d71e41272761c6e8bdbd9b2ade696c"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2d71e41272761c6e8bdbd9b2ade696c">SetLocation</a> (in <a class="el" href="class_renown_1_1_world_1_1_world_area.html">WorldArea</a> location)</td></tr>
-<tr class="memitem:a830922f4fbfdf203260902f90d28dde2" id="r_a830922f4fbfdf203260902f90d28dde2"><td class="memItemLeft" align="right" valign="top"><a id="a830922f4fbfdf203260902f90d28dde2" name="a830922f4fbfdf203260902f90d28dde2"></a>
-AnimatedSprite2D&#160;</td><td class="memItemRight" valign="bottom"><b>GetTorsoAnimation</b> ()</td></tr>
-<tr class="memitem:ac995a7a47009bc8c438b6e7f3489f209" id="r_ac995a7a47009bc8c438b6e7f3489f209"><td class="memItemLeft" align="right" valign="top"><a id="ac995a7a47009bc8c438b6e7f3489f209" name="ac995a7a47009bc8c438b6e7f3489f209"></a>
-AnimatedSprite2D&#160;</td><td class="memItemRight" valign="bottom"><b>GetLegsAnimation</b> ()</td></tr>
-<tr class="memitem:a05aca90d041244e82056778f3a323cf5" id="r_a05aca90d041244e82056778f3a323cf5"><td class="memItemLeft" align="right" valign="top"><a id="a05aca90d041244e82056778f3a323cf5" name="a05aca90d041244e82056778f3a323cf5"></a>
-AnimatedSprite2D&#160;</td><td class="memItemRight" valign="bottom"><b>GetLeftArmAnimation</b> ()</td></tr>
-<tr class="memitem:a29172f22aabad5f4828d486c92b33cb8" id="r_a29172f22aabad5f4828d486c92b33cb8"><td class="memItemLeft" align="right" valign="top"><a id="a29172f22aabad5f4828d486c92b33cb8" name="a29172f22aabad5f4828d486c92b33cb8"></a>
-AnimatedSprite2D&#160;</td><td class="memItemRight" valign="bottom"><b>GetRightArmAnimation</b> ()</td></tr>
-<tr class="memitem:ae7776d319fca728eec5fe463299fdba6" id="r_ae7776d319fca728eec5fe463299fdba6"><td class="memItemLeft" align="right" valign="top"><a id="ae7776d319fca728eec5fe463299fdba6" name="ae7776d319fca728eec5fe463299fdba6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPrimaryWeapon</b> (<a class="el" href="class_weapon_entity.html">WeaponEntity</a> weapon)</td></tr>
-<tr class="memitem:a948fa60b6a4e18ed6e91f7e758d826e9" id="r_a948fa60b6a4e18ed6e91f7e758d826e9"><td class="memItemLeft" align="right" valign="top"><a id="a948fa60b6a4e18ed6e91f7e758d826e9" name="a948fa60b6a4e18ed6e91f7e758d826e9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetHeavyPrimaryWeapon</b> (<a class="el" href="class_weapon_entity.html">WeaponEntity</a> weapon)</td></tr>
-<tr class="memitem:acbaf10bec4a4ab114870f30648869aa6" id="r_acbaf10bec4a4ab114870f30648869aa6"><td class="memItemLeft" align="right" valign="top"><a id="acbaf10bec4a4ab114870f30648869aa6" name="acbaf10bec4a4ab114870f30648869aa6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSidearmWeapon</b> (<a class="el" href="class_weapon_entity.html">WeaponEntity</a> weapon)</td></tr>
-<tr class="memitem:aa74dbe2862a6e015f99bc0971f852c05" id="r_aa74dbe2862a6e015f99bc0971f852c05"><td class="memItemLeft" align="right" valign="top"><a id="aa74dbe2862a6e015f99bc0971f852c05" name="aa74dbe2862a6e015f99bc0971f852c05"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetHeavySidearmWeapon</b> (<a class="el" href="class_weapon_entity.html">WeaponEntity</a> weapon)</td></tr>
-<tr class="memitem:a035a680a854f890c1f3820c07c49019e" id="r_a035a680a854f890c1f3820c07c49019e"><td class="memItemLeft" align="right" valign="top"><a id="a035a680a854f890c1f3820c07c49019e" name="a035a680a854f890c1f3820c07c49019e"></a>
-<a class="el" href="class_player_system_1_1_weapon_slot.html">WeaponSlot</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetPrimaryWeapon</b> ()</td></tr>
-<tr class="memitem:aaca80af42030540ee2b146defa6b0ad8" id="r_aaca80af42030540ee2b146defa6b0ad8"><td class="memItemLeft" align="right" valign="top"><a id="aaca80af42030540ee2b146defa6b0ad8" name="aaca80af42030540ee2b146defa6b0ad8"></a>
-<a class="el" href="class_player_system_1_1_weapon_slot.html">WeaponSlot</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetHeavyPrimaryWeapon</b> ()</td></tr>
-<tr class="memitem:ab7c892de5214e82435ce56b52d7e5f0d" id="r_ab7c892de5214e82435ce56b52d7e5f0d"><td class="memItemLeft" align="right" valign="top"><a id="ab7c892de5214e82435ce56b52d7e5f0d" name="ab7c892de5214e82435ce56b52d7e5f0d"></a>
-<a class="el" href="class_player_system_1_1_weapon_slot.html">WeaponSlot</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetSidearmWeapon</b> ()</td></tr>
-<tr class="memitem:af549a84be53e89dc6553985c63fa6c54" id="r_af549a84be53e89dc6553985c63fa6c54"><td class="memItemLeft" align="right" valign="top"><a id="af549a84be53e89dc6553985c63fa6c54" name="af549a84be53e89dc6553985c63fa6c54"></a>
-<a class="el" href="class_player_system_1_1_weapon_slot.html">WeaponSlot</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetHeavySidearmWeapon</b> ()</td></tr>
-<tr class="memitem:a732e3ed5276377f80a130e34c01c8f77" id="r_a732e3ed5276377f80a130e34c01c8f77"><td class="memItemLeft" align="right" valign="top"><a id="a732e3ed5276377f80a130e34c01c8f77" name="a732e3ed5276377f80a130e34c01c8f77"></a>
-Resource&#160;</td><td class="memItemRight" valign="bottom"><b>GetCurrentMappingContext</b> ()</td></tr>
-<tr class="memitem:ac6cb1097e2aeed3390c5ecdbd43bc54c" id="r_ac6cb1097e2aeed3390c5ecdbd43bc54c"><td class="memItemLeft" align="right" valign="top"><a id="ac6cb1097e2aeed3390c5ecdbd43bc54c" name="ac6cb1097e2aeed3390c5ecdbd43bc54c"></a>
-<a class="el" href="class_player_system_1_1_weapon_slot.html">WeaponSlot</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>GetWeaponSlots</b> ()</td></tr>
-<tr class="memitem:a0441da59a8e0f5db17e03d7efc565adc" id="r_a0441da59a8e0f5db17e03d7efc565adc"><td class="memItemLeft" align="right" valign="top"><a id="a0441da59a8e0f5db17e03d7efc565adc" name="a0441da59a8e0f5db17e03d7efc565adc"></a>
-Godot.Collections.Dictionary&lt; int, <a class="el" href="class_weapon_entity.html">WeaponEntity</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetWeaponsStack</b> ()</td></tr>
-<tr class="memitem:a858083fc6de2958967ea56bbd6062b42" id="r_a858083fc6de2958967ea56bbd6062b42"><td class="memItemLeft" align="right" valign="top"><a id="a858083fc6de2958967ea56bbd6062b42" name="a858083fc6de2958967ea56bbd6062b42"></a>
-Godot.Collections.Dictionary&lt; int, <a class="el" href="class_ammo_stack.html">AmmoStack</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAmmoStacks</b> ()</td></tr>
-<tr class="memitem:ad5441c610d734e8f7b20cbd8e70e2cc9" id="r_ad5441c610d734e8f7b20cbd8e70e2cc9"><td class="memItemLeft" align="right" valign="top"><a id="ad5441c610d734e8f7b20cbd8e70e2cc9" name="ad5441c610d734e8f7b20cbd8e70e2cc9"></a>
-Node&#160;</td><td class="memItemRight" valign="bottom"><b>GetInventory</b> ()</td></tr>
 <tr class="memitem:aeacc0645c0ee587604cdc5be3c8a6720" id="r_aeacc0645c0ee587604cdc5be3c8a6720"><td class="memItemLeft" align="right" valign="top"><a id="aeacc0645c0ee587604cdc5be3c8a6720" name="aeacc0645c0ee587604cdc5be3c8a6720"></a>
 <a class="el" href="class_player_system_1_1_arm.html">Arm</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetWeaponHand</b> (<a class="el" href="class_weapon_entity.html">WeaponEntity</a> weapon)</td></tr>
-<tr class="memitem:a81b433de2a4fabeab041b222cd2d3d1b" id="r_a81b433de2a4fabeab041b222cd2d3d1b"><td class="memItemLeft" align="right" valign="top"><a id="a81b433de2a4fabeab041b222cd2d3d1b" name="a81b433de2a4fabeab041b222cd2d3d1b"></a>
-Godot.Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>GetInputVelocity</b> ()</td></tr>
-<tr class="memitem:af592d26e6f08352775b42a5618beb87b" id="r_af592d26e6f08352775b42a5618beb87b"><td class="memItemLeft" align="right" valign="top"><a id="af592d26e6f08352775b42a5618beb87b" name="af592d26e6f08352775b42a5618beb87b"></a>
-<a class="el" href="class_player_system_1_1_weapon_slot.html">WeaponSlot</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetSlot</b> (int nSlot)</td></tr>
 <tr class="memitem:afbebe152fae6bdc88f0fe88a3159a761" id="r_afbebe152fae6bdc88f0fe88a3159a761"><td class="memItemLeft" align="right" valign="top"><a id="afbebe152fae6bdc88f0fe88a3159a761" name="afbebe152fae6bdc88f0fe88a3159a761"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>GetArmAngle</b> ()</td></tr>
-<tr class="memitem:a5bf8dc459987b63f897144a5ed66dafa" id="r_a5bf8dc459987b63f897144a5ed66dafa"><td class="memItemLeft" align="right" valign="top"><a id="a5bf8dc459987b63f897144a5ed66dafa" name="a5bf8dc459987b63f897144a5ed66dafa"></a>
-CanvasLayer&#160;</td><td class="memItemRight" valign="bottom"><b>GetHUD</b> ()</td></tr>
-<tr class="memitem:a9c29b913fe0345f6af2b1f1e4b6867d2" id="r_a9c29b913fe0345f6af2b1f1e4b6867d2"><td class="memItemLeft" align="right" valign="top"><a id="a9c29b913fe0345f6af2b1f1e4b6867d2" name="a9c29b913fe0345f6af2b1f1e4b6867d2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetArmAngle</b> (float nAngle)</td></tr>
-<tr class="memitem:a0f7c2f347b0f0f50d4186991d9031920" id="r_a0f7c2f347b0f0f50d4186991d9031920"><td class="memItemLeft" align="right" valign="top"><a id="a0f7c2f347b0f0f50d4186991d9031920" name="a0f7c2f347b0f0f50d4186991d9031920"></a>
-<a class="el" href="class_player_system_1_1_arm.html">Arm</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetLastUsedArm</b> ()</td></tr>
+<tr class="memitem:a8adca6fd6a9ebd48b2984080d14d3545" id="r_a8adca6fd6a9ebd48b2984080d14d3545"><td class="memItemLeft" align="right" valign="top"><a id="a8adca6fd6a9ebd48b2984080d14d3545" name="a8adca6fd6a9ebd48b2984080d14d3545"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetArmAngle</b> (float angle)</td></tr>
 <tr class="memitem:abdb63f081c4cef05018a2c529dcdedf9" id="r_abdb63f081c4cef05018a2c529dcdedf9"><td class="memItemLeft" align="right" valign="top"><a id="abdb63f081c4cef05018a2c529dcdedf9" name="abdb63f081c4cef05018a2c529dcdedf9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLastUsedArm</b> (in <a class="el" href="class_player_system_1_1_arm.html">Arm</a> arm)</td></tr>
-<tr class="memitem:aaf321b0720521ded9d2419ba58722a50" id="r_aaf321b0720521ded9d2419ba58722a50"><td class="memItemLeft" align="right" valign="top"><a id="aaf321b0720521ded9d2419ba58722a50" name="aaf321b0720521ded9d2419ba58722a50"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>GetSoundLevel</b> ()</td></tr>
-<tr class="memitem:ae83eb6db2e7eed3252393dc7425a2dd4" id="r_ae83eb6db2e7eed3252393dc7425a2dd4"><td class="memItemLeft" align="right" valign="top"><a id="ae83eb6db2e7eed3252393dc7425a2dd4" name="ae83eb6db2e7eed3252393dc7425a2dd4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetHealth</b> (float nHealth)</td></tr>
-<tr class="memitem:a2a7ae3c42ff9488476d1b9d39e413f9d" id="r_a2a7ae3c42ff9488476d1b9d39e413f9d"><td class="memItemLeft" align="right" valign="top"><a id="a2a7ae3c42ff9488476d1b9d39e413f9d" name="a2a7ae3c42ff9488476d1b9d39e413f9d"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>GetRage</b> ()</td></tr>
-<tr class="memitem:af3c1919934e9953b269ffc6a3eafbcf8" id="r_af3c1919934e9953b269ffc6a3eafbcf8"><td class="memItemLeft" align="right" valign="top"><a id="af3c1919934e9953b269ffc6a3eafbcf8" name="af3c1919934e9953b269ffc6a3eafbcf8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRage</b> (float nRage)</td></tr>
-<tr class="memitem:a637b6dfe426ec67df08bd39ec158ceb2" id="r_a637b6dfe426ec67df08bd39ec158ceb2"><td class="memItemLeft" align="right" valign="top"><a id="a637b6dfe426ec67df08bd39ec158ceb2" name="a637b6dfe426ec67df08bd39ec158ceb2"></a>
-PlayerFlags&#160;</td><td class="memItemRight" valign="bottom"><b>GetFlags</b> ()</td></tr>
+<tr class="memitem:aebbdd668d77749b4ff42f94340a284d7" id="r_aebbdd668d77749b4ff42f94340a284d7"><td class="memItemLeft" align="right" valign="top"><a id="aebbdd668d77749b4ff42f94340a284d7" name="aebbdd668d77749b4ff42f94340a284d7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetHealth</b> (float health)</td></tr>
+<tr class="memitem:a32373b0682c7803de62f98a08f4be4e0" id="r_a32373b0682c7803de62f98a08f4be4e0"><td class="memItemLeft" align="right" valign="top"><a id="a32373b0682c7803de62f98a08f4be4e0" name="a32373b0682c7803de62f98a08f4be4e0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRage</b> (float rage)</td></tr>
 <tr class="memitem:aecc3a2e0b570e0619cecc140976800d4" id="r_aecc3a2e0b570e0619cecc140976800d4"><td class="memItemLeft" align="right" valign="top"><a id="aecc3a2e0b570e0619cecc140976800d4" name="aecc3a2e0b570e0619cecc140976800d4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFlags</b> (PlayerFlags flags)</td></tr>
-<tr class="memitem:a54411411dc895d1e3ea2cfb0fdff1515" id="r_a54411411dc895d1e3ea2cfb0fdff1515"><td class="memItemLeft" align="right" valign="top"><a id="a54411411dc895d1e3ea2cfb0fdff1515" name="a54411411dc895d1e3ea2cfb0fdff1515"></a>
-Hands&#160;</td><td class="memItemRight" valign="bottom"><b>GetHandsUsed</b> ()</td></tr>
 <tr class="memitem:a1f3b8761a6ebad310a3742609486cd94" id="r_a1f3b8761a6ebad310a3742609486cd94"><td class="memItemLeft" align="right" valign="top"><a id="a1f3b8761a6ebad310a3742609486cd94" name="a1f3b8761a6ebad310a3742609486cd94"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetHandsUsed</b> (Hands hands)</td></tr>
-<tr class="memitem:aa71359a607deb2bd5b8a53081bdb1e50" id="r_aa71359a607deb2bd5b8a53081bdb1e50"><td class="memItemLeft" align="right" valign="top"><a id="aa71359a607deb2bd5b8a53081bdb1e50" name="aa71359a607deb2bd5b8a53081bdb1e50"></a>
-<a class="el" href="class_player_system_1_1_weapon_slot.html">WeaponSlot</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>GetSlots</b> ()</td></tr>
-<tr class="memitem:ad71d5d73d37f8195303b39efc7e3d190" id="r_ad71d5d73d37f8195303b39efc7e3d190"><td class="memItemLeft" align="right" valign="top"><a id="ad71d5d73d37f8195303b39efc7e3d190" name="ad71d5d73d37f8195303b39efc7e3d190"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSlots</b> (<a class="el" href="class_player_system_1_1_weapon_slot.html">WeaponSlot</a>[] slots)</td></tr>
-<tr class="memitem:a912d50c9738400b783acc4dae1061420" id="r_a912d50c9738400b783acc4dae1061420"><td class="memItemLeft" align="right" valign="top"><a id="a912d50c9738400b783acc4dae1061420" name="a912d50c9738400b783acc4dae1061420"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGroundMaterial</b> (GroundMaterialType nType)</td></tr>
-<tr class="memitem:a5a09451bda003e2a0e9c508aae1ff2c4" id="r_a5a09451bda003e2a0e9c508aae1ff2c4"><td class="memItemLeft" align="right" valign="top"><a id="a5a09451bda003e2a0e9c508aae1ff2c4" name="a5a09451bda003e2a0e9c508aae1ff2c4"></a>
-<a class="el" href="class_player_system_1_1_arm.html">Arm</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetLeftArm</b> ()</td></tr>
-<tr class="memitem:aa1e232118a5b111d772d9b15f03cb6ec" id="r_aa1e232118a5b111d772d9b15f03cb6ec"><td class="memItemLeft" align="right" valign="top"><a id="aa1e232118a5b111d772d9b15f03cb6ec" name="aa1e232118a5b111d772d9b15f03cb6ec"></a>
-<a class="el" href="class_player_system_1_1_arm.html">Arm</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetRightArm</b> ()</td></tr>
-<tr class="memitem:a34b0abc3d256d52f3c5222a368493937" id="r_a34b0abc3d256d52f3c5222a368493937"><td class="memItemLeft" align="right" valign="top"><a id="a34b0abc3d256d52f3c5222a368493937" name="a34b0abc3d256d52f3c5222a368493937"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>GetCurrentWeapon</b> ()</td></tr>
+<tr class="memitem:af67cb20a344af1bd6761092ed2f866e2" id="r_af67cb20a344af1bd6761092ed2f866e2"><td class="memItemLeft" align="right" valign="top"><a id="af67cb20a344af1bd6761092ed2f866e2" name="af67cb20a344af1bd6761092ed2f866e2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGroundMaterial</b> (GroundMaterialType type)</td></tr>
 <tr class="memitem:a7b5e46e24b96a499620c025ea0727450" id="r_a7b5e46e24b96a499620c025ea0727450"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b5e46e24b96a499620c025ea0727450">PlaySound</a> (AudioStreamPlayer2D channel, AudioStream stream)</td></tr>
-<tr class="memitem:a510992872162e363acbf97ab912a9e05" id="r_a510992872162e363acbf97ab912a9e05"><td class="memItemLeft" align="right" valign="top"><a id="a510992872162e363acbf97ab912a9e05" name="a510992872162e363acbf97ab912a9e05"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupSplitScreen</b> (int nInputIndex)</td></tr>
+<tr class="memdesc:a7b5e46e24b96a499620c025ea0727450"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays a sound effect from the provided channel and stream local to the entity's position.  <br /></td></tr>
+<tr class="memitem:a9ddb5eb101261dc07c028c565156dfa9" id="r_a9ddb5eb101261dc07c028c565156dfa9"><td class="memItemLeft" align="right" valign="top"><a id="a9ddb5eb101261dc07c028c565156dfa9" name="a9ddb5eb101261dc07c028c565156dfa9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupSplitScreen</b> (int inputIndex)</td></tr>
 <tr class="memitem:ac8c8d20c6413af236a9dfdccaf8dc102" id="r_ac8c8d20c6413af236a9dfdccaf8dc102"><td class="memItemLeft" align="right" valign="top"><a id="ac8c8d20c6413af236a9dfdccaf8dc102" name="ac8c8d20c6413af236a9dfdccaf8dc102"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>MultiplayerReset</b> ()</td></tr>
-<tr class="memitem:af8e7667503b405d51c12f9a1223a15ac" id="r_af8e7667503b405d51c12f9a1223a15ac"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8e7667503b405d51c12f9a1223a15ac">Damage</a> (in <a class="el" href="class_renown_1_1_entity.html">Entity</a> attacker, float nAmount)</td></tr>
+<tr class="memitem:adc85ee45e62dcb76981898cf7422f035" id="r_adc85ee45e62dcb76981898cf7422f035"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc85ee45e62dcb76981898cf7422f035">Damage</a> (in <a class="el" href="class_renown_1_1_entity.html">Entity</a> attacker, float amount)</td></tr>
 <tr class="memitem:a3d54a14f952486077308e291b35fd0df" id="r_a3d54a14f952486077308e291b35fd0df"><td class="memItemLeft" align="right" valign="top"><a id="a3d54a14f952486077308e291b35fd0df" name="a3d54a14f952486077308e291b35fd0df"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnParry</b> (<a class="el" href="class_bullet.html">Bullet</a> from, float damage)</td></tr>
 <tr class="memitem:a2265884d910aa08399a70df62903745f" id="r_a2265884d910aa08399a70df62903745f"><td class="memItemLeft" align="right" valign="top"><a id="a2265884d910aa08399a70df62903745f" name="a2265884d910aa08399a70df62903745f"></a>
@@ -377,27 +299,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>TalkBegin</b> ()</td>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>EndInteraction</b> ()</td></tr>
 <tr class="memitem:a7a25bc5068ef56a3776bdb216bef1141" id="r_a7a25bc5068ef56a3776bdb216bef1141"><td class="memItemLeft" align="right" valign="top"><a id="a7a25bc5068ef56a3776bdb216bef1141" name="a7a25bc5068ef56a3776bdb216bef1141"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>BeginInteraction</b> (<a class="el" href="class_interaction_item.html">InteractionItem</a> item)</td></tr>
-<tr class="memitem:a7bd4108201d8bcf9eca278bfad0f3dfe" id="r_a7bd4108201d8bcf9eca278bfad0f3dfe"><td class="memItemLeft" align="right" valign="top"><a id="a7bd4108201d8bcf9eca278bfad0f3dfe" name="a7bd4108201d8bcf9eca278bfad0f3dfe"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>EquipSlot</b> (int nSlot)</td></tr>
-<tr class="memitem:a45d5eca1dcfc033abc9957cbb8ad5c5c" id="r_a45d5eca1dcfc033abc9957cbb8ad5c5c"><td class="memItemLeft" align="right" valign="top"><a id="a45d5eca1dcfc033abc9957cbb8ad5c5c" name="a45d5eca1dcfc033abc9957cbb8ad5c5c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SwitchInputMode</b> (Resource InputContext)</td></tr>
-<tr class="memitem:a3645ff8a4268176aa02d484a443c98ea" id="r_a3645ff8a4268176aa02d484a443c98ea"><td class="memItemLeft" align="right" valign="top"><a id="a3645ff8a4268176aa02d484a443c98ea" name="a3645ff8a4268176aa02d484a443c98ea"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_ExitTree</b> ()</td></tr>
+<tr class="memitem:a4cb4b42f4d747b279c7a8410ee0e0e93" id="r_a4cb4b42f4d747b279c7a8410ee0e0e93"><td class="memItemLeft" align="right" valign="top"><a id="a4cb4b42f4d747b279c7a8410ee0e0e93" name="a4cb4b42f4d747b279c7a8410ee0e0e93"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>EquipSlot</b> (int slot)</td></tr>
 <tr class="memitem:af1f380bc0ff1a7f3a3679e62c3ecda3d" id="r_af1f380bc0ff1a7f3a3679e62c3ecda3d"><td class="memItemLeft" align="right" valign="top"><a id="af1f380bc0ff1a7f3a3679e62c3ecda3d" name="af1f380bc0ff1a7f3a3679e62c3ecda3d"></a>
 override void&#160;</td><td class="memItemRight" valign="bottom"><b>_UnhandledInput</b> (InputEvent @event)</td></tr>
-<tr class="memitem:a1e40b879b220333d288c0863e6b5c35d" id="r_a1e40b879b220333d288c0863e6b5c35d"><td class="memItemLeft" align="right" valign="top"><a id="a1e40b879b220333d288c0863e6b5c35d" name="a1e40b879b220333d288c0863e6b5c35d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ConnectGamepadBinds</b> ()</td></tr>
+<tr class="memitem:a00021690404b8e6f5209c5cc1eb767d9" id="r_a00021690404b8e6f5209c5cc1eb767d9"><td class="memItemLeft" align="right" valign="top"><a id="a00021690404b8e6f5209c5cc1eb767d9" name="a00021690404b8e6f5209c5cc1eb767d9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ConnectBindings</b> ()</td></tr>
 <tr class="memitem:ae192a478a80f0e93e01339d62cdd6f6d" id="r_ae192a478a80f0e93e01339d62cdd6f6d"><td class="memItemLeft" align="right" valign="top"><a id="ae192a478a80f0e93e01339d62cdd6f6d" name="ae192a478a80f0e93e01339d62cdd6f6d"></a>
 override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
 <tr class="memitem:ac0eb7e06009143be17759a3793cf2b42" id="r_ac0eb7e06009143be17759a3793cf2b42"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0eb7e06009143be17759a3793cf2b42">PhysicsUpdate</a> (double delta)</td></tr>
 <tr class="memitem:af9a81ccfc37ebaf09f03919b565ab7bf" id="r_af9a81ccfc37ebaf09f03919b565ab7bf"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9a81ccfc37ebaf09f03919b565ab7bf">Update</a> (double delta)</td></tr>
-<tr class="memitem:a87884c0f10db6f0882f398e283546861" id="r_a87884c0f10db6f0882f398e283546861"><td class="memItemLeft" align="right" valign="top"><a id="a87884c0f10db6f0882f398e283546861" name="a87884c0f10db6f0882f398e283546861"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>PickupAmmo</b> (<a class="el" href="class_ammo_entity.html">AmmoEntity</a> ammo, int nAmount=-1)</td></tr>
-<tr class="memitem:a990c07b90e5eb4b3ad2a0f589892f5c5" id="r_a990c07b90e5eb4b3ad2a0f589892f5c5"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a990c07b90e5eb4b3ad2a0f589892f5c5">PickupWeapon</a> (<a class="el" href="class_weapon_entity.html">WeaponEntity</a> weapon)</td></tr>
-<tr class="memitem:aa710ebe40fa575c93cb2cfebe9b6406a" id="r_aa710ebe40fa575c93cb2cfebe9b6406a"><td class="memItemLeft" align="right" valign="top"><a id="aa710ebe40fa575c93cb2cfebe9b6406a" name="aa710ebe40fa575c93cb2cfebe9b6406a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DropWeapon</b> (int hashCode)</td></tr>
-<tr class="memitem:a136b04e67bb2548f65fdf60ce45e5547" id="r_a136b04e67bb2548f65fdf60ce45e5547"><td class="memItemLeft" align="right" valign="top"><a id="a136b04e67bb2548f65fdf60ce45e5547" name="a136b04e67bb2548f65fdf60ce45e5547"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DropAmmo</b> (int hashCode)</td></tr>
 <tr class="inherit_header pub_methods_class_renown_1_1_entity"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_renown_1_1_entity')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="class_renown_1_1_entity.html">Renown.Entity</a></td></tr>
 <tr class="memitem:aa113d8f4216a093a2a8147a5608a7e3b inherit pub_methods_class_renown_1_1_entity" id="r_aa113d8f4216a093a2a8147a5608a7e3b"><td class="memItemLeft" align="right" valign="top">
 delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>DamagedEventHandler</b> (<a class="el" href="class_renown_1_1_entity.html">Entity</a> source, <a class="el" href="class_renown_1_1_entity.html">Entity</a> target, float nAmount)</td></tr>
@@ -409,15 +320,24 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnChallenged<
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnIntimidated</b> ()</td></tr>
 <tr class="memitem:a54c523219fe05bfdbc4948443e1c1e45 inherit pub_methods_class_renown_1_1_entity" id="r_a54c523219fe05bfdbc4948443e1c1e45"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearStatusEffects</b> ()</td></tr>
-<tr class="memitem:a04631db2053421d8b012b1a9b39bce4f inherit pub_methods_class_renown_1_1_entity" id="r_a04631db2053421d8b012b1a9b39bce4f"><td class="memItemLeft" align="right" valign="top">
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasRelation</b> (<a class="el" href="interface_renown_1_1_object.html">Object</a> other)</td></tr>
-<tr class="memitem:a8017e0770fbc5744a738dec23b1714c2 inherit pub_methods_class_renown_1_1_entity" id="r_a8017e0770fbc5744a738dec23b1714c2"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renown_1_1_entity.html#a8017e0770fbc5744a738dec23b1714c2">GetRelationScore</a> (<a class="el" href="interface_renown_1_1_object.html">Object</a> other)</td></tr>
-<tr class="memitem:ad90010e3bde77e879d9c5a2007b86d17 inherit pub_methods_class_renown_1_1_entity" id="r_ad90010e3bde77e879d9c5a2007b86d17"><td class="memItemLeft" align="right" valign="top">virtual RelationStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renown_1_1_entity.html#ad90010e3bde77e879d9c5a2007b86d17">GetRelationStatus</a> (<a class="el" href="interface_renown_1_1_object.html">Object</a> other)</td></tr>
-<tr class="memitem:a4c0e95fc845748ed38c2d47f4e361874 inherit pub_methods_class_renown_1_1_entity" id="r_a4c0e95fc845748ed38c2d47f4e361874"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renown_1_1_entity.html#a4c0e95fc845748ed38c2d47f4e361874">DetermineRelationStatus</a> (<a class="el" href="interface_renown_1_1_object.html">Object</a> other)</td></tr>
+<tr class="memdesc:a54c523219fe05bfdbc4948443e1c1e45 inherit pub_methods_class_renown_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all <a class="el" href="class_status_effect.html" title="The base class from which all status effects must inherit from.">StatusEffect</a> objects currently being applied to the entity and clears the Dictionary. <br /></td></tr>
+<tr class="memitem:ada75e5b997442013a694823c3d8d3947 inherit pub_methods_class_renown_1_1_entity" id="r_ada75e5b997442013a694823c3d8d3947"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>PickupWeapon</b> (<a class="el" href="class_weapon_entity.html">WeaponEntity</a> weapon)</td></tr>
+<tr class="memitem:a3b8cf8fe20b1114ce53645cbb1a222b6 inherit pub_methods_class_renown_1_1_entity" id="r_a3b8cf8fe20b1114ce53645cbb1a222b6"><td class="memItemLeft" align="right" valign="top">
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasRelation</b> (<a class="el" href="class_renown_1_1_entity.html">Entity</a> entity)</td></tr>
+<tr class="memitem:a676846e61891a646407ee6f6c206603f inherit pub_methods_class_renown_1_1_entity" id="r_a676846e61891a646407ee6f6c206603f"><td class="memItemLeft" align="right" valign="top">
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasRelation</b> (<a class="el" href="class_renown_1_1_world_1_1_faction.html">Faction</a> faction)</td></tr>
+<tr class="memitem:a5fb57a98d019d10b4541f4bbb7fcb9d8 inherit pub_methods_class_renown_1_1_entity" id="r_a5fb57a98d019d10b4541f4bbb7fcb9d8"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renown_1_1_entity.html#a5fb57a98d019d10b4541f4bbb7fcb9d8">GetRelationScore</a> (<a class="el" href="class_renown_1_1_entity.html">Entity</a> entity)</td></tr>
+<tr class="memitem:acbf77cc2d87dca56682f3bc4484138f6 inherit pub_methods_class_renown_1_1_entity" id="r_acbf77cc2d87dca56682f3bc4484138f6"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renown_1_1_entity.html#acbf77cc2d87dca56682f3bc4484138f6">GetRelationScore</a> (<a class="el" href="class_renown_1_1_world_1_1_faction.html">Faction</a> faction)</td></tr>
+<tr class="memitem:a2f80b814c3751b3d3cb343b2cbc94f19 inherit pub_methods_class_renown_1_1_entity" id="r_a2f80b814c3751b3d3cb343b2cbc94f19"><td class="memItemLeft" align="right" valign="top">virtual RelationStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renown_1_1_entity.html#a2f80b814c3751b3d3cb343b2cbc94f19">GetRelationStatus</a> (<a class="el" href="class_renown_1_1_entity.html">Entity</a> entity)</td></tr>
+<tr class="memitem:af70beaa7dc4a1bb193da6fc389690bb1 inherit pub_methods_class_renown_1_1_entity" id="r_af70beaa7dc4a1bb193da6fc389690bb1"><td class="memItemLeft" align="right" valign="top">virtual RelationStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renown_1_1_entity.html#af70beaa7dc4a1bb193da6fc389690bb1">GetRelationStatus</a> (<a class="el" href="class_renown_1_1_world_1_1_faction.html">Faction</a> faction)</td></tr>
+<tr class="memitem:a05afc6ce53c862e9ecfd21fc1e4c4f9e inherit pub_methods_class_renown_1_1_entity" id="r_a05afc6ce53c862e9ecfd21fc1e4c4f9e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renown_1_1_entity.html#a05afc6ce53c862e9ecfd21fc1e4c4f9e">DetermineRelationStatus</a> (<a class="el" href="class_renown_1_1_entity.html">Entity</a> entity)</td></tr>
+<tr class="memitem:a64b7aada5704407950f76c7e93761106 inherit pub_methods_class_renown_1_1_entity" id="r_a64b7aada5704407950f76c7e93761106"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renown_1_1_entity.html#a64b7aada5704407950f76c7e93761106">DetermineRelationStatus</a> (<a class="el" href="class_renown_1_1_world_1_1_faction.html">Faction</a> faction)</td></tr>
 <tr class="memitem:a6b51f1fffcfb9b72b562e1bcd8c3336e inherit pub_methods_class_renown_1_1_entity" id="r_a6b51f1fffcfb9b72b562e1bcd8c3336e"><td class="memItemLeft" align="right" valign="top">NodePath&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renown_1_1_entity.html#a6b51f1fffcfb9b72b562e1bcd8c3336e">GetHash</a> ()</td></tr>
 <tr class="memitem:a506656c6ec5f7060580f0f501c996ad4 inherit pub_methods_class_renown_1_1_entity" id="r_a506656c6ec5f7060580f0f501c996ad4"><td class="memItemLeft" align="right" valign="top">virtual StringName&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renown_1_1_entity.html#a506656c6ec5f7060580f0f501c996ad4">GetObjectName</a> ()</td></tr>
 <tr class="memitem:a55c4754c4d43fa29780a5a9482cccda4 inherit pub_methods_class_renown_1_1_entity" id="r_a55c4754c4d43fa29780a5a9482cccda4"><td class="memItemLeft" align="right" valign="top">
 override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memdesc:a55c4754c4d43fa29780a5a9482cccda4 inherit pub_methods_class_renown_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">godot initialization override <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -425,53 +345,43 @@ Static Public Member Functions</h2></td></tr>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>StartThoughtBubble</b> (string text)</td></tr>
 <tr class="memitem:a3cfca452156d62cb611308fcefe51971" id="r_a3cfca452156d62cb611308fcefe51971"><td class="memItemLeft" align="right" valign="top"><a id="a3cfca452156d62cb611308fcefe51971" name="a3cfca452156d62cb611308fcefe51971"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>StartDialogue</b> (Resource dialogueResource, string key, System.Action&lt; int &gt; callback)</td></tr>
-<tr class="memitem:a938ea74fb646d88bd71dcb821b08b4fd" id="r_a938ea74fb646d88bd71dcb821b08b4fd"><td class="memItemLeft" align="right" valign="top"><a id="a938ea74fb646d88bd71dcb821b08b4fd" name="a938ea74fb646d88bd71dcb821b08b4fd"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsTutorialActive</b> ()</td></tr>
-<tr class="memitem:a3f7252c6659e4355c2f52ffa49688be8" id="r_a3f7252c6659e4355c2f52ffa49688be8"><td class="memItemLeft" align="right" valign="top"><a id="a3f7252c6659e4355c2f52ffa49688be8" name="a3f7252c6659e4355c2f52ffa49688be8"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>ShakeCamera</b> (float nAmount)</td></tr>
-<tr class="memitem:a4c2096ad3dc855c27effbd8eff088fa7" id="r_a4c2096ad3dc855c27effbd8eff088fa7"><td class="memItemLeft" align="right" valign="top"><a id="a4c2096ad3dc855c27effbd8eff088fa7" name="a4c2096ad3dc855c27effbd8eff088fa7"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>ShakeCameraDirectional</b> (float nAmount, Godot.Vector2 direction)</td></tr>
+<tr class="memitem:a79700cd95ca4e9c17045c06362e75462" id="r_a79700cd95ca4e9c17045c06362e75462"><td class="memItemLeft" align="right" valign="top"><a id="a79700cd95ca4e9c17045c06362e75462" name="a79700cd95ca4e9c17045c06362e75462"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>ShakeCamera</b> (float amount)</td></tr>
+<tr class="memitem:a6eae515553bb4b6d1e723f418ba75eb0" id="r_a6eae515553bb4b6d1e723f418ba75eb0"><td class="memItemLeft" align="right" valign="top"><a id="a6eae515553bb4b6d1e723f418ba75eb0" name="a6eae515553bb4b6d1e723f418ba75eb0"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>ShakeCameraDirectional</b> (float amount, Godot.Vector2 direction)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ad4cac5dcc3638cc4031432d267078110" id="r_ad4cac5dcc3638cc4031432d267078110"><td class="memItemLeft" align="right" valign="top"><a id="ad4cac5dcc3638cc4031432d267078110" name="ad4cac5dcc3638cc4031432d267078110"></a>
-Resource&#160;</td><td class="memItemRight" valign="bottom"><b>MoveAction</b></td></tr>
-<tr class="memitem:ac5e91d3deac258b19eab198c7c10669a" id="r_ac5e91d3deac258b19eab198c7c10669a"><td class="memItemLeft" align="right" valign="top"><a id="ac5e91d3deac258b19eab198c7c10669a" name="ac5e91d3deac258b19eab198c7c10669a"></a>
-PlayerStat&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MaxHealth</b></td></tr>
-<tr class="memitem:a10d068cf12e8f8a2e73452c2d932623c" id="r_a10d068cf12e8f8a2e73452c2d932623c"><td class="memItemLeft" align="right" valign="top"><a id="a10d068cf12e8f8a2e73452c2d932623c" name="a10d068cf12e8f8a2e73452c2d932623c"></a>
-PlayerStat&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MaxSanity</b></td></tr>
-<tr class="memitem:a312a606963c85f478ffc2124e2807b01" id="r_a312a606963c85f478ffc2124e2807b01"><td class="memItemLeft" align="right" valign="top"><a id="a312a606963c85f478ffc2124e2807b01" name="a312a606963c85f478ffc2124e2807b01"></a>
-PlayerStat&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MaxRage</b></td></tr>
-<tr class="memitem:af5e2950c82744c357d1f2a41004876f5" id="r_af5e2950c82744c357d1f2a41004876f5"><td class="memItemLeft" align="right" valign="top"><a id="af5e2950c82744c357d1f2a41004876f5" name="af5e2950c82744c357d1f2a41004876f5"></a>
-PlayerStat&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Speed</b></td></tr>
+<tr class="memitem:ac5e91d3deac258b19eab198c7c10669a" id="r_ac5e91d3deac258b19eab198c7c10669a"><td class="memItemLeft" align="right" valign="top">PlayerStat&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5e91d3deac258b19eab198c7c10669a">MaxHealth</a></td></tr>
+<tr class="memdesc:ac5e91d3deac258b19eab198c7c10669a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The hard cap on player health.  <br /></td></tr>
+<tr class="memitem:a10d068cf12e8f8a2e73452c2d932623c" id="r_a10d068cf12e8f8a2e73452c2d932623c"><td class="memItemLeft" align="right" valign="top">PlayerStat&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10d068cf12e8f8a2e73452c2d932623c">MaxSanity</a></td></tr>
+<tr class="memdesc:a10d068cf12e8f8a2e73452c2d932623c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The hard cap on player sanity.  <br /></td></tr>
+<tr class="memitem:a312a606963c85f478ffc2124e2807b01" id="r_a312a606963c85f478ffc2124e2807b01"><td class="memItemLeft" align="right" valign="top">PlayerStat&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a312a606963c85f478ffc2124e2807b01">MaxRage</a></td></tr>
+<tr class="memdesc:a312a606963c85f478ffc2124e2807b01"><td class="mdescLeft">&#160;</td><td class="mdescRight">The hard cap on player rage.  <br /></td></tr>
+<tr class="memitem:af5e2950c82744c357d1f2a41004876f5" id="r_af5e2950c82744c357d1f2a41004876f5"><td class="memItemLeft" align="right" valign="top">PlayerStat&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5e2950c82744c357d1f2a41004876f5">Speed</a></td></tr>
+<tr class="memdesc:af5e2950c82744c357d1f2a41004876f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The hard cap on a player's maximum speed.  <br /></td></tr>
+<tr class="memitem:a4c47a18b3edad9b487902255bebec052" id="r_a4c47a18b3edad9b487902255bebec052"><td class="memItemLeft" align="right" valign="top"><a id="a4c47a18b3edad9b487902255bebec052" name="a4c47a18b3edad9b487902255bebec052"></a>
+<a class="el" href="class_player_system_1_1_inventory_manager.html">InventoryManager</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Inventory</b></td></tr>
+<tr class="memdesc:a4c47a18b3edad9b487902255bebec052"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles inventory data and management. <br /></td></tr>
 <tr class="memitem:a9c4f2f79745ecbd4d415fd8ed5da1910" id="r_a9c4f2f79745ecbd4d415fd8ed5da1910"><td class="memItemLeft" align="right" valign="top"><a id="a9c4f2f79745ecbd4d415fd8ed5da1910" name="a9c4f2f79745ecbd4d415fd8ed5da1910"></a>
 <a class="el" href="struct_multiplayer_1_1_player_data_1_1_multiplayer_metadata.html">Multiplayer.PlayerData.MultiplayerMetadata</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MultiplayerData</b></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a95d5c9031576b5da581142e1ae4e40db" id="r_a95d5c9031576b5da581142e1ae4e40db"><td class="memItemLeft" align="right" valign="top"><a id="a95d5c9031576b5da581142e1ae4e40db" name="a95d5c9031576b5da581142e1ae4e40db"></a>
-static readonly float&#160;</td><td class="memItemRight" valign="bottom"><b>PunchRange</b> = 40.0f</td></tr>
+<tr class="memitem:aeb2d6a63685e1fd8bfb739b7acdf8032" id="r_aeb2d6a63685e1fd8bfb739b7acdf8032"><td class="memItemLeft" align="right" valign="top"><a id="aeb2d6a63685e1fd8bfb739b7acdf8032" name="aeb2d6a63685e1fd8bfb739b7acdf8032"></a>
+static readonly float&#160;</td><td class="memItemRight" valign="bottom"><b>PUNCH_RANGE</b> = 40.0f</td></tr>
 <tr class="memitem:a86f381966e692259f7af70b313fdc013" id="r_a86f381966e692259f7af70b313fdc013"><td class="memItemLeft" align="right" valign="top"><a id="a86f381966e692259f7af70b313fdc013" name="a86f381966e692259f7af70b313fdc013"></a>
 static readonly int&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_WEAPON_SLOTS</b> = 4</td></tr>
-<tr class="memitem:a8d01f9ce1272d42bd9a17cc4e09e56b5" id="r_a8d01f9ce1272d42bd9a17cc4e09e56b5"><td class="memItemLeft" align="right" valign="top"><a id="a8d01f9ce1272d42bd9a17cc4e09e56b5" name="a8d01f9ce1272d42bd9a17cc4e09e56b5"></a>
-static readonly Color&#160;</td><td class="memItemRight" valign="bottom"><b>AimingAtTarget</b> = new Color( 1.0f, 0.0f, 0.0f, 1.0f )</td></tr>
-<tr class="memitem:a30e885a50d921c93ea4be388ae95bfd4" id="r_a30e885a50d921c93ea4be388ae95bfd4"><td class="memItemLeft" align="right" valign="top"><a id="a30e885a50d921c93ea4be388ae95bfd4" name="a30e885a50d921c93ea4be388ae95bfd4"></a>
-static readonly Color&#160;</td><td class="memItemRight" valign="bottom"><b>AimingAtNull</b> = new Color( 0.5f, 0.5f, 0.0f, 1.0f )</td></tr>
-<tr class="memitem:a4bff1af5b7bf0fda4f6ac745929cabcf" id="r_a4bff1af5b7bf0fda4f6ac745929cabcf"><td class="memItemLeft" align="right" valign="top"><a id="a4bff1af5b7bf0fda4f6ac745929cabcf" name="a4bff1af5b7bf0fda4f6ac745929cabcf"></a>
-static readonly float&#160;</td><td class="memItemRight" valign="bottom"><b>BaseFastTravelRageCost</b> = 20.0f</td></tr>
-<tr class="memitem:ab56c817414137e5b264cee3bc6f1d9f6" id="r_ab56c817414137e5b264cee3bc6f1d9f6"><td class="memItemLeft" align="right" valign="top"><a id="ab56c817414137e5b264cee3bc6f1d9f6" name="ab56c817414137e5b264cee3bc6f1d9f6"></a>
-static readonly float&#160;</td><td class="memItemRight" valign="bottom"><b>BaseFastTravelSanityCost</b> = 0.0f</td></tr>
-<tr class="memitem:a91840278f1f95028f8ecdf81d55964a3" id="r_a91840278f1f95028f8ecdf81d55964a3"><td class="memItemLeft" align="right" valign="top"><a id="a91840278f1f95028f8ecdf81d55964a3" name="a91840278f1f95028f8ecdf81d55964a3"></a>
-static readonly float&#160;</td><td class="memItemRight" valign="bottom"><b>BaseEnemyDetectionSpeed</b> = 1.0f</td></tr>
-<tr class="memitem:a92bf528dc76ae3798ffd1fc3c073ee8f" id="r_a92bf528dc76ae3798ffd1fc3c073ee8f"><td class="memItemLeft" align="right" valign="top"><a id="a92bf528dc76ae3798ffd1fc3c073ee8f" name="a92bf528dc76ae3798ffd1fc3c073ee8f"></a>
-static readonly int&#160;</td><td class="memItemRight" valign="bottom"><b>MaximumRuneSlots</b> = 5</td></tr>
-<tr class="memdesc:a92bf528dc76ae3798ffd1fc3c073ee8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum amount of weight the player is currently allowed to carry. <br /></td></tr>
-<tr class="memitem:a17cb1a6199f0aaa32a84f9b68e19fa68" id="r_a17cb1a6199f0aaa32a84f9b68e19fa68"><td class="memItemLeft" align="right" valign="top"><a id="a17cb1a6199f0aaa32a84f9b68e19fa68" name="a17cb1a6199f0aaa32a84f9b68e19fa68"></a>
-static readonly int&#160;</td><td class="memItemRight" valign="bottom"><b>MaximumQuickAccessSlots</b> = 4</td></tr>
-<tr class="memitem:adc45282a94416ca72d1535787d8cb692" id="r_adc45282a94416ca72d1535787d8cb692"><td class="memItemLeft" align="right" valign="top"><a id="adc45282a94416ca72d1535787d8cb692" name="adc45282a94416ca72d1535787d8cb692"></a>
-static readonly int&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_RUNES</b> = 5</td></tr>
-<tr class="memitem:a259398ac6dcfc994f4e94818f4ee7d1c" id="r_a259398ac6dcfc994f4e94818f4ee7d1c"><td class="memItemLeft" align="right" valign="top"><a id="a259398ac6dcfc994f4e94818f4ee7d1c" name="a259398ac6dcfc994f4e94818f4ee7d1c"></a>
-static readonly int&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_PERKS</b> = 1</td></tr>
+<tr class="memitem:abf0ef83c578e09be476eea9acb09e4e2" id="r_abf0ef83c578e09be476eea9acb09e4e2"><td class="memItemLeft" align="right" valign="top"><a id="abf0ef83c578e09be476eea9acb09e4e2" name="abf0ef83c578e09be476eea9acb09e4e2"></a>
+static readonly Color&#160;</td><td class="memItemRight" valign="bottom"><b>AIMING_AT_TARGET</b> = new Color( 1.0f, 0.0f, 0.0f, 1.0f )</td></tr>
+<tr class="memitem:a0b83fcaff76a2d6d56528bdea4fb9679" id="r_a0b83fcaff76a2d6d56528bdea4fb9679"><td class="memItemLeft" align="right" valign="top"><a id="a0b83fcaff76a2d6d56528bdea4fb9679" name="a0b83fcaff76a2d6d56528bdea4fb9679"></a>
+static readonly Color&#160;</td><td class="memItemRight" valign="bottom"><b>AIMING_AT_NULL</b> = new Color( 0.5f, 0.5f, 0.0f, 1.0f )</td></tr>
+<tr class="memitem:a3ae0a39f5da8b2abb7bcfef7e4a15395" id="r_a3ae0a39f5da8b2abb7bcfef7e4a15395"><td class="memItemLeft" align="right" valign="top"><a id="a3ae0a39f5da8b2abb7bcfef7e4a15395" name="a3ae0a39f5da8b2abb7bcfef7e4a15395"></a>
+static readonly float&#160;</td><td class="memItemRight" valign="bottom"><b>BASE_FAST_TRAVEL_RAGE_COST</b> = 20.0f</td></tr>
+<tr class="memitem:a7659f1dca80a6240d17dc13044bbc9ad" id="r_a7659f1dca80a6240d17dc13044bbc9ad"><td class="memItemLeft" align="right" valign="top"><a id="a7659f1dca80a6240d17dc13044bbc9ad" name="a7659f1dca80a6240d17dc13044bbc9ad"></a>
+static readonly float&#160;</td><td class="memItemRight" valign="bottom"><b>BASE_FAST_TRAVEL_SANITY_COST</b> = 0.0f</td></tr>
+<tr class="memitem:a4338eae25c8663ccac0a79f3d5be69ac" id="r_a4338eae25c8663ccac0a79f3d5be69ac"><td class="memItemLeft" align="right" valign="top"><a id="a4338eae25c8663ccac0a79f3d5be69ac" name="a4338eae25c8663ccac0a79f3d5be69ac"></a>
+static readonly float&#160;</td><td class="memItemRight" valign="bottom"><b>BASE_ENEMY_DETECTION_SPEED</b> = 1.0f</td></tr>
 <tr class="memitem:ab3e74e821c4dceb7aac8e7566415f16f" id="r_ab3e74e821c4dceb7aac8e7566415f16f"><td class="memItemLeft" align="right" valign="top"><a id="ab3e74e821c4dceb7aac8e7566415f16f" name="ab3e74e821c4dceb7aac8e7566415f16f"></a>
 static readonly float&#160;</td><td class="memItemRight" valign="bottom"><b>ACCEL</b> = 500.0f</td></tr>
 <tr class="memitem:ac93e1ea15a8ef5b839b89ea9eead36ea" id="r_ac93e1ea15a8ef5b839b89ea9eead36ea"><td class="memItemLeft" align="right" valign="top"><a id="ac93e1ea15a8ef5b839b89ea9eead36ea" name="ac93e1ea15a8ef5b839b89ea9eead36ea"></a>
@@ -482,73 +392,82 @@ static readonly float&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_
 static readonly float&#160;</td><td class="memItemRight" valign="bottom"><b>JUMP_VELOCITY</b> = -400.0f</td></tr>
 <tr class="memitem:ae0a432b7257249bc5397f569e09f03a3" id="r_ae0a432b7257249bc5397f569e09f03a3"><td class="memItemLeft" align="right" valign="top"><a id="ae0a432b7257249bc5397f569e09f03a3" name="ae0a432b7257249bc5397f569e09f03a3"></a>
 static Godot.Vector2I&#160;</td><td class="memItemRight" valign="bottom"><b>ScreenSize</b> = Godot.Vector2I.Zero</td></tr>
-<tr class="memitem:a796c1076b4574db920d2417dc717631b" id="r_a796c1076b4574db920d2417dc717631b"><td class="memItemLeft" align="right" valign="top"><a id="a796c1076b4574db920d2417dc717631b" name="a796c1076b4574db920d2417dc717631b"></a>
-static readonly float&#160;</td><td class="memItemRight" valign="bottom"><b>MaximumInventoryWeight</b> = 500.0f</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:ac32ec31753f43ec745b7fcbc2ba28f70" id="r_ac32ec31753f43ec745b7fcbc2ba28f70"><td class="memItemLeft" align="right" valign="top"><a id="ac32ec31753f43ec745b7fcbc2ba28f70" name="ac32ec31753f43ec745b7fcbc2ba28f70"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>TotalInventoryWeight</b> = 0.0f<code> [get]</code></td></tr>
-<tr class="memdesc:ac32ec31753f43ec745b7fcbc2ba28f70"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current total weight of inventory items. <br /></td></tr>
-<tr class="memitem:a5141203c15ec9ae7ddf8125af783b6ff" id="r_a5141203c15ec9ae7ddf8125af783b6ff"><td class="memItemLeft" align="right" valign="top"><a id="a5141203c15ec9ae7ddf8125af783b6ff" name="a5141203c15ec9ae7ddf8125af783b6ff"></a>
-Resource&#160;</td><td class="memItemRight" valign="bottom"><b>DashAction</b><code> [get]</code></td></tr>
-<tr class="memitem:ae0e7ec05c7ac0e762db29063cb0dc72e" id="r_ae0e7ec05c7ac0e762db29063cb0dc72e"><td class="memItemLeft" align="right" valign="top"><a id="ae0e7ec05c7ac0e762db29063cb0dc72e" name="ae0e7ec05c7ac0e762db29063cb0dc72e"></a>
-Resource&#160;</td><td class="memItemRight" valign="bottom"><b>SlideAction</b><code> [get]</code></td></tr>
-<tr class="memitem:a9a5a62b70b0c41625dd74ba006554838" id="r_a9a5a62b70b0c41625dd74ba006554838"><td class="memItemLeft" align="right" valign="top"><a id="a9a5a62b70b0c41625dd74ba006554838" name="a9a5a62b70b0c41625dd74ba006554838"></a>
-Resource&#160;</td><td class="memItemRight" valign="bottom"><b>MeleeAction</b><code> [get]</code></td></tr>
-<tr class="memitem:ad95f0b78da49f4abfd6cdb5b8ff40a73" id="r_ad95f0b78da49f4abfd6cdb5b8ff40a73"><td class="memItemLeft" align="right" valign="top"><a id="ad95f0b78da49f4abfd6cdb5b8ff40a73" name="ad95f0b78da49f4abfd6cdb5b8ff40a73"></a>
-Resource&#160;</td><td class="memItemRight" valign="bottom"><b>UseWeaponAction</b><code> [get]</code></td></tr>
-<tr class="memitem:a06e4a9a637742946bfe23358051ebf54" id="r_a06e4a9a637742946bfe23358051ebf54"><td class="memItemLeft" align="right" valign="top"><a id="a06e4a9a637742946bfe23358051ebf54" name="a06e4a9a637742946bfe23358051ebf54"></a>
-Resource&#160;</td><td class="memItemRight" valign="bottom"><b>SwitchWeaponModeAction</b><code> [get]</code></td></tr>
-<tr class="memitem:a3ae9c15161fdfe86ad5689b4b08e955e" id="r_a3ae9c15161fdfe86ad5689b4b08e955e"><td class="memItemLeft" align="right" valign="top"><a id="a3ae9c15161fdfe86ad5689b4b08e955e" name="a3ae9c15161fdfe86ad5689b4b08e955e"></a>
-Resource&#160;</td><td class="memItemRight" valign="bottom"><b>NextWeaponAction</b><code> [get]</code></td></tr>
-<tr class="memitem:a44f41e1372d72b0d548bdef2b813d128" id="r_a44f41e1372d72b0d548bdef2b813d128"><td class="memItemLeft" align="right" valign="top"><a id="a44f41e1372d72b0d548bdef2b813d128" name="a44f41e1372d72b0d548bdef2b813d128"></a>
-Resource&#160;</td><td class="memItemRight" valign="bottom"><b>PrevWeaponAction</b><code> [get]</code></td></tr>
-<tr class="memitem:aa14110d6b7656fabc375b45e109ac75f" id="r_aa14110d6b7656fabc375b45e109ac75f"><td class="memItemLeft" align="right" valign="top"><a id="aa14110d6b7656fabc375b45e109ac75f" name="aa14110d6b7656fabc375b45e109ac75f"></a>
-Resource&#160;</td><td class="memItemRight" valign="bottom"><b>OpenInventoryAction</b><code> [get]</code></td></tr>
-<tr class="memitem:a949746fb3a6e2c7cb1d92cd44f489eba" id="r_a949746fb3a6e2c7cb1d92cd44f489eba"><td class="memItemLeft" align="right" valign="top"><a id="a949746fb3a6e2c7cb1d92cd44f489eba" name="a949746fb3a6e2c7cb1d92cd44f489eba"></a>
-Resource&#160;</td><td class="memItemRight" valign="bottom"><b>BulletTimeAction</b><code> [get]</code></td></tr>
-<tr class="memitem:a1d80a6aee058b025d57147291ee0ed98" id="r_a1d80a6aee058b025d57147291ee0ed98"><td class="memItemLeft" align="right" valign="top"><a id="a1d80a6aee058b025d57147291ee0ed98" name="a1d80a6aee058b025d57147291ee0ed98"></a>
-Resource&#160;</td><td class="memItemRight" valign="bottom"><b>ArmAngleAction</b><code> [get]</code></td></tr>
-<tr class="memitem:a73a62badcfa820b713a51fc55cb42dca" id="r_a73a62badcfa820b713a51fc55cb42dca"><td class="memItemLeft" align="right" valign="top"><a id="a73a62badcfa820b713a51fc55cb42dca" name="a73a62badcfa820b713a51fc55cb42dca"></a>
-Resource&#160;</td><td class="memItemRight" valign="bottom"><b>UseBothHandsAction</b><code> [get]</code></td></tr>
-<tr class="memitem:a9622618d27ba6963b1e769c0bd1159e7" id="r_a9622618d27ba6963b1e769c0bd1159e7"><td class="memItemLeft" align="right" valign="top"><a id="a9622618d27ba6963b1e769c0bd1159e7" name="a9622618d27ba6963b1e769c0bd1159e7"></a>
-Resource&#160;</td><td class="memItemRight" valign="bottom"><b>AimAngleAction</b><code> [get]</code></td></tr>
-<tr class="memitem:a8ffd58e3ca65bb862d42b69fea33569f" id="r_a8ffd58e3ca65bb862d42b69fea33569f"><td class="memItemLeft" align="right" valign="top"><a id="a8ffd58e3ca65bb862d42b69fea33569f" name="a8ffd58e3ca65bb862d42b69fea33569f"></a>
-Resource&#160;</td><td class="memItemRight" valign="bottom"><b>InteractAction</b><code> [get]</code></td></tr>
-<tr class="memitem:a3d5ec4da56337127cad600139021f3d0" id="r_a3d5ec4da56337127cad600139021f3d0"><td class="memItemLeft" align="right" valign="top"><a id="a3d5ec4da56337127cad600139021f3d0" name="a3d5ec4da56337127cad600139021f3d0"></a>
-AnimatedSprite2D&#160;</td><td class="memItemRight" valign="bottom"><b>TorsoAnimation</b><code> [get]</code></td></tr>
-<tr class="memitem:a1f63856d71f91bd3a7fcc2fed44edbf2" id="r_a1f63856d71f91bd3a7fcc2fed44edbf2"><td class="memItemLeft" align="right" valign="top"><a id="a1f63856d71f91bd3a7fcc2fed44edbf2" name="a1f63856d71f91bd3a7fcc2fed44edbf2"></a>
-AnimatedSprite2D&#160;</td><td class="memItemRight" valign="bottom"><b>LegAnimation</b><code> [get]</code></td></tr>
-<tr class="memitem:a5a04fa8bd2763a38ca9dfa0349190fba" id="r_a5a04fa8bd2763a38ca9dfa0349190fba"><td class="memItemLeft" align="right" valign="top"><a id="a5a04fa8bd2763a38ca9dfa0349190fba" name="a5a04fa8bd2763a38ca9dfa0349190fba"></a>
-AnimatedSprite2D&#160;</td><td class="memItemRight" valign="bottom"><b>IdleAnimation</b><code> [get]</code></td></tr>
+<tr class="memitem:ad1df6a6cd307d4722816f80719506bff" id="r_ad1df6a6cd307d4722816f80719506bff"><td class="memItemLeft" align="right" valign="top"><a id="ad1df6a6cd307d4722816f80719506bff" name="ad1df6a6cd307d4722816f80719506bff"></a>
+Node&#160;</td><td class="memItemRight" valign="bottom"><b>InventoryDatabase</b><code> [get]</code></td></tr>
+<tr class="memitem:aa40c33c35b4f1799ae14a15a7ec938ae" id="r_aa40c33c35b4f1799ae14a15a7ec938ae"><td class="memItemLeft" align="right" valign="top"><a id="aa40c33c35b4f1799ae14a15a7ec938ae" name="aa40c33c35b4f1799ae14a15a7ec938ae"></a>
+<a class="el" href="class_player_system_1_1_arm.html">Arm</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ArmLeft</b><code> [get]</code></td></tr>
+<tr class="memitem:a9991d86fd517756e54d45e2065df7607" id="r_a9991d86fd517756e54d45e2065df7607"><td class="memItemLeft" align="right" valign="top"><a id="a9991d86fd517756e54d45e2065df7607" name="a9991d86fd517756e54d45e2065df7607"></a>
+<a class="el" href="class_player_system_1_1_arm.html">Arm</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ArmRight</b><code> [get]</code></td></tr>
+<tr class="memitem:a339ff8dd03ba97275cf1ac9494b72c87" id="r_a339ff8dd03ba97275cf1ac9494b72c87"><td class="memItemLeft" align="right" valign="top"><a id="a339ff8dd03ba97275cf1ac9494b72c87" name="a339ff8dd03ba97275cf1ac9494b72c87"></a>
+<a class="el" href="class_player_system_1_1_arm_attachments_1_1_arm_attachment.html">ArmAttachment</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ArmAttachment</b><code> [get]</code></td></tr>
+<tr class="memitem:a37462d9baba20ced80919c9601cb4911" id="r_a37462d9baba20ced80919c9601cb4911"><td class="memItemLeft" align="right" valign="top"><a id="a37462d9baba20ced80919c9601cb4911" name="a37462d9baba20ced80919c9601cb4911"></a>
+PlayerFlags&#160;</td><td class="memItemRight" valign="bottom"><b>Flags</b> = 0<code> [get]</code></td></tr>
+<tr class="memitem:a67296f827ba0ed1da37cf060aa842284" id="r_a67296f827ba0ed1da37cf060aa842284"><td class="memItemLeft" align="right" valign="top"><a id="a67296f827ba0ed1da37cf060aa842284" name="a67296f827ba0ed1da37cf060aa842284"></a>
+<a class="el" href="class_interactables_1_1_checkpoint.html">Checkpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><b>StartingCheckpoint</b><code> [get]</code></td></tr>
+<tr class="memitem:ad42074bd3fc946c53161f714c2065aae" id="r_ad42074bd3fc946c53161f714c2065aae"><td class="memItemLeft" align="right" valign="top"><a id="ad42074bd3fc946c53161f714c2065aae" name="ad42074bd3fc946c53161f714c2065aae"></a>
+<a class="el" href="class_tile_map_floor.html">TileMapFloor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Floor</b><code> [get]</code></td></tr>
+<tr class="memdesc:ad42074bd3fc946c53161f714c2065aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current <a class="el" href="class_tile_map_floor.html">TileMapFloor</a> that the player occupies. <br /></td></tr>
+<tr class="memitem:a0eb78b06853c7e5dc574322539ef86db" id="r_a0eb78b06853c7e5dc574322539ef86db"><td class="memItemLeft" align="right" valign="top"><a id="a0eb78b06853c7e5dc574322539ef86db" name="a0eb78b06853c7e5dc574322539ef86db"></a>
+AnimatedSprite2D?&#160;</td><td class="memItemRight" valign="bottom"><b>TorsoAnimation</b><code> [get]</code></td></tr>
+<tr class="memdesc:a0eb78b06853c7e5dc574322539ef86db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles torso animation. <br /></td></tr>
+<tr class="memitem:afd90d85c61f3a7d5274fd72e672b865e" id="r_afd90d85c61f3a7d5274fd72e672b865e"><td class="memItemLeft" align="right" valign="top"><a id="afd90d85c61f3a7d5274fd72e672b865e" name="afd90d85c61f3a7d5274fd72e672b865e"></a>
+AnimatedSprite2D?&#160;</td><td class="memItemRight" valign="bottom"><b>LegAnimation</b><code> [get]</code></td></tr>
+<tr class="memdesc:afd90d85c61f3a7d5274fd72e672b865e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles leg animation. <br /></td></tr>
+<tr class="memitem:aa5078d4c7a7d792247be8d7a46939f73" id="r_aa5078d4c7a7d792247be8d7a46939f73"><td class="memItemLeft" align="right" valign="top"><a id="aa5078d4c7a7d792247be8d7a46939f73" name="aa5078d4c7a7d792247be8d7a46939f73"></a>
+AnimatedSprite2D?&#160;</td><td class="memItemRight" valign="bottom"><b>IdleAnimation</b><code> [get]</code></td></tr>
+<tr class="memdesc:aa5078d4c7a7d792247be8d7a46939f73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles all full body animations. <br /></td></tr>
 <tr class="memitem:afbc9879f93608ea53ae9a4c81083c345" id="r_afbc9879f93608ea53ae9a4c81083c345"><td class="memItemLeft" align="right" valign="top"><a id="afbc9879f93608ea53ae9a4c81083c345" name="afbc9879f93608ea53ae9a4c81083c345"></a>
 GroundMaterialType&#160;</td><td class="memItemRight" valign="bottom"><b>GroundType</b><code> [get]</code></td></tr>
-<tr class="memitem:a899b817e5dc6a009bc4e37951f6a3add" id="r_a899b817e5dc6a009bc4e37951f6a3add"><td class="memItemLeft" align="right" valign="top"><a id="a899b817e5dc6a009bc4e37951f6a3add" name="a899b817e5dc6a009bc4e37951f6a3add"></a>
-<a class="el" href="class_player_system_1_1_weapon_slot.html">WeaponSlot</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>WeaponSlots</b> = new <a class="el" href="class_player_system_1_1_weapon_slot.html">WeaponSlot</a>[ MAX_WEAPON_SLOTS ]<code> [get]</code></td></tr>
-<tr class="memitem:a647f486b0e046413d64209859cc0d1e2" id="r_a647f486b0e046413d64209859cc0d1e2"><td class="memItemLeft" align="right" valign="top"><a id="a647f486b0e046413d64209859cc0d1e2" name="a647f486b0e046413d64209859cc0d1e2"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentWeapon</b> = WeaponSlot.INVALID<code> [get]</code></td></tr>
-<tr class="memitem:a0409d220510884a1a2e1f7d2b16af50c" id="r_a0409d220510884a1a2e1f7d2b16af50c"><td class="memItemLeft" align="right" valign="top"><a id="a0409d220510884a1a2e1f7d2b16af50c" name="a0409d220510884a1a2e1f7d2b16af50c"></a>
-<a class="el" href="class_player_system_1_1_totems_1_1_totem.html">Totem</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Totem</b> = null<code> [get]</code></td></tr>
+<tr class="memitem:a138af8700f4e2e4992c3847673ecde5e" id="r_a138af8700f4e2e4992c3847673ecde5e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a138af8700f4e2e4992c3847673ecde5e">BloodAmount</a><code> [get]</code></td></tr>
+<tr class="memdesc:a138af8700f4e2e4992c3847673ecde5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">How much blood the player is covered in.  <br /></td></tr>
+<tr class="memitem:a000b6faa72a7351d6dba392c04b2335a" id="r_a000b6faa72a7351d6dba392c04b2335a"><td class="memItemLeft" align="right" valign="top"><a id="a000b6faa72a7351d6dba392c04b2335a" name="a000b6faa72a7351d6dba392c04b2335a"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>Rage</b> = 60.0f<code> [get]</code></td></tr>
+<tr class="memitem:a4787c537d21dfe8750e9afc35803ef1a" id="r_a4787c537d21dfe8750e9afc35803ef1a"><td class="memItemLeft" align="right" valign="top"><a id="a4787c537d21dfe8750e9afc35803ef1a" name="a4787c537d21dfe8750e9afc35803ef1a"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>Sanity</b> = 60.0f<code> [get]</code></td></tr>
+<tr class="memitem:aed64a1d5bd0428d3fccca1355822d3cf" id="r_aed64a1d5bd0428d3fccca1355822d3cf"><td class="memItemLeft" align="right" valign="top"><a id="aed64a1d5bd0428d3fccca1355822d3cf" name="aed64a1d5bd0428d3fccca1355822d3cf"></a>
+Hands&#160;</td><td class="memItemRight" valign="bottom"><b>HandsUsed</b> = Hands.Right<code> [get]</code></td></tr>
+<tr class="memitem:a2e00c7800c3cec6693cd1e0386619856" id="r_a2e00c7800c3cec6693cd1e0386619856"><td class="memItemLeft" align="right" valign="top"><a id="a2e00c7800c3cec6693cd1e0386619856" name="a2e00c7800c3cec6693cd1e0386619856"></a>
+<a class="el" href="class_player_system_1_1_arm.html">Arm</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LastUsedArm</b><code> [get]</code></td></tr>
+<tr class="memitem:a6115a039da40a51e19ab05e85a1a5374" id="r_a6115a039da40a51e19ab05e85a1a5374"><td class="memItemLeft" align="right" valign="top"><a id="a6115a039da40a51e19ab05e85a1a5374" name="a6115a039da40a51e19ab05e85a1a5374"></a>
+AudioStreamPlayer2D&#160;</td><td class="memItemRight" valign="bottom"><b>MiscChannel</b><code> [get]</code></td></tr>
+<tr class="memdesc:a6115a039da40a51e19ab05e85a1a5374"><td class="mdescLeft">&#160;</td><td class="mdescRight">For sounds that are played by other classes related to player. <br /></td></tr>
+<tr class="memitem:ad2df1c8e2b6ef1ce8939ef156a3b608d" id="r_ad2df1c8e2b6ef1ce8939ef156a3b608d"><td class="memItemLeft" align="right" valign="top"><a id="ad2df1c8e2b6ef1ce8939ef156a3b608d" name="ad2df1c8e2b6ef1ce8939ef156a3b608d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>TileMapLevel</b><code> [get]</code></td></tr>
+<tr class="memitem:abeadfddd9e1aef2c765eb5e914e1a958" id="r_abeadfddd9e1aef2c765eb5e914e1a958"><td class="memItemLeft" align="right" valign="top"><a id="abeadfddd9e1aef2c765eb5e914e1a958" name="abeadfddd9e1aef2c765eb5e914e1a958"></a>
+HashSet&lt; <a class="el" href="struct_renown_1_1_renown_value.html">RenownValue</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Relations</b><code> [get]</code></td></tr>
+<tr class="memitem:a6c38386d602d76d610ab5b5839eb408b" id="r_a6c38386d602d76d610ab5b5839eb408b"><td class="memItemLeft" align="right" valign="top"><a id="a6c38386d602d76d610ab5b5839eb408b" name="a6c38386d602d76d610ab5b5839eb408b"></a>
+HashSet&lt; <a class="el" href="struct_renown_1_1_renown_value.html">RenownValue</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Debts</b><code> [get]</code></td></tr>
+<tr class="memitem:accb348e6beb8802e0b6de05c05b2232e" id="r_accb348e6beb8802e0b6de05c05b2232e"><td class="memItemLeft" align="right" valign="top"><a id="accb348e6beb8802e0b6de05c05b2232e" name="accb348e6beb8802e0b6de05c05b2232e"></a>
+<a class="el" href="class_player_system_1_1_input_1_1_input_controller.html">InputController</a>?&#160;</td><td class="memItemRight" valign="bottom"><b>InputManager</b><code> [get]</code></td></tr>
 <tr class="inherit_header properties_class_renown_1_1_entity"><td colspan="2" onclick="javascript:dynsection.toggleInherit('properties_class_renown_1_1_entity')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Properties inherited from <a class="el" href="class_renown_1_1_entity.html">Renown.Entity</a></td></tr>
 <tr class="memitem:aa375d29ddd41ff88dcdf38878758eeaa inherit properties_class_renown_1_1_entity" id="r_aa375d29ddd41ff88dcdf38878758eeaa"><td class="memItemLeft" align="right" valign="top">
-float&#160;</td><td class="memItemRight" valign="bottom"><b>Health</b> = 0.0f<code> [get]</code></td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>Health</b> = 0.0f<code> [get, protected set]</code></td></tr>
+<tr class="memdesc:aa375d29ddd41ff88dcdf38878758eeaa inherit properties_class_renown_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">The health of the entity. <br /></td></tr>
 <tr class="memitem:ab23745b2bb2f495d5386845cf3d703e4 inherit properties_class_renown_1_1_entity" id="r_ab23745b2bb2f495d5386845cf3d703e4"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>RenownScore</b> = 0<code> [get]</code></td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>RenownScore</b> = 0<code> [get, protected set]</code></td></tr>
+<tr class="memdesc:ab23745b2bb2f495d5386845cf3d703e4 inherit properties_class_renown_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">The renown of an entity, think of it sort as "street cred". <br /></td></tr>
 <tr class="memitem:a12ad7bb19537d24267903e4715cc3ac0 inherit properties_class_renown_1_1_entity" id="r_a12ad7bb19537d24267903e4715cc3ac0"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="class_renown_1_1_world_1_1_world_area.html">WorldArea</a>?&#160;</td><td class="memItemRight" valign="bottom"><b>Location</b> = null<code> [get]</code></td></tr>
+<a class="el" href="class_renown_1_1_world_1_1_world_area.html">WorldArea</a>?&#160;</td><td class="memItemRight" valign="bottom"><b>Location</b> = null<code> [get, protected set]</code></td></tr>
+<tr class="memdesc:a12ad7bb19537d24267903e4715cc3ac0 inherit properties_class_renown_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_renown_1_1_world_1_1_world_area.html">WorldArea</a> the entity is currently colliding with. <br /></td></tr>
 <tr class="memitem:a63c984dd62a84973e7d2dca82d0cd0a2 inherit properties_class_renown_1_1_entity" id="r_a63c984dd62a84973e7d2dca82d0cd0a2"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="class_renown_1_1_world_1_1_faction.html">Faction</a>?&#160;</td><td class="memItemRight" valign="bottom"><b>Faction</b> = null<code> [get]</code></td></tr>
+<a class="el" href="class_renown_1_1_world_1_1_faction.html">Faction</a>?&#160;</td><td class="memItemRight" valign="bottom"><b>Faction</b> = null<code> [get, protected set]</code></td></tr>
+<tr class="memdesc:a63c984dd62a84973e7d2dca82d0cd0a2 inherit properties_class_renown_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">The faction that the entity belongs to. Used for faction-specific behaviors with the AI. <br /></td></tr>
 <tr class="memitem:a204eb4f1f64bfbddb6c0ed84e32dee58 inherit properties_class_renown_1_1_entity" id="r_a204eb4f1f64bfbddb6c0ed84e32dee58"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>FactionImportance</b> = 0<code> [get]</code></td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>FactionImportance</b> = 0<code> [get, protected set]</code></td></tr>
+<tr class="memdesc:a204eb4f1f64bfbddb6c0ed84e32dee58 inherit properties_class_renown_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">How much the entity's faction cares about them. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_renown_1_1_entity"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_renown_1_1_entity')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Protected Attributes inherited from <a class="el" href="class_renown_1_1_entity.html">Renown.Entity</a></td></tr>
-<tr class="memitem:a9c4cb81e4c76e69c7925dd2b63e7b2e3 inherit pro_attribs_class_renown_1_1_entity" id="r_a9c4cb81e4c76e69c7925dd2b63e7b2e3"><td class="memItemLeft" align="right" valign="top">
-Dictionary&lt; string, <a class="el" href="class_status_effect.html">StatusEffect</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>StatusEffects</b> = new Dictionary&lt;string, <a class="el" href="class_status_effect.html">StatusEffect</a>&gt;()</td></tr>
+<tr class="memitem:a9b957ed803b7a204e5b1cc3faab5ece5 inherit pro_attribs_class_renown_1_1_entity" id="r_a9b957ed803b7a204e5b1cc3faab5ece5"><td class="memItemLeft" align="right" valign="top">ConcurrentDictionary&lt; string, <a class="el" href="class_status_effect.html">StatusEffect</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renown_1_1_entity.html#a9b957ed803b7a204e5b1cc3faab5ece5">StatusEffects</a> = new ConcurrentDictionary&lt;string, <a class="el" href="class_status_effect.html">StatusEffect</a>&gt;()</td></tr>
+<tr class="memdesc:a9b957ed803b7a204e5b1cc3faab5ece5 inherit pro_attribs_class_renown_1_1_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current status effects being applied to the entity.  <br /></td></tr>
 </table>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The code that handles player-to-game interactions. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a273f8704e2c623865a371669a38b33a1" name="a273f8704e2c623865a371669a38b33a1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a273f8704e2c623865a371669a38b33a1">&#9670;&#160;</a></span>AddStatusEffect()</h2>
 
@@ -572,12 +491,20 @@ Dictionary&lt; string, <a class="el" href="class_status_effect.html">StatusEffec
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="class_renown_1_1_entity.html">Renown.Entity</a>.</p>
+<p>Adds a <a class="el" href="class_status_effect.html" title="The base class from which all status effects must inherit from.">StatusEffect</a> object to the entity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">effectName</td><td>The scene file name of the status effect</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="class_renown_1_1_entity.html#a1daa2bade64b58ff25e8c19dd8bdbb96">Renown.Entity</a>.</p>
 
 </div>
 </div>
-<a id="af8e7667503b405d51c12f9a1223a15ac" name="af8e7667503b405d51c12f9a1223a15ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8e7667503b405d51c12f9a1223a15ac">&#9670;&#160;</a></span>Damage()</h2>
+<a id="adc85ee45e62dcb76981898cf7422f035" name="adc85ee45e62dcb76981898cf7422f035"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc85ee45e62dcb76981898cf7422f035">&#9670;&#160;</a></span>Damage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -593,7 +520,7 @@ Dictionary&lt; string, <a class="el" href="class_status_effect.html">StatusEffec
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>nAmount</em></span>&#160;)</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>amount</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -604,6 +531,43 @@ Dictionary&lt; string, <a class="el" href="class_status_effect.html">StatusEffec
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="class_renown_1_1_entity.html">Renown.Entity</a>.</p>
+
+</div>
+</div>
+<a id="abf3e5b708239ea058425bfee9bfa21c9" name="abf3e5b708239ea058425bfee9bfa21c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf3e5b708239ea058425bfee9bfa21c9">&#9670;&#160;</a></span>DecreaseFactionImportance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player.DecreaseFactionImportance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_renown_1_1_world_1_1_faction.html">Faction</a></td>          <td class="paramname"><span class="paramname"><em>faction</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>amount</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Decreases the numerical value that the player has to a faction. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">amount</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -630,7 +594,9 @@ Dictionary&lt; string, <a class="el" href="class_status_effect.html">StatusEffec
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="class_renown_1_1_entity.html">Renown.Entity</a>.</p>
+<p>Loads the player's gamestate from disk. </p>
+
+<p>Reimplemented from <a class="el" href="class_renown_1_1_entity.html#a92d640b8af31105f1bc465a88d3e6024">Renown.Entity</a>.</p>
 
 </div>
 </div>
@@ -647,33 +613,6 @@ Dictionary&lt; string, <a class="el" href="class_status_effect.html">StatusEffec
           <td class="memname">override void Player.PhysicsUpdate </td>
           <td>(</td>
           <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>delta</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="class_renown_1_1_entity.html">Renown.Entity</a>.</p>
-
-</div>
-</div>
-<a id="a990c07b90e5eb4b3ad2a0f589892f5c5" name="a990c07b90e5eb4b3ad2a0f589892f5c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a990c07b90e5eb4b3ad2a0f589892f5c5">&#9670;&#160;</a></span>PickupWeapon()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">override void Player.PickupWeapon </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_weapon_entity.html">WeaponEntity</a></td>          <td class="paramname"><span class="paramname"><em>weapon</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -715,7 +654,16 @@ Dictionary&lt; string, <a class="el" href="class_status_effect.html">StatusEffec
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="class_renown_1_1_entity.html">Renown.Entity</a>.</p>
+<p>Plays a sound effect from the provided channel and stream local to the entity's position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>The audio channel to play the audio from</td></tr>
+    <tr><td class="paramname">stream</td><td>The audio file to play</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="class_renown_1_1_entity.html#aa85464d8235a9feef5e5604eb921732e">Renown.Entity</a>.</p>
 
 </div>
 </div>
@@ -742,7 +690,9 @@ Dictionary&lt; string, <a class="el" href="class_status_effect.html">StatusEffec
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="class_renown_1_1_entity.html">Renown.Entity</a>.</p>
+<p>Writes the player's gamestate to disk. </p>
+
+<p>Reimplemented from <a class="el" href="class_renown_1_1_entity.html#af2a23f06f18c067b308ffc46e3b0923d">Renown.Entity</a>.</p>
 
 </div>
 </div>
@@ -797,6 +747,101 @@ Dictionary&lt; string, <a class="el" href="class_status_effect.html">StatusEffec
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="class_renown_1_1_entity.html">Renown.Entity</a>.</p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="ac5e91d3deac258b19eab198c7c10669a" name="ac5e91d3deac258b19eab198c7c10669a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5e91d3deac258b19eab198c7c10669a">&#9670;&#160;</a></span>MaxHealth</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PlayerStat&lt;float&gt; Player.MaxHealth</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The hard cap on player health. </p>
+<dl class="section see"><dt>See also</dt><dd>PlayerSystem.PlayerStat</dd></dl>
+
+</div>
+</div>
+<a id="a312a606963c85f478ffc2124e2807b01" name="a312a606963c85f478ffc2124e2807b01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a312a606963c85f478ffc2124e2807b01">&#9670;&#160;</a></span>MaxRage</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PlayerStat&lt;float&gt; Player.MaxRage</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The hard cap on player rage. </p>
+<dl class="section see"><dt>See also</dt><dd>PlayerSystem.PlayerStat</dd></dl>
+
+</div>
+</div>
+<a id="a10d068cf12e8f8a2e73452c2d932623c" name="a10d068cf12e8f8a2e73452c2d932623c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10d068cf12e8f8a2e73452c2d932623c">&#9670;&#160;</a></span>MaxSanity</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PlayerStat&lt;float&gt; Player.MaxSanity</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The hard cap on player sanity. </p>
+<dl class="section see"><dt>See also</dt><dd>PlayerSystem.PlayerStat</dd></dl>
+
+</div>
+</div>
+<a id="af5e2950c82744c357d1f2a41004876f5" name="af5e2950c82744c357d1f2a41004876f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5e2950c82744c357d1f2a41004876f5">&#9670;&#160;</a></span>Speed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PlayerStat&lt;float&gt; Player.Speed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The hard cap on a player's maximum speed. </p>
+<dl class="section see"><dt>See also</dt><dd>PlayerSystem.PlayerStat</dd></dl>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Property Documentation</h2>
+<a id="a138af8700f4e2e4992c3847673ecde5e" name="a138af8700f4e2e4992c3847673ecde5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a138af8700f4e2e4992c3847673ecde5e">&#9670;&#160;</a></span>BloodAmount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Player.BloodAmount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How much blood the player is covered in. </p>
+<dl class="section see"><dt>See also</dt><dd>BloodMaterial</dd></dl>
 
 </div>
 </div>

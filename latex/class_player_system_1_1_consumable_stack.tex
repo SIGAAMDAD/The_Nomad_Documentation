@@ -14,6 +14,10 @@ Inheritance diagram for Player\+System.\+Consumable\+Stack\+:\begin{figure}[H]
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{class_player_system_1_1_consumable_stack_ad2e361a7fd869094df427c88e92c2238}{Consumable\+Stack}} (Resource item\+Type, int amount)
+\begin{DoxyCompactList}\small\item\em Creates a new consumable stack with the given item\+Type. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_player_system_1_1_consumable_stack_a8f32c2bd43ec999e27d47bd259a5622d}{Get\+Item\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Wrapper function around the rather ugly Item\+Type.\+Get( "{}id"{} ).As\+String() \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_player_system_1_1_consumable_stack_a2e3ebccbe187f00a2e0c3d1fd521e667}{Set\+Type}} (\mbox{\hyperlink{class_consumable_entity}{Consumable\+Entity}} consumable)
 \begin{DoxyCompactList}\small\item\em Sets the type of consumable resource to be used in the stack. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_player_system_1_1_consumable_stack_a3a7e3d1946f83e6f16cdb42492c0f3e7}{Add\+Items}} (int items)
@@ -28,14 +32,33 @@ Resource? {\bfseries Item\+Type} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbo
 \item 
 \Hypertarget{class_player_system_1_1_consumable_stack_a3b9e667b0f23853eb411592ebdad9485}\label{class_player_system_1_1_consumable_stack_a3b9e667b0f23853eb411592ebdad9485} 
 int {\bfseries Amount} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
-\Hypertarget{class_player_system_1_1_consumable_stack_a6b95f09bf95aec16dfe63d936eb2c168}\label{class_player_system_1_1_consumable_stack_a6b95f09bf95aec16dfe63d936eb2c168} 
-string {\bfseries Item\+Id}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Item stack class but for consumables like stims, healthpacks, etc. 
+
+\label{doc-constructors}
+\Hypertarget{class_player_system_1_1_consumable_stack_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_player_system_1_1_consumable_stack_ad2e361a7fd869094df427c88e92c2238}\index{PlayerSystem.ConsumableStack@{PlayerSystem.ConsumableStack}!ConsumableStack@{ConsumableStack}}
+\index{ConsumableStack@{ConsumableStack}!PlayerSystem.ConsumableStack@{PlayerSystem.ConsumableStack}}
+\doxysubsubsection{\texorpdfstring{ConsumableStack()}{ConsumableStack()}}
+{\footnotesize\ttfamily \label{class_player_system_1_1_consumable_stack_ad2e361a7fd869094df427c88e92c2238} 
+Player\+System.\+Consumable\+Stack.\+Consumable\+Stack (\begin{DoxyParamCaption}\item[{Resource}]{item\+Type}{, }\item[{int}]{amount}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a new consumable stack with the given item\+Type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Type} & The Item\+Definition of the item that will be used in the stack\\
+\hline
+{\em amount} & The amount of the item in the stack\\
+\hline
+\end{DoxyParams}
+
 
 \label{doc-func-members}
 \Hypertarget{class_player_system_1_1_consumable_stack_doc-func-members}
@@ -55,6 +78,19 @@ Adds a set count of items to the stack.
 {\em items} & The amount of items to add to the stack\\
 \hline
 \end{DoxyParams}
+\Hypertarget{class_player_system_1_1_consumable_stack_a8f32c2bd43ec999e27d47bd259a5622d}\index{PlayerSystem.ConsumableStack@{PlayerSystem.ConsumableStack}!GetItemID@{GetItemID}}
+\index{GetItemID@{GetItemID}!PlayerSystem.ConsumableStack@{PlayerSystem.ConsumableStack}}
+\doxysubsubsection{\texorpdfstring{GetItemID()}{GetItemID()}}
+{\footnotesize\ttfamily \label{class_player_system_1_1_consumable_stack_a8f32c2bd43ec999e27d47bd259a5622d} 
+string Player\+System.\+Consumable\+Stack.\+Get\+Item\+ID (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wrapper function around the rather ugly Item\+Type.\+Get( "{}id"{} ).As\+String() 
+
+\begin{DoxyReturn}{Returns}
+The Item\+Type item\+\_\+id assigned in to the Item\+Definition
+\end{DoxyReturn}
 \Hypertarget{class_player_system_1_1_consumable_stack_a1ce7073a1c3689328f7aa5e0a335faaa}\index{PlayerSystem.ConsumableStack@{PlayerSystem.ConsumableStack}!RemoveItems@{RemoveItems}}
 \index{RemoveItems@{RemoveItems}!PlayerSystem.ConsumableStack@{PlayerSystem.ConsumableStack}}
 \doxysubsubsection{\texorpdfstring{RemoveItems()}{RemoveItems()}}

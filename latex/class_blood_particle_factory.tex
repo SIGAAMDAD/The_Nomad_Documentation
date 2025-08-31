@@ -1,5 +1,10 @@
 \doxysection{Blood\+Particle\+Factory Class Reference}
 \hypertarget{class_blood_particle_factory}{}\label{class_blood_particle_factory}\index{BloodParticleFactory@{BloodParticleFactory}}
+
+
+The singleton autoload responsible for managing blood splatter effects.  
+
+
 Inheritance diagram for Blood\+Particle\+Factory\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -11,16 +16,63 @@ Inheritance diagram for Blood\+Particle\+Factory\+:\begin{figure}[H]
 \item 
 \Hypertarget{class_blood_particle_factory_a7e8b5ff327c74d8dee5c0d904178719d}\label{class_blood_particle_factory_a7e8b5ff327c74d8dee5c0d904178719d} 
 override void {\bfseries \+\_\+\+Ready} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em godot initialization override \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_blood_particle_factory_ab01a983841344d3ae36174c5d39abaab}\label{class_blood_particle_factory_ab01a983841344d3ae36174c5d39abaab} 
-static void {\bfseries Create} (Vector2 from, Vector2 to)
-\item 
-\Hypertarget{class_blood_particle_factory_a30bcdc56402813769be530d704a17ebb}\label{class_blood_particle_factory_a30bcdc56402813769be530d704a17ebb} 
-static void {\bfseries Create\+Deferred} (Vector2 from, Vector2 to)
-\end{DoxyCompactItemize}
+static void \mbox{\hyperlink{class_blood_particle_factory_ab01a983841344d3ae36174c5d39abaab}{Create}} (Vector2 from, Vector2 to)
+\begin{DoxyCompactList}\small\item\em Create a blood splatter. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_blood_particle_factory_a30bcdc56402813769be530d704a17ebb}{Create\+Deferred}} (Vector2 from, Vector2 to)
+\begin{DoxyCompactList}\small\item\em Create a blood splatter, but on a separate thread, this automatically queues up a Godot API deferred call. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The singleton autoload responsible for managing blood splatter effects. 
+
+Is thread safe only if called into using {\bfseries{\doxylink{class_blood_particle_factory_a30bcdc56402813769be530d704a17ebb}{Blood\+Particle\+Factory.\+Create\+Deferred}}} 
+
+\label{doc-func-members}
+\Hypertarget{class_blood_particle_factory_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_blood_particle_factory_ab01a983841344d3ae36174c5d39abaab}\index{BloodParticleFactory@{BloodParticleFactory}!Create@{Create}}
+\index{Create@{Create}!BloodParticleFactory@{BloodParticleFactory}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily \label{class_blood_particle_factory_ab01a983841344d3ae36174c5d39abaab} 
+void Blood\+Particle\+Factory.\+Create (\begin{DoxyParamCaption}\item[{Vector2}]{from}{, }\item[{Vector2}]{to}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Create a blood splatter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & \\
+\hline
+{\em to} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_blood_particle_factory_a30bcdc56402813769be530d704a17ebb}\index{BloodParticleFactory@{BloodParticleFactory}!CreateDeferred@{CreateDeferred}}
+\index{CreateDeferred@{CreateDeferred}!BloodParticleFactory@{BloodParticleFactory}}
+\doxysubsubsection{\texorpdfstring{CreateDeferred()}{CreateDeferred()}}
+{\footnotesize\ttfamily \label{class_blood_particle_factory_a30bcdc56402813769be530d704a17ebb} 
+void Blood\+Particle\+Factory.\+Create\+Deferred (\begin{DoxyParamCaption}\item[{Vector2}]{from}{, }\item[{Vector2}]{to}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Create a blood splatter, but on a separate thread, this automatically queues up a Godot API deferred call. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & \\
+\hline
+{\em to} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\doxylink{class_blood_particle_factory_ab01a983841344d3ae36174c5d39abaab}{Create}
+
+
+\end{DoxySeeAlso}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

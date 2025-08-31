@@ -1,13 +1,13 @@
 var namespace_renown =
 [
     [ "Contracts", "namespace_renown_1_1_contracts.html", "namespace_renown_1_1_contracts" ],
+    [ "Rumors", "namespace_renown_1_1_rumors.html", "namespace_renown_1_1_rumors" ],
     [ "Thinkers", "namespace_renown_1_1_thinkers.html", "namespace_renown_1_1_thinkers" ],
-    [ "Traits", "namespace_renown_1_1_traits.html", "namespace_renown_1_1_traits" ],
     [ "World", "namespace_renown_1_1_world.html", "namespace_renown_1_1_world" ],
     [ "Contract", "class_renown_1_1_contract.html", "class_renown_1_1_contract" ],
     [ "ContractManager", "class_renown_1_1_contract_manager.html", null ],
     [ "DynamicQuest", "class_renown_1_1_dynamic_quest.html", null ],
-    [ "Entity", "class_renown_1_1_entity.html", null ],
+    [ "Entity", "class_renown_1_1_entity.html", "class_renown_1_1_entity" ],
     [ "MercenaryLeaderboard", "class_renown_1_1_mercenary_leaderboard.html", "class_renown_1_1_mercenary_leaderboard" ],
     [ "NodeCache", "class_renown_1_1_node_cache.html", null ],
     [ "Object", "interface_renown_1_1_object.html", null ],

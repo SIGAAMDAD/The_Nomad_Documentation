@@ -91,45 +91,64 @@ $(function(){initNavTree('class_challenge_mode_1_1_challenge_cache.html','','cla
   <div class="headertitle"><div class="title">ChallengeMode.ChallengeCache Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Manages challenge mode data.  
+ <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:ChallengeScore" id="r_ChallengeScore"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_challenge_mode_1_1_challenge_cache_1_1_challenge_score.html">ChallengeScore</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local <a class="el" href="class_challenge_mode_1_1_challenge_map.html">ChallengeMap</a> score data.  <a href="struct_challenge_mode_1_1_challenge_cache_1_1_challenge_score.html#details">More...</a><br /></td></tr>
 <tr class="memitem:LeaderboardEntry" id="r_LeaderboardEntry"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_challenge_mode_1_1_challenge_cache_1_1_leaderboard_entry.html">LeaderboardEntry</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A leaderboard entry for a player's <a class="el" href="class_challenge_mode_1_1_challenge_map.html">ChallengeMap</a> score, stored on steam.  <a href="struct_challenge_mode_1_1_challenge_cache_1_1_leaderboard_entry.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad06fa013ebeeb2fd4498731aa1aeea7f" id="r_ad06fa013ebeeb2fd4498731aa1aeea7f"><td class="memItemLeft" align="right" valign="top"><a id="ad06fa013ebeeb2fd4498731aa1aeea7f" name="ad06fa013ebeeb2fd4498731aa1aeea7f"></a>
-static Dictionary&lt; int, <a class="el" href="struct_challenge_mode_1_1_challenge_cache_1_1_leaderboard_entry.html">LeaderboardEntry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetLeaderboardData</b> ()</td></tr>
 <tr class="memitem:ac3a2fea1336df417201ebdfe674a5f45" id="r_ac3a2fea1336df417201ebdfe674a5f45"><td class="memItemLeft" align="right" valign="top"><a id="ac3a2fea1336df417201ebdfe674a5f45" name="ac3a2fea1336df417201ebdfe674a5f45"></a>
 static SteamLeaderboard_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetCurrentLeaderboard</b> ()</td></tr>
-<tr class="memitem:ae12ad0cca7ce5d6916115ead411fbbe8" id="r_ae12ad0cca7ce5d6916115ead411fbbe8"><td class="memItemLeft" align="right" valign="top"><a id="ae12ad0cca7ce5d6916115ead411fbbe8" name="ae12ad0cca7ce5d6916115ead411fbbe8"></a>
-static Resource&#160;</td><td class="memItemRight" valign="bottom"><b>GetQuestData</b> ()</td></tr>
 <tr class="memitem:abecd2d1947cc52fd1dda344d507c1e1f" id="r_abecd2d1947cc52fd1dda344d507c1e1f"><td class="memItemLeft" align="right" valign="top"><a id="abecd2d1947cc52fd1dda344d507c1e1f" name="abecd2d1947cc52fd1dda344d507c1e1f"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetQuestData</b> (Resource quest)</td></tr>
-<tr class="memitem:a0a60cf4974780a13b5e1e8e36f7ec45c" id="r_a0a60cf4974780a13b5e1e8e36f7ec45c"><td class="memItemLeft" align="right" valign="top"><a id="a0a60cf4974780a13b5e1e8e36f7ec45c" name="a0a60cf4974780a13b5e1e8e36f7ec45c"></a>
-static int&#160;</td><td class="memItemRight" valign="bottom"><b>GetCurrentMap</b> ()</td></tr>
-<tr class="memitem:a74e6783540e43c001a49bdb654d32389" id="r_a74e6783540e43c001a49bdb654d32389"><td class="memItemLeft" align="right" valign="top"><a id="a74e6783540e43c001a49bdb654d32389" name="a74e6783540e43c001a49bdb654d32389"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCurrentMap</b> (int nCurrentMap)</td></tr>
-<tr class="memitem:ac4aeb2503b2e262be8c837019681fb39" id="r_ac4aeb2503b2e262be8c837019681fb39"><td class="memItemLeft" align="right" valign="top"><a id="ac4aeb2503b2e262be8c837019681fb39" name="ac4aeb2503b2e262be8c837019681fb39"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>FetchLeaderboardData</b> (int nMapIndex)</td></tr>
-<tr class="memitem:a4531a831014f55c3b2edb0a26e1bf0e1" id="r_a4531a831014f55c3b2edb0a26e1bf0e1"><td class="memItemLeft" align="right" valign="top"><a id="a4531a831014f55c3b2edb0a26e1bf0e1" name="a4531a831014f55c3b2edb0a26e1bf0e1"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateScore</b> (SteamLeaderboard_t hLeaderboard, int MapIndex, int Score, int TimeMinutes, int TimeSeconds, int TimeMilliseconds)</td></tr>
-<tr class="memitem:aaf855fa56127f2f349b4743edab58f3d" id="r_aaf855fa56127f2f349b4743edab58f3d"><td class="memItemLeft" align="right" valign="top"><a id="aaf855fa56127f2f349b4743edab58f3d" name="aaf855fa56127f2f349b4743edab58f3d"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetScore</b> (int MapIndex, out int Score, out int TimeMinutes, out int TimeSeconds, out int TimeMilliseconds, System.Action&lt; Dictionary&lt; int, <a class="el" href="struct_challenge_mode_1_1_challenge_cache_1_1_leaderboard_entry.html">LeaderboardEntry</a> &gt; &gt; callback)</td></tr>
+<tr class="memitem:a84d0903fcb783ab0ce91ea7ddaf0b86b" id="r_a84d0903fcb783ab0ce91ea7ddaf0b86b"><td class="memItemLeft" align="right" valign="top"><a id="a84d0903fcb783ab0ce91ea7ddaf0b86b" name="a84d0903fcb783ab0ce91ea7ddaf0b86b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCurrentMap</b> (int currentMap)</td></tr>
+<tr class="memitem:a5b833902e5e2f4a4b9dfd25c6339e172" id="r_a5b833902e5e2f4a4b9dfd25c6339e172"><td class="memItemLeft" align="right" valign="top"><a id="a5b833902e5e2f4a4b9dfd25c6339e172" name="a5b833902e5e2f4a4b9dfd25c6339e172"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>FetchLeaderboardData</b> (int mapIndex)</td></tr>
+<tr class="memitem:aff6ec530cd0f72b6a50342dfcad25c8c" id="r_aff6ec530cd0f72b6a50342dfcad25c8c"><td class="memItemLeft" align="right" valign="top"><a id="aff6ec530cd0f72b6a50342dfcad25c8c" name="aff6ec530cd0f72b6a50342dfcad25c8c"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateScore</b> (SteamLeaderboard_t leaderboard, int mapIndex, int score, int timeMinutes, int timeSeconds, int timeMilliseconds)</td></tr>
+<tr class="memitem:a01ed0a008a2404e7c98e517d2752b3d5" id="r_a01ed0a008a2404e7c98e517d2752b3d5"><td class="memItemLeft" align="right" valign="top"><a id="a01ed0a008a2404e7c98e517d2752b3d5" name="a01ed0a008a2404e7c98e517d2752b3d5"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetScore</b> (int mapIndex, out int totalScore, out int timeMinutes, out int timeSeconds, out int timeMilliseconds, System.Action&lt; Dictionary&lt; int, <a class="el" href="struct_challenge_mode_1_1_challenge_cache_1_1_leaderboard_entry.html">LeaderboardEntry</a> &gt; &gt; callback)</td></tr>
 <tr class="memitem:a7d59b9af4a8849da068445d814e3c327" id="r_a7d59b9af4a8849da068445d814e3c327"><td class="memItemLeft" align="right" valign="top"><a id="a7d59b9af4a8849da068445d814e3c327" name="a7d59b9af4a8849da068445d814e3c327"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> ()</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a64536f08f9adeab33d3bb6cf45df7f7a" id="r_a64536f08f9adeab33d3bb6cf45df7f7a"><td class="memItemLeft" align="right" valign="top"><a id="a64536f08f9adeab33d3bb6cf45df7f7a" name="a64536f08f9adeab33d3bb6cf45df7f7a"></a>
-static Dictionary&lt; <a class="el" href="class_challenge_mode_1_1_challenge_map.html">ChallengeMap</a>, <a class="el" href="struct_challenge_mode_1_1_challenge_cache_1_1_challenge_score.html">ChallengeScore</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Scores</b> = null</td></tr>
-<tr class="memitem:a9ed3bbad284388ca6e2601388844fee3" id="r_a9ed3bbad284388ca6e2601388844fee3"><td class="memItemLeft" align="right" valign="top"><a id="a9ed3bbad284388ca6e2601388844fee3" name="a9ed3bbad284388ca6e2601388844fee3"></a>
-static List&lt; <a class="el" href="class_challenge_mode_1_1_challenge_map.html">ChallengeMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MapList</b> = null</td></tr>
 <tr class="memitem:ae39e8c304cfc9f24cab169086d052b69" id="r_ae39e8c304cfc9f24cab169086d052b69"><td class="memItemLeft" align="right" valign="top"><a id="ae39e8c304cfc9f24cab169086d052b69" name="ae39e8c304cfc9f24cab169086d052b69"></a>
 static readonly int&#160;</td><td class="memItemRight" valign="bottom"><b>ScoreMultiplier_HeadShot</b> = 3</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:a23071964e77fb35876aeb947cd9c8e8f" id="r_a23071964e77fb35876aeb947cd9c8e8f"><td class="memItemLeft" align="right" valign="top"><a id="a23071964e77fb35876aeb947cd9c8e8f" name="a23071964e77fb35876aeb947cd9c8e8f"></a>
+static ? Dictionary&lt; int, <a class="el" href="struct_challenge_mode_1_1_challenge_cache_1_1_leaderboard_entry.html">LeaderboardEntry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>LeaderboardData</b> = null<code> [get]</code></td></tr>
+<tr class="memdesc:a23071964e77fb35876aeb947cd9c8e8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">data for the currently selected map <br /></td></tr>
+<tr class="memitem:a7aceedcbce1a6d8a914fbcaabe3ed7d9" id="r_a7aceedcbce1a6d8a914fbcaabe3ed7d9"><td class="memItemLeft" align="right" valign="top"><a id="a7aceedcbce1a6d8a914fbcaabe3ed7d9" name="a7aceedcbce1a6d8a914fbcaabe3ed7d9"></a>
+static SteamLeaderboardEntries_t&#160;</td><td class="memItemRight" valign="bottom"><b>LeaderboardEntries</b><code> [get]</code></td></tr>
+<tr class="memdesc:a7aceedcbce1a6d8a914fbcaabe3ed7d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Steamworks API leaderboard handle. <br /></td></tr>
+<tr class="memitem:ab89b466643a2726f41836a87c7075800" id="r_ab89b466643a2726f41836a87c7075800"><td class="memItemLeft" align="right" valign="top"><a id="ab89b466643a2726f41836a87c7075800" name="ab89b466643a2726f41836a87c7075800"></a>
+static ? Dictionary&lt; StringName, SteamLeaderboard_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Leaderboards</b> = null<code> [get]</code></td></tr>
+<tr class="memdesc:ab89b466643a2726f41836a87c7075800"><td class="mdescLeft">&#160;</td><td class="mdescRight">A cache of all the leaderboards related to <a class="el" href="namespace_challenge_mode.html">ChallengeMode</a>. <br /></td></tr>
+<tr class="memitem:a7f458eb59d7f59ed99f236411d8506db" id="r_a7f458eb59d7f59ed99f236411d8506db"><td class="memItemLeft" align="right" valign="top"><a id="a7f458eb59d7f59ed99f236411d8506db" name="a7f458eb59d7f59ed99f236411d8506db"></a>
+static ? Dictionary&lt; <a class="el" href="class_challenge_mode_1_1_challenge_map.html">ChallengeMap</a>, <a class="el" href="struct_challenge_mode_1_1_challenge_cache_1_1_challenge_score.html">ChallengeScore</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Scores</b> = null<code> [get]</code></td></tr>
+<tr class="memdesc:a7f458eb59d7f59ed99f236411d8506db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local score storage cache. <br /></td></tr>
+<tr class="memitem:adbce791d15ffcbb0d2120a3687ec77d9" id="r_adbce791d15ffcbb0d2120a3687ec77d9"><td class="memItemLeft" align="right" valign="top"><a id="adbce791d15ffcbb0d2120a3687ec77d9" name="adbce791d15ffcbb0d2120a3687ec77d9"></a>
+static ? List&lt; <a class="el" href="class_challenge_mode_1_1_challenge_map.html">ChallengeMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MapList</b> = null<code> [get]</code></td></tr>
+<tr class="memdesc:adbce791d15ffcbb0d2120a3687ec77d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache of all the ChallengeMaps found in res://resources/challenge_maps. <br /></td></tr>
+<tr class="memitem:a36aceb7c4d4d8d5d34621072d8988b02" id="r_a36aceb7c4d4d8d5d34621072d8988b02"><td class="memItemLeft" align="right" valign="top"><a id="a36aceb7c4d4d8d5d34621072d8988b02" name="a36aceb7c4d4d8d5d34621072d8988b02"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentMap</b> = 0<code> [get]</code></td></tr>
+<tr class="memitem:a2525485f34e593c85430c4c7949cacae" id="r_a2525485f34e593c85430c4c7949cacae"><td class="memItemLeft" align="right" valign="top"><a id="a2525485f34e593c85430c4c7949cacae" name="a2525485f34e593c85430c4c7949cacae"></a>
+static ? Resource&#160;</td><td class="memItemRight" valign="bottom"><b>ActiveQuest</b><code> [get]</code></td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Manages challenge mode data. </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>scripts/ChallengeMode/<b>ChallengeCache.cs</b></li>
 </ul>
 </div><!-- contents -->

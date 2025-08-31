@@ -91,6 +91,9 @@ $(function(){initNavTree('class_renown_1_1_entity.html','','class_renown_1_1_ent
   <div class="headertitle"><div class="title">Renown.Entity Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The base class from which all entities inherit from.  
+ <a href="#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Renown.Entity:</div>
 <div class="dyncontent">
@@ -98,8 +101,8 @@ Inheritance diagram for Renown.Entity:</div>
   <img src="class_renown_1_1_entity.png" usemap="#Renown_2EEntity_map" alt=""/>
   <map id="Renown_2EEntity_map" name="Renown_2EEntity_map">
 <area href="interface_renown_1_1_object.html" alt="Renown.Object" shape="rect" coords="367,0,602,24"/>
-<area href="class_network_player.html" alt="NetworkPlayer" shape="rect" coords="0,112,235,136"/>
-<area href="class_player.html" alt="Player" shape="rect" coords="245,112,480,136"/>
+<area href="class_multiplayer_1_1_network_player.html" alt="Multiplayer.NetworkPlayer" shape="rect" coords="0,112,235,136"/>
+<area href="class_player.html" title="The code that handles player-to-game interactions." alt="Player" shape="rect" coords="245,112,480,136"/>
 <area href="class_renown_1_1_thinkers_1_1_thinker.html" alt="Renown.Thinkers.Thinker" shape="rect" coords="490,112,725,136"/>
 <area href="class_multiplayer_1_1_objectives_1_1_extraction_target.html" alt="Multiplayer.Objectives.ExtractionTarget" shape="rect" coords="735,168,970,192"/>
 <area href="class_player_system_1_1_upgrades_1_1_blacksmith.html" alt="PlayerSystem.Upgrades.Blacksmith" shape="rect" coords="735,224,970,248"/>
@@ -126,30 +129,39 @@ delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>DieEventHand
 <tr class="memitem:ab45dd49e657c49d89176302df2a784ce" id="r_ab45dd49e657c49d89176302df2a784ce"><td class="memItemLeft" align="right" valign="top"><a id="ab45dd49e657c49d89176302df2a784ce" name="ab45dd49e657c49d89176302df2a784ce"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLocation</b> (in <a class="el" href="class_renown_1_1_world_1_1_world_area.html">WorldArea</a> location)</td></tr>
 <tr class="memitem:af2a23f06f18c067b308ffc46e3b0923d" id="r_af2a23f06f18c067b308ffc46e3b0923d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2a23f06f18c067b308ffc46e3b0923d">Save</a> ()</td></tr>
+<tr class="memdesc:af2a23f06f18c067b308ffc46e3b0923d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this function to archive and entity's state to disk.  <br /></td></tr>
 <tr class="memitem:a92d640b8af31105f1bc465a88d3e6024" id="r_a92d640b8af31105f1bc465a88d3e6024"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92d640b8af31105f1bc465a88d3e6024">Load</a> ()</td></tr>
+<tr class="memdesc:a92d640b8af31105f1bc465a88d3e6024"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this function to load an entity's state from disk.  <br /></td></tr>
 <tr class="memitem:a8496242a5e215841e7a4109ad96a185a" id="r_a8496242a5e215841e7a4109ad96a185a"><td class="memItemLeft" align="right" valign="top"><a id="a8496242a5e215841e7a4109ad96a185a" name="a8496242a5e215841e7a4109ad96a185a"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnChallenged</b> ()</td></tr>
 <tr class="memitem:acf21b3468c9e61665935b1666c3b741c" id="r_acf21b3468c9e61665935b1666c3b741c"><td class="memItemLeft" align="right" valign="top"><a id="acf21b3468c9e61665935b1666c3b741c" name="acf21b3468c9e61665935b1666c3b741c"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnIntimidated</b> ()</td></tr>
 <tr class="memitem:a54c523219fe05bfdbc4948443e1c1e45" id="r_a54c523219fe05bfdbc4948443e1c1e45"><td class="memItemLeft" align="right" valign="top"><a id="a54c523219fe05bfdbc4948443e1c1e45" name="a54c523219fe05bfdbc4948443e1c1e45"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearStatusEffects</b> ()</td></tr>
-<tr class="memitem:a1daa2bade64b58ff25e8c19dd8bdbb96" id="r_a1daa2bade64b58ff25e8c19dd8bdbb96"><td class="memItemLeft" align="right" valign="top"><a id="a1daa2bade64b58ff25e8c19dd8bdbb96" name="a1daa2bade64b58ff25e8c19dd8bdbb96"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AddStatusEffect</b> (string effectName)</td></tr>
+<tr class="memdesc:a54c523219fe05bfdbc4948443e1c1e45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all <a class="el" href="class_status_effect.html" title="The base class from which all status effects must inherit from.">StatusEffect</a> objects currently being applied to the entity and clears the Dictionary. <br /></td></tr>
+<tr class="memitem:a1daa2bade64b58ff25e8c19dd8bdbb96" id="r_a1daa2bade64b58ff25e8c19dd8bdbb96"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1daa2bade64b58ff25e8c19dd8bdbb96">AddStatusEffect</a> (string effectName)</td></tr>
+<tr class="memdesc:a1daa2bade64b58ff25e8c19dd8bdbb96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a <a class="el" href="class_status_effect.html" title="The base class from which all status effects must inherit from.">StatusEffect</a> object to the entity.  <br /></td></tr>
 <tr class="memitem:ada75e5b997442013a694823c3d8d3947" id="r_ada75e5b997442013a694823c3d8d3947"><td class="memItemLeft" align="right" valign="top"><a id="ada75e5b997442013a694823c3d8d3947" name="ada75e5b997442013a694823c3d8d3947"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>PickupWeapon</b> (<a class="el" href="class_weapon_entity.html">WeaponEntity</a> weapon)</td></tr>
-<tr class="memitem:aa85464d8235a9feef5e5604eb921732e" id="r_aa85464d8235a9feef5e5604eb921732e"><td class="memItemLeft" align="right" valign="top"><a id="aa85464d8235a9feef5e5604eb921732e" name="aa85464d8235a9feef5e5604eb921732e"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>PlaySound</b> (AudioStreamPlayer2D channel, AudioStream stream)</td></tr>
-<tr class="memitem:a7239fa5765e59ef246cb68793885f2e2" id="r_a7239fa5765e59ef246cb68793885f2e2"><td class="memItemLeft" align="right" valign="top"><a id="a7239fa5765e59ef246cb68793885f2e2" name="a7239fa5765e59ef246cb68793885f2e2"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Damage</b> (in <a class="el" href="class_renown_1_1_entity.html">Entity</a> source, float nAmount)</td></tr>
-<tr class="memitem:a04631db2053421d8b012b1a9b39bce4f" id="r_a04631db2053421d8b012b1a9b39bce4f"><td class="memItemLeft" align="right" valign="top"><a id="a04631db2053421d8b012b1a9b39bce4f" name="a04631db2053421d8b012b1a9b39bce4f"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasRelation</b> (<a class="el" href="interface_renown_1_1_object.html">Object</a> other)</td></tr>
-<tr class="memitem:a8017e0770fbc5744a738dec23b1714c2" id="r_a8017e0770fbc5744a738dec23b1714c2"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8017e0770fbc5744a738dec23b1714c2">GetRelationScore</a> (<a class="el" href="interface_renown_1_1_object.html">Object</a> other)</td></tr>
-<tr class="memitem:ad90010e3bde77e879d9c5a2007b86d17" id="r_ad90010e3bde77e879d9c5a2007b86d17"><td class="memItemLeft" align="right" valign="top">virtual RelationStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad90010e3bde77e879d9c5a2007b86d17">GetRelationStatus</a> (<a class="el" href="interface_renown_1_1_object.html">Object</a> other)</td></tr>
-<tr class="memitem:a4c0e95fc845748ed38c2d47f4e361874" id="r_a4c0e95fc845748ed38c2d47f4e361874"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c0e95fc845748ed38c2d47f4e361874">DetermineRelationStatus</a> (<a class="el" href="interface_renown_1_1_object.html">Object</a> other)</td></tr>
+<tr class="memitem:aa85464d8235a9feef5e5604eb921732e" id="r_aa85464d8235a9feef5e5604eb921732e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa85464d8235a9feef5e5604eb921732e">PlaySound</a> (AudioStreamPlayer2D channel, AudioStream stream)</td></tr>
+<tr class="memdesc:aa85464d8235a9feef5e5604eb921732e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays a sound effect from the provided channel and stream local to the entity's position.  <br /></td></tr>
+<tr class="memitem:ae7bc357f5f04a4a9ab9a07a52952efd4" id="r_ae7bc357f5f04a4a9ab9a07a52952efd4"><td class="memItemLeft" align="right" valign="top"><a id="ae7bc357f5f04a4a9ab9a07a52952efd4" name="ae7bc357f5f04a4a9ab9a07a52952efd4"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Damage</b> (in <a class="el" href="class_renown_1_1_entity.html">Entity</a> source, float amount)</td></tr>
+<tr class="memitem:a3b8cf8fe20b1114ce53645cbb1a222b6" id="r_a3b8cf8fe20b1114ce53645cbb1a222b6"><td class="memItemLeft" align="right" valign="top"><a id="a3b8cf8fe20b1114ce53645cbb1a222b6" name="a3b8cf8fe20b1114ce53645cbb1a222b6"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasRelation</b> (<a class="el" href="class_renown_1_1_entity.html">Entity</a> entity)</td></tr>
+<tr class="memitem:a676846e61891a646407ee6f6c206603f" id="r_a676846e61891a646407ee6f6c206603f"><td class="memItemLeft" align="right" valign="top"><a id="a676846e61891a646407ee6f6c206603f" name="a676846e61891a646407ee6f6c206603f"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasRelation</b> (<a class="el" href="class_renown_1_1_world_1_1_faction.html">Faction</a> faction)</td></tr>
+<tr class="memitem:a5fb57a98d019d10b4541f4bbb7fcb9d8" id="r_a5fb57a98d019d10b4541f4bbb7fcb9d8"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fb57a98d019d10b4541f4bbb7fcb9d8">GetRelationScore</a> (<a class="el" href="class_renown_1_1_entity.html">Entity</a> entity)</td></tr>
+<tr class="memitem:acbf77cc2d87dca56682f3bc4484138f6" id="r_acbf77cc2d87dca56682f3bc4484138f6"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbf77cc2d87dca56682f3bc4484138f6">GetRelationScore</a> (<a class="el" href="class_renown_1_1_world_1_1_faction.html">Faction</a> faction)</td></tr>
+<tr class="memitem:a2f80b814c3751b3d3cb343b2cbc94f19" id="r_a2f80b814c3751b3d3cb343b2cbc94f19"><td class="memItemLeft" align="right" valign="top">virtual RelationStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f80b814c3751b3d3cb343b2cbc94f19">GetRelationStatus</a> (<a class="el" href="class_renown_1_1_entity.html">Entity</a> entity)</td></tr>
+<tr class="memitem:af70beaa7dc4a1bb193da6fc389690bb1" id="r_af70beaa7dc4a1bb193da6fc389690bb1"><td class="memItemLeft" align="right" valign="top">virtual RelationStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af70beaa7dc4a1bb193da6fc389690bb1">GetRelationStatus</a> (<a class="el" href="class_renown_1_1_world_1_1_faction.html">Faction</a> faction)</td></tr>
+<tr class="memitem:a05afc6ce53c862e9ecfd21fc1e4c4f9e" id="r_a05afc6ce53c862e9ecfd21fc1e4c4f9e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05afc6ce53c862e9ecfd21fc1e4c4f9e">DetermineRelationStatus</a> (<a class="el" href="class_renown_1_1_entity.html">Entity</a> entity)</td></tr>
+<tr class="memitem:a64b7aada5704407950f76c7e93761106" id="r_a64b7aada5704407950f76c7e93761106"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64b7aada5704407950f76c7e93761106">DetermineRelationStatus</a> (<a class="el" href="class_renown_1_1_world_1_1_faction.html">Faction</a> faction)</td></tr>
 <tr class="memitem:a6b51f1fffcfb9b72b562e1bcd8c3336e" id="r_a6b51f1fffcfb9b72b562e1bcd8c3336e"><td class="memItemLeft" align="right" valign="top">NodePath&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b51f1fffcfb9b72b562e1bcd8c3336e">GetHash</a> ()</td></tr>
 <tr class="memitem:a506656c6ec5f7060580f0f501c996ad4" id="r_a506656c6ec5f7060580f0f501c996ad4"><td class="memItemLeft" align="right" valign="top">virtual StringName&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a506656c6ec5f7060580f0f501c996ad4">GetObjectName</a> ()</td></tr>
 <tr class="memitem:a55c4754c4d43fa29780a5a9482cccda4" id="r_a55c4754c4d43fa29780a5a9482cccda4"><td class="memItemLeft" align="right" valign="top"><a id="a55c4754c4d43fa29780a5a9482cccda4" name="a55c4754c4d43fa29780a5a9482cccda4"></a>
 override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memdesc:a55c4754c4d43fa29780a5a9482cccda4"><td class="mdescLeft">&#160;</td><td class="mdescRight">godot initialization override <br /></td></tr>
 <tr class="memitem:a742117801ef70f3149ab6b2c7c28c460" id="r_a742117801ef70f3149ab6b2c7c28c460"><td class="memItemLeft" align="right" valign="top"><a id="a742117801ef70f3149ab6b2c7c28c460" name="a742117801ef70f3149ab6b2c7c28c460"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> (double delta)</td></tr>
 <tr class="memitem:addc1ae3379000bf43644a940891c23dc" id="r_addc1ae3379000bf43644a940891c23dc"><td class="memItemLeft" align="right" valign="top"><a id="addc1ae3379000bf43644a940891c23dc" name="addc1ae3379000bf43644a940891c23dc"></a>
@@ -157,25 +169,67 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>PhysicsUpdate
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a9c4cb81e4c76e69c7925dd2b63e7b2e3" id="r_a9c4cb81e4c76e69c7925dd2b63e7b2e3"><td class="memItemLeft" align="right" valign="top"><a id="a9c4cb81e4c76e69c7925dd2b63e7b2e3" name="a9c4cb81e4c76e69c7925dd2b63e7b2e3"></a>
-Dictionary&lt; string, <a class="el" href="class_status_effect.html">StatusEffect</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>StatusEffects</b> = new Dictionary&lt;string, <a class="el" href="class_status_effect.html">StatusEffect</a>&gt;()</td></tr>
+<tr class="memitem:a9b957ed803b7a204e5b1cc3faab5ece5" id="r_a9b957ed803b7a204e5b1cc3faab5ece5"><td class="memItemLeft" align="right" valign="top">ConcurrentDictionary&lt; string, <a class="el" href="class_status_effect.html">StatusEffect</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b957ed803b7a204e5b1cc3faab5ece5">StatusEffects</a> = new ConcurrentDictionary&lt;string, <a class="el" href="class_status_effect.html">StatusEffect</a>&gt;()</td></tr>
+<tr class="memdesc:a9b957ed803b7a204e5b1cc3faab5ece5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current status effects being applied to the entity.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:aa375d29ddd41ff88dcdf38878758eeaa" id="r_aa375d29ddd41ff88dcdf38878758eeaa"><td class="memItemLeft" align="right" valign="top"><a id="aa375d29ddd41ff88dcdf38878758eeaa" name="aa375d29ddd41ff88dcdf38878758eeaa"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>Health</b> = 0.0f<code> [get]</code></td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>Health</b> = 0.0f<code> [get, protected set]</code></td></tr>
+<tr class="memdesc:aa375d29ddd41ff88dcdf38878758eeaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The health of the entity. <br /></td></tr>
 <tr class="memitem:ab23745b2bb2f495d5386845cf3d703e4" id="r_ab23745b2bb2f495d5386845cf3d703e4"><td class="memItemLeft" align="right" valign="top"><a id="ab23745b2bb2f495d5386845cf3d703e4" name="ab23745b2bb2f495d5386845cf3d703e4"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>RenownScore</b> = 0<code> [get]</code></td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>RenownScore</b> = 0<code> [get, protected set]</code></td></tr>
+<tr class="memdesc:ab23745b2bb2f495d5386845cf3d703e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The renown of an entity, think of it sort as "street cred". <br /></td></tr>
 <tr class="memitem:a12ad7bb19537d24267903e4715cc3ac0" id="r_a12ad7bb19537d24267903e4715cc3ac0"><td class="memItemLeft" align="right" valign="top"><a id="a12ad7bb19537d24267903e4715cc3ac0" name="a12ad7bb19537d24267903e4715cc3ac0"></a>
-<a class="el" href="class_renown_1_1_world_1_1_world_area.html">WorldArea</a>?&#160;</td><td class="memItemRight" valign="bottom"><b>Location</b> = null<code> [get]</code></td></tr>
+<a class="el" href="class_renown_1_1_world_1_1_world_area.html">WorldArea</a>?&#160;</td><td class="memItemRight" valign="bottom"><b>Location</b> = null<code> [get, protected set]</code></td></tr>
+<tr class="memdesc:a12ad7bb19537d24267903e4715cc3ac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_renown_1_1_world_1_1_world_area.html">WorldArea</a> the entity is currently colliding with. <br /></td></tr>
 <tr class="memitem:a63c984dd62a84973e7d2dca82d0cd0a2" id="r_a63c984dd62a84973e7d2dca82d0cd0a2"><td class="memItemLeft" align="right" valign="top"><a id="a63c984dd62a84973e7d2dca82d0cd0a2" name="a63c984dd62a84973e7d2dca82d0cd0a2"></a>
-<a class="el" href="class_renown_1_1_world_1_1_faction.html">Faction</a>?&#160;</td><td class="memItemRight" valign="bottom"><b>Faction</b> = null<code> [get]</code></td></tr>
+<a class="el" href="class_renown_1_1_world_1_1_faction.html">Faction</a>?&#160;</td><td class="memItemRight" valign="bottom"><b>Faction</b> = null<code> [get, protected set]</code></td></tr>
+<tr class="memdesc:a63c984dd62a84973e7d2dca82d0cd0a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The faction that the entity belongs to. Used for faction-specific behaviors with the AI. <br /></td></tr>
 <tr class="memitem:a204eb4f1f64bfbddb6c0ed84e32dee58" id="r_a204eb4f1f64bfbddb6c0ed84e32dee58"><td class="memItemLeft" align="right" valign="top"><a id="a204eb4f1f64bfbddb6c0ed84e32dee58" name="a204eb4f1f64bfbddb6c0ed84e32dee58"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>FactionImportance</b> = 0<code> [get]</code></td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>FactionImportance</b> = 0<code> [get, protected set]</code></td></tr>
+<tr class="memdesc:a204eb4f1f64bfbddb6c0ed84e32dee58"><td class="mdescLeft">&#160;</td><td class="mdescRight">How much the entity's faction cares about them. <br /></td></tr>
 </table>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a4c0e95fc845748ed38c2d47f4e361874" name="a4c0e95fc845748ed38c2d47f4e361874"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c0e95fc845748ed38c2d47f4e361874">&#9670;&#160;</a></span>DetermineRelationStatus()</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The base class from which all entities inherit from. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a1daa2bade64b58ff25e8c19dd8bdbb96" name="a1daa2bade64b58ff25e8c19dd8bdbb96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1daa2bade64b58ff25e8c19dd8bdbb96">&#9670;&#160;</a></span>AddStatusEffect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Renown.Entity.AddStatusEffect </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>effectName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds a <a class="el" href="class_status_effect.html" title="The base class from which all status effects must inherit from.">StatusEffect</a> object to the entity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">effectName</td><td>The scene file name of the status effect</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="class_player.html#a273f8704e2c623865a371669a38b33a1">Player</a>, <a class="el" href="class_renown_1_1_thinkers_1_1_bandit.html#ab599428d09b3c3c09ea683a831bb2517">Renown.Thinkers.Bandit</a>, and <a class="el" href="class_renown_1_1_thinkers_1_1_mercenary.html#a6c52906e9958b0258206c75f1772bbe4">Renown.Thinkers.Mercenary</a>.</p>
+
+</div>
+</div>
+<a id="a05afc6ce53c862e9ecfd21fc1e4c4f9e" name="a05afc6ce53c862e9ecfd21fc1e4c4f9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05afc6ce53c862e9ecfd21fc1e4c4f9e">&#9670;&#160;</a></span>DetermineRelationStatus() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -186,7 +240,34 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>FactionImportance</b> 
         <tr>
           <td class="memname">virtual void Renown.Entity.DetermineRelationStatus </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="interface_renown_1_1_object.html">Object</a></td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_renown_1_1_entity.html">Entity</a></td>          <td class="paramname"><span class="paramname"><em>entity</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="interface_renown_1_1_object.html">Renown.Object</a>.</p>
+
+</div>
+</div>
+<a id="a64b7aada5704407950f76c7e93761106" name="a64b7aada5704407950f76c7e93761106"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64b7aada5704407950f76c7e93761106">&#9670;&#160;</a></span>DetermineRelationStatus() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Renown.Entity.DetermineRelationStatus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_renown_1_1_world_1_1_faction.html">Faction</a></td>          <td class="paramname"><span class="paramname"><em>faction</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -255,8 +336,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>FactionImportance</b> 
 
 </div>
 </div>
-<a id="a8017e0770fbc5744a738dec23b1714c2" name="a8017e0770fbc5744a738dec23b1714c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8017e0770fbc5744a738dec23b1714c2">&#9670;&#160;</a></span>GetRelationScore()</h2>
+<a id="a5fb57a98d019d10b4541f4bbb7fcb9d8" name="a5fb57a98d019d10b4541f4bbb7fcb9d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fb57a98d019d10b4541f4bbb7fcb9d8">&#9670;&#160;</a></span>GetRelationScore() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -267,7 +348,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>FactionImportance</b> 
         <tr>
           <td class="memname">virtual float Renown.Entity.GetRelationScore </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="interface_renown_1_1_object.html">Object</a></td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_renown_1_1_entity.html">Entity</a></td>          <td class="paramname"><span class="paramname"><em>entity</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -282,8 +363,35 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>FactionImportance</b> 
 
 </div>
 </div>
-<a id="ad90010e3bde77e879d9c5a2007b86d17" name="ad90010e3bde77e879d9c5a2007b86d17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad90010e3bde77e879d9c5a2007b86d17">&#9670;&#160;</a></span>GetRelationStatus()</h2>
+<a id="acbf77cc2d87dca56682f3bc4484138f6" name="acbf77cc2d87dca56682f3bc4484138f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbf77cc2d87dca56682f3bc4484138f6">&#9670;&#160;</a></span>GetRelationScore() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual float Renown.Entity.GetRelationScore </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_renown_1_1_world_1_1_faction.html">Faction</a></td>          <td class="paramname"><span class="paramname"><em>faction</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="interface_renown_1_1_object.html">Renown.Object</a>.</p>
+
+</div>
+</div>
+<a id="a2f80b814c3751b3d3cb343b2cbc94f19" name="a2f80b814c3751b3d3cb343b2cbc94f19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f80b814c3751b3d3cb343b2cbc94f19">&#9670;&#160;</a></span>GetRelationStatus() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -294,7 +402,34 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>FactionImportance</b> 
         <tr>
           <td class="memname">virtual RelationStatus Renown.Entity.GetRelationStatus </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="interface_renown_1_1_object.html">Object</a></td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_renown_1_1_entity.html">Entity</a></td>          <td class="paramname"><span class="paramname"><em>entity</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="interface_renown_1_1_object.html">Renown.Object</a>.</p>
+
+</div>
+</div>
+<a id="af70beaa7dc4a1bb193da6fc389690bb1" name="af70beaa7dc4a1bb193da6fc389690bb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af70beaa7dc4a1bb193da6fc389690bb1">&#9670;&#160;</a></span>GetRelationStatus() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual RelationStatus Renown.Entity.GetRelationStatus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_renown_1_1_world_1_1_faction.html">Faction</a></td>          <td class="paramname"><span class="paramname"><em>faction</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -332,7 +467,51 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>FactionImportance</b> 
 </table>
 </div><div class="memdoc">
 
+<p>Override this function to load an entity's state from disk. </p>
+
 <p>Implements <a class="el" href="interface_renown_1_1_object.html">Renown.Object</a>.</p>
+
+<p>Reimplemented in <a class="el" href="class_player.html#a80764079e1fc0a5b07cceb7a2386d5de">Player</a>, and <a class="el" href="class_renown_1_1_thinkers_1_1_faction_leader.html#a66702c5291515079f49f57eab36a407d">Renown.Thinkers.FactionLeader</a>.</p>
+
+</div>
+</div>
+<a id="aa85464d8235a9feef5e5604eb921732e" name="aa85464d8235a9feef5e5604eb921732e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa85464d8235a9feef5e5604eb921732e">&#9670;&#160;</a></span>PlaySound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Renown.Entity.PlaySound </td>
+          <td>(</td>
+          <td class="paramtype">AudioStreamPlayer2D</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AudioStream</td>          <td class="paramname"><span class="paramname"><em>stream</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Plays a sound effect from the provided channel and stream local to the entity's position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>The audio channel to play the audio from</td></tr>
+    <tr><td class="paramname">stream</td><td>The audio file to play</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="class_multiplayer_1_1_network_player.html#a262493045e702ce6ce580d829b6ebf60">Multiplayer.NetworkPlayer</a>, <a class="el" href="class_player.html#a7b5e46e24b96a499620c025ea0727450">Player</a>, <a class="el" href="class_renown_1_1_thinkers_1_1_bandit.html#a648d655efee3b43f9585832df976210b">Renown.Thinkers.Bandit</a>, <a class="el" href="class_renown_1_1_thinkers_1_1_gatling_gunner.html#a1a7b8b89611e61b18d2eb25081f412c7">Renown.Thinkers.GatlingGunner</a>, <a class="el" href="class_renown_1_1_thinkers_1_1_mercenary.html#a647496282443ad387020d31bf397d930">Renown.Thinkers.Mercenary</a>, and <a class="el" href="class_renown_1_1_thinkers_1_1_thinker.html#ac1a448bfd4cd005e5e19d0cfc74be29c">Renown.Thinkers.Thinker</a>.</p>
 
 </div>
 </div>
@@ -359,7 +538,37 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>FactionImportance</b> 
 </table>
 </div><div class="memdoc">
 
+<p>Override this function to archive and entity's state to disk. </p>
+
 <p>Implements <a class="el" href="interface_renown_1_1_object.html">Renown.Object</a>.</p>
+
+<p>Reimplemented in <a class="el" href="class_player.html#a1c8f02f4432b8f894d5ed0fe076f21ee">Player</a>, and <a class="el" href="class_renown_1_1_thinkers_1_1_faction_leader.html#a5f7b4425c3adc76f7976498d89ca8384">Renown.Thinkers.FactionLeader</a>.</p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="a9b957ed803b7a204e5b1cc3faab5ece5" name="a9b957ed803b7a204e5b1cc3faab5ece5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b957ed803b7a204e5b1cc3faab5ece5">&#9670;&#160;</a></span>StatusEffects</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ConcurrentDictionary&lt;string, <a class="el" href="class_status_effect.html">StatusEffect</a>&gt; Renown.Entity.StatusEffects = new ConcurrentDictionary&lt;string, <a class="el" href="class_status_effect.html">StatusEffect</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The current status effects being applied to the entity. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a1daa2bade64b58ff25e8c19dd8bdbb96" title="Adds a StatusEffect object to the entity.">AddStatusEffect</a></dd></dl>
 
 </div>
 </div>

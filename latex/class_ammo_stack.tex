@@ -9,27 +9,50 @@ Inheritance diagram for Ammo\+Stack\+:\begin{figure}[H]
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_ammo_stack_a583fcb1ca59216066dcde0790cca8c76}\label{class_ammo_stack_a583fcb1ca59216066dcde0790cca8c76} 
-void {\bfseries Set\+Type} (\mbox{\hyperlink{class_ammo_entity}{Ammo\+Entity}} ammo)
+\Hypertarget{class_ammo_stack_a2e24d94faaf35549260ce90121b4c3b2}\label{class_ammo_stack_a2e24d94faaf35549260ce90121b4c3b2} 
+{\bfseries Ammo\+Stack} (Resource? ammo\+Type, int amount)
 \item 
-\Hypertarget{class_ammo_stack_ab727e748627608bf649439568c5cda77}\label{class_ammo_stack_ab727e748627608bf649439568c5cda77} 
-void {\bfseries Add\+Items} (int n\+Items)
+\Hypertarget{class_ammo_stack_a9eed2f8056b99e38a6b8bc90bce32721}\label{class_ammo_stack_a9eed2f8056b99e38a6b8bc90bce32721} 
+{\bfseries Ammo\+Stack} (string item\+Path)
 \item 
-\Hypertarget{class_ammo_stack_afd2345bfb8646b75920d70a7f5059e90}\label{class_ammo_stack_afd2345bfb8646b75920d70a7f5059e90} 
-int {\bfseries Remove\+Items} (int n\+Items)
+void \mbox{\hyperlink{class_ammo_stack_a921b126bdcbca3a6478f67523060973e}{Add\+Items}} (int items)
+\item 
+int \mbox{\hyperlink{class_ammo_stack_a955f15f6c05983ada2e49f1eb575404a}{Remove\+Items}} (int items)
 \end{DoxyCompactItemize}
-\doxysubsubsection*{Public Attributes}
+\doxysubsubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_ammo_stack_a8f5bf7d3fabe21b88d807b743e2263a1}\label{class_ammo_stack_a8f5bf7d3fabe21b88d807b743e2263a1} 
-\mbox{\hyperlink{class_ammo_entity}{Ammo\+Entity}} {\bfseries Ammo\+Type}
+\Hypertarget{class_ammo_stack_ab922e526cc1b91f9e8b5b5800796622a}\label{class_ammo_stack_ab922e526cc1b91f9e8b5b5800796622a} 
+\mbox{\hyperlink{struct_ammo}{Ammo}} {\bfseries Ammo\+Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
 \Hypertarget{class_ammo_stack_a7eda63781104a2c149651692cc173f88}\label{class_ammo_stack_a7eda63781104a2c149651692cc173f88} 
-int {\bfseries Amount} = 0
-\item 
-\Hypertarget{class_ammo_stack_a865ec4d513ce96410bd8fee029264662}\label{class_ammo_stack_a865ec4d513ce96410bd8fee029264662} 
-string {\bfseries Item\+Id}
+int {\bfseries Amount}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_ammo_stack_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ammo_stack_a921b126bdcbca3a6478f67523060973e}\index{AmmoStack@{AmmoStack}!AddItems@{AddItems}}
+\index{AddItems@{AddItems}!AmmoStack@{AmmoStack}}
+\doxysubsubsection{\texorpdfstring{AddItems()}{AddItems()}}
+{\footnotesize\ttfamily \label{class_ammo_stack_a921b126bdcbca3a6478f67523060973e} 
+void Ammo\+Stack.\+Add\+Items (\begin{DoxyParamCaption}\item[{int}]{items}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_i_consumable_stack}{IConsumable\+Stack}}.
+
+\Hypertarget{class_ammo_stack_a955f15f6c05983ada2e49f1eb575404a}\index{AmmoStack@{AmmoStack}!RemoveItems@{RemoveItems}}
+\index{RemoveItems@{RemoveItems}!AmmoStack@{AmmoStack}}
+\doxysubsubsection{\texorpdfstring{RemoveItems()}{RemoveItems()}}
+{\footnotesize\ttfamily \label{class_ammo_stack_a955f15f6c05983ada2e49f1eb575404a} 
+int Ammo\+Stack.\+Remove\+Items (\begin{DoxyParamCaption}\item[{int}]{items}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_i_consumable_stack}{IConsumable\+Stack}}.
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

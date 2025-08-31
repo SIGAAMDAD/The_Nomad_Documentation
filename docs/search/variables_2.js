@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['maximumruneslots_0',['MaximumRuneSlots',['../class_player.html#a92bf528dc76ae3798ffd1fc3c073ee8f',1,'Player']]]
+  ['effects_0',['Effects',['../struct_ammo.html#a309397f38938f711c4f85a8ebf0275d7',1,'Ammo']]]
 ];

@@ -91,6 +91,9 @@ $(function(){initNavTree('class_archive_system.html','','class_archive_system-me
   <div class="headertitle"><div class="title">ArchiveSystem Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>the main singleton for managing game save data  
+ <a href="#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for ArchiveSystem:</div>
 <div class="dyncontent">
@@ -121,16 +124,17 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>PushSection</b
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateSlot</b> ()</td></tr>
 <tr class="memitem:a356b40183e10538cbdb14707e3b3a838" id="r_a356b40183e10538cbdb14707e3b3a838"><td class="memItemLeft" align="right" valign="top"><a id="a356b40183e10538cbdb14707e3b3a838" name="a356b40183e10538cbdb14707e3b3a838"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>SlotExists</b> (int slot)</td></tr>
-<tr class="memitem:a5607d42b713ff480761c22e2128a6b3a" id="r_a5607d42b713ff480761c22e2128a6b3a"><td class="memItemLeft" align="right" valign="top"><a id="a5607d42b713ff480761c22e2128a6b3a" name="a5607d42b713ff480761c22e2128a6b3a"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteSave</b> (int slot)</td></tr>
+<tr class="memitem:a5607d42b713ff480761c22e2128a6b3a" id="r_a5607d42b713ff480761c22e2128a6b3a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5607d42b713ff480761c22e2128a6b3a">DeleteSave</a> (int slot)</td></tr>
+<tr class="memdesc:a5607d42b713ff480761c22e2128a6b3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the given save slot from both local storage and steam cloud storage.  <br /></td></tr>
 <tr class="memitem:a9962d0150f259a457de4fa070e988e68" id="r_a9962d0150f259a457de4fa070e988e68"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9962d0150f259a457de4fa070e988e68">SaveGame</a> (int slot)</td></tr>
 <tr class="memdesc:a9962d0150f259a457de4fa070e988e68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Archives current game state, called when exiting game, activating a firelink, or resting at a meliora.  <br /></td></tr>
 <tr class="memitem:ab2d9601ef67a47986b2adb32d21080f2" id="r_ab2d9601ef67a47986b2adb32d21080f2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2d9601ef67a47986b2adb32d21080f2">LoadGame</a> (int slot)</td></tr>
 <tr class="memdesc:ab2d9601ef67a47986b2adb32d21080f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads and initializes game state from the provided save slot file.  <br /></td></tr>
 <tr class="memitem:af2372f8d293ffc912a5c3bf40b2af640" id="r_af2372f8d293ffc912a5c3bf40b2af640"><td class="memItemLeft" align="right" valign="top"><a id="af2372f8d293ffc912a5c3bf40b2af640" name="af2372f8d293ffc912a5c3bf40b2af640"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr>
-<tr class="memitem:a5e6d1875510619d5b728b6cf6e18f643" id="r_a5e6d1875510619d5b728b6cf6e18f643"><td class="memItemLeft" align="right" valign="top"><a id="a5e6d1875510619d5b728b6cf6e18f643" name="a5e6d1875510619d5b728b6cf6e18f643"></a>
-static ? <a class="el" href="class_save_system_1_1_save_section_reader.html">SaveSectionReader</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetSection</b> (string name)</td></tr>
+<tr class="memdesc:af2372f8d293ffc912a5c3bf40b2af640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the section cache when loading a new save. <br /></td></tr>
+<tr class="memitem:a5e6d1875510619d5b728b6cf6e18f643" id="r_a5e6d1875510619d5b728b6cf6e18f643"><td class="memItemLeft" align="right" valign="top">static ? <a class="el" href="class_save_system_1_1_save_section_reader.html">SaveSectionReader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e6d1875510619d5b728b6cf6e18f643">GetSection</a> (string name)</td></tr>
+<tr class="memdesc:a5e6d1875510619d5b728b6cf6e18f643"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a lookup for a section based on the name.  <br /></td></tr>
 <tr class="memitem:a87240a02e085d82563a4bf63749e9f14" id="r_a87240a02e085d82563a4bf63749e9f14"><td class="memItemLeft" align="right" valign="top"><a id="a87240a02e085d82563a4bf63749e9f14" name="a87240a02e085d82563a4bf63749e9f14"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>CheckSaveData</b> ()</td></tr>
 </table><table class="memberdecls">
@@ -150,7 +154,82 @@ static System.IO.? BinaryReader&#160;</td><td class="memItemRight" valign="botto
 <tr class="memitem:abad9fdb1df25a0e348fca27eddc403b4" id="r_abad9fdb1df25a0e348fca27eddc403b4"><td class="memItemLeft" align="right" valign="top"><a id="abad9fdb1df25a0e348fca27eddc403b4" name="abad9fdb1df25a0e348fca27eddc403b4"></a>
 static System.IO.? BinaryWriter&#160;</td><td class="memItemRight" valign="bottom"><b>SaveWriter</b> = null<code> [get]</code></td></tr>
 </table>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>the main singleton for managing game save data </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a5607d42b713ff480761c22e2128a6b3a" name="a5607d42b713ff480761c22e2128a6b3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5607d42b713ff480761c22e2128a6b3a">&#9670;&#160;</a></span>DeleteSave()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ArchiveSystem.DeleteSave </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>slot</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deletes the given save slot from both local storage and steam cloud storage. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">slot</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">System.Exception</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5e6d1875510619d5b728b6cf6e18f643" name="a5e6d1875510619d5b728b6cf6e18f643"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e6d1875510619d5b728b6cf6e18f643">&#9670;&#160;</a></span>GetSection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">? <a class="el" href="class_save_system_1_1_save_section_reader.html">SaveSectionReader</a> ArchiveSystem.GetSection </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Performs a lookup for a section based on the name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <a id="ab2d9601ef67a47986b2adb32d21080f2" name="ab2d9601ef67a47986b2adb32d21080f2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab2d9601ef67a47986b2adb32d21080f2">&#9670;&#160;</a></span>LoadGame()</h2>
 

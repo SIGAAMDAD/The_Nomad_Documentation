@@ -51,17 +51,6 @@ enum {\bfseries Weapon\+State} \+: int \{ \newline
 , \newline
 {\bfseries Invalid} = -\/1
  \}
-\item 
-\Hypertarget{class_weapon_entity_aeafb6feb5d8d500b264ab3d9b3010008}\label{class_weapon_entity_aeafb6feb5d8d500b264ab3d9b3010008} 
-enum {\bfseries Shotgun\+Bullshit} \+: uint \{ \newline
-{\bfseries Flechette}
-, {\bfseries Buckshot}
-, {\bfseries Birdshot}
-, {\bfseries Shrapnel}
-, \newline
-{\bfseries Slug}
-, {\bfseries None}
- \}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -75,23 +64,20 @@ delegate void {\bfseries Reloaded\+Event\+Handler} (\mbox{\hyperlink{class_weapo
 \Hypertarget{class_weapon_entity_a083f4150ae3297cc413ee274b623f98d}\label{class_weapon_entity_a083f4150ae3297cc413ee274b623f98d} 
 delegate void {\bfseries Used\+Event\+Handler} (\mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}} source)
 \item 
-\Hypertarget{class_weapon_entity_af545539deade79ebc26238b2431b0873}\label{class_weapon_entity_af545539deade79ebc26238b2431b0873} 
-bool {\bfseries Is\+Bladed} ()
-\item 
-\Hypertarget{class_weapon_entity_a42b475319cdfe718c7cba5dccf298305}\label{class_weapon_entity_a42b475319cdfe718c7cba5dccf298305} 
-bool {\bfseries Is\+Blunt} ()
-\item 
-\Hypertarget{class_weapon_entity_aad1dd23e2fc9f5490208cb2fd2c20070}\label{class_weapon_entity_aad1dd23e2fc9f5490208cb2fd2c20070} 
-bool {\bfseries Is\+Firearm} ()
-\item 
-\Hypertarget{class_weapon_entity_a7b1d474b5c1697482f684a063e8ecc2d}\label{class_weapon_entity_a7b1d474b5c1697482f684a063e8ecc2d} 
-bool {\bfseries Is\+One\+Handed} ()
-\item 
-\Hypertarget{class_weapon_entity_a876a6c66c87c374b08da1c39935ef5ac}\label{class_weapon_entity_a876a6c66c87c374b08da1c39935ef5ac} 
-bool {\bfseries Is\+Two\+Handed} ()
-\item 
-\Hypertarget{class_weapon_entity_a3ba01da2bbb5f6362349c51900f09662}\label{class_weapon_entity_a3ba01da2bbb5f6362349c51900f09662} 
-void {\bfseries Set\+Attack\+Angle} (float n\+Attack\+Angle)
+bool \mbox{\hyperlink{class_weapon_entity_af545539deade79ebc26238b2431b0873}{Is\+Bladed}} ()
+\begin{DoxyCompactList}\small\item\em Returns a boolean value if the Last\+Used\+Mode was Properties.\+Is\+Bladed \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_weapon_entity_a42b475319cdfe718c7cba5dccf298305}{Is\+Blunt}} ()
+\begin{DoxyCompactList}\small\item\em Returns a boolean value if the Last\+Used\+Mode was Properties.\+Is\+Blunt \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_weapon_entity_aad1dd23e2fc9f5490208cb2fd2c20070}{Is\+Firearm}} ()
+\begin{DoxyCompactList}\small\item\em Returns a boolean value if the Last\+Used\+Mode was Properties.\+Is\+Firearm \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_weapon_entity_a7b1d474b5c1697482f684a063e8ecc2d}{Is\+One\+Handed}} ()
+\begin{DoxyCompactList}\small\item\em Returns a boolean value if the Last\+Used\+Mode was Properties.\+Is\+One\+Handed \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_weapon_entity_a876a6c66c87c374b08da1c39935ef5ac}{Is\+Two\+Handed}} ()
+\begin{DoxyCompactList}\small\item\em Returns a boolean value if the Last\+Used\+Mode was Properties.\+Is\+Two\+Handed \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weapon_entity_a8e07f1a466fe9cf38b0a38ef846a8124}{Set\+Attack\+Angle}} (float attack\+Angle)
+\begin{DoxyCompactList}\small\item\em Sets the weapon\textquotesingle{}s in-\/game rotation. \end{DoxyCompactList}\item 
+\Hypertarget{class_weapon_entity_a179cfed3de42958e67ce05c32f2fc2de}\label{class_weapon_entity_a179cfed3de42958e67ce05c32f2fc2de} 
+void {\bfseries Set\+Holder} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} holder)
 \item 
 \Hypertarget{class_weapon_entity_a71a438d7003c9872c9882a168ff47d3d}\label{class_weapon_entity_a71a438d7003c9872c9882a168ff47d3d} 
 void {\bfseries Drop} ()
@@ -112,17 +98,13 @@ void \mbox{\hyperlink{class_weapon_entity_a4a5b583fe76dceafe166ca1859e92a79}{App
 \Hypertarget{class_weapon_entity_ab6c05d983b57d31836c759d1493dfc6c}\label{class_weapon_entity_ab6c05d983b57d31836c759d1493dfc6c} 
 void {\bfseries Save} ()
 \item 
-\Hypertarget{class_weapon_entity_ac28f82bc36645623eefe1e4d2433bb1b}\label{class_weapon_entity_ac28f82bc36645623eefe1e4d2433bb1b} 
-void {\bfseries Load} (Node\+Path path)
-\item 
+void \mbox{\hyperlink{class_weapon_entity_a505ba37bb9fee105a4042bebbf4a182a}{Load}} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} holder, Node\+Path path)
+\begin{DoxyCompactList}\small\item\em Loads a \doxylink{class_weapon_entity}{Weapon\+Entity}\textquotesingle{}s state from disk. \end{DoxyCompactList}\item 
 \Hypertarget{class_weapon_entity_af9d5dbf038079f30a25c575a8c35a264}\label{class_weapon_entity_af9d5dbf038079f30a25c575a8c35a264} 
 void {\bfseries Bladed\+Thrust\+Wind\+Up} ()
 \item 
-\Hypertarget{class_weapon_entity_aa7ff95263ac9a822be4f9e219f927e6e}\label{class_weapon_entity_aa7ff95263ac9a822be4f9e219f927e6e} 
-void {\bfseries Set\+Ammo} (\mbox{\hyperlink{class_ammo_entity}{Ammo\+Entity}} ammo)
-\item 
-\Hypertarget{class_weapon_entity_ab54bbc4bbc397a3c87d7af88f009565d}\label{class_weapon_entity_ab54bbc4bbc397a3c87d7af88f009565d} 
-void {\bfseries Set\+Reserve} (\mbox{\hyperlink{class_ammo_stack}{Ammo\+Stack}} stack)
+\Hypertarget{class_weapon_entity_af65c93349366a8c11b029d6f473a8886}\label{class_weapon_entity_af65c93349366a8c11b029d6f473a8886} 
+void {\bfseries Set\+Ammo\+Stack} (\mbox{\hyperlink{class_ammo_stack}{Ammo\+Stack}} ammo)
 \item 
 \Hypertarget{class_weapon_entity_a9ababb28b6432affe543f35dd8fb25ac}\label{class_weapon_entity_a9ababb28b6432affe543f35dd8fb25ac} 
 void {\bfseries Use\+Firearm\+Deferred} (Properties weapon\+Mode)
@@ -138,7 +120,7 @@ float {\bfseries Use} (Properties weapon\+Mode, out float sound\+Level, Blade\+A
 \item 
 \Hypertarget{class_weapon_entity_a7bc47e2b62857fad79d5fb938bb309ee}\label{class_weapon_entity_a7bc47e2b62857fad79d5fb938bb309ee} 
 override void {\bfseries \+\_\+\+Ready} ()
-\item 
+\begin{DoxyCompactList}\small\item\em godot initialization override \end{DoxyCompactList}\item 
 \Hypertarget{class_weapon_entity_aeede6d8c04a0a1d24804252d90da65d2}\label{class_weapon_entity_aeede6d8c04a0a1d24804252d90da65d2} 
 override void {\bfseries \+\_\+\+Process} (double delta)
 \end{DoxyCompactItemize}
@@ -147,15 +129,12 @@ override void {\bfseries \+\_\+\+Process} (double delta)
 \item 
 \Hypertarget{class_weapon_entity_af9ced1752694a88e2b4e915a2788b6c3}\label{class_weapon_entity_af9ced1752694a88e2b4e915a2788b6c3} 
 Resource {\bfseries Data}
-\item 
-\Hypertarget{class_weapon_entity_a31542210934c93e72bb930f34fc6dbb2}\label{class_weapon_entity_a31542210934c93e72bb930f34fc6dbb2} 
-\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} {\bfseries \+\_\+\+Owner}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_weapon_entity_aec1a35485a28236ca9173324d987892a}\label{class_weapon_entity_aec1a35485a28236ca9173324d987892a} 
-Texture2D {\bfseries Icon}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\Hypertarget{class_weapon_entity_a100c550bea32134a07044d9a7ae0a724}\label{class_weapon_entity_a100c550bea32134a07044d9a7ae0a724} 
+Texture2D? {\bfseries Icon} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
 \Hypertarget{class_weapon_entity_a86f3a9a5fe40ed3c5b46b5809fa832d1}\label{class_weapon_entity_a86f3a9a5fe40ed3c5b46b5809fa832d1} 
 int {\bfseries Magazine\+Size} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
@@ -236,11 +215,11 @@ float {\bfseries Current\+Recoil\+Rotation}\hspace{0.3cm}{\ttfamily  \mbox{[}get
 \Hypertarget{class_weapon_entity_a0be566ca7779048795df1ad1de2bdd19}\label{class_weapon_entity_a0be566ca7779048795df1ad1de2bdd19} 
 Timer {\bfseries Weapon\+Timer}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-\Hypertarget{class_weapon_entity_aa3463c39500ed2cf636754bc4d7d9377}\label{class_weapon_entity_aa3463c39500ed2cf636754bc4d7d9377} 
-\mbox{\hyperlink{class_ammo_stack}{Ammo\+Stack}} {\bfseries Reserve}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\Hypertarget{class_weapon_entity_a0e494205c9680208d6eddff639cb35f9}\label{class_weapon_entity_a0e494205c9680208d6eddff639cb35f9} 
+\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} {\bfseries Holder}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-\Hypertarget{class_weapon_entity_a40b40aabe167ca24e7097d9ef981dc16}\label{class_weapon_entity_a40b40aabe167ca24e7097d9ef981dc16} 
-\mbox{\hyperlink{class_ammo_entity}{Ammo\+Entity}} {\bfseries Ammo}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\Hypertarget{class_weapon_entity_a4cb7714c88f3ea0910aeff6ff1e6b274}\label{class_weapon_entity_a4cb7714c88f3ea0910aeff6ff1e6b274} 
+\mbox{\hyperlink{class_ammo_stack}{Ammo\+Stack}} {\bfseries Ammo}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
 \Hypertarget{class_weapon_entity_aa713771131a0ee6e351c1948dce36d60}\label{class_weapon_entity_aa713771131a0ee6e351c1948dce36d60} 
 int {\bfseries Bullets\+Left} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
@@ -282,12 +261,109 @@ Implements \mbox{\hyperlink{interface_player_system_1_1_upgrades_1_1_i_upgradabl
 \index{GetUpgradeCost@{GetUpgradeCost}!WeaponEntity@{WeaponEntity}}
 \doxysubsubsection{\texorpdfstring{GetUpgradeCost()}{GetUpgradeCost()}}
 {\footnotesize\ttfamily \label{class_weapon_entity_a8a405943ecf9e95ef5856e7fc0dcbd61} 
-IRead\+Only\+Dictionary$<$ string, int $>$ Weapon\+Entity.\+Get\+Upgrade\+Cost (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+IRead\+Only\+Dictionary$<$ string, int $>$ Weapon\+Entity.\+Get\+Upgrade\+Cost (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
 Implements \mbox{\hyperlink{interface_player_system_1_1_upgrades_1_1_i_upgradable}{Player\+System.\+Upgrades.\+IUpgradable}}.
 
+\Hypertarget{class_weapon_entity_af545539deade79ebc26238b2431b0873}\index{WeaponEntity@{WeaponEntity}!IsBladed@{IsBladed}}
+\index{IsBladed@{IsBladed}!WeaponEntity@{WeaponEntity}}
+\doxysubsubsection{\texorpdfstring{IsBladed()}{IsBladed()}}
+{\footnotesize\ttfamily \label{class_weapon_entity_af545539deade79ebc26238b2431b0873} 
+bool Weapon\+Entity.\+Is\+Bladed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a boolean value if the Last\+Used\+Mode was Properties.\+Is\+Bladed 
+
+\begin{DoxyReturn}{Returns}
+True if Last\+Used\+Mode is Properties.\+Is\+Bladed
+\end{DoxyReturn}
+\Hypertarget{class_weapon_entity_a42b475319cdfe718c7cba5dccf298305}\index{WeaponEntity@{WeaponEntity}!IsBlunt@{IsBlunt}}
+\index{IsBlunt@{IsBlunt}!WeaponEntity@{WeaponEntity}}
+\doxysubsubsection{\texorpdfstring{IsBlunt()}{IsBlunt()}}
+{\footnotesize\ttfamily \label{class_weapon_entity_a42b475319cdfe718c7cba5dccf298305} 
+bool Weapon\+Entity.\+Is\+Blunt (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a boolean value if the Last\+Used\+Mode was Properties.\+Is\+Blunt 
+
+\begin{DoxyReturn}{Returns}
+True if Last\+Used\+Mode is Properties.\+Is\+Blunt
+\end{DoxyReturn}
+\Hypertarget{class_weapon_entity_aad1dd23e2fc9f5490208cb2fd2c20070}\index{WeaponEntity@{WeaponEntity}!IsFirearm@{IsFirearm}}
+\index{IsFirearm@{IsFirearm}!WeaponEntity@{WeaponEntity}}
+\doxysubsubsection{\texorpdfstring{IsFirearm()}{IsFirearm()}}
+{\footnotesize\ttfamily \label{class_weapon_entity_aad1dd23e2fc9f5490208cb2fd2c20070} 
+bool Weapon\+Entity.\+Is\+Firearm (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a boolean value if the Last\+Used\+Mode was Properties.\+Is\+Firearm 
+
+\begin{DoxyReturn}{Returns}
+True if Last\+Used\+Mode is Properties.\+Is\+Firearm
+\end{DoxyReturn}
+\Hypertarget{class_weapon_entity_a7b1d474b5c1697482f684a063e8ecc2d}\index{WeaponEntity@{WeaponEntity}!IsOneHanded@{IsOneHanded}}
+\index{IsOneHanded@{IsOneHanded}!WeaponEntity@{WeaponEntity}}
+\doxysubsubsection{\texorpdfstring{IsOneHanded()}{IsOneHanded()}}
+{\footnotesize\ttfamily \label{class_weapon_entity_a7b1d474b5c1697482f684a063e8ecc2d} 
+bool Weapon\+Entity.\+Is\+One\+Handed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a boolean value if the Last\+Used\+Mode was Properties.\+Is\+One\+Handed 
+
+\begin{DoxyReturn}{Returns}
+True if Last\+Used\+Mode is Properties.\+Is\+One\+Handed
+\end{DoxyReturn}
+\Hypertarget{class_weapon_entity_a876a6c66c87c374b08da1c39935ef5ac}\index{WeaponEntity@{WeaponEntity}!IsTwoHanded@{IsTwoHanded}}
+\index{IsTwoHanded@{IsTwoHanded}!WeaponEntity@{WeaponEntity}}
+\doxysubsubsection{\texorpdfstring{IsTwoHanded()}{IsTwoHanded()}}
+{\footnotesize\ttfamily \label{class_weapon_entity_a876a6c66c87c374b08da1c39935ef5ac} 
+bool Weapon\+Entity.\+Is\+Two\+Handed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a boolean value if the Last\+Used\+Mode was Properties.\+Is\+Two\+Handed 
+
+\begin{DoxyReturn}{Returns}
+True if Last\+Used\+Mode is Properties.\+Is\+Two\+Handed
+\end{DoxyReturn}
+\Hypertarget{class_weapon_entity_a505ba37bb9fee105a4042bebbf4a182a}\index{WeaponEntity@{WeaponEntity}!Load@{Load}}
+\index{Load@{Load}!WeaponEntity@{WeaponEntity}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily \label{class_weapon_entity_a505ba37bb9fee105a4042bebbf4a182a} 
+void Weapon\+Entity.\+Load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_renown_1_1_entity}{Entity}}}]{holder}{, }\item[{Node\+Path}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loads a \doxylink{class_weapon_entity}{Weapon\+Entity}\textquotesingle{}s state from disk. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em holder} & The holder of the \doxylink{class_weapon_entity}{Weapon\+Entity}\\
+\hline
+{\em path} & The original node path that is used as a section name\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_weapon_entity_a8e07f1a466fe9cf38b0a38ef846a8124}\index{WeaponEntity@{WeaponEntity}!SetAttackAngle@{SetAttackAngle}}
+\index{SetAttackAngle@{SetAttackAngle}!WeaponEntity@{WeaponEntity}}
+\doxysubsubsection{\texorpdfstring{SetAttackAngle()}{SetAttackAngle()}}
+{\footnotesize\ttfamily \label{class_weapon_entity_a8e07f1a466fe9cf38b0a38ef846a8124} 
+void Weapon\+Entity.\+Set\+Attack\+Angle (\begin{DoxyParamCaption}\item[{float}]{attack\+Angle}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the weapon\textquotesingle{}s in-\/game rotation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em attack\+Angle} & The weapon\textquotesingle{}s rotation angle\\
+\hline
+\end{DoxyParams}
 
 
 \label{doc-property-members}

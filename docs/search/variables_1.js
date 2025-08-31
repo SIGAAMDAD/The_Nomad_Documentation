@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['invalid_0',['INVALID',['../class_player_system_1_1_weapon_slot.html#af73055771aef2c168152b69449764e9f',1,'PlayerSystem::WeaponSlot']]]
+  ['damage_0',['Damage',['../struct_ammo.html#aa2a1807afee0508ccfac786ee7bd58dd',1,'Ammo']]],
+  ['damagefalloff_1',['DamageFalloff',['../struct_ammo.html#a686c3f1c7b4a9ee4e54e65a8bb8d25a0',1,'Ammo']]]
 ];

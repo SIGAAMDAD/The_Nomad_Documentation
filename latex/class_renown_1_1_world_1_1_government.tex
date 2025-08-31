@@ -23,15 +23,15 @@ delegate void {\bfseries Meet\+Entity\+Event\+Handler} (\mbox{\hyperlink{class_r
 \item 
 delegate void {\bfseries Meet\+Faction\+Event\+Handler} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction, Node self)
 \item 
-delegate void {\bfseries Increase\+Relation\+Event\+Handler} (Node other, Node self, float n\+Amount)
+delegate void {\bfseries Increase\+Relation\+Event\+Handler} (Node other, Node self, float amount)
 \item 
-delegate void {\bfseries Decrease\+Relation\+Event\+Handler} (Node other, Node self, float n\+Amount)
+delegate void {\bfseries Decrease\+Relation\+Event\+Handler} (Node other, Node self, float amount)
 \item 
-delegate void {\bfseries Increase\+Renown\+Event\+Handler} (Node self, int n\+Amount)
+delegate void {\bfseries Increase\+Renown\+Event\+Handler} (Node self, int amount)
 \item 
-delegate void {\bfseries Gain\+Money\+Event\+Handler} (Node entity, float n\+Amount)
+delegate void {\bfseries Gain\+Money\+Event\+Handler} (Node entity, float amount)
 \item 
-delegate void {\bfseries Lose\+Money\+Event\+Handler} (Node entity, float n\+Amount)
+delegate void {\bfseries Lose\+Money\+Event\+Handler} (Node entity, float amount)
 \item 
 String\+Name {\bfseries Get\+Faction\+Name} ()
 \item 
@@ -43,11 +43,9 @@ Node\+Path \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_af383b515dfd6c2fe
 \item 
 String\+Name \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_a09de81f6954818b19c47e82e14170462}{Get\+Object\+Name}} ()
 \item 
-float {\bfseries Get\+Money} ()
+virtual void {\bfseries Decrease\+Money} (float amount)
 \item 
-virtual void {\bfseries Decrease\+Money} (float n\+Amount)
-\item 
-virtual void {\bfseries Increase\+Money} (float n\+Amount)
+virtual void {\bfseries Increase\+Money} (float amount)
 \item 
 Hash\+Set$<$ \mbox{\hyperlink{class_renown_1_1_trait}{Trait}} $>$ {\bfseries Get\+Traits} ()
 \item 
@@ -65,19 +63,27 @@ virtual void {\bfseries Remove\+Trait} (\mbox{\hyperlink{class_renown_1_1_trait}
 \item 
 virtual void {\bfseries Meet} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other)
 \item 
-float \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_a91af45ed2f8266bca0893deba762c02b}{Get\+Relation\+Score}} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other)
+float \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_a72b8ea21e1ef7c11a50a15523f4841fb}{Get\+Relation\+Score}} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} entity)
 \item 
-void {\bfseries Relation\+Increase} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other, float n\+Amount)
+float \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_a8b0987c68fe85f1f4f1ec0cebd93b728}{Get\+Relation\+Score}} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction)
 \item 
-void {\bfseries Relation\+Decrease} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other, float n\+Amount)
+void {\bfseries Relation\+Increase} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} entity, float amount)
 \item 
-virtual void \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_a3e1fb7939affbd7598e262e54ad6769c}{Determine\+Relation\+Status}} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other)
+void {\bfseries Relation\+Increase} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction, float amount)
 \item 
-Relation\+Status \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_a2037b1600dc53ee22c5f3e763c5843a9}{Get\+Relation\+Status}} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other)
+void {\bfseries Relation\+Decrease} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} entity, float amount)
 \item 
-int {\bfseries Get\+Renown\+Score} ()
+void {\bfseries Relation\+Decrease} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction, float amount)
 \item 
-void {\bfseries Add\+Renown} (int n\+Amount)
+virtual void \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_af3ed5069e82c57d5784ce83e01e624fc}{Determine\+Relation\+Status}} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} entity)
+\item 
+virtual void \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_aeb873c1d9758aa83ee7a2deb08bcc087}{Determine\+Relation\+Status}} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction)
+\item 
+Relation\+Status \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_a93ba8379a3aca867e87a3ddd88dcf590}{Get\+Relation\+Status}} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} entity)
+\item 
+Relation\+Status \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_a68fd33f14eba3c219934ff0598e76b1b}{Get\+Relation\+Status}} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction)
+\item 
+void {\bfseries Add\+Renown} (int amount)
 \item 
 virtual void \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_aafa9093cdbea620d405c18a24daf24f4}{Save}} ()
 \item 
@@ -91,7 +97,7 @@ void {\bfseries Member\+Leave} (\mbox{\hyperlink{class_player}{Player}} member)
 \item 
 override void {\bfseries \+\_\+\+Enter\+Tree} ()
 \item 
-bool {\bfseries Can\+Loan\+Money} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} destination, float n\+Amount)
+bool {\bfseries Can\+Loan\+Money} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} destination, float amount)
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Renown.\+World.\+Faction}}}
@@ -102,11 +108,11 @@ static Data\+Cache$<$ \mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Facti
 \doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Renown.\+World.\+Faction}}}
 \begin{DoxyCompactItemize}
 \item 
-bool {\bfseries Create\+Debt} (float n\+Amount)
+bool {\bfseries Create\+Debt} (float amount)
 \item 
 void {\bfseries Add\+Debt} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} to, float n\+Amount)
 \item 
-void {\bfseries Pay\+Debt} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} to, float n\+Amount)
+void {\bfseries Pay\+Debt} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} to, float debt\+Amount)
 \item 
 void {\bfseries Update\+War\+Status} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction)
 \item 

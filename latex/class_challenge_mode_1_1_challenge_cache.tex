@@ -1,41 +1,37 @@
 \doxysection{Challenge\+Mode.\+Challenge\+Cache Class Reference}
 \hypertarget{class_challenge_mode_1_1_challenge_cache}{}\label{class_challenge_mode_1_1_challenge_cache}\index{ChallengeMode.ChallengeCache@{ChallengeMode.ChallengeCache}}
+
+
+Manages challenge mode data.  
+
+
 \doxysubsubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{struct_challenge_mode_1_1_challenge_cache_1_1_challenge_score}{Challenge\+Score}}
-\item 
+\begin{DoxyCompactList}\small\item\em Local \doxylink{class_challenge_mode_1_1_challenge_map}{Challenge\+Map} score data. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{struct_challenge_mode_1_1_challenge_cache_1_1_leaderboard_entry}{Leaderboard\+Entry}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A leaderboard entry for a player\textquotesingle{}s \doxylink{class_challenge_mode_1_1_challenge_map}{Challenge\+Map} score, stored on steam. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
-\item 
-\Hypertarget{class_challenge_mode_1_1_challenge_cache_ad06fa013ebeeb2fd4498731aa1aeea7f}\label{class_challenge_mode_1_1_challenge_cache_ad06fa013ebeeb2fd4498731aa1aeea7f} 
-static Dictionary$<$ int, \mbox{\hyperlink{struct_challenge_mode_1_1_challenge_cache_1_1_leaderboard_entry}{Leaderboard\+Entry}} $>$ {\bfseries Get\+Leaderboard\+Data} ()
 \item 
 \Hypertarget{class_challenge_mode_1_1_challenge_cache_ac3a2fea1336df417201ebdfe674a5f45}\label{class_challenge_mode_1_1_challenge_cache_ac3a2fea1336df417201ebdfe674a5f45} 
 static Steam\+Leaderboard\+\_\+t {\bfseries Get\+Current\+Leaderboard} ()
 \item 
-\Hypertarget{class_challenge_mode_1_1_challenge_cache_ae12ad0cca7ce5d6916115ead411fbbe8}\label{class_challenge_mode_1_1_challenge_cache_ae12ad0cca7ce5d6916115ead411fbbe8} 
-static Resource {\bfseries Get\+Quest\+Data} ()
-\item 
 \Hypertarget{class_challenge_mode_1_1_challenge_cache_abecd2d1947cc52fd1dda344d507c1e1f}\label{class_challenge_mode_1_1_challenge_cache_abecd2d1947cc52fd1dda344d507c1e1f} 
 static void {\bfseries Set\+Quest\+Data} (Resource quest)
 \item 
-\Hypertarget{class_challenge_mode_1_1_challenge_cache_a0a60cf4974780a13b5e1e8e36f7ec45c}\label{class_challenge_mode_1_1_challenge_cache_a0a60cf4974780a13b5e1e8e36f7ec45c} 
-static int {\bfseries Get\+Current\+Map} ()
+\Hypertarget{class_challenge_mode_1_1_challenge_cache_a84d0903fcb783ab0ce91ea7ddaf0b86b}\label{class_challenge_mode_1_1_challenge_cache_a84d0903fcb783ab0ce91ea7ddaf0b86b} 
+static void {\bfseries Set\+Current\+Map} (int current\+Map)
 \item 
-\Hypertarget{class_challenge_mode_1_1_challenge_cache_a74e6783540e43c001a49bdb654d32389}\label{class_challenge_mode_1_1_challenge_cache_a74e6783540e43c001a49bdb654d32389} 
-static void {\bfseries Set\+Current\+Map} (int n\+Current\+Map)
+\Hypertarget{class_challenge_mode_1_1_challenge_cache_a5b833902e5e2f4a4b9dfd25c6339e172}\label{class_challenge_mode_1_1_challenge_cache_a5b833902e5e2f4a4b9dfd25c6339e172} 
+static void {\bfseries Fetch\+Leaderboard\+Data} (int map\+Index)
 \item 
-\Hypertarget{class_challenge_mode_1_1_challenge_cache_ac4aeb2503b2e262be8c837019681fb39}\label{class_challenge_mode_1_1_challenge_cache_ac4aeb2503b2e262be8c837019681fb39} 
-static void {\bfseries Fetch\+Leaderboard\+Data} (int n\+Map\+Index)
+\Hypertarget{class_challenge_mode_1_1_challenge_cache_aff6ec530cd0f72b6a50342dfcad25c8c}\label{class_challenge_mode_1_1_challenge_cache_aff6ec530cd0f72b6a50342dfcad25c8c} 
+static void {\bfseries Update\+Score} (Steam\+Leaderboard\+\_\+t leaderboard, int map\+Index, int score, int time\+Minutes, int time\+Seconds, int time\+Milliseconds)
 \item 
-\Hypertarget{class_challenge_mode_1_1_challenge_cache_a4531a831014f55c3b2edb0a26e1bf0e1}\label{class_challenge_mode_1_1_challenge_cache_a4531a831014f55c3b2edb0a26e1bf0e1} 
-static void {\bfseries Update\+Score} (Steam\+Leaderboard\+\_\+t h\+Leaderboard, int Map\+Index, int Score, int Time\+Minutes, int Time\+Seconds, int Time\+Milliseconds)
-\item 
-\Hypertarget{class_challenge_mode_1_1_challenge_cache_aaf855fa56127f2f349b4743edab58f3d}\label{class_challenge_mode_1_1_challenge_cache_aaf855fa56127f2f349b4743edab58f3d} 
-static void {\bfseries Get\+Score} (int Map\+Index, out int Score, out int Time\+Minutes, out int Time\+Seconds, out int Time\+Milliseconds, System.\+Action$<$ Dictionary$<$ int, \mbox{\hyperlink{struct_challenge_mode_1_1_challenge_cache_1_1_leaderboard_entry}{Leaderboard\+Entry}} $>$ $>$ callback)
+\Hypertarget{class_challenge_mode_1_1_challenge_cache_a01ed0a008a2404e7c98e517d2752b3d5}\label{class_challenge_mode_1_1_challenge_cache_a01ed0a008a2404e7c98e517d2752b3d5} 
+static void {\bfseries Get\+Score} (int map\+Index, out int total\+Score, out int time\+Minutes, out int time\+Seconds, out int time\+Milliseconds, System.\+Action$<$ Dictionary$<$ int, \mbox{\hyperlink{struct_challenge_mode_1_1_challenge_cache_1_1_leaderboard_entry}{Leaderboard\+Entry}} $>$ $>$ callback)
 \item 
 \Hypertarget{class_challenge_mode_1_1_challenge_cache_a7d59b9af4a8849da068445d814e3c327}\label{class_challenge_mode_1_1_challenge_cache_a7d59b9af4a8849da068445d814e3c327} 
 static void {\bfseries Init} ()
@@ -43,16 +39,37 @@ static void {\bfseries Init} ()
 \doxysubsubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_challenge_mode_1_1_challenge_cache_a64536f08f9adeab33d3bb6cf45df7f7a}\label{class_challenge_mode_1_1_challenge_cache_a64536f08f9adeab33d3bb6cf45df7f7a} 
-static Dictionary$<$ \mbox{\hyperlink{class_challenge_mode_1_1_challenge_map}{Challenge\+Map}}, \mbox{\hyperlink{struct_challenge_mode_1_1_challenge_cache_1_1_challenge_score}{Challenge\+Score}} $>$ {\bfseries Scores} = null
-\item 
-\Hypertarget{class_challenge_mode_1_1_challenge_cache_a9ed3bbad284388ca6e2601388844fee3}\label{class_challenge_mode_1_1_challenge_cache_a9ed3bbad284388ca6e2601388844fee3} 
-static List$<$ \mbox{\hyperlink{class_challenge_mode_1_1_challenge_map}{Challenge\+Map}} $>$ {\bfseries Map\+List} = null
-\item 
 \Hypertarget{class_challenge_mode_1_1_challenge_cache_ae39e8c304cfc9f24cab169086d052b69}\label{class_challenge_mode_1_1_challenge_cache_ae39e8c304cfc9f24cab169086d052b69} 
 static readonly int {\bfseries Score\+Multiplier\+\_\+\+Head\+Shot} = 3
 \end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_challenge_mode_1_1_challenge_cache_a23071964e77fb35876aeb947cd9c8e8f}\label{class_challenge_mode_1_1_challenge_cache_a23071964e77fb35876aeb947cd9c8e8f} 
+static ? Dictionary$<$ int, \mbox{\hyperlink{struct_challenge_mode_1_1_challenge_cache_1_1_leaderboard_entry}{Leaderboard\+Entry}} $>$ {\bfseries Leaderboard\+Data} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em data for the currently selected map \end{DoxyCompactList}\item 
+\Hypertarget{class_challenge_mode_1_1_challenge_cache_a7aceedcbce1a6d8a914fbcaabe3ed7d9}\label{class_challenge_mode_1_1_challenge_cache_a7aceedcbce1a6d8a914fbcaabe3ed7d9} 
+static Steam\+Leaderboard\+Entries\+\_\+t {\bfseries Leaderboard\+Entries}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Steamworks API leaderboard handle. \end{DoxyCompactList}\item 
+\Hypertarget{class_challenge_mode_1_1_challenge_cache_ab89b466643a2726f41836a87c7075800}\label{class_challenge_mode_1_1_challenge_cache_ab89b466643a2726f41836a87c7075800} 
+static ? Dictionary$<$ String\+Name, Steam\+Leaderboard\+\_\+t $>$ {\bfseries Leaderboards} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A cache of all the leaderboards related to \doxylink{namespace_challenge_mode}{Challenge\+Mode}. \end{DoxyCompactList}\item 
+\Hypertarget{class_challenge_mode_1_1_challenge_cache_a7f458eb59d7f59ed99f236411d8506db}\label{class_challenge_mode_1_1_challenge_cache_a7f458eb59d7f59ed99f236411d8506db} 
+static ? Dictionary$<$ \mbox{\hyperlink{class_challenge_mode_1_1_challenge_map}{Challenge\+Map}}, \mbox{\hyperlink{struct_challenge_mode_1_1_challenge_cache_1_1_challenge_score}{Challenge\+Score}} $>$ {\bfseries Scores} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Local score storage cache. \end{DoxyCompactList}\item 
+\Hypertarget{class_challenge_mode_1_1_challenge_cache_adbce791d15ffcbb0d2120a3687ec77d9}\label{class_challenge_mode_1_1_challenge_cache_adbce791d15ffcbb0d2120a3687ec77d9} 
+static ? List$<$ \mbox{\hyperlink{class_challenge_mode_1_1_challenge_map}{Challenge\+Map}} $>$ {\bfseries Map\+List} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Cache of all the Challenge\+Maps found in res\+://resources/challenge\+\_\+maps. \end{DoxyCompactList}\item 
+\Hypertarget{class_challenge_mode_1_1_challenge_cache_a36aceb7c4d4d8d5d34621072d8988b02}\label{class_challenge_mode_1_1_challenge_cache_a36aceb7c4d4d8d5d34621072d8988b02} 
+static int {\bfseries Current\+Map} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_challenge_mode_1_1_challenge_cache_a2525485f34e593c85430c4c7949cacae}\label{class_challenge_mode_1_1_challenge_cache_a2525485f34e593c85430c4c7949cacae} 
+static ? Resource {\bfseries Active\+Quest}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Manages challenge mode data. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

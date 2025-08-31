@@ -1,10 +1,5 @@
 \doxysection{Save\+System.\+Save\+Section\+Reader Class Reference}
 \hypertarget{class_save_system_1_1_save_section_reader}{}\label{class_save_system_1_1_save_section_reader}\index{SaveSystem.SaveSectionReader@{SaveSystem.SaveSectionReader}}
-
-
-the dedicated class for reading dictionary style "{}sections"{} froms the current savefile  
-
-
 Inheritance diagram for Save\+System.\+Save\+Section\+Reader\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -53,6 +48,9 @@ double {\bfseries Load\+Double} (string name)
 \Hypertarget{class_save_system_1_1_save_section_reader_a801e4a64d4bd78b5f6ccc5fbe935379c}\label{class_save_system_1_1_save_section_reader_a801e4a64d4bd78b5f6ccc5fbe935379c} 
 string {\bfseries Load\+String} (string name)
 \item 
+\Hypertarget{class_save_system_1_1_save_section_reader_a5d47218a9b37a3a128cb5b6accea43c7}\label{class_save_system_1_1_save_section_reader_a5d47218a9b37a3a128cb5b6accea43c7} 
+bool {\bfseries Load\+Boolean} (string name)
+\item 
 \Hypertarget{class_save_system_1_1_save_section_reader_a8802c4a8cf2619f950f93ddc7f5fa126}\label{class_save_system_1_1_save_section_reader_a8802c4a8cf2619f950f93ddc7f5fa126} 
 Vector2 {\bfseries Load\+Vector2} (string name)
 \item 
@@ -83,13 +81,13 @@ Godot.\+Collections.\+Dictionary {\bfseries Load\+Dictionary} (string name)
 
 
 \doxysubsection{Detailed Description}
-the dedicated class for reading dictionary style "{}sections"{} froms the current savefile 
+The dedicated class for reading dictionary style "{}sections"{} froms the current savefile
 
 NOTE\+: reading from loaded save section can be multithreaded since we are loading all values into RAM from disk before applying gamestate.
 
 exceptions are caught in \doxylink{class_archive_system_ab2d9601ef67a47986b2adb32d21080f2}{Archive\+System.\+Load\+Game}
 
-the default stream is Archive\+System.\+Save\+Reader, but for the sake of testing, it uses dependency injection in the contructor 
+the default stream is Archive\+System.\+Save\+Reader, but for the sake of testing, it uses dependency injection in the constructor
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

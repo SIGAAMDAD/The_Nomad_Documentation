@@ -17,7 +17,7 @@ var namespace_renown_1_1_world =
     [ "ThinkerCache", "class_renown_1_1_world_1_1_thinker_cache.html", null ],
     [ "ThinkerFactory", "class_renown_1_1_world_1_1_thinker_factory.html", null ],
     [ "TradeRoute", "class_renown_1_1_world_1_1_trade_route.html", null ],
-    [ "WorldArea", "class_renown_1_1_world_1_1_world_area.html", null ],
+    [ "WorldArea", "class_renown_1_1_world_1_1_world_area.html", "class_renown_1_1_world_1_1_world_area" ],
     [ "WorldTimeManager", "class_renown_1_1_world_1_1_world_time_manager.html", null ],
     [ "WorldTimestamp", "struct_renown_1_1_world_1_1_world_timestamp.html", null ]
 ];

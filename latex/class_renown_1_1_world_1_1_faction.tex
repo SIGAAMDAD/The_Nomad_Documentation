@@ -21,20 +21,20 @@ delegate void {\bfseries Meet\+Entity\+Event\+Handler} (\mbox{\hyperlink{class_r
 \Hypertarget{class_renown_1_1_world_1_1_faction_a8e8547c8bb530fd14f4d4afee9e60614}\label{class_renown_1_1_world_1_1_faction_a8e8547c8bb530fd14f4d4afee9e60614} 
 delegate void {\bfseries Meet\+Faction\+Event\+Handler} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction, Node self)
 \item 
-\Hypertarget{class_renown_1_1_world_1_1_faction_a3e5c59c08018539483dc906733c4dab0}\label{class_renown_1_1_world_1_1_faction_a3e5c59c08018539483dc906733c4dab0} 
-delegate void {\bfseries Increase\+Relation\+Event\+Handler} (Node other, Node self, float n\+Amount)
+\Hypertarget{class_renown_1_1_world_1_1_faction_aecfdc855a52d728477485e8d21679846}\label{class_renown_1_1_world_1_1_faction_aecfdc855a52d728477485e8d21679846} 
+delegate void {\bfseries Increase\+Relation\+Event\+Handler} (Node other, Node self, float amount)
 \item 
-\Hypertarget{class_renown_1_1_world_1_1_faction_abc6966ece973ff49ea9e85b2e0fc9180}\label{class_renown_1_1_world_1_1_faction_abc6966ece973ff49ea9e85b2e0fc9180} 
-delegate void {\bfseries Decrease\+Relation\+Event\+Handler} (Node other, Node self, float n\+Amount)
+\Hypertarget{class_renown_1_1_world_1_1_faction_a0618bc66bcd38f9a1c13b4bda445e36d}\label{class_renown_1_1_world_1_1_faction_a0618bc66bcd38f9a1c13b4bda445e36d} 
+delegate void {\bfseries Decrease\+Relation\+Event\+Handler} (Node other, Node self, float amount)
 \item 
-\Hypertarget{class_renown_1_1_world_1_1_faction_a6fb3301f55e521d6f2ffd2e25ed32aed}\label{class_renown_1_1_world_1_1_faction_a6fb3301f55e521d6f2ffd2e25ed32aed} 
-delegate void {\bfseries Increase\+Renown\+Event\+Handler} (Node self, int n\+Amount)
+\Hypertarget{class_renown_1_1_world_1_1_faction_a651429f564c46aab425a1619ebe01750}\label{class_renown_1_1_world_1_1_faction_a651429f564c46aab425a1619ebe01750} 
+delegate void {\bfseries Increase\+Renown\+Event\+Handler} (Node self, int amount)
 \item 
-\Hypertarget{class_renown_1_1_world_1_1_faction_a2dabe32a6772e235a57c5698fc0541f4}\label{class_renown_1_1_world_1_1_faction_a2dabe32a6772e235a57c5698fc0541f4} 
-delegate void {\bfseries Gain\+Money\+Event\+Handler} (Node entity, float n\+Amount)
+\Hypertarget{class_renown_1_1_world_1_1_faction_a17e709bf6babc69212b822a7cbd1e67d}\label{class_renown_1_1_world_1_1_faction_a17e709bf6babc69212b822a7cbd1e67d} 
+delegate void {\bfseries Gain\+Money\+Event\+Handler} (Node entity, float amount)
 \item 
-\Hypertarget{class_renown_1_1_world_1_1_faction_ad2e9f5b497bd2c5fb94362172940f1d0}\label{class_renown_1_1_world_1_1_faction_ad2e9f5b497bd2c5fb94362172940f1d0} 
-delegate void {\bfseries Lose\+Money\+Event\+Handler} (Node entity, float n\+Amount)
+\Hypertarget{class_renown_1_1_world_1_1_faction_aeb71275497b5a8381e5739f978681eb2}\label{class_renown_1_1_world_1_1_faction_aeb71275497b5a8381e5739f978681eb2} 
+delegate void {\bfseries Lose\+Money\+Event\+Handler} (Node entity, float amount)
 \item 
 \Hypertarget{class_renown_1_1_world_1_1_faction_afa3de612331916a7075230fc25511217}\label{class_renown_1_1_world_1_1_faction_afa3de612331916a7075230fc25511217} 
 String\+Name {\bfseries Get\+Faction\+Name} ()
@@ -49,14 +49,11 @@ Node\+Path \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_af383b515dfd6c2fe
 \item 
 String\+Name \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_a09de81f6954818b19c47e82e14170462}{Get\+Object\+Name}} ()
 \item 
-\Hypertarget{class_renown_1_1_world_1_1_faction_a2eddfa995cfceab286d1dfa55c755a98}\label{class_renown_1_1_world_1_1_faction_a2eddfa995cfceab286d1dfa55c755a98} 
-float {\bfseries Get\+Money} ()
+\Hypertarget{class_renown_1_1_world_1_1_faction_ae45e9d79c578c958a16841c1d43243d9}\label{class_renown_1_1_world_1_1_faction_ae45e9d79c578c958a16841c1d43243d9} 
+virtual void {\bfseries Decrease\+Money} (float amount)
 \item 
-\Hypertarget{class_renown_1_1_world_1_1_faction_ad6e45ff9c507bcaf2fb0aafe9b162552}\label{class_renown_1_1_world_1_1_faction_ad6e45ff9c507bcaf2fb0aafe9b162552} 
-virtual void {\bfseries Decrease\+Money} (float n\+Amount)
-\item 
-\Hypertarget{class_renown_1_1_world_1_1_faction_a4eb755a3b1dc3bed801164a2ed17dac2}\label{class_renown_1_1_world_1_1_faction_a4eb755a3b1dc3bed801164a2ed17dac2} 
-virtual void {\bfseries Increase\+Money} (float n\+Amount)
+\Hypertarget{class_renown_1_1_world_1_1_faction_af47f4e6c391e97af7447b1b7294c1f6b}\label{class_renown_1_1_world_1_1_faction_af47f4e6c391e97af7447b1b7294c1f6b} 
+virtual void {\bfseries Increase\+Money} (float amount)
 \item 
 \Hypertarget{class_renown_1_1_world_1_1_faction_a789b9303f3ec2bda4f0cbbb8e14d84cd}\label{class_renown_1_1_world_1_1_faction_a789b9303f3ec2bda4f0cbbb8e14d84cd} 
 Hash\+Set$<$ \mbox{\hyperlink{class_renown_1_1_trait}{Trait}} $>$ {\bfseries Get\+Traits} ()
@@ -82,23 +79,32 @@ virtual void {\bfseries Remove\+Trait} (\mbox{\hyperlink{class_renown_1_1_trait}
 \Hypertarget{class_renown_1_1_world_1_1_faction_a43084fc23b24062070e50f035f259e6f}\label{class_renown_1_1_world_1_1_faction_a43084fc23b24062070e50f035f259e6f} 
 virtual void {\bfseries Meet} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other)
 \item 
-float \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_a91af45ed2f8266bca0893deba762c02b}{Get\+Relation\+Score}} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other)
+float \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_a72b8ea21e1ef7c11a50a15523f4841fb}{Get\+Relation\+Score}} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} entity)
 \item 
-\Hypertarget{class_renown_1_1_world_1_1_faction_afd14f524240dca3bef040f5a0cb3b91b}\label{class_renown_1_1_world_1_1_faction_afd14f524240dca3bef040f5a0cb3b91b} 
-void {\bfseries Relation\+Increase} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other, float n\+Amount)
+float \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_a8b0987c68fe85f1f4f1ec0cebd93b728}{Get\+Relation\+Score}} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction)
 \item 
-\Hypertarget{class_renown_1_1_world_1_1_faction_a420e929bc510d4655fad10b834000738}\label{class_renown_1_1_world_1_1_faction_a420e929bc510d4655fad10b834000738} 
-void {\bfseries Relation\+Decrease} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other, float n\+Amount)
+\Hypertarget{class_renown_1_1_world_1_1_faction_aae8f09cd421bff2972ec88ff64ab4419}\label{class_renown_1_1_world_1_1_faction_aae8f09cd421bff2972ec88ff64ab4419} 
+void {\bfseries Relation\+Increase} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} entity, float amount)
 \item 
-virtual void \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_a3e1fb7939affbd7598e262e54ad6769c}{Determine\+Relation\+Status}} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other)
+\Hypertarget{class_renown_1_1_world_1_1_faction_a74ee878660ec361d9668f5ca958ddb5f}\label{class_renown_1_1_world_1_1_faction_a74ee878660ec361d9668f5ca958ddb5f} 
+void {\bfseries Relation\+Increase} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction, float amount)
 \item 
-Relation\+Status \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_a2037b1600dc53ee22c5f3e763c5843a9}{Get\+Relation\+Status}} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other)
+\Hypertarget{class_renown_1_1_world_1_1_faction_a93d20ed8b5d901943a2e73c3a0ca4112}\label{class_renown_1_1_world_1_1_faction_a93d20ed8b5d901943a2e73c3a0ca4112} 
+void {\bfseries Relation\+Decrease} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} entity, float amount)
 \item 
-\Hypertarget{class_renown_1_1_world_1_1_faction_ac1c48ce97e06504a1516ea990651b90b}\label{class_renown_1_1_world_1_1_faction_ac1c48ce97e06504a1516ea990651b90b} 
-int {\bfseries Get\+Renown\+Score} ()
+\Hypertarget{class_renown_1_1_world_1_1_faction_a771e304ac316191885e5c2af17f963e3}\label{class_renown_1_1_world_1_1_faction_a771e304ac316191885e5c2af17f963e3} 
+void {\bfseries Relation\+Decrease} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction, float amount)
 \item 
-\Hypertarget{class_renown_1_1_world_1_1_faction_a26411892b50586c76a07fbc157ef28f5}\label{class_renown_1_1_world_1_1_faction_a26411892b50586c76a07fbc157ef28f5} 
-void {\bfseries Add\+Renown} (int n\+Amount)
+virtual void \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_af3ed5069e82c57d5784ce83e01e624fc}{Determine\+Relation\+Status}} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} entity)
+\item 
+virtual void \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_aeb873c1d9758aa83ee7a2deb08bcc087}{Determine\+Relation\+Status}} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction)
+\item 
+Relation\+Status \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_a93ba8379a3aca867e87a3ddd88dcf590}{Get\+Relation\+Status}} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} entity)
+\item 
+Relation\+Status \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_a68fd33f14eba3c219934ff0598e76b1b}{Get\+Relation\+Status}} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction)
+\item 
+\Hypertarget{class_renown_1_1_world_1_1_faction_a346063b0f76a86ae5e02e9fbecaaea08}\label{class_renown_1_1_world_1_1_faction_a346063b0f76a86ae5e02e9fbecaaea08} 
+void {\bfseries Add\+Renown} (int amount)
 \item 
 virtual void \mbox{\hyperlink{class_renown_1_1_world_1_1_faction_aafa9093cdbea620d405c18a24daf24f4}{Save}} ()
 \item 
@@ -116,8 +122,8 @@ void {\bfseries Member\+Leave} (\mbox{\hyperlink{class_player}{Player}} member)
 \Hypertarget{class_renown_1_1_world_1_1_faction_ab039ec47b33cac8203f297e3015f9610}\label{class_renown_1_1_world_1_1_faction_ab039ec47b33cac8203f297e3015f9610} 
 override void {\bfseries \+\_\+\+Enter\+Tree} ()
 \item 
-\Hypertarget{class_renown_1_1_world_1_1_faction_af5fa7f2184041ad029dce0b55de17ff9}\label{class_renown_1_1_world_1_1_faction_af5fa7f2184041ad029dce0b55de17ff9} 
-bool {\bfseries Can\+Loan\+Money} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} destination, float n\+Amount)
+\Hypertarget{class_renown_1_1_world_1_1_faction_a9fe022e7eb260fce562611388139da58}\label{class_renown_1_1_world_1_1_faction_a9fe022e7eb260fce562611388139da58} 
+bool {\bfseries Can\+Loan\+Money} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} destination, float amount)
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
@@ -128,14 +134,14 @@ static Data\+Cache$<$ \mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Facti
 \doxysubsubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_renown_1_1_world_1_1_faction_a3ea59e7276c818d2c296cdb5b05b95da}\label{class_renown_1_1_world_1_1_faction_a3ea59e7276c818d2c296cdb5b05b95da} 
-bool {\bfseries Create\+Debt} (float n\+Amount)
+\Hypertarget{class_renown_1_1_world_1_1_faction_a55037f48267d69ddd628db728e574207}\label{class_renown_1_1_world_1_1_faction_a55037f48267d69ddd628db728e574207} 
+bool {\bfseries Create\+Debt} (float amount)
 \item 
 \Hypertarget{class_renown_1_1_world_1_1_faction_a7a5e8ecff38643e90f54dec44914afe4}\label{class_renown_1_1_world_1_1_faction_a7a5e8ecff38643e90f54dec44914afe4} 
 void {\bfseries Add\+Debt} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} to, float n\+Amount)
 \item 
-\Hypertarget{class_renown_1_1_world_1_1_faction_ac6f2a75e1ef886b505498c181154c76b}\label{class_renown_1_1_world_1_1_faction_ac6f2a75e1ef886b505498c181154c76b} 
-void {\bfseries Pay\+Debt} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} to, float n\+Amount)
+\Hypertarget{class_renown_1_1_world_1_1_faction_a02ad598cd8ab7e47e8d43f477b8b28ba}\label{class_renown_1_1_world_1_1_faction_a02ad598cd8ab7e47e8d43f477b8b28ba} 
+void {\bfseries Pay\+Debt} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} to, float debt\+Amount)
 \item 
 \Hypertarget{class_renown_1_1_world_1_1_faction_aa33340637b8daef13d5695b48aa6ef87}\label{class_renown_1_1_world_1_1_faction_aa33340637b8daef13d5695b48aa6ef87} 
 void {\bfseries Update\+War\+Status} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction)
@@ -211,11 +217,21 @@ System.\+Threading.\+Thread\+Priority {\bfseries Importance} = Constants.\+THREA
 \label{doc-func-members}
 \Hypertarget{class_renown_1_1_world_1_1_faction_doc-func-members}
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_renown_1_1_world_1_1_faction_a3e1fb7939affbd7598e262e54ad6769c}\index{Renown.World.Faction@{Renown.World.Faction}!DetermineRelationStatus@{DetermineRelationStatus}}
+\Hypertarget{class_renown_1_1_world_1_1_faction_af3ed5069e82c57d5784ce83e01e624fc}\index{Renown.World.Faction@{Renown.World.Faction}!DetermineRelationStatus@{DetermineRelationStatus}}
 \index{DetermineRelationStatus@{DetermineRelationStatus}!Renown.World.Faction@{Renown.World.Faction}}
-\doxysubsubsection{\texorpdfstring{DetermineRelationStatus()}{DetermineRelationStatus()}}
-{\footnotesize\ttfamily \label{class_renown_1_1_world_1_1_faction_a3e1fb7939affbd7598e262e54ad6769c} 
-virtual void Renown.\+World.\+Faction.\+Determine\+Relation\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_renown_1_1_object}{Object}}}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+\doxysubsubsection{\texorpdfstring{DetermineRelationStatus()}{DetermineRelationStatus()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_renown_1_1_world_1_1_faction_af3ed5069e82c57d5784ce83e01e624fc} 
+virtual void Renown.\+World.\+Faction.\+Determine\+Relation\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_renown_1_1_entity}{Entity}}}]{entity}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{interface_renown_1_1_object}{Renown.\+Object}}.
+
+\Hypertarget{class_renown_1_1_world_1_1_faction_aeb873c1d9758aa83ee7a2deb08bcc087}\index{Renown.World.Faction@{Renown.World.Faction}!DetermineRelationStatus@{DetermineRelationStatus}}
+\index{DetermineRelationStatus@{DetermineRelationStatus}!Renown.World.Faction@{Renown.World.Faction}}
+\doxysubsubsection{\texorpdfstring{DetermineRelationStatus()}{DetermineRelationStatus()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_renown_1_1_world_1_1_faction_aeb873c1d9758aa83ee7a2deb08bcc087} 
+virtual void Renown.\+World.\+Faction.\+Determine\+Relation\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}}}]{faction}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
@@ -241,21 +257,41 @@ String\+Name Renown.\+World.\+Faction.\+Get\+Object\+Name (\begin{DoxyParamCapti
 
 Implements \mbox{\hyperlink{interface_renown_1_1_object}{Renown.\+Object}}.
 
-\Hypertarget{class_renown_1_1_world_1_1_faction_a91af45ed2f8266bca0893deba762c02b}\index{Renown.World.Faction@{Renown.World.Faction}!GetRelationScore@{GetRelationScore}}
+\Hypertarget{class_renown_1_1_world_1_1_faction_a72b8ea21e1ef7c11a50a15523f4841fb}\index{Renown.World.Faction@{Renown.World.Faction}!GetRelationScore@{GetRelationScore}}
 \index{GetRelationScore@{GetRelationScore}!Renown.World.Faction@{Renown.World.Faction}}
-\doxysubsubsection{\texorpdfstring{GetRelationScore()}{GetRelationScore()}}
-{\footnotesize\ttfamily \label{class_renown_1_1_world_1_1_faction_a91af45ed2f8266bca0893deba762c02b} 
-float Renown.\+World.\+Faction.\+Get\+Relation\+Score (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_renown_1_1_object}{Object}}}]{other}{}\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{GetRelationScore()}{GetRelationScore()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_renown_1_1_world_1_1_faction_a72b8ea21e1ef7c11a50a15523f4841fb} 
+float Renown.\+World.\+Faction.\+Get\+Relation\+Score (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_renown_1_1_entity}{Entity}}}]{entity}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
 Implements \mbox{\hyperlink{interface_renown_1_1_object}{Renown.\+Object}}.
 
-\Hypertarget{class_renown_1_1_world_1_1_faction_a2037b1600dc53ee22c5f3e763c5843a9}\index{Renown.World.Faction@{Renown.World.Faction}!GetRelationStatus@{GetRelationStatus}}
+\Hypertarget{class_renown_1_1_world_1_1_faction_a8b0987c68fe85f1f4f1ec0cebd93b728}\index{Renown.World.Faction@{Renown.World.Faction}!GetRelationScore@{GetRelationScore}}
+\index{GetRelationScore@{GetRelationScore}!Renown.World.Faction@{Renown.World.Faction}}
+\doxysubsubsection{\texorpdfstring{GetRelationScore()}{GetRelationScore()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_renown_1_1_world_1_1_faction_a8b0987c68fe85f1f4f1ec0cebd93b728} 
+float Renown.\+World.\+Faction.\+Get\+Relation\+Score (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}}}]{faction}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_renown_1_1_object}{Renown.\+Object}}.
+
+\Hypertarget{class_renown_1_1_world_1_1_faction_a93ba8379a3aca867e87a3ddd88dcf590}\index{Renown.World.Faction@{Renown.World.Faction}!GetRelationStatus@{GetRelationStatus}}
 \index{GetRelationStatus@{GetRelationStatus}!Renown.World.Faction@{Renown.World.Faction}}
-\doxysubsubsection{\texorpdfstring{GetRelationStatus()}{GetRelationStatus()}}
-{\footnotesize\ttfamily \label{class_renown_1_1_world_1_1_faction_a2037b1600dc53ee22c5f3e763c5843a9} 
-Relation\+Status Renown.\+World.\+Faction.\+Get\+Relation\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_renown_1_1_object}{Object}}}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\doxysubsubsection{\texorpdfstring{GetRelationStatus()}{GetRelationStatus()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_renown_1_1_world_1_1_faction_a93ba8379a3aca867e87a3ddd88dcf590} 
+Relation\+Status Renown.\+World.\+Faction.\+Get\+Relation\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_renown_1_1_entity}{Entity}}}]{entity}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_renown_1_1_object}{Renown.\+Object}}.
+
+\Hypertarget{class_renown_1_1_world_1_1_faction_a68fd33f14eba3c219934ff0598e76b1b}\index{Renown.World.Faction@{Renown.World.Faction}!GetRelationStatus@{GetRelationStatus}}
+\index{GetRelationStatus@{GetRelationStatus}!Renown.World.Faction@{Renown.World.Faction}}
+\doxysubsubsection{\texorpdfstring{GetRelationStatus()}{GetRelationStatus()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_renown_1_1_world_1_1_faction_a68fd33f14eba3c219934ff0598e76b1b} 
+Relation\+Status Renown.\+World.\+Faction.\+Get\+Relation\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}}}]{faction}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 

@@ -91,6 +91,9 @@ $(function(){initNavTree('class_light_manager.html','','class_light_manager-memb
   <div class="headertitle"><div class="title">LightManager Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Manages the creation and configuration of 2D lights within the scene. <code><a class="el" href="class_light_manager.html" title="Manages the creation and configuration of 2D lights within the scene. LightManager handles the instan...">LightManager</a></code> handles the instantiation of light sprites for low-quality settings, applies lighting and shadow changes based on user preferences, and responds to settings updates. It integrates with the Godot engine and listens for changes in lighting and shadow quality, updating all managed PointLight2D instances accordingly.  
+ <a href="#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for LightManager:</div>
 <div class="dyncontent">
@@ -100,11 +103,46 @@ Inheritance diagram for LightManager:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7ab5fb71dedf59c29bc0c99fbf11148e" id="r_a7ab5fb71dedf59c29bc0c99fbf11148e"><td class="memItemLeft" align="right" valign="top"><a id="a7ab5fb71dedf59c29bc0c99fbf11148e" name="a7ab5fb71dedf59c29bc0c99fbf11148e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ApplyChanges</b> ()</td></tr>
+<tr class="memitem:a7ab5fb71dedf59c29bc0c99fbf11148e" id="r_a7ab5fb71dedf59c29bc0c99fbf11148e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ab5fb71dedf59c29bc0c99fbf11148e">ApplyChanges</a> ()</td></tr>
+<tr class="memdesc:a7ab5fb71dedf59c29bc0c99fbf11148e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies any pending changes to the managed lights. This method updates the state of all lights managed by the <code><a class="el" href="class_light_manager.html" title="Manages the creation and configuration of 2D lights within the scene. LightManager handles the instan...">LightManager</a></code> instance, ensuring that any modifications (such as intensity, color, position, or activation state) are reflected in the scene or rendering context.  <br /></td></tr>
 <tr class="memitem:a5e8bd65be8361b08bcf693a369a37cf5" id="r_a5e8bd65be8361b08bcf693a369a37cf5"><td class="memItemLeft" align="right" valign="top"><a id="a5e8bd65be8361b08bcf693a369a37cf5" name="a5e8bd65be8361b08bcf693a369a37cf5"></a>
 override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memdesc:a5e8bd65be8361b08bcf693a369a37cf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">godot initialization override <br /></td></tr>
+<tr class="memitem:abd8731ab4c7280a1c257eb85662795cc" id="r_abd8731ab4c7280a1c257eb85662795cc"><td class="memItemLeft" align="right" valign="top"><a id="abd8731ab4c7280a1c257eb85662795cc" name="abd8731ab4c7280a1c257eb85662795cc"></a>
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>_ExitTree</b> ()</td></tr>
 </table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Manages the creation and configuration of 2D lights within the scene. <code><a class="el" href="class_light_manager.html" title="Manages the creation and configuration of 2D lights within the scene. LightManager handles the instan...">LightManager</a></code> handles the instantiation of light sprites for low-quality settings, applies lighting and shadow changes based on user preferences, and responds to settings updates. It integrates with the Godot engine and listens for changes in lighting and shadow quality, updating all managed PointLight2D instances accordingly. </p>
+<p>Attach this node to your scene to enable dynamic light management. The manager automatically updates lights when settings change and supports both high and low quality lighting modes. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a7ab5fb71dedf59c29bc0c99fbf11148e" name="a7ab5fb71dedf59c29bc0c99fbf11148e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ab5fb71dedf59c29bc0c99fbf11148e">&#9670;&#160;</a></span>ApplyChanges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightManager.ApplyChanges </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Applies any pending changes to the managed lights. This method updates the state of all lights managed by the <code><a class="el" href="class_light_manager.html" title="Manages the creation and configuration of 2D lights within the scene. LightManager handles the instan...">LightManager</a></code> instance, ensuring that any modifications (such as intensity, color, position, or activation state) are reflected in the scene or rendering context. </p>
+<p>Call this method after making changes to light properties to ensure those changes take effect. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>scripts/effects/<b>LightManager.cs</b></li>
 </ul>

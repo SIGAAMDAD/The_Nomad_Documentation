@@ -103,6 +103,10 @@ Inheritance diagram for PlayerSystem.ConsumableStack:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ad2e361a7fd869094df427c88e92c2238" id="r_ad2e361a7fd869094df427c88e92c2238"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2e361a7fd869094df427c88e92c2238">ConsumableStack</a> (Resource itemType, int amount)</td></tr>
+<tr class="memdesc:ad2e361a7fd869094df427c88e92c2238"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new consumable stack with the given itemType.  <br /></td></tr>
+<tr class="memitem:a8f32c2bd43ec999e27d47bd259a5622d" id="r_a8f32c2bd43ec999e27d47bd259a5622d"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f32c2bd43ec999e27d47bd259a5622d">GetItemID</a> ()</td></tr>
+<tr class="memdesc:a8f32c2bd43ec999e27d47bd259a5622d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function around the rather ugly ItemType.Get( "id" ).AsString()  <br /></td></tr>
 <tr class="memitem:a2e3ebccbe187f00a2e0c3d1fd521e667" id="r_a2e3ebccbe187f00a2e0c3d1fd521e667"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e3ebccbe187f00a2e0c3d1fd521e667">SetType</a> (<a class="el" href="class_consumable_entity.html">ConsumableEntity</a> consumable)</td></tr>
 <tr class="memdesc:a2e3ebccbe187f00a2e0c3d1fd521e667"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the type of consumable resource to be used in the stack.  <br /></td></tr>
 <tr class="memitem:a3a7e3d1946f83e6f16cdb42492c0f3e7" id="r_a3a7e3d1946f83e6f16cdb42492c0f3e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a7e3d1946f83e6f16cdb42492c0f3e7">AddItems</a> (int items)</td></tr>
@@ -116,12 +120,49 @@ Properties</h2></td></tr>
 Resource?&#160;</td><td class="memItemRight" valign="bottom"><b>ItemType</b> = null<code> [get]</code></td></tr>
 <tr class="memitem:a3b9e667b0f23853eb411592ebdad9485" id="r_a3b9e667b0f23853eb411592ebdad9485"><td class="memItemLeft" align="right" valign="top"><a id="a3b9e667b0f23853eb411592ebdad9485" name="a3b9e667b0f23853eb411592ebdad9485"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>Amount</b> = 0<code> [get]</code></td></tr>
-<tr class="memitem:a6b95f09bf95aec16dfe63d936eb2c168" id="r_a6b95f09bf95aec16dfe63d936eb2c168"><td class="memItemLeft" align="right" valign="top"><a id="a6b95f09bf95aec16dfe63d936eb2c168" name="a6b95f09bf95aec16dfe63d936eb2c168"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>ItemId</b><code> [get]</code></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Item stack class but for consumables like stims, healthpacks, etc. </p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ad2e361a7fd869094df427c88e92c2238" name="ad2e361a7fd869094df427c88e92c2238"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2e361a7fd869094df427c88e92c2238">&#9670;&#160;</a></span>ConsumableStack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PlayerSystem.ConsumableStack.ConsumableStack </td>
+          <td>(</td>
+          <td class="paramtype">Resource</td>          <td class="paramname"><span class="paramname"><em>itemType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>amount</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a new consumable stack with the given itemType. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">itemType</td><td>The ItemDefinition of the item that will be used in the stack</td></tr>
+    <tr><td class="paramname">amount</td><td>The amount of the item in the stack</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a3a7e3d1946f83e6f16cdb42492c0f3e7" name="a3a7e3d1946f83e6f16cdb42492c0f3e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3a7e3d1946f83e6f16cdb42492c0f3e7">&#9670;&#160;</a></span>AddItems()</h2>
 
@@ -152,6 +193,34 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>ItemId</b><code> [g
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a8f32c2bd43ec999e27d47bd259a5622d" name="a8f32c2bd43ec999e27d47bd259a5622d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f32c2bd43ec999e27d47bd259a5622d">&#9670;&#160;</a></span>GetItemID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string PlayerSystem.ConsumableStack.GetItemID </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wrapper function around the rather ugly ItemType.Get( "id" ).AsString() </p>
+<dl class="section return"><dt>Returns</dt><dd>The ItemType item_id assigned in to the ItemDefinition</dd></dl>
 
 </div>
 </div>

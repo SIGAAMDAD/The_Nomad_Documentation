@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['yearly_0',['Yearly',['../struct_renown_1_1_world_1_1_settlements_1_1_yearly.html',1,'Renown::World::Settlements']]]
+  ['zurgutgrunt_0',['ZurgutGrunt',['../class_renown_1_1_thinkers_1_1_zurgut_grunt.html',1,'Renown::Thinkers']]],
+  ['zurguthulk_1',['ZurgutHulk',['../class_renown_1_1_thinkers_1_1_zurgut_hulk.html',1,'Renown::Thinkers']]]
 ];

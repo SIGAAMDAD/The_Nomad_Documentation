@@ -91,23 +91,91 @@ $(function(){initNavTree('struct_player_system_1_1_player_stat-1-g.html','','str
   <div class="headertitle"><div class="title">PlayerSystem.PlayerStat&lt; T &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>For storing player stats such as max health, max rage, etc. made this way to allow for rune and boon buffs/debuffs.  
+ <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa74b136812048d2493493f131c9b33c5" id="r_aa74b136812048d2493493f131c9b33c5"><td class="memItemLeft" align="right" valign="top"><a id="aa74b136812048d2493493f131c9b33c5" name="aa74b136812048d2493493f131c9b33c5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>PlayerStat</b> (T baseValue, T min, T max)</td></tr>
+<tr class="memitem:aa74b136812048d2493493f131c9b33c5" id="r_aa74b136812048d2493493f131c9b33c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa74b136812048d2493493f131c9b33c5">PlayerStat</a> (T baseValue, T min, T max)</td></tr>
+<tr class="memdesc:aa74b136812048d2493493f131c9b33c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a PlayerStat with the provided values.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a80ef2c69ce77ceefe2385a93563a572e" id="r_a80ef2c69ce77ceefe2385a93563a572e"><td class="memItemLeft" align="right" valign="top"><a id="a80ef2c69ce77ceefe2385a93563a572e" name="a80ef2c69ce77ceefe2385a93563a572e"></a>
 readonly T&#160;</td><td class="memItemRight" valign="bottom"><b>BaseValue</b></td></tr>
+<tr class="memdesc:a80ef2c69ce77ceefe2385a93563a572e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The value assigned to the struct at compile time. <br /></td></tr>
 <tr class="memitem:a44909ca327cc18a629e36151a5de3d76" id="r_a44909ca327cc18a629e36151a5de3d76"><td class="memItemLeft" align="right" valign="top"><a id="a44909ca327cc18a629e36151a5de3d76" name="a44909ca327cc18a629e36151a5de3d76"></a>
 readonly T&#160;</td><td class="memItemRight" valign="bottom"><b>MaxValue</b></td></tr>
+<tr class="memdesc:a44909ca327cc18a629e36151a5de3d76"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum value allowed for the stat assigned at compile time. <br /></td></tr>
 <tr class="memitem:ac95a950fd2fb69d59fd1faff5ef1c93b" id="r_ac95a950fd2fb69d59fd1faff5ef1c93b"><td class="memItemLeft" align="right" valign="top"><a id="ac95a950fd2fb69d59fd1faff5ef1c93b" name="ac95a950fd2fb69d59fd1faff5ef1c93b"></a>
 readonly T&#160;</td><td class="memItemRight" valign="bottom"><b>MinValue</b></td></tr>
+<tr class="memdesc:ac95a950fd2fb69d59fd1faff5ef1c93b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum value allowed for the stat assigned at compile time. <br /></td></tr>
 <tr class="memitem:aff3ca36763f30cb298cd33c218caaab5" id="r_aff3ca36763f30cb298cd33c218caaab5"><td class="memItemLeft" align="right" valign="top"><a id="aff3ca36763f30cb298cd33c218caaab5" name="aff3ca36763f30cb298cd33c218caaab5"></a>
 T&#160;</td><td class="memItemRight" valign="bottom"><b>Value</b></td></tr>
+<tr class="memdesc:aff3ca36763f30cb298cd33c218caaab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The value that can be changed and the value that is read at runtime. <br /></td></tr>
 </table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>For storing player stats such as max health, max rage, etc. made this way to allow for rune and boon buffs/debuffs. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The type of stat, must be a primitive</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="typeconstraint">
+<dl><dt><b>Type Constraints</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>struct</em></td><td>&#160;</td></tr>
+</table>
+</dd>
+</dl>
+</div>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="aa74b136812048d2493493f131c9b33c5" name="aa74b136812048d2493493f131c9b33c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa74b136812048d2493493f131c9b33c5">&#9670;&#160;</a></span>PlayerStat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PlayerSystem.PlayerStat&lt; T &gt;.PlayerStat </td>
+          <td>(</td>
+          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>baseValue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>min</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>max</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a PlayerStat with the provided values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">baseValue</td><td></td></tr>
+    <tr><td class="paramname">min</td><td></td></tr>
+    <tr><td class="paramname">max</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>scripts/PlayerSystem/<b>PlayerStat.cs</b></li>
 </ul>

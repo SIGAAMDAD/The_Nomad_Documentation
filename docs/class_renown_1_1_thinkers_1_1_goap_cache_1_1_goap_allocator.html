@@ -91,16 +91,142 @@ $(function(){initNavTree('class_renown_1_1_thinkers_1_1_goap_cache_1_1_goap_allo
   <div class="headertitle"><div class="title">Renown.Thinkers.GoapCache.GoapAllocator Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Allocates the appropriate sets of goals, actions, and sensors for a provided thinkerId.  
+ <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a62660258706d96a8f4fc8ddb56d0dfd1" id="r_a62660258706d96a8f4fc8ddb56d0dfd1"><td class="memItemLeft" align="right" valign="top"><a id="a62660258706d96a8f4fc8ddb56d0dfd1" name="a62660258706d96a8f4fc8ddb56d0dfd1"></a>
-static List&lt; <a class="el" href="class_mountain_goap_1_1_action.html">MountainGoap.Action</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetActionList</b> (string thinkerId)</td></tr>
-<tr class="memitem:a550d6ff3b2007ab03822766a8b5678d4" id="r_a550d6ff3b2007ab03822766a8b5678d4"><td class="memItemLeft" align="right" valign="top"><a id="a550d6ff3b2007ab03822766a8b5678d4" name="a550d6ff3b2007ab03822766a8b5678d4"></a>
-static List&lt; <a class="el" href="class_mountain_goap_1_1_base_goal.html">MountainGoap.BaseGoal</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGoalList</b> (string thinkerId)</td></tr>
-<tr class="memitem:a04b28c51e4cabee35456f710f6b731f4" id="r_a04b28c51e4cabee35456f710f6b731f4"><td class="memItemLeft" align="right" valign="top"><a id="a04b28c51e4cabee35456f710f6b731f4" name="a04b28c51e4cabee35456f710f6b731f4"></a>
-static List&lt; <a class="el" href="class_mountain_goap_1_1_sensor.html">MountainGoap.Sensor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSensorList</b> (string thinkerId)</td></tr>
+<tr class="memitem:a62660258706d96a8f4fc8ddb56d0dfd1" id="r_a62660258706d96a8f4fc8ddb56d0dfd1"><td class="memItemLeft" align="right" valign="top">static List&lt; MountainGoap.Action &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62660258706d96a8f4fc8ddb56d0dfd1">GetActionList</a> (string thinkerId)</td></tr>
+<tr class="memdesc:a62660258706d96a8f4fc8ddb56d0dfd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a list of valid MountainGoap.Action from a file cache in res://resources/goap_cache/[insert thinker id]_goap_list.tres.  <br /></td></tr>
+<tr class="memitem:a550d6ff3b2007ab03822766a8b5678d4" id="r_a550d6ff3b2007ab03822766a8b5678d4"><td class="memItemLeft" align="right" valign="top">static List&lt; MountainGoap.BaseGoal &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a550d6ff3b2007ab03822766a8b5678d4">GetGoalList</a> (string thinkerId)</td></tr>
+<tr class="memdesc:a550d6ff3b2007ab03822766a8b5678d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a list of valid MountainGoap.Goal from a file cache in res://resources/goap_cache/[insert thinker id]_goap_list.tres.  <br /></td></tr>
+<tr class="memitem:a04b28c51e4cabee35456f710f6b731f4" id="r_a04b28c51e4cabee35456f710f6b731f4"><td class="memItemLeft" align="right" valign="top">static List&lt; MountainGoap.Sensor &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04b28c51e4cabee35456f710f6b731f4">GetSensorList</a> (string thinkerId)</td></tr>
+<tr class="memdesc:a04b28c51e4cabee35456f710f6b731f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a list of valid MountainGoap.Sensor from a file cache in res://resources/goap_cache/[insert thinker id]_goap_list.tres.  <br /></td></tr>
 </table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Allocates the appropriate sets of goals, actions, and sensors for a provided thinkerId. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a62660258706d96a8f4fc8ddb56d0dfd1" name="a62660258706d96a8f4fc8ddb56d0dfd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62660258706d96a8f4fc8ddb56d0dfd1">&#9670;&#160;</a></span>GetActionList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; MountainGoap.Action &gt; Renown.Thinkers.GoapCache.GoapAllocator.GetActionList </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>thinkerId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a list of valid MountainGoap.Action from a file cache in res://resources/goap_cache/[insert thinker id]_goap_list.tres. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thinkerId</td><td>The id of the thinker</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>List of valid actions provided in the cache file</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td>Thrown if thinkerId is null or empty</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a550d6ff3b2007ab03822766a8b5678d4" name="a550d6ff3b2007ab03822766a8b5678d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a550d6ff3b2007ab03822766a8b5678d4">&#9670;&#160;</a></span>GetGoalList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; MountainGoap.BaseGoal &gt; Renown.Thinkers.GoapCache.GoapAllocator.GetGoalList </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>thinkerId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a list of valid MountainGoap.Goal from a file cache in res://resources/goap_cache/[insert thinker id]_goap_list.tres. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thinkerId</td><td>The id of the thinker</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>List of valid goals provided in the cache file</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td>Thrown if thinkerId is null or empty</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a04b28c51e4cabee35456f710f6b731f4" name="a04b28c51e4cabee35456f710f6b731f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04b28c51e4cabee35456f710f6b731f4">&#9670;&#160;</a></span>GetSensorList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; MountainGoap.Sensor &gt; Renown.Thinkers.GoapCache.GoapAllocator.GetSensorList </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>thinkerId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a list of valid MountainGoap.Sensor from a file cache in res://resources/goap_cache/[insert thinker id]_goap_list.tres. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thinkerId</td><td>The id of the thinker</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>List of valid actions provided in the actions cache file</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td>Thrown if thinkerId is null or empty</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>scripts/Renown/Thinkers/GoapCache/<b>GoapAllocator.cs</b></li>
 </ul>

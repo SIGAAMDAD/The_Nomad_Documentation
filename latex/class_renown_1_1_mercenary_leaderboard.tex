@@ -11,15 +11,13 @@ struct \mbox{\hyperlink{struct_renown_1_1_mercenary_leaderboard_1_1_leaderboard_
 \Hypertarget{class_renown_1_1_mercenary_leaderboard_aac59cd3126859e14084cb8b848defd55}\label{class_renown_1_1_mercenary_leaderboard_aac59cd3126859e14084cb8b848defd55} 
 static void {\bfseries Init} ()
 \item 
-\Hypertarget{class_renown_1_1_mercenary_leaderboard_a8ebb89a1b92a7f4a0c8e86da74f0f06f}\label{class_renown_1_1_mercenary_leaderboard_a8ebb89a1b92a7f4a0c8e86da74f0f06f} 
-static void {\bfseries Upload\+Data} (Contract\+Type type, int time\+Minutes, int time\+Seconds, int time\+Milliseconds, int score)
-\item 
+static void \mbox{\hyperlink{class_renown_1_1_mercenary_leaderboard_a8ebb89a1b92a7f4a0c8e86da74f0f06f}{Upload\+Data}} (Contract\+Type type, int time\+Minutes, int time\+Seconds, int time\+Milliseconds, int score)
+\begin{DoxyCompactList}\small\item\em The score with all the bonuses should be calculated before calling this. \end{DoxyCompactList}\item 
 \Hypertarget{class_renown_1_1_mercenary_leaderboard_a428739a44b6f930554c63be1e01fce79}\label{class_renown_1_1_mercenary_leaderboard_a428739a44b6f930554c63be1e01fce79} 
 static \mbox{\hyperlink{struct_renown_1_1_mercenary_leaderboard_1_1_leaderboard_entry}{Leaderboard\+Entry}}\mbox{[}$\,$\mbox{]} {\bfseries Get\+Leaderboard\+Entries} ()
 \item 
-\Hypertarget{class_renown_1_1_mercenary_leaderboard_aa97458607370399f756d322a9046702f}\label{class_renown_1_1_mercenary_leaderboard_aa97458607370399f756d322a9046702f} 
-static void {\bfseries Start\+Bounty\+Hunt} (CSteam\+ID target\+Id)
-\end{DoxyCompactItemize}
+static void \mbox{\hyperlink{class_renown_1_1_mercenary_leaderboard_aa97458607370399f756d322a9046702f}{Start\+Bounty\+Hunt}} (CSteam\+ID target\+Id)
+\begin{DoxyCompactList}\small\item\em Allows the local player to "{}invade"{} the top mercenary\textquotesingle{}s world and collect the bounty on their head. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
@@ -29,6 +27,49 @@ static Dictionary$<$ int, \mbox{\hyperlink{struct_renown_1_1_mercenary_leaderboa
 \Hypertarget{class_renown_1_1_mercenary_leaderboard_a184347a2f3828fe6b1e7e7f21f293c6f}\label{class_renown_1_1_mercenary_leaderboard_a184347a2f3828fe6b1e7e7f21f293c6f} 
 static int {\bfseries Leaderboard\+Entry\+Count} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_renown_1_1_mercenary_leaderboard_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_renown_1_1_mercenary_leaderboard_aa97458607370399f756d322a9046702f}\index{Renown.MercenaryLeaderboard@{Renown.MercenaryLeaderboard}!StartBountyHunt@{StartBountyHunt}}
+\index{StartBountyHunt@{StartBountyHunt}!Renown.MercenaryLeaderboard@{Renown.MercenaryLeaderboard}}
+\doxysubsubsection{\texorpdfstring{StartBountyHunt()}{StartBountyHunt()}}
+{\footnotesize\ttfamily \label{class_renown_1_1_mercenary_leaderboard_aa97458607370399f756d322a9046702f} 
+void Renown.\+Mercenary\+Leaderboard.\+Start\+Bounty\+Hunt (\begin{DoxyParamCaption}\item[{CSteam\+ID}]{target\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Allows the local player to "{}invade"{} the top mercenary\textquotesingle{}s world and collect the bounty on their head. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target\+Id} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_renown_1_1_mercenary_leaderboard_a8ebb89a1b92a7f4a0c8e86da74f0f06f}\index{Renown.MercenaryLeaderboard@{Renown.MercenaryLeaderboard}!UploadData@{UploadData}}
+\index{UploadData@{UploadData}!Renown.MercenaryLeaderboard@{Renown.MercenaryLeaderboard}}
+\doxysubsubsection{\texorpdfstring{UploadData()}{UploadData()}}
+{\footnotesize\ttfamily \label{class_renown_1_1_mercenary_leaderboard_a8ebb89a1b92a7f4a0c8e86da74f0f06f} 
+void Renown.\+Mercenary\+Leaderboard.\+Upload\+Data (\begin{DoxyParamCaption}\item[{Contract\+Type}]{type}{, }\item[{int}]{time\+Minutes}{, }\item[{int}]{time\+Seconds}{, }\item[{int}]{time\+Milliseconds}{, }\item[{int}]{score}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+The score with all the bonuses should be calculated before calling this. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \\
+\hline
+{\em time\+Minutes} & \\
+\hline
+{\em time\+Seconds} & \\
+\hline
+{\em time\+Milliseconds} & \\
+\hline
+{\em score} & \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

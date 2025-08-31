@@ -91,6 +91,9 @@ $(function(){initNavTree('class_free_flow.html','','class_free_flow-members'); }
   <div class="headertitle"><div class="title">FreeFlow Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Manages player combo state and berserker mode.  
+ <a href="#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for FreeFlow:</div>
 <div class="dyncontent">
@@ -100,31 +103,32 @@ Inheritance diagram for FreeFlow:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a565ef2d250192ecd45b7e418ea26bd9a" id="r_a565ef2d250192ecd45b7e418ea26bd9a"><td class="memItemLeft" align="right" valign="top"><a id="a565ef2d250192ecd45b7e418ea26bd9a" name="a565ef2d250192ecd45b7e418ea26bd9a"></a>
-delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>ComboFinishedEventHandler</b> (int nCombo)</td></tr>
-<tr class="memitem:a357ab3d977f096c10eae2c0e12d0f57d" id="r_a357ab3d977f096c10eae2c0e12d0f57d"><td class="memItemLeft" align="right" valign="top"><a id="a357ab3d977f096c10eae2c0e12d0f57d" name="a357ab3d977f096c10eae2c0e12d0f57d"></a>
-delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>NewHighestComboEventHandler</b> (int nCombo)</td></tr>
-<tr class="memitem:aa24cd86a07747b832970b91d088ef459" id="r_aa24cd86a07747b832970b91d088ef459"><td class="memItemLeft" align="right" valign="top"><a id="aa24cd86a07747b832970b91d088ef459" name="aa24cd86a07747b832970b91d088ef459"></a>
-delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>KillAddedEventHandler</b> (KillType nType)</td></tr>
+<tr class="memitem:ab96e0e7c503483461092d438895d825d" id="r_ab96e0e7c503483461092d438895d825d"><td class="memItemLeft" align="right" valign="top"><a id="ab96e0e7c503483461092d438895d825d" name="ab96e0e7c503483461092d438895d825d"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>ComboFinishedEventHandler</b> (int combo)</td></tr>
+<tr class="memitem:a5e662cc587807bb4088cc3a3fe9bb6a5" id="r_a5e662cc587807bb4088cc3a3fe9bb6a5"><td class="memItemLeft" align="right" valign="top"><a id="a5e662cc587807bb4088cc3a3fe9bb6a5" name="a5e662cc587807bb4088cc3a3fe9bb6a5"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>NewHighestComboEventHandler</b> (int combo)</td></tr>
+<tr class="memitem:a5147e856622022f2e35964b223c273e5" id="r_a5147e856622022f2e35964b223c273e5"><td class="memItemLeft" align="right" valign="top"><a id="a5147e856622022f2e35964b223c273e5" name="a5147e856622022f2e35964b223c273e5"></a>
+delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>KillAddedEventHandler</b> (KillType type)</td></tr>
 <tr class="memitem:a9ff2b0ddd900f74bfcfac9eb01b01d65" id="r_a9ff2b0ddd900f74bfcfac9eb01b01d65"><td class="memItemLeft" align="right" valign="top"><a id="a9ff2b0ddd900f74bfcfac9eb01b01d65" name="a9ff2b0ddd900f74bfcfac9eb01b01d65"></a>
 override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memdesc:a9ff2b0ddd900f74bfcfac9eb01b01d65"><td class="mdescLeft">&#160;</td><td class="mdescRight">godot initialization override <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a3b85befaab75564b83b9ef5e05b7bf6b" id="r_a3b85befaab75564b83b9ef5e05b7bf6b"><td class="memItemLeft" align="right" valign="top"><a id="a3b85befaab75564b83b9ef5e05b7bf6b" name="a3b85befaab75564b83b9ef5e05b7bf6b"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>AddKill</b> (KillType nType, int nScore)</td></tr>
-<tr class="memitem:a698e4d299c898c09a40a51907bb96eb0" id="r_a698e4d299c898c09a40a51907bb96eb0"><td class="memItemLeft" align="right" valign="top"><a id="a698e4d299c898c09a40a51907bb96eb0" name="a698e4d299c898c09a40a51907bb96eb0"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>IncreaseCombo</b> (int nAmount=1)</td></tr>
+<tr class="memitem:a4e6abd2910f1e70cc5748186cb7b4247" id="r_a4e6abd2910f1e70cc5748186cb7b4247"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e6abd2910f1e70cc5748186cb7b4247">AddKill</a> (KillType type, int score)</td></tr>
+<tr class="memdesc:a4e6abd2910f1e70cc5748186cb7b4247"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a kill to the current score of the encounter.  <br /></td></tr>
+<tr class="memitem:a70bbe26d48e18ca5eefcf825155d2df3" id="r_a70bbe26d48e18ca5eefcf825155d2df3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70bbe26d48e18ca5eefcf825155d2df3">IncreaseCombo</a> (int amount=1)</td></tr>
+<tr class="memdesc:a70bbe26d48e18ca5eefcf825155d2df3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increase the current freeflow combo counter by <b>amount</b>  <br /></td></tr>
 <tr class="memitem:af9679f29fc620491ba9e32207e96ff89" id="r_af9679f29fc620491ba9e32207e96ff89"><td class="memItemLeft" align="right" valign="top"><a id="af9679f29fc620491ba9e32207e96ff89" name="af9679f29fc620491ba9e32207e96ff89"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>EndCombo</b> ()</td></tr>
-<tr class="memitem:a9b85b2d60cc11dddd0e6fe7ac4c1c11c" id="r_a9b85b2d60cc11dddd0e6fe7ac4c1c11c"><td class="memItemLeft" align="right" valign="top"><a id="a9b85b2d60cc11dddd0e6fe7ac4c1c11c" name="a9b85b2d60cc11dddd0e6fe7ac4c1c11c"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>IncreaseTotalScore</b> (int nAmount)</td></tr>
+<tr class="memitem:a1ad37ecea54e9c76e52ca3b121780b40" id="r_a1ad37ecea54e9c76e52ca3b121780b40"><td class="memItemLeft" align="right" valign="top"><a id="a1ad37ecea54e9c76e52ca3b121780b40" name="a1ad37ecea54e9c76e52ca3b121780b40"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>IncreaseTotalScore</b> (int amount)</td></tr>
 <tr class="memitem:a034647d652aac0380eb810105b5fb9fd" id="r_a034647d652aac0380eb810105b5fb9fd"><td class="memItemLeft" align="right" valign="top"><a id="a034647d652aac0380eb810105b5fb9fd" name="a034647d652aac0380eb810105b5fb9fd"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateEncounterScore</b> ()</td></tr>
 <tr class="memitem:a24465eb8968570068ddd46195ec58ce8" id="r_a24465eb8968570068ddd46195ec58ce8"><td class="memItemLeft" align="right" valign="top"><a id="a24465eb8968570068ddd46195ec58ce8" name="a24465eb8968570068ddd46195ec58ce8"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>StartEncounter</b> ()</td></tr>
-<tr class="memitem:a135c0c8fb7e069204f47726237ba1f51" id="r_a135c0c8fb7e069204f47726237ba1f51"><td class="memItemLeft" align="right" valign="top"><a id="a135c0c8fb7e069204f47726237ba1f51" name="a135c0c8fb7e069204f47726237ba1f51"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>Hitstop</b> (float gameSpeed, float duration)</td></tr>
+<tr class="memitem:a135c0c8fb7e069204f47726237ba1f51" id="r_a135c0c8fb7e069204f47726237ba1f51"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a135c0c8fb7e069204f47726237ba1f51">Hitstop</a> (float gameSpeed, float duration)</td></tr>
+<tr class="memdesc:a135c0c8fb7e069204f47726237ba1f51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used for hitstop effects, exclusively for singleplayer.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
@@ -138,7 +142,128 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>MaxCombo</b> = 0<code>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>HeadshotCounter</b> = 0<code> [get]</code></td></tr>
 <tr class="memitem:abecd81582d53c6aead5627c4cf89f752" id="r_abecd81582d53c6aead5627c4cf89f752"><td class="memItemLeft" align="right" valign="top"><a id="abecd81582d53c6aead5627c4cf89f752" name="abecd81582d53c6aead5627c4cf89f752"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>TotalScore</b> = 0<code> [get]</code></td></tr>
+<tr class="memitem:a615e748d03f505869825d4904dc31afe" id="r_a615e748d03f505869825d4904dc31afe"><td class="memItemLeft" align="right" valign="top"><a id="a615e748d03f505869825d4904dc31afe" name="a615e748d03f505869825d4904dc31afe"></a>
+static ? <a class="el" href="class_free_flow.html">FreeFlow</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b><code> [get]</code></td></tr>
 </table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Manages player combo state and berserker mode. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a4e6abd2910f1e70cc5748186cb7b4247" name="a4e6abd2910f1e70cc5748186cb7b4247"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e6abd2910f1e70cc5748186cb7b4247">&#9670;&#160;</a></span>AddKill()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FreeFlow.AddKill </td>
+          <td>(</td>
+          <td class="paramtype">KillType</td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>score</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds a kill to the current score of the encounter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td></td></tr>
+    <tr><td class="paramname">score</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a135c0c8fb7e069204f47726237ba1f51" name="a135c0c8fb7e069204f47726237ba1f51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a135c0c8fb7e069204f47726237ba1f51">&#9670;&#160;</a></span>Hitstop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FreeFlow.Hitstop </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>gameSpeed</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>duration</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Used for hitstop effects, exclusively for singleplayer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gameSpeed</td><td>What to set Engine.TimeScale to</td></tr>
+    <tr><td class="paramname">duration</td><td>The duration (in seconds) of the effect</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentOutOfRangeException</td><td>Thrown if duration or gamespeed or duration is less than or equal to 0.0f</td></tr>
+    <tr><td class="paramname">InvalidOperationException</td><td>Thrown if <a class="el" href="class_free_flow.html" title="Manages player combo state and berserker mode.">FreeFlow</a> was called without being instantiated</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a70bbe26d48e18ca5eefcf825155d2df3" name="a70bbe26d48e18ca5eefcf825155d2df3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70bbe26d48e18ca5eefcf825155d2df3">&#9670;&#160;</a></span>IncreaseCombo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FreeFlow.IncreaseCombo </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>amount</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Increase the current freeflow combo counter by <b>amount</b> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">amount</td><td>The amount to increase the combo by</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>scripts/<b>FreeFlow.cs</b></li>
 </ul>

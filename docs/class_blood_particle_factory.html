@@ -91,6 +91,9 @@ $(function(){initNavTree('class_blood_particle_factory.html','','class_blood_par
   <div class="headertitle"><div class="title">BloodParticleFactory Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The singleton autoload responsible for managing blood splatter effects.  
+ <a href="#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for BloodParticleFactory:</div>
 <div class="dyncontent">
@@ -102,14 +105,96 @@ Inheritance diagram for BloodParticleFactory:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7e8b5ff327c74d8dee5c0d904178719d" id="r_a7e8b5ff327c74d8dee5c0d904178719d"><td class="memItemLeft" align="right" valign="top"><a id="a7e8b5ff327c74d8dee5c0d904178719d" name="a7e8b5ff327c74d8dee5c0d904178719d"></a>
 override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memdesc:a7e8b5ff327c74d8dee5c0d904178719d"><td class="mdescLeft">&#160;</td><td class="mdescRight">godot initialization override <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab01a983841344d3ae36174c5d39abaab" id="r_ab01a983841344d3ae36174c5d39abaab"><td class="memItemLeft" align="right" valign="top"><a id="ab01a983841344d3ae36174c5d39abaab" name="ab01a983841344d3ae36174c5d39abaab"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>Create</b> (Vector2 from, Vector2 to)</td></tr>
-<tr class="memitem:a30bcdc56402813769be530d704a17ebb" id="r_a30bcdc56402813769be530d704a17ebb"><td class="memItemLeft" align="right" valign="top"><a id="a30bcdc56402813769be530d704a17ebb" name="a30bcdc56402813769be530d704a17ebb"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateDeferred</b> (Vector2 from, Vector2 to)</td></tr>
+<tr class="memitem:ab01a983841344d3ae36174c5d39abaab" id="r_ab01a983841344d3ae36174c5d39abaab"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab01a983841344d3ae36174c5d39abaab">Create</a> (Vector2 from, Vector2 to)</td></tr>
+<tr class="memdesc:ab01a983841344d3ae36174c5d39abaab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a blood splatter.  <br /></td></tr>
+<tr class="memitem:a30bcdc56402813769be530d704a17ebb" id="r_a30bcdc56402813769be530d704a17ebb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30bcdc56402813769be530d704a17ebb">CreateDeferred</a> (Vector2 from, Vector2 to)</td></tr>
+<tr class="memdesc:a30bcdc56402813769be530d704a17ebb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a blood splatter, but on a separate thread, this automatically queues up a Godot API deferred call.  <br /></td></tr>
 </table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The singleton autoload responsible for managing blood splatter effects. </p>
+<p>Is thread safe only if called into using <b><a class="el" href="#a30bcdc56402813769be530d704a17ebb" title="Create a blood splatter, but on a separate thread, this automatically queues up a Godot API deferred ...">BloodParticleFactory.CreateDeferred</a></b> </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="ab01a983841344d3ae36174c5d39abaab" name="ab01a983841344d3ae36174c5d39abaab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab01a983841344d3ae36174c5d39abaab">&#9670;&#160;</a></span>Create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BloodParticleFactory.Create </td>
+          <td>(</td>
+          <td class="paramtype">Vector2</td>          <td class="paramname"><span class="paramname"><em>from</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector2</td>          <td class="paramname"><span class="paramname"><em>to</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a blood splatter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">from</td><td></td></tr>
+    <tr><td class="paramname">to</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a30bcdc56402813769be530d704a17ebb" name="a30bcdc56402813769be530d704a17ebb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30bcdc56402813769be530d704a17ebb">&#9670;&#160;</a></span>CreateDeferred()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BloodParticleFactory.CreateDeferred </td>
+          <td>(</td>
+          <td class="paramtype">Vector2</td>          <td class="paramname"><span class="paramname"><em>from</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector2</td>          <td class="paramname"><span class="paramname"><em>to</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a blood splatter, but on a separate thread, this automatically queues up a Godot API deferred call. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">from</td><td></td></tr>
+    <tr><td class="paramname">to</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#ab01a983841344d3ae36174c5d39abaab" title="Create a blood splatter.">Create</a></dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>scripts/effects/<b>BloodParticleFactory.cs</b></li>
 </ul>

@@ -1,5 +1,10 @@
 \doxysection{Archive\+System Class Reference}
 \hypertarget{class_archive_system}{}\label{class_archive_system}\index{ArchiveSystem@{ArchiveSystem}}
+
+
+the main singleton for managing game save data  
+
+
 Inheritance diagram for Archive\+System\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -39,19 +44,17 @@ static void {\bfseries Create\+Slot} ()
 \Hypertarget{class_archive_system_a356b40183e10538cbdb14707e3b3a838}\label{class_archive_system_a356b40183e10538cbdb14707e3b3a838} 
 static bool {\bfseries Slot\+Exists} (int slot)
 \item 
-\Hypertarget{class_archive_system_a5607d42b713ff480761c22e2128a6b3a}\label{class_archive_system_a5607d42b713ff480761c22e2128a6b3a} 
-static void {\bfseries Delete\+Save} (int slot)
-\item 
+static void \mbox{\hyperlink{class_archive_system_a5607d42b713ff480761c22e2128a6b3a}{Delete\+Save}} (int slot)
+\begin{DoxyCompactList}\small\item\em Deletes the given save slot from both local storage and steam cloud storage. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{class_archive_system_a9962d0150f259a457de4fa070e988e68}{Save\+Game}} (int slot)
 \begin{DoxyCompactList}\small\item\em Archives current game state, called when exiting game, activating a firelink, or resting at a meliora. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{class_archive_system_ab2d9601ef67a47986b2adb32d21080f2}{Load\+Game}} (int slot)
 \begin{DoxyCompactList}\small\item\em Loads and initializes game state from the provided save slot file. \end{DoxyCompactList}\item 
 \Hypertarget{class_archive_system_af2372f8d293ffc912a5c3bf40b2af640}\label{class_archive_system_af2372f8d293ffc912a5c3bf40b2af640} 
 static void {\bfseries Clear} ()
-\item 
-\Hypertarget{class_archive_system_a5e6d1875510619d5b728b6cf6e18f643}\label{class_archive_system_a5e6d1875510619d5b728b6cf6e18f643} 
-static ? \mbox{\hyperlink{class_save_system_1_1_save_section_reader}{Save\+Section\+Reader}} {\bfseries Get\+Section} (string name)
-\item 
+\begin{DoxyCompactList}\small\item\em Clears the section cache when loading a new save. \end{DoxyCompactList}\item 
+static ? \mbox{\hyperlink{class_save_system_1_1_save_section_reader}{Save\+Section\+Reader}} \mbox{\hyperlink{class_archive_system_a5e6d1875510619d5b728b6cf6e18f643}{Get\+Section}} (string name)
+\begin{DoxyCompactList}\small\item\em Performs a lookup for a section based on the name. \end{DoxyCompactList}\item 
 \Hypertarget{class_archive_system_a87240a02e085d82563a4bf63749e9f14}\label{class_archive_system_a87240a02e085d82563a4bf63749e9f14} 
 static void {\bfseries Check\+Save\+Data} ()
 \end{DoxyCompactItemize}
@@ -78,9 +81,50 @@ static System.\+IO.? Binary\+Writer {\bfseries Save\+Writer} = null\hspace{0.3cm
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+the main singleton for managing game save data 
+
 \label{doc-func-members}
 \Hypertarget{class_archive_system_doc-func-members}
 \doxysubsection{Member Function Documentation}
+\Hypertarget{class_archive_system_a5607d42b713ff480761c22e2128a6b3a}\index{ArchiveSystem@{ArchiveSystem}!DeleteSave@{DeleteSave}}
+\index{DeleteSave@{DeleteSave}!ArchiveSystem@{ArchiveSystem}}
+\doxysubsubsection{\texorpdfstring{DeleteSave()}{DeleteSave()}}
+{\footnotesize\ttfamily \label{class_archive_system_a5607d42b713ff480761c22e2128a6b3a} 
+void Archive\+System.\+Delete\+Save (\begin{DoxyParamCaption}\item[{int}]{slot}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Deletes the given save slot from both local storage and steam cloud storage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em slot} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_archive_system_a5e6d1875510619d5b728b6cf6e18f643}\index{ArchiveSystem@{ArchiveSystem}!GetSection@{GetSection}}
+\index{GetSection@{GetSection}!ArchiveSystem@{ArchiveSystem}}
+\doxysubsubsection{\texorpdfstring{GetSection()}{GetSection()}}
+{\footnotesize\ttfamily \label{class_archive_system_a5e6d1875510619d5b728b6cf6e18f643} 
+? \mbox{\hyperlink{class_save_system_1_1_save_section_reader}{Save\+Section\+Reader}} Archive\+System.\+Get\+Section (\begin{DoxyParamCaption}\item[{string}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Performs a lookup for a section based on the name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
 \Hypertarget{class_archive_system_ab2d9601ef67a47986b2adb32d21080f2}\index{ArchiveSystem@{ArchiveSystem}!LoadGame@{LoadGame}}
 \index{LoadGame@{LoadGame}!ArchiveSystem@{ArchiveSystem}}
 \doxysubsubsection{\texorpdfstring{LoadGame()}{LoadGame()}}

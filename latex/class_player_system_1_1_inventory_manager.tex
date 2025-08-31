@@ -1,5 +1,10 @@
 \doxysection{Player\+System.\+Inventory\+Manager Class Reference}
 \hypertarget{class_player_system_1_1_inventory_manager}{}\label{class_player_system_1_1_inventory_manager}\index{PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}}
+
+
+Manages the player\textquotesingle{}s local inventory.  
+
+
 Inheritance diagram for Player\+System.\+Inventory\+Manager\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -12,29 +17,454 @@ Inheritance diagram for Player\+System.\+Inventory\+Manager\+:\begin{figure}[H]
 \Hypertarget{class_player_system_1_1_inventory_manager_a08c417c5f5b967e832f2b044dfa5a756}\label{class_player_system_1_1_inventory_manager_a08c417c5f5b967e832f2b044dfa5a756} 
 delegate void {\bfseries Weapon\+Status\+Updated\+Event\+Handler} (\mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}} entity, Weapon\+Entity.\+Properties properties)
 \item 
-\Hypertarget{class_player_system_1_1_inventory_manager_afd1742c51073dbadecf0d1e577699a35}\label{class_player_system_1_1_inventory_manager_afd1742c51073dbadecf0d1e577699a35} 
-void {\bfseries Drop\+Weapon} (int hash\+Code)
+\mbox{\hyperlink{class_player_system_1_1_inventory_manager_a9c84ea6edfc564c326a7a6fe65bf2c02}{Inventory\+Manager}} (\mbox{\hyperlink{class_player}{Player}}? player)
 \item 
-\Hypertarget{class_player_system_1_1_inventory_manager_a5cecad4f3198a93cab3f0c0c93351566}\label{class_player_system_1_1_inventory_manager_a5cecad4f3198a93cab3f0c0c93351566} 
-void {\bfseries Drop\+Ammo} (int hash\+Code)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_player_system_1_1_inventory_manager_a4ca9e2535f3d3bd161764cbcdba20d0a}{Set\+Equipped\+Weapon}} (int weapon\+Slot)
+\begin{DoxyCompactList}\small\item\em Sets the currently equipped \doxylink{class_player_system_1_1_weapon_slot}{Weapon\+Slot}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_player_system_1_1_inventory_manager_a310018f11abaae84b3e7380a0e0f8327}{Decrease\+Money}} (float amount)
+\begin{DoxyCompactList}\small\item\em Decreases the player\textquotesingle{}s money by the amount provided. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_player_system_1_1_inventory_manager_a5a8b8e9fdd32a8f339f780fd9d5ee9ea}{Increase\+Money}} (float amount)
+\begin{DoxyCompactList}\small\item\em Increases the player\textquotesingle{}s money by the amount provided. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_system_1_1_inventory_manager_a665e0a997be57d2aeee9c6b3e904ff80}{Set\+Primary\+Weapon}} (\mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}} weapon)
+\begin{DoxyCompactList}\small\item\em Sets the \doxylink{class_weapon_entity}{Weapon\+Entity} in the Weapon\+Slot\+Index.\+Heavy\+Primary slot. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_system_1_1_inventory_manager_aab2e5c869eba6b51db6213831ffb7d10}{Set\+Heavy\+Primary\+Weapon}} (\mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}} weapon)
+\begin{DoxyCompactList}\small\item\em Sets the \doxylink{class_weapon_entity}{Weapon\+Entity} in the Weapon\+Slot\+Index.\+Heavy\+Primary slot. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_system_1_1_inventory_manager_a5b643df12710d08731fa00760e3453b5}{Set\+Sidearm\+Weapon}} (\mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}} weapon)
+\begin{DoxyCompactList}\small\item\em Sets the \doxylink{class_weapon_entity}{Weapon\+Entity} in the Weapon\+Slot\+Index.\+Sidearm slot. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_system_1_1_inventory_manager_ae3776ad9ed9726256a8ebe57235fc610}{Set\+Heavy\+Sidearm\+Weapon}} (\mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}} weapon)
+\begin{DoxyCompactList}\small\item\em Sets the \doxylink{class_weapon_entity}{Weapon\+Entity} in the Weapon\+Slot\+Index.\+Heavy\+Sidearm slot. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player_system_1_1_weapon_slot}{Weapon\+Slot}}? \mbox{\hyperlink{class_player_system_1_1_inventory_manager_adedb123bc6278b5f31be9447f33e3630}{Get\+Primary\+Weapon}} ()
+\begin{DoxyCompactList}\small\item\em Fetches the currently equipped weapon in the "{}\+Primary"{} slot. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player_system_1_1_weapon_slot}{Weapon\+Slot}}? \mbox{\hyperlink{class_player_system_1_1_inventory_manager_a3d34bf78cf744b6520d2c6d4430153c7}{Get\+Heavy\+Primary\+Weapon}} ()
+\begin{DoxyCompactList}\small\item\em Fetches the currently equipped weapon in the "{}\+Heavy Primary"{} slot. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player_system_1_1_weapon_slot}{Weapon\+Slot}}? \mbox{\hyperlink{class_player_system_1_1_inventory_manager_ad746ab3f8243a9adb5e8471746efb3f6}{Get\+Sidearm\+Weapon}} ()
+\begin{DoxyCompactList}\small\item\em Fetches the currently equipped weapon in the "{}\+Sidearm"{} slot. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player_system_1_1_weapon_slot}{Weapon\+Slot}}? \mbox{\hyperlink{class_player_system_1_1_inventory_manager_a757d375882e0bc0685ba80d74d5770da}{Get\+Heavy\+Sidearm\+Weapon}} ()
+\begin{DoxyCompactList}\small\item\em Fetches the currently equipped weapon in the "{}\+Heavy Sidearm"{} slot. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_system_1_1_inventory_manager_afd0f2802aecd4a88b35552679d8d4f17}{Save}} (\mbox{\hyperlink{class_save_system_1_1_save_section_writer}{Save\+System.\+Save\+Section\+Writer}} writer)
+\begin{DoxyCompactList}\small\item\em Writes the player\textquotesingle{}s current inventory to disk. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_system_1_1_inventory_manager_a75762f81ecedb651ba04a0eece33950c}{Load}} (\mbox{\hyperlink{class_save_system_1_1_save_section_reader}{Save\+System.\+Save\+Section\+Reader}} reader, \mbox{\hyperlink{class_player}{Player}} player)
+\begin{DoxyCompactList}\small\item\em Loads inventory state from disk. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_system_1_1_inventory_manager_a24d9342bb5f8f1e092abcfb668327e8a}{Load\+Weapon}} (\mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}} weapon, string ammo, int slot)
+\begin{DoxyCompactList}\small\item\em Loads the provided weapon object into a weapon slot and initializes ammo reserves if needed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_system_1_1_inventory_manager_aa4eb830022f1c476bc4121995de82611}{Pickup\+Ammo}} (in \mbox{\hyperlink{class_interactables_1_1_item_pickup}{Item\+Pickup}} ammo)
+\begin{DoxyCompactList}\small\item\em Adds an \doxylink{class_interactables_1_1_item_pickup}{Item\+Pickup}\textquotesingle{}s ammo data to the \doxylink{class_player_system_1_1_inventory_manager_a025335ac9ef4f5c34d4c3a8dca948120}{Ammo\+Stacks} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_system_1_1_inventory_manager_ac8c0ec56fc73116cfe569604f0367684}{Pickup\+Weapon}} (in \mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}} weapon)
+\begin{DoxyCompactList}\small\item\em Picks up a \doxylink{class_weapon_entity}{Weapon\+Entity}, stores it in the \doxylink{class_player_system_1_1_inventory_manager_a9ada653fe1187ee236478dc4eb1cb9de}{Weapons\+Stack}, and if there\textquotesingle{}s no weapon in the slots, it\textquotesingle{}ll be automatically equipped. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_system_1_1_inventory_manager_afd1742c51073dbadecf0d1e577699a35}{Drop\+Weapon}} (int hash\+Code)
+\begin{DoxyCompactList}\small\item\em Removes a \doxylink{class_weapon_entity}{Weapon\+Entity} object from the inventory, and unequips the weapon if it was previously equipped. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_system_1_1_inventory_manager_a5cecad4f3198a93cab3f0c0c93351566}{Drop\+Ammo}} (int hash\+Code)
+\begin{DoxyCompactList}\small\item\em Removes an \doxylink{class_ammo_stack}{Ammo\+Stack} from the inventory. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{class_player_system_1_1_inventory_manager_acf45e8416036c41fe4053dbb0702c807}\label{class_player_system_1_1_inventory_manager_acf45e8416036c41fe4053dbb0702c807} 
 static readonly int {\bfseries MAX\+\_\+\+WEAPON\+\_\+\+SLOTS} = 4
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The maximum number of weapons a player can have on them at a time. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_system_1_1_inventory_manager_abbdb11d997dce81874f2d828f49db63e}\label{class_player_system_1_1_inventory_manager_abbdb11d997dce81874f2d828f49db63e} 
+static readonly float {\bfseries MAXIMUM\+\_\+\+INVENTORY\+\_\+\+WEIGHT} = 500.\+0f
+\begin{DoxyCompactList}\small\item\em The maximum amount of weight a player can carry on them before becoming Player.\+Player\+Flags.\+Encumbured, thus slowing them down. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_system_1_1_inventory_manager_a2f921a5e32c7cc3aee01dcff55b2bacd}\label{class_player_system_1_1_inventory_manager_a2f921a5e32c7cc3aee01dcff55b2bacd} 
+static readonly int {\bfseries MAXIMUM\+\_\+\+RUNE\+\_\+\+SLOTS} = 5
+\begin{DoxyCompactList}\small\item\em The maximum amount of weight the player is currently allowed to carry. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_system_1_1_inventory_manager_a6ee5e7a6b21a1c32b1facadea799c4a3}\label{class_player_system_1_1_inventory_manager_a6ee5e7a6b21a1c32b1facadea799c4a3} 
+static readonly int {\bfseries MAXIMUM\+\_\+\+QUICK\+\_\+\+ACCESS\+\_\+\+SLOTS} = 4
+\begin{DoxyCompactList}\small\item\em The maximum amount of item types that can be allocated to quick access slots. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_system_1_1_inventory_manager_a097c9703a6751e5c96cc9282f59c032a}\label{class_player_system_1_1_inventory_manager_a097c9703a6751e5c96cc9282f59c032a} 
+static readonly int {\bfseries MAX\+\_\+\+RUNES} = 5
+\begin{DoxyCompactList}\small\item\em The maximum amount of equippable runes a player can have at a time. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_system_1_1_inventory_manager_a632832902dcf032a8bd935af7e5d4414}\label{class_player_system_1_1_inventory_manager_a632832902dcf032a8bd935af7e5d4414} 
+static readonly int {\bfseries MAX\+\_\+\+PERKS} = 1
+\begin{DoxyCompactList}\small\item\em The maximum amount of equippable perks a player can have at a time. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{class_player_system_1_1_inventory_manager_ac19f2ddc1c072732f20cda28fb58b30a}\label{class_player_system_1_1_inventory_manager_ac19f2ddc1c072732f20cda28fb58b30a} 
-\mbox{\hyperlink{class_player_system_1_1_weapon_slot}{Weapon\+Slot}}\mbox{[}$\,$\mbox{]} {\bfseries Weapon\+Slots} = new \mbox{\hyperlink{class_player_system_1_1_weapon_slot}{Weapon\+Slot}}\mbox{[} MAX\+\_\+\+WEAPON\+\_\+\+SLOTS \mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
+\mbox{\hyperlink{class_player_system_1_1_weapon_slot}{Weapon\+Slot}}\mbox{[}$\,$\mbox{]} {\bfseries Weapon\+Slots} = new \mbox{\hyperlink{class_player_system_1_1_weapon_slot}{Weapon\+Slot}}\mbox{[} \mbox{\hyperlink{class_player_system_1_1_inventory_manager_acf45e8416036c41fe4053dbb0702c807}{MAX\+\_\+\+WEAPON\+\_\+\+SLOTS}} \mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The weapons that are currently equipped by the player. \end{DoxyCompactList}\item 
 \Hypertarget{class_player_system_1_1_inventory_manager_ac3979b5422ca6f55a133879ee217cb1d}\label{class_player_system_1_1_inventory_manager_ac3979b5422ca6f55a133879ee217cb1d} 
 int {\bfseries Current\+Weapon} = \mbox{\hyperlink{class_player_system_1_1_weapon_slot_af73055771aef2c168152b69449764e9f}{Weapon\+Slot.\+INVALID}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The weapon slot currently being used by the player. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_system_1_1_inventory_manager_a532d4e9ca5c90512643e4d4eb85e78bb}\label{class_player_system_1_1_inventory_manager_a532d4e9ca5c90512643e4d4eb85e78bb} 
+Hash\+Set$<$ \mbox{\hyperlink{class_player_system_1_1_perks_1_1_perk}{Perk}} $>$ {\bfseries Unlocked\+Boons}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The boons that the player has already found. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_system_1_1_inventory_manager_a6cc94be8228fa66f6c95d7672dfda112}\label{class_player_system_1_1_inventory_manager_a6cc94be8228fa66f6c95d7672dfda112} 
+Hash\+Set$<$ \mbox{\hyperlink{class_player_system_1_1_runes_1_1_rune}{Rune}} $>$ {\bfseries Unlocked\+Runes}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The runes that the player has already found. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_system_1_1_inventory_manager_a57cc1bd24a7fedbfd949ada7ff726dc7}\label{class_player_system_1_1_inventory_manager_a57cc1bd24a7fedbfd949ada7ff726dc7} 
+\mbox{\hyperlink{class_player_system_1_1_totems_1_1_totem}{Totem}} {\bfseries Totem}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The currently equipped \doxylink{class_player_system_1_1_totems_1_1_totem}{Player\+System.\+Totems.\+Totem} \end{DoxyCompactList}\item 
+\Hypertarget{class_player_system_1_1_inventory_manager_a5333109ed3b4c4acb397125842631cde}\label{class_player_system_1_1_inventory_manager_a5333109ed3b4c4acb397125842631cde} 
+\mbox{\hyperlink{class_player_system_1_1_perks_1_1_perk}{Perk}} {\bfseries Perk\+Slot}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The currently equipped \doxylink{class_player_system_1_1_perks_1_1_perk}{Player\+System.\+Perks.\+Perk} \end{DoxyCompactList}\item 
+\Hypertarget{class_player_system_1_1_inventory_manager_a64a3909e484eab1cf7eaddbbb1fee0ce}\label{class_player_system_1_1_inventory_manager_a64a3909e484eab1cf7eaddbbb1fee0ce} 
+\mbox{\hyperlink{class_player_system_1_1_runes_1_1_rune}{Rune}}?\mbox{[}$\,$\mbox{]} {\bfseries Rune\+Slots} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The currently equipped \doxylink{namespace_player_system_1_1_runes}{Runes}. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_system_1_1_inventory_manager_a5bb523d65c4a58f5eeec7e55c79c2cd5}\label{class_player_system_1_1_inventory_manager_a5bb523d65c4a58f5eeec7e55c79c2cd5} 
+\mbox{\hyperlink{class_player_system_1_1_consumable_stack}{Consumable\+Stack}}?\mbox{[}$\,$\mbox{]} {\bfseries Quick\+Access\+Slots} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The currently equipped items assigned to the in-\/game hotbar. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_system_1_1_inventory_manager_ab8aed2008a74b7fdfda5e638bc1430bd}\label{class_player_system_1_1_inventory_manager_ab8aed2008a74b7fdfda5e638bc1430bd} 
+Dictionary$<$ Godot\+Object, int $>$? {\bfseries Storage} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The permanent storage container for the inventory, where everything not being carried is stored. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_system_1_1_inventory_manager_a025335ac9ef4f5c34d4c3a8dca948120}\label{class_player_system_1_1_inventory_manager_a025335ac9ef4f5c34d4c3a8dca948120} 
+Godot.\+Collections.? Dictionary$<$ int, \mbox{\hyperlink{class_ammo_stack}{Ammo\+Stack}} $>$ {\bfseries Ammo\+Stacks}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The ammo currently being carried by the player. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_system_1_1_inventory_manager_a9ada653fe1187ee236478dc4eb1cb9de}\label{class_player_system_1_1_inventory_manager_a9ada653fe1187ee236478dc4eb1cb9de} 
+Godot.\+Collections.? Dictionary$<$ int, \mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}} $>$ {\bfseries Weapons\+Stack}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The weapons currently being carried by the player. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_system_1_1_inventory_manager_a5c838a40da365429d10e8c23fcaaa862}\label{class_player_system_1_1_inventory_manager_a5c838a40da365429d10e8c23fcaaa862} 
+Godot.\+Collections.? Dictionary$<$ int, \mbox{\hyperlink{class_player_system_1_1_consumable_stack}{Consumable\+Stack}} $>$ {\bfseries Consumable\+Stacks}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The consumables currently being carried by the player. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_system_1_1_inventory_manager_a4644824e33080fc5fc259d2fff4942e0}\label{class_player_system_1_1_inventory_manager_a4644824e33080fc5fc259d2fff4942e0} 
+float {\bfseries Money} = 0.\+0f\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The amount of money the player has. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_system_1_1_inventory_manager_a60dd9491a838002645616c51b2a11bd5}\label{class_player_system_1_1_inventory_manager_a60dd9491a838002645616c51b2a11bd5} 
+float {\bfseries Total\+Inventory\+Weight} = 0.\+0f\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The current total weight of inventory items. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages the player\textquotesingle{}s local inventory. 
+
+\label{doc-constructors}
+\Hypertarget{class_player_system_1_1_inventory_manager_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_player_system_1_1_inventory_manager_a9c84ea6edfc564c326a7a6fe65bf2c02}\index{PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}!InventoryManager@{InventoryManager}}
+\index{InventoryManager@{InventoryManager}!PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}}
+\doxysubsubsection{\texorpdfstring{InventoryManager()}{InventoryManager()}}
+{\footnotesize\ttfamily \label{class_player_system_1_1_inventory_manager_a9c84ea6edfc564c326a7a6fe65bf2c02} 
+Player\+System.\+Inventory\+Manager.\+Inventory\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}?}]{player}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_player_system_1_1_inventory_manager_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_player_system_1_1_inventory_manager_a310018f11abaae84b3e7380a0e0f8327}\index{PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}!DecreaseMoney@{DecreaseMoney}}
+\index{DecreaseMoney@{DecreaseMoney}!PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}}
+\doxysubsubsection{\texorpdfstring{DecreaseMoney()}{DecreaseMoney()}}
+{\footnotesize\ttfamily \label{class_player_system_1_1_inventory_manager_a310018f11abaae84b3e7380a0e0f8327} 
+virtual void Player\+System.\+Inventory\+Manager.\+Decrease\+Money (\begin{DoxyParamCaption}\item[{float}]{amount}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Decreases the player\textquotesingle{}s money by the amount provided. 
+
+Triggers the Player.\+Lose\+Money signal. This function will ignore the call if amount is less than or equal to zero 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount of money to remove\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_system_1_1_inventory_manager_a5cecad4f3198a93cab3f0c0c93351566}\index{PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}!DropAmmo@{DropAmmo}}
+\index{DropAmmo@{DropAmmo}!PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}}
+\doxysubsubsection{\texorpdfstring{DropAmmo()}{DropAmmo()}}
+{\footnotesize\ttfamily \label{class_player_system_1_1_inventory_manager_a5cecad4f3198a93cab3f0c0c93351566} 
+void Player\+System.\+Inventory\+Manager.\+Drop\+Ammo (\begin{DoxyParamCaption}\item[{int}]{hash\+Code}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes an \doxylink{class_ammo_stack}{Ammo\+Stack} from the inventory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hash\+Code} & The unique identifier of the \doxylink{class_ammo_stack}{Ammo\+Stack}\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_system_1_1_inventory_manager_afd1742c51073dbadecf0d1e577699a35}\index{PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}!DropWeapon@{DropWeapon}}
+\index{DropWeapon@{DropWeapon}!PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}}
+\doxysubsubsection{\texorpdfstring{DropWeapon()}{DropWeapon()}}
+{\footnotesize\ttfamily \label{class_player_system_1_1_inventory_manager_afd1742c51073dbadecf0d1e577699a35} 
+void Player\+System.\+Inventory\+Manager.\+Drop\+Weapon (\begin{DoxyParamCaption}\item[{int}]{hash\+Code}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes a \doxylink{class_weapon_entity}{Weapon\+Entity} object from the inventory, and unequips the weapon if it was previously equipped. 
+
+Calls Emit\+Signal\+Weapon\+Status\+Updated with null and Weapon\+Entity.\+Properties.\+None if the weapon was equipped 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hash\+Code} & The unique identifier of the \doxylink{class_weapon_entity}{Weapon\+Entity}\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\+Exception} & Thrown if the \doxylink{class_weapon_entity}{Weapon\+Entity} found from hash\+Code is null, indicating corruption\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_player_system_1_1_inventory_manager_a3d34bf78cf744b6520d2c6d4430153c7}\index{PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}!GetHeavyPrimaryWeapon@{GetHeavyPrimaryWeapon}}
+\index{GetHeavyPrimaryWeapon@{GetHeavyPrimaryWeapon}!PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}}
+\doxysubsubsection{\texorpdfstring{GetHeavyPrimaryWeapon()}{GetHeavyPrimaryWeapon()}}
+{\footnotesize\ttfamily \label{class_player_system_1_1_inventory_manager_a3d34bf78cf744b6520d2c6d4430153c7} 
+\mbox{\hyperlink{class_player_system_1_1_weapon_slot}{Weapon\+Slot}}? Player\+System.\+Inventory\+Manager.\+Get\+Heavy\+Primary\+Weapon (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Fetches the currently equipped weapon in the "{}\+Heavy Primary"{} slot. 
+
+\begin{DoxyReturn}{Returns}
+The \doxylink{class_player_system_1_1_weapon_slot}{Weapon\+Slot} object within the Weapon\+Slot\+Index.\+Heavy\+Primary slot
+\end{DoxyReturn}
+\Hypertarget{class_player_system_1_1_inventory_manager_a757d375882e0bc0685ba80d74d5770da}\index{PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}!GetHeavySidearmWeapon@{GetHeavySidearmWeapon}}
+\index{GetHeavySidearmWeapon@{GetHeavySidearmWeapon}!PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}}
+\doxysubsubsection{\texorpdfstring{GetHeavySidearmWeapon()}{GetHeavySidearmWeapon()}}
+{\footnotesize\ttfamily \label{class_player_system_1_1_inventory_manager_a757d375882e0bc0685ba80d74d5770da} 
+\mbox{\hyperlink{class_player_system_1_1_weapon_slot}{Weapon\+Slot}}? Player\+System.\+Inventory\+Manager.\+Get\+Heavy\+Sidearm\+Weapon (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Fetches the currently equipped weapon in the "{}\+Heavy Sidearm"{} slot. 
+
+\begin{DoxyReturn}{Returns}
+The \doxylink{class_player_system_1_1_weapon_slot}{Weapon\+Slot} object within the Weapon\+Slot\+Index.\+Heavy\+Sidearm slot
+\end{DoxyReturn}
+\Hypertarget{class_player_system_1_1_inventory_manager_adedb123bc6278b5f31be9447f33e3630}\index{PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}!GetPrimaryWeapon@{GetPrimaryWeapon}}
+\index{GetPrimaryWeapon@{GetPrimaryWeapon}!PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}}
+\doxysubsubsection{\texorpdfstring{GetPrimaryWeapon()}{GetPrimaryWeapon()}}
+{\footnotesize\ttfamily \label{class_player_system_1_1_inventory_manager_adedb123bc6278b5f31be9447f33e3630} 
+\mbox{\hyperlink{class_player_system_1_1_weapon_slot}{Weapon\+Slot}}? Player\+System.\+Inventory\+Manager.\+Get\+Primary\+Weapon (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Fetches the currently equipped weapon in the "{}\+Primary"{} slot. 
+
+\begin{DoxyReturn}{Returns}
+The \doxylink{class_player_system_1_1_weapon_slot}{Weapon\+Slot} object within the Weapon\+Slot\+Index.\+Primary slot
+\end{DoxyReturn}
+\Hypertarget{class_player_system_1_1_inventory_manager_ad746ab3f8243a9adb5e8471746efb3f6}\index{PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}!GetSidearmWeapon@{GetSidearmWeapon}}
+\index{GetSidearmWeapon@{GetSidearmWeapon}!PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}}
+\doxysubsubsection{\texorpdfstring{GetSidearmWeapon()}{GetSidearmWeapon()}}
+{\footnotesize\ttfamily \label{class_player_system_1_1_inventory_manager_ad746ab3f8243a9adb5e8471746efb3f6} 
+\mbox{\hyperlink{class_player_system_1_1_weapon_slot}{Weapon\+Slot}}? Player\+System.\+Inventory\+Manager.\+Get\+Sidearm\+Weapon (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Fetches the currently equipped weapon in the "{}\+Sidearm"{} slot. 
+
+\begin{DoxyReturn}{Returns}
+The \doxylink{class_player_system_1_1_weapon_slot}{Weapon\+Slot} object within the Weapon\+Slot\+Index.\+Sidearm slot
+\end{DoxyReturn}
+\Hypertarget{class_player_system_1_1_inventory_manager_a5a8b8e9fdd32a8f339f780fd9d5ee9ea}\index{PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}!IncreaseMoney@{IncreaseMoney}}
+\index{IncreaseMoney@{IncreaseMoney}!PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}}
+\doxysubsubsection{\texorpdfstring{IncreaseMoney()}{IncreaseMoney()}}
+{\footnotesize\ttfamily \label{class_player_system_1_1_inventory_manager_a5a8b8e9fdd32a8f339f780fd9d5ee9ea} 
+virtual void Player\+System.\+Inventory\+Manager.\+Increase\+Money (\begin{DoxyParamCaption}\item[{float}]{amount}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Increases the player\textquotesingle{}s money by the amount provided. 
+
+Triggers the Player.\+Gain\+Money signal. This function will ignore the call if amount is less than or equal to zero 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount of money to add\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_system_1_1_inventory_manager_a75762f81ecedb651ba04a0eece33950c}\index{PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}!Load@{Load}}
+\index{Load@{Load}!PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily \label{class_player_system_1_1_inventory_manager_a75762f81ecedb651ba04a0eece33950c} 
+void Player\+System.\+Inventory\+Manager.\+Load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_save_system_1_1_save_section_reader}{Save\+System.\+Save\+Section\+Reader}}}]{reader}{, }\item[{\mbox{\hyperlink{class_player}{Player}}}]{player}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loads inventory state from disk. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader} & The section reader from the owning \doxylink{class_player}{Player} object\\
+\hline
+{\em player} & The owning player object\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_system_1_1_inventory_manager_a24d9342bb5f8f1e092abcfb668327e8a}\index{PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}!LoadWeapon@{LoadWeapon}}
+\index{LoadWeapon@{LoadWeapon}!PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}}
+\doxysubsubsection{\texorpdfstring{LoadWeapon()}{LoadWeapon()}}
+{\footnotesize\ttfamily \label{class_player_system_1_1_inventory_manager_a24d9342bb5f8f1e092abcfb668327e8a} 
+void Player\+System.\+Inventory\+Manager.\+Load\+Weapon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}}}]{weapon}{, }\item[{string}]{ammo}{, }\item[{int}]{slot}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loads the provided weapon object into a weapon slot and initializes ammo reserves if needed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em weapon} & \\
+\hline
+{\em ammo} & \\
+\hline
+{\em slot} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_player_system_1_1_inventory_manager_aa4eb830022f1c476bc4121995de82611}\index{PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}!PickupAmmo@{PickupAmmo}}
+\index{PickupAmmo@{PickupAmmo}!PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}}
+\doxysubsubsection{\texorpdfstring{PickupAmmo()}{PickupAmmo()}}
+{\footnotesize\ttfamily \label{class_player_system_1_1_inventory_manager_aa4eb830022f1c476bc4121995de82611} 
+void Player\+System.\+Inventory\+Manager.\+Pickup\+Ammo (\begin{DoxyParamCaption}\item[{in \mbox{\hyperlink{class_interactables_1_1_item_pickup}{Item\+Pickup}}}]{ammo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds an \doxylink{class_interactables_1_1_item_pickup}{Item\+Pickup}\textquotesingle{}s ammo data to the \doxylink{class_player_system_1_1_inventory_manager_a025335ac9ef4f5c34d4c3a8dca948120}{Ammo\+Stacks} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ammo} & The \doxylink{class_interactables_1_1_item_pickup}{Item\+Pickup} that\textquotesingle{}s being interacted with\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_system_1_1_inventory_manager_ac8c0ec56fc73116cfe569604f0367684}\index{PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}!PickupWeapon@{PickupWeapon}}
+\index{PickupWeapon@{PickupWeapon}!PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}}
+\doxysubsubsection{\texorpdfstring{PickupWeapon()}{PickupWeapon()}}
+{\footnotesize\ttfamily \label{class_player_system_1_1_inventory_manager_ac8c0ec56fc73116cfe569604f0367684} 
+void Player\+System.\+Inventory\+Manager.\+Pickup\+Weapon (\begin{DoxyParamCaption}\item[{in \mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}}}]{weapon}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Picks up a \doxylink{class_weapon_entity}{Weapon\+Entity}, stores it in the \doxylink{class_player_system_1_1_inventory_manager_a9ada653fe1187ee236478dc4eb1cb9de}{Weapons\+Stack}, and if there\textquotesingle{}s no weapon in the slots, it\textquotesingle{}ll be automatically equipped. 
+
+Emits Player.\+Weapon\+Picked\+Up signal 
+
+
+\begin{DoxyParams}{Parameters}
+{\em weapon} & The weapon to be picked up\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Null\+Exception} & Thrown if {\itshape weapon}  is null\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_player_system_1_1_inventory_manager_afd0f2802aecd4a88b35552679d8d4f17}\index{PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}!Save@{Save}}
+\index{Save@{Save}!PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}}
+\doxysubsubsection{\texorpdfstring{Save()}{Save()}}
+{\footnotesize\ttfamily \label{class_player_system_1_1_inventory_manager_afd0f2802aecd4a88b35552679d8d4f17} 
+void Player\+System.\+Inventory\+Manager.\+Save (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_save_system_1_1_save_section_writer}{Save\+System.\+Save\+Section\+Writer}}}]{writer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes the player\textquotesingle{}s current inventory to disk. 
+
+Any exceptions thrown here would be caught in \doxylink{class_archive_system_a9962d0150f259a457de4fa070e988e68}{Archive\+System.\+Save\+Game} and the save data would be cleaned up 
+
+
+\begin{DoxyParams}{Parameters}
+{\em writer} & The section writer from the owning \doxylink{class_player}{Player} object\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_system_1_1_inventory_manager_a4ca9e2535f3d3bd161764cbcdba20d0a}\index{PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}!SetEquippedWeapon@{SetEquippedWeapon}}
+\index{SetEquippedWeapon@{SetEquippedWeapon}!PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}}
+\doxysubsubsection{\texorpdfstring{SetEquippedWeapon()}{SetEquippedWeapon()}}
+{\footnotesize\ttfamily \label{class_player_system_1_1_inventory_manager_a4ca9e2535f3d3bd161764cbcdba20d0a} 
+void Player\+System.\+Inventory\+Manager.\+Set\+Equipped\+Weapon (\begin{DoxyParamCaption}\item[{int}]{weapon\+Slot}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the currently equipped \doxylink{class_player_system_1_1_weapon_slot}{Weapon\+Slot}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em weapon\+Slot} & Which Weapon\+Slot\+Index to use\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Out\+Of\+Range\+Exception} & Thrown if {\itshape weapon\+Slot}  is not a valid Weapon\+Slot\+Index\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_player_system_1_1_inventory_manager_aab2e5c869eba6b51db6213831ffb7d10}\index{PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}!SetHeavyPrimaryWeapon@{SetHeavyPrimaryWeapon}}
+\index{SetHeavyPrimaryWeapon@{SetHeavyPrimaryWeapon}!PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}}
+\doxysubsubsection{\texorpdfstring{SetHeavyPrimaryWeapon()}{SetHeavyPrimaryWeapon()}}
+{\footnotesize\ttfamily \label{class_player_system_1_1_inventory_manager_aab2e5c869eba6b51db6213831ffb7d10} 
+void Player\+System.\+Inventory\+Manager.\+Set\+Heavy\+Primary\+Weapon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}}}]{weapon}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the \doxylink{class_weapon_entity}{Weapon\+Entity} in the Weapon\+Slot\+Index.\+Heavy\+Primary slot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em weapon} & The weapon to use\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Null\+Exception} & Thrown if weapon is null\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_player_system_1_1_inventory_manager_ae3776ad9ed9726256a8ebe57235fc610}\index{PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}!SetHeavySidearmWeapon@{SetHeavySidearmWeapon}}
+\index{SetHeavySidearmWeapon@{SetHeavySidearmWeapon}!PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}}
+\doxysubsubsection{\texorpdfstring{SetHeavySidearmWeapon()}{SetHeavySidearmWeapon()}}
+{\footnotesize\ttfamily \label{class_player_system_1_1_inventory_manager_ae3776ad9ed9726256a8ebe57235fc610} 
+void Player\+System.\+Inventory\+Manager.\+Set\+Heavy\+Sidearm\+Weapon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}}}]{weapon}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the \doxylink{class_weapon_entity}{Weapon\+Entity} in the Weapon\+Slot\+Index.\+Heavy\+Sidearm slot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em weapon} & The weapon to use\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Null\+Exception} & Thrown if weapon is null\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_player_system_1_1_inventory_manager_a665e0a997be57d2aeee9c6b3e904ff80}\index{PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}!SetPrimaryWeapon@{SetPrimaryWeapon}}
+\index{SetPrimaryWeapon@{SetPrimaryWeapon}!PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}}
+\doxysubsubsection{\texorpdfstring{SetPrimaryWeapon()}{SetPrimaryWeapon()}}
+{\footnotesize\ttfamily \label{class_player_system_1_1_inventory_manager_a665e0a997be57d2aeee9c6b3e904ff80} 
+void Player\+System.\+Inventory\+Manager.\+Set\+Primary\+Weapon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}}}]{weapon}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the \doxylink{class_weapon_entity}{Weapon\+Entity} in the Weapon\+Slot\+Index.\+Heavy\+Primary slot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em weapon} & The weapon to use\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Null\+Exception} & Thrown if weapon is null\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_player_system_1_1_inventory_manager_a5b643df12710d08731fa00760e3453b5}\index{PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}!SetSidearmWeapon@{SetSidearmWeapon}}
+\index{SetSidearmWeapon@{SetSidearmWeapon}!PlayerSystem.InventoryManager@{PlayerSystem.InventoryManager}}
+\doxysubsubsection{\texorpdfstring{SetSidearmWeapon()}{SetSidearmWeapon()}}
+{\footnotesize\ttfamily \label{class_player_system_1_1_inventory_manager_a5b643df12710d08731fa00760e3453b5} 
+void Player\+System.\+Inventory\+Manager.\+Set\+Sidearm\+Weapon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}}}]{weapon}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the \doxylink{class_weapon_entity}{Weapon\+Entity} in the Weapon\+Slot\+Index.\+Sidearm slot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em weapon} & The weapon to use\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Null\+Exception} & Thrown if weapon is null\\
+\hline
+\end{DoxyExceptions}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-scripts/\+Player\+System/Player\+Inventory\+Manager.\+cs\end{DoxyCompactItemize}
+scripts/\+Player\+System/Inventory\+Manager.\+cs\end{DoxyCompactItemize}

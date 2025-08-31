@@ -95,27 +95,83 @@ $(function(){initNavTree('class_ammo_stack.html','','class_ammo_stack-members');
 Inheritance diagram for AmmoStack:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="class_ammo_stack.png" alt=""/>
- </div></div>
+  <img src="class_ammo_stack.png" usemap="#AmmoStack_map" alt=""/>
+  <map id="AmmoStack_map" name="AmmoStack_map">
+<area href="interface_i_consumable_stack.html" alt="IConsumableStack" shape="rect" coords="125,0,240,24"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a583fcb1ca59216066dcde0790cca8c76" id="r_a583fcb1ca59216066dcde0790cca8c76"><td class="memItemLeft" align="right" valign="top"><a id="a583fcb1ca59216066dcde0790cca8c76" name="a583fcb1ca59216066dcde0790cca8c76"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetType</b> (<a class="el" href="class_ammo_entity.html">AmmoEntity</a> ammo)</td></tr>
-<tr class="memitem:ab727e748627608bf649439568c5cda77" id="r_ab727e748627608bf649439568c5cda77"><td class="memItemLeft" align="right" valign="top"><a id="ab727e748627608bf649439568c5cda77" name="ab727e748627608bf649439568c5cda77"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddItems</b> (int nItems)</td></tr>
-<tr class="memitem:afd2345bfb8646b75920d70a7f5059e90" id="r_afd2345bfb8646b75920d70a7f5059e90"><td class="memItemLeft" align="right" valign="top"><a id="afd2345bfb8646b75920d70a7f5059e90" name="afd2345bfb8646b75920d70a7f5059e90"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveItems</b> (int nItems)</td></tr>
+<tr class="memitem:a2e24d94faaf35549260ce90121b4c3b2" id="r_a2e24d94faaf35549260ce90121b4c3b2"><td class="memItemLeft" align="right" valign="top"><a id="a2e24d94faaf35549260ce90121b4c3b2" name="a2e24d94faaf35549260ce90121b4c3b2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AmmoStack</b> (Resource? ammoType, int amount)</td></tr>
+<tr class="memitem:a9eed2f8056b99e38a6b8bc90bce32721" id="r_a9eed2f8056b99e38a6b8bc90bce32721"><td class="memItemLeft" align="right" valign="top"><a id="a9eed2f8056b99e38a6b8bc90bce32721" name="a9eed2f8056b99e38a6b8bc90bce32721"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AmmoStack</b> (string itemPath)</td></tr>
+<tr class="memitem:a921b126bdcbca3a6478f67523060973e" id="r_a921b126bdcbca3a6478f67523060973e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a921b126bdcbca3a6478f67523060973e">AddItems</a> (int items)</td></tr>
+<tr class="memitem:a955f15f6c05983ada2e49f1eb575404a" id="r_a955f15f6c05983ada2e49f1eb575404a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a955f15f6c05983ada2e49f1eb575404a">RemoveItems</a> (int items)</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a8f5bf7d3fabe21b88d807b743e2263a1" id="r_a8f5bf7d3fabe21b88d807b743e2263a1"><td class="memItemLeft" align="right" valign="top"><a id="a8f5bf7d3fabe21b88d807b743e2263a1" name="a8f5bf7d3fabe21b88d807b743e2263a1"></a>
-<a class="el" href="class_ammo_entity.html">AmmoEntity</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AmmoType</b></td></tr>
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:ab922e526cc1b91f9e8b5b5800796622a" id="r_ab922e526cc1b91f9e8b5b5800796622a"><td class="memItemLeft" align="right" valign="top"><a id="ab922e526cc1b91f9e8b5b5800796622a" name="ab922e526cc1b91f9e8b5b5800796622a"></a>
+<a class="el" href="struct_ammo.html">Ammo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AmmoType</b><code> [get]</code></td></tr>
 <tr class="memitem:a7eda63781104a2c149651692cc173f88" id="r_a7eda63781104a2c149651692cc173f88"><td class="memItemLeft" align="right" valign="top"><a id="a7eda63781104a2c149651692cc173f88" name="a7eda63781104a2c149651692cc173f88"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>Amount</b> = 0</td></tr>
-<tr class="memitem:a865ec4d513ce96410bd8fee029264662" id="r_a865ec4d513ce96410bd8fee029264662"><td class="memItemLeft" align="right" valign="top"><a id="a865ec4d513ce96410bd8fee029264662" name="a865ec4d513ce96410bd8fee029264662"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>ItemId</b></td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>Amount</b><code> [get]</code></td></tr>
 </table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a921b126bdcbca3a6478f67523060973e" name="a921b126bdcbca3a6478f67523060973e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a921b126bdcbca3a6478f67523060973e">&#9670;&#160;</a></span>AddItems()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AmmoStack.AddItems </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>items</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="interface_i_consumable_stack.html">IConsumableStack</a>.</p>
+
+</div>
+</div>
+<a id="a955f15f6c05983ada2e49f1eb575404a" name="a955f15f6c05983ada2e49f1eb575404a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a955f15f6c05983ada2e49f1eb575404a">&#9670;&#160;</a></span>RemoveItems()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AmmoStack.RemoveItems </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>items</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="interface_i_consumable_stack.html">IConsumableStack</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>scripts/Items/<b>AmmoStack.cs</b></li>
 </ul>

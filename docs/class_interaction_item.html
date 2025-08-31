@@ -88,7 +88,7 @@ $(function(){initNavTree('class_interaction_item.html','','class_interaction_ite
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">InteractionItem Class Reference</div></div>
+  <div class="headertitle"><div class="title">InteractionItem Class Reference<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
@@ -97,30 +97,27 @@ Inheritance diagram for InteractionItem:</div>
  <div class="center">
   <img src="class_interaction_item.png" usemap="#InteractionItem_map" alt=""/>
   <map id="InteractionItem_map" name="InteractionItem_map">
-<area href="class_action_tutorial.html" alt="ActionTutorial" shape="rect" coords="178,112,346,136"/>
-<area href="class_checkpoint.html" alt="Checkpoint" shape="rect" coords="178,168,346,192"/>
-<area href="class_cutscene_trigger.html" alt="CutsceneTrigger" shape="rect" coords="178,224,346,248"/>
-<area href="class_dialogue_interactor.html" alt="DialogueInteractor" shape="rect" coords="178,280,346,304"/>
-<area href="class_door.html" alt="Door" shape="rect" coords="178,336,346,360"/>
-<area href="class_eagles_peak.html" alt="EaglesPeak" shape="rect" coords="178,392,346,416"/>
-<area href="class_end_of_challenge.html" alt="EndOfChallenge" shape="rect" coords="178,448,346,472"/>
-<area href="class_health_pack.html" alt="HealthPack" shape="rect" coords="178,504,346,528"/>
-<area href="class_item_pickup.html" alt="ItemPickup" shape="rect" coords="178,560,346,584"/>
-<area href="class_mechanic_tutorial.html" alt="MechanicTutorial" shape="rect" coords="178,616,346,640"/>
-<area href="class_multiplayer_1_1_objectives_1_1_flag.html" alt="Multiplayer.Objectives.Flag" shape="rect" coords="178,672,346,696"/>
-<area href="class_note.html" alt="Note" shape="rect" coords="178,728,346,752"/>
-<area href="class_respawning_health_pack.html" alt="RespawningHealthPack" shape="rect" coords="178,784,346,808"/>
-<area href="class_treasure_chest.html" alt="TreasureChest" shape="rect" coords="178,840,346,864"/>
-<area href="class_used_item_pickup.html" alt="UsedItemPickup" shape="rect" coords="178,896,346,920"/>
+<area href="class_action_tutorial.html" alt="ActionTutorial" shape="rect" coords="202,112,394,136"/>
+<area href="class_interactables_1_1_checkpoint.html" title="Class implementation for a Meliora." alt="Interactables.Checkpoint" shape="rect" coords="202,168,394,192"/>
+<area href="class_interactables_1_1_cutscene_trigger.html" alt="Interactables.CutsceneTrigger" shape="rect" coords="202,224,394,248"/>
+<area href="class_interactables_1_1_dialogue_interactor.html" alt="Interactables.DialogueInteractor" shape="rect" coords="202,280,394,304"/>
+<area href="class_interactables_1_1_door.html" alt="Interactables.Door" shape="rect" coords="202,336,394,360"/>
+<area href="class_interactables_1_1_eagles_peak.html" alt="Interactables.EaglesPeak" shape="rect" coords="202,392,394,416"/>
+<area href="class_interactables_1_1_end_of_challenge.html" alt="Interactables.EndOfChallenge" shape="rect" coords="202,448,394,472"/>
+<area href="class_interactables_1_1_health_pack.html" alt="Interactables.HealthPack" shape="rect" coords="202,504,394,528"/>
+<area href="class_interactables_1_1_item_pickup.html" title="wrapper class for item pickup interactables, static, and will automatically free from the tree when u..." alt="Interactables.ItemPickup" shape="rect" coords="202,560,394,584"/>
+<area href="class_interactables_1_1_mechanic_tutorial.html" alt="Interactables.MechanicTutorial" shape="rect" coords="202,616,394,640"/>
+<area href="class_interactables_1_1_note.html" alt="Interactables.Note" shape="rect" coords="202,672,394,696"/>
+<area href="class_interactables_1_1_treasure_chest.html" alt="Interactables.TreasureChest" shape="rect" coords="202,728,394,752"/>
+<area href="class_multiplayer_1_1_objectives_1_1_flag.html" alt="Multiplayer.Objectives.Flag" shape="rect" coords="202,784,394,808"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2a4cfe40e687bd2955176f49a7210fc1" id="r_a2a4cfe40e687bd2955176f49a7210fc1"><td class="memItemLeft" align="right" valign="top"><a id="a2a4cfe40e687bd2955176f49a7210fc1" name="a2a4cfe40e687bd2955176f49a7210fc1"></a>
-virtual InteractionType&#160;</td><td class="memItemRight" valign="bottom"><b>GetInteractionType</b> ()</td></tr>
 <tr class="memitem:a0c3292d774e70d6f67f1abf7140da83f" id="r_a0c3292d774e70d6f67f1abf7140da83f"><td class="memItemLeft" align="right" valign="top"><a id="a0c3292d774e70d6f67f1abf7140da83f" name="a0c3292d774e70d6f67f1abf7140da83f"></a>
 override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
+<tr class="memdesc:a0c3292d774e70d6f67f1abf7140da83f"><td class="mdescLeft">&#160;</td><td class="mdescRight">godot initialization override <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -129,10 +126,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnInteraction
 <tr class="memitem:a6597cb6da3e65068e692d451e268e616" id="r_a6597cb6da3e65068e692d451e268e616"><td class="memItemLeft" align="right" valign="top"><a id="a6597cb6da3e65068e692d451e268e616" name="a6597cb6da3e65068e692d451e268e616"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnInteractionAreaBody2DExited</b> (Rid bodyRID, Node2D body, int bodyShapeIndex, int localShapeIndex)</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a0f59052ee78df2a035075f24f8ea9b2b" id="r_a0f59052ee78df2a035075f24f8ea9b2b"><td class="memItemLeft" align="right" valign="top"><a id="a0f59052ee78df2a035075f24f8ea9b2b" name="a0f59052ee78df2a035075f24f8ea9b2b"></a>
-CollisionShape2D&#160;</td><td class="memItemRight" valign="bottom"><b>InteractArea</b></td></tr>
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:a12740dba8ee1c1323278b7a01f2f1660" id="r_a12740dba8ee1c1323278b7a01f2f1660"><td class="memItemLeft" align="right" valign="top"><a id="a12740dba8ee1c1323278b7a01f2f1660" name="a12740dba8ee1c1323278b7a01f2f1660"></a>
+InteractionType&#160;</td><td class="memItemRight" valign="bottom"><b>InteractionType</b><code> [get]</code></td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>scripts/Interactables/<b>InteractionItem.cs</b></li>

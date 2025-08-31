@@ -109,18 +109,14 @@ Public Member Functions</h2></td></tr>
 delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>PlayerEnteredEventHandler</b> ()</td></tr>
 <tr class="memitem:a9da20e85ea6bf5cbad4634326f332b15" id="r_a9da20e85ea6bf5cbad4634326f332b15"><td class="memItemLeft" align="right" valign="top"><a id="a9da20e85ea6bf5cbad4634326f332b15" name="a9da20e85ea6bf5cbad4634326f332b15"></a>
 delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>PlayerExitedEventHandler</b> ()</td></tr>
-<tr class="memitem:a22acdd8edfd0077d2262ed5771e38bee" id="r_a22acdd8edfd0077d2262ed5771e38bee"><td class="memItemLeft" align="right" valign="top"><a id="a22acdd8edfd0077d2262ed5771e38bee" name="a22acdd8edfd0077d2262ed5771e38bee"></a>
-StringName&#160;</td><td class="memItemRight" valign="bottom"><b>GetAreaName</b> ()</td></tr>
-<tr class="memitem:a80ce01f4c70fe81654d1c9b115699dbc" id="r_a80ce01f4c70fe81654d1c9b115699dbc"><td class="memItemLeft" align="right" valign="top"><a id="a80ce01f4c70fe81654d1c9b115699dbc" name="a80ce01f4c70fe81654d1c9b115699dbc"></a>
-<a class="el" href="class_renown_1_1_thinkers_1_1_a_i_node_cache.html">AINodeCache</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetNodeCache</b> ()</td></tr>
-<tr class="memitem:a909ac3b663324a49fe79bee7a3b51c3b" id="r_a909ac3b663324a49fe79bee7a3b51c3b"><td class="memItemLeft" align="right" valign="top"><a id="a909ac3b663324a49fe79bee7a3b51c3b" name="a909ac3b663324a49fe79bee7a3b51c3b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsPlayerHere</b> ()</td></tr>
-<tr class="memitem:ac97fdd48ae21305e3f3adafe38cb755a" id="r_ac97fdd48ae21305e3f3adafe38cb755a"><td class="memItemLeft" align="right" valign="top"><a id="ac97fdd48ae21305e3f3adafe38cb755a" name="ac97fdd48ae21305e3f3adafe38cb755a"></a>
-<a class="el" href="class_renown_1_1_world_1_1_biome.html">Biome</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetBiome</b> ()</td></tr>
 <tr class="memitem:a222e9ae2eede138f1e489c126b8a9ffa" id="r_a222e9ae2eede138f1e489c126b8a9ffa"><td class="memItemLeft" align="right" valign="top"><a id="a222e9ae2eede138f1e489c126b8a9ffa" name="a222e9ae2eede138f1e489c126b8a9ffa"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Save</b> ()</td></tr>
 <tr class="memitem:af9f35f4c50a493d4fa2c21cf130e5150" id="r_af9f35f4c50a493d4fa2c21cf130e5150"><td class="memItemLeft" align="right" valign="top"><a id="af9f35f4c50a493d4fa2c21cf130e5150" name="af9f35f4c50a493d4fa2c21cf130e5150"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Load</b> ()</td></tr>
+<tr class="memitem:adc901b17f7a0a58dca2254ab88ceed7e" id="r_adc901b17f7a0a58dca2254ab88ceed7e"><td class="memItemLeft" align="right" valign="top"><a id="adc901b17f7a0a58dca2254ab88ceed7e" name="adc901b17f7a0a58dca2254ab88ceed7e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ChangePlayerTraitScore</b> (<a class="el" href="class_renown_1_1_trait.html">Trait</a> trait, float score)</td></tr>
+<tr class="memitem:ad628481d4ce88e782dca7b44a4df3ab4" id="r_ad628481d4ce88e782dca7b44a4df3ab4"><td class="memItemLeft" align="right" valign="top"><a id="ad628481d4ce88e782dca7b44a4df3ab4" name="ad628481d4ce88e782dca7b44a4df3ab4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ChangePlayerRenownScore</b> (int score)</td></tr>
 <tr class="memitem:adedff7ce227ac93dbceefd0b13339907" id="r_adedff7ce227ac93dbceefd0b13339907"><td class="memItemLeft" align="right" valign="top"><a id="adedff7ce227ac93dbceefd0b13339907" name="adedff7ce227ac93dbceefd0b13339907"></a>
 override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Ready</b> ()</td></tr>
 <tr class="memitem:ae3c5f236cc131c543c0249505b53cdfa" id="r_ae3c5f236cc131c543c0249505b53cdfa"><td class="memItemLeft" align="right" valign="top"><a id="ae3c5f236cc131c543c0249505b53cdfa" name="ae3c5f236cc131c543c0249505b53cdfa"></a>
@@ -133,22 +129,31 @@ static DataCache&lt; <a class="el" href="class_renown_1_1_world_1_1_world_area.h
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a83a3b9505aa0592f83221ddaaa400224" id="r_a83a3b9505aa0592f83221ddaaa400224"><td class="memItemLeft" align="right" valign="top"><a id="a83a3b9505aa0592f83221ddaaa400224" name="a83a3b9505aa0592f83221ddaaa400224"></a>
-<a class="el" href="class_renown_1_1_world_1_1_biome.html">Biome</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Biome</b></td></tr>
-<tr class="memitem:a2d44b3b124c89729912fe91024bdcda8" id="r_a2d44b3b124c89729912fe91024bdcda8"><td class="memItemLeft" align="right" valign="top"><a id="a2d44b3b124c89729912fe91024bdcda8" name="a2d44b3b124c89729912fe91024bdcda8"></a>
-StringName&#160;</td><td class="memItemRight" valign="bottom"><b>AreaName</b></td></tr>
-<tr class="memitem:a2f28ba998c8f2c6abe768d9fe01570fe" id="r_a2f28ba998c8f2c6abe768d9fe01570fe"><td class="memItemLeft" align="right" valign="top"><a id="a2f28ba998c8f2c6abe768d9fe01570fe" name="a2f28ba998c8f2c6abe768d9fe01570fe"></a>
-<a class="el" href="class_renown_1_1_thinkers_1_1_a_i_node_cache.html">AINodeCache</a>&#160;</td><td class="memItemRight" valign="bottom"><b>NodeCache</b></td></tr>
 <tr class="memitem:a3d1e85a445aad3093552f9350e24c42a" id="r_a3d1e85a445aad3093552f9350e24c42a"><td class="memItemLeft" align="right" valign="top"><a id="a3d1e85a445aad3093552f9350e24c42a" name="a3d1e85a445aad3093552f9350e24c42a"></a>
 TileMapLayer[]&#160;</td><td class="memItemRight" valign="bottom"><b>TileMaps</b></td></tr>
-<tr class="memitem:a6d95fc78114af008a30d8e57002be7f8" id="r_a6d95fc78114af008a30d8e57002be7f8"><td class="memItemLeft" align="right" valign="top"><a id="a6d95fc78114af008a30d8e57002be7f8" name="a6d95fc78114af008a30d8e57002be7f8"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>PlayerStatus</b> = false</td></tr>
 <tr class="memitem:a87a00c682c6ebcf6cadaa143003cf2b0" id="r_a87a00c682c6ebcf6cadaa143003cf2b0"><td class="memItemLeft" align="right" valign="top"><a id="a87a00c682c6ebcf6cadaa143003cf2b0" name="a87a00c682c6ebcf6cadaa143003cf2b0"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ThreadSleep</b> = Constants.THREADSLEEP_FACTION_PLAYER_AWAY</td></tr>
 <tr class="memitem:abc535ec80a0f0a83e7c5a8d0f30c274d" id="r_abc535ec80a0f0a83e7c5a8d0f30c274d"><td class="memItemLeft" align="right" valign="top"><a id="abc535ec80a0f0a83e7c5a8d0f30c274d" name="abc535ec80a0f0a83e7c5a8d0f30c274d"></a>
 System.Threading.ThreadPriority&#160;</td><td class="memItemRight" valign="bottom"><b>Importance</b> = Constants.THREAD_IMPORTANCE_PLAYER_AWAY</td></tr>
 <tr class="memitem:a8ec7ee2a17f1cf04f21896447a6da238" id="r_a8ec7ee2a17f1cf04f21896447a6da238"><td class="memItemLeft" align="right" valign="top"><a id="a8ec7ee2a17f1cf04f21896447a6da238" name="a8ec7ee2a17f1cf04f21896447a6da238"></a>
 Node[]&#160;</td><td class="memItemRight" valign="bottom"><b>Children</b></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:a83a3b9505aa0592f83221ddaaa400224" id="r_a83a3b9505aa0592f83221ddaaa400224"><td class="memItemLeft" align="right" valign="top"><a id="a83a3b9505aa0592f83221ddaaa400224" name="a83a3b9505aa0592f83221ddaaa400224"></a>
+<a class="el" href="class_renown_1_1_world_1_1_biome.html">Biome</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Biome</b><code> [get]</code></td></tr>
+<tr class="memitem:a2d44b3b124c89729912fe91024bdcda8" id="r_a2d44b3b124c89729912fe91024bdcda8"><td class="memItemLeft" align="right" valign="top"><a id="a2d44b3b124c89729912fe91024bdcda8" name="a2d44b3b124c89729912fe91024bdcda8"></a>
+StringName&#160;</td><td class="memItemRight" valign="bottom"><b>AreaName</b><code> [get]</code></td></tr>
+<tr class="memitem:a2f28ba998c8f2c6abe768d9fe01570fe" id="r_a2f28ba998c8f2c6abe768d9fe01570fe"><td class="memItemLeft" align="right" valign="top"><a id="a2f28ba998c8f2c6abe768d9fe01570fe" name="a2f28ba998c8f2c6abe768d9fe01570fe"></a>
+<a class="el" href="class_renown_1_1_thinkers_1_1_a_i_node_cache.html">AINodeCache</a>&#160;</td><td class="memItemRight" valign="bottom"><b>NodeCache</b><code> [get]</code></td></tr>
+<tr class="memitem:a6d95fc78114af008a30d8e57002be7f8" id="r_a6d95fc78114af008a30d8e57002be7f8"><td class="memItemLeft" align="right" valign="top"><a id="a6d95fc78114af008a30d8e57002be7f8" name="a6d95fc78114af008a30d8e57002be7f8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>PlayerStatus</b> = false<code> [get]</code></td></tr>
+<tr class="memitem:a2240521c010cc69c631efa6f2a25840a" id="r_a2240521c010cc69c631efa6f2a25840a"><td class="memItemLeft" align="right" valign="top"><a id="a2240521c010cc69c631efa6f2a25840a" name="a2240521c010cc69c631efa6f2a25840a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>PlayerRenownScore</b> = 0<code> [get]</code></td></tr>
+<tr class="memdesc:a2240521c010cc69c631efa6f2a25840a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The player's renown score in this <a class="el" href="class_renown_1_1_world_1_1_world_area.html">WorldArea</a>. <br /></td></tr>
+<tr class="memitem:a162e95ff317c66a4970692b3c83bbc01" id="r_a162e95ff317c66a4970692b3c83bbc01"><td class="memItemLeft" align="right" valign="top"><a id="a162e95ff317c66a4970692b3c83bbc01" name="a162e95ff317c66a4970692b3c83bbc01"></a>
+Dictionary&lt; <a class="el" href="class_renown_1_1_trait.html">Trait</a>, float &gt;?&#160;</td><td class="memItemRight" valign="bottom"><b>PlayerTraitScores</b> = new Dictionary&lt;<a class="el" href="class_renown_1_1_trait.html">Trait</a>, float&gt;()<code> [get]</code></td></tr>
+<tr class="memdesc:a162e95ff317c66a4970692b3c83bbc01"><td class="mdescLeft">&#160;</td><td class="mdescRight">The player's known trait scores in this <a class="el" href="class_renown_1_1_world_1_1_world_area.html">WorldArea</a>. <br /></td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>scripts/Renown/World/<b>WorldArea.cs</b></li>

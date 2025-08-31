@@ -100,12 +100,12 @@ Classes</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aac59cd3126859e14084cb8b848defd55" id="r_aac59cd3126859e14084cb8b848defd55"><td class="memItemLeft" align="right" valign="top"><a id="aac59cd3126859e14084cb8b848defd55" name="aac59cd3126859e14084cb8b848defd55"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> ()</td></tr>
-<tr class="memitem:a8ebb89a1b92a7f4a0c8e86da74f0f06f" id="r_a8ebb89a1b92a7f4a0c8e86da74f0f06f"><td class="memItemLeft" align="right" valign="top"><a id="a8ebb89a1b92a7f4a0c8e86da74f0f06f" name="a8ebb89a1b92a7f4a0c8e86da74f0f06f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>UploadData</b> (ContractType type, int timeMinutes, int timeSeconds, int timeMilliseconds, int score)</td></tr>
+<tr class="memitem:a8ebb89a1b92a7f4a0c8e86da74f0f06f" id="r_a8ebb89a1b92a7f4a0c8e86da74f0f06f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ebb89a1b92a7f4a0c8e86da74f0f06f">UploadData</a> (ContractType type, int timeMinutes, int timeSeconds, int timeMilliseconds, int score)</td></tr>
+<tr class="memdesc:a8ebb89a1b92a7f4a0c8e86da74f0f06f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The score with all the bonuses should be calculated before calling this.  <br /></td></tr>
 <tr class="memitem:a428739a44b6f930554c63be1e01fce79" id="r_a428739a44b6f930554c63be1e01fce79"><td class="memItemLeft" align="right" valign="top"><a id="a428739a44b6f930554c63be1e01fce79" name="a428739a44b6f930554c63be1e01fce79"></a>
 static <a class="el" href="struct_renown_1_1_mercenary_leaderboard_1_1_leaderboard_entry.html">LeaderboardEntry</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>GetLeaderboardEntries</b> ()</td></tr>
-<tr class="memitem:aa97458607370399f756d322a9046702f" id="r_aa97458607370399f756d322a9046702f"><td class="memItemLeft" align="right" valign="top"><a id="aa97458607370399f756d322a9046702f" name="aa97458607370399f756d322a9046702f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>StartBountyHunt</b> (CSteamID targetId)</td></tr>
+<tr class="memitem:aa97458607370399f756d322a9046702f" id="r_aa97458607370399f756d322a9046702f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa97458607370399f756d322a9046702f">StartBountyHunt</a> (CSteamID targetId)</td></tr>
+<tr class="memdesc:aa97458607370399f756d322a9046702f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows the local player to "invade" the top mercenary's world and collect the bounty on their head.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
@@ -114,6 +114,96 @@ static Dictionary&lt; int, <a class="el" href="struct_renown_1_1_mercenary_leade
 <tr class="memitem:a184347a2f3828fe6b1e7e7f21f293c6f" id="r_a184347a2f3828fe6b1e7e7f21f293c6f"><td class="memItemLeft" align="right" valign="top"><a id="a184347a2f3828fe6b1e7e7f21f293c6f" name="a184347a2f3828fe6b1e7e7f21f293c6f"></a>
 static int&#160;</td><td class="memItemRight" valign="bottom"><b>LeaderboardEntryCount</b> = 0<code> [get]</code></td></tr>
 </table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="aa97458607370399f756d322a9046702f" name="aa97458607370399f756d322a9046702f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa97458607370399f756d322a9046702f">&#9670;&#160;</a></span>StartBountyHunt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Renown.MercenaryLeaderboard.StartBountyHunt </td>
+          <td>(</td>
+          <td class="paramtype">CSteamID</td>          <td class="paramname"><span class="paramname"><em>targetId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Allows the local player to "invade" the top mercenary's world and collect the bounty on their head. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">targetId</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8ebb89a1b92a7f4a0c8e86da74f0f06f" name="a8ebb89a1b92a7f4a0c8e86da74f0f06f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ebb89a1b92a7f4a0c8e86da74f0f06f">&#9670;&#160;</a></span>UploadData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Renown.MercenaryLeaderboard.UploadData </td>
+          <td>(</td>
+          <td class="paramtype">ContractType</td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>timeMinutes</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>timeSeconds</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>timeMilliseconds</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>score</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The score with all the bonuses should be calculated before calling this. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td></td></tr>
+    <tr><td class="paramname">timeMinutes</td><td></td></tr>
+    <tr><td class="paramname">timeSeconds</td><td></td></tr>
+    <tr><td class="paramname">timeMilliseconds</td><td></td></tr>
+    <tr><td class="paramname">score</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>scripts/Renown/<b>MercenaryLeaderboard.cs</b></li>
 </ul>

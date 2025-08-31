@@ -32,7 +32,7 @@ override void \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_thinker_a54e8c74d19
 override void \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_thinker_a6bb467f68423ed896eba487b102793a0}{Set\+Location}} (in \mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{World\+Area}} location)
 \item 
 override void \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_thinker_ac1a448bfd4cd005e5e19d0cfc74be29c}{Play\+Sound}} (Audio\+Stream\+Player2D channel, Audio\+Stream stream)
-\item 
+\begin{DoxyCompactList}\small\item\em Plays a sound effect from the provided channel and stream local to the entity\textquotesingle{}s position. \end{DoxyCompactList}\item 
 override String\+Name \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_thinker_a21f1a1e1996501e23e47d359348760fd}{Get\+Object\+Name}} ()
 \item 
 virtual void {\bfseries Stop\+Moving} ()
@@ -53,31 +53,39 @@ delegate void {\bfseries Damaged\+Event\+Handler} (\mbox{\hyperlink{class_renown
 delegate void {\bfseries Die\+Event\+Handler} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} source, \mbox{\hyperlink{class_renown_1_1_entity}{Entity}} target)
 \item 
 virtual void \mbox{\hyperlink{class_renown_1_1_entity_af2a23f06f18c067b308ffc46e3b0923d}{Save}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Override this function to archive and entity\textquotesingle{}s state to disk. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_renown_1_1_entity_a92d640b8af31105f1bc465a88d3e6024}{Load}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Override this function to load an entity\textquotesingle{}s state from disk. \end{DoxyCompactList}\item 
 virtual void {\bfseries On\+Challenged} ()
 \item 
 virtual void {\bfseries On\+Intimidated} ()
 \item 
 virtual void {\bfseries Clear\+Status\+Effects} ()
-\item 
-virtual void {\bfseries Add\+Status\+Effect} (string effect\+Name)
-\item 
+\begin{DoxyCompactList}\small\item\em Clears all \doxylink{class_status_effect}{Status\+Effect} objects currently being applied to the entity and clears the Dictionary. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_renown_1_1_entity_a1daa2bade64b58ff25e8c19dd8bdbb96}{Add\+Status\+Effect}} (string effect\+Name)
+\begin{DoxyCompactList}\small\item\em Adds a \doxylink{class_status_effect}{Status\+Effect} object to the entity. \end{DoxyCompactList}\item 
 virtual void {\bfseries Pickup\+Weapon} (\mbox{\hyperlink{class_weapon_entity}{Weapon\+Entity}} weapon)
 \item 
-virtual bool {\bfseries Has\+Relation} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other)
+virtual bool {\bfseries Has\+Relation} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} entity)
 \item 
-virtual float \mbox{\hyperlink{class_renown_1_1_entity_a8017e0770fbc5744a738dec23b1714c2}{Get\+Relation\+Score}} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other)
+virtual bool {\bfseries Has\+Relation} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction)
 \item 
-virtual Relation\+Status \mbox{\hyperlink{class_renown_1_1_entity_ad90010e3bde77e879d9c5a2007b86d17}{Get\+Relation\+Status}} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other)
+virtual float \mbox{\hyperlink{class_renown_1_1_entity_a5fb57a98d019d10b4541f4bbb7fcb9d8}{Get\+Relation\+Score}} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} entity)
 \item 
-virtual void \mbox{\hyperlink{class_renown_1_1_entity_a4c0e95fc845748ed38c2d47f4e361874}{Determine\+Relation\+Status}} (\mbox{\hyperlink{interface_renown_1_1_object}{Object}} other)
+virtual float \mbox{\hyperlink{class_renown_1_1_entity_acbf77cc2d87dca56682f3bc4484138f6}{Get\+Relation\+Score}} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction)
+\item 
+virtual Relation\+Status \mbox{\hyperlink{class_renown_1_1_entity_a2f80b814c3751b3d3cb343b2cbc94f19}{Get\+Relation\+Status}} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} entity)
+\item 
+virtual Relation\+Status \mbox{\hyperlink{class_renown_1_1_entity_af70beaa7dc4a1bb193da6fc389690bb1}{Get\+Relation\+Status}} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction)
+\item 
+virtual void \mbox{\hyperlink{class_renown_1_1_entity_a05afc6ce53c862e9ecfd21fc1e4c4f9e}{Determine\+Relation\+Status}} (\mbox{\hyperlink{class_renown_1_1_entity}{Entity}} entity)
+\item 
+virtual void \mbox{\hyperlink{class_renown_1_1_entity_a64b7aada5704407950f76c7e93761106}{Determine\+Relation\+Status}} (\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}} faction)
 \item 
 Node\+Path \mbox{\hyperlink{class_renown_1_1_entity_a6b51f1fffcfb9b72b562e1bcd8c3336e}{Get\+Hash}} ()
 \item 
 override void {\bfseries \+\_\+\+Ready} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em godot initialization override \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_thinker}{Renown.\+Thinkers.\+Thinker}}}
 \begin{DoxyCompactItemize}
@@ -132,7 +140,7 @@ Node\+Path {\bfseries Initial\+Path}
 \item 
 Thinker\+Flags {\bfseries Flags}
 \item 
-\mbox{\hyperlink{class_mountain_goap_1_1_agent}{Mountain\+Goap.\+Agent}} {\bfseries Agent}
+Mountain\+Goap.\+Agent {\bfseries Agent}
 \item 
 bool {\bfseries Initialized} = false
 \item 
@@ -140,7 +148,7 @@ Godot.\+Vector2 {\bfseries Goto\+Position} = Godot.\+Vector2.\+Zero
 \item 
 Color {\bfseries Demon\+Eye\+Color}
 \item 
-\mbox{\hyperlink{class_network_sync_object}{Network\+Sync\+Object}} {\bfseries Sync\+Object} = null
+\mbox{\hyperlink{class_multiplayer_1_1_network_sync_object}{Network\+Sync\+Object}} {\bfseries Sync\+Object} = null
 \item 
 Audio\+Stream\+Player2D {\bfseries Audio\+Channel}
 \item 
@@ -149,8 +157,8 @@ int {\bfseries Thread\+Sleep} = Constants.\+THREADSLEEP\+\_\+\+THINKER\+\_\+\+PL
 \doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}}}
 \begin{DoxyCompactItemize}
 \item 
-Dictionary$<$ string, \mbox{\hyperlink{class_status_effect}{Status\+Effect}} $>$ {\bfseries Status\+Effects} = new Dictionary$<$string, \mbox{\hyperlink{class_status_effect}{Status\+Effect}}$>$()
-\end{DoxyCompactItemize}
+Concurrent\+Dictionary$<$ string, \mbox{\hyperlink{class_status_effect}{Status\+Effect}} $>$ \mbox{\hyperlink{class_renown_1_1_entity_a9b957ed803b7a204e5b1cc3faab5ece5}{Status\+Effects}} = new Concurrent\+Dictionary$<$string, \mbox{\hyperlink{class_status_effect}{Status\+Effect}}$>$()
+\begin{DoxyCompactList}\small\item\em The current status effects being applied to the entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_thinker}{Renown.\+Thinkers.\+Thinker}}}
 \begin{DoxyCompactItemize}
 \item 
@@ -176,16 +184,16 @@ Animated\+Sprite2D {\bfseries Head\+Animations}\hspace{0.3cm}{\ttfamily  \mbox{[
 \doxysubsection*{Properties inherited from \mbox{\hyperlink{class_renown_1_1_entity}{Renown.\+Entity}}}
 \begin{DoxyCompactItemize}
 \item 
-float {\bfseries Health} = 0.\+0f\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
-int {\bfseries Renown\+Score} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
-\mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{World\+Area}}? {\bfseries Location} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
-\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}}? {\bfseries Faction} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
-int {\bfseries Faction\+Importance} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\end{DoxyCompactItemize}
+float {\bfseries Health} = 0.\+0f\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The health of the entity. \end{DoxyCompactList}\item 
+int {\bfseries Renown\+Score} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The renown of an entity, think of it sort as "{}street cred"{}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{World\+Area}}? {\bfseries Location} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The \doxylink{class_renown_1_1_world_1_1_world_area}{World\+Area} the entity is currently colliding with. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_renown_1_1_world_1_1_faction}{Faction}}? {\bfseries Faction} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The faction that the entity belongs to. Used for faction-\/specific behaviors with the AI. \end{DoxyCompactList}\item 
+int {\bfseries Faction\+Importance} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em How much the entity\textquotesingle{}s faction cares about them. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \label{doc-func-members}

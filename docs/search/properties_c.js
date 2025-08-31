@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['totalinventoryweight_0',['TotalInventoryWeight',['../class_player.html#ac32ec31753f43ec745b7fcbc2ba28f70',1,'Player']]],
-  ['totalpay_1',['TotalPay',['../class_renown_1_1_contract.html#a5882df75a99c463a56bff52b1a98414e',1,'Renown::Contract']]]
+  ['scores_0',['Scores',['../class_challenge_mode_1_1_challenge_cache.html#a7f458eb59d7f59ed99f236411d8506db',1,'ChallengeMode::ChallengeCache']]],
+  ['storage_1',['Storage',['../class_player_system_1_1_inventory_manager.html#ab8aed2008a74b7fdfda5e638bc1430bd',1,'PlayerSystem::InventoryManager']]]
 ];

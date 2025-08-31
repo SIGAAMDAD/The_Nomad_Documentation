@@ -28,17 +28,13 @@ delegate void {\bfseries Player\+Entered\+Event\+Handler} ()
 \item 
 delegate void {\bfseries Player\+Exited\+Event\+Handler} ()
 \item 
-String\+Name {\bfseries Get\+Area\+Name} ()
-\item 
-\mbox{\hyperlink{class_renown_1_1_thinkers_1_1_a_i_node_cache}{AINode\+Cache}} {\bfseries Get\+Node\+Cache} ()
-\item 
-bool {\bfseries Is\+Player\+Here} ()
-\item 
-\mbox{\hyperlink{class_renown_1_1_world_1_1_biome}{Biome}} {\bfseries Get\+Biome} ()
-\item 
 virtual void {\bfseries Save} ()
 \item 
 virtual void {\bfseries Load} ()
+\item 
+void {\bfseries Change\+Player\+Trait\+Score} (\mbox{\hyperlink{class_renown_1_1_trait}{Trait}} trait, float score)
+\item 
+void {\bfseries Change\+Player\+Renown\+Score} (int score)
 \item 
 override void {\bfseries \+\_\+\+Ready} ()
 \item 
@@ -53,15 +49,7 @@ static Data\+Cache$<$ \mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{Wo
 \doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{Renown.\+World.\+World\+Area}}}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_renown_1_1_world_1_1_biome}{Biome}} {\bfseries Biome}
-\item 
-String\+Name {\bfseries Area\+Name}
-\item 
-\mbox{\hyperlink{class_renown_1_1_thinkers_1_1_a_i_node_cache}{AINode\+Cache}} {\bfseries Node\+Cache}
-\item 
 Tile\+Map\+Layer\mbox{[}$\,$\mbox{]} {\bfseries Tile\+Maps}
-\item 
-bool {\bfseries Player\+Status} = false
 \item 
 int {\bfseries Thread\+Sleep} = Constants.\+THREADSLEEP\+\_\+\+FACTION\+\_\+\+PLAYER\+\_\+\+AWAY
 \item 
@@ -69,6 +57,21 @@ System.\+Threading.\+Thread\+Priority {\bfseries Importance} = Constants.\+THREA
 \item 
 Node\mbox{[}$\,$\mbox{]} {\bfseries Children}
 \end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_renown_1_1_world_1_1_world_area}{Renown.\+World.\+World\+Area}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_renown_1_1_world_1_1_biome}{Biome}} {\bfseries Biome}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+String\+Name {\bfseries Area\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_renown_1_1_thinkers_1_1_a_i_node_cache}{AINode\+Cache}} {\bfseries Node\+Cache}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool {\bfseries Player\+Status} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int {\bfseries Player\+Renown\+Score} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The player\textquotesingle{}s renown score in this \doxylink{class_renown_1_1_world_1_1_world_area}{World\+Area}. \end{DoxyCompactList}\item 
+Dictionary$<$ \mbox{\hyperlink{class_renown_1_1_trait}{Trait}}, float $>$? {\bfseries Player\+Trait\+Scores} = new Dictionary$<$\mbox{\hyperlink{class_renown_1_1_trait}{Trait}}, float$>$()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The player\textquotesingle{}s known trait scores in this \doxylink{class_renown_1_1_world_1_1_world_area}{World\+Area}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

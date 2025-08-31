@@ -97,10 +97,10 @@ Inheritance diagram for Renown.Object:</div>
  <div class="center">
   <img src="interface_renown_1_1_object.png" usemap="#Renown_2EObject_map" alt=""/>
   <map id="Renown_2EObject_map" name="Renown_2EObject_map">
-<area href="class_renown_1_1_entity.html" alt="Renown.Entity" shape="rect" coords="245,56,480,80"/>
+<area href="class_renown_1_1_entity.html" title="The base class from which all entities inherit from." alt="Renown.Entity" shape="rect" coords="245,56,480,80"/>
 <area href="class_renown_1_1_world_1_1_faction.html" alt="Renown.World.Faction" shape="rect" coords="735,56,970,80"/>
-<area href="class_network_player.html" alt="NetworkPlayer" shape="rect" coords="0,112,235,136"/>
-<area href="class_player.html" alt="Player" shape="rect" coords="245,112,480,136"/>
+<area href="class_multiplayer_1_1_network_player.html" alt="Multiplayer.NetworkPlayer" shape="rect" coords="0,112,235,136"/>
+<area href="class_player.html" title="The code that handles player-to-game interactions." alt="Player" shape="rect" coords="245,112,480,136"/>
 <area href="class_renown_1_1_thinkers_1_1_thinker.html" alt="Renown.Thinkers.Thinker" shape="rect" coords="490,112,725,136"/>
 <area href="class_renown_1_1_world_1_1_government.html" alt="Renown.World.Government" shape="rect" coords="735,112,970,136"/>
 <area href="class_multiplayer_1_1_objectives_1_1_extraction_target.html" alt="Multiplayer.Objectives.ExtractionTarget" shape="rect" coords="735,168,970,192"/>
@@ -121,21 +121,64 @@ Inheritance diagram for Renown.Object:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a96eb00bd348f0d2c794b2cfdce464b33" id="r_a96eb00bd348f0d2c794b2cfdce464b33"><td class="memItemLeft" align="right" valign="top"><a id="a96eb00bd348f0d2c794b2cfdce464b33" name="a96eb00bd348f0d2c794b2cfdce464b33"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Save</b> ()</td></tr>
-<tr class="memitem:a06af163fca5c3f7d475b701d5cb0aba0" id="r_a06af163fca5c3f7d475b701d5cb0aba0"><td class="memItemLeft" align="right" valign="top"><a id="a06af163fca5c3f7d475b701d5cb0aba0" name="a06af163fca5c3f7d475b701d5cb0aba0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Load</b> ()</td></tr>
+<tr class="memitem:a96eb00bd348f0d2c794b2cfdce464b33" id="r_a96eb00bd348f0d2c794b2cfdce464b33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96eb00bd348f0d2c794b2cfdce464b33">Save</a> ()</td></tr>
+<tr class="memitem:a06af163fca5c3f7d475b701d5cb0aba0" id="r_a06af163fca5c3f7d475b701d5cb0aba0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06af163fca5c3f7d475b701d5cb0aba0">Load</a> ()</td></tr>
 <tr class="memitem:a1106b186c0956f10c694b995aa8e965b" id="r_a1106b186c0956f10c694b995aa8e965b"><td class="memItemLeft" align="right" valign="top"><a id="a1106b186c0956f10c694b995aa8e965b" name="a1106b186c0956f10c694b995aa8e965b"></a>
 NodePath&#160;</td><td class="memItemRight" valign="bottom"><b>GetHash</b> ()</td></tr>
 <tr class="memitem:a3093f536b6c8f7c33f7276baab3f3877" id="r_a3093f536b6c8f7c33f7276baab3f3877"><td class="memItemLeft" align="right" valign="top"><a id="a3093f536b6c8f7c33f7276baab3f3877" name="a3093f536b6c8f7c33f7276baab3f3877"></a>
 StringName&#160;</td><td class="memItemRight" valign="bottom"><b>GetObjectName</b> ()</td></tr>
-<tr class="memitem:a6283f711286bd8d8e3a96509185f8a79" id="r_a6283f711286bd8d8e3a96509185f8a79"><td class="memItemLeft" align="right" valign="top"><a id="a6283f711286bd8d8e3a96509185f8a79" name="a6283f711286bd8d8e3a96509185f8a79"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DetermineRelationStatus</b> (<a class="el" href="interface_renown_1_1_object.html">Object</a> other)</td></tr>
-<tr class="memitem:a5d345418989ab22232f9f77f67e2118c" id="r_a5d345418989ab22232f9f77f67e2118c"><td class="memItemLeft" align="right" valign="top"><a id="a5d345418989ab22232f9f77f67e2118c" name="a5d345418989ab22232f9f77f67e2118c"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>GetRelationScore</b> (<a class="el" href="interface_renown_1_1_object.html">Object</a> other)</td></tr>
-<tr class="memitem:af78cd9c792aab9b61ae629ac142dd2b9" id="r_af78cd9c792aab9b61ae629ac142dd2b9"><td class="memItemLeft" align="right" valign="top"><a id="af78cd9c792aab9b61ae629ac142dd2b9" name="af78cd9c792aab9b61ae629ac142dd2b9"></a>
-RelationStatus&#160;</td><td class="memItemRight" valign="bottom"><b>GetRelationStatus</b> (<a class="el" href="interface_renown_1_1_object.html">Object</a> other)</td></tr>
+<tr class="memitem:ad04e0d4b606fabbae7cd41758845b039" id="r_ad04e0d4b606fabbae7cd41758845b039"><td class="memItemLeft" align="right" valign="top"><a id="ad04e0d4b606fabbae7cd41758845b039" name="ad04e0d4b606fabbae7cd41758845b039"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DetermineRelationStatus</b> (<a class="el" href="class_renown_1_1_entity.html">Entity</a> entity)</td></tr>
+<tr class="memitem:a5d97bab43ea36b9eefd5d04920702572" id="r_a5d97bab43ea36b9eefd5d04920702572"><td class="memItemLeft" align="right" valign="top"><a id="a5d97bab43ea36b9eefd5d04920702572" name="a5d97bab43ea36b9eefd5d04920702572"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DetermineRelationStatus</b> (<a class="el" href="class_renown_1_1_world_1_1_faction.html">Faction</a> faction)</td></tr>
+<tr class="memitem:a5ab355884018b0ddcef4cd9ba7a19d76" id="r_a5ab355884018b0ddcef4cd9ba7a19d76"><td class="memItemLeft" align="right" valign="top"><a id="a5ab355884018b0ddcef4cd9ba7a19d76" name="a5ab355884018b0ddcef4cd9ba7a19d76"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetRelationScore</b> (<a class="el" href="class_renown_1_1_entity.html">Entity</a> entity)</td></tr>
+<tr class="memitem:abf5d3f139907f3e46df0550d3785712f" id="r_abf5d3f139907f3e46df0550d3785712f"><td class="memItemLeft" align="right" valign="top"><a id="abf5d3f139907f3e46df0550d3785712f" name="abf5d3f139907f3e46df0550d3785712f"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetRelationScore</b> (<a class="el" href="class_renown_1_1_world_1_1_faction.html">Faction</a> faction)</td></tr>
+<tr class="memitem:a88c79e55c3af49aad690395a101e7e13" id="r_a88c79e55c3af49aad690395a101e7e13"><td class="memItemLeft" align="right" valign="top"><a id="a88c79e55c3af49aad690395a101e7e13" name="a88c79e55c3af49aad690395a101e7e13"></a>
+RelationStatus&#160;</td><td class="memItemRight" valign="bottom"><b>GetRelationStatus</b> (<a class="el" href="class_renown_1_1_entity.html">Entity</a> entity)</td></tr>
+<tr class="memitem:aa609b3aa33d57ce85d9b767dfa521c9e" id="r_aa609b3aa33d57ce85d9b767dfa521c9e"><td class="memItemLeft" align="right" valign="top"><a id="aa609b3aa33d57ce85d9b767dfa521c9e" name="aa609b3aa33d57ce85d9b767dfa521c9e"></a>
+RelationStatus&#160;</td><td class="memItemRight" valign="bottom"><b>GetRelationStatus</b> (<a class="el" href="class_renown_1_1_world_1_1_faction.html">Faction</a> faction)</td></tr>
 </table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a06af163fca5c3f7d475b701d5cb0aba0" name="a06af163fca5c3f7d475b701d5cb0aba0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06af163fca5c3f7d475b701d5cb0aba0">&#9670;&#160;</a></span>Load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Renown.Object.Load </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_player.html#a80764079e1fc0a5b07cceb7a2386d5de">Player</a>, <a class="el" href="class_renown_1_1_entity.html#a92d640b8af31105f1bc465a88d3e6024">Renown.Entity</a>, and <a class="el" href="class_renown_1_1_thinkers_1_1_faction_leader.html#a66702c5291515079f49f57eab36a407d">Renown.Thinkers.FactionLeader</a>.</p>
+
+</div>
+</div>
+<a id="a96eb00bd348f0d2c794b2cfdce464b33" name="a96eb00bd348f0d2c794b2cfdce464b33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96eb00bd348f0d2c794b2cfdce464b33">&#9670;&#160;</a></span>Save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Renown.Object.Save </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_player.html#a1c8f02f4432b8f894d5ed0fe076f21ee">Player</a>, <a class="el" href="class_renown_1_1_entity.html#af2a23f06f18c067b308ffc46e3b0923d">Renown.Entity</a>, and <a class="el" href="class_renown_1_1_thinkers_1_1_faction_leader.html#a5f7b4425c3adc76f7976498d89ca8384">Renown.Thinkers.FactionLeader</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
 <li>scripts/Renown/<b>Object.cs</b></li>
 </ul>

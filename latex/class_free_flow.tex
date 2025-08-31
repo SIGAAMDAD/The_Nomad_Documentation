@@ -1,5 +1,10 @@
 \doxysection{Free\+Flow Class Reference}
 \hypertarget{class_free_flow}{}\label{class_free_flow}\index{FreeFlow@{FreeFlow}}
+
+
+Manages player combo state and berserker mode.  
+
+
 Inheritance diagram for Free\+Flow\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,32 +14,30 @@ Inheritance diagram for Free\+Flow\+:\begin{figure}[H]
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_free_flow_a565ef2d250192ecd45b7e418ea26bd9a}\label{class_free_flow_a565ef2d250192ecd45b7e418ea26bd9a} 
-delegate void {\bfseries Combo\+Finished\+Event\+Handler} (int n\+Combo)
+\Hypertarget{class_free_flow_ab96e0e7c503483461092d438895d825d}\label{class_free_flow_ab96e0e7c503483461092d438895d825d} 
+delegate void {\bfseries Combo\+Finished\+Event\+Handler} (int combo)
 \item 
-\Hypertarget{class_free_flow_a357ab3d977f096c10eae2c0e12d0f57d}\label{class_free_flow_a357ab3d977f096c10eae2c0e12d0f57d} 
-delegate void {\bfseries New\+Highest\+Combo\+Event\+Handler} (int n\+Combo)
+\Hypertarget{class_free_flow_a5e662cc587807bb4088cc3a3fe9bb6a5}\label{class_free_flow_a5e662cc587807bb4088cc3a3fe9bb6a5} 
+delegate void {\bfseries New\+Highest\+Combo\+Event\+Handler} (int combo)
 \item 
-\Hypertarget{class_free_flow_aa24cd86a07747b832970b91d088ef459}\label{class_free_flow_aa24cd86a07747b832970b91d088ef459} 
-delegate void {\bfseries Kill\+Added\+Event\+Handler} (Kill\+Type n\+Type)
+\Hypertarget{class_free_flow_a5147e856622022f2e35964b223c273e5}\label{class_free_flow_a5147e856622022f2e35964b223c273e5} 
+delegate void {\bfseries Kill\+Added\+Event\+Handler} (Kill\+Type type)
 \item 
 \Hypertarget{class_free_flow_a9ff2b0ddd900f74bfcfac9eb01b01d65}\label{class_free_flow_a9ff2b0ddd900f74bfcfac9eb01b01d65} 
 override void {\bfseries \+\_\+\+Ready} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em godot initialization override \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_free_flow_a3b85befaab75564b83b9ef5e05b7bf6b}\label{class_free_flow_a3b85befaab75564b83b9ef5e05b7bf6b} 
-static void {\bfseries Add\+Kill} (Kill\+Type n\+Type, int n\+Score)
-\item 
-\Hypertarget{class_free_flow_a698e4d299c898c09a40a51907bb96eb0}\label{class_free_flow_a698e4d299c898c09a40a51907bb96eb0} 
-static void {\bfseries Increase\+Combo} (int n\+Amount=1)
-\item 
+static void \mbox{\hyperlink{class_free_flow_a4e6abd2910f1e70cc5748186cb7b4247}{Add\+Kill}} (Kill\+Type type, int score)
+\begin{DoxyCompactList}\small\item\em Adds a kill to the current score of the encounter. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_free_flow_a70bbe26d48e18ca5eefcf825155d2df3}{Increase\+Combo}} (int amount=1)
+\begin{DoxyCompactList}\small\item\em Increase the current freeflow combo counter by {\bfseries{amount}} \end{DoxyCompactList}\item 
 \Hypertarget{class_free_flow_af9679f29fc620491ba9e32207e96ff89}\label{class_free_flow_af9679f29fc620491ba9e32207e96ff89} 
 static void {\bfseries End\+Combo} ()
 \item 
-\Hypertarget{class_free_flow_a9b85b2d60cc11dddd0e6fe7ac4c1c11c}\label{class_free_flow_a9b85b2d60cc11dddd0e6fe7ac4c1c11c} 
-static void {\bfseries Increase\+Total\+Score} (int n\+Amount)
+\Hypertarget{class_free_flow_a1ad37ecea54e9c76e52ca3b121780b40}\label{class_free_flow_a1ad37ecea54e9c76e52ca3b121780b40} 
+static void {\bfseries Increase\+Total\+Score} (int amount)
 \item 
 \Hypertarget{class_free_flow_a034647d652aac0380eb810105b5fb9fd}\label{class_free_flow_a034647d652aac0380eb810105b5fb9fd} 
 static void {\bfseries Calculate\+Encounter\+Score} ()
@@ -42,9 +45,8 @@ static void {\bfseries Calculate\+Encounter\+Score} ()
 \Hypertarget{class_free_flow_a24465eb8968570068ddd46195ec58ce8}\label{class_free_flow_a24465eb8968570068ddd46195ec58ce8} 
 static void {\bfseries Start\+Encounter} ()
 \item 
-\Hypertarget{class_free_flow_a135c0c8fb7e069204f47726237ba1f51}\label{class_free_flow_a135c0c8fb7e069204f47726237ba1f51} 
-static void {\bfseries Hitstop} (float game\+Speed, float duration)
-\end{DoxyCompactItemize}
+static void \mbox{\hyperlink{class_free_flow_a135c0c8fb7e069204f47726237ba1f51}{Hitstop}} (float game\+Speed, float duration)
+\begin{DoxyCompactList}\small\item\em Used for hitstop effects, exclusively for singleplayer. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
@@ -62,7 +64,74 @@ int {\bfseries Headshot\+Counter} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{
 \item 
 \Hypertarget{class_free_flow_abecd81582d53c6aead5627c4cf89f752}\label{class_free_flow_abecd81582d53c6aead5627c4cf89f752} 
 int {\bfseries Total\+Score} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\Hypertarget{class_free_flow_a615e748d03f505869825d4904dc31afe}\label{class_free_flow_a615e748d03f505869825d4904dc31afe} 
+static ? \mbox{\hyperlink{class_free_flow}{Free\+Flow}} {\bfseries Instance}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages player combo state and berserker mode. 
+
+\label{doc-func-members}
+\Hypertarget{class_free_flow_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_free_flow_a4e6abd2910f1e70cc5748186cb7b4247}\index{FreeFlow@{FreeFlow}!AddKill@{AddKill}}
+\index{AddKill@{AddKill}!FreeFlow@{FreeFlow}}
+\doxysubsubsection{\texorpdfstring{AddKill()}{AddKill()}}
+{\footnotesize\ttfamily \label{class_free_flow_a4e6abd2910f1e70cc5748186cb7b4247} 
+void Free\+Flow.\+Add\+Kill (\begin{DoxyParamCaption}\item[{Kill\+Type}]{type}{, }\item[{int}]{score}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Adds a kill to the current score of the encounter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \\
+\hline
+{\em score} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_free_flow_a135c0c8fb7e069204f47726237ba1f51}\index{FreeFlow@{FreeFlow}!Hitstop@{Hitstop}}
+\index{Hitstop@{Hitstop}!FreeFlow@{FreeFlow}}
+\doxysubsubsection{\texorpdfstring{Hitstop()}{Hitstop()}}
+{\footnotesize\ttfamily \label{class_free_flow_a135c0c8fb7e069204f47726237ba1f51} 
+void Free\+Flow.\+Hitstop (\begin{DoxyParamCaption}\item[{float}]{game\+Speed}{, }\item[{float}]{duration}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Used for hitstop effects, exclusively for singleplayer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Speed} & What to set Engine.\+Time\+Scale to\\
+\hline
+{\em duration} & The duration (in seconds) of the effect\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Out\+Of\+Range\+Exception} & Thrown if duration or gamespeed or duration is less than or equal to 0.\+0f\\
+\hline
+{\em Invalid\+Operation\+Exception} & Thrown if \doxylink{class_free_flow}{Free\+Flow} was called without being instantiated\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_free_flow_a70bbe26d48e18ca5eefcf825155d2df3}\index{FreeFlow@{FreeFlow}!IncreaseCombo@{IncreaseCombo}}
+\index{IncreaseCombo@{IncreaseCombo}!FreeFlow@{FreeFlow}}
+\doxysubsubsection{\texorpdfstring{IncreaseCombo()}{IncreaseCombo()}}
+{\footnotesize\ttfamily \label{class_free_flow_a70bbe26d48e18ca5eefcf825155d2df3} 
+void Free\+Flow.\+Increase\+Combo (\begin{DoxyParamCaption}\item[{int}]{amount}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Increase the current freeflow combo counter by {\bfseries{amount}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount to increase the combo by\\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

@@ -91,6 +91,9 @@ $(function(){initNavTree('class_player_system_1_1_inventory_manager.html','','cl
   <div class="headertitle"><div class="title">PlayerSystem.InventoryManager Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Manages the player's local inventory.  
+ <a href="#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for PlayerSystem.InventoryManager:</div>
 <div class="dyncontent">
@@ -102,25 +105,790 @@ Inheritance diagram for PlayerSystem.InventoryManager:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a08c417c5f5b967e832f2b044dfa5a756" id="r_a08c417c5f5b967e832f2b044dfa5a756"><td class="memItemLeft" align="right" valign="top"><a id="a08c417c5f5b967e832f2b044dfa5a756" name="a08c417c5f5b967e832f2b044dfa5a756"></a>
 delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>WeaponStatusUpdatedEventHandler</b> (<a class="el" href="class_weapon_entity.html">WeaponEntity</a> entity, WeaponEntity.Properties properties)</td></tr>
-<tr class="memitem:afd1742c51073dbadecf0d1e577699a35" id="r_afd1742c51073dbadecf0d1e577699a35"><td class="memItemLeft" align="right" valign="top"><a id="afd1742c51073dbadecf0d1e577699a35" name="afd1742c51073dbadecf0d1e577699a35"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DropWeapon</b> (int hashCode)</td></tr>
-<tr class="memitem:a5cecad4f3198a93cab3f0c0c93351566" id="r_a5cecad4f3198a93cab3f0c0c93351566"><td class="memItemLeft" align="right" valign="top"><a id="a5cecad4f3198a93cab3f0c0c93351566" name="a5cecad4f3198a93cab3f0c0c93351566"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DropAmmo</b> (int hashCode)</td></tr>
+<tr class="memitem:a9c84ea6edfc564c326a7a6fe65bf2c02" id="r_a9c84ea6edfc564c326a7a6fe65bf2c02"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c84ea6edfc564c326a7a6fe65bf2c02">InventoryManager</a> (<a class="el" href="class_player.html">Player</a>? player)</td></tr>
+<tr class="memitem:a4ca9e2535f3d3bd161764cbcdba20d0a" id="r_a4ca9e2535f3d3bd161764cbcdba20d0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ca9e2535f3d3bd161764cbcdba20d0a">SetEquippedWeapon</a> (int weaponSlot)</td></tr>
+<tr class="memdesc:a4ca9e2535f3d3bd161764cbcdba20d0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the currently equipped <a class="el" href="class_player_system_1_1_weapon_slot.html">WeaponSlot</a>.  <br /></td></tr>
+<tr class="memitem:a310018f11abaae84b3e7380a0e0f8327" id="r_a310018f11abaae84b3e7380a0e0f8327"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a310018f11abaae84b3e7380a0e0f8327">DecreaseMoney</a> (float amount)</td></tr>
+<tr class="memdesc:a310018f11abaae84b3e7380a0e0f8327"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decreases the player's money by the amount provided.  <br /></td></tr>
+<tr class="memitem:a5a8b8e9fdd32a8f339f780fd9d5ee9ea" id="r_a5a8b8e9fdd32a8f339f780fd9d5ee9ea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a8b8e9fdd32a8f339f780fd9d5ee9ea">IncreaseMoney</a> (float amount)</td></tr>
+<tr class="memdesc:a5a8b8e9fdd32a8f339f780fd9d5ee9ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increases the player's money by the amount provided.  <br /></td></tr>
+<tr class="memitem:a665e0a997be57d2aeee9c6b3e904ff80" id="r_a665e0a997be57d2aeee9c6b3e904ff80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a665e0a997be57d2aeee9c6b3e904ff80">SetPrimaryWeapon</a> (<a class="el" href="class_weapon_entity.html">WeaponEntity</a> weapon)</td></tr>
+<tr class="memdesc:a665e0a997be57d2aeee9c6b3e904ff80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the <a class="el" href="class_weapon_entity.html">WeaponEntity</a> in the WeaponSlotIndex.HeavyPrimary slot.  <br /></td></tr>
+<tr class="memitem:aab2e5c869eba6b51db6213831ffb7d10" id="r_aab2e5c869eba6b51db6213831ffb7d10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab2e5c869eba6b51db6213831ffb7d10">SetHeavyPrimaryWeapon</a> (<a class="el" href="class_weapon_entity.html">WeaponEntity</a> weapon)</td></tr>
+<tr class="memdesc:aab2e5c869eba6b51db6213831ffb7d10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the <a class="el" href="class_weapon_entity.html">WeaponEntity</a> in the WeaponSlotIndex.HeavyPrimary slot.  <br /></td></tr>
+<tr class="memitem:a5b643df12710d08731fa00760e3453b5" id="r_a5b643df12710d08731fa00760e3453b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b643df12710d08731fa00760e3453b5">SetSidearmWeapon</a> (<a class="el" href="class_weapon_entity.html">WeaponEntity</a> weapon)</td></tr>
+<tr class="memdesc:a5b643df12710d08731fa00760e3453b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the <a class="el" href="class_weapon_entity.html">WeaponEntity</a> in the WeaponSlotIndex.Sidearm slot.  <br /></td></tr>
+<tr class="memitem:ae3776ad9ed9726256a8ebe57235fc610" id="r_ae3776ad9ed9726256a8ebe57235fc610"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3776ad9ed9726256a8ebe57235fc610">SetHeavySidearmWeapon</a> (<a class="el" href="class_weapon_entity.html">WeaponEntity</a> weapon)</td></tr>
+<tr class="memdesc:ae3776ad9ed9726256a8ebe57235fc610"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the <a class="el" href="class_weapon_entity.html">WeaponEntity</a> in the WeaponSlotIndex.HeavySidearm slot.  <br /></td></tr>
+<tr class="memitem:adedb123bc6278b5f31be9447f33e3630" id="r_adedb123bc6278b5f31be9447f33e3630"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player_system_1_1_weapon_slot.html">WeaponSlot</a>?&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adedb123bc6278b5f31be9447f33e3630">GetPrimaryWeapon</a> ()</td></tr>
+<tr class="memdesc:adedb123bc6278b5f31be9447f33e3630"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches the currently equipped weapon in the "Primary" slot.  <br /></td></tr>
+<tr class="memitem:a3d34bf78cf744b6520d2c6d4430153c7" id="r_a3d34bf78cf744b6520d2c6d4430153c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player_system_1_1_weapon_slot.html">WeaponSlot</a>?&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d34bf78cf744b6520d2c6d4430153c7">GetHeavyPrimaryWeapon</a> ()</td></tr>
+<tr class="memdesc:a3d34bf78cf744b6520d2c6d4430153c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches the currently equipped weapon in the "Heavy Primary" slot.  <br /></td></tr>
+<tr class="memitem:ad746ab3f8243a9adb5e8471746efb3f6" id="r_ad746ab3f8243a9adb5e8471746efb3f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player_system_1_1_weapon_slot.html">WeaponSlot</a>?&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad746ab3f8243a9adb5e8471746efb3f6">GetSidearmWeapon</a> ()</td></tr>
+<tr class="memdesc:ad746ab3f8243a9adb5e8471746efb3f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches the currently equipped weapon in the "Sidearm" slot.  <br /></td></tr>
+<tr class="memitem:a757d375882e0bc0685ba80d74d5770da" id="r_a757d375882e0bc0685ba80d74d5770da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player_system_1_1_weapon_slot.html">WeaponSlot</a>?&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a757d375882e0bc0685ba80d74d5770da">GetHeavySidearmWeapon</a> ()</td></tr>
+<tr class="memdesc:a757d375882e0bc0685ba80d74d5770da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches the currently equipped weapon in the "Heavy Sidearm" slot.  <br /></td></tr>
+<tr class="memitem:afd0f2802aecd4a88b35552679d8d4f17" id="r_afd0f2802aecd4a88b35552679d8d4f17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd0f2802aecd4a88b35552679d8d4f17">Save</a> (<a class="el" href="class_save_system_1_1_save_section_writer.html">SaveSystem.SaveSectionWriter</a> writer)</td></tr>
+<tr class="memdesc:afd0f2802aecd4a88b35552679d8d4f17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the player's current inventory to disk.  <br /></td></tr>
+<tr class="memitem:a75762f81ecedb651ba04a0eece33950c" id="r_a75762f81ecedb651ba04a0eece33950c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75762f81ecedb651ba04a0eece33950c">Load</a> (<a class="el" href="class_save_system_1_1_save_section_reader.html">SaveSystem.SaveSectionReader</a> reader, <a class="el" href="class_player.html">Player</a> player)</td></tr>
+<tr class="memdesc:a75762f81ecedb651ba04a0eece33950c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads inventory state from disk.  <br /></td></tr>
+<tr class="memitem:a24d9342bb5f8f1e092abcfb668327e8a" id="r_a24d9342bb5f8f1e092abcfb668327e8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24d9342bb5f8f1e092abcfb668327e8a">LoadWeapon</a> (<a class="el" href="class_weapon_entity.html">WeaponEntity</a> weapon, string ammo, int slot)</td></tr>
+<tr class="memdesc:a24d9342bb5f8f1e092abcfb668327e8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the provided weapon object into a weapon slot and initializes ammo reserves if needed.  <br /></td></tr>
+<tr class="memitem:aa4eb830022f1c476bc4121995de82611" id="r_aa4eb830022f1c476bc4121995de82611"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4eb830022f1c476bc4121995de82611">PickupAmmo</a> (in <a class="el" href="class_interactables_1_1_item_pickup.html">ItemPickup</a> ammo)</td></tr>
+<tr class="memdesc:aa4eb830022f1c476bc4121995de82611"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an <a class="el" href="class_interactables_1_1_item_pickup.html" title="wrapper class for item pickup interactables, static, and will automatically free from the tree when u...">ItemPickup</a>'s ammo data to the <a class="el" href="#a025335ac9ef4f5c34d4c3a8dca948120" title="The ammo currently being carried by the player.">AmmoStacks</a>  <br /></td></tr>
+<tr class="memitem:ac8c0ec56fc73116cfe569604f0367684" id="r_ac8c0ec56fc73116cfe569604f0367684"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8c0ec56fc73116cfe569604f0367684">PickupWeapon</a> (in <a class="el" href="class_weapon_entity.html">WeaponEntity</a> weapon)</td></tr>
+<tr class="memdesc:ac8c0ec56fc73116cfe569604f0367684"><td class="mdescLeft">&#160;</td><td class="mdescRight">Picks up a <a class="el" href="class_weapon_entity.html">WeaponEntity</a>, stores it in the <a class="el" href="#a9ada653fe1187ee236478dc4eb1cb9de" title="The weapons currently being carried by the player.">WeaponsStack</a>, and if there's no weapon in the slots, it'll be automatically equipped.  <br /></td></tr>
+<tr class="memitem:afd1742c51073dbadecf0d1e577699a35" id="r_afd1742c51073dbadecf0d1e577699a35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd1742c51073dbadecf0d1e577699a35">DropWeapon</a> (int hashCode)</td></tr>
+<tr class="memdesc:afd1742c51073dbadecf0d1e577699a35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a <a class="el" href="class_weapon_entity.html">WeaponEntity</a> object from the inventory, and unequips the weapon if it was previously equipped.  <br /></td></tr>
+<tr class="memitem:a5cecad4f3198a93cab3f0c0c93351566" id="r_a5cecad4f3198a93cab3f0c0c93351566"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cecad4f3198a93cab3f0c0c93351566">DropAmmo</a> (int hashCode)</td></tr>
+<tr class="memdesc:a5cecad4f3198a93cab3f0c0c93351566"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an <a class="el" href="class_ammo_stack.html">AmmoStack</a> from the inventory.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:acf45e8416036c41fe4053dbb0702c807" id="r_acf45e8416036c41fe4053dbb0702c807"><td class="memItemLeft" align="right" valign="top"><a id="acf45e8416036c41fe4053dbb0702c807" name="acf45e8416036c41fe4053dbb0702c807"></a>
 static readonly int&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_WEAPON_SLOTS</b> = 4</td></tr>
+<tr class="memdesc:acf45e8416036c41fe4053dbb0702c807"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of weapons a player can have on them at a time. <br /></td></tr>
+<tr class="memitem:abbdb11d997dce81874f2d828f49db63e" id="r_abbdb11d997dce81874f2d828f49db63e"><td class="memItemLeft" align="right" valign="top"><a id="abbdb11d997dce81874f2d828f49db63e" name="abbdb11d997dce81874f2d828f49db63e"></a>
+static readonly float&#160;</td><td class="memItemRight" valign="bottom"><b>MAXIMUM_INVENTORY_WEIGHT</b> = 500.0f</td></tr>
+<tr class="memdesc:abbdb11d997dce81874f2d828f49db63e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum amount of weight a player can carry on them before becoming Player.PlayerFlags.Encumbured, thus slowing them down. <br /></td></tr>
+<tr class="memitem:a2f921a5e32c7cc3aee01dcff55b2bacd" id="r_a2f921a5e32c7cc3aee01dcff55b2bacd"><td class="memItemLeft" align="right" valign="top"><a id="a2f921a5e32c7cc3aee01dcff55b2bacd" name="a2f921a5e32c7cc3aee01dcff55b2bacd"></a>
+static readonly int&#160;</td><td class="memItemRight" valign="bottom"><b>MAXIMUM_RUNE_SLOTS</b> = 5</td></tr>
+<tr class="memdesc:a2f921a5e32c7cc3aee01dcff55b2bacd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum amount of weight the player is currently allowed to carry. <br /></td></tr>
+<tr class="memitem:a6ee5e7a6b21a1c32b1facadea799c4a3" id="r_a6ee5e7a6b21a1c32b1facadea799c4a3"><td class="memItemLeft" align="right" valign="top"><a id="a6ee5e7a6b21a1c32b1facadea799c4a3" name="a6ee5e7a6b21a1c32b1facadea799c4a3"></a>
+static readonly int&#160;</td><td class="memItemRight" valign="bottom"><b>MAXIMUM_QUICK_ACCESS_SLOTS</b> = 4</td></tr>
+<tr class="memdesc:a6ee5e7a6b21a1c32b1facadea799c4a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum amount of item types that can be allocated to quick access slots. <br /></td></tr>
+<tr class="memitem:a097c9703a6751e5c96cc9282f59c032a" id="r_a097c9703a6751e5c96cc9282f59c032a"><td class="memItemLeft" align="right" valign="top"><a id="a097c9703a6751e5c96cc9282f59c032a" name="a097c9703a6751e5c96cc9282f59c032a"></a>
+static readonly int&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_RUNES</b> = 5</td></tr>
+<tr class="memdesc:a097c9703a6751e5c96cc9282f59c032a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum amount of equippable runes a player can have at a time. <br /></td></tr>
+<tr class="memitem:a632832902dcf032a8bd935af7e5d4414" id="r_a632832902dcf032a8bd935af7e5d4414"><td class="memItemLeft" align="right" valign="top"><a id="a632832902dcf032a8bd935af7e5d4414" name="a632832902dcf032a8bd935af7e5d4414"></a>
+static readonly int&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_PERKS</b> = 1</td></tr>
+<tr class="memdesc:a632832902dcf032a8bd935af7e5d4414"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum amount of equippable perks a player can have at a time. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:ac19f2ddc1c072732f20cda28fb58b30a" id="r_ac19f2ddc1c072732f20cda28fb58b30a"><td class="memItemLeft" align="right" valign="top"><a id="ac19f2ddc1c072732f20cda28fb58b30a" name="ac19f2ddc1c072732f20cda28fb58b30a"></a>
-<a class="el" href="class_player_system_1_1_weapon_slot.html">WeaponSlot</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>WeaponSlots</b> = new <a class="el" href="class_player_system_1_1_weapon_slot.html">WeaponSlot</a>[ MAX_WEAPON_SLOTS ]<code> [get]</code></td></tr>
+<a class="el" href="class_player_system_1_1_weapon_slot.html">WeaponSlot</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>WeaponSlots</b> = new <a class="el" href="class_player_system_1_1_weapon_slot.html">WeaponSlot</a>[ <a class="el" href="#acf45e8416036c41fe4053dbb0702c807">MAX_WEAPON_SLOTS</a> ]<code> [get]</code></td></tr>
+<tr class="memdesc:ac19f2ddc1c072732f20cda28fb58b30a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The weapons that are currently equipped by the player. <br /></td></tr>
 <tr class="memitem:ac3979b5422ca6f55a133879ee217cb1d" id="r_ac3979b5422ca6f55a133879ee217cb1d"><td class="memItemLeft" align="right" valign="top"><a id="ac3979b5422ca6f55a133879ee217cb1d" name="ac3979b5422ca6f55a133879ee217cb1d"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentWeapon</b> = <a class="el" href="class_player_system_1_1_weapon_slot.html#af73055771aef2c168152b69449764e9f">WeaponSlot.INVALID</a><code> [get]</code></td></tr>
+<tr class="memdesc:ac3979b5422ca6f55a133879ee217cb1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The weapon slot currently being used by the player. <br /></td></tr>
+<tr class="memitem:a532d4e9ca5c90512643e4d4eb85e78bb" id="r_a532d4e9ca5c90512643e4d4eb85e78bb"><td class="memItemLeft" align="right" valign="top"><a id="a532d4e9ca5c90512643e4d4eb85e78bb" name="a532d4e9ca5c90512643e4d4eb85e78bb"></a>
+HashSet&lt; <a class="el" href="class_player_system_1_1_perks_1_1_perk.html">Perk</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>UnlockedBoons</b><code> [get]</code></td></tr>
+<tr class="memdesc:a532d4e9ca5c90512643e4d4eb85e78bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The boons that the player has already found. <br /></td></tr>
+<tr class="memitem:a6cc94be8228fa66f6c95d7672dfda112" id="r_a6cc94be8228fa66f6c95d7672dfda112"><td class="memItemLeft" align="right" valign="top"><a id="a6cc94be8228fa66f6c95d7672dfda112" name="a6cc94be8228fa66f6c95d7672dfda112"></a>
+HashSet&lt; <a class="el" href="class_player_system_1_1_runes_1_1_rune.html">Rune</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>UnlockedRunes</b><code> [get]</code></td></tr>
+<tr class="memdesc:a6cc94be8228fa66f6c95d7672dfda112"><td class="mdescLeft">&#160;</td><td class="mdescRight">The runes that the player has already found. <br /></td></tr>
+<tr class="memitem:a57cc1bd24a7fedbfd949ada7ff726dc7" id="r_a57cc1bd24a7fedbfd949ada7ff726dc7"><td class="memItemLeft" align="right" valign="top"><a id="a57cc1bd24a7fedbfd949ada7ff726dc7" name="a57cc1bd24a7fedbfd949ada7ff726dc7"></a>
+<a class="el" href="class_player_system_1_1_totems_1_1_totem.html">Totem</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Totem</b><code> [get]</code></td></tr>
+<tr class="memdesc:a57cc1bd24a7fedbfd949ada7ff726dc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The currently equipped <a class="el" href="class_player_system_1_1_totems_1_1_totem.html">PlayerSystem.Totems.Totem</a> <br /></td></tr>
+<tr class="memitem:a5333109ed3b4c4acb397125842631cde" id="r_a5333109ed3b4c4acb397125842631cde"><td class="memItemLeft" align="right" valign="top"><a id="a5333109ed3b4c4acb397125842631cde" name="a5333109ed3b4c4acb397125842631cde"></a>
+<a class="el" href="class_player_system_1_1_perks_1_1_perk.html">Perk</a>&#160;</td><td class="memItemRight" valign="bottom"><b>PerkSlot</b><code> [get]</code></td></tr>
+<tr class="memdesc:a5333109ed3b4c4acb397125842631cde"><td class="mdescLeft">&#160;</td><td class="mdescRight">The currently equipped <a class="el" href="class_player_system_1_1_perks_1_1_perk.html">PlayerSystem.Perks.Perk</a> <br /></td></tr>
+<tr class="memitem:a64a3909e484eab1cf7eaddbbb1fee0ce" id="r_a64a3909e484eab1cf7eaddbbb1fee0ce"><td class="memItemLeft" align="right" valign="top"><a id="a64a3909e484eab1cf7eaddbbb1fee0ce" name="a64a3909e484eab1cf7eaddbbb1fee0ce"></a>
+<a class="el" href="class_player_system_1_1_runes_1_1_rune.html">Rune</a>?[]&#160;</td><td class="memItemRight" valign="bottom"><b>RuneSlots</b> = null<code> [get]</code></td></tr>
+<tr class="memdesc:a64a3909e484eab1cf7eaddbbb1fee0ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">The currently equipped <a class="el" href="namespace_player_system_1_1_runes.html">Runes</a>. <br /></td></tr>
+<tr class="memitem:a5bb523d65c4a58f5eeec7e55c79c2cd5" id="r_a5bb523d65c4a58f5eeec7e55c79c2cd5"><td class="memItemLeft" align="right" valign="top"><a id="a5bb523d65c4a58f5eeec7e55c79c2cd5" name="a5bb523d65c4a58f5eeec7e55c79c2cd5"></a>
+<a class="el" href="class_player_system_1_1_consumable_stack.html">ConsumableStack</a>?[]&#160;</td><td class="memItemRight" valign="bottom"><b>QuickAccessSlots</b> = null<code> [get]</code></td></tr>
+<tr class="memdesc:a5bb523d65c4a58f5eeec7e55c79c2cd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The currently equipped items assigned to the in-game hotbar. <br /></td></tr>
+<tr class="memitem:ab8aed2008a74b7fdfda5e638bc1430bd" id="r_ab8aed2008a74b7fdfda5e638bc1430bd"><td class="memItemLeft" align="right" valign="top"><a id="ab8aed2008a74b7fdfda5e638bc1430bd" name="ab8aed2008a74b7fdfda5e638bc1430bd"></a>
+Dictionary&lt; GodotObject, int &gt;?&#160;</td><td class="memItemRight" valign="bottom"><b>Storage</b> = null<code> [get]</code></td></tr>
+<tr class="memdesc:ab8aed2008a74b7fdfda5e638bc1430bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The permanent storage container for the inventory, where everything not being carried is stored. <br /></td></tr>
+<tr class="memitem:a025335ac9ef4f5c34d4c3a8dca948120" id="r_a025335ac9ef4f5c34d4c3a8dca948120"><td class="memItemLeft" align="right" valign="top"><a id="a025335ac9ef4f5c34d4c3a8dca948120" name="a025335ac9ef4f5c34d4c3a8dca948120"></a>
+Godot.Collections.? Dictionary&lt; int, <a class="el" href="class_ammo_stack.html">AmmoStack</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>AmmoStacks</b><code> [get]</code></td></tr>
+<tr class="memdesc:a025335ac9ef4f5c34d4c3a8dca948120"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ammo currently being carried by the player. <br /></td></tr>
+<tr class="memitem:a9ada653fe1187ee236478dc4eb1cb9de" id="r_a9ada653fe1187ee236478dc4eb1cb9de"><td class="memItemLeft" align="right" valign="top"><a id="a9ada653fe1187ee236478dc4eb1cb9de" name="a9ada653fe1187ee236478dc4eb1cb9de"></a>
+Godot.Collections.? Dictionary&lt; int, <a class="el" href="class_weapon_entity.html">WeaponEntity</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>WeaponsStack</b><code> [get]</code></td></tr>
+<tr class="memdesc:a9ada653fe1187ee236478dc4eb1cb9de"><td class="mdescLeft">&#160;</td><td class="mdescRight">The weapons currently being carried by the player. <br /></td></tr>
+<tr class="memitem:a5c838a40da365429d10e8c23fcaaa862" id="r_a5c838a40da365429d10e8c23fcaaa862"><td class="memItemLeft" align="right" valign="top"><a id="a5c838a40da365429d10e8c23fcaaa862" name="a5c838a40da365429d10e8c23fcaaa862"></a>
+Godot.Collections.? Dictionary&lt; int, <a class="el" href="class_player_system_1_1_consumable_stack.html">ConsumableStack</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ConsumableStacks</b><code> [get]</code></td></tr>
+<tr class="memdesc:a5c838a40da365429d10e8c23fcaaa862"><td class="mdescLeft">&#160;</td><td class="mdescRight">The consumables currently being carried by the player. <br /></td></tr>
+<tr class="memitem:a4644824e33080fc5fc259d2fff4942e0" id="r_a4644824e33080fc5fc259d2fff4942e0"><td class="memItemLeft" align="right" valign="top"><a id="a4644824e33080fc5fc259d2fff4942e0" name="a4644824e33080fc5fc259d2fff4942e0"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>Money</b> = 0.0f<code> [get]</code></td></tr>
+<tr class="memdesc:a4644824e33080fc5fc259d2fff4942e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The amount of money the player has. <br /></td></tr>
+<tr class="memitem:a60dd9491a838002645616c51b2a11bd5" id="r_a60dd9491a838002645616c51b2a11bd5"><td class="memItemLeft" align="right" valign="top"><a id="a60dd9491a838002645616c51b2a11bd5" name="a60dd9491a838002645616c51b2a11bd5"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>TotalInventoryWeight</b> = 0.0f<code> [get]</code></td></tr>
+<tr class="memdesc:a60dd9491a838002645616c51b2a11bd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current total weight of inventory items. <br /></td></tr>
 </table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Manages the player's local inventory. </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a9c84ea6edfc564c326a7a6fe65bf2c02" name="a9c84ea6edfc564c326a7a6fe65bf2c02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c84ea6edfc564c326a7a6fe65bf2c02">&#9670;&#160;</a></span>InventoryManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PlayerSystem.InventoryManager.InventoryManager </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_player.html">Player</a>?</td>          <td class="paramname"><span class="paramname"><em>player</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a310018f11abaae84b3e7380a0e0f8327" name="a310018f11abaae84b3e7380a0e0f8327"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a310018f11abaae84b3e7380a0e0f8327">&#9670;&#160;</a></span>DecreaseMoney()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PlayerSystem.InventoryManager.DecreaseMoney </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>amount</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Decreases the player's money by the amount provided. </p>
+<p>Triggers the Player.LoseMoney signal. This function will ignore the call if amount is less than or equal to zero </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">amount</td><td>The amount of money to remove</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5cecad4f3198a93cab3f0c0c93351566" name="a5cecad4f3198a93cab3f0c0c93351566"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cecad4f3198a93cab3f0c0c93351566">&#9670;&#160;</a></span>DropAmmo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerSystem.InventoryManager.DropAmmo </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>hashCode</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes an <a class="el" href="class_ammo_stack.html">AmmoStack</a> from the inventory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hashCode</td><td>The unique identifier of the <a class="el" href="class_ammo_stack.html">AmmoStack</a></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afd1742c51073dbadecf0d1e577699a35" name="afd1742c51073dbadecf0d1e577699a35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd1742c51073dbadecf0d1e577699a35">&#9670;&#160;</a></span>DropWeapon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerSystem.InventoryManager.DropWeapon </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>hashCode</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes a <a class="el" href="class_weapon_entity.html">WeaponEntity</a> object from the inventory, and unequips the weapon if it was previously equipped. </p>
+<p>Calls EmitSignalWeaponStatusUpdated with null and WeaponEntity.Properties.None if the weapon was equipped </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hashCode</td><td>The unique identifier of the <a class="el" href="class_weapon_entity.html">WeaponEntity</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">System.Exception</td><td>Thrown if the <a class="el" href="class_weapon_entity.html">WeaponEntity</a> found from hashCode is null, indicating corruption</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3d34bf78cf744b6520d2c6d4430153c7" name="a3d34bf78cf744b6520d2c6d4430153c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d34bf78cf744b6520d2c6d4430153c7">&#9670;&#160;</a></span>GetHeavyPrimaryWeapon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_player_system_1_1_weapon_slot.html">WeaponSlot</a>? PlayerSystem.InventoryManager.GetHeavyPrimaryWeapon </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Fetches the currently equipped weapon in the "Heavy Primary" slot. </p>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="class_player_system_1_1_weapon_slot.html">WeaponSlot</a> object within the WeaponSlotIndex.HeavyPrimary slot</dd></dl>
+
+</div>
+</div>
+<a id="a757d375882e0bc0685ba80d74d5770da" name="a757d375882e0bc0685ba80d74d5770da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a757d375882e0bc0685ba80d74d5770da">&#9670;&#160;</a></span>GetHeavySidearmWeapon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_player_system_1_1_weapon_slot.html">WeaponSlot</a>? PlayerSystem.InventoryManager.GetHeavySidearmWeapon </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Fetches the currently equipped weapon in the "Heavy Sidearm" slot. </p>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="class_player_system_1_1_weapon_slot.html">WeaponSlot</a> object within the WeaponSlotIndex.HeavySidearm slot</dd></dl>
+
+</div>
+</div>
+<a id="adedb123bc6278b5f31be9447f33e3630" name="adedb123bc6278b5f31be9447f33e3630"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adedb123bc6278b5f31be9447f33e3630">&#9670;&#160;</a></span>GetPrimaryWeapon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_player_system_1_1_weapon_slot.html">WeaponSlot</a>? PlayerSystem.InventoryManager.GetPrimaryWeapon </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Fetches the currently equipped weapon in the "Primary" slot. </p>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="class_player_system_1_1_weapon_slot.html">WeaponSlot</a> object within the WeaponSlotIndex.Primary slot</dd></dl>
+
+</div>
+</div>
+<a id="ad746ab3f8243a9adb5e8471746efb3f6" name="ad746ab3f8243a9adb5e8471746efb3f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad746ab3f8243a9adb5e8471746efb3f6">&#9670;&#160;</a></span>GetSidearmWeapon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_player_system_1_1_weapon_slot.html">WeaponSlot</a>? PlayerSystem.InventoryManager.GetSidearmWeapon </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Fetches the currently equipped weapon in the "Sidearm" slot. </p>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="class_player_system_1_1_weapon_slot.html">WeaponSlot</a> object within the WeaponSlotIndex.Sidearm slot</dd></dl>
+
+</div>
+</div>
+<a id="a5a8b8e9fdd32a8f339f780fd9d5ee9ea" name="a5a8b8e9fdd32a8f339f780fd9d5ee9ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a8b8e9fdd32a8f339f780fd9d5ee9ea">&#9670;&#160;</a></span>IncreaseMoney()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PlayerSystem.InventoryManager.IncreaseMoney </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>amount</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Increases the player's money by the amount provided. </p>
+<p>Triggers the Player.GainMoney signal. This function will ignore the call if amount is less than or equal to zero </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">amount</td><td>The amount of money to add</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a75762f81ecedb651ba04a0eece33950c" name="a75762f81ecedb651ba04a0eece33950c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75762f81ecedb651ba04a0eece33950c">&#9670;&#160;</a></span>Load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerSystem.InventoryManager.Load </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_save_system_1_1_save_section_reader.html">SaveSystem.SaveSectionReader</a></td>          <td class="paramname"><span class="paramname"><em>reader</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_player.html">Player</a></td>          <td class="paramname"><span class="paramname"><em>player</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads inventory state from disk. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reader</td><td>The section reader from the owning <a class="el" href="class_player.html" title="The code that handles player-to-game interactions.">Player</a> object</td></tr>
+    <tr><td class="paramname">player</td><td>The owning player object</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a24d9342bb5f8f1e092abcfb668327e8a" name="a24d9342bb5f8f1e092abcfb668327e8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24d9342bb5f8f1e092abcfb668327e8a">&#9670;&#160;</a></span>LoadWeapon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerSystem.InventoryManager.LoadWeapon </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_weapon_entity.html">WeaponEntity</a></td>          <td class="paramname"><span class="paramname"><em>weapon</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>ammo</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>slot</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads the provided weapon object into a weapon slot and initializes ammo reserves if needed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">weapon</td><td></td></tr>
+    <tr><td class="paramname">ammo</td><td></td></tr>
+    <tr><td class="paramname">slot</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa4eb830022f1c476bc4121995de82611" name="aa4eb830022f1c476bc4121995de82611"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4eb830022f1c476bc4121995de82611">&#9670;&#160;</a></span>PickupAmmo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerSystem.InventoryManager.PickupAmmo </td>
+          <td>(</td>
+          <td class="paramtype">in <a class="el" href="class_interactables_1_1_item_pickup.html">ItemPickup</a></td>          <td class="paramname"><span class="paramname"><em>ammo</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds an <a class="el" href="class_interactables_1_1_item_pickup.html" title="wrapper class for item pickup interactables, static, and will automatically free from the tree when u...">ItemPickup</a>'s ammo data to the <a class="el" href="#a025335ac9ef4f5c34d4c3a8dca948120" title="The ammo currently being carried by the player.">AmmoStacks</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ammo</td><td>The <a class="el" href="class_interactables_1_1_item_pickup.html" title="wrapper class for item pickup interactables, static, and will automatically free from the tree when u...">ItemPickup</a> that's being interacted with</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac8c0ec56fc73116cfe569604f0367684" name="ac8c0ec56fc73116cfe569604f0367684"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8c0ec56fc73116cfe569604f0367684">&#9670;&#160;</a></span>PickupWeapon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerSystem.InventoryManager.PickupWeapon </td>
+          <td>(</td>
+          <td class="paramtype">in <a class="el" href="class_weapon_entity.html">WeaponEntity</a></td>          <td class="paramname"><span class="paramname"><em>weapon</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Picks up a <a class="el" href="class_weapon_entity.html">WeaponEntity</a>, stores it in the <a class="el" href="#a9ada653fe1187ee236478dc4eb1cb9de" title="The weapons currently being carried by the player.">WeaponsStack</a>, and if there's no weapon in the slots, it'll be automatically equipped. </p>
+<p>Emits Player.WeaponPickedUp signal </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">weapon</td><td>The weapon to be picked up</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown if <em>weapon</em>  is null</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afd0f2802aecd4a88b35552679d8d4f17" name="afd0f2802aecd4a88b35552679d8d4f17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd0f2802aecd4a88b35552679d8d4f17">&#9670;&#160;</a></span>Save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerSystem.InventoryManager.Save </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_save_system_1_1_save_section_writer.html">SaveSystem.SaveSectionWriter</a></td>          <td class="paramname"><span class="paramname"><em>writer</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Writes the player's current inventory to disk. </p>
+<p>Any exceptions thrown here would be caught in <a class="el" href="class_archive_system.html#a9962d0150f259a457de4fa070e988e68" title="Archives current game state, called when exiting game, activating a firelink, or resting at a meliora...">ArchiveSystem.SaveGame</a> and the save data would be cleaned up </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">writer</td><td>The section writer from the owning <a class="el" href="class_player.html" title="The code that handles player-to-game interactions.">Player</a> object</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4ca9e2535f3d3bd161764cbcdba20d0a" name="a4ca9e2535f3d3bd161764cbcdba20d0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ca9e2535f3d3bd161764cbcdba20d0a">&#9670;&#160;</a></span>SetEquippedWeapon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerSystem.InventoryManager.SetEquippedWeapon </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>weaponSlot</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the currently equipped <a class="el" href="class_player_system_1_1_weapon_slot.html">WeaponSlot</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">weaponSlot</td><td>Which WeaponSlotIndex to use</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentOutOfRangeException</td><td>Thrown if <em>weaponSlot</em>  is not a valid WeaponSlotIndex</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aab2e5c869eba6b51db6213831ffb7d10" name="aab2e5c869eba6b51db6213831ffb7d10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab2e5c869eba6b51db6213831ffb7d10">&#9670;&#160;</a></span>SetHeavyPrimaryWeapon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerSystem.InventoryManager.SetHeavyPrimaryWeapon </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_weapon_entity.html">WeaponEntity</a></td>          <td class="paramname"><span class="paramname"><em>weapon</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the <a class="el" href="class_weapon_entity.html">WeaponEntity</a> in the WeaponSlotIndex.HeavyPrimary slot. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">weapon</td><td>The weapon to use</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown if weapon is null</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae3776ad9ed9726256a8ebe57235fc610" name="ae3776ad9ed9726256a8ebe57235fc610"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3776ad9ed9726256a8ebe57235fc610">&#9670;&#160;</a></span>SetHeavySidearmWeapon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerSystem.InventoryManager.SetHeavySidearmWeapon </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_weapon_entity.html">WeaponEntity</a></td>          <td class="paramname"><span class="paramname"><em>weapon</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the <a class="el" href="class_weapon_entity.html">WeaponEntity</a> in the WeaponSlotIndex.HeavySidearm slot. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">weapon</td><td>The weapon to use</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown if weapon is null</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a665e0a997be57d2aeee9c6b3e904ff80" name="a665e0a997be57d2aeee9c6b3e904ff80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a665e0a997be57d2aeee9c6b3e904ff80">&#9670;&#160;</a></span>SetPrimaryWeapon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerSystem.InventoryManager.SetPrimaryWeapon </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_weapon_entity.html">WeaponEntity</a></td>          <td class="paramname"><span class="paramname"><em>weapon</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the <a class="el" href="class_weapon_entity.html">WeaponEntity</a> in the WeaponSlotIndex.HeavyPrimary slot. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">weapon</td><td>The weapon to use</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown if weapon is null</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5b643df12710d08731fa00760e3453b5" name="a5b643df12710d08731fa00760e3453b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b643df12710d08731fa00760e3453b5">&#9670;&#160;</a></span>SetSidearmWeapon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerSystem.InventoryManager.SetSidearmWeapon </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_weapon_entity.html">WeaponEntity</a></td>          <td class="paramname"><span class="paramname"><em>weapon</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the <a class="el" href="class_weapon_entity.html">WeaponEntity</a> in the WeaponSlotIndex.Sidearm slot. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">weapon</td><td>The weapon to use</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentNullException</td><td>Thrown if weapon is null</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>scripts/PlayerSystem/<b>PlayerInventoryManager.cs</b></li>
+<li>scripts/PlayerSystem/<b>InventoryManager.cs</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

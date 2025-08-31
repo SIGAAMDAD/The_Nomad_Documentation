@@ -1,17 +1,96 @@
 \doxysection{Renown.\+Thinkers.\+Goap\+Cache.\+Goap\+Allocator Class Reference}
 \hypertarget{class_renown_1_1_thinkers_1_1_goap_cache_1_1_goap_allocator}{}\label{class_renown_1_1_thinkers_1_1_goap_cache_1_1_goap_allocator}\index{Renown.Thinkers.GoapCache.GoapAllocator@{Renown.Thinkers.GoapCache.GoapAllocator}}
+
+
+Allocates the appropriate sets of goals, actions, and sensors for a provided thinker\+Id.  
+
+
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_renown_1_1_thinkers_1_1_goap_cache_1_1_goap_allocator_a62660258706d96a8f4fc8ddb56d0dfd1}\label{class_renown_1_1_thinkers_1_1_goap_cache_1_1_goap_allocator_a62660258706d96a8f4fc8ddb56d0dfd1} 
-static List$<$ \mbox{\hyperlink{class_mountain_goap_1_1_action}{Mountain\+Goap.\+Action}} $>$ {\bfseries Get\+Action\+List} (string thinker\+Id)
-\item 
-\Hypertarget{class_renown_1_1_thinkers_1_1_goap_cache_1_1_goap_allocator_a550d6ff3b2007ab03822766a8b5678d4}\label{class_renown_1_1_thinkers_1_1_goap_cache_1_1_goap_allocator_a550d6ff3b2007ab03822766a8b5678d4} 
-static List$<$ \mbox{\hyperlink{class_mountain_goap_1_1_base_goal}{Mountain\+Goap.\+Base\+Goal}} $>$ {\bfseries Get\+Goal\+List} (string thinker\+Id)
-\item 
-\Hypertarget{class_renown_1_1_thinkers_1_1_goap_cache_1_1_goap_allocator_a04b28c51e4cabee35456f710f6b731f4}\label{class_renown_1_1_thinkers_1_1_goap_cache_1_1_goap_allocator_a04b28c51e4cabee35456f710f6b731f4} 
-static List$<$ \mbox{\hyperlink{class_mountain_goap_1_1_sensor}{Mountain\+Goap.\+Sensor}} $>$ {\bfseries Get\+Sensor\+List} (string thinker\+Id)
-\end{DoxyCompactItemize}
+static List$<$ Mountain\+Goap.\+Action $>$ \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_goap_cache_1_1_goap_allocator_a62660258706d96a8f4fc8ddb56d0dfd1}{Get\+Action\+List}} (string thinker\+Id)
+\begin{DoxyCompactList}\small\item\em Constructs a list of valid Mountain\+Goap.\+Action from a file cache in res\+://resources/goap\+\_\+cache/\mbox{[}insert thinker id\mbox{]}\+\_\+goap\+\_\+list.\+tres. \end{DoxyCompactList}\item 
+static List$<$ Mountain\+Goap.\+Base\+Goal $>$ \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_goap_cache_1_1_goap_allocator_a550d6ff3b2007ab03822766a8b5678d4}{Get\+Goal\+List}} (string thinker\+Id)
+\begin{DoxyCompactList}\small\item\em Constructs a list of valid Mountain\+Goap.\+Goal from a file cache in res\+://resources/goap\+\_\+cache/\mbox{[}insert thinker id\mbox{]}\+\_\+goap\+\_\+list.\+tres. \end{DoxyCompactList}\item 
+static List$<$ Mountain\+Goap.\+Sensor $>$ \mbox{\hyperlink{class_renown_1_1_thinkers_1_1_goap_cache_1_1_goap_allocator_a04b28c51e4cabee35456f710f6b731f4}{Get\+Sensor\+List}} (string thinker\+Id)
+\begin{DoxyCompactList}\small\item\em Constructs a list of valid Mountain\+Goap.\+Sensor from a file cache in res\+://resources/goap\+\_\+cache/\mbox{[}insert thinker id\mbox{]}\+\_\+goap\+\_\+list.\+tres. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Allocates the appropriate sets of goals, actions, and sensors for a provided thinker\+Id. 
+
+\label{doc-func-members}
+\Hypertarget{class_renown_1_1_thinkers_1_1_goap_cache_1_1_goap_allocator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_renown_1_1_thinkers_1_1_goap_cache_1_1_goap_allocator_a62660258706d96a8f4fc8ddb56d0dfd1}\index{Renown.Thinkers.GoapCache.GoapAllocator@{Renown.Thinkers.GoapCache.GoapAllocator}!GetActionList@{GetActionList}}
+\index{GetActionList@{GetActionList}!Renown.Thinkers.GoapCache.GoapAllocator@{Renown.Thinkers.GoapCache.GoapAllocator}}
+\doxysubsubsection{\texorpdfstring{GetActionList()}{GetActionList()}}
+{\footnotesize\ttfamily \label{class_renown_1_1_thinkers_1_1_goap_cache_1_1_goap_allocator_a62660258706d96a8f4fc8ddb56d0dfd1} 
+List$<$ Mountain\+Goap.\+Action $>$ Renown.\+Thinkers.\+Goap\+Cache.\+Goap\+Allocator.\+Get\+Action\+List (\begin{DoxyParamCaption}\item[{string}]{thinker\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Constructs a list of valid Mountain\+Goap.\+Action from a file cache in res\+://resources/goap\+\_\+cache/\mbox{[}insert thinker id\mbox{]}\+\_\+goap\+\_\+list.\+tres. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em thinker\+Id} & The id of the thinker\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of valid actions provided in the cache file
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if thinker\+Id is null or empty\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_renown_1_1_thinkers_1_1_goap_cache_1_1_goap_allocator_a550d6ff3b2007ab03822766a8b5678d4}\index{Renown.Thinkers.GoapCache.GoapAllocator@{Renown.Thinkers.GoapCache.GoapAllocator}!GetGoalList@{GetGoalList}}
+\index{GetGoalList@{GetGoalList}!Renown.Thinkers.GoapCache.GoapAllocator@{Renown.Thinkers.GoapCache.GoapAllocator}}
+\doxysubsubsection{\texorpdfstring{GetGoalList()}{GetGoalList()}}
+{\footnotesize\ttfamily \label{class_renown_1_1_thinkers_1_1_goap_cache_1_1_goap_allocator_a550d6ff3b2007ab03822766a8b5678d4} 
+List$<$ Mountain\+Goap.\+Base\+Goal $>$ Renown.\+Thinkers.\+Goap\+Cache.\+Goap\+Allocator.\+Get\+Goal\+List (\begin{DoxyParamCaption}\item[{string}]{thinker\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Constructs a list of valid Mountain\+Goap.\+Goal from a file cache in res\+://resources/goap\+\_\+cache/\mbox{[}insert thinker id\mbox{]}\+\_\+goap\+\_\+list.\+tres. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em thinker\+Id} & The id of the thinker\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of valid goals provided in the cache file
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if thinker\+Id is null or empty\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_renown_1_1_thinkers_1_1_goap_cache_1_1_goap_allocator_a04b28c51e4cabee35456f710f6b731f4}\index{Renown.Thinkers.GoapCache.GoapAllocator@{Renown.Thinkers.GoapCache.GoapAllocator}!GetSensorList@{GetSensorList}}
+\index{GetSensorList@{GetSensorList}!Renown.Thinkers.GoapCache.GoapAllocator@{Renown.Thinkers.GoapCache.GoapAllocator}}
+\doxysubsubsection{\texorpdfstring{GetSensorList()}{GetSensorList()}}
+{\footnotesize\ttfamily \label{class_renown_1_1_thinkers_1_1_goap_cache_1_1_goap_allocator_a04b28c51e4cabee35456f710f6b731f4} 
+List$<$ Mountain\+Goap.\+Sensor $>$ Renown.\+Thinkers.\+Goap\+Cache.\+Goap\+Allocator.\+Get\+Sensor\+List (\begin{DoxyParamCaption}\item[{string}]{thinker\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Constructs a list of valid Mountain\+Goap.\+Sensor from a file cache in res\+://resources/goap\+\_\+cache/\mbox{[}insert thinker id\mbox{]}\+\_\+goap\+\_\+list.\+tres. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em thinker\+Id} & The id of the thinker\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of valid actions provided in the actions cache file
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown if thinker\+Id is null or empty\\
+\hline
+\end{DoxyExceptions}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

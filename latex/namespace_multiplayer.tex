@@ -3,6 +3,8 @@
 \doxysubsubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
+class \mbox{\hyperlink{class_multiplayer_1_1_announcer}{Announcer}}
+\item 
 class \mbox{\hyperlink{class_multiplayer_1_1_chat}{Chat}}
 \item 
 class \mbox{\hyperlink{class_multiplayer_1_1_client_player}{Client\+Player}}
@@ -11,6 +13,16 @@ class \mbox{\hyperlink{class_multiplayer_1_1_loadout}{Loadout}}
 \item 
 class \mbox{\hyperlink{class_multiplayer_1_1_mode}{Mode}}
 \item 
+class \mbox{\hyperlink{class_multiplayer_1_1_multiplayer_data}{Multiplayer\+Data}}
+\item 
+class \mbox{\hyperlink{class_multiplayer_1_1_network_player}{Network\+Player}}
+\item 
+struct \mbox{\hyperlink{struct_multiplayer_1_1_network_reader}{Network\+Reader}}
+\begin{DoxyCompactList}\small\item\em A struct meant for reading from a network stream. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_multiplayer_1_1_network_sync_object}{Network\+Sync\+Object}}
+\begin{DoxyCompactList}\small\item\em An abstraction wrapper around writing to a System.\+IO.\+Memory\+Stream for networking purposes. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_multiplayer_1_1_network_writer}{Network\+Writer}}
+\begin{DoxyCompactList}\small\item\em A struct meant for writing to a network stream. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_multiplayer_1_1_profile}{Profile}}
 \item 
 class \mbox{\hyperlink{class_multiplayer_1_1_score_board}{Score\+Board}}
@@ -18,13 +30,41 @@ class \mbox{\hyperlink{class_multiplayer_1_1_score_board}{Score\+Board}}
 \doxysubsubsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{namespace_multiplayer_a5979a79ce756facb1f47c8c1e335e83a}\label{namespace_multiplayer_a5979a79ce756facb1f47c8c1e335e83a} 
-enum {\bfseries Badge} \+: uint \{ \newline
-{\bfseries Dishonered}
-, {\bfseries Cannon\+Fodder}
-, {\bfseries Objective\+Focused}
-, {\bfseries Sweaty}
+enum \mbox{\hyperlink{namespace_multiplayer_a5979a79ce756facb1f47c8c1e335e83a}{Badge}} \+: uint \{ \newline
+\mbox{\hyperlink{namespace_multiplayer_a5979a79ce756facb1f47c8c1e335e83aad254682ed1e9c0c15f06d9fcf2cf4caa}{Dishonered}}
+, \mbox{\hyperlink{namespace_multiplayer_a5979a79ce756facb1f47c8c1e335e83aa72877f9b11b606ec534c150b29236461}{Cannon\+Fodder}}
+, \mbox{\hyperlink{namespace_multiplayer_a5979a79ce756facb1f47c8c1e335e83aa69d14a3c54e350d90860f5b688126537}{Objective\+Focused}}
+, \mbox{\hyperlink{namespace_multiplayer_a5979a79ce756facb1f47c8c1e335e83aaf9bd74102445c4587a528b37715872d0}{Sweaty}}
 , \newline
 {\bfseries Count}
  \}
 \end{DoxyCompactItemize}
+
+
+\label{doc-enum-members}
+\Hypertarget{namespace_multiplayer_doc-enum-members}
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{namespace_multiplayer_a5979a79ce756facb1f47c8c1e335e83a}\index{Multiplayer@{Multiplayer}!Badge@{Badge}}
+\index{Badge@{Badge}!Multiplayer@{Multiplayer}}
+\doxysubsubsection{\texorpdfstring{Badge}{Badge}}
+{\footnotesize\ttfamily \label{namespace_multiplayer_a5979a79ce756facb1f47c8c1e335e83a} 
+enum \mbox{\hyperlink{namespace_multiplayer_a5979a79ce756facb1f47c8c1e335e83a}{Multiplayer.\+Badge}} \+: uint}
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Dishonered@{Dishonered}!Multiplayer@{Multiplayer}}\index{Multiplayer@{Multiplayer}!Dishonered@{Dishonered}}}\Hypertarget{namespace_multiplayer_a5979a79ce756facb1f47c8c1e335e83aad254682ed1e9c0c15f06d9fcf2cf4caa}\label{namespace_multiplayer_a5979a79ce756facb1f47c8c1e335e83aad254682ed1e9c0c15f06d9fcf2cf4caa} 
+Dishonered&left a duel early \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CannonFodder@{CannonFodder}!Multiplayer@{Multiplayer}}\index{Multiplayer@{Multiplayer}!CannonFodder@{CannonFodder}}}\Hypertarget{namespace_multiplayer_a5979a79ce756facb1f47c8c1e335e83aa72877f9b11b606ec534c150b29236461}\label{namespace_multiplayer_a5979a79ce756facb1f47c8c1e335e83aa72877f9b11b606ec534c150b29236461} 
+Cannon\+Fodder&most deaths in a single KotH game \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ObjectiveFocused@{ObjectiveFocused}!Multiplayer@{Multiplayer}}\index{Multiplayer@{Multiplayer}!ObjectiveFocused@{ObjectiveFocused}}}\Hypertarget{namespace_multiplayer_a5979a79ce756facb1f47c8c1e335e83aa69d14a3c54e350d90860f5b688126537}\label{namespace_multiplayer_a5979a79ce756facb1f47c8c1e335e83aa69d14a3c54e350d90860f5b688126537} 
+Objective\+Focused&get the highest objective score in a single objective focused game \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Sweaty@{Sweaty}!Multiplayer@{Multiplayer}}\index{Multiplayer@{Multiplayer}!Sweaty@{Sweaty}}}\Hypertarget{namespace_multiplayer_a5979a79ce756facb1f47c8c1e335e83aaf9bd74102445c4587a528b37715872d0}\label{namespace_multiplayer_a5979a79ce756facb1f47c8c1e335e83aaf9bd74102445c4587a528b37715872d0} 
+Sweaty&get the highest kill count in any mode that isn\textquotesingle{}t Bloodbath \\
+\hline
+
+\end{DoxyEnumFields}

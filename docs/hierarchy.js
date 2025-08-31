@@ -1,8 +1,8 @@
 var hierarchy =
 [
-    [ "MountainGoap.Action", "class_mountain_goap_1_1_action.html", null ],
-    [ "MountainGoap.Agent", "class_mountain_goap_1_1_agent.html", null ],
-    [ "AntiCheat", "class_anti_cheat.html", null ],
+    [ "Ammo", "struct_ammo.html", null ],
+    [ "Menus.Settings.AntiAliasingMode", "struct_menus_1_1_settings_1_1_anti_aliasing_mode.html", null ],
+    [ "Util.Any", "struct_util_1_1_any.html", null ],
     [ "Area2D", null, [
       [ "Bullet", "class_bullet.html", null ],
       [ "GroundMaterial", "class_ground_material.html", null ],
@@ -10,22 +10,20 @@ var hierarchy =
       [ "Hitbox", "class_hitbox.html", null ],
       [ "InteractionItem", "class_interaction_item.html", [
         [ "ActionTutorial", "class_action_tutorial.html", null ],
-        [ "Checkpoint", "class_checkpoint.html", null ],
-        [ "CutsceneTrigger", "class_cutscene_trigger.html", null ],
-        [ "DialogueInteractor", "class_dialogue_interactor.html", null ],
-        [ "Door", "class_door.html", null ],
-        [ "EaglesPeak", "class_eagles_peak.html", null ],
-        [ "EndOfChallenge", "class_end_of_challenge.html", null ],
-        [ "HealthPack", "class_health_pack.html", null ],
-        [ "ItemPickup", "class_item_pickup.html", [
-          [ "RespawningItemPickup", "class_respawning_item_pickup.html", null ]
+        [ "Interactables.Checkpoint", "class_interactables_1_1_checkpoint.html", null ],
+        [ "Interactables.CutsceneTrigger", "class_interactables_1_1_cutscene_trigger.html", null ],
+        [ "Interactables.DialogueInteractor", "class_interactables_1_1_dialogue_interactor.html", null ],
+        [ "Interactables.Door", "class_interactables_1_1_door.html", null ],
+        [ "Interactables.EaglesPeak", "class_interactables_1_1_eagles_peak.html", null ],
+        [ "Interactables.EndOfChallenge", "class_interactables_1_1_end_of_challenge.html", null ],
+        [ "Interactables.HealthPack", "class_interactables_1_1_health_pack.html", null ],
+        [ "Interactables.ItemPickup", "class_interactables_1_1_item_pickup.html", [
+          [ "Interactables.RespawningItemPickup", "class_interactables_1_1_respawning_item_pickup.html", null ]
         ] ],
-        [ "MechanicTutorial", "class_mechanic_tutorial.html", null ],
-        [ "Multiplayer.Objectives.Flag", "class_multiplayer_1_1_objectives_1_1_flag.html", null ],
-        [ "Note", "class_note.html", null ],
-        [ "RespawningHealthPack", "class_respawning_health_pack.html", null ],
-        [ "TreasureChest", "class_treasure_chest.html", null ],
-        [ "UsedItemPickup", "class_used_item_pickup.html", null ]
+        [ "Interactables.MechanicTutorial", "class_interactables_1_1_mechanic_tutorial.html", null ],
+        [ "Interactables.Note", "class_interactables_1_1_note.html", null ],
+        [ "Interactables.TreasureChest", "class_interactables_1_1_treasure_chest.html", null ],
+        [ "Multiplayer.Objectives.Flag", "class_multiplayer_1_1_objectives_1_1_flag.html", null ]
       ] ],
       [ "Multiplayer.Objectives.Hill", "class_multiplayer_1_1_objectives_1_1_hill.html", null ],
       [ "Renown.World.Marketplace", "class_renown_1_1_world_1_1_marketplace.html", null ],
@@ -44,27 +42,21 @@ var hierarchy =
     [ "AudioEffectAmplify", null, [
       [ "PlayerSystem.BerserkMode.AudioDistortion", "class_player_system_1_1_berserk_mode_1_1_audio_distortion.html", null ]
     ] ],
-    [ "MountainGoap.BaseGoal", "class_mountain_goap_1_1_base_goal.html", [
-      [ "MountainGoap.ComparativeGoal", "class_mountain_goap_1_1_comparative_goal.html", null ],
-      [ "MountainGoap.ExtremeGoal", "class_mountain_goap_1_1_extreme_goal.html", null ],
-      [ "MountainGoap.Goal", "class_mountain_goap_1_1_goal.html", null ]
-    ] ],
+    [ "PlayerSystem.Input.InputController.BindActionEvent", "struct_player_system_1_1_input_1_1_input_controller_1_1_bind_action_event.html", null ],
+    [ "PlayerSystem.Input.InputController.BindSet", "struct_player_system_1_1_input_1_1_input_controller_1_1_bind_set.html", null ],
     [ "CanvasLayer", null, [
       [ "ChallengeModeScore", "class_challenge_mode_score.html", null ],
       [ "DialogueBalloon", "class_dialogue_balloon.html", null ],
-      [ "DialogueManagerRuntime.DialogueBalloon", "class_dialogue_manager_runtime_1_1_dialogue_balloon.html", null ],
-      [ "DialogueManagerRuntime.ExampleBalloon", "class_dialogue_manager_runtime_1_1_example_balloon.html", null ],
       [ "DinoRun", "class_dino_run.html", null ],
       [ "FreeFlow", "class_free_flow.html", null ],
-      [ "LoadingScreen", "class_loading_screen.html", null ],
+      [ "Menus.LoadingScreen", "class_menus_1_1_loading_screen.html", null ],
+      [ "Menus.PauseMenu", "class_menus_1_1_pause_menu.html", null ],
       [ "Multiplayer.Chat", "class_multiplayer_1_1_chat.html", null ],
       [ "Multiplayer.Overlays.BloodbathOverlay", "class_multiplayer_1_1_overlays_1_1_bloodbath_overlay.html", null ],
       [ "Multiplayer.Overlays.CaptureTheFlagOverlay", "class_multiplayer_1_1_overlays_1_1_capture_the_flag_overlay.html", null ],
       [ "Multiplayer.Overlays.DuelOverlay", "class_multiplayer_1_1_overlays_1_1_duel_overlay.html", null ],
       [ "Multiplayer.ScoreBoard", "class_multiplayer_1_1_score_board.html", null ],
-      [ "NetworkingMonitor", "class_networking_monitor.html", null ],
-      [ "PauseMenu", "class_pause_menu.html", null ],
-      [ "SteamVoiceChat", "class_steam_voice_chat.html", null ]
+      [ "NetworkingMonitor", "class_networking_monitor.html", null ]
     ] ],
     [ "CanvasModulate", null, [
       [ "DayNightCycle", "class_day_night_cycle.html", null ]
@@ -75,13 +67,13 @@ var hierarchy =
     [ "CharacterBody2D", null, [
       [ "ConsumableEntity", "class_consumable_entity.html", null ],
       [ "Grenade", "class_grenade.html", [
-        [ "Incendiary", "class_incendiary.html", null ],
+        [ "Items.Ordnance.Incendiary", "class_items_1_1_ordnance_1_1_incendiary.html", null ],
         [ "ProximityMine", "class_proximity_mine.html", null ]
       ] ],
       [ "Horse", "class_horse.html", null ],
       [ "Horse", "class_horse.html", null ],
       [ "Renown.Entity", "class_renown_1_1_entity.html", [
-        [ "NetworkPlayer", "class_network_player.html", null ],
+        [ "Multiplayer.NetworkPlayer", "class_multiplayer_1_1_network_player.html", null ],
         [ "Player", "class_player.html", null ],
         [ "Renown.Thinkers.Thinker", "class_renown_1_1_thinkers_1_1_thinker.html", [
           [ "Multiplayer.Objectives.ExtractionTarget", "class_multiplayer_1_1_objectives_1_1_extraction_target.html", null ],
@@ -101,53 +93,41 @@ var hierarchy =
       ] ],
       [ "Renown.Phantom", "class_renown_1_1_phantom.html", null ]
     ] ],
-    [ "Steam.Server.Client", "class_steam_1_1_server_1_1_client.html", null ],
-    [ "MountainGoap.ComparisonValuePair", "class_mountain_goap_1_1_comparison_value_pair.html", null ],
-    [ "Steam.Server.CompressedVector2", "struct_steam_1_1_server_1_1_compressed_vector2.html", null ],
-    [ "Console.ConsoleCommand", "class_console_1_1_console_command.html", null ],
     [ "Renown.ContractManager", "class_renown_1_1_contract_manager.html", null ],
     [ "Renown.World.ContractManager", "class_renown_1_1_world_1_1_contract_manager.html", null ],
     [ "Control", null, [
       [ "BugReporter", "class_bug_reporter.html", null ],
-      [ "Console", "class_console.html", null ],
-      [ "CoopMenu", "class_coop_menu.html", null ],
-      [ "CreditsMenu", "class_credits_menu.html", null ],
-      [ "ExtrasMenu", "class_extras_menu.html", null ],
       [ "KillFeed", "class_kill_feed.html", null ],
-      [ "LobbyBrowser", "class_lobby_browser.html", null ],
-      [ "LobbyFactory", "class_lobby_factory.html", null ],
-      [ "LobbyRoom", "class_lobby_room.html", null ],
-      [ "MainMenu", "class_main_menu.html", null ],
-      [ "ModsMenu", "class_mods_menu.html", null ],
-      [ "MultiplayerMenu", "class_multiplayer_menu.html", null ],
+      [ "Menus.CoopMenu", "class_menus_1_1_coop_menu.html", null ],
+      [ "Menus.CreditsMenu", "class_menus_1_1_credits_menu.html", null ],
+      [ "Menus.ExtrasMenu", "class_menus_1_1_extras_menu.html", null ],
+      [ "Menus.LobbyBrowser", "class_menus_1_1_lobby_browser.html", null ],
+      [ "Menus.LobbyFactory", "class_menus_1_1_lobby_factory.html", null ],
+      [ "Menus.LobbyRoom", "class_menus_1_1_lobby_room.html", null ],
+      [ "Menus.MainMenu", "class_menus_1_1_main_menu.html", null ],
+      [ "Menus.ModsMenu", "class_menus_1_1_mods_menu.html", null ],
+      [ "Menus.MultiplayerMenu", "class_menus_1_1_multiplayer_menu.html", null ],
+      [ "Menus.SaveSlotsMenu", "class_menus_1_1_save_slots_menu.html", null ],
+      [ "Menus.SettingsMenu", "class_menus_1_1_settings_menu.html", null ],
+      [ "Menus.TitleMenu", "class_menus_1_1_title_menu.html", null ],
       [ "Poem", "class_poem.html", null ],
-      [ "ProfileMenu", "class_profile_menu.html", null ],
-      [ "SaveSlotsMenu", "class_save_slots_menu.html", null ],
-      [ "SettingsMenu", "class_settings_menu.html", null ],
-      [ "TitleMenu", "class_title_menu.html", null ]
+      [ "ProfileMenu", "class_profile_menu.html", null ]
     ] ],
+    [ "Util.CVar< T >", "struct_util_1_1_c_var-1-g.html", null ],
     [ "PlayerSystem.Upgrades.DashModule", "interface_player_system_1_1_upgrades_1_1_dash_module.html", [
       [ "PlayerSystem.Upgrades.CoolingVents", "struct_player_system_1_1_upgrades_1_1_cooling_vents.html", null ]
     ] ],
     [ "Renown.World.DataCache< T >", "class_renown_1_1_world_1_1_data_cache-1-g.html", null ],
-    [ "MountainGoapLogging.DefaultLogger", "class_mountain_goap_logging_1_1_default_logger.html", null ],
-    [ "DiscordPresence", "class_discord_presence.html", null ],
-    [ "Steam.Server.EntityManager", "class_steam_1_1_server_1_1_entity_manager.html", null ],
     [ "Exception", null, [
       [ "ModLoadingException", "class_mod_loading_exception.html", null ]
     ] ],
     [ "Renown.World.Settlements.Expenses", "struct_renown_1_1_world_1_1_settlements_1_1_expenses.html", null ],
     [ "Renown.Contracts.ExtractionData", "struct_renown_1_1_contracts_1_1_extraction_data.html", null ],
-    [ "Priority_Queue.FastPriorityQueueNode", "class_priority___queue_1_1_fast_priority_queue_node.html", [
-      [ "MountainGoap.ActionNode", "class_mountain_goap_1_1_action_node.html", null ],
-      [ "Priority_Queue.StablePriorityQueueNode", "class_priority___queue_1_1_stable_priority_queue_node.html", null ]
-    ] ],
     [ "Renown.World.Settlements.FinanceOverview", "struct_renown_1_1_world_1_1_settlements_1_1_finance_overview.html", null ],
-    [ "LobbySystem.GameServerManager", "class_lobby_system_1_1_game_server_manager.html", null ],
-    [ "Priority_Queue.GenericPriorityQueueNode< TPriority >", "class_priority___queue_1_1_generic_priority_queue_node-1-g.html", null ],
     [ "Renown.Thinkers.GoapCache.GoapAllocator", "class_renown_1_1_thinkers_1_1_goap_cache_1_1_goap_allocator.html", null ],
     [ "GodotObject", null, [
       [ "PlayerSystem.ConsumableStack", "class_player_system_1_1_consumable_stack.html", null ],
+      [ "PlayerSystem.Input.InputController", "class_player_system_1_1_input_1_1_input_controller.html", null ],
       [ "PlayerSystem.InventoryManager", "class_player_system_1_1_inventory_manager.html", null ],
       [ "PlayerSystem.WeaponSlot", "class_player_system_1_1_weapon_slot.html", null ]
     ] ],
@@ -159,20 +139,19 @@ var hierarchy =
       [ "PlayerData", "class_player_data.html", null ],
       [ "PlayerSystem.WarpPoint", "class_player_system_1_1_warp_point.html", null ]
     ] ],
+    [ "IConsumableStack", "interface_i_consumable_stack.html", [
+      [ "AmmoStack", "class_ammo_stack.html", null ]
+    ] ],
     [ "IDisposable", null, [
+      [ "Menus.Settings.ConfigFileReader", "struct_menus_1_1_settings_1_1_config_file_reader.html", null ],
+      [ "Menus.Settings.ConfigFileWriter", "struct_menus_1_1_settings_1_1_config_file_writer.html", null ],
+      [ "Multiplayer.NetworkReader", "struct_multiplayer_1_1_network_reader.html", null ],
+      [ "Multiplayer.NetworkWriter", "struct_multiplayer_1_1_network_writer.html", null ],
+      [ "PlayerSystem.Input.InputController", "class_player_system_1_1_input_1_1_input_controller.html", null ],
       [ "SaveSystem.SaveSectionReader", "class_save_system_1_1_save_section_reader.html", null ],
       [ "SaveSystem.SaveSectionWriter", "class_save_system_1_1_save_section_writer.html", null ]
     ] ],
-    [ "IEnumerable", null, [
-      [ "Priority_Queue.IPriorityQueue< TItem, in TPriority >", "interface_priority___queue_1_1_i_priority_queue-2-g.html", [
-        [ "Priority_Queue.SimplePriorityQueue< TItem, TPriority >", "class_priority___queue_1_1_simple_priority_queue-2-g.html", [
-          [ "Priority_Queue.SimplePriorityQueue< TItem >", "class_priority___queue_1_1_simple_priority_queue-1-g.html", null ]
-        ] ]
-      ] ]
-    ] ],
     [ "Renown.World.Settlements.Income", "struct_renown_1_1_world_1_1_settlements_1_1_income.html", null ],
-    [ "Steam.Server.InputCommand", "struct_steam_1_1_server_1_1_input_command.html", null ],
-    [ "PlayerSystem.Inventory", "class_player_system_1_1_inventory.html", null ],
     [ "PlayerSystem.Upgrades.IUpgradable", "interface_player_system_1_1_upgrades_1_1_i_upgradable.html", [
       [ "WeaponEntity", "class_weapon_entity.html", null ]
     ] ],
@@ -182,9 +161,8 @@ var hierarchy =
     ] ],
     [ "ChallengeMode.ChallengeCache.LeaderboardEntry", "struct_challenge_mode_1_1_challenge_cache_1_1_leaderboard_entry.html", null ],
     [ "Renown.MercenaryLeaderboard.LeaderboardEntry", "struct_renown_1_1_mercenary_leaderboard_1_1_leaderboard_entry.html", null ],
+    [ "Menus.Settings.LightingQuality", "struct_menus_1_1_settings_1_1_lighting_quality.html", null ],
     [ "Multiplayer.Loadout", "class_multiplayer_1_1_loadout.html", null ],
-    [ "LobbySystem.Lobby", "struct_lobby_system_1_1_lobby.html", null ],
-    [ "MultiplayerMapManager.MapData", "struct_multiplayer_map_manager_1_1_map_data.html", null ],
     [ "MarginContainer", null, [
       [ "PlayerSystem.UserInterface.DialogueContainer", "class_player_system_1_1_user_interface_1_1_dialogue_container.html", null ]
     ] ],
@@ -193,7 +171,6 @@ var hierarchy =
     [ "MeshInstance2D", null, [
       [ "BloodPool", "class_blood_pool.html", null ]
     ] ],
-    [ "Steam.Server.Message", "struct_steam_1_1_server_1_1_message.html", null ],
     [ "Renown.World.Settlements.Monthly", "struct_renown_1_1_world_1_1_settlements_1_1_monthly.html", null ],
     [ "MultiMeshInstance2D", null, [
       [ "MultiMeshManager", "class_multi_mesh_manager.html", null ]
@@ -202,37 +179,24 @@ var hierarchy =
     [ "NavigationLink2D", null, [
       [ "AIPatrolRoute", "class_a_i_patrol_route.html", null ]
     ] ],
-    [ "SteamLobby.NetworkNode", "struct_steam_lobby_1_1_network_node.html", null ],
-    [ "NetworkReader", "class_network_reader.html", null ],
-    [ "NetworkSyncObject", "class_network_sync_object.html", null ],
+    [ "Multiplayer.NetworkSyncObject", "class_multiplayer_1_1_network_sync_object.html", null ],
     [ "Node", null, [
-      [ "AccessibilityManager", "class_accessibility_manager.html", null ],
       [ "AmmoStack", "class_ammo_stack.html", null ],
-      [ "Announcer", "class_announcer.html", null ],
       [ "ArchiveSystem", "class_archive_system.html", null ],
       [ "AudioPlayer", "class_audio_player.html", null ],
       [ "BloodParticleFactory", "class_blood_particle_factory.html", null ],
       [ "BulletShellMesh", "class_bullet_shell_mesh.html", null ],
-      [ "DialogueGlobals", "class_dialogue_globals.html", null ],
       [ "EntityManager", "class_entity_manager.html", null ],
-      [ "FootSteps", "class_foot_steps.html", null ],
-      [ "GDExtension.Wrappers.NodeInventories", "class_g_d_extension_1_1_wrappers_1_1_node_inventories.html", [
-        [ "GDExtension.Wrappers.CraftStation", "class_g_d_extension_1_1_wrappers_1_1_craft_station.html", null ],
-        [ "GDExtension.Wrappers.Hotbar", "class_g_d_extension_1_1_wrappers_1_1_hotbar.html", null ],
-        [ "GDExtension.Wrappers.Inventory", "class_g_d_extension_1_1_wrappers_1_1_inventory.html", [
-          [ "GDExtension.Wrappers.GridInventory", "class_g_d_extension_1_1_wrappers_1_1_grid_inventory.html", null ]
-        ] ]
-      ] ],
       [ "GameConfiguration", "class_game_configuration.html", null ],
-      [ "GodotServerManager", "class_godot_server_manager.html", null ],
       [ "LightManager", "class_light_manager.html", null ],
+      [ "Menus.SettingsData", "class_menus_1_1_settings_data.html", null ],
       [ "ModLoader", "class_mod_loader.html", null ],
-      [ "MouseManager", "class_mouse_manager.html", null ],
+      [ "Multiplayer.Announcer", "class_multiplayer_1_1_announcer.html", null ],
       [ "Multiplayer.Modes.Team", "class_multiplayer_1_1_modes_1_1_team.html", null ],
       [ "NodeCache", "class_node_cache.html", null ],
       [ "PlayerSystem.Arm", "class_player_system_1_1_arm.html", null ],
+      [ "PlayerSystem.FootSteps", "class_player_system_1_1_foot_steps.html", null ],
       [ "PlayerSystem.RanalTranslator", "class_player_system_1_1_ranal_translator.html", null ],
-      [ "Profiler", "class_profiler.html", null ],
       [ "QuestObjective", "class_quest_objective.html", null ],
       [ "Renown.NodeCache", "class_renown_1_1_node_cache.html", null ],
       [ "Renown.Quest", "class_renown_1_1_quest.html", null ],
@@ -240,6 +204,7 @@ var hierarchy =
       [ "Renown.QuestState", "class_renown_1_1_quest_state.html", null ],
       [ "Renown.StaticQuest", "class_renown_1_1_static_quest.html", null ],
       [ "Renown.Thinkers.AINodeCache", "class_renown_1_1_thinkers_1_1_a_i_node_cache.html", null ],
+      [ "Renown.Thinkers.BarkCache", "class_renown_1_1_thinkers_1_1_bark_cache.html", null ],
       [ "Renown.World.BiomeManager", "class_renown_1_1_world_1_1_biome_manager.html", null ],
       [ "Renown.World.Faction", "class_renown_1_1_world_1_1_faction.html", [
         [ "Renown.World.Government", "class_renown_1_1_world_1_1_government.html", null ]
@@ -248,36 +213,26 @@ var hierarchy =
       [ "Renown.World.RoadNetwork", "class_renown_1_1_world_1_1_road_network.html", null ],
       [ "Renown.World.ThinkerCache", "class_renown_1_1_world_1_1_thinker_cache.html", null ],
       [ "Renown.World.WorldTimeManager", "class_renown_1_1_world_1_1_world_time_manager.html", null ],
-      [ "SettingsData", "class_settings_data.html", null ],
-      [ "SteamAchievements", "class_steam_achievements.html", null ],
-      [ "SteamLobby", "class_steam_lobby.html", null ],
-      [ "SteamManager", "class_steam_manager.html", null ],
       [ "StorySystem.NewGamePlusManager", "class_story_system_1_1_new_game_plus_manager.html", null ],
-      [ "StorySystem.QuestManager", "class_story_system_1_1_quest_manager.html", null ],
-      [ "TTSManager", "class_t_t_s_manager.html", null ],
-      [ "UIAudioManager", "class_u_i_audio_manager.html", null ],
-      [ "WeaponSfxCache", "class_weapon_sfx_cache.html", null ]
+      [ "StorySystem.QuestManager", "class_story_system_1_1_quest_manager.html", null ]
     ] ],
     [ "Node2D", null, [
       [ "AISquad", "class_a_i_squad.html", null ],
-      [ "AmmoEntity", "class_ammo_entity.html", null ],
-      [ "BulletMesh", "class_bullet_mesh.html", null ],
-      [ "Cutscene", "class_cutscene.html", null ],
-      [ "CutsceneSequence", "class_cutscene_sequence.html", [
-        [ "CutsceneCameraFocus", "class_cutscene_camera_focus.html", null ],
-        [ "CutsceneDialogue", "class_cutscene_dialogue.html", null ],
-        [ "CutsceneMoveToPosition", "class_cutscene_move_to_position.html", null ]
-      ] ],
       [ "DebrisCloud", "class_debris_cloud.html", null ],
       [ "DebrisFactory", "class_debris_factory.html", null ],
       [ "EndlessSpawner", "class_endless_spawner.html", null ],
       [ "Explosion", "class_explosion.html", null ],
       [ "Hellbreaker", "class_hellbreaker.html", null ],
       [ "HellbreakerExit", "class_hellbreaker_exit.html", null ],
+      [ "Interactables.Cutscenes.Cutscene", "class_interactables_1_1_cutscenes_1_1_cutscene.html", null ],
+      [ "Interactables.Cutscenes.CutsceneSequence", "class_interactables_1_1_cutscenes_1_1_cutscene_sequence.html", [
+        [ "Interactables.Cutscenes.CutsceneCameraFocus", "class_interactables_1_1_cutscenes_1_1_cutscene_camera_focus.html", null ],
+        [ "Interactables.Cutscenes.CutsceneDialogue", "class_interactables_1_1_cutscenes_1_1_cutscene_dialogue.html", null ],
+        [ "Interactables.Cutscenes.CutsceneMoveToPosition", "class_interactables_1_1_cutscenes_1_1_cutscene_move_to_position.html", null ]
+      ] ],
       [ "LevelData", "class_level_data.html", [
         [ "ChallengeLevel", "class_challenge_level.html", null ],
-        [ "JohnWickMode", "class_john_wick_mode.html", null ],
-        [ "MultiplayerData", "class_multiplayer_data.html", null ],
+        [ "Multiplayer.MultiplayerData", "class_multiplayer_1_1_multiplayer_data.html", null ],
         [ "World", "class_world.html", null ]
       ] ],
       [ "LevelEndArea", "class_level_end_area.html", null ],
@@ -322,7 +277,7 @@ var hierarchy =
       [ "Renown.Entity", "class_renown_1_1_entity.html", null ],
       [ "Renown.World.Faction", "class_renown_1_1_world_1_1_faction.html", null ]
     ] ],
-    [ "SteamLobby.PlayerNetworkNode", "struct_steam_lobby_1_1_player_network_node.html", null ],
+    [ "Util.ObjectPool< T >", "struct_util_1_1_object_pool-1-g.html", null ],
     [ "PlayerSystem.PlayerStat< T >", "struct_player_system_1_1_player_stat-1-g.html", null ],
     [ "PointLight2D", null, [
       [ "LightData", "class_light_data.html", null ]
@@ -332,30 +287,11 @@ var hierarchy =
       [ "PlayerSystem.HealthBar", "class_player_system_1_1_health_bar.html", null ],
       [ "PlayerSystem.RageBar", "class_player_system_1_1_rage_bar.html", null ]
     ] ],
-    [ "RayIntersectionInfo", "struct_ray_intersection_info.html", null ],
-    [ "RefCounted", null, [
-      [ "DialogueManagerRuntime.DialogueLine", "class_dialogue_manager_runtime_1_1_dialogue_line.html", null ],
-      [ "DialogueManagerRuntime.DialogueManager", "class_dialogue_manager_runtime_1_1_dialogue_manager.html", null ],
-      [ "DialogueManagerRuntime.DialogueResponse", "class_dialogue_manager_runtime_1_1_dialogue_response.html", null ],
-      [ "GDExtension.Wrappers.QuadNode", "class_g_d_extension_1_1_wrappers_1_1_quad_node.html", null ],
-      [ "GDExtension.Wrappers.QuadRect", "class_g_d_extension_1_1_wrappers_1_1_quad_rect.html", null ],
-      [ "GDExtension.Wrappers.QuadTree", "class_g_d_extension_1_1_wrappers_1_1_quad_tree.html", null ],
-      [ "GDExtension.Wrappers.Slot", "class_g_d_extension_1_1_wrappers_1_1_slot.html", null ]
-    ] ],
     [ "Renown.RenownValue", "struct_renown_1_1_renown_value.html", null ],
     [ "Resource", null, [
       [ "ChallengeMode.ChallengeMap", "class_challenge_mode_1_1_challenge_map.html", null ],
       [ "DefaultSettings", "class_default_settings.html", null ],
       [ "DifficultySettings", "class_difficulty_settings.html", null ],
-      [ "GDExtension.Wrappers.CraftStationType", "class_g_d_extension_1_1_wrappers_1_1_craft_station_type.html", null ],
-      [ "GDExtension.Wrappers.Crafting", "class_g_d_extension_1_1_wrappers_1_1_crafting.html", null ],
-      [ "GDExtension.Wrappers.GridInventoryConstraint", "class_g_d_extension_1_1_wrappers_1_1_grid_inventory_constraint.html", null ],
-      [ "GDExtension.Wrappers.InventoryConstraint", "class_g_d_extension_1_1_wrappers_1_1_inventory_constraint.html", null ],
-      [ "GDExtension.Wrappers.InventoryDatabase", "class_g_d_extension_1_1_wrappers_1_1_inventory_database.html", null ],
-      [ "GDExtension.Wrappers.ItemCategory", "class_g_d_extension_1_1_wrappers_1_1_item_category.html", null ],
-      [ "GDExtension.Wrappers.ItemDefinition", "class_g_d_extension_1_1_wrappers_1_1_item_definition.html", null ],
-      [ "GDExtension.Wrappers.ItemStack", "class_g_d_extension_1_1_wrappers_1_1_item_stack.html", null ],
-      [ "GDExtension.Wrappers.Recipe", "class_g_d_extension_1_1_wrappers_1_1_recipe.html", null ],
       [ "ModMetadata", "class_mod_metadata.html", null ],
       [ "PlayerSystem.Perks.Perk", "class_player_system_1_1_perks_1_1_perk.html", [
         [ "PlayerSystem.Perks.Perk2", "class_player_system_1_1_perks_1_1_perk2.html", null ],
@@ -375,28 +311,17 @@ var hierarchy =
         [ "Renown.Contracts.Extraction", "class_renown_1_1_contracts_1_1_extraction.html", null ]
       ] ],
       [ "Renown.Relationship", "class_renown_1_1_relationship.html", null ],
+      [ "Renown.Rumors.TavernRumor", "class_renown_1_1_rumors_1_1_tavern_rumor.html", null ],
       [ "Renown.Thinkers.GoapCache.EntityGoapData", "class_renown_1_1_thinkers_1_1_goap_cache_1_1_entity_goap_data.html", null ],
-      [ "Renown.Trait", "class_renown_1_1_trait.html", [
-        [ "Renown.Traits.Cruel", "class_renown_1_1_traits_1_1_cruel.html", null ],
-        [ "Renown.Traits.Greedy", "class_renown_1_1_traits_1_1_greedy.html", null ],
-        [ "Renown.Traits.Honorable", "class_renown_1_1_traits_1_1_honorable.html", null ],
-        [ "Renown.Traits.Liar", "class_renown_1_1_traits_1_1_liar.html", null ],
-        [ "Renown.Traits.Merciful", "class_renown_1_1_traits_1_1_merciful.html", null ],
-        [ "Renown.Traits.Reliable", "class_renown_1_1_traits_1_1_reliable.html", null ],
-        [ "Renown.Traits.WarCriminal", "class_renown_1_1_traits_1_1_war_criminal.html", null ]
-      ] ],
+      [ "Renown.Trait", "class_renown_1_1_trait.html", null ],
       [ "StorySystem.Ending", "class_story_system_1_1_ending.html", null ],
       [ "StorySystem.StoryModule", "class_story_system_1_1_story_module.html", null ]
     ] ],
-    [ "ResourceCache", "class_resource_cache.html", null ],
-    [ "RNJesus", "class_r_n_jesus.html", null ],
     [ "SaveSystem.SaveField", "class_save_system_1_1_save_field.html", null ],
     [ "ScoreData", "struct_score_data.html", null ],
-    [ "MountainGoap.Sensor", "class_mountain_goap_1_1_sensor.html", null ],
-    [ "ServerCommandManager", "class_server_command_manager.html", null ],
+    [ "Menus.Settings.ShadowQuality", "struct_menus_1_1_settings_1_1_shadow_quality.html", null ],
     [ "PlayerSystem.Skin", "class_player_system_1_1_skin.html", null ],
     [ "SaveSystem.Slot", "class_save_system_1_1_slot.html", null ],
-    [ "Steam.Server.Snapshot", "struct_steam_1_1_server_1_1_snapshot.html", null ],
     [ "Sprite2D", null, [
       [ "BloodParticle", "class_blood_particle.html", null ],
       [ "BulletShell", "class_bullet_shell.html", null ],
@@ -404,12 +329,10 @@ var hierarchy =
     ] ],
     [ "Renown.Thinkers.Groups.Squad", "class_renown_1_1_thinkers_1_1_groups_1_1_squad.html", null ],
     [ "Renown.Thinkers.Groups.SquadManager", "class_renown_1_1_thinkers_1_1_groups_1_1_squad_manager.html", null ],
+    [ "Util.StaticAllocator", "class_util_1_1_static_allocator.html", null ],
     [ "StaticBody2D", null, [
       [ "WallCollider", "class_wall_collider.html", null ]
     ] ],
-    [ "SteamAchievements.SteamAchievement", "struct_steam_achievements_1_1_steam_achievement.html", null ],
-    [ "SteamLobby.SteamLobbySecurity", "class_steam_lobby_1_1_steam_lobby_security.html", null ],
-    [ "SteamServer", "class_steam_server.html", null ],
     [ "SubViewportContainer", null, [
       [ "DynamicResolutionScaling", "class_dynamic_resolution_scaling.html", null ]
     ] ],
@@ -418,11 +341,12 @@ var hierarchy =
       [ "PlayerSystem.StatusIcon", "class_player_system_1_1_status_icon.html", null ]
     ] ],
     [ "Renown.World.ThinkerFactory", "class_renown_1_1_world_1_1_thinker_factory.html", null ],
-    [ "TwitchIntegration", "class_twitch_integration.html", null ],
     [ "VBoxContainer", null, [
       [ "PlayerSystem.BlacksmithWeaponUpgrade", "class_player_system_1_1_blacksmith_weapon_upgrade.html", null ]
     ] ],
+    [ "Menus.Settings.VSyncMode", "struct_menus_1_1_settings_1_1_v_sync_mode.html", null ],
     [ "The_Nomad.scripts.Items.WeaponBladed", "class_the___nomad_1_1scripts_1_1_items_1_1_weapon_bladed.html", null ],
+    [ "Menus.Settings.WindowMode", "struct_menus_1_1_settings_1_1_window_mode.html", null ],
     [ "Renown.World.WorldTimestamp", "struct_renown_1_1_world_1_1_world_timestamp.html", null ],
     [ "Renown.World.Settlements.Yearly", "struct_renown_1_1_world_1_1_settlements_1_1_yearly.html", null ]
 ];
